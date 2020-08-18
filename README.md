@@ -4,8 +4,6 @@
 <h4>Yet another startpage that comes from saturn. </h4>
   <img src="https://i.imgur.com/KfAck6C.png" width="150px" height="150px">
   <br>
+  <h4>The next generator of saturn is coming later this year!
 </div>
 
-## Installation 
-
-<h4>Method 1 (recommded)</h4>
