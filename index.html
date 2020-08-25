@@ -1,0 +1,207 @@
+<!--
+Based on: https://gitlab.com/vannrith/startpage
+Vector art: icons8.com
+Vector art direct link: https://icons8.com/illustrations/illustration/no-connection-5
+Logo: icons8.com
+Favicon: icons8.com
+Any icons: https://ikonate.com/
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saturn - Startpage</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/dark.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="fill">
+        <img
+          id="header-img"
+          alt="Unable to find img files, check internals."
+          title="Have a nice day!"
+        />
+      </div>
+    </div>
+    <p class="gudmrn" id="greetings"></p>
+    <p class="time" id="time"></p>
+
+    <img
+      src="img/Search Engine/Duckduckgo.svg"
+      alt="Search engine logo"
+      class="s-logo"
+    />
+
+    <div class="row">
+      <div class="full">
+        <!-- Change search engine links:
+
+    Google: https://www.google.com/search?q=
+    Bing: https://www.bing.com/search?q=
+    Qwant: https://www.qwant.com/?q=
+    Ecosia: https://www.ecosia.org/search?q=
+
+    Search engine logo:
+
+    Google img: img/Search Engine/google.svg
+    Bing: img/Search Engine/bing.svg
+
+    Find more on: icons8.com
+        
+        -->
+        <form action="https://duckduckgo.com/?q=" method="get">
+          <input
+            type="search"
+            placeholder="Search the web"
+            name="q"
+            class="fullform"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+    </div>
+    <!-- Saturn settings page.. -->
+    <button id="btn-settings" class="trigger">
+      <img src="img/settings.svg" class="icon-settings" />
+    </button>
+    <div class="row">
+      <div class="col">
+        <label> Media<span style="color: #ff0000;">.</span> </label>
+        <ul>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <label> Tools<span style="color: rgb(0, 102, 255);">.</span> </label>
+        <ul>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <!--   <li>
+            <a href="https://www.grammarly.com/">Grammarly</a>
+          </li>-->
+        </ul>
+      </div>
+      <div class="col">
+        <label> Works<span style="color: #ffee00;">.</span> </label>
+        <ul>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+
+          <li>
+            <a href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <label> Resources<span style="color: #09ff00;">.</span> </label>
+        <ul>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h1></h1>
+
+    <!-- New: settings page -->
+
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h4>Saturn settings</h4>
+        <h1></h1>
+
+        <p>This feature will come with the v0.2 release.</p>
+        <p>
+          Learn more:
+          <a
+            href="https://github.com/mraif13/Saturn-startpage/tree/v0.2"
+            class="ex-links"
+            >here!</a
+          >
+        </p>
+
+        <h4>Privacy Policy</h4>
+        Saturn does not save any information about anything, no connections are
+        made to any external servers. Everything is done offline locally on
+        device.
+        <p></p>
+        <h4>Contributors:</h4>
+        <ul>
+          <li>Axuz</li>
+
+          <li>Jacobisaway</li>
+
+          <li>Fdash</li>
+
+          <li>mraif13</li>
+        </ul>
+        <p style="text-align: center;">
+          Saturn Startpage is a fork of
+          <a
+            href="https://gitlab.com/vannrith/startpage"
+            target="_blank"
+            class="ex-links"
+            >Vannrith Startpage</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>v0.1.9</p>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/Image-rotator.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

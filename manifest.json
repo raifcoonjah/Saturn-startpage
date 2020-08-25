@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Saturn Startpage",
+  "short_name": "Saturn-start",
+  "version": "0.1.9",
+  "description": "Saturn is a custom startpage thats build to replace your current new-tab with a custom one, build with speed and user experience in mind. We keep things simple and clean. Reducing user distractions making you more productive.",
+  "author": "mraif13",
+
+  "icons": {
+    "64": "img/icon64.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": ["storage"]
+}
