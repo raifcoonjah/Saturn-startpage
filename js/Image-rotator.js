@@ -3,9 +3,9 @@
 
 // Rotate Images using Mafs.
 var theImages = new Array();
-theImages[0] = "/img/1.png";
-theImages[1] = "/img/2.png";
-theImages[2] = "/img/3.png";
+theImages[0] = "img/1.png";
+theImages[1] = "img/2.png";
+theImages[2] = "img/3.png";
 var j = 0;
 var p = theImages.length;
 var preBuffer = new Array();
