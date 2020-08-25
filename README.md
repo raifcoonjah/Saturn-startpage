@@ -11,8 +11,9 @@ Saturn is a custom startpage thats build to replace your current new-tab with a 
 
 
 ## Installation 
-<bold>Firefox users: </bold> This method will make use of the manifest.json file to build a extention for firefox instead of changing firefox config files.
-<bold>Chrome: </bold> Follow the steps <a href="#For Chrome/edge/Chromium users" title="Chrome">here</a>, you need to build anything.
+<b>Firefox users: </b> This method will make use of the manifest.json file to build a extention for firefox instead of changing firefox config files.
+  
+<b>Chrome: </b> Follow the steps <a href="#For Chrome/edge/Chromium users" title="Chrome">here</a>, you need to build anything.
 
 ## Steps:
 1. Download all the files.
