@@ -7,7 +7,7 @@
 <br>
 
 ## What's Saturn Startpage?
-Saturn is a custom startpage thats build to replace your current new-tab with a custom one, build with speed and user experience in mind. We keep things simple and clean. Reducing user distractions making you more productive.
+Saturn is a custom startpage thats build to replace your current new-tab with a custom one. Build with speed ⚡ and user experience 🧠 in mind! 
 
 
 ## Installation 
