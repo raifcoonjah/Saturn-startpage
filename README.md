@@ -9,6 +9,8 @@
 ## What's Saturn Startpage?
 Saturn is a custom startpage thats build to replace your current new-tab with a custom one. Build with speed ⚡ and user experience 🧠 in mind! 
 
+## What's the dev build for?
+Dev builds are alpha builds where new features are implemented, optimized then push to master. If you like living a risk life, this is for you! 😈
 
 ## Installation 
 <b>Firefox users: </b> This method will make use of the manifest.json file to build a extention for firefox instead of changing firefox config files.
