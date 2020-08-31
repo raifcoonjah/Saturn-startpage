@@ -13,28 +13,6 @@ const determineGreet = (hours) =>
 
 determineGreet(new Date().getHours());
 
-function formatAMPM(date) {
-  // get time in 12hr format
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var ampm = hours >= 12 ? "PM" : "AM";
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  var strTime = hours + ":" + minutes + " " + ampm;
-  return strTime;
-}
-
-setInterval(function () {
-  // update the time
-  main();
-}, 1000);
-main();
-function main() {
-  // adds the data to the text
-  document.getElementById("time").innerHTML = `It's ` + formatAMPM(new Date());
-}
-
 // Settings UI (alpha)
 var modal = document.querySelector(".modal");
 var trigger = document.querySelector(".trigger");
@@ -53,3 +31,30 @@ function windowOnClick(event) {
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+var currentdate = new Date();
+var datetime =
+  "It's: " +
+  currentdate.getDate() +
+  "/" +
+  (currentdate.getMonth() + 1) +
+  "/" +
+  currentdate.getFullYear() +
+  " at " +
+  currentdate.getHours() +
+  ":" +
+  currentdate.getMinutes();
+
+function formatAMPM(date) {
+  // get time in 12hr format
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? " PM" : " AM";
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  var strTime = ampm;
+  return strTime;
+}
+
+document.getElementById("time").innerHTML = datetime + formatAMPM(new Date());
