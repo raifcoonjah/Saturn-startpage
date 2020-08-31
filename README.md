@@ -2,21 +2,20 @@
   <img src="https://i.imgur.com/pLPiXsb.png" width="60px" height="60px">
 <h1>Saturn Startpage</h1>
 <h4>Yet another startpage that comes from saturn. </h4>
-  <h5>The future of Saturn is nearly here</h5>
   <br>
 </div>
 <br>
 
+Saturn Startpage is a fork of <b><a href="https://gitlab.com/madsouris/startpage" target="_blank">Vannrith Startpage</a></b>
+
 ## What's Saturn Startpage?
 Saturn is a custom startpage thats build to replace your current new-tab with a custom one. Build with speed ⚡ and user experience 🧠 in mind! 
 
-## What's the dev build for?
-Dev builds are alpha builds where new features are implemented, optimized then push to master. If you like living a risk life, this is for you! 😈
 
 ## Installation 
 <b>Firefox users: </b> This method will make use of the manifest.json file to build a extention for firefox instead of changing firefox config files.
   
-<b>Chrome: </b> Follow the steps <a href="#for-chromeedge-users" title="Chrome">here</a>, you need to build anything.
+<b>Chrome users: </b> Follow the steps <a href="#for-chromeedge-users" title="Chrome">here</a>, you don't need to build anything.
 
 ## Steps:
 1. Download all the files.
@@ -44,8 +43,8 @@ Dev builds are alpha builds where new features are implemented, optimized then p
 
 ## Permission
 
-The only permission Saturn uses: Change the page you see when you open a new tab
+The only permission Saturn uses: "Change the page you see when you open a new tab"
 <br>
 
 ## Privacy
-Saturn does not save any information about anything, no connections are made to any external servers. Everything is done offline locally on device. 
+Saturn respects your privacy, we don't save anything, no connections are made to any external servers. Everything is done locally on device.

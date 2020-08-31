@@ -1,43 +1,53 @@
-<!--
-Based on: https://gitlab.com/vannrith/startpage
-Vector art: icons8.com
-Vector art direct link: https://icons8.com/illustrations/illustration/no-connection-5
-Logo: icons8.com
-Favicon: icons8.com
-Any icons: https://ikonate.com/
--->
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Saturn - Startpage</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/dark.css" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="img/favicon.ico" />
-  </head>
-  <body>
-    <div class="row">
-      <div class="fill">
-        <img
-          id="headerimg"
-          alt="Unable to find img files, check internals."
-          title="Have a nice day!"
-        />
-      </div>
-    </div>
-    <p class="gudmrn" id="greetings"></p>
-    <p class="time" id="time"></p>
-
-    <img
-      src="img/Search Engine/Duckduckgo.svg"
-      alt="Search engine logo"
-      class="s-logo"
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/apps.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
     />
+  </head>
+  <!--[if lt IE 7]>
+    <p class="browsehappy">
+      You are using an <strong>outdated</strong> browser. Please
+      <a href="#">upgrade your browser</a> to improve your experience.
+    </p>
+  <![endif]-->
+  <body>
+    <main>
+      <div class="row">
+        <div class="fill">
+          <img
+            id="headerimg"
+            alt="Unable to find img files, check internals."
+            title="Have a nice day!"
+          />
+        </div>
+      </div>
+      <p class="gudmorning_username" id="greetings"></p>
+      <p class="time" id="time"></p>
 
-    <div class="row">
-      <div class="full">
-        <!-- Change search engine links:
+      <img
+        src="img/Search Engine/Duckduckgo.svg"
+        alt="Search engine logo"
+        class="seach-engine-logo"
+      />
+      <div class="row">
+        <div class="full">
+          <!-- Change search engine links:
 
     Google: https://www.google.com/search?q=
     Bing: https://www.bing.com/search?q=
@@ -52,154 +62,242 @@ Any icons: https://ikonate.com/
     Find more on: icons8.com
         
         -->
-        <form action="https://duckduckgo.com/?q=" method="get">
-          <input
-            type="search"
-            placeholder="Search the web"
-            name="q"
-            class="fullform"
-            autocomplete="off"
-          />
-        </form>
+          <!-- -->
+          <form action="https://duckduckgo.com/?q=" method="get">
+            <input
+              type="search"
+              placeholder="Search the web"
+              name="q"
+              class="search-bar"
+              autocomplete="off"
+            />
+          </form>
+        </div>
       </div>
-    </div>
-    <!-- Saturn settings page.. -->
-    <button id="btn-settings" class="trigger">
-      <img src="img/settings.svg" class="icon-settings" />
-    </button>
+      <button onclick="myFunction()" class="btn-hide">
+        <i class="fas fa-eye-slash"></i> Hide
+      </button>
+
+      <button class="btn-hide2" id="trigger">
+        <i class="fas fa-cog"></i> Settings
+      </button>
+
+      <h5 class="yourapps">Your Apps <i class="fas fa-shapes"></i></h5>
+      <div id="apps">
+        <div class="app">
+          <i class="icons fab fa-adobe"></i>
+        </div>
+        <div class="app">
+          <i class="fab fa-android"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-apple"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-aws"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-behance"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-bitcoin"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-chrome"></i>
+        </div>
+        <!-- ROw 2 -->
+        <div class="app">
+          <i class="fab fa-adobe"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-android"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-apple"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-aws"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-behance"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-bitcoin"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-chrome"></i>
+        </div>
+        <!-- ROw 3 -->
+        <!-- ROw 2 -->
+        <div class="app">
+          <i class="fab fa-adobe"></i>
+        </div>
+
+        <a href="#">
+          <div class="app">
+            <i class="fab fa-android"></i></div
+        ></a>
+
+        <div class="app">
+          <i class="fab fa-apple"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-aws"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-behance"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-bitcoin"></i>
+        </div>
+
+        <div class="app">
+          <i class="fab fa-chrome"></i>
+        </div>
+      </div>
+
+      <!-- Saturn settings page.. 
+    <button class="trigger"></button>
     <div class="row">
       <div class="col">
-        <label> Media<span style="color: #ff0000;">.</span> </label>
+        <label> Media<span style="color: #ff0000">.</span> </label>
         <ul>
           <li>
-            <a href="#">Link</a>
+            <a href="https://youtube.com" class="lineThrough">Youtube</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://reddit.com">Reddit</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://photos.google.com">Google Photos</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://netflix.com">Netflix</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://jellyfin.void1.xyz">Cutejelly</a>
           </li>
         </ul>
       </div>
       <div class="col">
-        <label> Tools<span style="color: rgb(0, 102, 255);">.</span> </label>
+        <label> Tools<span style="color: rgb(0, 102, 255)">.</span> </label>
         <ul>
           <li>
-            <a href="#">Link</a>
+            <a href="https://github.com/">Github</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://raindrop.io/">Raindrop</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://drive.google.com/">Google Drive</a>
           </li>
 
           <li>
-            <a href="#">Link</a>
+            <a href="https://fast.com">Fast</a>
           </li>
-          <!--   <li>
+         <li>
             <a href="https://www.grammarly.com/">Grammarly</a>
-          </li>-->
-        </ul>
-      </div>
-      <div class="col">
-        <label> Works<span style="color: #ffee00;">.</span> </label>
-        <ul>
-          <li>
-            <a href="#">Link</a>
-          </li>
-          <li>
-            <a href="#">Link</a>
-          </li>
-          <li>
-            <a href="#">Link</a>
-          </li>
-          <li>
-            <a href="#">Link</a>
-          </li>
-
-          <li>
-            <a href="#">Link</a>
           </li>
         </ul>
       </div>
       <div class="col">
-        <label> Resources<span style="color: #09ff00;">.</span> </label>
+        <label> Works<span style="color: #ffee00">.</span> </label>
         <ul>
           <li>
-            <a href="#">Link</a>
+            <a href="https://app.simplenote.com/">Simple Notes</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://app.simplelogin.io/">Simple Login</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://protonmail.com">Protonmail</a>
+          </li>
+
+          <li>
+            <a href="https://www.notion.so/">Notion</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <label> Resources<span style="color: #09ff00">.</span> </label>
+        <ul>
+          <li>
+            <a href="https://devdocs.io/">DevDocs</a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://mobbin.design/">Mobbin</a>
+          </li>
+
+          <li>
+            <a href="https://dribbble.com">Dribbble</a>
+          </li>
+          <li>
+            <a href="https://pinterest.com">Pinterest</a>
+          </li>
+          <li>
+            <a href="https://freecodecamp.com" onclick="">freecodecamp</a>
           </li>
         </ul>
       </div>
     </div>
-    <h1></h1>
+  -->
+      <h1></h1>
 
-    <!-- New: settings page -->
+      <!-- Settings page -->
 
-    <div class="modal">
-      <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h4>Saturn settings</h4>
-        <h1></h1>
-
-        <p>This feature will come with the v0.2 release.</p>
-        <p>
-          Learn more:
-          <a
-            href="https://github.com/mraif13/Saturn-startpage/tree/v0.2"
-            class="ex-links"
-            >here!</a
-          >
-        </p>
-
-        <h4>Privacy Policy</h4>
-        Saturn does not save any information about anything, no connections are
-        made to any external servers. Everything is done offline locally on
-        device.
-        <p></p>
-        <h4>Contributors:</h4>
-        <ul>
-          <li>Axuz</li>
-
-          <li>Jacobisaway</li>
-
-          <li>Fdash</li>
-
-          <li>mraif13</li>
-        </ul>
-        <p style="text-align: center;">
-          Saturn Startpage is a fork of
-          <a
-            href="https://gitlab.com/vannrith/startpage"
-            target="_blank"
-            class="ex-links"
-            >Vannrith Startpage</a
-          >
-        </p>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h4>Saturn Settings</h4>
+          <h6>Change the background color, accent color & more..</h6>
+          <h3></h3>
+          <h4>Dark mode 🌛</h4>
+          <p>Enable the brand new dark mode!</p>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+          </div>
+          <h4>Privacy</h4>
+          Saturn respects your privacy, we don't save anything, no connections
+          are made to any external servers. Everything is done locally on
+          device.
+          <h1></h1>
+          <p class="external-links">
+            Created by
+            <a
+              href="https://github.com/mraif13"
+              target="_blank"
+              style="text-decoration: none"
+              >mraif13</a
+            >
+          </p>
+        </div>
       </div>
-    </div>
+    </main>
+
     <div class="footer">
-      <p>v0.1.9</p>
+      <p>v0.2_ALpha</p>
     </div>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/Image-rotator.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>

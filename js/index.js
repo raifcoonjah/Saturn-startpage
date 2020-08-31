@@ -1,4 +1,4 @@
-var username = "John Doe"; /*Change this with your name*/
+var username = "John Doe!"; /*Change this with your name*/
 
 const determineGreet = (hours) =>
   (document.getElementById("greetings").innerText = `Good ${
@@ -13,31 +13,9 @@ const determineGreet = (hours) =>
 
 determineGreet(new Date().getHours());
 
-function formatAMPM(date) {
-  // get time in 12hr format
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var ampm = hours >= 12 ? "PM" : "AM";
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  var strTime = hours + ":" + minutes + " " + ampm;
-  return strTime;
-}
-
-setInterval(function () {
-  // update the time
-  main();
-}, 1000);
-main();
-function main() {
-  // adds the data to the text
-  document.getElementById("time").innerHTML = `It's ` + formatAMPM(new Date());
-}
-
 // Settings UI (alpha)
 var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".trigger");
+var trigger = document.querySelector(".btn-hide2");
 var closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
@@ -53,3 +31,36 @@ function windowOnClick(event) {
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+var currentdate = new Date();
+var datetime =
+  "It's the " +
+  currentdate.getDate() +
+  "/" +
+  (currentdate.getMonth() + 1) +
+  "/" +
+  currentdate.getFullYear() +
+  " at " +
+  currentdate.getHours() +
+  ":" +
+  currentdate.getMinutes();
+
+function formatAMPM(date) {
+  // get time in 12hr format
+  var hours = date.getHours();
+  var ampm = hours >= 12 ? " PM" : " AM";
+  var strTime = ampm;
+  return strTime;
+}
+
+document.getElementById("time").innerHTML = datetime + formatAMPM(new Date());
+
+/// Show/Hide
+function myFunction() {
+  var x = document.getElementById("apps");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
