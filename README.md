@@ -9,7 +9,7 @@
 Saturn Startpage is a fork of <b><a href="https://gitlab.com/madsouris/startpage" target="_blank">Vannrith Startpage</a></b>
 
 ## What's Saturn Startpage?
-Saturn is a custom startpage thats build to replace your current new-tab with a custom one. Build with speed ⚡ and user experience 🧠 in mind! 
+🪐 Saturn is a custom startpage that was build to replace your current new-tab with a custom one. Build with speed ⚡ and user experience 🧠 in mind.
 
 
 ## Installation 
