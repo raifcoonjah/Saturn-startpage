@@ -6,14 +6,14 @@
 </div>
 <br>
 
-Saturn Startpage is a fork of <b><a href="https://gitlab.com/madsouris/startpage" target="_blank">Vannrith Startpage</a></b>
+Saturn Startpage (Legacy) was a fork of <b><a href="https://gitlab.com/madsouris/startpage" target="_blank">Vannrith Startpage</a></b>
 
 ## What's Saturn Startpage?
-Saturn is a custom startpage thats build to replace your current new-tab with a custom one. Build with speed ⚡ and user experience 🧠 in mind! 
+ringed_planet Saturn is a custom startpage that was build to replace your current new-tab with a custom one. Build with speed zap and user experience brain in mind.
 
 
 ## Installation 
-<b>Firefox users: </b> This method will make use of the manifest.json file to build a extention for firefox instead of changing firefox config files.
+<b>Firefox: </b> Instead of changing firefox configuration files to make it open Saturn instead of the default firefox home, We're going to make use of the manifest.json file to build a extention to replace the new-tab.
   
 <b>Chrome users: </b> Follow the steps <a href="#for-chromeedge-users" title="Chrome">here</a>, you don't need to build anything.
 
