@@ -14,9 +14,9 @@
   --modal-bg-1: #eeeeee;
   --modal-bg-2: #313131dc;
   --close-button: rgb(182, 182, 182);
-  --icon-settings-hover: #5f74ac;
   --anim-search-bar-bg-hover: #dadada;
   --anim-search-bar-bg-focus: #d8d8d8;
+  --app-tooltip-bg: #cecece;
 }
 /* Dark mode */
 /* Welcome to the dark side! */
@@ -34,10 +34,9 @@
   --modal-bg-1: #0d0f13;
   --modal-bg-2: #1e232cde;
   --close-button: #232933;
-  --icon-settings-hover: #303a58;
   --anim-search-bar-bg-hover: #232933;
   --anim-search-bar-bg-focus: #1e232c;
-  /* --icon-settings: #dadada; */
+  --app-tooltip-bg: #232933;
 }
 
 * {
@@ -473,7 +472,6 @@ img {
 .col ul li a::after {
   background-color: var(--anim-bar-w);
 }
-
 .modal {
   background: var(--modal-bg-2);
   color: var(--nc-tx-2);
@@ -502,12 +500,20 @@ img {
   background: var(--nc-bg-2);
 }
 .btn-hide:hover {
+  
   background: var(--anim-search-bar-bg-hover);
 }
-.btn-hide2 {
+.btn-modal {
   color: var(--nc-tx-2);
   background: var(--nc-bg-2);
 }
-.btn-hide2:hover {
+.btn-modal:hover {
   background: var(--anim-search-bar-bg-hover);
+}
+.app .tooltiptext {
+  color: var(--nc-tx-2);
+  background: var(--app-tooltip-bg);
+}
+.app .tooltiptext::after {
+  border-color: var(--app-tooltip-bg) transparent transparent transparent;
 }

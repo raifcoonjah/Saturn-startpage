@@ -114,7 +114,7 @@ body {
   font-size: 1.4em;
   padding: 15px 50px;
   font-weight: 500;
-  border-radius: 35px;
+  border-radius: 10px;
   box-sizing: border-box;
   outline: none;
 }
@@ -122,16 +122,19 @@ body {
 .seach-engine-logo {
   padding: 12px 10px;
   position: absolute;
-  width: 35px;
-  height: 35px;
+  box-sizing: border-box;
+  outline: none;
+  width: 55px;
+  height: 55px;
+  margin-top: 1px;
 }
 
 .search-bar:hover {
-  border: 1px solid #232933;
+  border: 1px solid #323a4965;
   transition: 0.2s;
 }
 .search-bar:focus {
-  border: 1px solid #323a49;
+  border: 1px solid #323a49a2;
   transition: 0.2s;
 }
 
@@ -151,17 +154,19 @@ body {
 .gudmorning_username {
   font-weight: 600;
   text-align: center;
+  font-size: 16px;
 }
 .time {
   font-weight: 600;
   text-align: center;
   margin-top: -10px;
+  font-size: 15px;
 }
 
 .footer {
-  padding: 25px 0px;
+  margin-top: -5px;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -183,8 +188,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1rem 1.5rem;
-  width: 35vw;
-  border-radius: 15px;
+  width: 45vw;
+  border-radius: 10px;
 }
 .close-button {
   float: right;
@@ -192,10 +197,8 @@ body {
   line-height: 1.6rem;
   text-align: center;
   cursor: pointer;
-  border-radius: 0.25rem;
-}
-.close-button:hover {
-  transition: 0.2s;
+  border-radius: 7px;
+  margin-right: -10px;
 }
 
 .show-modal {
@@ -226,7 +229,7 @@ body {
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: #8da0dab0;
   bottom: 0;
   cursor: pointer;
   left: 2px;
@@ -237,14 +240,14 @@ body {
 }
 
 .slider:before {
-  background-color: #fff;
+  border: 2px solid;
   bottom: 3px;
   content: "";
-  height: 23px;
-  left: 4px;
+  height: 20px;
+  left: 5px;
   position: absolute;
   transition: 0.2s;
-  width: 23px;
+  width: 20px;
 }
 
 input:checked + .slider {
@@ -266,20 +269,43 @@ input:checked + .slider:before {
 .yourapps {
   text-align: left;
 }
-.btn-hide {
-  padding: 9px 10px;
-  border-radius: 35px;
-  transition: 0.2s;
+
+.btn-modal {
+  padding: 9px 9px;
+  border-radius: 10px;
   float: right;
 }
-.btn-hide2 {
-  padding: 9px 10px;
-  border-radius: 35px;
-  transition: 0.2s;
-  float: right;
-  margin-right: 5px;
+.btn-modal:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
 }
 .external-links {
   text-align: center;
   text-decoration: none;
+}
+
+/* Apps Shortcuts */
+#apps {
+  margin-top: 15px;
+  width: 108%;
+  margin-left: -6px;
+}
+
+.app {
+  display: inline-block;
+  width: 10%;
+  margin: 0 0.9% 15px;
+  padding: 15px 5px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.app:hover {
+  transform: scale(1.1);
+  transition: 150ms;
+}
+
+.app i {
+  font-size: 2.2rem;
 }

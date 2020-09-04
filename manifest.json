@@ -12,5 +12,7 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "permissions": ["storage"]
+
+  "permissions": ["storage"],
+  "content_security_policy": "script-src 'self'; object-src 'self'; img-src 'self'"
 }
