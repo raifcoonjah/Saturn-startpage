@@ -270,7 +270,10 @@ input:checked + .slider:before {
   text-align: left;
 }
 
+/* Button used to open the seetings page */
+
 .btn-modal {
+  outline: none;
   padding: 9px 9px;
   border-radius: 10px;
   float: right;
