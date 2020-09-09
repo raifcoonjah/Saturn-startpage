@@ -1,5 +1,5 @@
-// Image boom boom, switches between different images with each reload.
-// v0.1.1
+// Uses javascript to switch between 3 different images.
+// v0.1.2
 
 // Rotate Images using Mafs.
 var theImages = new Array();

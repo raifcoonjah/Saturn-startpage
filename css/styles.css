@@ -1,493 +1,287 @@
-/* light mode */
-@media (prefers-color-scheme: light) {
-  :root {
-    --nc-tx-1: #000000;
-    --nc-tx-2: #1a1a1a;
-    --nc-bg-1: #ffffff;
-    --nc-bg-2: #e0e0e0;
-    --nc-bg-3: #e5e7eb;
-    --nc-lk-1: #000000;
-    --nc-lk-2: #111111d8;
-    --nc-lk-tx: #ffffff;
-    --nc-ac-1: #47008f;
-    --nc-ac-tx: #ffffff;
-    --anim-bar-w: #6203c0;
-    --anim-bar-trg: #8000ffce;
-    --modal-bg-1: #eeeeee;
-    --modal-bg-2: #313131dc;
-    --close-button: rgb(182, 182, 182);
-    --icon-settings-hover: #4f009edc;
-    --anim-fullform-bg-hover: #dadada;
-    --anim-fullform-bg-focus: #d8d8d8;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --nc-tx-1: #ffffff;
-    --nc-tx-2: #eeeeee;
-    --nc-bg-1: #121212;
-    --nc-bg-2: #181818;
-    --nc-bg-3: #222222;
-    --nc-lk-1: hsl(0, 0%, 95%);
-    --nc-lk-2: #fafafa;
-    --nc-lk-tx: #ffffff;
-    --nc-ac-1: #6200c4;
-    --nc-ac-tx: #ffffff;
-    --anim-bar-w: #4a0391a9;
-    --anim-bar-trg: #222222ab;
-    --modal-bg-1: #222222;
-    --modal-bg-2: #313131dc;
-    --close-button: rgb(63, 63, 63);
-    --icon-settings-hover: #2b0057a1;
-    --anim-fullform-bg-hover: #2222228f;
-    --anim-fullform-bg-focus: #222222af;
-  }
+/* v0.1.7: all fonts are now loaded locally, no connection are made to google's servers. */
+
+/* lato-100 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/lato-v16-latin-100.eot"); /* IE9 Compat Modes */
+  src: local("Lato Hairline"), local("Lato-Hairline"),
+    url("../fonts/lato-v16-latin-100.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v16-latin-100.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-100.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v16-latin-100.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-100.svg#Lato")
+      format("svg"); /* Legacy iOS */
 }
 
-* {
-  /* Reset margins and padding */
-  margin: 0;
-  padding: 0;
+/* lato-300 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/lato-v16-latin-300.eot"); /* IE9 Compat Modes */
+  src: local("Lato Light"), local("Lato-Light"),
+    url("../fonts/lato-v16-latin-300.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v16-latin-300.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-300.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v16-latin-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-300.svg#Lato")
+      format("svg"); /* Legacy iOS */
 }
 
-address,
-area,
-article,
-aside,
-audio,
-blockquote,
-datalist,
-details,
-dl,
-fieldset,
-figure,
-form,
-input,
-iframe,
-img,
-meter,
-nav,
-ol,
-optgroup,
-option,
-output,
-p,
-pre,
-progress,
-ruby,
-section,
-table,
-textarea,
-ul,
-video {
-  /* Margins for most elements */
-  margin-bottom: 1rem;
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("../fonts/lato-v16-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v16-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v16-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-regular.svg#Lato")
+      format("svg"); /* Legacy iOS */
 }
 
-html,
-input,
-select,
-button {
-  /* Set body font family and some finicky elements */
-  font-family: var(--nc-font-sans);
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato-v16-latin-700.eot"); /* IE9 Compat Modes */
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("../fonts/lato-v16-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v16-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v16-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-700.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/lato-v16-latin-900.eot"); /* IE9 Compat Modes */
+  src: local("Lato Black"), local("Lato-Black"),
+    url("../fonts/lato-v16-latin-900.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v16-latin-900.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-900.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v16-latin-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-900.svg#Lato")
+      format("svg"); /* Legacy iOS */
 }
 
 body {
-  /* Center body in page */
-  margin: 0 auto;
-  max-width: 750px;
-  padding: 2rem;
-  border-radius: 15px;
+  font-family: "Lato", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 35px;
   overflow-x: hidden;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  background: var(--nc-bg-1);
-
-  /* Main body text */
-  color: var(--nc-tx-2);
-  font-size: 1.03rem;
-  line-height: 1.5;
 }
 
-::selection {
-  /* Set background color for selected text */
-  background: var(--nc-ac-1);
-  color: var(--nc-ac-tx);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1;
-  color: var(--nc-tx-1);
-  padding-top: 0.875rem;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--nc-tx-1);
-  padding-bottom: 2px;
-  margin-bottom: 8px;
-  border-bottom: 1px solid var(--nc-bg-2);
-}
-
-h4,
-h5,
-h6 {
-  margin-bottom: 0.3rem;
-}
-
-h1 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 1.85rem;
-}
-
-h3 {
-  font-size: 1.55rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-h5 {
-  font-size: 1rem;
-}
-
-h6 {
-  font-size: 0.875rem;
-}
-
-a {
-  color: var(--nc-lk-1);
-}
-
-a:hover {
-  color: var(--nc-lk-2);
-}
-
-abbr:hover {
-  /* Set the '?' cursor while hovering an abbreviation */
-  cursor: help;
-}
-
-blockquote {
-  padding: 1.5rem;
-  background: var(--nc-bg-2);
-  border-left: 5px solid var(--nc-bg-3);
-}
-
-abbr {
-  cursor: help;
-}
-
-blockquote *:last-child {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-header {
-  background: var(--nc-bg-2);
-  border-bottom: 1px solid var(--nc-bg-3);
-  padding: 2rem 1.5rem;
-
-  /* This sets the right and left margins to cancel out the body's margins. It's width is still the same, but the background stretches across the page's width. */
-
-  margin: -2rem calc(0px - (50vw - 50%)) 2rem;
-
-  /* Shorthand for:
-
-	margin-top: -2rem;
-	margin-bottom: 2rem;
-
-	margin-left: calc(0px - (50vw - 50%));
-	margin-right: calc(0px - (50vw - 50%)); */
-
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
-}
-
-header h1,
-header h2,
-header h3 {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-header > *:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-header > *:last-child {
-  margin-bottom: 0;
-}
-
-a button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  font-size: 1rem;
-  display: inline-block;
-  padding: 6px 6px 3px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  background: var(--nc-lk-1);
-  color: var(--nc-lk-tx);
-  border: 0;
-  border-radius: 15px;
-  box-sizing: border-box;
-  cursor: pointer;
-  color: var(--nc-lk-tx);
-}
-
-a button[disabled],
-button[disabled],
-input[type="submit"][disabled],
-input[type="reset"][disabled],
-input[type="button"][disabled] {
-  cursor: default;
-  opacity: 0.5;
-
-  /* Set the [X] cursor while hovering a disabled link */
-  cursor: not-allowed;
-}
-
-/*
-.button:focus,
-.button:enabled:hover,
-button:focus,
-button:enabled:hover,
-input[type="submit"]:focus,
-input[type="submit"]:enabled:hover,
-input[type="reset"]:focus,
-input[type="reset"]:enabled:hover,
-input[type="button"]:focus,
-input[type="button"]:enabled:hover {
-  ;
-}
-*/
-code,
-pre,
-kbd,
-samp {
-  /* Set the font family for monospaced elements */
-  font-family: var(--nc-font-mono);
-}
-
-code,
-samp,
-kbd,
-pre {
-  /* The main preformatted style. This is changed slightly across different cases. */
-  background: var(--nc-bg-2);
-  border: 1px solid var(--nc-bg-3);
-  border-radius: 4px;
-  padding: 3px 6px;
-  font-size: 0.9rem;
-}
-
-kbd {
-  /* Makes the kbd element look like a keyboard key */
-  border-bottom: 3px solid var(--nc-bg-3);
-}
-
-pre {
-  padding: 1rem 1.4rem;
-  max-width: 100%;
-  overflow: auto;
-}
-
-pre code {
-  /* When <code> is in a <pre>, reset it's formatting to blend in */
-  background: inherit;
-  font-size: inherit;
-  color: inherit;
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-
-code pre {
-  /* When <pre> is in a <code>, reset it's formatting to blend in */
-  display: inline;
-  background: inherit;
-  font-size: inherit;
-  color: inherit;
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-
-details {
-  /* Make the <details> look more "clickable" */
-  padding: 0.6rem 1rem;
-  background: var(--nc-bg-2);
-  border: 1px solid var(--nc-bg-3);
-  border-radius: 15px;
-}
-
-summary {
-  /* Makes the <summary> look more like a "clickable" link with the pointer cursor */
-  cursor: pointer;
-  font-weight: bold;
-}
-
-details[open] {
-  /* Adjust the <details> padding while open */
-  padding-bottom: 0.75rem;
-}
-
-details[open] summary {
-  /* Adjust the <details> padding while open */
-  margin-bottom: 6px;
-}
-
-details[open] > *:last-child {
-  /* Resets the bottom margin of the last element in the <details> while <details> is opened. This prevents double margins/paddings. */
-  margin-bottom: 0;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd::before {
-  /* Add an arrow to data table definitions */
-  content: "→ ";
-}
-
-hr {
-  /* Reset the border of the <hr> separator, then set a better line */
-  border: 0;
-  border-bottom: 1px solid var(--nc-bg-3);
-  margin: 1rem auto;
-}
-
-fieldset {
-  margin-top: 1rem;
-  padding: 2rem;
-  border: 1px solid var(--nc-bg-3);
-  border-radius: 4px;
-}
-
-legend {
-  padding: auto 0.5rem;
-}
-
-table {
-  /* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
-  border-collapse: collapse;
+.row {
   width: 100%;
-}
-
-td,
-th {
-  border: 1px solid var(--nc-bg-3);
-  text-align: left;
-  padding: 0.5rem;
-}
-
-th {
-  background: var(--nc-bg-2);
-}
-
-tr:nth-child(even) {
-  /* Set every other cell slightly darker. Improves readability. */
-  background: var(--nc-bg-2);
-}
-
-table caption {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-textarea {
-  /* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
-  max-width: 100%;
-}
-
-ol,
-ul {
-  /* Replace the browser default padding */
-  padding-left: 2rem;
-}
-
-li {
-  margin-top: 0.4rem;
-}
-
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin-bottom: 0;
-}
-
-mark {
-  padding: 3px 6px;
-  background: var(--nc-ac-1);
-  color: var(--nc-ac-tx);
-}
-
-.trigger {
-  background: var(--nc-ac-1);
-  color: var(--nc-tx-2);
-}
-textarea,
-select,
-input {
-  padding: 6px 15px;
-  margin-bottom: 0.5rem;
-  background: var(--nc-bg-2);
-  color: var(--nc-tx-2);
-  border: 1px solid var(--nc-bg-3);
-  border-radius: 15px;
-  box-shadow: none;
+  margin: 0 auto;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-img {
-  max-width: 100%;
+.full {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-/* New stuff */
+.fullform {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  font-size: 1.4em;
+  padding: 15px 50px;
+  font-weight: 500;
+  border-radius: 15px;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 0px 15px 25px 5px rgba(255, 255, 255, 0.01);
+}
+.s-logo {
+  padding: 14px 10px;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+
 .fullform:hover {
-  background: var(--anim-fullform-bg-hover);
+  border: 1px solid rgba(71, 52, 82, 0.884);
+  transition: 0.2s;
 }
 .fullform:focus {
-  background: var(--anim-fullform-bg-focus);
-}
-.trigger {
-  background: var(--anim-bar-trg);
-  color: var(--anim-bar-trg);
-}
-.trigger:hover {
-  background: var(--icon-settings-hover);
-}
-.col ul li a::after {
-  background-color: var(--anim-bar-w);
+  border: 1px solid rgba(68, 36, 94, 0.788);
+  transition: 0.2s;
 }
 
+.col {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.col label {
+  font-weight: 800;
+  font-size: 1.4em;
+}
+
+.col ul {
+  margin: 0;
+  padding: 5px 0px;
+}
+
+.col ul li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+/* new animation */
+.col ul li a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.col ul li a::after {
+  border-radius: 15px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.col ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.col ul li a {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.col ul li a:hover {
+  transform: translateX(3px);
+}
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+.fill img {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.gudmrn {
+  font-weight: 600;
+  text-align: center;
+}
+.time {
+  font-weight: 600;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.footer {
+  padding: 25px 0px;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Settings UI (alpha) */
 .modal {
-  background: var(--modal-bg-2);
-  color: var(--nc-tx-2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 .modal-content {
-  background: var(--modal-bg-1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 1.5rem;
+  width: 35rem;
+  border-radius: 15px;
 }
 .close-button {
-  background-color: var(--close-button);
+  float: right;
+  width: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
 }
+.close-button:hover {
+  transition: 0.1s;
+  border-radius: 8px;
+}
+
+.show-modal {
+  overflow: hidden;
+  position: fixed;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.trigger {
+  box-shadow: 0px 15px 25px 5px rgba(255, 255, 255, 0.01);
+  outline: none;
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 45px;
+  height: 45px;
+}
+.trigger:hover {
+  transition: 0.2s;
+}
+
 .ex-links {
-  color: var(--nc-tx-2);
+  text-decoration: none;
+}
+
+.ex-links:hover {
+  transition: 0.1s;
+  color: rgb(134, 134, 134);
 }

@@ -1,15 +1,15 @@
-var username = "John Doe"; /*Change this with your name*/
-
-const determineGreet = (hours) =>
+const determineGreet = (
+  hours // Good morning/night text.
+) =>
   (document.getElementById("greetings").innerText = `Good ${
     hours < 12
-      ? "morning, "
+      ? "morning! "
       : hours < 18
-      ? "afternoon, "
-      : hours < 23
-      ? "evening, "
-      : "night, "
-  } ${username}!`);
+      ? "afternoon! "
+      : hours < 23 // After 11pm switch to night instead of evening.
+      ? "evening! "
+      : "night! "
+  } `);
 
 determineGreet(new Date().getHours());
 
@@ -32,29 +32,47 @@ trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
+// Time....
+
+// Get month:
+const monthNames = [
+  "Jan",
+  "Febr",
+  "Marc",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
+determineGreet(new Date().getHours());
+
 var currentdate = new Date();
 var datetime =
-  "It's: " +
+  " It's " +
+  days[currentdate.getDay()] +
+  " " +
+  monthNames[currentdate.getMonth()] +
+  " " +
   currentdate.getDate() +
-  "/" +
-  (currentdate.getMonth() + 1) +
-  "/" +
-  currentdate.getFullYear() +
-  " at " +
+  ", " +
   currentdate.getHours() +
   ":" +
   currentdate.getMinutes();
 
-function formatAMPM(date) {
-  // get time in 12hr format
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var ampm = hours >= 12 ? " PM" : " AM";
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  var strTime = ampm;
-  return strTime;
-}
-
-document.getElementById("time").innerHTML = datetime + formatAMPM(new Date());
+document.getElementById("time").innerHTML = datetime;
+document.write;
