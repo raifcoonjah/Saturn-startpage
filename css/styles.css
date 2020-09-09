@@ -86,19 +86,9 @@
 
 body {
   font-family: "Lato", sans-serif;
-  width: 100vw;
-  min-height: 100vh;
   box-sizing: border-box;
   padding-top: 35px;
   overflow-x: hidden;
-}
-
-.row {
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .full {
@@ -188,7 +178,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1rem 1.5rem;
-  width: 45vw;
+  width: 40vw;
   border-radius: 10px;
 }
 .close-button {
@@ -272,7 +262,8 @@ input:checked + .slider:before {
 
 /* Button used to open the seetings page */
 
-.btn-modal {
+.btn-modal,
+.btn-hide2 {
   outline: none;
   padding: 9px 9px;
   border-radius: 10px;
@@ -285,6 +276,13 @@ input:checked + .slider:before {
 .external-links {
   text-align: center;
   text-decoration: none;
+}
+.btn-hide2 {
+  margin-right: 10px;
+}
+.btn-hide2:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
 }
 
 /* Apps Shortcuts */
@@ -306,9 +304,40 @@ input:checked + .slider:before {
 
 .app:hover {
   transform: scale(1.1);
-  transition: 150ms;
+  transition: 100ms;
 }
 
 .app i {
   font-size: 2.2rem;
+}
+
+/* Tooltip container */
+.app {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.app .tooltiptext {
+  opacity: 0.9;
+  visibility: hidden;
+  width: 100px;
+  text-align: center;
+  padding: 2px 3px;
+  border-radius: 10px;
+  font-size: 1em;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 60%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.app:hover .tooltiptext {
+  visibility: visible;
 }

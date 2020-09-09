@@ -232,14 +232,15 @@ input[type="reset"],
 input[type="button"] {
   font-size: 1rem;
   display: inline-block;
-  padding: 6px 6px 3px;
+  outline: none;
+  padding: 9px 9px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  background: var(--nc-lk-1);
-  color: var(--nc-lk-tx);
+  color: var(--nc-tx-2);
+  background: var(--nc-bg-2);
   border: 0;
-  border-radius: 15px;
+  border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
   color: var(--nc-lk-tx);
@@ -469,9 +470,6 @@ img {
 .trigger:hover {
   background: var(--icon-settings-hover);
 }
-.col ul li a::after {
-  background-color: var(--anim-bar-w);
-}
 .modal {
   background: var(--modal-bg-2);
   color: var(--nc-tx-2);
@@ -495,19 +493,18 @@ img {
 .app:hover {
   background: var(--anim-search-bar-bg-hover);
 }
-.btn-hide {
-  color: var(--nc-tx-2);
-  background: var(--nc-bg-2);
-}
-.btn-hide:hover {
-  
-  background: var(--anim-search-bar-bg-hover);
-}
 .btn-modal {
   color: var(--nc-tx-2);
   background: var(--nc-bg-2);
 }
 .btn-modal:hover {
+  background: var(--anim-search-bar-bg-hover);
+}
+.btn-hide2 {
+  color: var(--nc-tx-2);
+  background: var(--nc-bg-2);
+}
+.btn-hide2:hover {
   background: var(--anim-search-bar-bg-hover);
 }
 .app .tooltiptext {
@@ -517,3 +514,4 @@ img {
 .app .tooltiptext::after {
   border-color: var(--app-tooltip-bg) transparent transparent transparent;
 }
+

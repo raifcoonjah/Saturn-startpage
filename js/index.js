@@ -1,18 +1,40 @@
-var username = "John Doe";
-
 const determineGreet = (
   hours // Good morning/night text.
 ) =>
   (document.getElementById("greetings").innerText = `Good ${
     hours < 12
-      ? "morning, "
+      ? "morning! "
       : hours < 18
-      ? "afternoon, "
+      ? "afternoon! "
       : hours < 23 // After 11pm switch to night instead of evening.
-      ? "evening, "
-      : "night, "
-  } ${username}!`);
+      ? "evening! "
+      : "night! "
+  } `);
 
+// Get month:
+const monthNames = [
+  "Jan",
+  "Febr",
+  "Marc",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 determineGreet(new Date().getHours());
 
 // Settings/Modal trigger + close button.
@@ -34,31 +56,24 @@ trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
+// Add zero infront
+
 // Date text
 var currentdate = new Date();
 var datetime =
-  "It's the " +
+  " It's " +
+  days[currentdate.getDay()] +
+  " " +
+  monthNames[currentdate.getMonth()] +
+  " " +
   currentdate.getDate() +
-  "/" +
-  (currentdate.getMonth() + 1) +
-  "/" +
-  currentdate.getFullYear() +
-  " at " +
+  ", " +
   currentdate.getHours() +
   ":" +
   currentdate.getMinutes();
 
-// PM and AM after time.
-
-function formatAMPM(date) {
-  // get time in 12hr format
-  var hours = date.getHours();
-  var ampm = hours >= 12 ? " PM" : " AM";
-  var strTime = ampm;
-  return strTime;
-}
-
-document.getElementById("time").innerHTML = datetime + formatAMPM(new Date());
+document.getElementById("time").innerHTML = datetime;
+document.write;
 
 // Dark mode Switch. Light > Dark | Dark < light
 const toggleSwitch = document.querySelector(
