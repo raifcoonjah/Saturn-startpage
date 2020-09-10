@@ -197,7 +197,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.2s;
+  transition: visibility 0s linear 0s, opacity 0.3s 0s, transform 0.1s;
 }
 
 /* Dark mode switch */
@@ -226,7 +226,6 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  transition: 0.2s;
 }
 
 .slider:before {
