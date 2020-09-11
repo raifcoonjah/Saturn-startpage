@@ -88,7 +88,7 @@
   --sat-heading: #000000;
   --sat-ids: #1a1a1a;
   --sat-bg: #ffffff;
-  --sat-search-shortcuts: #ececec;
+  --sat-search-shortcuts: #dadada;
   --sat-search-border: #e5e7eb;
   --sat-icons: #000000;
   --sat-icons-hovr: #111111d8;
@@ -129,7 +129,7 @@
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #232933;
   --sat-default-hoveringspeed: 0.2s;
-  --sat-shortcuts-hover: red;
+  --sat-shortcuts-hover: #232933;
 }
 
 * {
