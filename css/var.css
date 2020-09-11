@@ -103,7 +103,7 @@
   --sat-search-bar-hvr: #dadada;
   --sat-search-bar-focus: #d8d8d8;
   --default-font: "lato", sans-serif;
-  --sat-default-hoveringspeed: 0.2s;
+  --sat-default-hoveringspeed: 100ms;
   --sat-border-radius: 10px;
   --sat-shortcuts-hover: #cacaca;
 }
@@ -557,7 +557,7 @@ img {
 }
 .close-button {
   color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
+  transition: var(--sat-default-hoveringspeed);
 }
 .close-button:hover {
   background: var(--sat-search-bar-hvr);

@@ -90,13 +90,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1rem 1.5rem;
-  width: 40vw;
+  width: 43vw;
+  height: 70
+  vh;
   border-radius: 10px;
 }
 .close-button {
   float: right;
-  width: 1.6rem;
-  line-height: 1.6rem;
+  width: 1.7rem;
+  line-height: 1.7rem;
   text-align: center;
   cursor: pointer;
   border-radius: 7px;
