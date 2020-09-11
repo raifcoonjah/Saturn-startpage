@@ -1,93 +1,95 @@
-/* lato-100 - latin */
+/* poppins-200 - latin */
 @font-face {
-  font-family: "Lato";
+  font-family: "Poppins";
   font-style: normal;
-  font-weight: 100;
-  src: url("../fonts/lato-v16-latin-100.eot"); /* IE9 Compat Modes */
-  src: local("Lato Hairline"), local("Lato-Hairline"),
-    url("../fonts/lato-v16-latin-100.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-100.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-100.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-100.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-100.svg#Lato")
-      format("svg"); /* Legacy iOS */
+  font-weight: 200;
+  src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"),
+    url("../fonts/poppins-v12-latin-200.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* lato-300 - latin */
+/* poppins-300 - latin */
 @font-face {
-  font-family: "Lato";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/lato-v16-latin-300.eot"); /* IE9 Compat Modes */
-  src: local("Lato Light"), local("Lato-Light"),
-    url("../fonts/lato-v16-latin-300.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-300.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-300.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-300.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-300.svg#Lato")
-      format("svg"); /* Legacy iOS */
+  src: local("Poppins Light"), local("Poppins-Light"),
+    url("../fonts/poppins-v12-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* lato-regular - latin */
+/* poppins-regular - latin */
 @font-face {
-  font-family: "Lato";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/lato-v16-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local("Lato Regular"), local("Lato-Regular"),
-    url("../fonts/lato-v16-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-regular.svg#Lato")
-      format("svg"); /* Legacy iOS */
+  src: local("Poppins Regular"), local("Poppins-Regular"),
+    url("../fonts/poppins-v12-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* lato-700 - latin */
+/* poppins-500 - latin */
 @font-face {
-  font-family: "Lato";
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Poppins Medium"), local("Poppins-Medium"),
+    url("../fonts/poppins-v12-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
+    url("../fonts/poppins-v12-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/lato-v16-latin-700.eot"); /* IE9 Compat Modes */
-  src: local("Lato Bold"), local("Lato-Bold"),
-    url("../fonts/lato-v16-latin-700.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-700.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-700.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-700.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-700.svg#Lato")
-      format("svg"); /* Legacy iOS */
+  src: local("Poppins Bold"), local("Poppins-Bold"),
+    url("../fonts/poppins-v12-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* lato-900 - latin */
+/* poppins-800 - latin */
 @font-face {
-  font-family: "Lato";
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"),
+    url("../fonts/poppins-v12-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/lato-v16-latin-900.eot"); /* IE9 Compat Modes */
-  src: local("Lato Black"), local("Lato-Black"),
-    url("../fonts/lato-v16-latin-900.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-900.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-900.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-900.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-900.svg#Lato")
-      format("svg"); /* Legacy iOS */
+  src: local("Poppins Black"), local("Poppins-Black"),
+    url("../fonts/poppins-v12-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  padding-top: 35px;
+  padding-top: 55px;
   overflow-x: hidden;
 }
 
@@ -99,7 +101,7 @@ body {
 }
 
 .search-bar {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100%;
   font-size: 1.4em;
   padding: 15px 50px;
@@ -286,15 +288,15 @@ input:checked + .slider:before {
 
 /* Apps Shortcuts */
 #apps {
-  margin-top: 15px;
-  width: 108%;
+  margin-top: 10px;
+  width: 105%;
   margin-left: -6px;
 }
 
 .app {
   display: inline-block;
   width: 10%;
-  margin: 0 0.9% 15px;
+  margin: 0 0.9% 10px;
   padding: 15px 5px;
   text-align: center;
   border-radius: 10px;
