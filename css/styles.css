@@ -73,7 +73,7 @@ body {
   text-align: center;
 }
 
-/* v0.2 New settings UI. */
+/* v0.2 New settings UI. 
 .modal {
   position: fixed;
   left: 0;
@@ -110,7 +110,7 @@ body {
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-
+*/
 /* Dark mode switch */
 
 .theme-switch-wrapper {
