@@ -1,4 +1,3 @@
-body {
 /* poppins-200 - latin */
 @font-face {
   font-family: "Poppins";
@@ -355,14 +354,14 @@ input:checked + .slider:before {
     border-radius: 10px;
     cursor: pointer;
   }
-  .app .tooltiptext{
-      opacity: 0.9;
-  visibility: hidden;
-  width: 60px;
-  text-align: center;
-  padding: 5px 3px;
-  border-radius: 10px;
-  font-size: 1em;
-  margin-left: -40px;
+  .app .tooltiptext {
+    opacity: 0.9;
+    visibility: hidden;
+    width: 60px;
+    text-align: center;
+    padding: 5px 3px;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-left: -40px;
   }
 }
