@@ -12,29 +12,6 @@ const determineGreet = (
   } `);
 
 // Get month:
-const monthNames = [
-  "Jan",
-  "Febr",
-  "Marc",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
 determineGreet(new Date().getHours());
 
 // Settings/Modal trigger + close button.
@@ -55,25 +32,6 @@ function windowOnClick(event) {
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
-
-// Add zero infront
-
-// Date text
-var currentdate = new Date();
-var datetime =
-  " It's " +
-  days[currentdate.getDay()] +
-  " " +
-  monthNames[currentdate.getMonth()] +
-  " " +
-  currentdate.getDate() +
-  ", " +
-  currentdate.getHours() +
-  ":" +
-  currentdate.getMinutes();
-
-document.getElementById("time").innerHTML = datetime;
-document.write;
 
 // Dark mode Switch. Light > Dark | Dark < light
 const toggleSwitch = document.querySelector(

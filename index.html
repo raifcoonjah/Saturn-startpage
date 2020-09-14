@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="icons/css/line-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"
+    />
   </head>
   <!--[if lt IE 7]>
     <p class="browsehappy">
@@ -51,7 +56,7 @@
                 class="search-bar"
                 type="search"
                 id="search"
-                placeholder="Searching with DuckDuckGo"
+                placeholder="Search with DuckDuckGo"
                 autocomplete="off"
                 name="q"
                 autofocus
@@ -60,104 +65,111 @@
           </div>
         </div>
       </div>
-
       <button class="btn-modal" id="trigger">
         <i class="las la-ellipsis-v"></i>
       </button>
-
-      <!-- This feature will be added later on 
-      <button class="btn-hide2" id="#">
-        <i class="las la-stopwatch"></i>
-      </button>
- -->
+      <!-- Weather shortcut-->
+      <div class="weather-container" id="weather">
+        <div class="row">
+          <a
+            href="https://weather.com/weather/today/"
+            style="text-decoration: none"
+          >
+            <i id="weather-icon" class="inline wi"></i>
+            <div id="temp" class="inline"></div>
+          </a>
+        </div>
+      </div>
       <h5 class="yourapps"><i class="las la-boxes"></i> Shortcuts</h5>
       <h1></h1>
       <div class="popup">
         <div id="apps">
           <!-- Row 1 -->
+          <!-- Row 1 -->
           <a href="https://youtube.com">
             <div class="app">
-              <span class="tooltiptext">Open SaturnDash</span>
-              <i class="las la-user-astronaut"></i></div
-          ></a>
-
-          <a href="https://youtube.com">
-            <div class="app">
-              <span class="tooltiptext">test</span>
+              <span class="tooltiptext">Youtube</span>
               <i class="lab la-youtube"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://photos.google.com/">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Google Photos</span>
+              <i class="las la-photo-video"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://netflix.com">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Netflix</span>
+              <i class="las la-play"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://jellyfin.void1.xyz?from=saturn-startpage">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Cutejelly</span>
+              <i class="las la-film"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://github.com">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">github.com</span>
+              <i class="lab la-github"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://drive.google.com">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Google Drive</span>
+              <i class="lab la-google-drive"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://librespeed.org/">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Speedtest</span>
+              <i class="las la-tachometer-alt"></i></div
+          ></a>
+
+          <a href="https://app.simplenote.com/">
+            <div class="app">
+              <span class="tooltiptext">Simple Notes</span>
+              <i class="lar la-sticky-note"></i></div
           ></a>
           <!-- Row 2 -->
-          <a href="https://youtube.com">
+          <a href="https://app.simplelogin.io/">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Simple Login</span>
+              <i class="lar la-share-square"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://mail.google.com">
             <div class="app">
-              <span class="tooltiptext">freecodecamp </span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Gmail </span>
+              <i class="las la-inbox"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://freecodecamp.com/">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Freecodecamp</span>
+              <i class="lab la-free-code-camp"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://codepen.io/">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Codepen</span>
+              <i class="lab la-codepen"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://www.reddit.com/">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Reddit</span>
+              <i class="lab la-reddit"></i></div
           ></a>
 
-          <a href="https://youtube.com">
+          <a href="https://www.figma.com/">
             <div class="app">
-              <span class="tooltiptext">test</span>
-              <i class="lab la-youtube"></i></div
+              <span class="tooltiptext">Figma</span>
+              <i class="lab la-figma"></i></div
           ></a>
+          <!-- Row 3-->
         </div>
 
         <!-- Settings/Modal page -->
@@ -183,10 +195,10 @@
               You can now change the search engine just by clicking on the icon.
             </p>
             <h4><i class="las la-user-secret"></i> Privacy</h4>
-            Saturn respects your privacy, we only use localstorage to save
-            things, no connections are made to any external servers. Everything
-            is done locally.
-            <h1></h1>
+            Saturn respects your privacy, everything is loaded offline apart
+            from the weather widget. It grabs the current weather using
+            openweather.org
+            <hr />
             <p class="external-links">
               Created by
               <a
@@ -197,7 +209,7 @@
               >
             </p>
             <div class="footer">
-              <p>v0.2 release-4.3</p>
+              <p>v0.2 release-5</p>
             </div>
           </div>
         </div>
