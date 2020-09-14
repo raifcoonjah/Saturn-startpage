@@ -1,3 +1,4 @@
+body {
 /* poppins-200 - latin */
 @font-face {
   font-family: "Poppins";
@@ -105,6 +106,7 @@ body {
   width: 100%;
   font-size: 1.4em;
   padding: 15px 50px;
+  text-align: left;
   font-weight: 500;
   border-radius: 10px;
   box-sizing: border-box;
@@ -180,13 +182,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1rem 1.5rem;
-  width: 40vw;
+  width: 43vw;
+  height: 70 vh;
   border-radius: 10px;
 }
 .close-button {
   float: right;
-  width: 1.6rem;
-  line-height: 1.6rem;
+  width: 1.7rem;
+  line-height: 1.7rem;
   text-align: center;
   cursor: pointer;
   border-radius: 7px;
@@ -341,4 +344,25 @@ input:checked + .slider:before {
 /* Show the tooltip text when you mouse over the tooltip container */
 .app:hover .tooltiptext {
   visibility: visible;
+}
+@media only screen and (max-width: 600px) {
+  .app {
+    display: inline-block;
+    width: 7%;
+    margin: 0 0.7% 15px;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .app .tooltiptext{
+      opacity: 0.9;
+  visibility: hidden;
+  width: 60px;
+  text-align: center;
+  padding: 5px 3px;
+  border-radius: 10px;
+  font-size: 1em;
+  margin-left: -40px;
+  }
 }

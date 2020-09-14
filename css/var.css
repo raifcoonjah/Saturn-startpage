@@ -1,42 +1,135 @@
+/* lato-100 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/lato-v16-latin-100.eot"); /* IE9 Compat Modes */
+  src: local("Lato Hairline"), local("Lato-Hairline"),
+    url("../fonts/lato-v16-latin-100.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v16-latin-100.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-100.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v16-latin-100.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-100.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
+
+/* lato-300 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/lato-v16-latin-300.eot"); /* IE9 Compat Modes */
+  src: local("Lato Light"), local("Lato-Light"),
+    url("../fonts/lato-v16-latin-300.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v16-latin-300.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-300.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v16-latin-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-300.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("../fonts/lato-v16-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v16-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v16-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-regular.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato-v16-latin-700.eot"); /* IE9 Compat Modes */
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("../fonts/lato-v16-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v16-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v16-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-700.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/lato-v16-latin-900.eot"); /* IE9 Compat Modes */
+  src: local("Lato Black"), local("Lato-Black"),
+    url("../fonts/lato-v16-latin-900.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v16-latin-900.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-900.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v16-latin-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-900.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
 /* Light mode */
 :root {
-  --nc-tx-1: #000000;
-  --nc-tx-2: #1a1a1a;
-  --nc-bg-1: #ffffff;
-  --nc-bg-2: #ececec;
-  --nc-bg-3: #e5e7eb;
-  --nc-lk-1: #000000;
-  --nc-lk-2: #111111d8;
-  --nc-lk-tx: #ffffff;
-  --nc-ac-1: #303a58;
-  --nc-ac-tx: #ffffff;
-  --anim-bar-w: ;
-  --modal-bg-1: #eeeeee;
-  --modal-bg-2: #313131dc;
-  --close-button: rgb(182, 182, 182);
-  --anim-search-bar-bg-hover: #dadada;
-  --anim-search-bar-bg-focus: #d8d8d8;
-  --app-tooltip-bg: #cecece;
+  --sat-heading: #000000;
+  --sat-ids: #1a1a1a;
+  --sat-bg: #ffffff;
+  --sat-search-shortcuts: #dadada;
+  --sat-search-border: #e5e7eb;
+  --sat-icons: #000000;
+  --sat-icons-hovr: #111111d8;
+  --sat-links: #1a1a1a;
+  --sat-links-hovr: #494949;
+  --sat-default-button-txt: #ffffff;
+  --sat-txt-selector-clr: #303a58;
+  --sat-txt-selector-clr-after: #ffffff;
+  --sat-setting-bg-color: #eeeeee;
+  --sat-setting-bg-effect: #313131dc;
+  --sat-setting-close-btn: rgb(182, 182, 182);
+  --sat-search-bar-hvr: #dadada;
+  --sat-search-bar-focus: #d8d8d8;
+  --default-font: "lato", sans-serif;
+  --sat-default-hoveringspeed: 100ms;
+  --sat-border-radius: 10px;
+  --sat-shortcuts-hover: #cacaca;
 }
 /* Dark mode */
 /* Welcome to the dark side! */
 [data-theme="dark"] {
-  --nc-tx-1: #ffffff;
-  --nc-tx-2: #ffffff;
-  --nc-bg-1: #0d0f13;
-  --nc-bg-2: #191c24;
-  --nc-bg-3: #15191f;
-  --nc-lk-1: hsl(0, 0%, 95%);
-  --nc-lk-2: #fafafa;
-  --nc-lk-tx: #ffffff;
-  --nc-ac-1: #303a58;
-  --nc-ac-tx: #ffffff;
-  --modal-bg-1: #0d0f13;
-  --modal-bg-2: #1e232cde;
-  --close-button: #232933;
-  --anim-search-bar-bg-hover: #232933;
-  --anim-search-bar-bg-focus: #1e232c;
-  --app-tooltip-bg: #232933;
+  --sat-heading: #ffffff;
+  --sat-ids: #ffffff;
+  --sat-bg: #0d0f13;
+  --sat-search-shortcuts: #191c24;
+  --sat-search-border: #15191f;
+  --sat-icons: hsl(0, 0%, 95%);
+  --sat-icons-hovr: #fafafa;
+  --sat-links: hsl(0, 0%, 95%);
+  --sat-links-hovr: #919191;
+  --sat-default-button-txt: #fcfcfc;
+  --sat-txt-selector-clr: #303a58;
+  --sat-txt-selector-clr-after: #ffffff;
+  --sat-setting-bg-color: #0d0f13;
+  --sat-setting-bg-effect: #1e232cde;
+  --sat-setting-close-btn: #232933;
+  --sat-search-bar-hvr: #232933;
+  --sat-search-bar-focus: #1e232c;
+  --sat-tooltip-bg: #232933;
+  --sat-default-hoveringspeed: 0.2s;
+  --sat-shortcuts-hover: #232933;
 }
 
 * {
@@ -84,7 +177,7 @@ input,
 select,
 button {
   /* Set body font family and some finicky elements */
-  font-family: var(--nc-font-sans);
+  font-family: var(--default-font);
 }
 
 body {
@@ -96,18 +189,18 @@ body {
   overflow-x: hidden;
   word-break: break-word;
   overflow-wrap: break-word;
-  background: var(--nc-bg-1);
+  background: var(--sat-bg);
 
   /* Main body text */
-  color: var(--nc-tx-2);
+  color: var(--sat-ids);
   font-size: 1.03rem;
   line-height: 1.5;
 }
 
 ::selection {
   /* Set background color for selected text */
-  background: var(--nc-ac-1);
-  color: var(--nc-ac-tx);
+  background: var(--sat-txt-selector-clr);
+  color: var(--sat-txt-selector-clr-after);
 }
 
 h1,
@@ -117,17 +210,17 @@ h4,
 h5,
 h6 {
   line-height: 1;
-  color: var(--nc-tx-1);
+  color: var(--sat-heading);
   padding-top: 0.875rem;
 }
 
 h1,
 h2,
 h3 {
-  color: var(--nc-tx-1);
+  color: var(--sat-heading);
   padding-bottom: 2px;
   margin-bottom: 8px;
-  border-bottom: 1px solid var(--nc-bg-2);
+  border-bottom: 1px solid var(--sat-search-shortcuts);
 }
 
 h4,
@@ -161,11 +254,12 @@ h6 {
 }
 
 a {
-  color: var(--nc-lk-1);
+  color: var(--sat-links);
 }
 
 a:hover {
-  color: var(--nc-lk-2);
+  color: var(--sat-links-hovr);
+  transition: var(--sat-default-hoveringspeed);
 }
 
 abbr:hover {
@@ -175,8 +269,8 @@ abbr:hover {
 
 blockquote {
   padding: 1.5rem;
-  background: var(--nc-bg-2);
-  border-left: 5px solid var(--nc-bg-3);
+  background: var(--sat-search-shortcuts);
+  border-left: 5px solid var(--sat-search-border);
 }
 
 abbr {
@@ -189,22 +283,10 @@ blockquote *:last-child {
 }
 
 header {
-  background: var(--nc-bg-2);
-  border-bottom: 1px solid var(--nc-bg-3);
+  background: var(--sat-search-shortcuts);
+  border-bottom: 1px solid var(--sat-search-border);
   padding: 2rem 1.5rem;
-
-  /* This sets the right and left margins to cancel out the body's margins. It's width is still the same, but the background stretches across the page's width. */
-
   margin: -2rem calc(0px - (50vw - 50%)) 2rem;
-
-  /* Shorthand for:
-
-	margin-top: -2rem;
-	margin-bottom: 2rem;
-
-	margin-left: calc(0px - (50vw - 50%));
-	margin-right: calc(0px - (50vw - 50%)); */
-
   padding-left: calc(50vw - 50%);
   padding-right: calc(50vw - 50%);
 }
@@ -237,13 +319,13 @@ input[type="button"] {
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  color: var(--nc-tx-2);
-  background: var(--nc-bg-2);
+  color: var(--sat-ids);
+  background: var(--sat-search-shortcuts);
   border: 0;
-  border-radius: 10px;
+  border-radius: var(--sat-border-radius);
   box-sizing: border-box;
   cursor: pointer;
-  color: var(--nc-lk-tx);
+  color: var(--sat-default-button-txt);
 }
 
 a button[disabled],
@@ -285,8 +367,8 @@ samp,
 kbd,
 pre {
   /* The main preformatted style. This is changed slightly across different cases. */
-  background: var(--nc-bg-2);
-  border: 1px solid var(--nc-bg-3);
+  background: var(--sat-search-shortcuts);
+  border: 1px solid var(--sat-search-border);
   border-radius: 4px;
   padding: 3px 6px;
   font-size: 0.9rem;
@@ -294,7 +376,7 @@ pre {
 
 kbd {
   /* Makes the kbd element look like a keyboard key */
-  border-bottom: 3px solid var(--nc-bg-3);
+  border-bottom: 3px solid var(--sat-search-border);
 }
 
 pre {
@@ -327,8 +409,8 @@ code pre {
 details {
   /* Make the <details> look more "clickable" */
   padding: 0.6rem 1rem;
-  background: var(--nc-bg-2);
-  border: 1px solid var(--nc-bg-3);
+  background: var(--sat-search-shortcuts);
+  border: 1px solid var(--sat-search-border);
   border-radius: 15px;
 }
 
@@ -365,14 +447,14 @@ dd::before {
 hr {
   /* Reset the border of the <hr> separator, then set a better line */
   border: 0;
-  border-bottom: 1px solid var(--nc-bg-3);
+  border-bottom: 1px solid var(--sat-search-border);
   margin: 1rem auto;
 }
 
 fieldset {
   margin-top: 1rem;
   padding: 2rem;
-  border: 1px solid var(--nc-bg-3);
+  border: 1px solid var(--sat-search-border);
   border-radius: 4px;
 }
 
@@ -388,18 +470,18 @@ table {
 
 td,
 th {
-  border: 1px solid var(--nc-bg-3);
+  border: 1px solid var(--sat-search-border);
   text-align: left;
   padding: 0.5rem;
 }
 
 th {
-  background: var(--nc-bg-2);
+  background: var(--sat-search-shortcuts);
 }
 
 tr:nth-child(even) {
   /* Set every other cell slightly darker. Improves readability. */
-  background: var(--nc-bg-2);
+  background: var(--sat-search-shortcuts);
 }
 
 table caption {
@@ -431,22 +513,18 @@ ol ol {
 
 mark {
   padding: 3px 6px;
-  background: var(--nc-ac-1);
-  color: var(--nc-ac-tx);
+  background: var(--sat-txt-selector-clr);
+  color: var(--sat-txt-selector-clr-after);
 }
 
-.trigger {
-  background: var(--nc-ac-1);
-  color: var(--nc-tx-2);
-}
 textarea,
 select,
 input {
   padding: 6px 15px;
   margin-bottom: 0.5rem;
-  background: var(--nc-bg-2);
-  color: var(--nc-tx-2);
-  border: 1px solid var(--nc-bg-3);
+  background: var(--sat-search-shortcuts);
+  color: var(--sat-ids);
+  border: 1px solid var(--sat-search-border);
   border-radius: 15px;
   box-shadow: none;
   box-sizing: border-box;
@@ -458,10 +536,10 @@ img {
 
 /* New stuff */
 .search-bar:hover {
-  background: var(--anim-search-bar-bg-hover);
+  background: var(--sat-search-bar-hvr);
 }
 .search-bar:focus {
-  background: var(--anim-search-bar-bg-focus);
+  background: var(--sat-search-bar-focus);
 }
 .trigger {
   background: var(--anim-bar-trg);
@@ -471,47 +549,32 @@ img {
   background: var(--icon-settings-hover);
 }
 .modal {
-  background: var(--modal-bg-2);
-  color: var(--nc-tx-2);
+  background: var(--sat-setting-bg-effect);
+  color: var(--sat-ids);
 }
 .modal-content {
-  background: var(--modal-bg-1);
+  background: var(--sat-setting-bg-color);
 }
 .close-button {
-  color: var(--nc-tx-2);
-  background: var(--nc-bg-2);
+  color: var(--sat-ids);
+  transition: var(--sat-default-hoveringspeed);
 }
 .close-button:hover {
-  background: var(--anim-search-bar-bg-hover);
-}
-.external-links {
-  color: var(--nc-tx-2);
-}
-.app {
-  background: var(--nc-bg-2);
-}
-.app:hover {
-  background: var(--anim-search-bar-bg-hover);
-}
-.btn-modal {
-  color: var(--nc-tx-2);
-  background: var(--nc-bg-2);
-}
-.btn-modal:hover {
-  background: var(--anim-search-bar-bg-hover);
-}
-.btn-hide2 {
-  color: var(--nc-tx-2);
-  background: var(--nc-bg-2);
-}
-.btn-hide2:hover {
-  background: var(--anim-search-bar-bg-hover);
-}
-.app .tooltiptext {
-  color: var(--nc-tx-2);
-  background: var(--app-tooltip-bg);
-}
-.app .tooltiptext::after {
-  border-color: var(--app-tooltip-bg) transparent transparent transparent;
+  background: var(--sat-search-bar-hvr);
 }
 
+.btn-modal,
+.app {
+  color: var(--sat-ids);
+  background: var(--sat-search-shortcuts);
+}
+.btn-modal:hover {
+  background: var(--sat-search-bar-hvr);
+}
+.app:hover {
+  background: var(--sat-shortcuts-hover);
+}
+.app .tooltiptext {
+  color: var(--sat-ids);
+  background: var(--sat-shortcuts-hover);
+}
