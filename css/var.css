@@ -105,7 +105,7 @@
   --sat-setting-close-btn: rgb(182, 182, 182);
   --sat-search-bar-hvr: #dadada;
   --sat-search-bar-focus: #d8d8d8;
-  --default-font: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  --default-font: "Poppins", sans-serif;
   --sat-default-hoveringspeed: 100ms;
   --sat-border-radius: 10px;
   --sat-shortcuts-hover: #cacaca;
@@ -123,7 +123,7 @@
   --sat-links: hsl(0, 0%, 95%);
   --sat-links-hovr: #919191;
   --sat-default-button-txt: #fcfcfc;
-  --sat-txt-selector-clr: #303a58;
+  --sat-txt-selector-clr: #434e74;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #0d0f13;
   --sat-setting-bg-effect: #1e232cde;
@@ -133,7 +133,7 @@
   --sat-tooltip-bg: #232933;
   --sat-default-hoveringspeed: 0.2s;
   --sat-shortcuts-hover: #232933;
-  --default-font: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  --default-font: "Poppins", sans-serif;
 }
 
 * {
@@ -199,6 +199,7 @@ body {
   color: var(--sat-ids);
   font-size: 1.03rem;
   line-height: 1.5;
+  font-family: var(--default-font);
 }
 
 ::selection {
