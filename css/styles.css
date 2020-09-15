@@ -162,7 +162,7 @@ body {
   display: inline-block;
   position: relative;
   text-decoration: none;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.1s ease, color 0.1s ease;
 }
 
 .col ul li a::after {
@@ -187,9 +187,6 @@ body {
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.col ul li a:hover {
-  transform: translateX(3px);
-}
 .fill {
   display: flex;
   justify-content: center;
