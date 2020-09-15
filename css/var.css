@@ -199,6 +199,7 @@ body {
   color: var(--sat-ids);
   font-size: 1.03rem;
   line-height: 1.5;
+  font-family: var(--default-font);
 }
 
 ::selection {

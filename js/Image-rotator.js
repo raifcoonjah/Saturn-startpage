@@ -1,5 +1,5 @@
-// Uses javascript to switch between 3 different images. 
-// v0.1.2
+// Uses javascript to switch between 3 different images.
+// v0.1.2.1
 
 // Rotate Images using Mafs.
 var theImages = new Array();

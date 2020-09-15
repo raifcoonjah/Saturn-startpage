@@ -22,7 +22,7 @@ body {
   outline: none;
 }
 
-.seach-engine-logo {
+.search-engine-logo {
   padding: 12px 10px;
   position: absolute;
   box-sizing: border-box;
@@ -54,12 +54,8 @@ body {
   width: 199px;
 }
 
+.time,
 .gudmorning_username {
-  font-weight: 500;
-  text-align: center;
-  font-size: 15px;
-}
-.time {
   font-weight: 500;
   text-align: center;
   margin-top: -10px;
@@ -79,9 +75,7 @@ body {
 }
 
 /* Button used to open the seetings page */
-
-.btn-modal,
-.btn-hide2 {
+.btn-modal {
   outline: none;
   padding: 9px 9px;
   border-radius: 10px;
@@ -95,15 +89,8 @@ body {
   text-align: center;
   text-decoration: none;
 }
-.btn-hide2 {
-  margin-right: 10px;
-}
-.btn-hide2:hover {
-  transform: scale(1.1);
-  transition: 0.1s;
-}
 
-/* Apps Shortcuts */
+/* Shortcuts */
 #apps {
   margin-top: 10px;
   width: 105%;
@@ -128,36 +115,29 @@ body {
   font-size: 2.2rem;
 }
 
-/* Tooltip container */
-.app {
-  position: relative;
-  display: inline-block;
-}
-
 /* Tooltip text */
 .app .tooltiptext {
   opacity: 0.9;
   visibility: hidden;
-  width: 100px;
+  width: 95px;
   text-align: center;
   padding: 2px 3px;
   border-radius: 10px;
   font-size: 1em;
-
-  /* Position the tooltip text */
   position: absolute;
   z-index: 1;
   bottom: 110%;
   left: 60%;
   margin-left: -60px;
-
-  /* Fade in tooltip */
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .app:hover .tooltiptext {
   visibility: visible;
 }
+
+/* Improve side view */
+
 @media (max-width: 600px) {
   .app {
     width: 7%;
@@ -174,7 +154,123 @@ body {
     height: 80%;
     overflow: auto;
   }
-  .close-button{
+  .close-button {
     visibility: hidden;
   }
+}
+.weather-container {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.dark-mode-bg3,
+.dark-mode-bg,
+.dark-mode-bg2 {
+  padding: 10px;
+  border-radius: 10px;
+}
+.dark-mode-bg2,
+.dark-mode-bg3 {
+  margin-top: 10px;
+}
+
+/* v0.3 New settings UI. */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #11141db4;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.8rem 1rem;
+  width: 50%;
+  overflow: auto;
+  border-radius: 10px;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+*/
+/* Dark mode switch */
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch {
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  width: 55px;
+  left: 2px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #8da0dab0;
+  bottom: 0;
+  cursor: pointer;
+  left: -3px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.slider:before {
+  border: 2px solid;
+  bottom: 3px;
+  content: "";
+  height: 20px;
+  left: 5px;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+input:checked + .slider {
+  background-color: #303a58;
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

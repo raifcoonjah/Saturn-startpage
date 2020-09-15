@@ -9,22 +9,22 @@ document.getElementById("se_button").addEventListener("click", function () {
 
 const search_engines = [
   {
-    src: "duckduckgo.svg",
+    src: "ddg.svg",
     placeholder: "DuckDuckGo",
-    action: "https://www.duckduckgo.com/",
+    action: "https://duckduckgo.com/",
   },
   {
-    src: "google.svg",
+    src: "ggl.svg",
     placeholder: "Google",
     action: "https://www.google.com/search?q=",
   },
   {
-    src: "reddit.svg",
+    src: "rdt.svg",
     placeholder: "Reddit",
     action: "https://www.reddit.com/search?q=",
   },
   {
-    src: "youtube.svg",
+    src: "yt.svg",
     placeholder: "YouTube",
     action: "https://www.youtube.com/results?q=",
   },
