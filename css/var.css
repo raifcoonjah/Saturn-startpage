@@ -569,7 +569,10 @@ img {
 
 .btn-modal,
 .app,
-.weather-container {
+.weather-container,
+.dark-mode-bg,
+.dark-mode-bg2,
+.dark-mode-bg3 {
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
