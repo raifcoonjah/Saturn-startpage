@@ -109,6 +109,7 @@
   --sat-default-hoveringspeed: 100ms;
   --sat-border-radius: 10px;
   --sat-shortcuts-hover: #cacaca;
+  --sat-modal-app-section: #cacaca;
 }
 /* Dark mode */
 /* Welcome to the dark side! */
@@ -133,6 +134,7 @@
   --sat-tooltip-bg: #232933;
   --sat-default-hoveringspeed: 0.2s;
   --sat-shortcuts-hover: #232933;
+  --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -569,13 +571,16 @@ img {
 }
 
 .btn-modal,
-.app,
+.app {
+  color: var(--sat-ids);
+  background: var(--sat-search-shortcuts);
+}
 .weather-container,
 .dark-mode-bg,
 .dark-mode-bg2,
 .dark-mode-bg3 {
   color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
+  background: var(--sat-modal-app-section);
 }
 .btn-modal:hover {
   background: var(--sat-search-bar-hvr);
