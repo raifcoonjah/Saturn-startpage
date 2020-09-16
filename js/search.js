@@ -1,5 +1,5 @@
 // Allow the user, to switch three times.
-let se = 3;
+let se = 4;
 
 // Listens for click event in se_button, once clicked, se increments by one and cycleSearchEngines() is called to update the icon, placeholder, and form action
 document.getElementById("se_button").addEventListener("click", function () {
@@ -27,6 +27,11 @@ const search_engines = [
     src: "yt.svg",
     placeholder: "YouTube",
     action: "https://www.youtube.com/results?q=",
+  },
+  {
+    src: "cdp.svg",
+    placeholder: "Codepen",
+    action: "https://codepen.io/search/pens?q=",
   },
 ];
 
