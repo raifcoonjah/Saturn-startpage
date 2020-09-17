@@ -1,7 +1,6 @@
 body {
   box-sizing: border-box;
   padding-top: 45px;
-  overflow-x: hidden;
 }
 
 .full {
@@ -158,18 +157,6 @@ body {
     visibility: hidden;
   }
 }
-/* .weather-container {
-  position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
-  font-weight: 500;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 0.8rem;
-  border-radius: 10px;
-  text-decoration: none;
-} */
-
 .dark-mode-bg3,
 .dark-mode-bg,
 .dark-mode-bg2 {
@@ -192,16 +179,17 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0.15s, opacity 0.15s 0s, transform 0.15s;
 }
 .modal-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 0.8rem 1rem;
-  width: 50%;
-  overflow: auto;
+  padding: 0.5rem 0.8rem;
+  width: 50rem;
+  height: 35rem;
+  overflow-y: scroll;
   border-radius: 10px;
 }
 .close-button {
@@ -217,7 +205,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.15s 0s, transform 0.15s;
 }
 */
 /* Dark mode switch */

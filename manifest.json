@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Saturn Startpage",
   "short_name": "Saturn",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Saturn is a custom startpage thats build to replace your current new-tab with a custom one. Build with speed and user experience in mind.  ",
   "author": "mraif13",
 
@@ -12,6 +12,13 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+
+  "browser_specific_settings": {
+        "gecko": {
+            "id": "{27a40c05-824d-4852-8ef0-f96f0cc28cd2}",
+            "update_url": "https://raw.githubusercontent.com/go-shiori/shiori-web-ext/master/updates.json"
+        }
+    },
 
   "permissions": ["storage"],
   "content_security_policy": "script-src 'self'; object-src 'self'; img-src 'self'"

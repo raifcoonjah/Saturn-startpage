@@ -1,2 +1,6 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
+.created-by {
+  width: 150px;
+  height: 150px;
+}

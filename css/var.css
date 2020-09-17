@@ -566,9 +566,6 @@ img {
   color: var(--sat-ids);
   transition: var(--sat-default-hoveringspeed);
 }
-.close-button:hover {
-  background: var(--sat-search-bar-hvr);
-}
 
 .btn-modal,
 .app {
