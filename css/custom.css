@@ -1,13 +1,2 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
-.weather-container {
-  position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
-  font-weight: 500;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 0.8rem;
-  border-radius: 10px;
-  text-decoration: none;
-}

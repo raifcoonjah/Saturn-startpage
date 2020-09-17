@@ -109,6 +109,8 @@
   --sat-default-hoveringspeed: 100ms;
   --sat-border-radius: 10px;
   --sat-shortcuts-hover: #cacaca;
+  --sat-modal-app-section: #dbdbdb;
+  --gudmrning-txt: linear-gradient(180deg, #054b2d 0%, #014f80 100%);
 }
 /* Dark mode */
 /* Welcome to the dark side! */
@@ -133,7 +135,9 @@
   --sat-tooltip-bg: #232933;
   --sat-default-hoveringspeed: 0.2s;
   --sat-shortcuts-hover: #232933;
+  --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 
 * {
@@ -564,13 +568,14 @@ img {
   color: var(--sat-ids);
   transition: var(--sat-default-hoveringspeed);
 }
-.close-button:hover {
-  background: var(--sat-search-bar-hvr);
-}
 
+.slider:before,
+.search-bar:hover,
+.search-bar:focus {
+  transition: var(--sat-default-hoveringspeed);
+}
 .btn-modal,
-.app,
-.weather-container {
+.app {
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
@@ -583,4 +588,15 @@ img {
 .app .tooltiptext {
   color: var(--sat-ids);
   background: var(--sat-shortcuts-hover);
+}
+/* partial merge */
+.dark-mode-bg,
+.dark-mode-bg2,
+.dark-mode-bg3 {
+  color: var(--sat-ids);
+  background: var(--sat-modal-app-section);
+}
+.gudmorning {
+  background-color: var(--gudmrning-txt-bg);
+  background-image: var(--gudmrning-txt);
 }

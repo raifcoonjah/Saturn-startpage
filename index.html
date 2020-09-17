@@ -13,11 +13,6 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="icons/css/line-awesome.min.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"
-    />
   </head>
   <!--[if lt IE 7]>
     <p class="browsehappy">
@@ -36,7 +31,7 @@
           />
         </div>
       </div>
-      <p class="gudmorning_username" id="greetings"></p>
+      <p class="gudmorning" id="greetings"></p>
       <p class="time" id="time"></p>
       <div class="row">
         <div class="full">
@@ -68,18 +63,6 @@
       <button class="btn-modal" id="trigger">
         <i class="las la-ellipsis-v"></i>
       </button>
-      <!-- Weather shortcut-->
-      <div class="weather-container" id="weather">
-        <div class="row">
-          <a
-            href="https://weather.com/weather/today/"
-            style="text-decoration: none"
-          >
-            <i id="weather-icon" class="inline wi"></i>
-            <div id="temp" class="inline"></div>
-          </a>
-        </div>
-      </div>
       <h5 class="yourapps"><i class="las la-boxes"></i> Shortcuts</h5>
       <h1></h1>
       <div class="popup">
@@ -176,41 +159,59 @@
         <div class="modal">
           <div class="modal-content">
             <span class="close-button"><i class="las la-times"></i></span>
-            <h4>Saturn Settings</h4>
-            <h6>Change the theme, accent color & more..</h6>
-            <h3></h3>
-            <h4>Dark mode 🌛</h4>
-            <p>
-              Enabling dark mode switches the user interface to a more darker
-              color, making it easier on the eyes
-            </p>
-            <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-              </label>
+            <h4 style="font-weight: 500">Saturn Settings</h4>
+            <h6 style="font-weight: 500">
+              Change the theme, accent color & more..
+            </h6>
+            <br />
+            <div class="dark-mode-bg">
+              <h4>Dark mode 🌛</h4>
+              <p>
+                Enabling dark mode switches the user interface to a more darker
+                color, making it easier on the eyes
+              </p>
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+                </label>
+              </div>
             </div>
-            <h4>Change search 🔍</h4>
-            <p>
-              You can now change the search engine just by clicking on the icon.
-            </p>
-            <h4><i class="las la-user-secret"></i> Privacy</h4>
-            Saturn respects your privacy, everything is loaded offline apart
-            from the weather widget. It grabs the current weather using
-            openweather.org
-            <hr />
-            <p class="external-links">
-              Created by
-              <a
-                href="https://github.com/mraif13"
-                target="_blank"
-                style="text-decoration: none"
-                >mraif13</a
-              >
-            </p>
-            <div class="footer">
-              <p>v0.2 release-5</p>
+            <div class="dark-mode-bg2">
+              <h4>Change search 🔍</h4>
+              <p>
+                You can now change the search engine just by clicking on the
+                icon.
+              </p>
             </div>
+            <div class="dark-mode-bg3">
+              <h4>Privacy 🕴</h4>
+              Saturn respects your privacy, everything is loaded offline. No
+              connections are made to any external servers ever!
+            </div>
+            <div class="dark-mode-bg3">
+              <h4>Created by: mraif13 ✨</h4>
+              <img class="created-by" src="icons/peeps.svg " title="mraif13" />
+            </div>
+            <div class="dark-mode-bg3">
+              <h4>Misc 🤖</h4>
+              <p>
+                Version: 2.1 <span style="color: #ff4242">[BETA]</span>
+                <br />
+                Change Logs:
+                <a
+                  href="https://github.com/mraif13/Saturn-startpage/releases"
+                  target="_blank"
+                  class="external-links"
+                  >here</a
+                >
+                <br />
+                Icons: Line-awesome by icon8
+                <br />
+                Art Work: svgrepo.com | Universe 2
+              </p>
+            </div>
+            <br />
           </div>
         </div>
 
