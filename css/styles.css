@@ -57,6 +57,7 @@ body {
   text-align: center;
   font-size: 15px;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .time {
@@ -84,7 +85,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
-  transition: visibility 0s linear 0.15s, opacity 0.15s 0s, transform 0.15s;
+  transition: visibility 0s linear 90ms, opacity 90ms 0s, transform 90ms;
 }
 .modal-content {
   position: absolute;
@@ -117,7 +118,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.15s 0s, transform 0.15s;
+  transition: visibility 0s linear 0s, opacity 90ms 0s, transform 90ms;
 }
 .created-by {
   width: 150px;
@@ -193,7 +194,7 @@ input:checked + .slider:before {
 }
 .btn-modal:hover {
   transform: scale(1.1);
-  transition: 0.1s;
+  transition: 150ms;
 }
 .external-links {
   text-align: center;
@@ -224,8 +225,8 @@ input:checked + .slider:before {
 }
 
 .app:hover {
-  transform: scale(1.1);
-  transition: 100ms;
+  transform: translateY(-0.3rem);
+  transition: 0.2s;
 }
 
 .app i {
@@ -242,18 +243,19 @@ input:checked + .slider:before {
 .app .tooltiptext {
   opacity: 0.9;
   visibility: hidden;
-  width: 100px;
+  width: 95px;
   text-align: center;
-  padding: 2px 3px;
+  padding: 2px 2px;
   border-radius: 10px;
-  font-size: 1em;
+  font-size: 13px;
+  font-weight: 500;
 
   /* Position the tooltip text */
   position: absolute;
   z-index: 1;
-  bottom: 110%;
-  left: 60%;
-  margin-left: -60px;
+  bottom: 108%;
+  left: 50%;
+  margin-left: -50px;
 
   /* Fade in tooltip */
 }
@@ -262,6 +264,9 @@ input:checked + .slider:before {
 .app:hover .tooltiptext {
   visibility: visible;
 }
+
+/* Beta feature: */
+
 @media (max-width: 600px) {
   .app {
     width: 7%;
