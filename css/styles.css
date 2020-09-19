@@ -191,6 +191,9 @@ input:checked + .slider:before {
   border-radius: 10px;
   float: right;
 }
+.btn-modal i{
+    font-size: 1.2rem;
+}
 .btn-modal:hover {
   transform: scale(1.1);
 }
