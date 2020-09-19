@@ -185,8 +185,7 @@ input:checked + .slider:before {
 
 /* Button used to open the seetings page */
 
-.btn-modal,
-.btn-hide2 {
+.btn-modal {
   outline: none;
   padding: 9px 9px;
   border-radius: 10px;
@@ -194,7 +193,6 @@ input:checked + .slider:before {
 }
 .btn-modal:hover {
   transform: scale(1.1);
-  transition: 150ms;
 }
 .external-links {
   text-align: center;
@@ -205,10 +203,9 @@ input:checked + .slider:before {
 }
 .btn-hide2:hover {
   transform: scale(1.1);
-  transition: 0.1s;
 }
 
-/* Apps Shortcuts */
+/* Shortcuts */
 #apps {
   margin-top: 10px;
   width: 105%;
@@ -222,11 +219,6 @@ input:checked + .slider:before {
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
-}
-
-.app:hover {
-  transform: translateY(-0.3rem);
-  transition: 0.2s;
 }
 
 .app i {
@@ -247,20 +239,16 @@ input:checked + .slider:before {
   text-align: center;
   padding: 2px 2px;
   border-radius: 10px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
-
-  /* Position the tooltip text */
   position: absolute;
   z-index: 1;
   bottom: 108%;
   left: 50%;
   margin-left: -50px;
-
-  /* Fade in tooltip */
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
+/* Show tooltip on shortcuts hover */
 .app:hover .tooltiptext {
   visibility: visible;
 }
@@ -285,6 +273,8 @@ input:checked + .slider:before {
 }
 
 /* partial merge */
+
+/* BLOC */
 .dark-mode-bg3,
 .dark-mode-bg,
 .dark-mode-bg2 {

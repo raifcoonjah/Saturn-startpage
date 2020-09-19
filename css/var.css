@@ -111,6 +111,8 @@
   --sat-shortcuts-hover: #cacaca;
   --sat-modal-app-section: #dbdbdb;
   --gudmrning-txt: linear-gradient(180deg, #054b2d 0%, #014f80 100%);
+  --sat-accent-color1: #0271b6;
+  --brightness-headerimg: brightness(1);
 }
 /* Dark mode */
 /* Welcome to the dark side! */
@@ -138,6 +140,8 @@
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  --sat-accent-color1: #00f2fe;
+  --brightness-headerimg: brightness(1.1);
 }
 
 * {
@@ -564,16 +568,6 @@ img {
 .modal-content {
   background: var(--sat-setting-bg-color);
 }
-.close-button {
-  color: var(--sat-ids);
-  transition: var(--sat-default-hoveringspeed);
-}
-
-.slider:before,
-.search-bar:hover,
-.search-bar:focus {
-  transition: var(--sat-default-hoveringspeed);
-}
 .btn-modal,
 .app {
   color: var(--sat-ids);
@@ -589,6 +583,7 @@ img {
   color: var(--sat-ids);
   background: var(--sat-shortcuts-hover);
 }
+
 /* partial merge */
 .dark-mode-bg,
 .dark-mode-bg2,
@@ -599,4 +594,28 @@ img {
 .gudmorning {
   background-color: var(--gudmrning-txt-bg);
   background-image: var(--gudmrning-txt);
+}
+
+/* Hovering animations speed */
+.btn-modal:hover,
+.btn-hide2:hover,
+.app:hover,
+.slider:before,
+.search-bar:hover,
+.search-bar:focus .app:hover .tooltip {
+  transition: var(--sat-default-hoveringspeed);
+}
+
+/* Neon effect */
+.app:hover::before {
+  transform: scale(1.1);
+}
+.app:hover {
+  color: var(--sat-accent-color1);
+  box-shadow: 0 0 5px var(--sat-accent-color1);
+  text-shadow: 0 0 5px var(--sat-accent-color1);
+}
+
+.headerimg {
+  filter: var(--brightness-headerimg);
 }
