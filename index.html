@@ -64,6 +64,10 @@
       <button class="btn-modal" id="trigger">
         <i class="las la-cog"></i>
       </button>
+      <button class="btn-modal" onclick="openNav()">
+        <i class="las la-cog"></i>
+      </button>
+
       <h5 class="yourapps"><i class="las la-boxes"></i> Shortcuts</h5>
       <h1></h1>
       <div class="popup">
@@ -195,7 +199,7 @@
             <div class="dark-mode-bg3">
               <h4>Misc 🤖</h4>
               <p>
-                Version: 2.0 <span style="color: #ff4242">[BETA]</span>
+                Version: 2.1 <span style="color: #ff4242">[ALPHA]</span>
                 <br />
                 See what's new ✨:
                 <a
@@ -213,7 +217,135 @@
             <br />
           </div>
         </div>
+        <!-- New menu ALPHA ULTRA-->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <!-- partial:index.partial.html -->
+            <div class="container">
+              <form>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="search"
+                    placeholder="Search..."
+                    autocomplete="off"
+                    class="search-ouput"
+                  />
+                  <label for="search"><i class="fas fa-search"></i></label>
+                </div>
 
+                <div class="suggestion-list hidden"></div>
+              </form>
+
+              <div id="apps">
+                <div class="app">
+                  <i class="fab fa-adobe"></i>
+                  <p>Adobe</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-android"></i>
+                  <p>Android</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-apple"></i>
+                  <p>Apple</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-aws"></i>
+                  <p>AWS</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-behance"></i>
+                  <p>Behance</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-bitcoin"></i>
+                  <p>Bitcoin</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-chrome"></i>
+                  <p>Chrome</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-codepen"></i>
+                  <p>Codepen</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-dribbble"></i>
+                  <p>Dribbble</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-docker"></i>
+                  <p>Docker</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-dropbox"></i>
+                  <p>Dropbox</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-drupal"></i>
+                  <p>Drupal</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-edge"></i>
+                  <p>Edge</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-firefox"></i>
+                  <p>Firefox</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-font-awesome"></i>
+                  <p>Font Awesome</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-github"></i>
+                  <p>Github</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-google"></i>
+                  <p>Google</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-google-drive"></i>
+                  <p>Google Drive</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-google-play"></i>
+                  <p>Google Play</p>
+                </div>
+
+                <div class="app">
+                  <i class="fab fa-google-plus"></i>
+                  <p>Google Plus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript" src="js/moreapps.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/Image-rotator.js"></script>
         <script type="text/javascript" src="js/search.js"></script>

@@ -1,0 +1,106 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 15px;
+}
+
+form {
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.input-group {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translatey(-50%);
+  color: rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+input {
+  width: 100%;
+  padding: 8px 30px 8px 12px;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.06);
+  color: #f27121;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 1px;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  border-color: #f27121;
+}
+
+input:focus + label {
+  transform: scale(1.05) translatey(-50%);
+  color: #f27121;
+}
+
+#apps {
+  margin-top: 42px;
+}
+
+.app {
+  display: inline-block;
+  width: 20%;
+  margin: 0 2.2% 24px;
+  padding: 12px 6px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.app:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.app i {
+  font-size: 2.4em;
+  color: #fff;
+}
+
+.app p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin-top: 6px;
+  transition: 0.2s all ease;
+}
+
+.app:hover p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.suggestion-list {
+  background-color: #fff;
+  padding: 18px 24px 6px 12px;
+  border-radius: 0 0 6px 6px;
+  position: absolute;
+  width: 100%;
+  margin-top: 0px;
+  border: 2px solid #f27121;
+  border-top: none;
+}
+
+.suggestion-list.hidden {
+  display: none;
+}
+
+.suggestion-list p {
+  margin-bottom: 12px;
+}
+
+.suggestion-list i {
+  margin-right: 12px;
+  color: #f27121;
+}
