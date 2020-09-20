@@ -51,9 +51,9 @@ label {
 
 .cuteapps {
   display: inline-block;
-  width: 15%;
-  margin: 0 0.5% 24px;
-  padding: 0px 6px;
+  width: 12%;
+  margin: 0 0.3% 15px;
+  padding: 10px 10px;
   text-align: center;
   border: 3px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
