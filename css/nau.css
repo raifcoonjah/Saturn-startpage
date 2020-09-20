@@ -1,16 +1,15 @@
-.container {
-  max-width: 600px;
+.morecontainer {
   margin: 0 auto;
   padding: 60px 15px;
 }
 
-form {
+/* .searchy {
   max-width: 80%;
   margin: 0 auto;
   position: relative;
 }
 
-.input-group {
+.searchy-group {
   position: relative;
 }
 
@@ -23,7 +22,7 @@ label {
   transition: all 0.2s ease;
 }
 
-input {
+.search-main {
   width: 100%;
   padding: 8px 30px 8px 12px;
   border: 2px solid rgba(0, 0, 0, 0.08);
@@ -37,51 +36,45 @@ input {
   transition: all 0.2s ease;
 }
 
-input:focus {
+.search-main:focus {
   border-color: #f27121;
 }
 
-input:focus + label {
+.search-main:focus + label {
   transform: scale(1.05) translatey(-50%);
   color: #f27121;
+} */
+
+#cutieapps {
+  margin-top: 32px;
 }
 
-#apps {
-  margin-top: 42px;
-}
-
-.app {
+.cuteapps {
   display: inline-block;
-  width: 20%;
-  margin: 0 2.2% 24px;
-  padding: 12px 6px;
+  width: 15%;
+  margin: 0 0.5% 24px;
+  padding: 0px 6px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
   transition: all 0.2s ease;
 }
 
-.app:hover {
-  border-color: rgba(255, 255, 255, 0.5);
+.cuteapps:hover {
+  border-color: #0271b6;
 }
 
-.app i {
+.cuteapps i {
   font-size: 2.4em;
-  color: #fff;
 }
 
-.app p {
-  color: rgba(255, 255, 255, 0.5);
+.cuteapps p {
   font-size: 14px;
   margin-top: 6px;
   transition: 0.2s all ease;
 }
 
-.app:hover p {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.suggestion-list {
+/* .suggestion-list {
   background-color: #fff;
   padding: 18px 24px 6px 12px;
   border-radius: 0 0 6px 6px;
@@ -92,15 +85,18 @@ input:focus + label {
   border-top: none;
 }
 
-.suggestion-list.hidden {
+.app-me.hidden {
   display: none;
 }
 
 .suggestion-list p {
   margin-bottom: 12px;
 }
-
+.suggestion-list a {
+  margin-bottom: 12px;
+  color: red;
+}
 .suggestion-list i {
   margin-right: 12px;
   color: #f27121;
-}
+} */

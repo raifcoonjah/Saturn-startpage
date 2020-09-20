@@ -103,3 +103,12 @@ function getDate() {
 // Set up the clock and date
 document.getElementById("time").innerHTML =
   `It's ` + getDate() + `, ` + getTime();
+
+// Open overlay menu
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}

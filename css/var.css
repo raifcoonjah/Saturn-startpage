@@ -561,15 +561,19 @@ img {
 .trigger:hover {
   background: var(--icon-settings-hover);
 }
-.modal {
+.modal,
+.overlay {
   background: var(--sat-setting-bg-effect);
   color: var(--sat-ids);
 }
-.modal-content {
+.modal-content,
+.overlay-content,
+.morecontainer {
   background: var(--sat-setting-bg-color);
 }
 .btn-modal,
-.app {
+.app,
+.cuteapps {
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
