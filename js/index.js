@@ -105,6 +105,9 @@ document.getElementById("time").innerHTML =
   `It's ` + getDate() + `, ` + getTime();
 
 // Open overlay menu
+navy.addEventListener("click", openNav);
+navyclose.addEventListener("click", closeNav);
+
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
 }
