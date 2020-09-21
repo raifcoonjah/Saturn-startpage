@@ -16,7 +16,7 @@ determineGreet(new Date().getHours());
 
 // Settings/Modal trigger + close button.
 var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".btn-modal");
+var trigger = document.querySelector(".button-modal");
 var closeButton = document.querySelector(".close-button");
 
 function toggleModal() {

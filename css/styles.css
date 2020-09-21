@@ -172,16 +172,16 @@ input:checked + .slider:before {
 
 /* Button used to open the seetings page */
 
-.btn-modal {
+.button-modal {
   outline: none;
   padding: 9px 9px;
   border-radius: 10px;
   float: right;
 }
-.btn-modal i {
+.button-modal i {
   font-size: 1.2rem;
 }
-.btn-modal:hover {
+.button-modal:hover {
   transform: scale(1.1);
 }
 .external-links {
@@ -306,7 +306,6 @@ input:checked + .slider:before {
   z-index: 1;
   top: 0;
   left: 0;
-  transition: 0.5s;
   overflow-y: scroll;
 }
 
@@ -326,7 +325,6 @@ input:checked + .slider:before {
 }
 .closebtn:hover {
   color: #0271b6;
-  font-size: 38px;
 }
 
 @media screen and (max-height: 450px) {

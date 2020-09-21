@@ -3,6 +3,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
+  font-display: swap;
   src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"),
     url("../fonts/poppins-v13-latin-200.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -14,6 +15,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: local("Poppins Light"), local("Poppins-Light"),
     url("../fonts/poppins-v13-latin-300.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -25,6 +27,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local("Poppins Regular"), local("Poppins-Regular"),
     url("../fonts/poppins-v13-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -36,6 +39,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: local("Poppins Medium"), local("Poppins-Medium"),
     url("../fonts/poppins-v13-latin-500.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -47,6 +51,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
     url("../fonts/poppins-v13-latin-600.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -58,6 +63,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local("Poppins Bold"), local("Poppins-Bold"),
     url("../fonts/poppins-v13-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -69,6 +75,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
+  font-display: swap;
   src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"),
     url("../fonts/poppins-v13-latin-800.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -80,6 +87,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: local("Poppins Black"), local("Poppins-Black"),
     url("../fonts/poppins-v13-latin-900.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -557,13 +565,13 @@ img {
 .morecontainer {
   background: var(--sat-setting-bg-color);
 }
-.btn-modal,
+.button-modal,
 .app,
 .cuteapps {
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
-.btn-modal:hover {
+.button-modal:hover {
   background: var(--sat-search-bar-hvr);
 }
 .app .tooltiptext {
@@ -583,7 +591,8 @@ img {
 }
 
 /* Hovering animations speed */
-.btn-modal:hover,
+.overlay,
+.button-modal:hover,
 .btn-hide2:hover,
 .app:hover,
 .slider:before,
