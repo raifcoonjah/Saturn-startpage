@@ -256,7 +256,7 @@ input:checked + .slider:before {
   visibility: visible;
 }
 
-/* Beta feature: */
+/* > 600px use these to fix the UI */
 
 @media (max-width: 600px) {
   .app {
@@ -275,9 +275,7 @@ input:checked + .slider:before {
   }
 }
 
-/* partial merge */
-
-/* BLOC */
+/* Lighter background on settings page */
 .dark-mode-bg3,
 .dark-mode-bg,
 .dark-mode-bg2 {
