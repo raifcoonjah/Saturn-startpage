@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   transition: 0.5s;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .overlay-content {
@@ -41,10 +41,12 @@
 }
 .closebtn {
   -webkit-animation: in 1s;
+  animation: in 1s;
 }
 .closebtn:hover {
   color: #0271b6;
-  -webkit-animation: out 1s;
+  -webkit-animation: out 2s;
+  animation: out 2s;
 }
 
 @-webkit-keyframes in {
@@ -53,6 +55,23 @@
   }
   to {
     -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes in {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes out {
+  0% {
+    -webkit-transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
   }
 }
 
@@ -77,22 +96,4 @@
     top: 15px;
     right: 35px;
   }
-}
-.wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
-
-@keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
 }

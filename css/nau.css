@@ -1,6 +1,6 @@
 .morecontainer {
   margin: 0 auto;
-  padding: 60px 15px;
+  padding: 50px 4px;
 }
 
 /* .searchy {
@@ -52,26 +52,24 @@ label {
 .cuteapps {
   display: inline-block;
   width: 12%;
-  margin: 0 0.3% 15px;
-  padding: 10px 10px;
+  margin: 0 0.5% 18px;
+  padding: 4px 20px;
   text-align: center;
-  border: 3px solid rgba(255, 255, 255, 0.1);
+  border: 3px solid #1e232cde;
   border-radius: 10px;
-  transition: all 0.2s ease;
-}
-
-.cuteapps:hover {
-  border-color: #0271b6;
+  transition: all 0.1s ease;
 }
 
 .cuteapps i {
-  font-size: 2.4em;
+  font-size: 2.6em;
+  margin-top: 10px;
 }
 
 .cuteapps p {
-  font-size: 14px;
-  margin-top: 6px;
+  font-size: 16px;
+  margin-top: 10px;
   transition: 0.2s all ease;
+  font-weight: 500;
 }
 
 /* .suggestion-list {

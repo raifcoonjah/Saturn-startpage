@@ -619,6 +619,11 @@ img {
   box-shadow: 0 0 5px var(--sat-accent-color1);
   text-shadow: 0 0 5px var(--sat-accent-color1);
 }
+.cuteapps:hover {
+  background: var(--sat-shortcuts-hover);
+  box-shadow: 0 0 5px #0271b6;
+  border-color: #0271b6;
+}
 
 .headerimg {
   filter: var(--brightness-headerimg);
