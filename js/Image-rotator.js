@@ -1,4 +1,4 @@
-// Uses javascript to switch between 3 different images.
+// Uses javascript to switch between different images.
 // v0.2
 
 var images = [

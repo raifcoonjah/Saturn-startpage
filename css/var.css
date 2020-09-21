@@ -353,20 +353,6 @@ input[type="button"][disabled] {
   cursor: not-allowed;
 }
 
-/*
-.button:focus,
-.button:enabled:hover,
-button:focus,
-button:enabled:hover,
-input[type="submit"]:focus,
-input[type="submit"]:enabled:hover,
-input[type="reset"]:focus,
-input[type="reset"]:enabled:hover,
-input[type="button"]:focus,
-input[type="button"]:enabled:hover {
-  ;
-}
-*/
 code,
 pre,
 kbd,
@@ -580,15 +566,11 @@ img {
 .btn-modal:hover {
   background: var(--sat-search-bar-hvr);
 }
-.app:hover {
-  background: var(--sat-shortcuts-hover);
-}
 .app .tooltiptext {
   color: var(--sat-ids);
   background: var(--sat-shortcuts-hover);
 }
 
-/* partial merge */
 .dark-mode-bg,
 .dark-mode-bg2,
 .dark-mode-bg3 {
@@ -611,9 +593,6 @@ img {
 }
 
 /* Neon effect */
-.app:hover::before {
-  transform: scale(1.1);
-}
 .app:hover {
   color: var(--sat-accent-color1);
   box-shadow: 0 0 5px var(--sat-accent-color1);
@@ -623,6 +602,7 @@ img {
   background: var(--sat-shortcuts-hover);
   box-shadow: 0 0 5px #0271b6;
   border-color: #0271b6;
+  transition: 0.2s all ease;
 }
 
 .headerimg {

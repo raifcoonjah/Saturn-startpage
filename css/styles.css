@@ -4,13 +4,6 @@ body {
   overflow-x: hidden;
 }
 
-.full {
-  width: 100%;
-  margin: 0;
-  box-sizing: border-box;
-  text-align: center;
-}
-
 .search-bar {
   width: 100%;
   font-size: 1.2em;
@@ -22,7 +15,7 @@ body {
   outline: none;
 }
 
-.seach-engine-logo {
+.search-engine-logo {
   padding: 12px 10px;
   position: absolute;
   box-sizing: border-box;
@@ -47,6 +40,7 @@ body {
   width: 100%;
   text-align: center;
 }
+
 .fill img {
   flex-shrink: 0;
   width: 199px;
@@ -60,20 +54,13 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .time {
   font-weight: 500;
   text-align: center;
   margin-top: -10px;
   font-size: 15x;
 }
-
-.footer {
-  margin-top: -5px;
-  font-size: 15px;
-  font-weight: 500;
-  text-align: center;
-}
-
 /* v0.3 New settings UI. */
 .modal {
   position: fixed;
@@ -191,8 +178,8 @@ input:checked + .slider:before {
   border-radius: 10px;
   float: right;
 }
-.btn-modal i{
-    font-size: 1.2rem;
+.btn-modal i {
+  font-size: 1.2rem;
 }
 .btn-modal:hover {
   transform: scale(1.1);
@@ -200,12 +187,6 @@ input:checked + .slider:before {
 .external-links {
   text-align: center;
   text-decoration: none;
-}
-.btn-hide2 {
-  margin-right: 10px;
-}
-.btn-hide2:hover {
-  transform: scale(1.1);
 }
 
 /* Shortcuts */
@@ -257,6 +238,7 @@ input:checked + .slider:before {
 }
 
 /* > 600px use these to fix the UI */
+/* [ALPHA] Super buggy atm */
 
 @media (max-width: 600px) {
   .app {
@@ -275,14 +257,145 @@ input:checked + .slider:before {
   }
 }
 
-/* Lighter background on settings page */
+/* Adds a lighter background under each element in modal */
 .dark-mode-bg3,
 .dark-mode-bg,
 .dark-mode-bg2 {
   padding: 10px;
   border-radius: 10px;
-}
-.dark-mode-bg2,
-.dark-mode-bg3 {
   margin-top: 10px;
+}
+
+/* More apps */
+/* v0.1-beta */
+
+.morecontainer {
+  margin: 0 auto;
+  padding: 30px 4px;
+}
+
+#cutieapps {
+  margin-top: 30px;
+}
+
+.cuteapps {
+  display: inline-block;
+  width: 12%;
+  margin: 0 0.5% 15px;
+  padding: 4px 20px;
+  text-align: center;
+  border: 3px solid #1e232cde;
+  border-radius: 10px;
+}
+
+.cuteapps i {
+  font-size: 2.6em;
+  margin-top: 10px;
+}
+
+.cuteapps p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+/* Overlay + typewriter effect */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  overflow-y: scroll;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  font-size: 40px;
+}
+.closebtn:hover {
+  color: #0271b6;
+  font-size: 38px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Typewritter effect */
+.typewritter_1 {
+  animation: typewritter_1_anim;
+}
+.typewritter_2 {
+  animation: typewritter_2_anim;
+}
+.typewritter_1,
+.typewritter_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+.typewritter_1::after,
+.typewritter_2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 3s;
+  animation-timing-function: steps(1, end);
+}
+@keyframes typewritter_1_anim {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  60%,
+  90% {
+    width: 8em;
+  }
+}
+@keyframes typewritter_2_anim {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  10%,
+  40% {
+    width: 19.5em;
+  }
+}
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
