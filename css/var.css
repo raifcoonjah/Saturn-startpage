@@ -114,7 +114,7 @@
   --sat-search-bar-hvr: #dadada;
   --sat-search-bar-focus: #d8d8d8;
   --default-font: "Poppins", sans-serif;
-  --sat-default-hoveringspeed: 100ms;
+  --sat-default-hoveringspeed: 200ms;
   --sat-border-radius: 10px;
   --sat-shortcuts-hover: #cacaca;
   --sat-modal-app-section: #dbdbdb;
@@ -143,12 +143,12 @@
   --sat-search-bar-hvr: #232933;
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #232933;
-  --sat-default-hoveringspeed: 0.2s;
+  --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  --sat-accent-color1: #00f2fe;
+  --sat-accent-color1: #1ca8ff;
   --brightness-headerimg: brightness(1.1);
 }
 
@@ -609,9 +609,9 @@ img {
 }
 .cuteapps:hover {
   background: var(--sat-shortcuts-hover);
-  box-shadow: 0 0 5px #0271b6;
+  box-shadow: 0 0 10px #0271b6;
   border-color: #0271b6;
-  transition: 0.2s all ease;
+  transition: var(--sat-default-hoveringspeed) all ease;
 }
 
 .headerimg {

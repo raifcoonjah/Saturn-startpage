@@ -267,7 +267,7 @@ input:checked + .slider:before {
 }
 
 /* More apps */
-/* v0.1-beta */
+/* v0.2-beta */
 
 .morecontainer {
   margin: 0 auto;
@@ -354,7 +354,7 @@ input:checked + .slider:before {
   white-space: nowrap;
   display: inline-block;
   position: relative;
-  animation-duration: 15s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
 }
 .typewritter_1::after,
