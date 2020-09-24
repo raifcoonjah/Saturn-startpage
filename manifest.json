@@ -16,7 +16,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "{aa7b057d-721f-4ed8-ae73-563f767006ee}",
-      "update_url": "https://raw.githubusercontent.com/mraif13/Saturn-startpage/v0.2-dev-builds/updates.json"
+      "update_url": "https://raw.githubusercontent.com/mraif13/Saturn-startpage/master/updates.json"
     }
   },
 
