@@ -9,23 +9,13 @@
 Saturn Startpage (Legacy) was a fork of <b><a href="https://gitlab.com/madsouris/startpage" target="_blank">Vannrith Startpage</a></b>
 
 ## What's Saturn Startpage?
-ringed_planet Saturn is a custom startpage that was build to replace your current new-tab with a custom one. Build with speed zap and user experience brain in mind.
+]Saturn is a custom startpage that was build to replace your current new-tab with a custom one. Build with speed & user experience brain in mind.
 
 
 ## Installation 
-<b>Firefox: </b> Instead of changing firefox configuration files to make it open Saturn instead of the default firefox home, We're going to make use of the manifest.json file to build a extention to replace the new-tab.
+<b>Firefox: </b> Download the latest version on release page, updates are pushed using updates.json
   
-<b>Chrome users: </b> Follow the steps <a href="#for-chromeedge-users" title="Chrome">here</a>, you don't need to build anything.
-
-## Steps:
-1. Download all the files.
-2. Do your modifications.
-
-# For Firefox users:
-<br>
-
-3. Once that's done, use the <code>web-ext build</code> command to build the extention.
-(For firefox you need to build the extention and submit it to: <a href="https://addons.mozilla.org/en-GB/developers/" title="developerhub">Mozilla Developers Hub</a>)
+<b>Chrome/edge: </b> Download ZIP, then:
 
 <br>
 
@@ -43,8 +33,10 @@ ringed_planet Saturn is a custom startpage that was build to replace your curren
 
 ## Permission
 
-The only permission Saturn uses: "Change the page you see when you open a new tab"
+<ul>
+  x: "Change the page you see when you open a new tab" 
+  storage: To save changes using localstorage.
 <br>
 
 ## Privacy
-Saturn respects your privacy, we don't save anything, no connections are made to any external servers. Everything is done locally on device.
+Saturn respects your privacy, everything is loaded locally. No connections are made to any external servers ever 
