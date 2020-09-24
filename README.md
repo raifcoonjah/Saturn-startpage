@@ -9,7 +9,7 @@
 Saturn Startpage (Legacy) was a fork of <b><a href="https://gitlab.com/madsouris/startpage" target="_blank">Vannrith Startpage</a></b>
 
 ## What's Saturn Startpage?
-]Saturn is a custom startpage that was build to replace your current new-tab with a custom one. Build with speed & user experience brain in mind.
+Saturn is a custom startpage that was build to replace your current new-tab with a custom one. Build with speed & user experience brain in mind.
 
 
 ## Installation 
@@ -28,14 +28,16 @@ Saturn Startpage (Legacy) was a fork of <b><a href="https://gitlab.com/madsouris
 7. Locate the saturn folder <br>
 8. Click open<br>
 9. Voila! Saturn has been added to your browser.<br>
-  
+  </ul>
 <br>
 
 ## Permission
 
 <ul>
   x: "Change the page you see when you open a new tab" 
+  <br>
   storage: To save changes using localstorage.
+  </ul>
 <br>
 
 ## Privacy
