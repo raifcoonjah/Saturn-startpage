@@ -1,106 +1,7 @@
-/* v0.1.7: all fonts are now loaded locally, no connection are made to google's servers. */
-
-/* lato-100 - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../fonts/lato-v16-latin-100.eot"); /* IE9 Compat Modes */
-  src: local("Lato Hairline"), local("Lato-Hairline"),
-    url("../fonts/lato-v16-latin-100.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-100.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-100.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-100.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-100.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
-
-/* lato-300 - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/lato-v16-latin-300.eot"); /* IE9 Compat Modes */
-  src: local("Lato Light"), local("Lato-Light"),
-    url("../fonts/lato-v16-latin-300.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-300.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-300.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-300.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-300.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
-
-/* lato-regular - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/lato-v16-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local("Lato Regular"), local("Lato-Regular"),
-    url("../fonts/lato-v16-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-regular.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
-
-/* lato-700 - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/lato-v16-latin-700.eot"); /* IE9 Compat Modes */
-  src: local("Lato Bold"), local("Lato-Bold"),
-    url("../fonts/lato-v16-latin-700.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-700.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-700.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-700.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-700.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
-
-/* lato-900 - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/lato-v16-latin-900.eot"); /* IE9 Compat Modes */
-  src: local("Lato Black"), local("Lato-Black"),
-    url("../fonts/lato-v16-latin-900.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-900.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-900.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-900.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-900.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
-
 body {
-  font-family: "Lato", sans-serif;
-  width: 100vw;
-  min-height: 100vh;
   box-sizing: border-box;
-  padding-top: 35px;
+  padding-top: 45px;
   overflow-x: hidden;
-}
-
-.row {
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .full {
@@ -110,81 +11,32 @@ body {
   text-align: center;
 }
 
-.fullform {
-  font-family: "Lato", sans-serif;
+.search-bar {
   width: 100%;
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding: 15px 50px;
+  text-align: left;
   font-weight: 500;
-  border-radius: 15px;
+  border-radius: 10px;
   box-sizing: border-box;
   outline: none;
-  box-shadow: 0px 15px 25px 5px rgba(255, 255, 255, 0.01);
 }
-.s-logo {
-  padding: 14px 10px;
+
+.seach-engine-logo {
+  padding: 12px 10px;
   position: absolute;
-  width: 35px;
-  height: 35px;
-}
-
-.fullform:hover {
-  border: 1px solid rgba(71, 52, 82, 0.884);
-  transition: 0.2s;
-}
-.fullform:focus {
-  border: 1px solid rgba(68, 36, 94, 0.788);
-  transition: 0.2s;
-}
-
-.col {
-  padding: 10px;
   box-sizing: border-box;
-  width: 25%;
+  outline: none;
+  width: 55px;
+  height: 55px;
+  margin-top: 1px;
 }
 
-.col label {
-  font-weight: 800;
-  font-size: 1.4em;
+.search-bar:hover {
+  border: 1px solid #323a4965;
 }
-
-.col ul {
-  margin: 0;
-  padding: 5px 0px;
-}
-
-.col ul li {
-  margin-bottom: 10px;
-  list-style-type: none;
-}
-/* new animation */
-.col ul li a {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  transition: transform 0.1s ease, color 0.1s ease;
-}
-
-.col ul li a::after {
-  border-radius: 15px;
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  transform-origin: bottom right;
-  transition: transform 0.2s cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-.col ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.col ul li a {
-  transition: transform 0.2s ease, color 0.2s ease;
+.search-bar:focus {
+  border: 1px solid #323a49a2;
 }
 
 .fill {
@@ -197,87 +49,242 @@ body {
 }
 .fill img {
   flex-shrink: 0;
-  width: 200px;
+  width: 199px;
 }
 
-.gudmrn {
-  font-weight: 600;
+.gudmorning {
+  font-weight: 500;
   text-align: center;
+  font-size: 15px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .time {
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   margin-top: -10px;
+  font-size: 15x;
 }
 
 .footer {
-  padding: 25px 0px;
+  margin-top: -5px;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
 }
 
-/* Settings UI (alpha) */
+/* v0.3 New settings UI. */
 .modal {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  background-color: #11141dd7;
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 90ms, opacity 90ms 0s, transform 90ms;
 }
 .modal-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 1rem 1.5rem;
-  width: 35rem;
+  padding: 0.5rem 0.8rem;
+  width: 46rem;
+  height: 30rem;
+  overflow-y: scroll;
   border-radius: 10px;
+}
+.modal-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.modal-content::-webkit-scrollbar {
+  display: none;
 }
 .close-button {
   float: right;
-  width: 1.6rem;
+  width: 1.5rem;
   line-height: 1.6rem;
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 18px;
 }
-.close-button:hover {
-  transition: 0.1s;
-}
-
 .show-modal {
-  overflow: hidden;
-  position: fixed;
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 90ms 0s, transform 90ms;
+}
+.created-by {
+  width: 150px;
+  height: auto;
+}
+/* Dark mode switch */
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch {
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  width: 60px;
+  margin-bottom: 5px;
 }
 
-.trigger {
-  box-shadow: 0px 15px 25px 5px rgba(255, 255, 255, 0.01);
-  outline: none;
-  text-align: center;
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #8da0dab0;
+  bottom: 0;
+  cursor: pointer;
+  left: 2px;
   position: absolute;
-  right: 20px;
-  top: 25px;
-  width: 45px;
-  height: 45px;
-}
-.trigger:hover {
-  transition: 0.2s;
+  right: 0;
+  top: 0;
 }
 
-.ex-links {
+.slider:before {
+  border: 2px solid;
+  bottom: 3px;
+  content: "";
+  height: 20px;
+  left: 5px;
+  position: absolute;
+  width: 20px;
+}
+
+input:checked + .slider {
+  background-color: #303a58;
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.yourapps {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Button used to open the seetings page */
+
+.btn-modal {
+  outline: none;
+  padding: 9px 9px;
+  border-radius: 10px;
+  float: right;
+}
+.btn-modal i {
+  font-size: 1.2rem;
+}
+.btn-modal:hover {
+  transform: scale(1.1);
+}
+.external-links {
+  text-align: center;
   text-decoration: none;
 }
+.btn-hide2 {
+  margin-right: 10px;
+}
+.btn-hide2:hover {
+  transform: scale(1.1);
+}
 
-.ex-links:hover {
-  transition: 0.1s;
-  color: rgb(134, 134, 134);
+/* Shortcuts */
+#apps {
+  margin-top: 10px;
+  width: 105%;
+}
+
+.app {
+  display: inline-block;
+  width: 10%;
+  margin: 0 0.9% 10px;
+  padding: 15px 5px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.app i {
+  font-size: 2.2rem;
+}
+
+/* Tooltip container */
+.app {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.app .tooltiptext {
+  opacity: 0.9;
+  visibility: hidden;
+  width: 95px;
+  text-align: center;
+  padding: 2px 2px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  z-index: 1;
+  bottom: 108%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+/* Show tooltip on shortcuts hover */
+.app:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Beta feature: */
+
+@media (max-width: 600px) {
+  .app {
+    width: 7%;
+    margin: 0 0.7% 15px;
+    padding: 12px 20px;
+  }
+  .app .tooltiptext {
+    width: 60px;
+    padding: 5px 3px;
+    margin-left: -40px;
+  }
+  .modal-content {
+    width: 45%;
+    height: 40%;
+  }
+}
+
+/* partial merge */
+
+/* BLOC */
+.dark-mode-bg3,
+.dark-mode-bg,
+.dark-mode-bg2 {
+  padding: 10px;
+  border-radius: 10px;
+}
+.dark-mode-bg2,
+.dark-mode-bg3 {
+  margin-top: 10px;
 }

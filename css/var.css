@@ -1,47 +1,146 @@
-/* light mode */
-@media (prefers-color-scheme: light) {
-  :root {
-    --nc-tx-1: #000000;
-    --nc-tx-2: #1a1a1a;
-    --nc-bg-1: #ffffff;
-    --nc-bg-2: #e0e0e0;
-    --nc-bg-3: #e5e7eb;
-    --nc-lk-1: #000000;
-    --nc-lk-2: #111111d8;
-    --nc-lk-tx: #ffffff;
-    --nc-ac-1: #47008f;
-    --nc-ac-tx: #ffffff;
-    --anim-bar-w: #6203c0;
-    --anim-bar-trg: #8000ffce;
-    --modal-bg-1: #eeeeee;
-    --modal-bg-2: #313131dc;
-    --close-button: rgb(182, 182, 182);
-    --icon-settings-hover: #4f009edc;
-    --anim-fullform-bg-hover: #dadada;
-    --anim-fullform-bg-focus: #d8d8d8;
-  }
+/* poppins-200 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"),
+    url("../fonts/poppins-v12-latin-200.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --nc-tx-1: #ffffff;
-    --nc-tx-2: #eeeeee;
-    --nc-bg-1: #121212;
-    --nc-bg-2: #181818;
-    --nc-bg-3: #222222;
-    --nc-lk-1: hsl(0, 0%, 95%);
-    --nc-lk-2: #fafafa;
-    --nc-lk-tx: #ffffff;
-    --nc-ac-1: #8600c4;
-    --nc-ac-tx: #ffffff;
-    --anim-bar-w: #a300ee;
-    --anim-bar-trg: #222222ab;
-    --modal-bg-1: #222222;
-    --modal-bg-2: #313131dc;
-    --close-button: rgb(63, 63, 63);
-    --icon-settings-hover: #2b0057a1;
-    --anim-fullform-bg-hover: #2222228f;
-    --anim-fullform-bg-focus: #222222af;
-  }
+
+/* poppins-300 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Poppins Light"), local("Poppins-Light"),
+    url("../fonts/poppins-v12-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Poppins Regular"), local("Poppins-Regular"),
+    url("../fonts/poppins-v12-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Poppins Medium"), local("Poppins-Medium"),
+    url("../fonts/poppins-v12-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
+    url("../fonts/poppins-v12-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Poppins Bold"), local("Poppins-Bold"),
+    url("../fonts/poppins-v12-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"),
+    url("../fonts/poppins-v12-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Poppins Black"), local("Poppins-Black"),
+    url("../fonts/poppins-v12-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v12-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Light mode */
+:root {
+  --sat-heading: #000000;
+  --sat-ids: #1a1a1a;
+  --sat-bg: #ffffff;
+  --sat-search-shortcuts: #dadada;
+  --sat-search-border: #e5e7eb;
+  --sat-icons: #000000;
+  --sat-icons-hovr: #111111d8;
+  --sat-links: #1a1a1a;
+  --sat-links-hovr: #494949;
+  --sat-default-button-txt: #ffffff;
+  --sat-txt-selector-clr: #303a58;
+  --sat-txt-selector-clr-after: #ffffff;
+  --sat-setting-bg-color: #eeeeee;
+  --sat-setting-bg-effect: #313131dc;
+  --sat-setting-close-btn: rgb(182, 182, 182);
+  --sat-search-bar-hvr: #dadada;
+  --sat-search-bar-focus: #d8d8d8;
+  --default-font: "Poppins", sans-serif;
+  --sat-default-hoveringspeed: 200ms;
+  --sat-border-radius: 10px;
+  --sat-shortcuts-hover: #cacaca;
+  --sat-modal-app-section: #dbdbdb;
+  --gudmrning-txt: linear-gradient(180deg, #054b2d 0%, #014f80 100%);
+  --sat-accent-color1: #0271b6;
+  --brightness-headerimg: brightness(1);
+}
+/* Dark mode */
+/* Welcome to the dark side! */
+[data-theme="dark"] {
+  --sat-heading: #ffffff;
+  --sat-ids: #ffffff;
+  --sat-bg: #0d0f13;
+  --sat-search-shortcuts: #191c24;
+  --sat-search-border: #15191f;
+  --sat-icons: hsl(0, 0%, 95%);
+  --sat-icons-hovr: #fafafa;
+  --sat-links: hsl(0, 0%, 95%);
+  --sat-links-hovr: #919191;
+  --sat-default-button-txt: #fcfcfc;
+  --sat-txt-selector-clr: #434e74;
+  --sat-txt-selector-clr-after: #ffffff;
+  --sat-setting-bg-color: #0d0f13;
+  --sat-setting-bg-effect: #1e232cde;
+  --sat-setting-close-btn: #232933;
+  --sat-search-bar-hvr: #232933;
+  --sat-search-bar-focus: #1e232c;
+  --sat-tooltip-bg: #232933;
+  --sat-shortcuts-hover: #232933;
+  --sat-modal-app-section: #2329334d;
+  --default-font: "Poppins", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  --sat-accent-color1: #00f2fe;
+  --brightness-headerimg: brightness(1.1);
 }
 
 * {
@@ -89,7 +188,7 @@ input,
 select,
 button {
   /* Set body font family and some finicky elements */
-  font-family: var(--nc-font-sans);
+  font-family: var(--default-font);
 }
 
 body {
@@ -97,22 +196,23 @@ body {
   margin: 0 auto;
   max-width: 750px;
   padding: 2rem;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow-x: hidden;
   word-break: break-word;
   overflow-wrap: break-word;
-  background: var(--nc-bg-1);
+  background: var(--sat-bg);
 
   /* Main body text */
-  color: var(--nc-tx-2);
+  color: var(--sat-ids);
   font-size: 1.03rem;
   line-height: 1.5;
+  font-family: var(--default-font);
 }
 
 ::selection {
   /* Set background color for selected text */
-  background: var(--nc-ac-1);
-  color: var(--nc-ac-tx);
+  background: var(--sat-txt-selector-clr);
+  color: var(--sat-txt-selector-clr-after);
 }
 
 h1,
@@ -122,17 +222,17 @@ h4,
 h5,
 h6 {
   line-height: 1;
-  color: var(--nc-tx-1);
+  color: var(--sat-heading);
   padding-top: 0.875rem;
 }
 
 h1,
 h2,
 h3 {
-  color: var(--nc-tx-1);
+  color: var(--sat-heading);
   padding-bottom: 2px;
   margin-bottom: 8px;
-  border-bottom: 1px solid var(--nc-bg-2);
+  border-bottom: 1px solid var(--sat-search-shortcuts);
 }
 
 h4,
@@ -142,19 +242,19 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.23rem;
 }
 
 h2 {
-  font-size: 1.85rem;
+  font-size: 1.83rem;
 }
 
 h3 {
-  font-size: 1.55rem;
+  font-size: 1.53rem;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.23rem;
 }
 
 h5 {
@@ -162,15 +262,16 @@ h5 {
 }
 
 h6 {
-  font-size: 0.875rem;
+  font-size: 0.87rem;
 }
 
 a {
-  color: var(--nc-lk-1);
+  color: var(--sat-links);
 }
 
 a:hover {
-  color: var(--nc-lk-2);
+  color: var(--sat-links-hovr);
+  transition: var(--sat-default-hoveringspeed);
 }
 
 abbr:hover {
@@ -180,8 +281,8 @@ abbr:hover {
 
 blockquote {
   padding: 1.5rem;
-  background: var(--nc-bg-2);
-  border-left: 5px solid var(--nc-bg-3);
+  background: var(--sat-search-shortcuts);
+  border-left: 5px solid var(--sat-search-border);
 }
 
 abbr {
@@ -194,22 +295,10 @@ blockquote *:last-child {
 }
 
 header {
-  background: var(--nc-bg-2);
-  border-bottom: 1px solid var(--nc-bg-3);
+  background: var(--sat-search-shortcuts);
+  border-bottom: 1px solid var(--sat-search-border);
   padding: 2rem 1.5rem;
-
-  /* This sets the right and left margins to cancel out the body's margins. It's width is still the same, but the background stretches across the page's width. */
-
   margin: -2rem calc(0px - (50vw - 50%)) 2rem;
-
-  /* Shorthand for:
-
-	margin-top: -2rem;
-	margin-bottom: 2rem;
-
-	margin-left: calc(0px - (50vw - 50%));
-	margin-right: calc(0px - (50vw - 50%)); */
-
   padding-left: calc(50vw - 50%);
   padding-right: calc(50vw - 50%);
 }
@@ -237,17 +326,18 @@ input[type="reset"],
 input[type="button"] {
   font-size: 1rem;
   display: inline-block;
-  padding: 6px 6px 3px;
+  outline: none;
+  padding: 9px 9px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  background: var(--nc-lk-1);
-  color: var(--nc-lk-tx);
+  color: var(--sat-ids);
+  background: var(--sat-search-shortcuts);
   border: 0;
-  border-radius: 15px;
+  border-radius: var(--sat-border-radius);
   box-sizing: border-box;
   cursor: pointer;
-  color: var(--nc-lk-tx);
+  color: var(--sat-default-button-txt);
 }
 
 a button[disabled],
@@ -289,8 +379,8 @@ samp,
 kbd,
 pre {
   /* The main preformatted style. This is changed slightly across different cases. */
-  background: var(--nc-bg-2);
-  border: 1px solid var(--nc-bg-3);
+  background: var(--sat-search-shortcuts);
+  border: 1px solid var(--sat-search-border);
   border-radius: 4px;
   padding: 3px 6px;
   font-size: 0.9rem;
@@ -298,7 +388,7 @@ pre {
 
 kbd {
   /* Makes the kbd element look like a keyboard key */
-  border-bottom: 3px solid var(--nc-bg-3);
+  border-bottom: 3px solid var(--sat-search-border);
 }
 
 pre {
@@ -331,8 +421,8 @@ code pre {
 details {
   /* Make the <details> look more "clickable" */
   padding: 0.6rem 1rem;
-  background: var(--nc-bg-2);
-  border: 1px solid var(--nc-bg-3);
+  background: var(--sat-search-shortcuts);
+  border: 1px solid var(--sat-search-border);
   border-radius: 15px;
 }
 
@@ -369,14 +459,14 @@ dd::before {
 hr {
   /* Reset the border of the <hr> separator, then set a better line */
   border: 0;
-  border-bottom: 1px solid var(--nc-bg-3);
+  border-bottom: 1px solid var(--sat-search-border);
   margin: 1rem auto;
 }
 
 fieldset {
   margin-top: 1rem;
   padding: 2rem;
-  border: 1px solid var(--nc-bg-3);
+  border: 1px solid var(--sat-search-border);
   border-radius: 4px;
 }
 
@@ -392,18 +482,18 @@ table {
 
 td,
 th {
-  border: 1px solid var(--nc-bg-3);
+  border: 1px solid var(--sat-search-border);
   text-align: left;
   padding: 0.5rem;
 }
 
 th {
-  background: var(--nc-bg-2);
+  background: var(--sat-search-shortcuts);
 }
 
 tr:nth-child(even) {
   /* Set every other cell slightly darker. Improves readability. */
-  background: var(--nc-bg-2);
+  background: var(--sat-search-shortcuts);
 }
 
 table caption {
@@ -435,23 +525,19 @@ ol ol {
 
 mark {
   padding: 3px 6px;
-  background: var(--nc-ac-1);
-  color: var(--nc-ac-tx);
+  background: var(--sat-txt-selector-clr);
+  color: var(--sat-txt-selector-clr-after);
 }
 
-.trigger {
-  background: var(--nc-ac-1);
-  color: var(--nc-tx-2);
-}
 textarea,
 select,
 input {
   padding: 6px 15px;
   margin-bottom: 0.5rem;
-  background: var(--nc-bg-2);
-  color: var(--nc-tx-2);
-  border: 1px solid var(--nc-bg-3);
-  border-radius: 15px;
+  background: var(--sat-search-shortcuts);
+  color: var(--sat-ids);
+  border: 1px solid var(--sat-search-border);
+  border-radius: 10px;
   box-shadow: none;
   box-sizing: border-box;
 }
@@ -461,11 +547,11 @@ img {
 }
 
 /* New stuff */
-.fullform:hover {
-  background: var(--anim-fullform-bg-hover);
+.search-bar:hover {
+  background: var(--sat-search-bar-hvr);
 }
-.fullform:focus {
-  background: var(--anim-fullform-bg-focus);
+.search-bar:focus {
+  background: var(--sat-search-bar-focus);
 }
 .trigger {
   background: var(--anim-bar-trg);
@@ -474,20 +560,61 @@ img {
 .trigger:hover {
   background: var(--icon-settings-hover);
 }
-.col ul li a::after {
-  background-color: var(--anim-bar-w);
-}
-
 .modal {
-  background: var(--modal-bg-2);
-  color: var(--nc-tx-2);
+  background: var(--sat-setting-bg-effect);
+  color: var(--sat-ids);
 }
 .modal-content {
-  background: var(--modal-bg-1);
+  background: var(--sat-setting-bg-color);
 }
-.close-button {
-  background-color: var(--close-button);
+.btn-modal,
+.app {
+  color: var(--sat-ids);
+  background: var(--sat-search-shortcuts);
 }
-.ex-links {
-  color: var(--nc-tx-2);
+.btn-modal:hover {
+  background: var(--sat-search-bar-hvr);
+}
+.app:hover {
+  background: var(--sat-shortcuts-hover);
+}
+.app .tooltiptext {
+  color: var(--sat-ids);
+  background: var(--sat-shortcuts-hover);
+}
+
+/* partial merge */
+.dark-mode-bg,
+.dark-mode-bg2,
+.dark-mode-bg3 {
+  color: var(--sat-ids);
+  background: var(--sat-modal-app-section);
+}
+.gudmorning {
+  background-color: var(--gudmrning-txt-bg);
+  background-image: var(--gudmrning-txt);
+}
+
+/* Hovering animations speed */
+.btn-modal:hover,
+.btn-hide2:hover,
+.app:hover,
+.slider:before,
+.search-bar:hover,
+.search-bar:focus .app:hover .tooltip {
+  transition: var(--sat-default-hoveringspeed);
+}
+
+/* Neon effect */
+.app:hover::before {
+  transform: scale(1.1);
+}
+.app:hover {
+  color: var(--sat-accent-color1);
+  box-shadow: 0 0 5px var(--sat-accent-color1);
+  text-shadow: 0 0 5px var(--sat-accent-color1);
+}
+
+.headerimg {
+  filter: var(--brightness-headerimg);
 }
