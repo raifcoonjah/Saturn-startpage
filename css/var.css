@@ -602,6 +602,7 @@ img {
 }
 
 /* Neon effect */
+
 .app:hover {
   color: var(--sat-accent-color1);
   box-shadow: 0 0 5px var(--sat-accent-color1);
@@ -613,7 +614,9 @@ img {
   border-color: #0271b6;
   transition: var(--sat-default-hoveringspeed) all ease;
 }
-
+.cuteapps {
+  border: 3px solid var(--sat-shortcuts-hover);
+}
 .headerimg {
   filter: var(--brightness-headerimg);
 }

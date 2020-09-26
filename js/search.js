@@ -1,5 +1,4 @@
-// Allow the user, to switch three times.
-let se = 3;
+let se = 3; // ALlow the user to press the button (set amount)  of times.
 
 // Listens for click event in se_button, once clicked, se increments by one and cycleSearchEngines() is called to update the icon, placeholder, and form action
 document.getElementById("se_button").addEventListener("click", function () {
@@ -37,4 +36,6 @@ const cycleSearchEngines = (se) => {
   document.getElementById("search").placeholder =
     "Search with " + curData.placeholder;
   document.getElementById("search_eng_form").action = curData.action;
+
+  
 };
