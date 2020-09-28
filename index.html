@@ -6,8 +6,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Saturn - New Tab</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saturn - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/var.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -22,46 +22,46 @@
   <![endif]-->
   <body>
     <main>
-      <div class="row">
-        <div class="fill">
-          <img
-            id="headerimg"
-            class="headerimg"
-            alt="Unable to find img files, check internals."
-            title="Have a nice day!"
-          />
-        </div>
+      <div class="fill">
+        <img
+          id="headerimg"
+          class="headerimg"
+          alt="Unable to find img files, check internals."
+          title="Have a nice day!"
+        />
       </div>
       <p class="gudmorning" id="greetings"></p>
       <p class="time" id="time"></p>
-      <div class="row">
-        <div class="full">
-          <div class="search_block">
-            <form
-              id="search_eng_form"
-              method="get"
-              action="https://www.duckduckgo.com/"
+      <div class="full">
+        <div class="search_block">
+          <form
+            id="search_eng_form"
+            method="get"
+            action="https://www.duckduckgo.com/"
+          >
+            <a
+              href="javascript:void(0)"
+              class="search-engine-logo"
+              id="se_button"
             >
-              <a
-                href="javascript:void(0)"
-                class="seach-engine-logo"
-                id="se_button"
-              >
-                <img id="se_icon" src="icons/duckduckgo.svg" /> </a
-              ><input
-                class="search-bar"
-                type="search"
-                id="search"
-                placeholder="Search with DuckDuckGo"
-                autocomplete="off"
-                name="q"
-                autofocus
-              />
-            </form>
-          </div>
+              <img
+                id="se_icon"
+                src="icons/duckduckgo.svg"
+                alt="Search engine logo"
+              /> </a
+            ><input
+              class="search-bar"
+              type="search"
+              id="search"
+              placeholder="Search with DuckDuckGo"
+              autocomplete="off"
+              name="q"
+              autofocus
+            />
+          </form>
         </div>
       </div>
-      <button class="btn-modal" id="trigger">
+      <button class="button-modal" id="trigger">
         <i class="las la-cog"></i>
       </button>
       <h5 class="yourapps"><i class="las la-boxes"></i> Shortcuts</h5>
@@ -101,11 +101,6 @@
             <div class="app">
               <span class="tooltiptext">G-Drive</span>
               <i class="lab la-google-drive"></i></div
-          ></a>
-          <a href="https://devdocs.io/">
-            <div class="app">
-              <span class="tooltiptext">Devdocs</span>
-              <i class="las la-book"></i></div
           ></a>
 
           <a href="https://instagram.com">
@@ -147,9 +142,14 @@
               <span class="tooltiptext">I'm Feeling lucky!</span>
               <i class="las la-smile-wink"></i></div
           ></a>
+          <!-- Open More apps -->
+          <div class="app" id="navy">
+            <span class="tooltiptext">More apps</span>
+            <i class="las la-icons"></i>
+          </div>
         </div>
 
-        <!-- Settings/Modal page! -->
+        <!-- Settings/Modal page -->
         <div class="modal">
           <div class="modal-content">
             <span class="close-button"></span>
@@ -185,9 +185,11 @@
             <div class="dark-mode-bg3">
               <h4>Misc 🤖</h4>
               <p>
-                Version: 2.0.7.8 <span style="color: #659157">[Stable]</span>
+                Version: 2.1 <span style="color: #fa2525">[BETA]</span>
                 <br />
-                See what's new:
+                More apps: v1.0.1 <span style="color: #fa2525">[BETA]</span>
+                <br />
+                See what's new in v2.1 ✨:
                 <a
                   href="http://simp.ly/p/LDZV6F"
                   target="_blank"
@@ -199,18 +201,189 @@
                 <br />
                 Art Work: svgrepo.com | Universe 2
                 <br />
-                I'm feeling lucky! | Powered by therandombutton.github.io
               </p>
             </div>
             <br />
           </div>
         </div>
 
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/image-rotate.min.js"></script>
-        <script type="text/javascript" src="js/search.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
+        <!-- New apps [BETA x PUBLIC]-->
+        <div id="myNav" class="overlay">
+          <a href="#" class="closebtn" id="navyclose"
+            ><i class="las la-times"></i
+          ></a>
+
+          <div class="morecontainer">
+            <div class="overlay-content">
+              <h4>
+                <span class="typewritter_1"
+                  >Where to <span style="color: #0271b6">next</span>?</span
+                >
+                <span class="typewritter_2"
+                  >Believe in the beauty of your
+                  <span style="color: #ff9a3c">dreams</span>.</span
+                >
+              </h4>
+              <div id="cutieapps">
+                <a href="https://9to5mac.com/">
+                  <div class="cuteapps">
+                    <i class="lab la-apple"></i>
+                    <p>Apple news</p>
+                  </div></a
+                >
+                <a href="https://aliexpress.com">
+                  <div class="cuteapps">
+                    <i class="las la-shopping-basket"></i>
+                    <p>Aliexpress</p>
+                  </div></a
+                >
+                <a href="https://dev.to/">
+                  <div class="cuteapps">
+                    <i class="lab la-dev"></i>
+                    <p>Dev.to</p>
+                  </div></a
+                >
+                <a href="https://devdocs.io/">
+                  <div class="cuteapps">
+                    <i class="las la-book"></i>
+                    <p>Devdocs</p>
+                  </div></a
+                >
+                <a href="https://deezer.com">
+                  <div class="cuteapps">
+                    <i class="las la-music"></i>
+                    <p>Deezer</p>
+                  </div></a
+                >
+                <a href="https://orchomenos.github.io/Design-resources/">
+                  <div class="cuteapps">
+                    <i class="las la-pencil-ruler"></i>
+                    <p>Design resources</p>
+                  </div></a
+                >
+                <a href="https://ebay.com">
+                  <div class="cuteapps">
+                    <i class="lab la-ebay"></i>
+                    <p>Ebay</p>
+                  </div></a
+                >
+                <a href="https://facebook.com">
+                  <div class="cuteapps">
+                    <i class="lab la-facebook-square"></i>
+                    <p>Facebook</p>
+                  </div></a
+                >
+                <a href="https://freecodecamp.org">
+                  <div class="cuteapps">
+                    <i class="lab la-free-code-camp"></i>
+                    <p>Freecodecamp</p>
+                  </div></a
+                >
+                <a href="https://maps.google.com">
+                  <div class="cuteapps">
+                    <i class="las la-map-marked"></i>
+                    <p>Google Maps</p>
+                  </div></a
+                >
+                <a href="https://calendar.google.com">
+                  <div class="cuteapps">
+                    <i class="las la-calendar"></i>
+                    <p>Google Calendar</p>
+                  </div></a
+                >
+                <a href="https://internetingishard.com/">
+                  <div class="cuteapps">
+                    <i class="las la-wifi"></i>
+                    <p>interneting is hard</p>
+                  </div></a
+                >
+                <a href="https://learn-anything.xyz/">
+                  <div class="cuteapps">
+                    <i class="las la-map"></i>
+                    <p>Learn anything</p>
+                  </div></a
+                >
+                <a href="https://mega.nz">
+                  <div class="cuteapps">
+                    <i class="lab la-cloudversify"></i>
+                    <p>Mega Cloud</p>
+                  </div></a
+                >
+                <a href="https://mobbin.design/">
+                  <div class="cuteapps">
+                    <i class="las la-dice-d20"></i>
+                    <p>Mobbin</p>
+                  </div></a
+                >
+                <a href="https://mail.protonmail.com/login">
+                  <div class="cuteapps">
+                    <i class="las la-envelope"></i>
+                    <p>Protonmail</p>
+                  </div></a
+                >
+                <a href="https://piracy.now.sh/">
+                  <div class="cuteapps">
+                    <i class="las la-skull-crossbones"></i>
+                    <p>Piracy now</p>
+                  </div></a
+                >
+                <a href="https://web.whatsapp.com">
+                  <div class="cuteapps">
+                    <i class="lab la-product-hunt"></i>
+                    <p>Product Hunt</p>
+                  </div></a
+                >
+                <a href="https://spotify.com">
+                  <div class="cuteapps">
+                    <i class="lab la-spotify"></i>
+                    <p>Spotify</p>
+                  </div></a
+                >
+                <a href="https://www.pinterest.com/">
+                  <div class="cuteapps">
+                    <i class="lab la-pinterest"></i>
+                    <p>Pinterest</p>
+                  </div></a
+                >
+                <a href="https://twitch.tv">
+                  <div class="cuteapps">
+                    <i class="lab la-twitch"></i>
+                    <p>Twitch</p>
+                  </div></a
+                >
+                <a href="https://unsplash.com">
+                  <div class="cuteapps">
+                    <i class="las la-image"></i>
+                    <p>Unsplash</p>
+                  </div></a
+                >
+                <a href="https://wikipedia.com">
+                  <div class="cuteapps">
+                    <i class="lab la-wikipedia-w"></i>
+                    <p>Wikipedia</p>
+                  </div></a
+                >
+                <a href="https://web.whatsapp.com">
+                  <div class="cuteapps">
+                    <i class="lab la-whatsapp"></i>
+                    <p>Whatsapp</p>
+                  </div></a
+                >
+                <a href="https://raindrop.io">
+                  <div class="cuteapps">
+                    <i class="las la-cloud-rain"></i>
+                    <p>Raindrop</p>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <script type="text/javascript" src="js/index.js"></script>
+      <script type="text/javascript" src="js/Image-rotator.min.js"></script>
+      <script type="text/javascript" src="js/search.js"></script>
+      <script type="text/javascript" src="js/custom.js"></script>
     </main>
   </body>
 </html>

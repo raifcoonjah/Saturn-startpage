@@ -3,10 +3,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
+  font-display: swap;
   src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"),
-    url("../fonts/poppins-v12-latin-200.woff2") format("woff2"),
+    url("../fonts/poppins-v13-latin-200.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v12-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v13-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-300 - latin */
@@ -14,10 +15,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: local("Poppins Light"), local("Poppins-Light"),
-    url("../fonts/poppins-v12-latin-300.woff2") format("woff2"),
+    url("../fonts/poppins-v13-latin-300.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v12-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v13-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-regular - latin */
@@ -25,10 +27,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local("Poppins Regular"), local("Poppins-Regular"),
-    url("../fonts/poppins-v12-latin-regular.woff2") format("woff2"),
+    url("../fonts/poppins-v13-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-500 - latin */
@@ -36,10 +39,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: local("Poppins Medium"), local("Poppins-Medium"),
-    url("../fonts/poppins-v12-latin-500.woff2") format("woff2"),
+    url("../fonts/poppins-v13-latin-500.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v12-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v13-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-600 - latin */
@@ -47,10 +51,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
-    url("../fonts/poppins-v12-latin-600.woff2") format("woff2"),
+    url("../fonts/poppins-v13-latin-600.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v12-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-700 - latin */
@@ -58,10 +63,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local("Poppins Bold"), local("Poppins-Bold"),
-    url("../fonts/poppins-v12-latin-700.woff2") format("woff2"),
+    url("../fonts/poppins-v13-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-800 - latin */
@@ -69,10 +75,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
+  font-display: swap;
   src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"),
-    url("../fonts/poppins-v12-latin-800.woff2") format("woff2"),
+    url("../fonts/poppins-v13-latin-800.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v12-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v13-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-900 - latin */
@@ -80,10 +87,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
   src: local("Poppins Black"), local("Poppins-Black"),
-    url("../fonts/poppins-v12-latin-900.woff2") format("woff2"),
+    url("../fonts/poppins-v13-latin-900.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v12-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v13-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* Light mode */
@@ -135,11 +143,12 @@
   --sat-search-bar-hvr: #232933;
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #232933;
+  --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  --sat-accent-color1: #00f2fe;
+  --sat-accent-color1: #1ca8ff;
   --brightness-headerimg: brightness(1.1);
 }
 
@@ -352,20 +361,6 @@ input[type="button"][disabled] {
   cursor: not-allowed;
 }
 
-/*
-.button:focus,
-.button:enabled:hover,
-button:focus,
-button:enabled:hover,
-input[type="submit"]:focus,
-input[type="submit"]:enabled:hover,
-input[type="reset"]:focus,
-input[type="reset"]:enabled:hover,
-input[type="button"]:focus,
-input[type="button"]:enabled:hover {
-  ;
-}
-*/
 code,
 pre,
 kbd,
@@ -560,30 +555,30 @@ img {
 .trigger:hover {
   background: var(--icon-settings-hover);
 }
-.modal {
+.modal,
+.overlay {
   background: var(--sat-setting-bg-effect);
   color: var(--sat-ids);
 }
-.modal-content {
+.modal-content,
+.overlay-content,
+.morecontainer {
   background: var(--sat-setting-bg-color);
 }
-.btn-modal,
-.app {
+.button-modal,
+.app,
+.cuteapps {
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
-.btn-modal:hover {
+.button-modal:hover {
   background: var(--sat-search-bar-hvr);
-}
-.app:hover {
-  background: var(--sat-shortcuts-hover);
 }
 .app .tooltiptext {
   color: var(--sat-ids);
   background: var(--sat-shortcuts-hover);
 }
 
-/* partial merge */
 .dark-mode-bg,
 .dark-mode-bg2,
 .dark-mode-bg3 {
@@ -596,7 +591,8 @@ img {
 }
 
 /* Hovering animations speed */
-.btn-modal:hover,
+.overlay,
+.button-modal:hover,
 .btn-hide2:hover,
 .app:hover,
 .slider:before,
@@ -606,15 +602,21 @@ img {
 }
 
 /* Neon effect */
-.app:hover::before {
-  transform: scale(1.1);
-}
+
 .app:hover {
   color: var(--sat-accent-color1);
   box-shadow: 0 0 5px var(--sat-accent-color1);
   text-shadow: 0 0 5px var(--sat-accent-color1);
 }
-
+.cuteapps:hover {
+  background: var(--sat-shortcuts-hover);
+  box-shadow: 0 0 10px #0271b6;
+  border-color: #0271b6;
+  transition: var(--sat-default-hoveringspeed) all ease;
+}
+.cuteapps {
+  border: 3px solid var(--sat-shortcuts-hover);
+}
 .headerimg {
   filter: var(--brightness-headerimg);
 }
