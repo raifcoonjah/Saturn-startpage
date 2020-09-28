@@ -1,3 +1,41 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 2em 0 0;
+  width: 180px;
+  height: 180px;
+}
+
+.dropdown-item a::before {
+  content: " ";
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#material-dark::before {
+  background: black;
+}
+
+#dark::before {
+  background: #2a2e35;
+}
+
+#light::before {
+  background: #ffffff;
+}
+
+#solar::before {
+  background: red;
+}
