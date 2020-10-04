@@ -322,9 +322,6 @@ input:checked + .slider:before {
   right: 45px;
   font-size: 40px;
 }
-.closebtn:hover {
-  color: #0271b6;
-}
 
 @media screen and (max-height: 450px) {
   .overlay {
