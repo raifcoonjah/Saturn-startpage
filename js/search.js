@@ -36,6 +36,4 @@ const cycleSearchEngines = (se) => {
   document.getElementById("search").placeholder =
     "Search with " + curData.placeholder;
   document.getElementById("search_eng_form").action = curData.action;
-
-  
 };
