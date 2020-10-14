@@ -263,7 +263,7 @@ input:checked + .slider:before {
 .dark-mode-bg2 {
   padding: 10px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 /* More apps */
