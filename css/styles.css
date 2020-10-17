@@ -185,8 +185,10 @@ input:checked + .slider:before {
   transform: scale(1.1);
 }
 .external-links {
-  text-align: center;
   text-decoration: none;
+}
+.external-links:hover {
+  text-decoration: underline;
 }
 
 /* Shortcuts */

@@ -122,6 +122,10 @@
   --sat-accent-color1: #0271b6;
   --brightness-headerimg: brightness(1);
   --moreapps-hovering-clr: #004e89;
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
 }
 /* Dark mode */
 /* Welcome to the dark side! */
@@ -597,17 +601,19 @@ img {
 .button-modal:hover,
 .btn-hide2:hover,
 .app:hover,
+.cuteapps:hover,
 .slider:before,
 .search-bar:hover,
 .search-bar:focus .app:hover .tooltip {
-  transition: var(--sat-default-hoveringspeed);
+  transition: var(--transition-speed-default);
 }
 
 /* Neon effect */
 
 .app:hover {
-  color: var(--sat-accent-color1);
-  box-shadow: 0 0 5px var(--sat-accent-color1);
+  color: #ffffff; /* force white to fix icons */
+  background-color: var(--moreapps-hovering-clr);
+  border-color: var(--moreapps-hovering-clr);
 }
 
 /* anim 2 */
@@ -615,7 +621,6 @@ img {
 .cuteapps:hover {
   background-color: var(--moreapps-hovering-clr);
   border-color: var(--moreapps-hovering-clr);
-  transition: var(--sat-default-hoveringspeed) all ease;
   color: #ffffff;
 }
 .closebtn:hover {
