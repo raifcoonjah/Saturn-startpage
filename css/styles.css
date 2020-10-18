@@ -72,7 +72,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
-  transition: visibility 0s linear 90ms, opacity 90ms 0s, transform 90ms;
+  transition: visibility 0s linear 40ms, opacity 40ms 0s, transform 40ms;
 }
 .modal-content {
   position: absolute;
@@ -105,7 +105,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 90ms 0s, transform 90ms;
+  transition: visibility 0s linear 0s, opacity 40ms 0s, transform 40ms;
 }
 .created-by {
   width: 150px;
