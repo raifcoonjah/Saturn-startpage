@@ -1,2 +1,30 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
+.hover-reddit {
+  padding: 9px;
+  border-radius: 9px;
+}
+
+.hover-reddit:hover {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.show_morebtn {
+  display: block;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: pointer;
+  text-align: center;
+  padding: 0 0.5em;
+  color: rgb(211, 211, 211);
+  font-size: 0.9em;
+  line-height: 2;
+  border: 2px solid rgb(73, 52, 52);
+  border-radius: 5px;
+}
+
+#more {
+  display: none;
+  transition:0.2s;
+}

@@ -21,5 +21,5 @@
   },
 
   "permissions": ["storage"],
-  "content_security_policy": "script-src 'self'; object-src 'self'; img-src 'self'"
+  "content_security_policy": "script-src 'self'; script-src 'unsafe-inline'; object-src 'self';"
 }
