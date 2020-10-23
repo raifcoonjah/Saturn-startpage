@@ -2,12 +2,12 @@
 / Think this should be in Saturn? Make a pull request */
 .hover-reddit {
   padding: 9px;
-  border-radius: 9px;
+  border-radius: 10px;
 }
 
 .hover-reddit:hover {
   cursor: pointer;
-  transition: 0.2s;
+  transition: var(--transition-speed-default);
 }
 
 .show_morebtn {
@@ -16,15 +16,15 @@
   margin-left: 0;
   cursor: pointer;
   text-align: center;
-  padding: 0 0.5em;
-  color: rgb(211, 211, 211);
+  padding: 5px;
   font-size: 0.9em;
+  font-weight: 500;
   line-height: 2;
-  border: 2px solid rgb(73, 52, 52);
-  border-radius: 5px;
+  border: 2px solid var(--moreapps-hovering-clr);
+  border-radius: 10px;
 }
 
 #more {
   display: none;
-  transition:0.2s;
+  transition: 0.2s;
 }
