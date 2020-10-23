@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  padding-top: 45px;
+  padding-top: 20px;
   overflow-x: hidden;
 }
 
@@ -270,7 +270,6 @@ input:checked + .slider:before {
 }
 
 /* More apps */
-/* v0.2-beta */
 
 .morecontainer {
   margin: 0 auto;
@@ -337,62 +336,5 @@ input:checked + .slider:before {
     font-size: 40px;
     top: 15px;
     right: 35px;
-  }
-}
-
-/* Typewritter effect */
-.typewritter_1 {
-  animation: typewritter_1_anim;
-}
-.typewritter_2 {
-  animation: typewritter_2_anim;
-}
-.typewritter_1,
-.typewritter_2 {
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  position: relative;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-.typewritter_1::after,
-.typewritter_2::after {
-  content: "|";
-  position: absolute;
-  right: 0;
-  animation: caret infinite;
-  animation-duration: 3s;
-  animation-timing-function: steps(1, end);
-}
-@keyframes typewritter_1_anim {
-  0%,
-  50%,
-  100% {
-    width: 0;
-  }
-  60%,
-  90% {
-    width: 8em;
-  }
-}
-@keyframes typewritter_2_anim {
-  0%,
-  50%,
-  100% {
-    width: 0;
-  }
-  10%,
-  40% {
-    width: 19.5em;
-  }
-}
-@keyframes caret {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
   }
 }

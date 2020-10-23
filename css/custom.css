@@ -28,3 +28,11 @@
   display: none;
   transition: 0.2s;
 }
+
+.em-links {
+  text-decoration: none;
+}
+
+.em-links:hover {
+  color: var(--sat-ids);
+}
