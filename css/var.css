@@ -122,6 +122,7 @@
   --sat-accent-color1: #0271b6;
   --brightness-headerimg: brightness(1);
   --moreapps-hovering-clr: #004e89;
+  --reddit-hover-color: #c4c4c4;
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
@@ -155,7 +156,11 @@
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   --sat-accent-color1: #1ca8ff;
   --moreapps-hovering-clr: #1a659e;
+  --reddit-hover-color: #232933;
   --brightness-headerimg: brightness(1.1);
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
 }
 
 * {
@@ -548,6 +553,7 @@ img {
 }
 
 /* New stuff */
+.hover-reddit:hover,
 .search-bar:hover {
   background: var(--sat-search-bar-hvr);
 }
@@ -587,7 +593,8 @@ img {
 
 .dark-mode-bg,
 .dark-mode-bg2,
-.dark-mode-bg3 {
+.dark-mode-bg3,
+.dark-mode-bg5 {
   color: var(--sat-ids);
   background: var(--sat-modal-app-section);
 }
@@ -610,10 +617,19 @@ img {
 
 /* Neon effect */
 
+.app {
+  background-color: var(--moreapps-hovering-clr);
+  background: var(--sat-search-shortcuts);
+  transition: transform 0.1s ease, box-shadow 0.1s ease,
+    background-color 0.1s ease;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
 .app:hover {
   color: #ffffff; /* force white to fix icons */
+  transform: translate3d(0px, -3px, 0px);
   background-color: var(--moreapps-hovering-clr);
-  border-color: var(--moreapps-hovering-clr);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 /* anim 2 */
@@ -631,4 +647,15 @@ img {
 }
 .headerimg {
   filter: var(--brightness-headerimg);
+}
+.show_morebtn:hover {
+  color: #ffffff;
+  background-color: var(--moreapps-hovering-clr);
+  transition: var(--transition-speed-default);
+}
+
+.hover-reddit:hover {
+  background-color: var(--reddit-hover-color);
+  cursor: pointer;
+  transition: var(--transition-speed-default);
 }
