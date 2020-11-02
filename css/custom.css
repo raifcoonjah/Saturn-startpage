@@ -36,3 +36,14 @@
 .em-links:hover {
   color: var(--sat-ids);
 }
+
+.created-by {
+  border-radius: 15px;
+  padding: 5px;
+}
+.created-by:hover {
+  background-color: var(--sat-setting-bg-color);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+}
