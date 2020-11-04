@@ -655,7 +655,8 @@ img {
 }
 
 .hover-reddit:hover {
-  background-color: var(--reddit-hover-color);
+  background-color: var(--moreapps-hovering-clr);
   cursor: pointer;
   transition: var(--transition-speed-default);
+  color: #ffffff; /* force white to fix issues */
 }
