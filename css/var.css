@@ -562,13 +562,6 @@ img {
 .search-bar:focus {
   background: var(--sat-search-bar-focus);
 }
-.trigger {
-  background: var(--anim-bar-trg);
-  color: var(--anim-bar-trg);
-}
-.trigger:hover {
-  background: var(--icon-settings-hover);
-}
 .modal,
 .overlay {
   background: var(--sat-setting-bg-effect);
@@ -586,7 +579,7 @@ img {
   background: var(--sat-search-shortcuts);
 }
 .button-modal:hover {
-  background: var(--sat-search-bar-hvr);
+  background: var(--moreapps-hovering-clr);
 }
 .app .tooltiptext {
   color: var(--sat-ids);

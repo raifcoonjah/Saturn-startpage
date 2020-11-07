@@ -119,10 +119,9 @@ body {
 }
 .theme-switch {
   display: inline-block;
-  height: 30px;
+  height: 33px;
   position: relative;
   width: 60px;
-  margin-bottom: 5px;
 }
 
 .theme-switch input {
@@ -131,22 +130,22 @@ body {
 
 .slider {
   background-color: #8da0dab0;
-  bottom: 0;
   cursor: pointer;
   left: 2px;
   position: absolute;
   right: 0;
   top: 0;
+  bottom: 0;
 }
 
 .slider:before {
   border: 2px solid;
-  bottom: 3px;
   content: "";
   height: 20px;
   left: 5px;
   position: absolute;
   width: 20px;
+  bottom: 5px;
 }
 
 input:checked + .slider {
@@ -158,11 +157,11 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 10px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+  border-radius: 9px;
 }
 
 .yourapps {
