@@ -338,3 +338,51 @@ input:checked + .slider:before {
     right: 35px;
   }
 }
+
+.hover-reddit {
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.hover-reddit:hover {
+  cursor: pointer;
+  transition: var(--transition-speed-default);
+}
+
+.show_morebtn {
+  display: block;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 2;
+  border: 2px solid var(--moreapps-hovering-clr);
+  border-radius: 10px;
+}
+
+#more {
+  display: none;
+  transition: 0.2s;
+}
+
+.em-links {
+  text-decoration: none;
+}
+
+.em-links:hover {
+  color: var(--sat-ids);
+}
+
+.created-by {
+  border-radius: 15px;
+  padding: 5px;
+}
+.created-by:hover {
+  background-color: var(--sat-setting-bg-color);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+}
