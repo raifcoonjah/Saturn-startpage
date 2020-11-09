@@ -24,6 +24,9 @@ body {
   height: 55px;
   margin-top: 1px;
 }
+.search-engine-logo:hover {
+  transform: scale(1.1);
+}
 
 .search-bar:hover {
   border: 1px solid #323a4965;
