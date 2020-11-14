@@ -562,7 +562,11 @@ img {
 .search-bar:focus {
   background: var(--sat-search-bar-focus);
 }
-.modal,
+
+.modal {
+  background-color: #11141d;
+}
+
 .overlay {
   background: var(--sat-setting-bg-effect);
   color: var(--sat-ids);
@@ -599,6 +603,7 @@ img {
 }
 
 /* Hovering animations speed */
+.snip-wid button,
 .overlay,
 .button-modal:hover,
 .btn-hide2:hover,
@@ -612,6 +617,7 @@ img {
 
 /* Neon effect */
 
+.snip-wid:hover,
 .button-modal:hover,
 .app:hover,
 .cuteapps:hover,
@@ -635,6 +641,7 @@ img {
 
 /* anim 2 */
 
+.snip-wid button:hover,
 .cuteapps:hover {
   background-color: var(--moreapps-hovering-clr);
   border-color: var(--moreapps-hovering-clr);
