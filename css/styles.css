@@ -141,7 +141,7 @@ body {
 
 .slider:before {
   border: 2px solid;
-  bottom: 3px;
+  bottom: 4px;
   content: "";
   height: 20px;
   left: 5px;
