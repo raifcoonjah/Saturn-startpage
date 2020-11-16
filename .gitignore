@@ -11,3 +11,5 @@
 # Ignore all local history of files
 .history
 .vscode/settings.json
+node_modules
+package-lock.json
