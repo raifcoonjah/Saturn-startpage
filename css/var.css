@@ -109,7 +109,7 @@
   --sat-txt-selector-clr: #303a58;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #eeeeee;
-  --sat-setting-bg-effect: #313131dc;
+  --sat-setting-bg-effect: #c9c9c9dc;
   --sat-setting-close-btn: rgb(182, 182, 182);
   --sat-search-bar-hvr: #dadada;
   --sat-search-bar-focus: #d8d8d8;
@@ -124,6 +124,7 @@
   --moreapps-hovering-clr: #2082cd;
   --reddit-hover-color: #c4c4c4;
   --for-white: #ffffff;
+  --snip-wid-btn: #beb7b7;
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
@@ -144,7 +145,7 @@
   --sat-default-button-txt: #fcfcfc;
   --sat-txt-selector-clr: #434e74;
   --sat-txt-selector-clr-after: #ffffff;
-  --sat-setting-bg-color: #0d0f13;
+  --sat-setting-bg-color: #11141d;
   --sat-setting-bg-effect: #1e232cde;
   --sat-setting-close-btn: #232933;
   --sat-search-bar-hvr: #232933;
@@ -160,6 +161,7 @@
   --reddit-hover-color: #232933;
   --brightness-headerimg: brightness(1.1);
   --for-white: #ffffff;
+  --snip-wid-btn: #232933;
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
@@ -555,6 +557,7 @@ img {
 }
 
 /* New stuff */
+
 .hover-reddit:hover,
 .search-bar:hover {
   background: var(--sat-search-bar-hvr);
@@ -564,7 +567,7 @@ img {
 }
 
 .modal {
-  background-color: #11141d;
+  background-color: var(--sat-setting-bg-color);
 }
 
 .overlay {
@@ -595,7 +598,7 @@ img {
 .dark-mode-bg3,
 .dark-mode-bg5 {
   color: var(--sat-ids);
-  background: var(--sat-modal-app-section);
+  background: var(--sat-setting-bg-effect);
 }
 .gudmorning {
   background-color: var(--gudmrning-txt-bg);
@@ -617,7 +620,12 @@ img {
 
 /* Neon effect */
 
-.snip-wid:hover,
+.snip-wid button {
+  background-color: var(--snip-wid-btn);
+  color: var(--sat-heading);
+}
+
+.snip-wid button:hover,
 .button-modal:hover,
 .app:hover,
 .cuteapps:hover,
