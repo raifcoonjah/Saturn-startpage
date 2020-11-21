@@ -109,7 +109,7 @@
   --sat-txt-selector-clr: #303a58;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #eeeeee;
-  --sat-setting-bg-effect: #c9c9c9dc;
+  --sat-setting-bg-effect: #cacacadc;
   --sat-setting-close-btn: rgb(182, 182, 182);
   --sat-search-bar-hvr: #dadada;
   --sat-search-bar-focus: #d8d8d8;
@@ -145,7 +145,7 @@
   --sat-default-button-txt: #fcfcfc;
   --sat-txt-selector-clr: #434e74;
   --sat-txt-selector-clr-after: #ffffff;
-  --sat-setting-bg-color: #11141d;
+  --sat-setting-bg-color: #0d0f13;
   --sat-setting-bg-effect: #1e232cde;
   --sat-setting-close-btn: #232933;
   --sat-search-bar-hvr: #232933;
@@ -634,7 +634,6 @@ img {
 }
 
 .app {
-  background-color: var(--moreapps-hovering-clr);
   background: var(--sat-search-shortcuts);
   transition: transform 0.1s ease, box-shadow 0.1s ease,
     background-color 0.1s ease;
