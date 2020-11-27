@@ -1,11 +1,10 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
 
-
 .snip-wid button {
-  padding: 8px 25px; /* Some padding */
+  padding: 9px 9px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
-  margin: 3px;
+  margin: 2px;
 }
 
 /* Clear floats (clearfix hack) */
@@ -16,6 +15,89 @@
   padding: 5px;
 }
 
-.snip-wid {
-  padding: 0px;
+ul {
+  padding: 0;
+  margin: 0px;
+}
+
+ul li {
+  margin: 0;
+  list-style: none;
+}
+
+.removebtn {
+  border: none;
+  background: none;
+  color: #999;
+  float: right;
+  margin-top: -5px;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+#content {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#fav-link li {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#fav-link li:last-child {
+  border: none;
+}
+
+#fav-link a {
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: -10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#add-link-form {
+  display: none;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+#add-link-form input {
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid rgb(43, 52, 56);
+}
+#add-link-form input:hover {
+  border: 2px solid rgb(73, 89, 95);
+}
+
+#add-link-form input:focus {
+  border: 2px solid var(--sat-accent-color1);
+}
+
+#new-link-button button,
+#add-link-form button {
+  display: block;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: pointer;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#new-link-button button:hover,
+#add-link-form button:hover {
+  background-color: var(--moreapps-hovering-clr);
+  transition: 0.1s;
 }

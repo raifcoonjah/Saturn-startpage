@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="icons/css/line-awesome.min.css" />
+    <script src="js/jquery.js"></script>
+    <!-- Added for new favorite link feature.-->
   </head>
   <!--[if lt IE 7]>
     <p class="browsehappy">
@@ -52,14 +54,14 @@
               />
             </a>
 
-              <input
-                class="search-bar"
-                type="search"
-                id="search"
-                placeholder="Search with DuckDuckGo"
-                autocomplete="off"
-                name="q"
-                autofocus
+            <input
+              class="search-bar"
+              type="search"
+              id="search"
+              placeholder="Search with DuckDuckGo"
+              autocomplete="off"
+              name="q"
+              autofocus
             />
           </form>
         </div>
@@ -157,22 +159,45 @@
           </div>
         </div>
 
+        <!-- Favorite links v1.0  [BETA] -->
         <div class="most-visited-reddit">
-          <h5>Reddit</h5>
-          <p>Most visited subreddits</p>
-          <div class="dark-mode-bg5">
-            <a href="https://www.reddit.com/r/web_design/" class="em-links">
-              <p class="hover-reddit">r/web_design</p></a
-            >
-            <a href="https://www.reddit.com/r/apple/" class="em-links">
-              <p class="hover-reddit">r/apple</p></a
-            >
-            <a href="https://www.reddit.com/r/LetsNotMeet/" class="em-links">
-              <p class="hover-reddit">r/LetsNotMeet/</p></a
-            >
-            <a href="https://www.reddit.com/r/selfhosted/" class="em-links">
-              <p class="hover-reddit">r/selfhosted/</p></a
-            >
+          <div id="fav-container">
+            <h5 class="yourapps">
+              <i class="lar la-star"></i> Favorites [BETA]<span
+                style="color: #0271b6"
+                >.</span
+              >
+            </h5>
+            <h2></h2>
+            <div id="content">
+              <ul id="fav-link"></ul>
+              <div id="new-link-button">
+                <button>New favorite</button>
+              </div>
+            </div>
+            <div id="add-link-form">
+              <label>TITLE</label>
+              <br />
+              <input id="title" placeholder="Site title.." />
+              <br /><label>URL</label><br />
+              <input id="url" placeholder="https://example.com" /><br /><button
+                id="add"
+              >
+                Save
+              </button>
+              <div class="side-text">
+                <h5>Help & notice</h5>
+                1. Currently Favorites doesn't have a limit, but we recommend
+                under 30. <br />
+                2. This is a experimental feature but stable enough for daily
+                use. <br />
+                3. All links are saved using local storage. <br />
+                4. Pressing on the New Favorite button will close this menu.
+                <br />
+                5. Please make a PR request for any bugs or stability issues.
+                <br />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -180,18 +205,18 @@
         <div class="modal">
           <div class="modal-content">
             <span class="close-button"></span>
-            <h4 class="text-center">Settings (beta)</h4>
+            <h4 class="text-center">Settings [BETA]</h4>
             <!-- Snippets widgets  -->
             <div class="snip-wid">
-              <a href="https://github.com/mraif13/Saturn-startpage/pulls" target=
-                ><button>Request a feature</button></a
-              >
-              <a href="https://github.com/mraif13/Saturn-startpage#privacy" target=
-                ><button>Privacy</button></a
-              >
-              <a href="https://github.com/mraif13/Saturn-startpage/releases" target=
-                ><button>Release notes</button></a
-              >
+
+              <a href="https://github.com/mraif13/Saturn-startpage/pulls"
+              target= ><button>Request a feature</button></a>
+
+              <a href="https://github.com/mraif13/Saturn-startpage/releases"
+              target= ><button>Release notes</button></a>
+
+              <a href="https://github.com/mraif13/Saturn-startpage#privacy"
+              target= ><button>Privacy</button></a>
             </div>
             <div class="dark-mode-bg">
               <h4>Dark mode 🌛</h4>
@@ -210,6 +235,14 @@
                 icon.
               </p>
             </div>
+            <div class="dark-mode-bg2">
+              <h4>Favorites</h4>
+              <p>
+                Have you ever wanted to add custom links to saturn? No..? well
+                we added Favorites anyways. With favorites you can now add any
+                link you have ever wanted. Check it out now!
+              </p>
+            </div>
             <div class="dark-mode-bg3">
               <h4>Created by: mraif13 ✨</h4>
               <img class="created-by" src="icons/peeps.svg " title="mraif13" />
@@ -218,9 +251,9 @@
             <div class="dark-mode-bg3">
               <h4>Misc 🤖</h4>
               <p>
-                Updated on: Nov 2, 2020.
+                Updated on: Nov 30, 2020.
                 <br />
-                Version: v2.2.1 | More apps: v1.0.3.1
+                Version: v2.3-beta | More apps: v1.0.3.2 | Favorites: v1.0.1
                 <br />
                 Github link:
                 <a

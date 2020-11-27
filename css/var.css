@@ -158,7 +158,7 @@
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   --sat-accent-color1: #1ca8ff;
   --moreapps-hovering-clr: #1a659e;
-  --reddit-hover-color: #232933;
+  --reddit-hover-color: #39414e;
   --brightness-headerimg: brightness(1.1);
   --for-white: #ffffff;
   --snip-wid-btn: #232933;
@@ -558,7 +558,8 @@ img {
 
 /* New stuff */
 
-.hover-reddit:hover,
+#add-link-form,
+#content,
 .search-bar:hover {
   background: var(--sat-search-bar-hvr);
 }
@@ -574,6 +575,7 @@ img {
   background: var(--sat-setting-bg-effect);
   color: var(--sat-ids);
 }
+
 .modal-content,
 .overlay-content,
 .morecontainer {
@@ -606,6 +608,7 @@ img {
 }
 
 /* Hovering animations speed */
+#fav-link a:hover,
 .snip-wid button,
 .overlay,
 .button-modal:hover,
@@ -629,10 +632,11 @@ img {
 .button-modal:hover,
 .app:hover,
 .cuteapps:hover,
-.hover-reddit:hover {
+#content {
   color: var(--for-white); /* force white to fix issues */
 }
 
+.removebtn:hover,
 .app {
   background: var(--sat-search-shortcuts);
   transition: transform 0.1s ease, box-shadow 0.1s ease,
@@ -662,9 +666,6 @@ img {
 .headerimg {
   filter: var(--brightness-headerimg);
 }
-
-.hover-reddit:hover {
-  background-color: var(--moreapps-hovering-clr);
-  cursor: pointer;
-  transition: var(--transition-speed-default);
+#fav-link a:hover {
+  background-color: var(--reddit-hover-color);
 }
