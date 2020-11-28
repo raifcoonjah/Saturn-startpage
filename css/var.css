@@ -636,7 +636,6 @@ img {
   color: var(--for-white); /* force white to fix issues */
 }
 
-.removebtn:hover,
 .app {
   background: var(--sat-search-shortcuts);
   transition: transform 0.1s ease, box-shadow 0.1s ease,
@@ -666,6 +665,8 @@ img {
 .headerimg {
   filter: var(--brightness-headerimg);
 }
+
+.removebtn:hover,
 #fav-link a:hover {
   background-color: var(--reddit-hover-color);
 }

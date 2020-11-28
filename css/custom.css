@@ -74,6 +74,7 @@ ul li {
 }
 #add-link-form input:hover {
   border: 2px solid rgb(73, 89, 95);
+  transition: 0.1s;
 }
 
 #add-link-form input:focus {
