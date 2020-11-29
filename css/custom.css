@@ -54,7 +54,7 @@ ul li {
   padding: 10px 10px;
   margin: -10px;
   border-radius: 10px;
-  color: #fff;
+  color: var(--sat-ids);
 }
 
 #add-link-form {
@@ -65,6 +65,7 @@ ul li {
 }
 
 #add-link-form input {
+  color: var(--sat-ids);
   margin: 10px 0;
   padding: 10px;
   outline: none;
@@ -87,18 +88,18 @@ ul li {
   margin-right: 0;
   margin-left: 0;
   cursor: pointer;
-  text-align: center;
-  padding: 15px;
+  padding: 10px;
   margin-top: 20px;
   font-size: 0.9em;
   font-weight: 500;
-  line-height: 1;
   border-radius: 10px;
   width: 100%;
+  color: var(--sat-ids);
 }
 
 #new-link-button button:hover,
 #add-link-form button:hover {
   background-color: var(--moreapps-hovering-clr);
   transition: 0.1s;
+  color: var(--for-white);
 }

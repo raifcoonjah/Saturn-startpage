@@ -631,8 +631,7 @@ img {
 .snip-wid button:hover,
 .button-modal:hover,
 .app:hover,
-.cuteapps:hover,
-#content {
+.cuteapps:hover {
   color: var(--for-white); /* force white to fix issues */
 }
 
@@ -669,4 +668,5 @@ img {
 .removebtn:hover,
 #fav-link a:hover {
   background-color: var(--reddit-hover-color);
+  color: var(--sat-ids);
 }
