@@ -95,7 +95,7 @@ ul li {
   border-radius: 10px;
   width: 100%;
   color: var(--sat-ids);
-  background-color: var(--sat-tooltip-bg);
+background: var(--sat-search-shortcuts);
 }
 
 #new-link-button button:hover,

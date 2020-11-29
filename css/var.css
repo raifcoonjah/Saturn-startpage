@@ -559,7 +559,10 @@ img {
 /* New stuff */
 
 #add-link-form,
-#content,
+#content {
+  background: var(--sat-search-shortcuts);
+}
+
 .search-bar:hover {
   background: var(--sat-search-bar-hvr);
 }
