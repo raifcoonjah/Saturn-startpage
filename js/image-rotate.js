@@ -1,5 +1,5 @@
 // Uses javascript to switch between different images.
-// v0.2
+// v0.3
 
 var images = [
   "./img/1.svg",
@@ -20,6 +20,15 @@ var images = [
   "./img/19.svg",
   "./img/20.svg",
   "./img/21.svg",
+  "./img/22.svg",
+  "./img/23.svg",
+  "./img/24.svg",
+  "./img/25.svg",
+  "./img/26.svg",
+  "./img/27.svg",
+  "./img/28.svg",
+  "./img/29.svg",
+  "./img/30.svg",
 ];
 
 function randImg() {
