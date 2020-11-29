@@ -95,11 +95,12 @@ ul li {
   border-radius: 10px;
   width: 100%;
   color: var(--sat-ids);
+  background-color: var(--sat-tooltip-bg);
 }
 
 #new-link-button button:hover,
 #add-link-form button:hover {
-  background-color: var(--moreapps-hovering-clr);
+  background-color: var(--reddit-hover-color);
   transition: 0.1s;
-  color: var(--for-white);
+  color: var(--sat-ids);
 }
