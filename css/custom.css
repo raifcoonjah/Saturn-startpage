@@ -31,8 +31,8 @@ ul li {
   color: #999;
   float: right;
   margin-top: -5px;
-  padding: 5px 5px;
-  border-radius: 10px;
+padding: 5px;
+  border-radius:10px;
 }
 
 #content {
@@ -95,7 +95,7 @@ ul li {
   border-radius: 10px;
   width: 100%;
   color: var(--sat-ids);
-background: var(--sat-search-shortcuts);
+  background: var(--sat-search-shortcuts);
 }
 
 #new-link-button button:hover,
