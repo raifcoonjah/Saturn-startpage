@@ -125,6 +125,7 @@
   --reddit-hover-color: #c4c4c4;
   --for-white: #ffffff;
   --snip-wid-btn: #beb7b7;
+  --add-link-border:rgb(150, 151, 151);
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
@@ -162,6 +163,7 @@
   --brightness-headerimg: brightness(1.1);
   --for-white: #ffffff;
   --snip-wid-btn: #232933;
+  --add-link-border:rgb(43, 52, 56);
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
