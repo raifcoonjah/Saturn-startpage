@@ -12,4 +12,5 @@
 .history
 .vscode/settings.json
 node_modules
+new_features
 package-lock.json
