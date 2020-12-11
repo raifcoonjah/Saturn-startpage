@@ -385,3 +385,107 @@ input:checked + .slider:before {
   cursor: pointer;
   transition: 0.1s;
 }
+
+.snip-wid button {
+  padding: 9px 9px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  margin: 2px;
+}
+
+/* Clear floats (clearfix hack) */
+.snip-wid:after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 5px;
+}
+
+ul {
+  padding: 0;
+  margin: 0px;
+}
+
+ul li {
+  margin: 0;
+  list-style: none;
+}
+
+.removebtn {
+  border: none;
+  background: none;
+  color: #999;
+  float: right;
+  margin-top: -5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#content {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#fav-link li {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#fav-link li:last-child {
+  border: none;
+}
+
+#fav-link a {
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: -10px;
+  border-radius: 10px;
+  color: var(--sat-ids);
+}
+
+#add-link-form {
+  display: none;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+#add-link-form input {
+  color: var(--sat-ids);
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid var(--add-link-border);
+}
+#add-link-form input:hover {
+  border: 2px solid rgb(73, 89, 95);
+  transition: 0.1s;
+}
+
+#add-link-form input:focus {
+  border: 2px solid var(--sat-accent-color1);
+}
+
+#new-link-button button,
+#add-link-form button {
+  display: block;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 100%;
+  color: var(--sat-ids);
+  background: var(--sat-search-shortcuts);
+}
+
+#new-link-button button:hover,
+#add-link-form button:hover {
+  background-color: var(--reddit-hover-color);
+  transition: 0.1s;
+  color: var(--sat-ids);
+}
