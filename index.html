@@ -6,13 +6,15 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Saturn - Home</title>
+    <title>Saturn - New Tab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/var.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="icons/css/line-awesome.min.css" />
+    <script src="js/jquery.js"></script>
+    <!-- Added for new favorite link feature.-->
   </head>
   <!--[if lt IE 7]>
     <p class="browsehappy">
@@ -26,7 +28,7 @@
         <img
           id="headerimg"
           class="headerimg"
-          alt="Something went wrong! (check internals)"
+          alt="Headerimg fail to load | (Check internals)"
           title="Have a nice day!"
         />
       </div>
@@ -48,8 +50,11 @@
                 id="se_icon"
                 src="icons/duckduckgo.svg"
                 alt="Search engine logo"
-              /> </a
-            ><input
+                title="Click to change search engine"
+              />
+            </a>
+
+            <input
               class="search-bar"
               type="search"
               id="search"
@@ -64,7 +69,9 @@
       <button class="button-modal" id="trigger">
         <i class="las la-cog"></i>
       </button>
-      <h5 class="yourapps"><i class="las la-grip-horizontal"></i> Shortcuts</h5>
+      <h5 class="yourapps">
+        <i class="las la-grip-horizontal"></i> App list
+      </h5>
       <h1></h1>
       <div class="popup">
         <div id="apps">
@@ -109,9 +116,9 @@
               <i class="lab la-instagram"></i></div
           ></a>
           <!-- Row 2 -->
-          <a href="https://app.simplelogin.io/">
+          <a href="https://anonaddy.com">
             <div class="app">
-              <span class="tooltiptext">Simple Login</span>
+              <span class="tooltiptext">Anonaddy</span>
               <i class="lar la-share-square"></i></div
           ></a>
 
@@ -120,10 +127,10 @@
               <span class="tooltiptext">Gmail </span>
               <i class="las la-inbox"></i></div
           ></a>
-          <a href="https://app.simplenote.com">
+          <a href="https://keep.google.com">
             <div class="app">
-              <span class="tooltiptext">Simple Note</span>
-              <i class="lar la-sticky-note"></i></div
+              <span class="tooltiptext">Google Keep</span>
+              <i class="las la-lightbulb"></i></div
           ></a>
           <a href="https://codepen.io/">
             <div class="app">
@@ -131,10 +138,10 @@
               <i class="lab la-codepen"></i></div
           ></a>
 
-          <a href="https://soundcloud.com">
+          <a href="https://deezer.com">
             <div class="app">
-              <span class="tooltiptext">Soundcloud</span>
-              <i class="lab la-soundcloud"></i></div
+              <span class="tooltiptext">Deezer</span>
+              <i class="las la-music"></i></div
           ></a>
 
           <a href="https://therandombutton.github.io/random.html">
@@ -149,22 +156,56 @@
           </div>
         </div>
 
+        <!-- Favorite links -->
         <div class="most-visited-reddit">
-          <h5>Reddit</h5>
-          <p>Most visited subreddits</p>
-          <div class="dark-mode-bg5">
-            <a href="https://www.reddit.com/r/web_design/" class="em-links">
-              <p class="hover-reddit">r/web_design</p></a
-            >
-            <a href="https://www.reddit.com/r/apple/" class="em-links">
-              <p class="hover-reddit">r/apple</p></a
-            >
-            <a href="https://www.reddit.com/r/LetsNotMeet/" class="em-links">
-              <p class="hover-reddit">r/LetsNotMeet/</p></a
-            >
-            <a href="https://www.reddit.com/r/selfhosted/" class="em-links">
-              <p class="hover-reddit">r/selfhosted/</p></a
-            >
+          <div id="fav-container">
+            <h5 class="yourapps"><i class="las la-bookmark"></i> Favorites</h5>
+            <h2></h2>
+            <div id="content">
+              <ul id="fav-link"></ul>
+              <div id="new-link-button">
+                <button>New favorite</button>
+              </div>
+            </div>
+            <div id="add-link-form">
+              <label>Title</label>
+              <br />
+              <input id="title" placeholder="Site title.." />
+              <br /><label>Url</label><br />
+              <input id="url" placeholder="https://example.org" /><br /><button
+                id="add"
+              >
+                Save
+              </button>
+              <h3></h3>
+              <div class="side-text">
+                <h5>Help & notice</h5>
+                - Currently Favorites doesn't have a limit, but we recommend
+                under <bold>30</bold>. <br />
+                - All links are saved using local storage. <br />
+                - Pressing on the New Favorite button will close this menu.
+                <br />
+                - Add emojis to favorites using
+                <a
+                  href="https://emojipedia.org/"
+                  target="_blank"
+                  class="external-links"
+                  >Emojipedia.org</a
+                >. Learn how
+                <a
+                  href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
+                  class="external-links" target="_blank"
+                  >here</a
+                >.
+              </br/>
+              - Favorites now also support line-awesome icons,                 <a
+                  href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
+                  class="external-links" target="_blank"
+                  >here</a
+                >.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -172,8 +213,19 @@
         <div class="modal">
           <div class="modal-content">
             <span class="close-button"></span>
-            <h4 style="font-weight: 500">Saturn Settings</h4>
-            <h1></h1>
+            <h4 class="text-center">Settings [BETA]</h4>
+            <!-- Snippets widgets  -->
+            <div class="snip-wid">
+              
+              <a href="https://github.com/mraif13/Saturn-startpage/releases"
+              target= ><button>What's new </button></a>
+
+              <a href="https://github.com/mraif13/Saturn-startpage/pulls"
+              target= ><button>Request a feature</button></a>
+
+              <a href="https://github.com/mraif13/Saturn-startpage#privacy"
+              target= ><button>Privacy</button></a>
+            </div>
             <div class="dark-mode-bg">
               <h4>Dark mode 🌛</h4>
               <p>Join the dark side, your eyes will thank you later.</p>
@@ -186,10 +238,7 @@
             </div>
             <div class="dark-mode-bg2">
               <h4>Change search 🔍</h4>
-              <p>
-                You can now change the search engine just by clicking on the
-                icon.
-              </p>
+              <p>Change the search engine just by clicking on the icon.</p>
             </div>
             <div class="dark-mode-bg3">
               <h4>Created by: mraif13 ✨</h4>
@@ -199,21 +248,14 @@
             <div class="dark-mode-bg3">
               <h4>Misc 🤖</h4>
               <p>
-                Updated on: Nov 17, 2020.
+                Updated on: Dec 5, 2020.
                 <br />
-                Version: v2.2.1 | More apps: v1.0.3.1
+                Version: v2.3, Saturn UI 2.2 | More apps: v1.3 | Favorites Beta:
+                v1.2
                 <br />
                 Github link:
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/"
-                  target="_blank"
-                  class="external-links"
-                  >here</a
-                >
-                <br />
-                See what's new ✨:
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases"
                   target="_blank"
                   class="external-links"
                   >here</a
@@ -228,7 +270,7 @@
                   icons8</a
                 >
                 <br />
-                Art Work: svgrepo.com | Universe 2
+                Art Works: Svgrepo | Universe 2
                 <br />
               </p>
             </div>
@@ -253,7 +295,7 @@
                 <a href="https://9to5mac.com/">
                   <div class="cuteapps">
                     <i class="lab la-apple"></i>
-                    <p>Apple news</p>
+                    <p>9to5mac</p>
                   </div></a
                 >
                 <a href="https://aliexpress.com">
@@ -274,10 +316,10 @@
                     <p>Devdocs</p>
                   </div></a
                 >
-                <a href="https://deezer.com">
+                <a href="https://soundcloud.com">
                   <div class="cuteapps">
-                    <i class="las la-music"></i>
-                    <p>Deezer</p>
+                    <i class="lab la-soundcloud"></i>
+                    <p>Soundcloud</p>
                   </div></a
                 >
                 <a href="https://orchomenos.github.io/Design-resources/">

@@ -6,7 +6,7 @@ const determineGreet = (
       ? "morning! "
       : hours < 18
       ? "afternoon! "
-      : hours < 23 // After 11pm switch to night instead of evening.
+      : hours < 21 // After 11pm switch to night instead of evening.
       ? "evening! "
       : "night! "
   } `);

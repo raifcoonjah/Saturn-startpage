@@ -24,6 +24,9 @@ body {
   height: 55px;
   margin-top: 1px;
 }
+.search-engine-logo:hover {
+  transform: scale(1.1);
+}
 
 .search-bar:hover {
   border: 1px solid #323a4965;
@@ -61,14 +64,38 @@ body {
   margin-top: -10px;
   font-size: 15x;
 }
-/* v0.3 New settings UI. */
+
+/* V1.0 Settings page - (BETA) */
+
+/* Snippet widgets */
+
+.snip-button {
+  position: absolute;
+  width: 48px;
+  height: 20px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.text-center {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  padding: 20px;
+  font-style: normal;
+}
 .modal {
+  background-color: #15181fd8;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #11141dd7;
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
@@ -79,9 +106,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 0.5rem 0.8rem;
-  width: 46rem;
-  height: 30rem;
+  padding: 5px 10px;
+  width: 59rem;
+  height: 35rem;
   overflow-y: scroll;
   border-radius: 10px;
 }
@@ -92,20 +119,11 @@ body {
 .modal-content::-webkit-scrollbar {
   display: none;
 }
-.close-button {
-  float: right;
-  width: 1.5rem;
-  line-height: 1.6rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 18px;
-}
 .show-modal {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 40ms 0s, transform 40ms;
+  transition: visibility 0s linear 0s, opacity 65ms 0s, transform 65ms;
 }
 .created-by {
   width: 150px;
@@ -119,10 +137,9 @@ body {
 }
 .theme-switch {
   display: inline-block;
-  height: 30px;
   position: relative;
-  width: 60px;
-  margin-bottom: 5px;
+  width: 66px;
+  height: 30px;
 }
 
 .theme-switch input {
@@ -130,23 +147,23 @@ body {
 }
 
 .slider {
-  background-color: #8da0dab0;
-  bottom: 0;
+  background: #475469;
   cursor: pointer;
   left: 2px;
   position: absolute;
   right: 0;
   top: 0;
+  bottom: 0;
 }
 
 .slider:before {
-  border: 2px solid;
-  bottom: 4px;
+  border: 3px solid #63aadf;
   content: "";
-  height: 20px;
-  left: 5px;
+  left: 3px;
   position: absolute;
-  width: 20px;
+  bottom: 3px;
+  width: 23px;
+  height: 18px;
 }
 
 input:checked + .slider {
@@ -154,15 +171,15 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(25px);
+  transform: translateX(29px);
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 10px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+  border-radius: 9px;
 }
 
 .yourapps {
@@ -267,8 +284,8 @@ input:checked + .slider:before {
   padding: 10px;
   border-radius: 10px;
   margin-top: 9px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 /* More apps */
 
 .morecontainer {
@@ -339,28 +356,10 @@ input:checked + .slider:before {
   }
 }
 
-.hover-reddit {
-  padding: 9px;
-  border-radius: 10px;
-}
-
-.hover-reddit:hover {
+.snip-wid button:hover,
+#favorite-links:hover {
   cursor: pointer;
   transition: var(--transition-speed-default);
-}
-
-.show_morebtn {
-  display: block;
-  margin-right: 0;
-  margin-left: 0;
-  cursor: pointer;
-  text-align: center;
-  padding: 5px;
-  font-size: 0.9em;
-  font-weight: 500;
-  line-height: 2;
-  border: 2px solid var(--moreapps-hovering-clr);
-  border-radius: 10px;
 }
 
 #more {

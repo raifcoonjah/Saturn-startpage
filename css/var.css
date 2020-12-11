@@ -3,23 +3,9 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
-  font-display: swap;
-  src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"),
-    url("../fonts/poppins-v13-latin-200.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-200.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v13-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-300 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local("Poppins Light"), local("Poppins-Light"),
-    url("../fonts/poppins-v13-latin-300.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v13-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-regular - latin */
@@ -27,11 +13,10 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: local("Poppins Regular"), local("Poppins-Regular"),
-    url("../fonts/poppins-v13-latin-regular.woff2") format("woff2"),
+  src: local(""),
+    url("../fonts/poppins-v15-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-500 - latin */
@@ -39,11 +24,9 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
-  src: local("Poppins Medium"), local("Poppins-Medium"),
-    url("../fonts/poppins-v13-latin-500.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-500.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v13-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-600 - latin */
@@ -51,11 +34,9 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
-  src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
-    url("../fonts/poppins-v13-latin-600.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-600.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-700 - latin */
@@ -63,11 +44,9 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
-  src: local("Poppins Bold"), local("Poppins-Bold"),
-    url("../fonts/poppins-v13-latin-700.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-800 - latin */
@@ -75,11 +54,9 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
-  font-display: swap;
-  src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"),
-    url("../fonts/poppins-v13-latin-800.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-800.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v13-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* poppins-900 - latin */
@@ -87,11 +64,9 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
-  font-display: swap;
-  src: local("Poppins Black"), local("Poppins-Black"),
-    url("../fonts/poppins-v13-latin-900.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-900.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v13-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* Light mode */
@@ -109,7 +84,7 @@
   --sat-txt-selector-clr: #303a58;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #eeeeee;
-  --sat-setting-bg-effect: #313131dc;
+  --sat-setting-bg-effect: #cacacadc;
   --sat-setting-close-btn: rgb(182, 182, 182);
   --sat-search-bar-hvr: #dadada;
   --sat-search-bar-focus: #d8d8d8;
@@ -119,11 +94,13 @@
   --sat-shortcuts-hover: #cacaca;
   --sat-modal-app-section: #dbdbdb;
   --gudmrning-txt: linear-gradient(180deg, #054b2d 0%, #014f80 100%);
-  --sat-accent-color1: #0271b6;
+  --sat-accent-color1: #017fcd;
   --brightness-headerimg: brightness(1);
-  --moreapps-hovering-clr: #004e89;
+  --moreapps-hovering-clr: #2082cd;
   --reddit-hover-color: #c4c4c4;
   --for-white: #ffffff;
+  --snip-wid-btn: #beb7b7;
+  --add-link-border: rgb(150, 151, 151);
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
@@ -157,9 +134,11 @@
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   --sat-accent-color1: #1ca8ff;
   --moreapps-hovering-clr: #1a659e;
-  --reddit-hover-color: #232933;
+  --reddit-hover-color: #39414e;
   --brightness-headerimg: brightness(1.1);
   --for-white: #ffffff;
+  --snip-wid-btn: #232933;
+  --add-link-border: rgb(43, 52, 56);
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
@@ -555,25 +534,28 @@ img {
 }
 
 /* New stuff */
-.hover-reddit:hover,
+
+#add-link-form,
+#content {
+  background: var(--sat-search-shortcuts);
+}
+
 .search-bar:hover {
   background: var(--sat-search-bar-hvr);
 }
 .search-bar:focus {
   background: var(--sat-search-bar-focus);
 }
-.trigger {
-  background: var(--anim-bar-trg);
-  color: var(--anim-bar-trg);
+
+.modal {
+  background-color: var(--sat-setting-bg-color);
 }
-.trigger:hover {
-  background: var(--icon-settings-hover);
-}
-.modal,
+
 .overlay {
   background: var(--sat-setting-bg-effect);
   color: var(--sat-ids);
 }
+
 .modal-content,
 .overlay-content,
 .morecontainer {
@@ -586,7 +568,7 @@ img {
   background: var(--sat-search-shortcuts);
 }
 .button-modal:hover {
-  background: var(--sat-search-bar-hvr);
+  background: var(--moreapps-hovering-clr);
 }
 .app .tooltiptext {
   color: var(--sat-ids);
@@ -598,7 +580,7 @@ img {
 .dark-mode-bg3,
 .dark-mode-bg5 {
   color: var(--sat-ids);
-  background: var(--sat-modal-app-section);
+  background: var(--sat-setting-bg-effect);
 }
 .gudmorning {
   background-color: var(--gudmrning-txt-bg);
@@ -606,6 +588,8 @@ img {
 }
 
 /* Hovering animations speed */
+#fav-link a:hover,
+.snip-wid button,
 .overlay,
 .button-modal:hover,
 .btn-hide2:hover,
@@ -619,14 +603,19 @@ img {
 
 /* Neon effect */
 
+.snip-wid button {
+  background-color: var(--snip-wid-btn);
+  color: var(--sat-heading);
+}
+
+.snip-wid button:hover,
+.button-modal:hover,
 .app:hover,
-.cuteapps:hover,
-.hover-reddit:hover {
+.cuteapps:hover {
   color: var(--for-white); /* force white to fix issues */
 }
 
 .app {
-  background-color: var(--moreapps-hovering-clr);
   background: var(--sat-search-shortcuts);
   transition: transform 0.1s ease, box-shadow 0.1s ease,
     background-color 0.1s ease;
@@ -641,6 +630,7 @@ img {
 
 /* anim 2 */
 
+.snip-wid button:hover,
 .cuteapps:hover {
   background-color: var(--moreapps-hovering-clr);
   border-color: var(--moreapps-hovering-clr);
@@ -655,8 +645,8 @@ img {
   filter: var(--brightness-headerimg);
 }
 
-.hover-reddit:hover {
-  background-color: var(--moreapps-hovering-clr);
-  cursor: pointer;
-  transition: var(--transition-speed-default);
+.removebtn:hover,
+#fav-link a:hover {
+  background-color: var(--reddit-hover-color);
+  color: var(--sat-ids);
 }
