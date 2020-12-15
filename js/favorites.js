@@ -16,7 +16,7 @@ $(document).ready(function () {
         $url.val() +
         '">' +
         $title.val() +
-        '</a><button class="removebtn"><i class="las la-times"></i></button></li>'
+        '</a><button class="removebtn"><i class="las la-minus-circle"></i></button></li>'
     );
 
     //save changes to localstorage

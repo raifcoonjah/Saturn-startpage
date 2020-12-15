@@ -568,7 +568,8 @@ img {
 }
 .button-modal,
 .app,
-.cuteapps {
+.cuteapps,
+.removebtn {
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
@@ -654,4 +655,5 @@ img {
 #fav-link a:hover {
   background-color: var(--reddit-hover-color);
   color: var(--sat-ids);
+  transition: var(--transition-speed-default);
 }

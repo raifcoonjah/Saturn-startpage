@@ -28,7 +28,7 @@
         <img
           id="headerimg"
           class="headerimg"
-          alt="Headerimg fail to load | (Check internals)"
+          alt="Headerimg fail to load | (Fail to load images properly)"
           title="Have a nice day!"
         />
       </div>
@@ -147,6 +147,9 @@
               <span class="tooltiptext">I'm Feeling lucky!</span>
               <i class="las la-smile-wink"></i></div
           ></a>
+
+          <!-- End of row 2 -->
+
           <!-- Open More apps -->
           <div class="app" id="navy">
             <span class="tooltiptext">More apps</span>
@@ -154,65 +157,64 @@
           </div>
         </div>
 
-        <!-- Favorite links -->
-        <div class="most-visited-reddit">
-          <div id="fav-container">
-            <h5 class="yourapps"><i class="las la-bookmark"></i> Favorites</h5>
-            <h2></h2>
-            <div id="content">
-              <ul id="fav-link"></ul>
-              <div id="new-link-button">
-                <button>New favorite</button>
-              </div>
+        <!-- Favorite Feature -->
+        <div id="fav-container">
+          <h5 class="yourapps"><i class="las la-bookmark"></i> Favorites</h5>
+          <h2></h2>
+          <div id="content">
+            <ul id="fav-link"></ul>
+            <div id="new-link-button">
+              <button>New favorite</button>
             </div>
-            <div id="add-link-form">
-              <label>Title</label>
+          </div>
+          <!-- Add new link page -->
+          <div id="add-link-form">
+            <label>Title</label>
+            <br />
+            <input id="title" placeholder="Site title.." />
+            <br /><label>Url</label><br />
+            <input id="url" placeholder="https://example.org" /><br /><button
+              id="add"
+            >
+              Save
+            </button>
+            <h3></h3>
+            <div class="side-text">
+              <h5>Help & notice</h5>
+              - Currently Favorites doesn't have a limit, but we recommend under
+              30. <br />
+              - All links are saved using local storage. <br />
+              - Pressing on the New Favorite button will close this menu.
               <br />
-              <input id="title" placeholder="Site title.." />
-              <br /><label>Url</label><br />
-              <input id="url" placeholder="https://example.org" /><br /><button
-                id="add"
+              <h5>Emojis support</h5>
+              - Add emojis to favorites using
+              <a
+                href="https://emojipedia.org/"
+                target="_blank"
+                class="external-links"
+                >Emojipedia</a
+              >. Learn how
+              <a
+                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-emojis"
+                class="external-links"
+                target="_blank"
+                >here</a
+              >.
+              <br />
+              - Favorites now also support
+              <a
+                href="https://icons8.com/line-awesome"
+                class="external-links"
+                target="_blank"
+                >line-awesome icons.</a
               >
-                Save
-              </button>
-              <h3></h3>
-              <div class="side-text">
-                <h5>Help & notice</h5>
-                - Currently Favorites doesn't have a limit, but we recommend
-                under <bold>30</bold>. <br />
-                - All links are saved using local storage. <br />
-                - Pressing on the New Favorite button will close this menu.
-                <br />
-                <h5>Emojis support</h5>
-                - Add emojis to favorites using
-                <a
-                  href="https://emojipedia.org/"
-                  target="_blank"
-                  class="external-links"
-                  >Emojipedia</a
-                >. Learn how
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-emojis"
-                  class="external-links"
-                  target="_blank"
-                  >here</a
-                >.
-                <br />
-                - Favorites now also support
-                <a
-                  href="https://icons8.com/line-awesome"
-                  class="external-links"
-                  target="_blank"
-                  >line-awesome icons.</a
-                >
-                Learn more
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-line-awesome-icons"
-                  class="external-links"
-                  target="_blank"
-                  >here</a
-                >.
-              </div>
+              Learn more
+              <a
+                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-line-awesome-icons"
+                class="external-links"
+                target="_blank"
+                >here</a
+              >.
             </div>
           </div>
         </div>
@@ -258,10 +260,10 @@
           <div class="dark-mode-bg3">
             <h4>Misc 🤖</h4>
             <p>
-              Updated on: Dec 14, 2020.
+              Updated on: Dec 15, 2020.
               <br />
-              Version: v2.3.2, Saturn UI 2.3 | More apps: v1.3 | Favorites Beta:
-              v1.2
+              Version: v2.3.2-Release2, Saturn UI 2.3 | More apps: v1.3 |
+              Favorites Beta: v1.2
               <br />
               Github link:
               <a
@@ -288,7 +290,7 @@
         </div>
       </div>
 
-      <!-- New apps [BETA x PUBLIC]-->
+      <!-- New apps Stable -->
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" id="navyclose"
           ><i class="las la-times"></i
@@ -456,6 +458,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Javascript -->
       <script type="text/javascript" src="js/index.js"></script>
       <script type="text/javascript" src="js/image-rotate.min.js"></script>
       <script type="text/javascript" src="js/search.js"></script>
