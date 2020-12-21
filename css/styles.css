@@ -1,3 +1,8 @@
+/*
+Saturn Startpage: Open source & free.
+v2 CSS
+*/
+
 body {
   box-sizing: border-box;
   padding-top: 20px;
@@ -375,17 +380,6 @@ input:checked + .slider:before {
   color: var(--sat-ids);
 }
 
-.created-by {
-  border-radius: 15px;
-  padding: 5px;
-}
-.created-by:hover {
-  background-color: var(--sat-setting-bg-color);
-  border-radius: 15px;
-  cursor: pointer;
-  transition: 0.1s;
-}
-
 .snip-wid button {
   padding: 9px 9px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
@@ -413,10 +407,9 @@ ul li {
 .removebtn {
   border: none;
   background: none;
-  color: #999;
   float: right;
   margin-top: -5px;
-  padding: 5px;
+  padding: 8px;
   border-radius: 10px;
 }
 
