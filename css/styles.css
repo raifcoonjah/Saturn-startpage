@@ -210,6 +210,7 @@ input:checked + .slider:before {
   text-decoration: none;
 }
 .external-links:hover {
+  color: var(--sat-accent-color1);
   text-decoration: underline;
 }
 
