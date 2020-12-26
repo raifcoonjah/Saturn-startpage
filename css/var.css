@@ -573,9 +573,7 @@ img {
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
-.button-modal:hover {
-  background: var(--moreapps-hovering-clr);
-}
+
 .app .tooltiptext {
   color: var(--sat-ids);
   background: var(--sat-shortcuts-hover);
