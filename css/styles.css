@@ -196,20 +196,23 @@ input:checked + .slider:before {
 
 .button-modal {
   outline: none;
-  padding: 9px 9px;
+  padding: 8px 8px;
   border-radius: 10px;
   float: right;
+
+  border: 2px solid var(--sat-search-shortcuts);
 }
 .button-modal i {
   font-size: 1.2rem;
 }
 .button-modal:hover {
-  transform: scale(1.1);
+  border: 2px solid var(--reddit-hover-color);
 }
 .external-links {
   text-decoration: none;
 }
 .external-links:hover {
+  color: var(--sat-accent-color1);
   text-decoration: underline;
 }
 
