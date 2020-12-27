@@ -619,6 +619,10 @@ img {
   color: var(--for-white); /* force white to fix issues */
 }
 
+.button-modal i {
+  color: var(--sat-ids);
+}
+
 .app {
   background: var(--sat-search-shortcuts);
   transition: transform 0.1s ease, box-shadow 0.1s ease,
