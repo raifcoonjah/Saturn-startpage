@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     //reset form
     $title.val("");
-    $url.val("https://");
+    $url.val("");
     $("#add-link-form").slideToggle("100");
   });
 
