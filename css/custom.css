@@ -1,8 +1,16 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
-.sortlist button {
-  padding: 3px;
-  float: right;
+.fav_search_bar_con{
+ margin-bottom:15px;
+}
+.sortlist {
+  cursor: pointer; /* Pointer/hand icon */
+
+}
+.sortlist:hover {
+  background-color: var(--reddit-hover-color);
+  color: var(--sat-ids);
+  transition: var(--transition-speed-default);
 }
 
 .search-bar_fav {
