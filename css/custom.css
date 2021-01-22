@@ -1,14 +1,14 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
-.fav_search_bar_con{
- margin-bottom:15px;
+.fav_search_bar_con {
+  margin-bottom: 15px;
 }
 .sortlist {
+  border: 2px solid var(--sat-search-shortcuts);
   cursor: pointer; /* Pointer/hand icon */
-
 }
 .sortlist:hover {
-  background-color: var(--reddit-hover-color);
+  border: 2px solid var(--reddit-hover-color);
   color: var(--sat-ids);
   transition: var(--transition-speed-default);
 }
@@ -25,5 +25,7 @@
 }
 
 .search-bar_fav:hover {
+  color: var(--sat-ids);
+  transition: var(--transition-speed-default);
   border: 2px solid var(--reddit-hover-color);
 }
