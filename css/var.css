@@ -653,6 +653,7 @@ img {
   filter: var(--brightness-headerimg);
 }
 
+.sortlist:hover,
 .removebtn:hover,
 #fav-link a:hover {
   background-color: var(--reddit-hover-color);

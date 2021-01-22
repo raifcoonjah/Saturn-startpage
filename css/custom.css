@@ -1,3 +1,6 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
-
+.sortlist {
+  font-size: 15px;
+  float: right;
+}

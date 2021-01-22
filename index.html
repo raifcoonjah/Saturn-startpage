@@ -169,10 +169,12 @@
             placeholder="Search favorites.."
             title="Type in a name"
           />
-          <button onclick="sortList()">Sort</button>
 
           <h2></h2>
           <div id="content">
+            <button class="sortlist" onclick="sortList()">
+              <i class="las la-sort-alpha-up"></i>
+            </button>
             <div id="id01">
               <ul id="fav-link"></ul>
               <div id="new-link-button">
@@ -262,10 +264,12 @@
             </div>
           </div>
           <div class="dark-mode-bg2">
-            <input type="checkbox" class="AvGamesCheckBox" />
-            <div id="hidemyInput">
-              <div id="mesfavgame">Hide favorites Search Bar</div>
-            </div>
+            <h4>Hide Favorites Search bar</h4>
+            <p>Hate the new Search bar? Hide it using this toggle.</p>
+            <label class="theme-switch">
+              <input type="checkbox" class="AvGamesCheckBox" />
+              <div class="slider round"></div>
+            </label>
           </div>
           <div class="dark-mode-bg2">
             <h4>Change search 🔍</h4>
@@ -282,8 +286,8 @@
               Updated on: Jan 22, 2021.
 
               <br />
-              Version: v2.3.5 Dev, Saturn UI 2 [Usoa Tethys] | More apps: v1.4.1
-              | Favorites Beta: v2.0
+              Version: v2.4, Saturn UI 2 [Usoa Tethys] | More apps: v1.4.1 |
+              Favorites Beta: v2.0
               <br />
               Source Code:
               <a
