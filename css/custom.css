@@ -1,6 +1,21 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
-.sortlist {
-  font-size: 15px;
+.sortlist button {
+  padding: 3px;
   float: right;
+}
+
+.search-bar_fav {
+  float: right;
+  color: var(--sat-ids);
+  margin: 2px 0;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid var(--sat-bg);
+}
+
+.search-bar_fav:hover {
+  border: 2px solid var(--reddit-hover-color);
 }
