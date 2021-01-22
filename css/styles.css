@@ -456,11 +456,12 @@ ul li {
 }
 #add-link-form input:hover {
   border: 2px solid rgb(73, 89, 95);
-  transition: 0.1s;
+  transition: var(--transition-speed-default);
 }
 
 #add-link-form input:focus {
   border: 2px solid var(--sat-accent-color1);
+  transform: scale(1.1);
 }
 
 #new-link-button button,
