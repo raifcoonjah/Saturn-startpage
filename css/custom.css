@@ -13,6 +13,10 @@
   transition: var(--transition-speed-default);
 }
 
+.search-bar_fav:focus {
+  border: 2px solid var(--reddit-hover-color);
+}
+
 .search-bar_fav {
   float: right;
   color: var(--sat-ids);
