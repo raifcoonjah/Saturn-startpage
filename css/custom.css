@@ -34,3 +34,7 @@
   transition: var(--transition-speed-default);
   border: 2px solid var(--reddit-hover-color);
 }
+
+.side-text i {
+  color: var(--sat-accent-color1);
+}
