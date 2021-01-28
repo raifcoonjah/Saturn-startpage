@@ -128,7 +128,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 65ms 0s, transform 65ms;
+  transition: visibility 0s linear 0s, opacity 35ms 0s, transform 35ms;
 }
 .created-by {
   width: 150px;
