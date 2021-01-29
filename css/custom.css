@@ -1,3 +1,40 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
+.fav_search_bar_con {
+  margin-bottom: 15px;
+}
+.sortlist {
+  color: var(--sat-ids);
+  border: 2px solid var(--sat-search-shortcuts);
+  cursor: pointer; /* Pointer/hand icon */
+}
+.sortlist:hover {
+  border: 2px solid var(--reddit-hover-color);
+  transition: var(--transition-speed-default);
+}
 
+.search-bar_fav:focus {
+  border: 2px solid var(--reddit-hover-color);
+}
+
+.search-bar_fav {
+  font-weight: 500;
+  float: right;
+  color: var(--sat-ids);
+  margin: 2px 0;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid var(--sat-bg);
+}
+
+.search-bar_fav:hover {
+  color: var(--sat-ids);
+  transition: var(--transition-speed-default);
+  border: 2px solid var(--reddit-hover-color);
+}
+
+.side-text i {
+  color: var(--sat-accent-color1);
+}

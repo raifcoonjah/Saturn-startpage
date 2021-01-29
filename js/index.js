@@ -73,7 +73,7 @@ function getDate() {
   let date = new Date(),
     months = [
       "Jan",
-      "Febr",
+      "Feb",
       "Mar",
       "Apr",
       "May",

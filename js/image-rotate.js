@@ -1,5 +1,5 @@
 // Use javascript to switch between different images.
-// v0.4
+// v0.5
 
 var images = [
   "./img/1.svg",

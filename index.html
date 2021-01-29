@@ -67,14 +67,23 @@
           </form>
         </div>
       </div>
+
       <button class="button-modal" id="trigger">
         <i class="las la-cog"></i>
       </button>
+
+      <!-- App lists -->
       <h5 class="yourapps"><i class="las la-grip-horizontal"></i> App list</h5>
       <h1></h1>
       <div class="popup">
         <div id="apps">
           <!-- Row 1 -->
+          <a href="https://to-do.live.com/tasks/myday">
+            <div class="app">
+              <span class="tooltiptext">Microsoft todo</span>
+              <i class="lar la-list-alt"></i></div
+          ></a>
+
           <a href="https://youtube.com">
             <div class="app">
               <span class="tooltiptext">Youtube</span>
@@ -108,66 +117,79 @@
               <span class="tooltiptext">Google Drive</span>
               <i class="lab la-google-drive"></i></div
           ></a>
+          <div class="apps_row2">
+            <a href="https://instagram.com">
+              <div class="app">
+                <span class="tooltiptext">Instagram</span>
+                <i class="lab la-instagram"></i></div
+            ></a>
 
-          <a href="https://instagram.com">
-            <div class="app">
-              <span class="tooltiptext">Instagram</span>
-              <i class="lab la-instagram"></i></div
-          ></a>
-          <!-- Row 2 -->
-          <a href="https://anonaddy.com">
-            <div class="app">
-              <span class="tooltiptext">Anonaddy</span>
-              <i class="lar la-share-square"></i></div
-          ></a>
+            <!-- Row 2 -->
 
-          <a href="https://mail.google.com">
-            <div class="app">
-              <span class="tooltiptext">Gmail </span>
-              <i class="las la-inbox"></i></div
-          ></a>
-          <a href="https://keep.google.com">
-            <div class="app">
-              <span class="tooltiptext">Google Keep</span>
-              <i class="las la-lightbulb"></i></div
-          ></a>
-          <a href="https://codepen.io/">
-            <div class="app">
-              <span class="tooltiptext">Codepen</span>
-              <i class="lab la-codepen"></i></div
-          ></a>
+            <a href="https://anonaddy.com">
+              <div class="app">
+                <span class="tooltiptext">Anonaddy</span>
+                <i class="lar la-share-square"></i></div
+            ></a>
 
-          <a href="https://deezer.com">
-            <div class="app">
-              <span class="tooltiptext">Deezer</span>
-              <i class="las la-music"></i></div
-          ></a>
+            <a href="https://mail.google.com">
+              <div class="app">
+                <span class="tooltiptext">Gmail </span>
+                <i class="las la-inbox"></i></div
+            ></a>
+            <a href="https://keep.google.com">
+              <div class="app">
+                <span class="tooltiptext">Google Keep</span>
+                <i class="las la-lightbulb"></i></div
+            ></a>
+            <a href="https://codepen.io/">
+              <div class="app">
+                <span class="tooltiptext">Codepen</span>
+                <i class="lab la-codepen"></i></div
+            ></a>
 
-          <a href="https://therandombutton.github.io/random.html">
-            <div class="app">
-              <span class="tooltiptext">I'm Feeling lucky!</span>
-              <i class="las la-smile-wink"></i></div
-          ></a>
+            <a href="https://deezer.com">
+              <div class="app">
+                <span class="tooltiptext">Deezer</span>
+                <i class="las la-music"></i></div
+            ></a>
+            <!-- End of row 2 -->
 
-          <!-- End of row 2 -->
-
-          <!-- Open More apps -->
-          <div class="app" id="navy">
-            <span class="tooltiptext">More apps</span>
-            <i class="las la-icons"></i>
-          </div>
-        </div>
-
-        <!-- Favorite Feature -->
-        <div id="fav-container">
-          <h5 class="yourapps"><i class="las la-bookmark"></i> Favorites</h5>
-          <h2></h2>
-          <div id="content">
-            <ul id="fav-link"></ul>
-            <div id="new-link-button">
-              <button>New favorite</button>
+            <!-- Open More apps -->
+            <div class="app" id="navy">
+              <span class="tooltiptext">More apps</span>
+              <i class="las la-icons"></i>
             </div>
           </div>
+        </div>
+        <!-- End of app list -->
+
+        <!-- Favorite Feature 2.1 -->
+        <div id="fav-container" class="fav-container">
+          <h5 class="yourapps"><i class="las la-bookmark"></i> Favorites</h5>
+          <h2></h2>
+          <div class="fav_search_bar_con">
+            <button class="sortlist" onclick="sortList()">
+              <i class="las la-sort-alpha-up"></i>
+            </button>
+            <input
+              class="search-bar_fav"
+              type="text"
+              id="favSearch"
+              onkeyup="favSearchFunction()"
+              placeholder="Search all favorites.."
+              title="Well, well, well... How the turn tables."
+            />
+          </div>
+          <div id="content">
+            <div id="sortSupport">
+              <ul id="fav-link"></ul>
+              <div id="new-link-button">
+                <button>New favorite</button>
+              </div>
+            </div>
+          </div>
+
           <!-- Add new link page -->
           <div id="add-link-form">
             <label>Title</label>
@@ -181,26 +203,28 @@
             /><br /><button id="add">Save</button>
             <h3></h3>
             <div class="side-text">
-              <h5>Help & notice</h5>
-              - Currently Favorites doesn't have a limit, but we recommend under
+              <h5><i class="lar la-question-circle"></i> Notice</h5>
+              - Currently Favorites doesn't have a limit, but I recommend under
               30. <br />
               - All links are saved using local storage. <br />
               - Pressing on the New Favorite button will close this menu.
               <br />
-              <h5>Emojis & icons</h5>
-              - Favorites now support
+              <h5><i class="lar la-grin-beam"></i> Icons support</h5>
+
+              - Learn everything about favorites:
               <a
-                href="https://emoji-css.afeld.me/"
-                class="external-links"
-                target="_blank"
-                >Alfredo's Emoji css</a
-              >
-              Learn more
-              <a
-                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-emojis"
+                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
                 class="external-links"
                 target="_blank"
                 >here</a
+              >
+              <br />
+              - Add emojis to favorites using
+              <a
+                href="https://emoji-css.afeld.me/"
+                target="_blank"
+                class="external-links"
+                >Emoji CSS</a
               >.
               <br />
               - Favorites now also support
@@ -210,13 +234,6 @@
                 target="_blank"
                 >line-awesome icons.</a
               >
-              Learn more
-              <a
-                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-line-awesome-icons"
-                class="external-links"
-                target="_blank"
-                >here</a
-              >.
             </div>
           </div>
         </div>
@@ -226,7 +243,7 @@
       <div class="modal">
         <div class="modal-content">
           <span class="close-button"></span>
-          <h4 class="text-center">Settings</h4>
+          <h4 class="text-center"><i class="las la-cog"></i> Settings</h4>
           <div class="snip-wid">
             <a href="https://github.com/mraif13/Saturn-startpage/releases"
               ><button>What's new</button></a
@@ -241,7 +258,7 @@
             >
           </div>
           <div class="dark-mode-bg">
-            <h4>Dark mode 🌛</h4>
+            <h5>Dark mode 🌛</h5>
             <p>Join the dark side, your eyes will thank you later.</p>
             <div class="theme-switch-wrapper">
               <label class="theme-switch" for="checkbox">
@@ -250,23 +267,51 @@
               </label>
             </div>
           </div>
+
           <div class="dark-mode-bg2">
-            <h4>Change search 🔍</h4>
+            <h5>Custom Settings</h5>
+            <p>Make Saturn truly yours.</p>
+            <h6>Hide Favorites search</h6>
+            <label class="theme-switch">
+              <input type="checkbox" class="AvGamesCheckBox" />
+              <div class="slider round"></div>
+            </label>
+
+            <h6>Hide Favorites completely</h6>
+            <label class="theme-switch">
+              <input type="checkbox" class="AvGamesCheckBox_favo_compl" />
+              <div class="slider round"></div>
+            </label>
+
+            <h6>Remove app list's second row</h6>
+            <label class="theme-switch">
+              <input type="checkbox" class="AvGamesCheckBox_apps_row2" />
+              <div class="slider round"></div>
+            </label>
+          </div>
+
+          <div class="dark-mode-bg2">
+            <h5>Change search 🔍</h5>
             <p>Change the search engine just by clicking on the icon.</p>
           </div>
-          <div class="dark-mode-bg3">
-            <h4>Created by: mraif13 ✨</h4>
-            <img class="created-by" src="icons/peeps.svg " title="mraif13" />
-          </div>
 
           <div class="dark-mode-bg3">
-            <h4>Misc 🤖</h4>
+            <h5>Misc 🤖</h5>
+            <p></p>
             <p>
-              Updated on: Jan 18, 2021.
+              Created by:
+              <a
+                href="https://github.com/mraif13"
+                target="_blank"
+                class="external-links"
+              >
+                mraif13 </a
+              >✨
+              <br />
+              Updated on: Jan 28, 2021.
 
               <br />
-              Version: v2.3.4, Saturn UI 2 [Arctic Kale] | More apps: v1.4.1 |
-              Favorites Beta: v1.4
+              Version: v2.4.0, Saturn UI 2 [Usoa Tethys]
               <br />
               Source Code:
               <a
@@ -276,24 +321,7 @@
                 >here</a
               >
               <br />
-              Favorites Emoji Support (BETA):
-              <a
-                href="https://emoji-css.afeld.me/"
-                target="_blank"
-                class="external-links"
-                >Afeld's emoji css</a
-              >
-              <br />
-              Icons: Line-awesome by:
-              <a
-                href="https://icons8.com/line-awesome"
-                target="_blank"
-                class="external-links"
-              >
-                icons8</a
-              >
-              <br />
-              Art Works: Svgrepo | Universe 2
+              Art Work: Svgrepo | Universe 2
               <br />
             </p>
           </div>
@@ -301,7 +329,7 @@
         </div>
       </div>
 
-      <!-- New apps Stable -->
+      <!-- New apps Stable v1.4.1 -->
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" id="navyclose"
           ><i class="las la-times"></i
@@ -336,7 +364,7 @@
               <a href="https://devdocs.io/">
                 <div class="cuteapps">
                   <i class="las la-book"></i>
-                  <p>Devdocs</p>
+                  <p>Dev docs</p>
                 </div></a
               >
               <a href="https://orchomenos.github.io/Design-resources/">
@@ -378,7 +406,7 @@
               <a href="https://internetingishard.com/">
                 <div class="cuteapps">
                   <i class="las la-wifi"></i>
-                  <p>interneting is hard</p>
+                  <p>Interneting is hard</p>
                 </div></a
               >
               <a href="https://learn-anything.xyz/">
@@ -405,10 +433,10 @@
                   <p>Protonmail</p>
                 </div></a
               >
-              <a href="https://piracy.now.sh/">
+              <a href="https://warez.now.sh/">
                 <div class="cuteapps">
                   <i class="las la-skull-crossbones"></i>
-                  <p>Piracy now</p>
+                  <p>Warezz</p>
                 </div></a
               >
               <a href="https://www.producthunt.com/">
