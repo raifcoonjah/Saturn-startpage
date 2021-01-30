@@ -20,6 +20,5 @@
     }
   },
 
-  "permissions": ["storage"],
-  "content_security_policy": "script-src 'self'; script-src 'unsafe-inline'; object-src 'self';"
+  "permissions": ["storage"]
 }
