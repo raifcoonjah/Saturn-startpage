@@ -1,26 +1,6 @@
 // add js stuff here.
 // Think this should be in Saturn? Feel free to make a PR.
 
-// Hide stuff js
-$(function () {
-  var status = localStorage.getItem("chkStatus");
-  if (status == "true") {
-    $(".search-bar_fav").css("display", "none");
-    $(".AvGamesCheckBox").attr("checked", true);
-  } else {
-    $(".search-bar_fav").css("display", "block");
-    $(".AvGamesCheckBox").attr("checked", false);
-  }
-  $(".AvGamesCheckBox").click(function () {
-    if (this.checked) {
-      $(".search-bar_fav").hide();
-    } else {
-      $(".search-bar_fav").show();
-    }
-    localStorage.setItem("chkStatus", this.checked);
-  });
-});
-
 // hide favorites completely.
 
 $(function () {
