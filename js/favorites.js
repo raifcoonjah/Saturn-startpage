@@ -38,7 +38,6 @@ $(document).ready(function () {
 
   //form toggle
   $("#new-link-button").click(function () {
-    $("#add-link-form").slideToggle("100");
+    $("#add-link-form").slideToggle("50");
   });
 });
-

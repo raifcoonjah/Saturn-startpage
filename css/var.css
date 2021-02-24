@@ -142,7 +142,7 @@ v2 VAR CSS
   --reddit-hover-color: #39414e;
   --brightness-headerimg: brightness(1.1);
   --for-white: #ffffff;
-  --snip-wid-btn: #232933;
+  --snip-wid-btn: #23293363;
   --add-link-border: rgb(43, 52, 56);
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
@@ -584,7 +584,7 @@ img {
 .dark-mode-bg3,
 .dark-mode-bg5 {
   color: var(--sat-ids);
-  background: var(--sat-setting-bg-effect);
+  background: var(--snip-wid-btn);
 }
 .gudmorning {
   background-color: var(--gudmrning-txt-bg);
