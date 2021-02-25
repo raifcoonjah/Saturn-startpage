@@ -457,7 +457,7 @@ ul li {
   padding: 10px;
   outline: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 2px solid var(--add-link-border);
 }
 #add-link-form input:hover {
