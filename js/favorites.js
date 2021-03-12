@@ -1,17 +1,17 @@
-// Favorites v2.0 | [jquery]
+// Favorites v2.2 | [BUILD WITH JQUERY]
 $(document).ready(function () {
   var $ul = $("#fav-link");
   var $title = $("#title");
   var $url = $("#url");
 
-  //get links from local storage
+  // Get links from local storage
   if (localStorage.getItem("vk-links")) {
     $ul.html(localStorage.getItem("vk-links"));
   }
 
-  // add new link
+  // Add new link
   $("#add").click(function () {
-    //add new item
+    // Add new item
     $("#fav-link").append(
       '<li><a href="' +
         $url.val() +
@@ -20,23 +20,23 @@ $(document).ready(function () {
         '</a><button class="removebtn"><i class="las la-minus-circle"></i></button></li>'
     );
 
-    //save changes to localstorage
+    // Save changes to localstorage
     localStorage.setItem("vk-links", $ul.html());
 
-    //reset form
+    // Reset form
     $title.val("");
     $url.val("");
     $("#add-link-form").slideToggle("100");
   });
 
-  //remove item
+  // Remove item
   $("#fav-link").on("click", ".removebtn", function () {
     $(this).parent().remove();
-    //save changes to localstorage
+    // Save changes to localstorage
     localStorage.setItem("vk-links", $ul.html());
   });
 
-  //form toggle
+  // Form toggle
   $("#new-link-button").click(function () {
     $("#add-link-form").slideToggle("50");
   });

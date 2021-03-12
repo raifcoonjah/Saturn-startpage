@@ -6,7 +6,7 @@ const determineGreet = (
       ? "morning! "
       : hours < 18
       ? "afternoon! "
-      : hours < 21 // After 9PM display night instead.
+      : hours < 21 // After 21:00/9:00 display night instead.
       ? "evening! "
       : "night! "
   } `);
@@ -117,7 +117,7 @@ function closeNav() {
 
 
 
-// Hide feature: 
+// Hide feature v1.0
 
 // Hide favorites
 
@@ -140,7 +140,7 @@ $(function () {
   });
 });
 
-// Hide app row 
+// Hide App row .2 
 
 $(function () {
   var status = localStorage.getItem("apps_row2_hidden");
