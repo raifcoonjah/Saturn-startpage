@@ -70,7 +70,7 @@ body {
   font-size: 15x;
 }
 
-/* V1.0 Settings page - (BETA) */
+/* V1.0 Settings page - (Unstable) */
 
 /* Snippet widgets */
 
@@ -128,7 +128,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 250ms 0s, transform 250ms;
+  transition: visibility 0s linear 0s, opacity 245ms 0s, transform 245ms;
 }
 .created-by {
   width: 150px;
@@ -489,6 +489,6 @@ ul li {
 #new-link-button button:hover,
 #add-link-form button:hover {
   background-color: var(--reddit-hover-color);
-  transition: 0.1s;
+  transition: var(--transition-speed-default);
   color: var(--sat-ids);
 }
