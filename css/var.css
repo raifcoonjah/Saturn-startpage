@@ -106,6 +106,7 @@ v2 CSS Core
   --for-white: #ffffff;
   --snip-wid-btn: #beb7b7;
   --add-link-border: rgb(150, 151, 151);
+  --settings-warning-bg: rgba(247, 247, 1, 0.322);
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
@@ -143,6 +144,7 @@ v2 CSS Core
   --brightness-headerimg: brightness(1.1);
   --for-white: #ffffff;
   --snip-wid-btn: #23293363;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(43, 52, 56);
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;

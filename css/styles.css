@@ -295,8 +295,9 @@ input:checked + .slider:before {
   margin-top: 9px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .dark-mode-bg-warning {
-  background-color: rgba(255, 255, 0, 0.075);
+  background-color:var(--settings-warning-bg);
 }
 /* More apps */
 
@@ -392,7 +393,7 @@ input:checked + .slider:before {
   cursor: pointer; /* Pointer/hand icon */
   margin: 2px;
   font-weight: 500;
-  border: 2px solid var(--sat-bg);
+  border: 2px solid var(--sat-setting-bg-color);
 }
 
 /* Clear floats (clearfix hack) */
