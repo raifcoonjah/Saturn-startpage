@@ -107,6 +107,7 @@ v2 CSS Core
   --snip-wid-btn: #beb7b7;
   --add-link-border: rgb(150, 151, 151);
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
+  --delete-warning-bg: rgba(231, 19, 19, 0.644);
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
@@ -146,6 +147,7 @@ v2 CSS Core
   --snip-wid-btn: #23293363;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(43, 52, 56);
+  --delete-warning-bg: rgba(197, 42, 42, 0.76);
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
@@ -614,6 +616,7 @@ img {
   color: var(--sat-heading);
 }
 
+.removebtn:hover,
 .snip-wid button:hover,
 .button-modal:hover,
 .app:hover,
@@ -655,9 +658,13 @@ img {
   filter: var(--brightness-headerimg);
 }
 
-.removebtn:hover,
 #fav-link a:hover {
   background-color: var(--reddit-hover-color);
   color: var(--sat-ids);
+  transition: var(--transition-speed-default);
+}
+
+.removebtn:hover {
+  background-color: var(--delete-warning-bg);
   transition: var(--transition-speed-default);
 }

@@ -18,12 +18,7 @@ $(document).ready(function () {
         '">' +
         $title.val() +
         "</a>" +
-        // '<a href="' +
-        // $url.val() +
-        // '"target="_blank"' +
-        // '">' +
-        '<button class="removebtn2">Open in newtab [experimental]</button></a>' +
-        '<button class="removebtn"><i class="las la-minus-circle"></i></button></li>'
+        '<button class="removebtn" title="Delete"><i class="las la-minus-circle"></i></button></li>'
     );
 
     // Save changes to localstorage
