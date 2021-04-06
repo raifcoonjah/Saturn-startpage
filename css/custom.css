@@ -8,7 +8,7 @@ ul.tabs {
 ul.tabs li {
   font-weight: 500;
   background: none;
-  color: rgb(214, 214, 214);
+  color: var(--sat-ids);
   display: inline-block;
   padding: 10px 15px;
   cursor: pointer;
@@ -19,7 +19,7 @@ ul.tabs li i {
 }
 
 ul.tabs li:hover {
-  color: rgb(255, 255, 255);
+  color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
   transition: var(--transition-speed-default);
 }
