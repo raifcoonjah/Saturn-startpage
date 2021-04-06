@@ -112,7 +112,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 5px 10px;
-  width: 59rem;
+  width: 60rem;
   height: 35rem;
   overflow-y: scroll;
   border-radius: 10px;
@@ -152,7 +152,7 @@ body {
 }
 
 .slider {
-  background: #475469;
+  background: #2b333f;
   cursor: pointer;
   left: 2px;
   position: absolute;
@@ -162,7 +162,7 @@ body {
 }
 
 .slider:before {
-  border: 3px solid #63aadf;
+  border: 3px solid var(--sat-accent-color1);
   content: "";
   left: 7px;
   position: absolute;
@@ -172,7 +172,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #303a58;
+  background-color: #0c436dbe;
 }
 
 input:checked + .slider:before {
@@ -180,7 +180,7 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 12px;
+  border-radius: 100px;
 }
 
 .slider.round:before {
@@ -285,7 +285,7 @@ input:checked + .slider:before {
 }
 
 /* Adds a lighter background under each element in modal */
-.dark-mode-bg3,
+/* .dark-mode-bg3,
 .dark-mode-bg,
 .dark-mode-bg2,
 .dark-mode-bg5,
@@ -297,8 +297,8 @@ input:checked + .slider:before {
 }
 
 .dark-mode-bg-warning {
-  background-color:var(--settings-warning-bg);
-}
+  background-color: var(--settings-warning-bg);
+} */
 /* More apps */
 
 .morecontainer {
@@ -369,7 +369,7 @@ input:checked + .slider:before {
   }
 }
 
-.snip-wid button:hover,
+.snip-wid div:hover,
 #favorite-links:hover {
   cursor: pointer;
   transition: var(--transition-speed-default);
@@ -393,7 +393,7 @@ input:checked + .slider:before {
   cursor: pointer; /* Pointer/hand icon */
   margin: 2px;
   font-weight: 500;
-  border: 2px solid var(--sat-setting-bg-color);
+  border: 2px solid var(--sat-setting-bg-effect);
 }
 
 /* Clear floats (clearfix hack) */
@@ -468,7 +468,6 @@ ul li {
 
 #add-link-form input:focus {
   border: 2px solid var(--sat-accent-color1);
-  transform: scale(1.1);
 }
 
 #new-link-button button,

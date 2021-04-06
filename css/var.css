@@ -583,13 +583,13 @@ img {
   background: var(--sat-shortcuts-hover);
 }
 
-.dark-mode-bg,
+/* .dark-mode-bg,
 .dark-mode-bg2,
 .dark-mode-bg3,
 .dark-mode-bg5 {
   color: var(--sat-ids);
   background: var(--snip-wid-btn);
-}
+} */
 .gudmorning {
   background-color: var(--gudmrning-txt-bg);
   background-image: var(--gudmrning-txt);
@@ -612,7 +612,7 @@ img {
 /* Neon effect */
 
 .snip-wid button {
-  background-color: var(--snip-wid-btn);
+  background-color: var(--sat-setting-bg-effect);
   color: var(--sat-heading);
 }
 

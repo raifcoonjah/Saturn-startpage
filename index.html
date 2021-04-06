@@ -202,22 +202,6 @@
                 target="_blank"
                 >here</a
               >
-              <br />
-              <!-- Add emojis to favorites using
-              <a
-                href="https://emojipedia.org"
-                target="_blank"
-                class="external-links"
-                >Emojipedia</a
-              >.
-              <br /> -->
-              <!-- Favorites also support
-              <a
-                href="https://icons8.com/line-awesome"
-                class="external-links"
-                target="_blank"
-                >line-awesome icons.</a
-              > -->
             </div>
           </div>
         </div>
@@ -227,111 +211,139 @@
       <div class="modal">
         <div class="modal-content">
           <span class="close-button"></span>
-          <h4 class="text-center"><i class="las la-cog"></i> Settings</h4>
-          <div class="snip-wid">
-            <a href="https://github.com/mraif13/Saturn-startpage/releases"
-              ><button>What's new</button></a
-            >
-
-            <a href="https://github.com/mraif13/Saturn-startpage/pulls"
-              ><button>Request a feature</button></a
-            >
-
-            <a href="https://github.com/mraif13/Saturn-startpage#privacy"
-              ><button>Privacy</button></a
-            >
-          </div>
-          <div class="dark-mode-bg-warning">
-            <h4>Notice: v3.0</h4>
-            <p>
-              Saturn Startpage is getting a complete rewritten & redesigned
-              interface, future releases may not be as stable as they used to.
-              v2.9.9 will be the last release using Vannrith Startpage base.
-              <a
-                href="https://github.com/mraif13/Saturn-startpage/blob/v3-redesign/change.MD"
-                class="external-links"
-                >Learn more.</a
-              >
-            </p>
-          </div>
-          <div class="dark-mode-bg">
-            <h4><i class="las la-pencil-ruler"></i> | Customization</h4>
-            <h5>Dark mode</h5>
-            <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-              </label>
-            </div>
-            <h5>Disable Favorites</h5>
-            <label class="theme-switch">
-              <input type="checkbox" class="AvGamesCheckBox_favo_compl" />
-              <div class="slider round"></div>
-            </label>
+          <h4 class="text-center">
+            Settings<span style="color: #0271b6">.</span>
+          </h4>
+          <div class="container">
+            <ul class="tabs">
+              <li class="tab-link current" data-tab="tab-1">
+                <i class="las la-bell"></i> Notification
+              </li>
+              <li class="tab-link" data-tab="tab-2">
+                <i class="las la-pencil-ruler"></i> Customization
+              </li>
+              <!-- <li class="tab-link" data-tab="tab-4">
+                <i class="las la-clipboard"></i> Changelog
+              </li> -->
+              <li class="tab-link" data-tab="tab-3">
+                <i class="las la-info"></i> About
+              </li>
+            </ul>
             <br />
-            <h5>Remove app list second row</h5>
-            <label class="theme-switch">
-              <input type="checkbox" class="AvGamesCheckBox_apps_row2" />
-              <div class="slider round"></div>
-            </label>
-            <h5><i class="las la-search"></i> | Change Search</h5>
-            <p>
-              Change the search provider by clicking on the icon found in the
-              search bar.
-            </p>
-          </div>
+            <div id="tab-1" class="tab-content current slide-up-fade-in">
+              <h4><i class="las la-bell"></i> | Notification</h4>
+              <h6><i class="las la-calendar"></i> April 6th 2021</h6>
+              <h4>New Settings UI!</h4>
+              <p>
+                The settings page was always the thing that bothered me about
+                Saturn, the design looks dated it never felt quite right. That's
+                why I decided to completely redo everything. The new UI is now
+                simpler and more modern. I also included some fancy new
+                animation that ties everything nicely together. If you have any
+                <a
+                  href="mailto:raifcoonjah@pm.me"
+                  class="external-links"
+                  target="_blank"
+                  >Feedback <i class="las la-external-link-alt"></i
+                ></a>
+                email me.
+              </p>
+              <h1></h1>
+              <h6><i class="las la-calendar"></i> March 29th 2021</h6>
+              <h4>Notice: v3.0</h4>
+              <p>
+                Saturn Startpage is getting a complete rewritten &amp;
+                redesigned interface, future releases may not be as stable as
+                they used to. With the upcoming v2.5.0, you should start to see
+                some the new UI. v2.9.9 will be the last release using Vannrith
+                Startpage base.
+                <a
+                  href="https://github.com/mraif13/Saturn-startpage/blob/v3-redesign/change.MD"
+                  class="external-links"
+                  target="_blank"
+                  >Learn more <i class="las la-external-link-alt"></i
+                ></a>
+              </p>
+            </div>
+            <div id="tab-2" class="tab-content slide-up-fade-in">
+              <div class="dark-mode-bg2">
+                <h4><i class="las la-pencil-ruler"></i> | Customization</h4>
+                <h5>Dark mode</h5>
+                <div class="theme-switch-wrapper">
+                  <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                  </label>
+                </div>
+                <h5>Disable Favorites</h5>
+                <label class="theme-switch">
+                  <input type="checkbox" class="AvGamesCheckBox_favo_compl" />
+                  <div class="slider round"></div>
+                </label>
+                <br />
+                <h5>Remove app list second row</h5>
+                <label class="theme-switch">
+                  <input type="checkbox" class="AvGamesCheckBox_apps_row2" />
+                  <div class="slider round"></div>
+                </label>
+                <h5><i class="las la-search"></i> | Change Search</h5>
+                <p>
+                  Change the search provider by clicking on the icon found in
+                  the search bar.
+                </p>
+              </div>
+            </div>
 
-          <div class="dark-mode-bg3">
-            <h4><i class="las la-info"></i> | Info</h4>
-            <p>
-              Created by:
-              <a
-                href="https://github.com/mraif13"
-                target="_blank"
-                class="external-links"
-              >
-                mraif13
-              </a>
-              <br />
-              Updated on: Mar 12, 2021.
-
-              <br />
-              Version: v2.5.0 Semi-Stable Channel | Saturn UI 2.3 [Over flask]
-              <br />
-              Get Source code:
-              <a
-                href="https://github.com/mraif13/Saturn-startpage/"
-                target="_blank"
-                class="external-links"
-                >here</a
-              >
-              <br />
-            </p>
+            <div id="tab-3" class="tab-content slide-up-fade-in">
+              <div class="dark-mode-bg3">
+                <h4><i class="las la-info"></i> | About</h4>
+                <p>
+                  Version: 🪐 v2.5.0 [Over flask] |
+                  <a href="/change.md" class="external-links"
+                    >View Changelog <i class="las la-external-link-alt"></i></a
+                  ><br />
+                  Created by
+                  <a href="https://github.com/mraif13/" class="external-links"
+                    >mraif13 <i class="las la-external-link-alt"></i
+                  ></a>
+                  <br />
+                  Fork of
+                  <a
+                    href="https://gitlab.com/madsouris/startpage/-/tree/simple"
+                    class="external-links"
+                    target="_blank"
+                    >Vannrith Startpage (Simple)
+                    <i class="las la-external-link-alt"></i
+                  ></a>
+                  <br />
+                </p>
+                <div class="dark-mode-bg5">
+                  <h5>
+                    <i class="lab la-paypal"></i> x
+                    <i class="las la-coffee"></i> | Support Saturn Startpage
+                  </h5>
+                  <p>
+                    Saturn Startpage is free and doesn't have any ads, but if it
+                    has saved you time and you'd like to help out... Here's my
+                    <a
+                      href="https://paypal.me/raifs"
+                      class="external-links"
+                      target="_blank"
+                      >Paypal</a
+                    >
+                    or just
+                    <a
+                      href="https://www.buymeacoffee.com/mraif1"
+                      class="external-links"
+                      target="_blank"
+                      >Buymeacoffee</a
+                    >.
+                  </p>
+                  <p>- Thanks! <i class="las la-grin-beam"></i></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="dark-mode-bg3">
-            <h5>
-              <i class="lab la-paypal"></i> x <i class="las la-coffee"></i> |
-              Support Saturn Startpage
-            </h5>
-            <p>
-              Want to Support Saturn? Donate here:
-              <a
-                href="https://paypal.me/raifs"
-                class="external-links"
-                target="_blank"
-                >Paypal</a
-              >
-              or
-              <a
-                href="https://www.buymeacoffee.com/mraif1"
-                class="external-links"
-                target="_blank"
-                >Buymeacoffee</a
-              >.
-            </p>
-            <p>- Thanks! <i class="las la-grin-beam"></i></p>
-          </div>
-          <br />
         </div>
       </div>
 
