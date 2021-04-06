@@ -94,6 +94,9 @@ body {
   padding: 20px;
   font-style: normal;
 }
+
+/* Settings */
+
 .modal {
   background-color: #15181fd8;
   position: fixed;
@@ -134,7 +137,7 @@ body {
   width: 150px;
   height: auto;
 }
-/* Dark mode switch */
+/* Settings: Dark mode switch */
 
 .theme-switch-wrapper {
   display: flex;
@@ -192,7 +195,7 @@ input:checked + .slider:before {
   font-weight: 500;
 }
 
-/* Button used to open the seetings page */
+/* Button used to open the settings page */
 
 .button-modal {
   outline: none;
@@ -214,6 +217,52 @@ input:checked + .slider:before {
 .external-links:hover {
   color: var(--sat-accent-color1);
   text-decoration: underline;
+}
+
+/* Settings navigation */
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul.tabs li {
+  font-weight: 500;
+  background: none;
+  color: var(--sat-ids);
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+ul.tabs li i {
+  color: var(--sat-accent-color1);
+}
+
+ul.tabs li:hover {
+  color: var(--sat-ids);
+  background: var(--sat-setting-bg-effect);
+  transition: var(--transition-speed-default);
+}
+
+ul.tabs li.current {
+  background: var(--sat-setting-bg-effect);
+  color: var(--sat-ids);
+  font-weight: 500;
+}
+
+.tab-content {
+  display: none;
+  background: var(--sat-setting-bg-effect);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.tab-content h4 i {
+  color: var(--sat-accent-color1);
+}
+
+.tab-content.current {
+  display: inherit;
 }
 
 /* Shortcuts */
@@ -284,21 +333,6 @@ input:checked + .slider:before {
   }
 }
 
-/* Adds a lighter background under each element in modal */
-/* .dark-mode-bg3,
-.dark-mode-bg,
-.dark-mode-bg2,
-.dark-mode-bg5,
-.dark-mode-bg-warning {
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 9px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.dark-mode-bg-warning {
-  background-color: var(--settings-warning-bg);
-} */
 /* More apps */
 
 .morecontainer {

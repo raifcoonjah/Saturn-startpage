@@ -116,10 +116,7 @@ function closeNav() {
 }
 
 
-
-// Hide feature v1.0
-
-// Hide favorites
+// Hide favorites, jQuery.
 
 $(function () {
   var status = localStorage.getItem("favorites_hidden");
@@ -140,7 +137,7 @@ $(function () {
   });
 });
 
-// Hide App row .2 
+// Hide App row .2
 
 $(function () {
   var status = localStorage.getItem("apps_row2_hidden");
@@ -158,5 +155,18 @@ $(function () {
       $(".apps_row2").show();
     }
     localStorage.setItem("apps_row2_hidden", this.checked);
+  });
+});
+
+// Settings Navigation.
+$(document).ready(function () {
+  $("ul.tabs li").click(function () {
+    var tab_id = $(this).attr("data-tab");
+
+    $("ul.tabs li").removeClass("current");
+    $(".tab-content").removeClass("current");
+
+    $(this).addClass("current");
+    $("#" + tab_id).addClass("current");
   });
 });
