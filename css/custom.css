@@ -1,2 +1,10 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
+
+/* Fix settings (beta) */
+@media (max-width: 900px) {
+  .modal-content {
+    width: 90%;
+    height: 75%;
+  }
+}

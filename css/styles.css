@@ -313,25 +313,7 @@ ul.tabs li.current {
   visibility: visible;
 }
 
-/* > 600px use these to fix the UI */
-/* [ALPHA] Super buggy atm */
 
-@media (max-width: 600px) {
-  .app {
-    width: 7%;
-    margin: 0 0.7% 15px;
-    padding: 12px 20px;
-  }
-  .app .tooltiptext {
-    width: 60px;
-    padding: 5px 3px;
-    margin-left: -40px;
-  }
-  .modal-content {
-    width: 45%;
-    height: 40%;
-  }
-}
 
 /* More apps */
 
