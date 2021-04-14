@@ -133,10 +133,7 @@ body {
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 245ms 0s, transform 245ms;
 }
-.created-by {
-  width: 150px;
-  height: auto;
-}
+
 /* Settings: Dark mode switch */
 
 .theme-switch-wrapper {
@@ -312,8 +309,6 @@ ul.tabs li.current {
 .app:hover .tooltiptext {
   visibility: visible;
 }
-
-
 
 /* More apps */
 
