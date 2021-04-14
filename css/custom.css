@@ -8,3 +8,21 @@
     height: 75%;
   }
 }
+
+.close-button {
+  font-size: 27px;
+  float: right;
+  padding: 10px 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 60px;
+}
+.close-button i {
+  display: block;
+  text-align: center;
+}
+.close-button:hover {
+  color: var(--sat-ids);
+  background: var(--sat-setting-bg-effect);
+  transition: var(--transition-speed-default);
+}
