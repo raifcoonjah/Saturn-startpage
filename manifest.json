@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Saturn Startpage",
   "short_name": "Saturn-start",
-  "version": "2.4.2",
+  "version": "2.4.26",
   "description": "Saturn is a free & open source new-tab replacement build with speed and user experience in mind.",
   "author": "mraif13",
 
@@ -13,13 +13,5 @@
     "newtab": "index.html"
   },
 
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "{aa7b057d-721f-4ed8-ae73-563f767006ee}",
-      "update_url": "https://raw.githubusercontent.com/mraif13/Saturn-startpage/master/updates.json"
-    }
-  },
-
-  "permissions": ["storage"],
-  "content_security_policy": "script-src 'unsafe-inline'; object-src 'self';"
+  "permissions": ["storage"]
 }
