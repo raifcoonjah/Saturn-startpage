@@ -470,6 +470,7 @@ ul li {
   outline: none;
   border: none;
   border-radius: 8px;
+  width: 350px;
   border: 2px solid var(--add-link-border);
 }
 #add-link-form input:hover {
