@@ -57,7 +57,7 @@ body {
 .gudmorning {
   font-weight: 500;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67,7 +67,7 @@ body {
   font-weight: 500;
   text-align: center;
   margin-top: -10px;
-  font-size: 15x;
+  font-size: 18px;
 }
 
 /* V1.0 Settings page - (Unstable) */
