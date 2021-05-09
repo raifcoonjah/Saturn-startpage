@@ -17,12 +17,23 @@
   cursor: pointer;
   border-radius: 60px;
 }
+
+.new-close-fav,
 .close-button i {
   display: block;
   text-align: center;
 }
+.new-close-fav:hover,
 .close-button:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
   transition: var(--transition-speed-default);
+}
+
+.new-close-fav {
+  font-size: 25px;
+  float: right;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 60px;
 }

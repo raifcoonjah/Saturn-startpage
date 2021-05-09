@@ -41,4 +41,8 @@ $(document).ready(function () {
   $("#new-link-button").click(function () {
     $("#add-link-form").slideToggle("50");
   });
+
+  $("#new-close-fav").click(function () {
+    $("#add-link-form").slideToggle("100");
+  });
 });
