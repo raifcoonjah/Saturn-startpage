@@ -118,7 +118,7 @@ body {
   width: 60rem;
   height: 35rem;
   overflow-y: scroll;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .modal-content {
   -ms-overflow-style: none;
