@@ -88,7 +88,7 @@ body {
 
 .text-center {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 25px;
   line-height: 33px;
   text-align: center;
   padding: 20px;
@@ -152,7 +152,7 @@ body {
 }
 
 .slider {
-  background: #2b333f;
+  background: #373d47;
   cursor: pointer;
   left: 2px;
   position: absolute;
@@ -162,7 +162,7 @@ body {
 }
 
 .slider:before {
-  border: 3px solid var(--sat-accent-color1);
+  border: 3px solid #fff;
   content: "";
   left: 7px;
   position: absolute;
@@ -172,7 +172,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #0c436dbe;
+  background-color: #09508680;
 }
 
 input:checked + .slider:before {
@@ -222,6 +222,7 @@ ul.tabs {
   padding: 0px;
   list-style: none;
 }
+
 ul.tabs li {
   font-weight: 500;
   background: none;
@@ -229,28 +230,27 @@ ul.tabs li {
   display: inline-block;
   padding: 10px 15px;
   cursor: pointer;
-  border-radius: 10px;
-}
-ul.tabs li i {
-  color: var(--sat-accent-color1);
+  border-radius: 15px;
 }
 
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
   transition: var(--transition-speed-default);
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
 ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
   color: var(--sat-ids);
   font-weight: 500;
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
 .tab-content {
   display: none;
   background: var(--sat-setting-bg-effect);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px;
 }
 
