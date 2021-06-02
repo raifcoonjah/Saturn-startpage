@@ -78,7 +78,6 @@ body {
   position: absolute;
   width: 48px;
   height: 20px;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -199,15 +198,17 @@ input:checked + .slider:before {
   padding: 8px 8px;
   border-radius: 10px;
   float: right;
-
+  outline: 2px solid var(--sat-bg);
   border: 2px solid var(--sat-search-shortcuts);
 }
 .button-modal i {
   font-size: 1.2rem;
 }
+
 .button-modal:hover {
-  border: 2px solid var(--reddit-hover-color);
+  outline: 3px solid var(--sat-tooltip-bg);
 }
+
 .external-links {
   text-decoration: none;
 }
@@ -230,7 +231,7 @@ ul.tabs li {
   display: inline-block;
   padding: 10px 15px;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 14px;
 }
 
 ul.tabs li:hover {
