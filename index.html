@@ -72,8 +72,8 @@
           <!-- Example: -->
           <!-- <a href="urlgoeshere.com">
             <div class="app">
-              <span class="tooltiptext">APPNAME</span>
-              <i class="lar la-list-alt"></i></div
+              <span class="tooltiptext">Name</span>
+             Icons goes here: <i class="lar la-list-alt"></i></div
           ></a> -->
 
           <a href="https://ticktick.com/webapp/">
@@ -170,39 +170,43 @@
             <div id="sortSupport">
               <ul id="fav-link"></ul>
               <div id="new-link-button">
-                <button>Add favorite</button>
+                <button><i class="las la-plus"></i> Add favorite</button>
               </div>
             </div>
           </div>
 
           <!-- Add new link page -->
           <div id="add-link-form">
-            <label>Title</label>
+            <div id="new-close-fav">
+              <span class="new-close-fav"
+                ><i class="las la-times-circle"></i
+              ></span>
+            </div>
+            <label><i class="las la-heading"></i> Title</label>
             <br />
             <input id="title" placeholder="Site title.." autocomplete="off" />
-            <br /><label>Url</label><br />
+            <br /><label><i class="las la-link"></i> Url</label><br />
             <input
               id="url"
               placeholder="https://example.org"
               autocomplete="off"
-            /><br /><button id="add">Add & Save</button>
+            /><br /><button id="add"><i class="lar la-save"></i> Save</button>
             <h3></h3>
             <div class="side-text">
               <h5><i class="lar la-question-circle"></i> Notice</h5>
               Currently Favorites doesn't have a limit, but I recommend under
               30. <br />
-              All links are saved using local storage. <br />
-              Pressing on the New Favorite button will close this menu.
+              All links are saved using local storage.
               <br />
-              <h5><i class="lar la-grin-beam"></i> Icons support</h5>
+              <h5><i class="lar la-question-circle"></i> Need help?</h5>
 
               Learn everything about favorites:
               <a
                 href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
                 class="external-links"
                 target="_blank"
-                >here</a
-              >
+                >here <i class="las la-external-link-alt"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -223,16 +227,33 @@
               <li class="tab-link" data-tab="tab-2">
                 <i class="las la-pencil-ruler"></i> Customization
               </li>
-              <!-- <li class="tab-link" data-tab="tab-4">
-                <i class="las la-clipboard"></i> Changelog
-              </li> -->
               <li class="tab-link" data-tab="tab-3">
-                <i class="las la-info"></i> About
+                <i class="las la-info-circle"></i> About
               </li>
+              <!-- <li class="tab-link" data-tab="tab-4">
+                <i class="las la-space-shuttle"></i> Space Ship (beta)
+              </li> -->
             </ul>
             <br />
             <div id="tab-1" class="tab-content current slide-up-fade-in">
               <h4><i class="las la-bell"></i> | Notification</h4>
+              <h6><i class="las la-calendar"></i> May 30th 2021</h6>
+              <h4>Update on: v3.0 redesign</h4>
+              <p>
+                The redesign will be "lighter" than expected. Most of the UI
+                changes will be refinements of current features, some features
+                like Favorites & App lists will receive a full overhaul but the
+                rest will stay pretty much the same. The biggest change will
+                happen in the source code, where I plan to rewrite Saturn's core
+                CSS & the main HTML to improve performance.
+
+                <a
+                  href="https://github.com/mraif13/Saturn-startpage/blob/v3-redesign/change.MD"
+                  class="external-links"
+                  target="_blank"
+                  >Learn more <i class="las la-external-link-alt"></i
+                ></a>
+              </p>
               <h6><i class="las la-calendar"></i> April 6th 2021</h6>
               <h4>New Settings UI!</h4>
               <p>
@@ -248,22 +269,6 @@
                   >Feedback <i class="las la-external-link-alt"></i
                 ></a>
                 email me.
-              </p>
-              <h1></h1>
-              <h6><i class="las la-calendar"></i> March 29th 2021</h6>
-              <h4>Notice: v3.0</h4>
-              <p>
-                Saturn Startpage is getting a complete rewritten &amp;
-                redesigned interface, future releases may not be as stable as
-                they used to. With the upcoming v2.5.0, you should start to see
-                some the new UI. v2.9.0 will be the last release using Vannrith
-                Startpage base.
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/blob/v3-redesign/change.MD"
-                  class="external-links"
-                  target="_blank"
-                  >Learn more <i class="las la-external-link-alt"></i
-                ></a>
               </p>
             </div>
             <div id="tab-2" class="tab-content slide-up-fade-in">
@@ -297,11 +302,11 @@
 
             <div id="tab-3" class="tab-content slide-up-fade-in">
               <div class="dark-mode-bg3">
-                <h4><i class="las la-info"></i> | About</h4>
+                <h4><i class="las la-info-circle"></i> | About</h4>
                 <p>
                   Version: 🪐 v2.6.0 [Ballon Rocket] |
                   <a
-                    href="https://github.com/mraif13/Saturn-startpage/releases/tag/v2.5.0"
+                    href="https://github.com/mraif13/Saturn-startpage/releases/tag/v2.5.1"
                     class="external-links"
                     target="_blank"
                     >View Changelog <i class="las la-external-link-alt"></i></a
@@ -324,13 +329,21 @@
                   ></a>
                   <br />
                   Saturn Startpage is completely open source.<a
-                    href="https://gitlab.com/madsouris/startpage/-/tree/simple"
+                    href="https://github.com/mraif13/Saturn-startpage"
                     class="external-links"
                     target="_blank"
                   >
                     Get Source code <i class="las la-external-link-alt"></i
                   ></a>
                   <br />
+                  Find
+                  <a
+                    href="https://app.simplenote.com/p/4vxWWF"
+                    class="external-links"
+                    target="_blank"
+                  >
+                    What's new <i class="las la-external-link-alt"></i
+                  ></a>
                 </p>
                 <div class="dark-mode-bg5">
                   <h5>
@@ -346,14 +359,8 @@
                       target="_blank"
                       >Paypal <i class="las la-external-link-alt"></i
                     ></a>
-                    or
-                    <a
-                      href="https://ko-fi.com/raifcoonjah"
-                      class="external-links"
-                      target="_blank"
-                      >Ko-Fi <i class="las la-external-link-alt"></i></a
-                    >.
                   </p>
+
                   <p>- Thanks! <i class="las la-grin-beam"></i></p>
                 </div>
               </div>
@@ -364,9 +371,10 @@
 
       <!-- New apps Stable v1.4.1 -->
       <div id="myNav" class="overlay">
-        <span class="close-button" id="navyclose"
-          ><i class="las la-times-circle"></i
-        ></span>
+        <a href="javascript:void(0)" class="closebtn" id="navyclose"
+          ><i class="las la-times"></i
+        ></a>
+
         <div class="morecontainer">
           <div class="overlay-content">
             <h4>
