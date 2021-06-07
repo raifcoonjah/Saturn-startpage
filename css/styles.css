@@ -151,7 +151,7 @@ body {
 }
 
 .slider {
-  background: #373d47;
+  background: var(--switch-color-bg);
   cursor: pointer;
   left: 2px;
   position: absolute;
@@ -171,7 +171,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #09508680;
+  background-color: var(--switch-color-bg-after);
 }
 
 input:checked + .slider:before {
@@ -433,6 +433,14 @@ ul li {
   margin-top: -5px;
   padding: 8px;
   border-radius: 10px;
+}
+.removebtn2 {
+  float: right;
+  margin-top: -5px;
+  padding: 8px;
+}
+.removebtn2:hover {
+  background-color: var(--sat-search-border);
 }
 
 #content {
