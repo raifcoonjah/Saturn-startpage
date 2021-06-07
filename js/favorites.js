@@ -18,7 +18,7 @@ $(document).ready(function () {
         '">' +
         $title.val() +
         "</a>" +
-        '<button class="removebtn" title="Delete"><i class="las la-minus-circle"></i></button></li>'
+        '<button class="removebtn" title="Delete item"><i class="las la-minus-circle"></i></button></li>'
     );
 
     // Save changes to localstorage
