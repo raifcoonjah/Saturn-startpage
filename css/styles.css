@@ -197,17 +197,17 @@ input:checked + .slider:before {
 
 .button-modal {
   outline: none;
-  padding: 8px 8px;
+  padding: 10px 10px;
   border-radius: 10px;
   float: right;
   outline: 2px solid var(--sat-bg);
-  border: 2px solid var(--sat-search-shortcuts);
 }
 .button-modal i {
   font-size: 1.2rem;
 }
 
 .button-modal:hover {
+  transition: var(--transition-speed-default);
   outline: 3px solid var(--sat-tooltip-bg);
 }
 
@@ -436,14 +436,6 @@ ul li {
   padding: 8px;
   border-radius: 10px;
 }
-.removebtn2 {
-  float: right;
-  margin-top: -5px;
-  padding: 8px;
-}
-.removebtn2:hover {
-  background-color: var(--sat-search-border);
-}
 
 #content {
   border-radius: 10px;
@@ -477,11 +469,13 @@ ul li {
 #add-link-form input {
   color: var(--sat-ids);
   margin: 10px 0;
-  padding: 10px;
+  padding: 9px;
+  width: 55%;
   outline: none;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 2px solid var(--add-link-border);
+  font-size: 15px;
 }
 #add-link-form input:hover {
   border: 2px solid rgb(73, 89, 95);
