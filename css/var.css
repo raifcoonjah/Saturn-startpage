@@ -108,6 +108,9 @@ v2 CSS Core
   --add-link-border: rgb(150, 151, 151);
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
   --delete-warning-bg: rgba(231, 19, 19, 0.644);
+  --switch-color-bg: #6e798a;
+  --switch-color-bg-after: #3b77a5;
+  /* --drop-shadow-color: rgba(85, 93, 112, 0.219); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
@@ -148,6 +151,9 @@ v2 CSS Core
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(43, 52, 56);
   --delete-warning-bg: rgba(197, 42, 42, 0.76);
+  --switch-color-bg: #2f343d;
+  --switch-color-bg-after: #0080e250;
+  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
@@ -648,6 +654,8 @@ img {
   border: 3px solid var(--sat-shortcuts-hover);
 }
 .headerimg {
+  width: 160px;
+  height: 160px;
   filter: var(--brightness-headerimg);
 }
 

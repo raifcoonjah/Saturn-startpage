@@ -57,7 +57,7 @@ body {
 .gudmorning {
   font-weight: 500;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67,7 +67,7 @@ body {
   font-weight: 500;
   text-align: center;
   margin-top: -10px;
-  font-size: 15x;
+  font-size: 18px;
 }
 
 /* V1.0 Settings page - (Unstable) */
@@ -78,7 +78,6 @@ body {
   position: absolute;
   width: 48px;
   height: 20px;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -88,7 +87,7 @@ body {
 
 .text-center {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 25px;
   line-height: 33px;
   text-align: center;
   padding: 20px;
@@ -98,7 +97,7 @@ body {
 /* Settings */
 
 .modal {
-  background-color: #15181fd8;
+  background-color: #15181f8a;
   position: fixed;
   left: 0;
   top: 0;
@@ -118,7 +117,7 @@ body {
   width: 60rem;
   height: 35rem;
   overflow-y: scroll;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .modal-content {
   -ms-overflow-style: none;
@@ -146,13 +145,15 @@ body {
   width: 66px;
   height: 33px;
 }
-
+.slider:hover {
+  outline: 3px solid var(--sat-setting-close-btn);
+}
 .theme-switch input {
   display: none;
 }
 
 .slider {
-  background: #2b333f;
+  background: var(--switch-color-bg);
   cursor: pointer;
   left: 2px;
   position: absolute;
@@ -162,7 +163,7 @@ body {
 }
 
 .slider:before {
-  border: 3px solid var(--sat-accent-color1);
+  border: 3px solid #fff;
   content: "";
   left: 7px;
   position: absolute;
@@ -172,7 +173,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #0c436dbe;
+  background-color: var(--switch-color-bg-after);
 }
 
 input:checked + .slider:before {
@@ -196,18 +197,20 @@ input:checked + .slider:before {
 
 .button-modal {
   outline: none;
-  padding: 8px 8px;
+  padding: 10px 10px;
   border-radius: 10px;
   float: right;
-
-  border: 2px solid var(--sat-search-shortcuts);
+  outline: 2px solid var(--sat-bg);
 }
 .button-modal i {
   font-size: 1.2rem;
 }
+
 .button-modal:hover {
-  border: 2px solid var(--reddit-hover-color);
+  transition: var(--transition-speed-default);
+  outline: 3px solid var(--sat-tooltip-bg);
 }
+
 .external-links {
   text-decoration: none;
 }
@@ -222,6 +225,7 @@ ul.tabs {
   padding: 0px;
   list-style: none;
 }
+
 ul.tabs li {
   font-weight: 500;
   background: none;
@@ -229,28 +233,27 @@ ul.tabs li {
   display: inline-block;
   padding: 10px 15px;
   cursor: pointer;
-  border-radius: 10px;
-}
-ul.tabs li i {
-  color: var(--sat-accent-color1);
+  border-radius: 14px;
 }
 
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
   transition: var(--transition-speed-default);
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
 ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
   color: var(--sat-ids);
   font-weight: 500;
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
 .tab-content {
   display: none;
   background: var(--sat-setting-bg-effect);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px;
 }
 
@@ -436,7 +439,7 @@ ul li {
 
 #content {
   border-radius: 10px;
-  padding: 10px;
+  padding: 8px;
 }
 
 #fav-link li {
@@ -466,11 +469,13 @@ ul li {
 #add-link-form input {
   color: var(--sat-ids);
   margin: 10px 0;
-  padding: 10px;
+  padding: 9px;
+  width: 55%;
   outline: none;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 2px solid var(--add-link-border);
+  font-size: 15px;
 }
 #add-link-form input:hover {
   border: 2px solid rgb(73, 89, 95);
@@ -499,6 +504,48 @@ ul li {
 
 #new-link-button button:hover,
 #add-link-form button:hover {
+  background-color: var(--reddit-hover-color);
+  transition: var(--transition-speed-default);
+  color: var(--sat-ids);
+}
+
+/* Fix settings (beta) */
+@media (max-width: 900px) {
+  .modal-content {
+    width: 90%;
+    height: 75%;
+  }
+}
+
+.close-button {
+  font-size: 27px;
+  float: right;
+  padding: 10px 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 60px;
+}
+
+.new-close-fav,
+.close-button i {
+  display: block;
+  text-align: center;
+}
+.close-button:hover {
+  color: var(--sat-ids);
+  background: var(--sat-setting-bg-effect);
+  transition: var(--transition-speed-default);
+}
+
+.new-close-fav {
+  font-size: 24px;
+  float: right;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 60px;
+}
+
+.new-close-fav:hover {
   background-color: var(--reddit-hover-color);
   transition: var(--transition-speed-default);
   color: var(--sat-ids);

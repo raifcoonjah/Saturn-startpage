@@ -18,7 +18,7 @@ $(document).ready(function () {
         '">' +
         $title.val() +
         "</a>" +
-        '<button class="removebtn" title="Delete"><i class="las la-minus-circle"></i></button></li>'
+        '<button class="removebtn" title="Delete item"><i class="las la-minus-circle"></i></button></li>'
     );
 
     // Save changes to localstorage
@@ -40,5 +40,9 @@ $(document).ready(function () {
   // Form toggle
   $("#new-link-button").click(function () {
     $("#add-link-form").slideToggle("50");
+  });
+
+  $("#new-close-fav").click(function () {
+    $("#add-link-form").slideToggle("100");
   });
 });
