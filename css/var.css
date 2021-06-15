@@ -119,7 +119,7 @@ v2 CSS Core
 }
 /* Dark mode */
 /* Welcome to the dark side! */
-[data-theme="dark"] {
+.dark {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
   --sat-bg: #0d0f13;

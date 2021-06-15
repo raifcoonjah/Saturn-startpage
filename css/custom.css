@@ -1,3 +1,59 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
 
+/* Themes */
+
+.solar {
+  --sat-heading: #ffffff;
+  --sat-ids: #ffffff;
+  --sat-bg: #ffda09;
+  --sat-search-shortcuts: #191c24;
+  --sat-search-border: #15191f;
+  --sat-icons: hsl(0, 0%, 95%);
+  --sat-icons-hovr: #fafafa;
+  --sat-links: hsl(0, 0%, 95%);
+  --sat-links-hovr: #919191;
+  --sat-default-button-txt: #fcfcfc;
+  --sat-txt-selector-clr: #434e74;
+  --sat-txt-selector-clr-after: #ffffff;
+  --sat-setting-bg-color: #0d0f13;
+  --sat-setting-bg-effect: #1e232cde;
+  --sat-setting-close-btn: #232933;
+  --sat-search-bar-hvr: #232933;
+  --sat-search-bar-focus: #1e232c;
+  --sat-tooltip-bg: #232933;
+  --sat-default-hoveringspeed: 200ms;
+  --sat-shortcuts-hover: #232933;
+  --sat-modal-app-section: #2329334d;
+  --default-font: "Poppins", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  --sat-accent-color1: #1ca8ff;
+  --moreapps-hovering-clr: #1a659e;
+  --reddit-hover-color: #39414e;
+  --brightness-headerimg: brightness(1.1);
+  --for-white: #ffffff;
+  --snip-wid-btn: #23293363;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --add-link-border: rgb(43, 52, 56);
+  --delete-warning-bg: rgba(197, 42, 42, 0.76);
+  --switch-color-bg: #2f343d;
+  --switch-color-bg-after: #0080e250;
+  --settings-button-outline: #232933;
+  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
+}
+
+#dark::before {
+  background: #2a2e35;
+}
+
+#light::before {
+  background: #ffffff;
+}
+
+#solar::before {
+  background: var(--bg-solar);
+}
