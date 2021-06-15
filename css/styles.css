@@ -208,7 +208,7 @@ input:checked + .slider:before {
 
 .button-modal:hover {
   transition: var(--transition-speed-default);
-  outline: 3px solid var(--sat-tooltip-bg);
+  outline: 3px solid var(--settings-button-outline);
 }
 
 .external-links {
