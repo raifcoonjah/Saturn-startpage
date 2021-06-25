@@ -3,5 +3,12 @@
 
 /* Themes */
 .theme-icon img {
-  width: 120px;
+  width: 170px;
+  padding: 3px;
+  border-radius: 15px;
+  margin: 2px;
+}
+.theme-icon img:hover {
+  transition: var(--sat-default-hoveringspeed);
+  background-color: var(--sat-accent-color1);
 }
