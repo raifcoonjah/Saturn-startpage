@@ -143,3 +143,40 @@ $(document).ready(function () {
     $("#" + tab_id).addClass("current");
   });
 });
+
+// new theme engine..
+
+// DOM Elements
+
+const darkButton = document.getElementById("dark");
+const lightButton = document.getElementById("light");
+const sexycontrastButton = document.getElementById("sexycontrast");
+const body = document.body;
+
+// Apply the cached theme on reload
+
+const theme = localStorage.getItem("theme");
+
+if (theme) {
+  body.classList.add(theme);
+}
+
+// Button Event Handlers
+
+darkButton.onclick = () => {
+  body.classList.replace("light", "dark");
+  body.classList.replace("sexycontrast", "dark");
+  localStorage.setItem("theme", "dark");
+};
+
+lightButton.onclick = () => {
+  body.classList.replace("dark", "light");
+  body.classList.replace("sexycontrast", "light");
+  localStorage.setItem("theme", "light");
+};
+
+sexycontrastButton.onclick = () => {
+  body.classList.replace("dark", "sexycontrast");
+  body.classList.replace("light", "sexycontrast");
+  localStorage.setItem("theme", "sexycontrast");
+};
