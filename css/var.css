@@ -161,12 +161,12 @@ v2 CSS Core
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
 }
-.sexycontrast {
+.space {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: #0d0d0f;
-  --sat-search-shortcuts: #14161d;
-  --sat-search-border: #0f1216;
+  --sat-bg: #0c0d0f;
+  --sat-search-shortcuts: #191c24;
+  --sat-search-border: #15191f;
   --sat-icons: hsl(0, 0%, 95%);
   --sat-icons-hovr: #fafafa;
   --sat-links: hsl(0, 0%, 95%);
@@ -174,23 +174,23 @@ v2 CSS Core
   --sat-default-button-txt: #fcfcfc;
   --sat-txt-selector-clr: #434e74;
   --sat-txt-selector-clr-after: #ffffff;
-  --sat-setting-bg-color: #212630;
+  --sat-setting-bg-color: #0d0f13;
   --sat-setting-bg-effect: #1e232cde;
   --sat-setting-close-btn: #232933;
-  --sat-search-bar-hvr: #333b49;
+  --sat-search-bar-hvr: #232933;
   --sat-search-bar-focus: #1e232c;
-  --sat-tooltip-bg: #374050;
+  --sat-tooltip-bg: #232933;
   --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
-  --gudmrning-txt: linear-gradient(to right, #faf089 0%, #faf089 100%);
-  --sat-accent-color1: #faf089;
-  --moreapps-hovering-clr: #faf089;
-  --reddit-hover-color: #d3cc9246;
+  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  --sat-accent-color1: #a088c0;
+  --moreapps-hovering-clr: #a088c0;
+  --reddit-hover-color: #39414e;
   --brightness-headerimg: brightness(1.1);
   --for-white: #ffffff;
-  --snip-wid-btn: #161a2063;
+  --snip-wid-btn: #23293363;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(43, 52, 56);
   --delete-warning-bg: rgba(197, 42, 42, 0.76);
@@ -203,6 +203,8 @@ v2 CSS Core
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
 }
+
+/* Fork code */
 
 * {
   /* Reset margins and padding */
@@ -303,19 +305,19 @@ h6 {
 }
 
 h1 {
-  font-size: 2.23rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.83rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.53rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.23rem;
+  font-size: 1.2rem;
 }
 
 h5 {
@@ -593,7 +595,7 @@ img {
   max-width: 100%;
 }
 
-/* New stuff */
+/* New code  */
 
 #add-link-form,
 #content {
@@ -653,8 +655,6 @@ img {
   transition: var(--transition-speed-default);
 }
 
-/* Neon effect */
-
 .snip-wid button {
   background-color: var(--sat-setting-bg-effect);
   color: var(--sat-heading);
@@ -684,8 +684,6 @@ img {
   background-color: var(--moreapps-hovering-clr);
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
-
-/* anim 2 */
 
 .snip-wid button:hover,
 .cuteapps:hover {

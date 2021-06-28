@@ -150,7 +150,7 @@ $(document).ready(function () {
 
 const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
-const sexycontrastButton = document.getElementById("sexycontrast");
+const spaceButton = document.getElementById("space");
 const body = document.body;
 
 // Apply the cached theme on reload
@@ -165,18 +165,18 @@ if (theme) {
 
 darkButton.onclick = () => {
   body.classList.replace("light", "dark");
-  body.classList.replace("sexycontrast", "dark");
+  body.classList.replace("space", "dark");
   localStorage.setItem("theme", "dark");
 };
 
 lightButton.onclick = () => {
   body.classList.replace("dark", "light");
-  body.classList.replace("sexycontrast", "light");
+  body.classList.replace("space", "light");
   localStorage.setItem("theme", "light");
 };
 
-sexycontrastButton.onclick = () => {
-  body.classList.replace("dark", "sexycontrast");
-  body.classList.replace("light", "sexycontrast");
-  localStorage.setItem("theme", "sexycontrast");
+spaceButton.onclick = () => {
+  body.classList.replace("dark", "space");
+  body.classList.replace("light", "space");
+  localStorage.setItem("theme", "space");
 };

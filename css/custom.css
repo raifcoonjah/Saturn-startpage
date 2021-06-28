@@ -12,3 +12,7 @@
   transition: var(--sat-default-hoveringspeed);
   background-color: var(--sat-accent-color1);
 }
+
+.easter-egg1 {
+  text-decoration: none;
+}
