@@ -330,7 +330,7 @@ ul.tabs li.current {
   margin: 0 0.5% 19px;
   padding: 4px 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .cuteapps i {
@@ -343,6 +343,17 @@ ul.tabs li.current {
   margin-top: 10px;
   font-weight: 500;
 }
+
+.morecontainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.morecontainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 /* Overlay + typewriter effect */
 .overlay {
   height: 0%;

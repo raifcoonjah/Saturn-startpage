@@ -114,8 +114,8 @@ v2 CSS Core
   /* --drop-shadow-color: rgba(85, 93, 112, 0.219); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.2s;
-  --transition-speed-slow: 0.3s;
+  --transition-speed-default: 0.3s;
+  --transition-speed-slow: 0.4s;
 }
 /* Dark mode */
 /* Welcome to the dark side! */
@@ -158,8 +158,8 @@ v2 CSS Core
   /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.2s;
-  --transition-speed-slow: 0.3s;
+  --transition-speed-default: 0.3s;
+  --transition-speed-slow: 0.4s;
 }
 .space {
   --sat-heading: #ffffff;
@@ -200,8 +200,8 @@ v2 CSS Core
   /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.2s;
-  --transition-speed-slow: 0.3s;
+  --transition-speed-default: 0.3s;
+  --transition-speed-slow: 0.4s;
 }
 
 /* Fork code */
@@ -631,11 +631,13 @@ img {
   background: var(--sat-search-shortcuts);
 }
 
-.app .tooltiptext {
+.app {
   color: var(--sat-ids);
   background: var(--sat-shortcuts-hover);
 }
-
+.tooltiptext {
+  background: var(--sat-tooltip-bg);
+}
 .gudmorning {
   background-color: var(--gudmrning-txt-bg);
   background-image: var(--gudmrning-txt);
@@ -676,25 +678,26 @@ img {
   background: var(--sat-search-shortcuts);
   transition: transform 0.1s ease, box-shadow 0.1s ease,
     background-color 0.1s ease;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); */
 }
 
 .app:hover {
   transform: translate3d(0px, -3px, 0px);
   background-color: var(--moreapps-hovering-clr);
-  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); */
 }
 
 .snip-wid button:hover,
 .cuteapps:hover {
-  background-color: var(--moreapps-hovering-clr);
+  background-color: var(--sat-bg);
   border-color: var(--moreapps-hovering-clr);
+  border: 3px solid var(--sat-accent-color1);
 }
 .closebtn:hover {
   border-color: var(--moreapps-hovering-clr);
 }
 .cuteapps {
-  border: 3px solid var(--sat-shortcuts-hover);
+  border: 3px solid var(--sat-bg);
 }
 .headerimg {
   width: 160px;
