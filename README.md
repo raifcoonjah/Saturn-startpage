@@ -25,7 +25,7 @@ Saturn Startpage is a fully open source, community build new-tab replacement **b
 - Please head over to: [Chromium installation](https://github.com/mraif13/Saturn-startpage/blob/Chromium/info.md)
 
 ### Tech used
-- HTML, CSS & Javascript. [I do have plans to move over to either react or vue sometime later this year or starting next year] 
+- HTML, CSS & Javascript. [I do have plans to move over to either react or vue sometime later this year] 
 
 ### Saturn status
 - Actively developed/Side Project. But as I'm starting Univercity soon and also learning python, development has slowed down.
