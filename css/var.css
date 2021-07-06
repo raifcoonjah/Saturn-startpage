@@ -91,8 +91,9 @@ v2 CSS Core
   --sat-setting-bg-color: #eeeeee;
   --sat-setting-bg-effect: #cacacadc;
   --sat-setting-close-btn: rgb(182, 182, 182);
-  --sat-search-bar-hvr: #dadada;
-  --sat-search-bar-focus: #d8d8d8;
+  --sat-search-bar-hvr: #b9b9b9;
+  --sat-search-bar-focus: #bebebe;
+  --sat-tooltip-bg: #c0c0c0;
   --default-font: "Poppins", sans-serif;
   --sat-default-hoveringspeed: 200ms;
   --sat-border-radius: 10px;
@@ -204,6 +205,49 @@ v2 CSS Core
   --transition-speed-slow: 0.4s;
 }
 
+.linkin-park {
+  --sat-heading: #ffffff;
+  --sat-ids: #ffffff;
+  --sat-bg: url(/img/whodid.jpg);
+  --sat-search-shortcuts: #181818;
+  --sat-search-border: #181818;
+  --sat-icons: hsl(0, 0%, 95%);
+  --sat-icons-hovr: #fafafa;
+  --sat-links: hsl(0, 0%, 95%);
+  --sat-links-hovr: #fccbaa;
+  --sat-default-button-txt: #fcfcfc;
+  --sat-txt-selector-clr: #ffb07d;
+  --sat-txt-selector-clr-after: #ffffff;
+  --sat-setting-bg-color: #0e0e0e;
+  --sat-setting-bg-effect: rgb(24, 24, 24);
+  --sat-setting-close-btn: #232933;
+  --sat-search-bar-hvr: #2b2b2b;
+  --sat-search-bar-focus: #2b2b2b;
+  --sat-tooltip-bg: #181818;
+  --sat-default-hoveringspeed: 200ms;
+  --sat-shortcuts-hover: #232933;
+  --sat-modal-app-section: #2329334d;
+  --default-font: "Poppins", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #f78235 100%);
+  --sat-accent-color1: #ffb07d;
+  --moreapps-hovering-clr: #ffb07d;
+  --reddit-hover-color: rgb(46, 46, 46);
+  --brightness-headerimg: brightness(1.1);
+  --for-white: #ffffff;
+  --snip-wid-btn: #23293363;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --add-link-border: rgb(43, 52, 56);
+  --delete-warning-bg: rgba(197, 42, 42, 0.76);
+  --switch-color-bg: #252525;
+  --switch-color-bg-after: #ffb07d;
+  --settings-button-outline: #252525;
+  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.3s;
+  --transition-speed-slow: 0.4s;
+}
+
 /* Fork code */
 
 * {
@@ -264,6 +308,9 @@ body {
   word-break: break-word;
   overflow-wrap: break-word;
   background: var(--sat-bg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   /* Main body text */
   color: var(--sat-ids);
@@ -637,6 +684,7 @@ img {
 }
 .tooltiptext {
   background: var(--sat-tooltip-bg);
+  color: var(--sat-ids);
 }
 .gudmorning {
   background-color: var(--gudmrning-txt-bg);

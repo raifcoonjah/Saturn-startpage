@@ -151,6 +151,7 @@ $(document).ready(function () {
 const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
 const spaceButton = document.getElementById("space");
+const linkinParkButton = document.getElementById("linkin-park");
 const body = document.body;
 
 // Apply the cached theme on reload
@@ -166,17 +167,27 @@ if (theme) {
 darkButton.onclick = () => {
   body.classList.replace("light", "dark");
   body.classList.replace("space", "dark");
+  body.classList.replace("linkin-park", "dark");
   localStorage.setItem("theme", "dark");
 };
 
 lightButton.onclick = () => {
   body.classList.replace("dark", "light");
   body.classList.replace("space", "light");
+  body.classList.replace("linkin-park", "light");
   localStorage.setItem("theme", "light");
 };
 
 spaceButton.onclick = () => {
   body.classList.replace("dark", "space");
   body.classList.replace("light", "space");
+  body.classList.replace("linkin-park", "space");
   localStorage.setItem("theme", "space");
+};
+
+linkinParkButton.onclick = () => {
+  body.classList.replace("dark", "linkin-park");
+  body.classList.replace("light", "linkin-park");
+  body.classList.replace("space", "linkin-park");
+  localStorage.setItem("theme", "linkin-park");
 };
