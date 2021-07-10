@@ -251,9 +251,9 @@ v2 CSS Core
 .purple {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: #090413;
-  --sat-search-shortcuts: #120925;
-  --sat-search-border: #120925;
+  --sat-bg: #05010e;
+  --sat-search-shortcuts: #0c061a;
+  --sat-search-border: #0c061a;
   --sat-icons: hsl(0, 0%, 95%);
   --sat-icons-hovr: #fafafa;
   --sat-links: hsl(0, 0%, 95%);
@@ -261,11 +261,11 @@ v2 CSS Core
   --sat-default-button-txt: #fcfcfc;
   --sat-txt-selector-clr: #6E46C5;
   --sat-txt-selector-clr-after: #ffffff;
-  --sat-setting-bg-color: #090413;
-  --sat-setting-bg-effect: #1e133591;
+  --sat-setting-bg-color: #05010e;
+  --sat-setting-bg-effect: #150c29;
   --sat-setting-close-btn: #232933;
-  --sat-search-bar-hvr: #1d0f3b;
-  --sat-search-bar-focus: #1d0f3b;
+  --sat-search-bar-hvr: #1b0e35;
+  --sat-search-bar-focus: #0f061f;
   --sat-tooltip-bg: #6E46C5;
   --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
@@ -274,7 +274,7 @@ v2 CSS Core
   --gudmrning-txt: linear-gradient(to right, #6e46c5 0%, #773ff0 100%);
   --sat-accent-color1: #6e46c5;
   --moreapps-hovering-clr: #6e46c5;
-  --reddit-hover-color: #311c5a;
+  --reddit-hover-color: #221242;
   --brightness-headerimg: brightness(1.1);
   --for-white: #ffffff;
   --snip-wid-btn: #23293363;
