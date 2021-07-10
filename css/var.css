@@ -193,7 +193,7 @@ v2 CSS Core
   --for-white: #ffffff;
   --snip-wid-btn: #23293363;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
-  --add-link-border: rgb(43, 52, 56);
+  --add-link-border: rgb(41, 41, 41);
   --delete-warning-bg: rgba(197, 42, 42, 0.76);
   --switch-color-bg: #252525;
   --switch-color-bg-after: #ffb07d;
@@ -208,15 +208,15 @@ v2 CSS Core
 .linkin-park {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: url(/img/whodid.jpg);
-  --sat-search-shortcuts: #181818;
-  --sat-search-border: #181818;
+  --sat-bg: url(/img/rock-legend-bg.png);
+  --sat-search-shortcuts: #181818f5;
+  --sat-search-border: #181818f5;
   --sat-icons: hsl(0, 0%, 95%);
   --sat-icons-hovr: #fafafa;
   --sat-links: hsl(0, 0%, 95%);
   --sat-links-hovr: #fccbaa;
   --sat-default-button-txt: #fcfcfc;
-  --sat-txt-selector-clr: #ffb07d;
+  --sat-txt-selector-clr: #686868;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #0e0e0e;
   --sat-setting-bg-effect: rgb(24, 24, 24);
@@ -229,8 +229,8 @@ v2 CSS Core
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #f78235 100%);
-  --sat-accent-color1: #ffb07d;
-  --moreapps-hovering-clr: #ffb07d;
+  --sat-accent-color1: #686868;
+  --moreapps-hovering-clr: #686868;
   --reddit-hover-color: rgb(46, 46, 46);
   --brightness-headerimg: brightness(1.1);
   --for-white: #ffffff;
@@ -239,8 +239,51 @@ v2 CSS Core
   --add-link-border: rgb(43, 52, 56);
   --delete-warning-bg: rgba(197, 42, 42, 0.76);
   --switch-color-bg: #252525;
-  --switch-color-bg-after: #ffb07d;
+  --switch-color-bg-after: #686868;
   --settings-button-outline: #252525;
+  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.3s;
+  --transition-speed-slow: 0.4s;
+}
+
+.purple {
+  --sat-heading: #ffffff;
+  --sat-ids: #ffffff;
+  --sat-bg: #090413;
+  --sat-search-shortcuts: #120925;
+  --sat-search-border: #120925;
+  --sat-icons: hsl(0, 0%, 95%);
+  --sat-icons-hovr: #fafafa;
+  --sat-links: hsl(0, 0%, 95%);
+  --sat-links-hovr: #6E46C5;
+  --sat-default-button-txt: #fcfcfc;
+  --sat-txt-selector-clr: #6E46C5;
+  --sat-txt-selector-clr-after: #ffffff;
+  --sat-setting-bg-color: #090413;
+  --sat-setting-bg-effect: #1e133591;
+  --sat-setting-close-btn: #232933;
+  --sat-search-bar-hvr: #1d0f3b;
+  --sat-search-bar-focus: #1d0f3b;
+  --sat-tooltip-bg: #6E46C5;
+  --sat-default-hoveringspeed: 200ms;
+  --sat-shortcuts-hover: #232933;
+  --sat-modal-app-section: #2329334d;
+  --default-font: "Poppins", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #6e46c5 0%, #773ff0 100%);
+  --sat-accent-color1: #6e46c5;
+  --moreapps-hovering-clr: #6e46c5;
+  --reddit-hover-color: #311c5a;
+  --brightness-headerimg: brightness(1.1);
+  --for-white: #ffffff;
+  --snip-wid-btn: #23293363;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --add-link-border: rgb(41, 41, 41);
+  --delete-warning-bg: rgba(197, 42, 42, 0.76);
+  --switch-color-bg: #090413;
+  --switch-color-bg-after: #6E46C5;
+  --settings-button-outline: #20113f;
   /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;

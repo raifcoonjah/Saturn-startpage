@@ -489,7 +489,7 @@ ul li {
   font-size: 15px;
 }
 #add-link-form input:hover {
-  border: 2px solid rgb(73, 89, 95);
+  border: 2px solid var(--sat-accent-color1);
   transition: var(--transition-speed-default);
 }
 
