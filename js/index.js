@@ -163,7 +163,7 @@ if (theme) {
   body.classList.add(theme);
 }
 
-// Button Event Handlers
+// Saturn theme engine, powered by local storage and javascript.
 
 darkButton.onclick = () => {
   body.classList.replace("light", "dark");

@@ -257,16 +257,16 @@ v2 CSS Core
   --sat-icons: hsl(0, 0%, 95%);
   --sat-icons-hovr: #fafafa;
   --sat-links: hsl(0, 0%, 95%);
-  --sat-links-hovr: #6E46C5;
+  --sat-links-hovr: #6e46c5;
   --sat-default-button-txt: #fcfcfc;
-  --sat-txt-selector-clr: #6E46C5;
+  --sat-txt-selector-clr: #6e46c5;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #05010e;
   --sat-setting-bg-effect: #150c29;
   --sat-setting-close-btn: #232933;
   --sat-search-bar-hvr: #1b0e35;
   --sat-search-bar-focus: #0f061f;
-  --sat-tooltip-bg: #6E46C5;
+  --sat-tooltip-bg: #6e46c5;
   --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
@@ -282,7 +282,7 @@ v2 CSS Core
   --add-link-border: rgb(41, 41, 41);
   --delete-warning-bg: rgba(197, 42, 42, 0.76);
   --switch-color-bg: #090413;
-  --switch-color-bg-after: #6E46C5;
+  --switch-color-bg-after: #6e46c5;
   --settings-button-outline: #20113f;
   /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
   /* Multiple transition speeds */
@@ -380,8 +380,7 @@ h6 {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   color: var(--sat-heading);
   padding-bottom: 2px;
   margin-bottom: 8px;

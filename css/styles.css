@@ -234,6 +234,7 @@ ul.tabs li {
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 14px;
+  border: 2px solid var(--sat-setting-bg-color);
 }
 
 ul.tabs li:hover {
@@ -247,14 +248,12 @@ ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
   color: var(--sat-ids);
   font-weight: 500;
+  border: 2px solid var(--sat-accent-color1);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
 .tab-content {
   display: none;
-  background: var(--sat-setting-bg-effect);
-  border-radius: 15px;
-  padding: 10px;
 }
 
 .tab-content h4 i {
@@ -502,13 +501,11 @@ ul li {
   display: block;
   margin-right: 0;
   margin-left: 0;
-  cursor: pointer;
   padding: 10px;
   margin-top: 20px;
   font-size: 0.9em;
   font-weight: 500;
   border-radius: 10px;
-  width: 100%;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
@@ -560,4 +557,16 @@ ul li {
   background-color: var(--reddit-hover-color);
   transition: var(--transition-speed-default);
   color: var(--sat-ids);
+}
+
+.settings-background {
+  border-radius: 15px;
+  padding: 10px;
+  background: var(--sat-setting-bg-effect);
+}
+
+.settings-background-warning {
+  border-radius: 15px;
+  padding: 10px;
+  background: var(--settings-warning-bg);
 }
