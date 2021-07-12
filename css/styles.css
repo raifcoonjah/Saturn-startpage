@@ -506,6 +506,7 @@ ul li {
   font-size: 0.9em;
   font-weight: 500;
   border-radius: 10px;
+  width: 100%;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
