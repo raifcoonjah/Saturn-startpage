@@ -243,15 +243,6 @@
               <div class="settings-background">
                 <h3>| Notifications</h3>
                 <p>Most recent notifications..</p>
-                <h6><i class="las la-calendar"></i> June 25th 2021</h6>
-                <h4>Breaking changes happening to themes!</h4>
-                <p>
-                  Wow such text!
-                  <a href="#" class="external-links" target="_blank"
-                    >Learn nothing lmao <i class="las la-external-link-alt"></i
-                  ></a>
-                </p>
-                <h1></h1>
                 <h6><i class="las la-calendar"></i> May 30th 2021</h6>
                 <h4>Update on: v3.0 redesign</h4>
                 <p>
@@ -268,24 +259,6 @@
                     target="_blank"
                     >Learn more <i class="las la-external-link-alt"></i
                   ></a>
-                </p>
-                <h1></h1>
-                <h6><i class="las la-calendar"></i> April 6th 2021</h6>
-                <h4>New Settings UI!</h4>
-                <p>
-                  The settings page was always the thing that bothered me about
-                  Saturn, the design looks dated it never felt quite right.
-                  That's why I decided to completely redo everything. The new UI
-                  is now simpler and more modern. I also included some fancy new
-                  animation that ties everything nicely together. If you have
-                  any
-                  <a
-                    href="mailto:raifcoonjah@pm.me"
-                    class="external-links"
-                    target="_blank"
-                    >Feedback <i class="las la-external-link-alt"></i
-                  ></a>
-                  email me.
                 </p>
               </div>
             </div>
@@ -335,6 +308,17 @@
                     <div class="slider round"></div>
                   </label>
                 </div> -->
+                <div class="settings-background">
+                  change background color.
+                  <input
+                    name="Color Picker"
+                    id="picker"
+                    onchange="setColor()"
+                    type="color"
+                  />
+                  <button onclick="getDefaultColor()">Apply Default</button>
+                  <button onclick="getColor()">Apply Stored</button>
+                </div>
               </div>
               <br />
               <div class="settings-background">
@@ -377,7 +361,7 @@
                   title="WARNING: PLS DO NOT PRESS THIS LINK!!!!!!!!!! ok thx "
                   >🪐</a
                 >
-                v2.7.0 [Ballon Rocket] |
+                v2.7.0 [Nyx] |
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v2.7.0"
                   class="external-links"
