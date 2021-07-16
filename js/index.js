@@ -144,9 +144,8 @@ $(document).ready(function () {
   });
 });
 
-// new theme engine..
-
-// DOM Elements
+// Saturn theme engine, powered by local storage and javascript.
+// v2.0-pancake
 
 const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
@@ -162,8 +161,6 @@ const theme = localStorage.getItem("theme");
 if (theme) {
   body.classList.add(theme);
 }
-
-// Saturn theme engine, powered by local storage and javascript.
 
 darkButton.onclick = () => {
   body.classList.replace("light", "dark");
