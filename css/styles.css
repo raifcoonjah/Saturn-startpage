@@ -451,6 +451,10 @@ ul li {
   border-radius: 10px;
 }
 
+#fav-link img {
+  border-radius: 10px;
+}
+
 #fav-link li:last-child {
   border: none;
 }
@@ -478,16 +482,20 @@ ul li {
   outline: none;
   border: none;
   border-radius: 10px;
-  border: 2px solid var(--add-link-border);
-  font-size: 15px;
+  border: 1px solid var(--add-link-border);
+  font-size: 14px;
+  outline: 2px solid var(--sat-search-shortcuts);
 }
 #add-link-form input:hover {
-  border: 2px solid var(--sat-accent-color1);
+  outline: 2px solid var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color1);
   transition: var(--transition-speed-default);
 }
 
 #add-link-form input:focus {
-  border: 2px solid var(--sat-accent-color1);
+  outline: 2px solid var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color1);
+  transition: var(--transition-speed-default);
 }
 
 #new-link-button button,
