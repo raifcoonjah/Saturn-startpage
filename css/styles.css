@@ -241,8 +241,7 @@ ul.tabs li:hover {
 ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
   color: var(--sat-ids);
-  font-weight: 500;
-  border: 2px solid var(--sat-accent-color1);
+  font-weight: 600;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
