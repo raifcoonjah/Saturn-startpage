@@ -1,38 +1,31 @@
-![Saturn-startpage](https://socialify.git.ci/mraif13/Saturn-startpage/image?font=Inter&logo=https%3A%2F%2Fcamo.githubusercontent.com%2F0000f4ea7c288ae2e25a95cdc62ac1df7eda2222%2F68747470733a2f2f696d6775722e636f6d2f4736497443456b2e706e67&owner=1&pattern=Circuit%20Board&theme=Dark)
-
-Fork of <b><a href="https://gitlab.com/madsouris/startpage/-/tree/simple" target="_blank">Vannrith Startpage (Simple)</a></b>
+![Saturn-startpage](https://i.imgur.com/FDO3ufT.png)
 
 ## What's Saturn Startpage?
-Saturn is a custom startpage that was build to replace your current new-tab with a custom one. Build for my own personal use.
+Saturn Startpage is a fully open source, community build new-tab replacement **build with speed and user experience in mind**. Saturn was original build for myself but later on I decided to open source it.
 
+## Features:
 
-## Installation 
-<b>Firefox: </b> Download the latest version on release page, updates are pushed using updates.json
-  
-<b>Chrome/edge: </b> Download ZIP, then:
+### Simple by design
+- Everything is straight forward and gets you where you need to go quickly.
 
-<br>
+### Fast & Super lightweight
+- Saturn was made with speed in mind, no useless animations or bulky code. Everything loads in a matter of seconds.
 
-# For Chrome/edge users:
-<br>
-<ul>
-4. Open the extention page<br>
-5. Enable the option called: "Developer mode"<br>
-6. Click on "Load unpacked"<br>
-7. Locate the saturn folder <br>
-8. Click open<br>
-9. Voila! Saturn has been added to your browser.<br>
-  </ul>
-<br>
+### Data? What's that
+- Saturn Startpage **DOES NOT** collect any data about you. 90% of saturn is loaded locally.
 
-## Permission
+## Installation on Firefox
+- Installation if super easy on **firefox**, just head over to the [release page](https://github.com/mraif13/Saturn-startpage/releases)
+- Download the latest version ending with a .xpi extention, it should be under assets. (ex: saturn_startpage-2.6.1.1-an+fx.xpi)
+- Updates are automatically applied over the air. 
 
-<ul>
-  x: "Change the page you see when you open a new tab" 
-  <br>
-  storage: To save changes using localstorage.
-  </ul>
-<br>
+<sub>Side note: Saturn Startpage isn't dependant on Mozilla's addons store for distribution and updates making the installations process harder, this **will** change in the future.</sub>
 
-## Privacy
-Saturn respects your privacy, everything is loaded locally. No connections are made to any external servers ever 
+## Installation on Chromium base browsers (currently not natively supported)
+- Please head over to: [Chromium installation](https://github.com/mraif13/Saturn-startpage/blob/Chromium/info.md)
+
+### Tech used
+- HTML, CSS & Javascript. [I do have plans to move over to either react or vue sometime later this year] 
+
+### Saturn status
+- Actively developed/Side Project. But as I'm starting Univercity soon and also learning python, development has slowed down.
