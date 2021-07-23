@@ -75,7 +75,7 @@ v2 CSS Core
 }
 
 /* Light mode */
-:root {
+.light {
   --sat-heading: #000000;
   --sat-ids: #1a1a1a;
   --sat-bg: #ffffff;
@@ -91,8 +91,9 @@ v2 CSS Core
   --sat-setting-bg-color: #eeeeee;
   --sat-setting-bg-effect: #cacacadc;
   --sat-setting-close-btn: rgb(182, 182, 182);
-  --sat-search-bar-hvr: #dadada;
-  --sat-search-bar-focus: #d8d8d8;
+  --sat-search-bar-hvr: #b9b9b9;
+  --sat-search-bar-focus: #bebebe;
+  --sat-tooltip-bg: #c0c0c0;
   --default-font: "Poppins", sans-serif;
   --sat-default-hoveringspeed: 200ms;
   --sat-border-radius: 10px;
@@ -114,12 +115,12 @@ v2 CSS Core
   /* --drop-shadow-color: rgba(85, 93, 112, 0.219); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.2s;
-  --transition-speed-slow: 0.3s;
+  --transition-speed-default: 0.3s;
+  --transition-speed-slow: 0.4s;
 }
 /* Dark mode */
 /* Welcome to the dark side! */
-[data-theme="dark"] {
+.dark {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
   --sat-bg: #0d0f13;
@@ -158,9 +159,139 @@ v2 CSS Core
   /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.2s;
-  --transition-speed-slow: 0.3s;
+  --transition-speed-default: 0.3s;
+  --transition-speed-slow: 0.4s;
 }
+.space {
+  --sat-heading: #ffffff;
+  --sat-ids: #ffffff;
+  --sat-bg: #0e0e0e;
+  --sat-search-shortcuts: #181818;
+  --sat-search-border: #181818;
+  --sat-icons: hsl(0, 0%, 95%);
+  --sat-icons-hovr: #fafafa;
+  --sat-links: hsl(0, 0%, 95%);
+  --sat-links-hovr: #fccbaa;
+  --sat-default-button-txt: #fcfcfc;
+  --sat-txt-selector-clr: #ffb07d;
+  --sat-txt-selector-clr-after: #ffffff;
+  --sat-setting-bg-color: #0e0e0e;
+  --sat-setting-bg-effect: rgb(24, 24, 24);
+  --sat-setting-close-btn: #232933;
+  --sat-search-bar-hvr: #2b2b2b;
+  --sat-search-bar-focus: #2b2b2b;
+  --sat-tooltip-bg: #181818;
+  --sat-default-hoveringspeed: 200ms;
+  --sat-shortcuts-hover: #232933;
+  --sat-modal-app-section: #2329334d;
+  --default-font: "Poppins", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #f78235 100%);
+  --sat-accent-color1: #ffb07d;
+  --moreapps-hovering-clr: #ffb07d;
+  --reddit-hover-color: rgb(46, 46, 46);
+  --brightness-headerimg: brightness(1.1);
+  --for-white: #ffffff;
+  --snip-wid-btn: #23293363;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --add-link-border: rgb(41, 41, 41);
+  --delete-warning-bg: rgba(197, 42, 42, 0.76);
+  --switch-color-bg: #252525;
+  --switch-color-bg-after: #ffb07d;
+  --settings-button-outline: #252525;
+  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.3s;
+  --transition-speed-slow: 0.4s;
+}
+
+.linkin-park {
+  --sat-heading: #ffffff;
+  --sat-ids: #ffffff;
+  --sat-bg: url(/img/rock-legend-bg.png);
+  --sat-search-shortcuts: #181818f5;
+  --sat-search-border: #181818f5;
+  --sat-icons: hsl(0, 0%, 95%);
+  --sat-icons-hovr: #fafafa;
+  --sat-links: hsl(0, 0%, 95%);
+  --sat-links-hovr: #fccbaa;
+  --sat-default-button-txt: #fcfcfc;
+  --sat-txt-selector-clr: #686868;
+  --sat-txt-selector-clr-after: #ffffff;
+  --sat-setting-bg-color: #0e0e0e;
+  --sat-setting-bg-effect: rgb(24, 24, 24);
+  --sat-setting-close-btn: #232933;
+  --sat-search-bar-hvr: #2b2b2b;
+  --sat-search-bar-focus: #2b2b2b;
+  --sat-tooltip-bg: #181818;
+  --sat-default-hoveringspeed: 200ms;
+  --sat-shortcuts-hover: #232933;
+  --sat-modal-app-section: #2329334d;
+  --default-font: "Poppins", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #f78235 100%);
+  --sat-accent-color1: #686868;
+  --moreapps-hovering-clr: #686868;
+  --reddit-hover-color: rgb(46, 46, 46);
+  --brightness-headerimg: brightness(1.1);
+  --for-white: #ffffff;
+  --snip-wid-btn: #23293363;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --add-link-border: rgb(43, 52, 56);
+  --delete-warning-bg: rgba(197, 42, 42, 0.76);
+  --switch-color-bg: #252525;
+  --switch-color-bg-after: #686868;
+  --settings-button-outline: #252525;
+  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.3s;
+  --transition-speed-slow: 0.4s;
+}
+
+.purple {
+  --sat-heading: #ffffff;
+  --sat-ids: #ffffff;
+  --sat-bg: #05010e;
+  --sat-search-shortcuts: #0c061a;
+  --sat-search-border: #0c061a;
+  --sat-icons: hsl(0, 0%, 95%);
+  --sat-icons-hovr: #fafafa;
+  --sat-links: hsl(0, 0%, 95%);
+  --sat-links-hovr: #6e46c5;
+  --sat-default-button-txt: #fcfcfc;
+  --sat-txt-selector-clr: #6e46c5;
+  --sat-txt-selector-clr-after: #ffffff;
+  --sat-setting-bg-color: #05010e;
+  --sat-setting-bg-effect: #150c29;
+  --sat-setting-close-btn: #232933;
+  --sat-search-bar-hvr: #1b0e35;
+  --sat-search-bar-focus: #0f061f;
+  --sat-tooltip-bg: #6e46c5;
+  --sat-default-hoveringspeed: 200ms;
+  --sat-shortcuts-hover: #232933;
+  --sat-modal-app-section: #2329334d;
+  --default-font: "Poppins", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #6e46c5 0%, #773ff0 100%);
+  --sat-accent-color1: #6e46c5;
+  --moreapps-hovering-clr: #6e46c5;
+  --reddit-hover-color: #221242;
+  --brightness-headerimg: brightness(1.1);
+  --for-white: #ffffff;
+  --snip-wid-btn: #23293363;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --add-link-border: rgb(41, 41, 41);
+  --delete-warning-bg: rgba(197, 42, 42, 0.76);
+  --switch-color-bg: #090413;
+  --switch-color-bg-after: #6e46c5;
+  --settings-button-outline: #20113f;
+  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.3s;
+  --transition-speed-slow: 0.4s;
+}
+
+/* Fork code */
 
 * {
   /* Reset margins and padding */
@@ -220,6 +351,9 @@ body {
   word-break: break-word;
   overflow-wrap: break-word;
   background: var(--sat-bg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   /* Main body text */
   color: var(--sat-ids);
@@ -246,8 +380,7 @@ h6 {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   color: var(--sat-heading);
   padding-bottom: 2px;
   margin-bottom: 8px;
@@ -261,19 +394,19 @@ h6 {
 }
 
 h1 {
-  font-size: 2.23rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.83rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.53rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.23rem;
+  font-size: 1.2rem;
 }
 
 h5 {
@@ -551,7 +684,7 @@ img {
   max-width: 100%;
 }
 
-/* New stuff */
+/* New code  */
 
 #add-link-form,
 #content {
@@ -587,11 +720,14 @@ img {
   background: var(--sat-search-shortcuts);
 }
 
-.app .tooltiptext {
+.app {
   color: var(--sat-ids);
   background: var(--sat-shortcuts-hover);
 }
-
+.tooltiptext {
+  background: var(--sat-tooltip-bg);
+  color: var(--sat-ids);
+}
 .gudmorning {
   background-color: var(--gudmrning-txt-bg);
   background-image: var(--gudmrning-txt);
@@ -610,8 +746,6 @@ img {
 .search-bar:focus .app:hover .tooltip {
   transition: var(--transition-speed-default);
 }
-
-/* Neon effect */
 
 .snip-wid button {
   background-color: var(--sat-setting-bg-effect);
@@ -634,27 +768,26 @@ img {
   background: var(--sat-search-shortcuts);
   transition: transform 0.1s ease, box-shadow 0.1s ease,
     background-color 0.1s ease;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); */
 }
 
 .app:hover {
   transform: translate3d(0px, -3px, 0px);
   background-color: var(--moreapps-hovering-clr);
-  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); */
 }
-
-/* anim 2 */
 
 .snip-wid button:hover,
 .cuteapps:hover {
-  background-color: var(--moreapps-hovering-clr);
+  background-color: var(--sat-bg);
   border-color: var(--moreapps-hovering-clr);
+  border: 3px solid var(--sat-accent-color1);
 }
 .closebtn:hover {
   border-color: var(--moreapps-hovering-clr);
 }
 .cuteapps {
-  border: 3px solid var(--sat-shortcuts-hover);
+  border: 3px solid var(--sat-bg);
 }
 .headerimg {
   width: 160px;
@@ -674,4 +807,9 @@ img {
 }
 .container {
   color: var(--sat-ids);
+}
+
+.typewritter_2,
+.settings-dot {
+  color: var(--sat-accent-color1);
 }

@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="icons/css/line-awesome.min.css" />
     <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="/js/theme.js"></script>
   </head>
-  <body>
+  <body class="light">
     <main>
       <div class="fill">
         <img
@@ -66,7 +67,7 @@
 
       <!-- App lists -->
       <h5 class="yourapps"><i class="las la-grip-horizontal"></i> App list</h5>
-      <h1></h1>
+      <br />
       <div class="popup">
         <div id="apps">
           <!-- Row 1 -->
@@ -167,7 +168,7 @@
         <!-- Favorite Feature 2.1 -->
         <div id="fav-container" class="fav-container">
           <h5 class="yourapps"><i class="las la-bookmark"></i> Favorites</h5>
-          <h2></h2>
+          <br />
           <div id="content">
             <div id="sortSupport">
               <ul id="fav-link"></ul>
@@ -220,12 +221,12 @@
         <div class="modal-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
           <h4 class="text-center">
-            Settings<span style="color: #0271b6">.</span>
+            Settings<span class="settings-dot">.</span>
           </h4>
           <div class="container">
             <ul class="tabs">
               <li class="tab-link current" data-tab="tab-1">
-                <i class="las la-bell"></i> Notification
+                <i class="las la-bell"></i> Notifications
               </li>
               <li class="tab-link" data-tab="tab-2">
                 <i class="las la-pencil-ruler"></i> Customization
@@ -233,136 +234,161 @@
               <li class="tab-link" data-tab="tab-3">
                 <i class="las la-info-circle"></i> About
               </li>
-              <!-- <li class="tab-link" data-tab="tab-4">
-                <i class="las la-space-shuttle"></i> Space Ship (beta)
-              </li> -->
             </ul>
             <br />
             <div id="tab-1" class="tab-content current slide-up-fade-in">
-              <h4><i class="las la-bell"></i> | Notification</h4>
-              <h6><i class="las la-calendar"></i> May 30th 2021</h6>
-              <h4>Update on: v3.0 redesign</h4>
-              <p>
-                The redesign will be "lighter" than expected. Most of the UI
-                changes will be refinements of current features, some features
-                like Favorites & App lists will receive a full overhaul but the
-                rest will stay pretty much the same. The biggest change will
-                happen in the source code, where I plan to rewrite Saturn's core
-                CSS & the main HTML to improve performance.
+              <div class="settings-background">
+                <h3>| Notifications</h3>
+                <p>Most recent notifications..</p>
+                <h6><i class="las la-calendar"></i> May 30th 2021</h6>
+                <h4>Update on: v3.0 redesign</h4>
+                <p>
+                  The redesign will be "lighter" than expected. Most of the UI
+                  changes will be refinements of current features, some features
+                  like Favorites & App lists will receive a full overhaul but
+                  the rest will stay pretty much the same. The biggest change
+                  will happen in the source code, where I plan to rewrite
+                  Saturn's core CSS & the main HTML to improve performance.
 
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/blob/v3-redesign/change.MD"
-                  class="external-links"
-                  target="_blank"
-                  >Learn more <i class="las la-external-link-alt"></i
-                ></a>
-              </p>
-              <h1></h1>
-              <h6><i class="las la-calendar"></i> April 6th 2021</h6>
-              <h4>New Settings UI!</h4>
-              <p>
-                The settings page was always the thing that bothered me about
-                Saturn, the design looks dated it never felt quite right. That's
-                why I decided to completely redo everything. The new UI is now
-                simpler and more modern. I also included some fancy new
-                animation that ties everything nicely together. If you have any
-                <a
-                  href="mailto:raifcoonjah@pm.me"
-                  class="external-links"
-                  target="_blank"
-                  >Feedback <i class="las la-external-link-alt"></i
-                ></a>
-                email me.
-              </p>
+                  <a
+                    href="https://github.com/mraif13/Saturn-startpage/blob/v3-redesign/change.MD"
+                    class="external-links"
+                    target="_blank"
+                    >Learn more <i class="las la-external-link-alt"></i
+                  ></a>
+                </p>
+              </div>
             </div>
             <div id="tab-2" class="tab-content slide-up-fade-in">
-              <div class="dark-mode-bg2">
-                <h4><i class="las la-pencil-ruler"></i> | Customization</h4>
-                <h5>Night mode</h5>
-                <p></p>
-                <div class="theme-switch-wrapper">
-                  <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-                  </label>
-                </div>
-                <h5>Disable Favorites</h5>
+              <div class="settings-background">
+                <h3>| Appearance</h3>
+                <p>Choose how Saturn startpage looks to you.</p>
+
+                <h5><i class="las la-sun"></i> Light themes</h5>
+                <a id="light" href="#" class="theme-icon"
+                  ><img
+                    src="/img/light-theme.png"
+                    title="Light theme"
+                    alt="light-icon.png"
+                /></a>
+                <br />
+                <h5><i class="las la-moon"></i> Dark themes</h5>
+                <a id="dark" href="#" class="theme-icon"
+                  ><img
+                    src="/img/dark-theme.png"
+                    title="Dark theme"
+                    alt="dark-icon.png"
+                /></a>
+                <a id="space" href="#" class="theme-icon"
+                  ><img
+                    src="/img/sexy-contrast.png"
+                    title="Sexy Contrast theme"
+                    alt="dark-icon.png"
+                /></a>
+                <a id="linkin-park" href="#" class="theme-icon"
+                  ><img
+                    src="/img/rock-legend.png"
+                    title="RIP Linkin Park"
+                    alt="dark-icon.png"
+                /></a>
+                <a id="purple" href="#" class="theme-icon"
+                  ><img
+                    src="/img/purple.png"
+                    title="OH purple theme"
+                    alt="dark-icon.png"
+                /></a>
+              </div>
+              <br />
+              <div class="settings-background">
+                <h3>| Hide things</h3>
+                <p>Hide various elements from the main page.</p>
+                <h5>Hide Favorites</h5>
                 <p></p>
                 <label class="theme-switch">
                   <input type="checkbox" class="AvGamesCheckBox_favo_compl" />
                   <div class="slider round"></div>
                 </label>
                 <br />
-                <h5>Remove app list second row</h5>
+                <h5>Hide the bottom row in app list</h5>
                 <p></p>
                 <label class="theme-switch">
                   <input type="checkbox" class="AvGamesCheckBox_apps_row2" />
                   <div class="slider round"></div>
                 </label>
-                <h5><i class="las la-search"></i> | Change Search</h5>
+              </div>
+              <br />
+              <div class="settings-background">
+                <h3>| Change Search</h3>
                 <p>
                   Change the search provider by clicking on the icon found in
                   the search bar.
                 </p>
               </div>
             </div>
+          </div>
 
-            <div id="tab-3" class="tab-content slide-up-fade-in">
-              <div class="dark-mode-bg3">
-                <h4><i class="las la-info-circle"></i> | About</h4>
+          <div id="tab-3" class="tab-content slide-up-fade-in">
+            <div class="settings-background">
+              <h3>| About</h3>
+              <p>Version, created by & more..</p>
+              <p>
+                Version:
+                <a
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  class="easter-egg1"
+                  title="WARNING: PLS DO NOT PRESS THIS LINK!!!!!!!!!! ok thx "
+                  >🪐</a
+                >
+                <a
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v2.7.0"
+                  class="external-links"
+                  target="_blank"
+                  >v2.7.0 [Nyx] <i class="las la-external-link-alt"></i></a
+                ><br />
+                Created by
+                <a
+                  href="https://github.com/mraif13/"
+                  class="external-links"
+                  target="_blank"
+                  >mraif13 <i class="las la-external-link-alt"></i
+                ></a>
+                <br />
+                Originally base on
+                <a
+                  href="https://gitlab.com/madsouris/startpage/-/tree/simple"
+                  class="external-links"
+                  target="_blank"
+                  >Vannrith Startpage (Simple)
+                  <i class="las la-external-link-alt"></i
+                ></a>
+                <br />
+                Saturn Startpage is completely
+                <a
+                  href="https://github.com/mraif13/Saturn-startpage"
+                  class="external-links"
+                  target="_blank"
+                >
+                  open source<i class="las la-external-link-alt"></i
+                ></a>
+              </p>
+              <h1></h1>
+              <div class="dark-mode-bg5">
+                <h5>
+                  <i class="lab la-paypal"></i> | Support Saturn Startpage
+                </h5>
                 <p>
-                  Version: 🪐 v2.6.1.1 [Ballon Rocket] |
+                  Saturn Startpage is free and doesn't have any ads, if it has
+                  saved you time or helped you and you'd like to help out,
+                  Here's my
                   <a
-                    href="https://github.com/mraif13/Saturn-startpage/releases/tag/v2.6.1.1"
+                    href="https://www.paypal.com/paypalme/raifs"
                     class="external-links"
                     target="_blank"
-                    >What's new <i class="las la-external-link-alt"></i></a
-                  ><br />
-                  Created by
-                  <a
-                    href="https://github.com/mraif13/"
-                    class="external-links"
-                    target="_blank"
-                    >mraif13 <i class="las la-external-link-alt"></i
-                  ></a>
-                  <br />
-                  Base on
-                  <a
-                    href="https://gitlab.com/madsouris/startpage/-/tree/simple"
-                    class="external-links"
-                    target="_blank"
-                    >Vannrith Startpage (Simple)
-                    <i class="las la-external-link-alt"></i
-                  ></a>
-                  <br />
-                  Saturn Startpage is completely
-                  <a
-                    href="https://github.com/mraif13/Saturn-startpage"
-                    class="external-links"
-                    target="_blank"
-                  >
-                    open source.<i class="las la-external-link-alt"></i
+                    >Paypal <i class="las la-external-link-alt"></i
                   ></a>
                 </p>
-                <h1></h1>
-                <div class="dark-mode-bg5">
-                  <h5>
-                    <i class="lab la-paypal"></i> | Support Saturn Startpage
-                  </h5>
-                  <p>
-                    Saturn Startpage is free and doesn't have any ads, if it has
-                    saved you time or helped you and you'd like to help out,
-                    Here's my
-                    <a
-                      href="https://www.paypal.com/paypalme/raifs"
-                      class="external-links"
-                      target="_blank"
-                      >Paypal <i class="las la-external-link-alt"></i
-                    ></a>
-                  </p>
 
-                  <p>- Thanks! <i class="las la-grin-beam"></i></p>
-                </div>
+                <p>- Thanks! <i class="las la-grin-beam"></i></p>
               </div>
             </div>
           </div>
@@ -378,7 +404,7 @@
           <div class="overlay-content">
             <h4>
               <span class="typewritter_1"
-                >Where to <span style="color: #0271b6">next</span>?</span
+                >Where to <span class="typewritter_2">next</span>?</span
               >
             </h4>
             <div id="cutieapps">

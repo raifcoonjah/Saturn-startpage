@@ -33,32 +33,6 @@ trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
-// Dark mode Switch. Light > Dark | Dark < light
-const toggleSwitch = document.querySelector(
-  '.theme-switch input[type="checkbox"]'
-);
-const currentTheme = localStorage.getItem("theme");
-
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
-
-  if (currentTheme === "dark") {
-    toggleSwitch.checked = true;
-  }
-}
-
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
-  }
-}
-
-toggleSwitch.addEventListener("change", switchTheme, false);
-
 // Time v2.0
 function getTime() {
   let date = new Date(),
@@ -169,3 +143,61 @@ $(document).ready(function () {
     $("#" + tab_id).addClass("current");
   });
 });
+
+// Saturn theme engine, powered by local storage and javascript.
+// v2.0-pancake
+
+const darkButton = document.getElementById("dark");
+const lightButton = document.getElementById("light");
+const spaceButton = document.getElementById("space");
+const linkinParkButton = document.getElementById("linkin-park");
+const ohpurpleButton = document.getElementById("purple");
+const body = document.body;
+
+// Apply the cached theme on reload
+
+const theme = localStorage.getItem("theme");
+
+if (theme) {
+  body.classList.add(theme);
+}
+
+darkButton.onclick = () => {
+  body.classList.replace("light", "dark");
+  body.classList.replace("space", "dark");
+  body.classList.replace("linkin-park", "dark");
+  body.classList.replace("purple", "dark");
+  localStorage.setItem("theme", "dark");
+};
+
+lightButton.onclick = () => {
+  body.classList.replace("dark", "light");
+  body.classList.replace("space", "light");
+  body.classList.replace("linkin-park", "light");
+  body.classList.replace("purple", "light");
+  localStorage.setItem("theme", "light");
+};
+
+spaceButton.onclick = () => {
+  body.classList.replace("dark", "space");
+  body.classList.replace("light", "space");
+  body.classList.replace("linkin-park", "space");
+  body.classList.replace("purple", "space");
+  localStorage.setItem("theme", "space");
+};
+
+linkinParkButton.onclick = () => {
+  body.classList.replace("dark", "linkin-park");
+  body.classList.replace("light", "linkin-park");
+  body.classList.replace("space", "linkin-park");
+  body.classList.replace("purple", "linkin-park");
+  localStorage.setItem("theme", "linkin-park");
+};
+
+ohpurpleButton.onclick = () => {
+  body.classList.replace("dark", "purple");
+  body.classList.replace("light", "purple");
+  body.classList.replace("space", "purple");
+  body.classList.replace("linkin-park", "purple");
+  localStorage.setItem("theme", "purple");
+};

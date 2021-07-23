@@ -18,6 +18,11 @@ const search_engines = [
     action: "https://www.google.com/search?q=",
   },
   {
+    src: "brave-search.svg",
+    placeholder: "Brave Search",
+    action: "https://search.brave.com/search?q=",
+  },
+  {
     src: "reddit.svg",
     placeholder: "Reddit",
     action: "https://www.reddit.com/search?q=",
