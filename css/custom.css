@@ -2,17 +2,3 @@
 / Think this should be in Saturn? Make a pull request */
 
 /* Themes */
-.theme-icon img {
-  width: 160px;
-  padding: 3px;
-  border-radius: 20px;
-  margin: 2px;
-}
-.theme-icon img:hover {
-  transition: var(--sat-default-hoveringspeed);
-  background-color: var(--sat-accent-color1);
-}
-
-.easter-egg1 {
-  text-decoration: none;
-}
