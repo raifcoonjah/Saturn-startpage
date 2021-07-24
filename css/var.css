@@ -777,17 +777,23 @@ img {
   /* box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); */
 }
 
-.snip-wid button:hover,
-.cuteapps:hover {
+.snip-wid button:hover {
   background-color: var(--sat-bg);
   border-color: var(--moreapps-hovering-clr);
   border: 3px solid var(--sat-accent-color1);
 }
+
+.cuteapps:hover {
+  color: var(--sat-ids);
+  background-color: var(--moreapps-bg-new);
+  border: 3px solid var(--sat-accent-color1);
+}
+
 .closebtn:hover {
   border-color: var(--moreapps-hovering-clr);
 }
 .cuteapps {
-  border: 3px solid var(--sat-bg);
+  border: 3px solid var(--sat-search-shortcuts);
 }
 .headerimg {
   width: 160px;
