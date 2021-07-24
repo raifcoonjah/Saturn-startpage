@@ -529,8 +529,21 @@ ul li {
     font-size: 10px;
   }
   .cuteapps i {
-  font-size: 2.3em;
-  margin-top: 10px;
+    font-size: 2.3em;
+    margin-top: 10px;
+  }
+
+  .app i {
+    font-size: 1.7rem;
+  }
+.app {
+  display: inline-block;
+  width: 10%;
+  margin: 0 0.3% 10px;
+  padding: 20px 5px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
 }
 }
 
