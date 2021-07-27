@@ -139,9 +139,6 @@ body {
   width: 66px;
   height: 33px;
 }
-.slider:hover {
-  outline: 3px solid var(--settings-button-outline);
-}
 .theme-switch input {
   display: none;
 }
