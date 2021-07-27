@@ -473,24 +473,22 @@ ul li {
 #add-link-form input {
   color: var(--sat-ids);
   margin: 10px 0;
-  padding: 9px;
-  width: 55%;
+  padding: 10px;
+  width: 50%;
   outline: none;
   border: none;
   border-radius: 10px;
-  border: 1px solid var(--add-link-border);
+  border: 2px solid var(--add-link-border);
   font-size: 14px;
-  outline: 2px solid var(--sat-search-shortcuts);
+  outline: 3px solid var(--sat-search-shortcuts);
 }
 #add-link-form input:hover {
-  outline: 2px solid var(--sat-accent-color1);
-  border: 1px solid var(--sat-accent-color1);
+  outline: 3px solid var(--sat-tooltip-bg);
   transition: var(--transition-speed-default);
 }
 
 #add-link-form input:focus {
-  outline: 2px solid var(--sat-accent-color1);
-  border: 1px solid var(--sat-accent-color1);
+  outline: 3px solid var(--sat-tooltip-bg);
   transition: var(--transition-speed-default);
 }
 
