@@ -483,12 +483,12 @@ ul li {
   outline: 3px solid var(--sat-search-shortcuts);
 }
 #add-link-form input:hover {
-  outline: 3px solid var(--sat-tooltip-bg);
+  outline: 3px solid var(--saturn-input-hover);
   transition: var(--transition-speed-default);
 }
 
 #add-link-form input:focus {
-  outline: 3px solid var(--sat-tooltip-bg);
+  outline: 3px solid var(--saturn-input-hover);
   transition: var(--transition-speed-default);
 }
 
