@@ -209,7 +209,7 @@ ul.tabs li {
   color: var(--sat-ids);
   display: inline-block;
   padding: 10px 15px;
-  border-radius: 14px;
+  border-radius: 100px;
   border: 2px solid var(--sat-setting-bg-color);
 }
 
@@ -302,6 +302,7 @@ ul.tabs li.current {
   margin: 0 0.5% 19px;
   padding: 4px 20px;
   text-align: center;
+  border-radius: 20px;
 }
 
 .cuteapps i {
