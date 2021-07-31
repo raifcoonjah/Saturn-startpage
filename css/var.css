@@ -1,7 +1,9 @@
 /*
 Saturn Startpage: Open source & free.
-v2 CSS Core
+v3.0.0 CSS Core
 */
+
+/* Fonts: Everything is loaded locally. */
 
 /* poppins-200 - latin */
 @font-face {
@@ -74,7 +76,9 @@ v2 CSS Core
       url("../fonts/poppins-v15-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* Light mode */
+/* Saturn's theme engine v3. */
+
+/* Light theme */
 .light {
   --sat-heading: #000000;
   --sat-ids: #1a1a1a;
@@ -97,7 +101,7 @@ v2 CSS Core
   --saturn-input-hover: #c0c0c0;
   --default-font: "Poppins", sans-serif;
   --sat-default-hoveringspeed: 200ms;
-  --sat-border-radius: 10px;
+  --sat-border-radius: 15px;
   --sat-shortcuts-hover: #cacaca;
   --sat-modal-app-section: #dbdbdb;
   --gudmrning-txt: linear-gradient(180deg, #054b2d 0%, #014f80 100%);
@@ -113,14 +117,14 @@ v2 CSS Core
   --switch-color-bg: #6e798a;
   --switch-color-bg-after: #3b77a5;
   --settings-button-outline: #bbbbbb;
+  --new-search-bg-hover-effect: rgb(177, 177, 177);
   /* --drop-shadow-color: rgba(85, 93, 112, 0.219); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.3s;
   --transition-speed-slow: 0.4s;
 }
-/* Dark mode */
-/* Welcome to the dark side! */
+/* Dark theme */
 .dark {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
@@ -158,12 +162,17 @@ v2 CSS Core
   --switch-color-bg: #2f343d;
   --switch-color-bg-after: #0080e250;
   --settings-button-outline: #232933;
-  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
-  /* Multiple transition speeds */
+  --new-search-bg-hover-effect: #282d38;
+  --sat-border-radius: 15px;
+
+  /* Transitions */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.3s;
   --transition-speed-slow: 0.4s;
 }
+
+/* Space theme */
+
 .space {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
@@ -201,12 +210,16 @@ v2 CSS Core
   --switch-color-bg: #252525;
   --switch-color-bg-after: #ffb07d;
   --settings-button-outline: #252525;
-  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
+  --new-search-bg-hover-effect: #353535;
+  --sat-border-radius: 15px;
+
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.3s;
   --transition-speed-slow: 0.4s;
 }
+
+/* Linkin park theme (BETA) */
 
 .linkin-park {
   --sat-heading: #ffffff;
@@ -245,12 +258,16 @@ v2 CSS Core
   --switch-color-bg: #252525;
   --switch-color-bg-after: #686868;
   --settings-button-outline: #252525;
-  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
+  --new-search-bg-hover-effect: #2e2e2e;
+  --sat-border-radius: 15px;
+
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.3s;
   --transition-speed-slow: 0.4s;
 }
+
+/* Purpleeeeeee theme */
 
 .purple {
   --sat-heading: #ffffff;
@@ -289,14 +306,15 @@ v2 CSS Core
   --switch-color-bg: #090413;
   --switch-color-bg-after: #6e46c5;
   --settings-button-outline: #20113f;
-  /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
+  --sat-border-radius: 15px;
+
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.3s;
   --transition-speed-slow: 0.4s;
 }
 
-/* Fork code */
+/* Original Fork code */
 
 * {
   /* Reset margins and padding */
@@ -351,7 +369,7 @@ body {
   margin: 0 auto;
   max-width: 750px;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: var(--sat-border-radius);
   overflow-x: hidden;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -384,8 +402,7 @@ h6 {
   padding-top: 0.875rem;
 }
 
-h1,
-h2 {
+.line {
   color: var(--sat-heading);
   padding-bottom: 2px;
   margin-bottom: 8px;
@@ -399,11 +416,11 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 h3 {
@@ -423,11 +440,13 @@ h6 {
 }
 
 a {
+  text-decoration: none;
   color: var(--sat-links);
 }
 
 a:hover {
-  color: var(--sat-links-hovr);
+  color: var(--sat-accent-color1);
+  text-decoration: underline;
   transition: var(--sat-default-hoveringspeed);
 }
 
@@ -440,6 +459,7 @@ blockquote {
   padding: 1.5rem;
   background: var(--sat-search-shortcuts);
   border-left: 5px solid var(--sat-search-border);
+  border-radius: var(--sat-border-radius);
 }
 
 abbr {
@@ -509,13 +529,7 @@ input[type="button"][disabled] {
   cursor: not-allowed;
 }
 
-code,
-pre,
-kbd,
-samp {
-  /* Set the font family for monospaced elements */
-  font-family: var(--nc-font-mono);
-}
+/* Let the browser load its default font instead of setting one */
 
 code,
 samp,
@@ -524,8 +538,8 @@ pre {
   /* The main preformatted style. This is changed slightly across different cases. */
   background: var(--sat-search-shortcuts);
   border: 1px solid var(--sat-search-border);
-  border-radius: 4px;
-  padding: 3px 6px;
+  border-radius: var(--sat-border-radius);
+  padding: 10px 5px;
   font-size: 0.9rem;
 }
 
@@ -566,7 +580,7 @@ details {
   padding: 0.6rem 1rem;
   background: var(--sat-search-shortcuts);
   border: 1px solid var(--sat-search-border);
-  border-radius: 15px;
+  border-radius: var(--sat-border-radius);
 }
 
 summary {
@@ -675,21 +689,35 @@ mark {
 textarea,
 select,
 input {
-  padding: 6px 15px;
+  padding: 9px 10px;
   margin-bottom: 0.5rem;
   background: var(--sat-search-shortcuts);
   color: var(--sat-ids);
-  border: 1px solid var(--sat-search-border);
-  border-radius: 10px;
+  border: 2px solid var(--new-search-bg-hover-effect);
+  border-radius: var(--sat-border-radius);
   box-shadow: none;
   box-sizing: border-box;
+  outline: none;
+}
+
+textarea:hover,
+select:hover,
+input:hover {
+  background-color: var(--sat-search-bar-hvr);
+  transition: var(--sat-default-hoveringspeed);
+}
+
+textarea:focus,
+select:focus,
+input:focus {
+  background-color: var(--sat-search-bar-focus);
 }
 
 img {
   max-width: 100%;
 }
 
-/* New code  */
+/* Saturn Core v3.0.0  */
 
 #add-link-form,
 #content {
@@ -709,7 +737,6 @@ img {
 
 .overlay {
   background: var(--sat-setting-bg-effect);
-  color: var(--sat-ids);
 }
 
 .modal-content,
@@ -721,17 +748,14 @@ img {
 .app,
 .cuteapps,
 .removebtn {
-  color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
 
 .app {
-  color: var(--sat-ids);
   background: var(--sat-shortcuts-hover);
 }
 .tooltiptext {
   background: var(--sat-tooltip-bg);
-  color: var(--sat-ids);
 }
 .gudmorning {
   background-color: var(--gudmrning-txt-bg);
@@ -765,14 +789,8 @@ img {
   color: var(--for-white); /* force white to fix issues */
 }
 
-.button-modal i {
-  color: var(--sat-ids);
-}
-
 .app {
   background: var(--sat-search-shortcuts);
-  transition: transform 0.1s ease, box-shadow 0.1s ease,
-    background-color 0.1s ease;
   /* box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); */
 }
 
@@ -782,14 +800,7 @@ img {
   /* box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); */
 }
 
-.snip-wid button:hover {
-  background-color: var(--sat-bg);
-  border-color: var(--moreapps-hovering-clr);
-  border: 3px solid var(--sat-accent-color1);
-}
-
 .cuteapps:hover {
-  color: var(--sat-ids);
   background-color: var(--moreapps-bg-new);
   border: 3px solid var(--sat-accent-color1);
 }
@@ -797,18 +808,13 @@ img {
 .closebtn:hover {
   border-color: var(--moreapps-hovering-clr);
 }
+
 .cuteapps {
   border: 3px solid var(--sat-search-shortcuts);
-}
-.headerimg {
-  width: 160px;
-  height: 160px;
-  filter: var(--brightness-headerimg);
 }
 
 #fav-link a:hover {
   background-color: var(--reddit-hover-color);
-  color: var(--sat-ids);
   transition: var(--transition-speed-default);
 }
 
@@ -816,11 +822,53 @@ img {
   background-color: var(--delete-warning-bg);
   transition: var(--transition-speed-default);
 }
+
+/* Font color */
+.overlay,
+.button-modal,
+.app,
+.cuteapps,
+.removebtn,
+.tooltiptext,
+.snip-wid button,
+.button-modal i,
+.cuteapps:hover,
+#fav-link a:hover,
 .container {
   color: var(--sat-ids);
 }
 
+/* Everything that needs the accent color */
 .typewritter_2,
 .settings-dot {
   color: var(--sat-accent-color1);
+}
+
+/* Everything that needs a cursor */
+.slider,
+ul.tabs li,
+.app,
+#favorite-links:hover,
+.close-button,
+.new-close-fav {
+  cursor: pointer;
+}
+
+/* Border radius */
+.search-bar,
+.modal-content,
+.app,
+.tooltiptext,
+.cuteapps,
+#content,
+#fav-link li,
+#fav-link img,
+#fav-link a,
+#add-link-form,
+#add-link-form input,
+#new-link-button button,
+#add-link-form button,
+.settings-background,
+.settings-background-warning {
+  border-radius: var(--sat-border-radius);
 }
