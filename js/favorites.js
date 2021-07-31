@@ -1,12 +1,12 @@
-// Favorites v2.2 | [BUILD WITH JQUERY]
+// Favorites v2.3 | [BUILD WITH JQUERY]
 $(document).ready(function () {
   var $ul = $("#fav-link");
   var $title = $("#title");
   var $url = $("#url");
 
   // Get links from local storage
-  if (localStorage.getItem("vk-links")) {
-    $ul.html(localStorage.getItem("vk-links"));
+  if (localStorage.getItem("favorites-link")) {
+    $ul.html(localStorage.getItem("favorites-link"));
   }
 
   // Add new link
@@ -22,7 +22,7 @@ $(document).ready(function () {
     );
 
     // Save changes to localstorage
-    localStorage.setItem("vk-links", $ul.html());
+    localStorage.setItem("favorites-link", $ul.html());
 
     // Reset form
     $title.val("");
@@ -34,7 +34,7 @@ $(document).ready(function () {
   $("#fav-link").on("click", ".removebtn", function () {
     $(this).parent().remove();
     // Save changes to localstorage
-    localStorage.setItem("vk-links", $ul.html());
+    localStorage.setItem("favorites-link", $ul.html());
   });
 
   // Form toggle

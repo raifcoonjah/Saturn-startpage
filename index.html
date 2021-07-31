@@ -202,11 +202,11 @@
               autocomplete="off"
             /><br /><button id="add"><i class="lar la-save"></i> Save</button>
             <h3></h3>
+            <p class="center">-</p>
             <div class="side-text">
               <h5><i class="las la-exclamation-circle"></i> Notice</h5>
               Currently Favorites doesn't have a limit, but I recommend under
-              30. <br />
-              All links are saved using local storage.
+              30.
               <br />
               <h5><i class="lar la-question-circle"></i> Need help?</h5>
 
@@ -254,10 +254,7 @@
               <div class="settings-background">
                 <h3>| Notifications</h3>
                 <p>Most recent notifications..</p>
-                <p>
-                  <i class="las la-exclamation-circle"></i> No recent
-                  notifications found.
-                </p>
+                <p>(｡•́︿•̀｡): No recent notifications..</p>
                 <!-- <h6><i class="las la-calendar"></i> May 30th 2021</h6>
                 <h4>Update on: v3.0 redesign</h4>
                 <p>
@@ -277,6 +274,24 @@
               </div>
             </div>
             <div id="tab-2" class="tab-content current slide-up-fade-in">
+              <div class="settings-background">
+                <h3>| Username</h3>
+                <p>Change your username to anything you want.</p>
+                <div id="popUp">
+                  <input
+                    type="text"
+                    name="setusername"
+                    id="userSet"
+                    placeholder="Jatoro Kujo"
+                  />
+                  <br />
+                  <button id="save" class="new-button">
+                    <i class="las la-save"></i> Save
+                  </button>
+                </div>
+                <label id="sv-msg"></label>
+              </div>
+              <br />
               <div class="settings-background">
                 <h3>| Appearance</h3>
                 <p>Choose how Saturn startpage looks to you.</p>
@@ -323,36 +338,16 @@
                 <h5>Hide Favorites</h5>
                 <p></p>
                 <label class="slider-switch">
-                  <input type="checkbox" class="AvGamesCheckBox_favo_compl" />
+                  <input type="checkbox" class="hide-favorite" />
                   <div class="slider round"></div>
                 </label>
                 <br />
                 <h5>Hide the bottom row in app list</h5>
                 <p></p>
                 <label class="slider-switch">
-                  <input type="checkbox" class="AvGamesCheckBox_apps_row2" />
+                  <input type="checkbox" class="hideapprow2" />
                   <div class="slider round"></div>
                 </label>
-              </div>
-              <br />
-              <div class="settings-background">
-                <h3>| Username</h3>
-                <p>Change your username to anything you want.</p>
-                <div id="popUp">
-                  <input
-                    type="text"
-                    name="setusername"
-                    id="userSet"
-                    placeholder="Nezko"
-                  />
-                  <br />
-                  <button id="save" class="new-button">
-                    <i class="las la-save"></i> Save
-                  </button>
-
-                  <!-- <input type="button" id="save" class="pophide" name="save" value="Save " /> -->
-                </div>
-                <label id="sv-msg"></label>
               </div>
               <br />
               <div class="settings-background">

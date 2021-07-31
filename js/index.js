@@ -96,12 +96,12 @@ $(function () {
   var status = localStorage.getItem("favorites_hidden");
   if (status == "true") {
     $(".fav-container").css("display", "none");
-    $(".AvGamesCheckBox_favo_compl").attr("checked", true);
+    $(".hide-favorite").attr("checked", true);
   } else {
     $(".fav-container").css("display", "block");
-    $(".AvGamesCheckBox_favo_compl").attr("checked", false);
+    $(".hide-favorite").attr("checked", false);
   }
-  $(".AvGamesCheckBox_favo_compl").click(function () {
+  $(".hide-favorite").click(function () {
     if (this.checked) {
       $(".fav-container").hide();
     } else {
@@ -117,12 +117,12 @@ $(function () {
   var status = localStorage.getItem("apps_row2_hidden");
   if (status == "true") {
     $(".apps_row2").css("display", "none");
-    $(".AvGamesCheckBox_apps_row2").attr("checked", true);
+    $(".hideapprow2").attr("checked", true);
   } else {
     $(".apps_row2").css("display", "block");
-    $(".AvGamesCheckBox_apps_row2").attr("checked", false);
+    $(".hideapprow2").attr("checked", false);
   }
-  $(".AvGamesCheckBox_apps_row2").click(function () {
+  $(".hideapprow2").click(function () {
     if (this.checked) {
       $(".apps_row2").hide();
     } else {
@@ -209,11 +209,11 @@ $(document).ready(function () {
   $("#Uname").val(localStorage.getItem("user"));
 
   $("#save").click(function () {
-    var valoare = $("#userSet").val();
+    var username = $("#userSet").val();
     if (typeof Storage !== "undefined") {
       // Store
-      //localStorage.setItem("user", valoare);
-      localStorage.user = valoare;
+      //localStorage.setItem("user", username);
+      localStorage.user = username;
       // Retrieve
       //document.getElementById("Uname").innerHTML = localStorage.user;
       $("#Uname").val(localStorage.getItem("user"));
@@ -226,7 +226,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#save").click(function () {
     $("#sv-msg").text(
-      "Username saved. Please reload for this change to take effect. "
+      "( ﾟｏ⌒): Username saved. Please reload for these changes to take effect.. "
     );
   });
 });

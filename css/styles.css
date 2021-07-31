@@ -431,9 +431,9 @@ ul li {
   margin-right: 0;
   margin-left: 0;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 0.9em;
-  font-weight: 500;
+  font-weight: 400;
   width: 100%;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
@@ -479,6 +479,7 @@ ul li {
 }
 
 .settings-background {
+  margin: 5px;
   padding: 15px;
   background: var(--sat-setting-bg-effect);
 }
@@ -533,4 +534,12 @@ ul li {
 }
 .saved-msg {
   visibility: hidden;
+}
+
+.typewritter_1 {
+  font-weight: 600;
+}
+#sv-msg {
+  font-weight: 500;
+  font-size: 12px;
 }
