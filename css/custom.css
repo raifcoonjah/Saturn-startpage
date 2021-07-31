@@ -2,18 +2,3 @@
 / Think this should be in Saturn? Make a pull request */
 
 /* Themes */
-.notice-snippet {
-  color: var(--for-white);
-  background-color: rgba(218, 255, 6, 0.185);
-  padding: 5px;
-  border-radius: 10px;
-  width: 40px;
-  text-align: center;
-  font-size: 10px;
-}
-
-.username input[type="button"] {
-  font-size: 35px;
-  padding: 0px;
-  background-color: var(--sat-bg);
-}

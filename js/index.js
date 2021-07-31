@@ -17,7 +17,7 @@ determineGreet(new Date().getHours());
 
 // Settings/Modal trigger + close button.
 var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".button-modal");
+var trigger = document.querySelector(".setting-button");
 var closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
@@ -220,5 +220,13 @@ $(document).ready(function () {
     } else {
       $("#Uname").val("Sorry, your browser does not support Web Storage...");
     }
+  });
+});
+
+$(document).ready(function () {
+  $("#save").click(function () {
+    $("#sv-msg").text(
+      "Username saved. Please reload for this change to take effect. "
+    );
   });
 });

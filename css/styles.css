@@ -1,6 +1,6 @@
 /*
 Saturn Startpage: Open source & free.
-v2 CSS
+v3 CSS Main.Core
 */
 
 body {
@@ -15,7 +15,6 @@ body {
   padding: 15px 50px;
   text-align: left;
   font-weight: 500;
-  border-radius: 15px;
   box-sizing: border-box;
   outline: none;
   border: 3px solid var(--sat-bg);
@@ -73,21 +72,9 @@ body {
   font-size: 32px;
 }
 
-/* V1.0 Settings page - (Unstable) */
+/* V3.0 Settings page - (Unstable) */
 
-/* Snippet widgets */
-
-.snip-button {
-  position: absolute;
-  width: 48px;
-  height: 20px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 19px;
-}
-
+/* Top text */
 .text-center {
   font-weight: 500;
   font-size: 25px;
@@ -97,7 +84,7 @@ body {
   font-style: normal;
 }
 
-/* Settings */
+/* Settings (Modal) */
 
 .modal {
   background-color: #15181f8a;
@@ -110,7 +97,10 @@ body {
   visibility: hidden;
   transform: scale(1.2);
   transition: visibility 0s linear 100ms, opacity 100ms 0s, transform 100ms;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
+
 .modal-content {
   position: absolute;
   top: 50%;
@@ -121,8 +111,8 @@ body {
   width: 60rem;
   height: 35rem;
   overflow-y: scroll;
-  border-radius: 20px;
 }
+
 .show-modal {
   opacity: 1;
   visibility: visible;
@@ -130,26 +120,28 @@ body {
   transition: visibility 0s linear 0s, opacity 100ms 0s, transform 100ms;
 }
 
-/* Settings: Dark mode switch */
+/* Switch */
 
-.theme-switch-wrapper {
+.slider-switch-wrapper {
   display: flex;
   align-items: center;
 }
-.theme-switch {
+.slider-switch {
   display: inline-block;
   position: relative;
   width: 66px;
   height: 33px;
 }
-.theme-switch input {
+.slider-switch input {
   display: none;
+}
+.slider:hover {
+  background: var(--sat-search-bar-hvr);
 }
 
 .slider {
   background: var(--switch-color-bg);
-  cursor: pointer;
-  left: 2px;
+  left: 1px;
   position: absolute;
   right: 0;
   top: 0;
@@ -157,17 +149,16 @@ body {
 }
 
 .slider:before {
-  border: 3px solid #fff;
+  background-color: var(--sat-accent-color1);
   content: "";
   left: 7px;
   position: absolute;
   bottom: 5px;
-  width: 17px;
-  height: 17px;
+  padding: 12px 12px;
 }
 
 input:checked + .slider {
-  background-color: var(--switch-color-bg-after);
+  background-color: var(--switch-color-bg);
 }
 
 input:checked + .slider:before {
@@ -182,35 +173,27 @@ input:checked + .slider:before {
   border-radius: 100px;
 }
 
-.yourapps {
+.section-title {
   text-align: left;
   font-weight: 500;
 }
 
 /* Button used to open the settings page */
 
-.button-modal {
+.setting-button {
   outline: none;
   padding: 10px 10px;
   border-radius: 12px;
   float: right;
   outline: 2px solid var(--sat-bg);
 }
-.button-modal i {
+.setting-button i {
   font-size: 1.2rem;
 }
 
-.button-modal:hover {
+.setting-button:hover {
   transition: var(--transition-speed-default);
   outline: 3px solid var(--settings-button-outline);
-}
-
-.external-links {
-  text-decoration: none;
-}
-.external-links:hover {
-  color: var(--sat-accent-color1);
-  text-decoration: underline;
 }
 
 /* Settings navigation */
@@ -226,7 +209,6 @@ ul.tabs li {
   color: var(--sat-ids);
   display: inline-block;
   padding: 10px 15px;
-  cursor: pointer;
   border-radius: 14px;
   border: 2px solid var(--sat-setting-bg-color);
 }
@@ -257,7 +239,7 @@ ul.tabs li.current {
   display: inherit;
 }
 
-/* Shortcuts */
+/* App list */
 #apps {
   margin-top: 5px;
   width: 105%;
@@ -269,12 +251,10 @@ ul.tabs li.current {
   margin: 0 0.9% 10px;
   padding: 15px 5px;
   text-align: center;
-  border-radius: 15px;
-  cursor: pointer;
 }
 
 .app i {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
 }
 
 /* Tooltip container */
@@ -289,9 +269,8 @@ ul.tabs li.current {
   visibility: hidden;
   width: 95px;
   text-align: center;
-  padding: 2px 2px;
-  border-radius: 10px;
-  font-size: 16px;
+  padding: 2px;
+  font-size: 15px;
   font-weight: 500;
   position: absolute;
   z-index: 1;
@@ -303,13 +282,14 @@ ul.tabs li.current {
 /* Show tooltip on shortcuts hover */
 .app:hover .tooltiptext {
   visibility: visible;
+  transition: var(--transition-speed-fast);
 }
 
 /* More apps */
 
 .morecontainer {
   margin: 0 auto;
-  padding: 30px 4px;
+  padding: 26px 4px;
 }
 
 #cutieapps {
@@ -322,7 +302,6 @@ ul.tabs li.current {
   margin: 0 0.5% 19px;
   padding: 4px 20px;
   text-align: center;
-  border-radius: 20px;
 }
 
 .cuteapps i {
@@ -334,16 +313,6 @@ ul.tabs li.current {
   font-size: 16px;
   margin-top: 10px;
   font-weight: 500;
-}
-
-.morecontainer::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.morecontainer {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 
 /* Overlay + typewriter effect */
@@ -386,41 +355,11 @@ ul.tabs li.current {
   }
 }
 
-.snip-wid div:hover,
+/* Favorites feature */
+
 #favorite-links:hover {
-  cursor: pointer;
   transition: var(--transition-speed-default);
 }
-
-#more {
-  display: none;
-  transition: 0.2s;
-}
-
-.em-links {
-  text-decoration: none;
-}
-
-.em-links:hover {
-  color: var(--sat-ids);
-}
-
-.snip-wid button {
-  padding: 9px 9px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  margin: 2px;
-  font-weight: 500;
-  border: 2px solid var(--sat-setting-bg-effect);
-}
-
-/* Clear floats (clearfix hack) */
-.snip-wid:after {
-  content: "";
-  clear: both;
-  display: table;
-  padding: 5px;
-}
-
 ul {
   padding: 0;
   margin: 0px;
@@ -437,23 +376,16 @@ ul li {
   float: right;
   margin-top: -5px;
   padding: 8px;
-  border-radius: 15px;
+  border-radius: 13px;
 }
 
 #content {
-  border-radius: 15px;
   padding: 8px;
 }
 
 #fav-link li {
   padding: 10px;
-  border-radius: 15px;
 }
-
-#fav-link img {
-  border-radius: 15px;
-}
-
 #fav-link li:last-child {
   border: none;
 }
@@ -462,7 +394,6 @@ ul li {
   text-decoration: none;
   padding: 10px 10px;
   margin: -10px;
-  border-radius: 15px;
   color: var(--sat-ids);
 }
 
@@ -470,7 +401,6 @@ ul li {
   display: none;
   padding: 20px;
   margin: 5px;
-  border-radius: 10px;
 }
 
 #add-link-form input {
@@ -480,7 +410,6 @@ ul li {
   width: 50%;
   outline: none;
   border: none;
-  border-radius: 15px;
   border: 2px solid var(--add-link-border);
   font-size: 14px;
   outline: 3px solid var(--sat-search-shortcuts);
@@ -504,7 +433,6 @@ ul li {
   margin-top: 20px;
   font-size: 0.9em;
   font-weight: 500;
-  border-radius: 15px;
   width: 100%;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
@@ -515,6 +443,65 @@ ul li {
   background-color: var(--reddit-hover-color);
   transition: var(--transition-speed-default);
   color: var(--sat-ids);
+}
+
+.close-button {
+  font-size: 27px;
+  float: right;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 60px;
+}
+
+.new-close-fav,
+.close-button i {
+  display: block;
+  text-align: center;
+}
+.close-button:hover {
+  color: var(--sat-ids);
+  background: var(--sat-setting-bg-effect);
+  transition: var(--transition-speed-default);
+}
+
+.new-close-fav {
+  font-size: 24px;
+  float: right;
+  padding: 5px 10px;
+  border-radius: 60px;
+}
+
+.new-close-fav:hover {
+  background-color: var(--reddit-hover-color);
+  transition: var(--transition-speed-default);
+  color: var(--sat-ids);
+}
+
+.settings-background {
+  padding: 15px;
+  background: var(--sat-setting-bg-effect);
+}
+
+.settings-background-warning {
+  padding: 10px;
+  background: var(--settings-warning-bg);
+}
+
+.theme-icon img {
+  width: 160px;
+  padding: 3px;
+  margin: 2px;
+  border-radius: 20px;
+}
+.theme-icon img:hover {
+  transition: var(--sat-default-hoveringspeed);
+  background-color: var(--sat-accent-color1);
+}
+
+.username input[type="button"] {
+  font-size: 35px;
+  padding: 0px;
+  background-color: var(--sat-bg);
 }
 
 /* Fix side view & optimize for mobile use..
@@ -533,62 +520,16 @@ ul li {
   }
 }
 
-.close-button {
-  font-size: 27px;
-  float: right;
+.new-button {
   padding: 10px 10px;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 60px;
+  outline: none;
+  background: var(--sat-search-bar-hvr);
 }
 
-.new-close-fav,
-.close-button i {
-  display: block;
-  text-align: center;
-}
-.close-button:hover {
-  color: var(--sat-ids);
-  background: var(--sat-setting-bg-effect);
-  transition: var(--transition-speed-default);
-}
-
-.new-close-fav {
-  font-size: 24px;
-  float: right;
-  cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 60px;
-}
-
-.new-close-fav:hover {
-  background-color: var(--reddit-hover-color);
-  transition: var(--transition-speed-default);
-  color: var(--sat-ids);
-}
-
-.settings-background {
-  border-radius: 15px;
-  padding: 15px;
-  background: var(--sat-setting-bg-effect);
-}
-
-.settings-background-warning {
-  border-radius: 15px;
-  padding: 10px;
-  background: var(--settings-warning-bg);
-}
-.theme-icon img {
-  width: 160px;
-  padding: 3px;
-  border-radius: 20px;
-  margin: 2px;
-}
-.theme-icon img:hover {
+.new-button:hover {
+  background: var(--sat-tooltip-bg);
   transition: var(--sat-default-hoveringspeed);
-  background-color: var(--sat-accent-color1);
 }
-
-.easter-egg1 {
-  text-decoration: none;
+.saved-msg {
+  visibility: hidden;
 }

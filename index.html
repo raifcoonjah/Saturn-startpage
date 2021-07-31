@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/var.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/anim.css" />
+    <link rel="stylesheet" href="css/anim.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="icons/css/line-awesome.min.css" />
     <script src="js/jquery.js"></script>
@@ -63,12 +63,14 @@
         </div>
       </div>
 
-      <button class="button-modal" id="trigger" title="Settings">
+      <button class="setting-button" id="trigger" title="Settings">
         <i class="las la-cog"></i>
       </button>
 
       <!-- App lists -->
-      <h5 class="yourapps"><i class="las la-grip-horizontal"></i> App list</h5>
+      <h5 class="section-title">
+        <i class="las la-grip-horizontal"></i> App list
+      </h5>
       <br />
       <div class="popup">
         <div id="apps">
@@ -169,7 +171,9 @@
 
         <!-- Favorite Feature 2.1 -->
         <div id="fav-container" class="fav-container">
-          <h5 class="yourapps"><i class="las la-bookmark"></i> Favorites</h5>
+          <h5 class="section-title">
+            <i class="las la-bookmark"></i> Favorites
+          </h5>
           <br />
           <div id="content">
             <div id="sortSupport">
@@ -209,7 +213,6 @@
               Learn everything about favorites:
               <a
                 href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
-                class="external-links"
                 target="_blank"
                 >here <i class="las la-external-link-alt"></i
               ></a>
@@ -254,7 +257,6 @@
 
                   <a
                     href="https://github.com/mraif13/Saturn-startpage/blob/v3-redesign/change.MD"
-                    class="external-links"
                     target="_blank"
                     >Learn more <i class="las la-external-link-alt"></i
                   ></a>
@@ -307,14 +309,14 @@
                 <p>Hide various elements from the main page.</p>
                 <h5>Hide Favorites</h5>
                 <p></p>
-                <label class="theme-switch">
+                <label class="slider-switch">
                   <input type="checkbox" class="AvGamesCheckBox_favo_compl" />
                   <div class="slider round"></div>
                 </label>
                 <br />
                 <h5>Hide the bottom row in app list</h5>
                 <p></p>
-                <label class="theme-switch">
+                <label class="slider-switch">
                   <input type="checkbox" class="AvGamesCheckBox_apps_row2" />
                   <div class="slider round"></div>
                 </label>
@@ -322,18 +324,22 @@
               <br />
               <div class="settings-background">
                 <h3>| Username</h3>
-                <p>Username pretty much.</p>
+                <p>Change your username to anything you want.</p>
                 <div id="popUp">
-                  <p>Set your username:</p>
-                  <input type="text" name="setusername" id="userSet" />
                   <input
-                    type="button"
-                    id="save"
-                    class="pophide"
-                    name="save"
-                    value="save"
+                    type="text"
+                    name="setusername"
+                    id="userSet"
+                    placeholder="Nezko"
                   />
+                  <br />
+                  <button id="save" class="new-button">
+                    <i class="las la-save"></i> Save
+                  </button>
+
+                  <!-- <input type="button" id="save" class="pophide" name="save" value="Save " /> -->
                 </div>
+                <label id="sv-msg"></label>
               </div>
               <br />
               <div class="settings-background">
@@ -360,22 +366,17 @@
                 >
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v2.7.0"
-                  class="external-links"
                   target="_blank"
-                  >v2.8.0 [Angel] <i class="las la-external-link-alt"></i></a
+                  >v3.0.0 [Pluto] <i class="las la-external-link-alt"></i></a
                 ><br />
                 Created by
-                <a
-                  href="https://github.com/mraif13/"
-                  class="external-links"
-                  target="_blank"
+                <a href="https://github.com/mraif13/" target="_blank"
                   >mraif13 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Originally base on
                 <a
                   href="https://gitlab.com/madsouris/startpage/-/tree/simple"
-                  class="external-links"
                   target="_blank"
                   >Vannrith Startpage (Simple)
                   <i class="las la-external-link-alt"></i
@@ -384,7 +385,6 @@
                 Saturn Startpage is completely
                 <a
                   href="https://github.com/mraif13/Saturn-startpage"
-                  class="external-links"
                   target="_blank"
                 >
                   open source<i class="las la-external-link-alt"></i
@@ -401,7 +401,6 @@
                   Here's my
                   <a
                     href="https://www.paypal.com/paypalme/raifs"
-                    class="external-links"
                     target="_blank"
                     >Paypal <i class="las la-external-link-alt"></i
                   ></a>
