@@ -2,3 +2,17 @@
 / Think this should be in Saturn? Make a pull request */
 
 /* Themes */
+.small-icons {
+  font-size: 20px;
+  float: right;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.settings-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  top: 10px !important;
+  position: relative;
+}

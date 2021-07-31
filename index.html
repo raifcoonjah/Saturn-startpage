@@ -225,15 +225,24 @@
       <div class="modal">
         <div class="modal-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
+          <div class="small-icons">
+            <div class="container">
+              <ul class="tabs">
+                <li class="tab-link" data-tab="tab-1">
+                  <i class="las la-bell"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
           <h4 class="text-center">
-            Settings<span class="settings-dot">.</span>
+            <img class="settings-icon" src="/img/icon64.png" /> | Settings<span
+              class="settings-dot"
+              >.</span
+            >
           </h4>
           <div class="container">
             <ul class="tabs">
-              <li class="tab-link current" data-tab="tab-1">
-                <i class="las la-bell"></i> Notifications
-              </li>
-              <li class="tab-link" data-tab="tab-2">
+              <li class="tab-link current" data-tab="tab-2">
                 <i class="las la-pencil-ruler"></i> Customization
               </li>
               <li class="tab-link" data-tab="tab-3">
@@ -241,11 +250,15 @@
               </li>
             </ul>
             <br />
-            <div id="tab-1" class="tab-content current slide-up-fade-in">
+            <div id="tab-1" class="tab-content slide-up-fade-in">
               <div class="settings-background">
                 <h3>| Notifications</h3>
                 <p>Most recent notifications..</p>
-                <h6><i class="las la-calendar"></i> May 30th 2021</h6>
+                <p>
+                  <i class="las la-exclamation-circle"></i> No recent
+                  notifications found.
+                </p>
+                <!-- <h6><i class="las la-calendar"></i> May 30th 2021</h6>
                 <h4>Update on: v3.0 redesign</h4>
                 <p>
                   The redesign will be "lighter" than expected. Most of the UI
@@ -260,10 +273,10 @@
                     target="_blank"
                     >Learn more <i class="las la-external-link-alt"></i
                   ></a>
-                </p>
+                </p> -->
               </div>
             </div>
-            <div id="tab-2" class="tab-content slide-up-fade-in">
+            <div id="tab-2" class="tab-content current slide-up-fade-in">
               <div class="settings-background">
                 <h3>| Appearance</h3>
                 <p>Choose how Saturn startpage looks to you.</p>
