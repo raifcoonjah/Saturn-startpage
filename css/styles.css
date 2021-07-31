@@ -86,10 +86,10 @@ body {
 }
 
 .text-center {
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 600;
+  font-size: 23px;
   line-height: 33px;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   font-style: normal;
 }
@@ -224,7 +224,7 @@ ul.tabs li {
   display: inline-block;
   padding: 10px 15px;
   cursor: pointer;
-  border-radius: 14px;
+  border-radius: 100px;
   border: 2px solid var(--sat-setting-bg-color);
 }
 
@@ -531,7 +531,7 @@ ul li {
 }
 
 .close-button {
-  font-size: 27px;
+  font-size: 24px;
   float: right;
   padding: 10px 10px;
   margin: 10px;
