@@ -139,9 +139,6 @@ body {
   width: 66px;
   height: 33px;
 }
-.slider:hover {
-  outline: 3px solid var(--settings-button-outline);
-}
 .theme-switch input {
   display: none;
 }
@@ -476,24 +473,22 @@ ul li {
 #add-link-form input {
   color: var(--sat-ids);
   margin: 10px 0;
-  padding: 9px;
-  width: 55%;
+  padding: 10px;
+  width: 50%;
   outline: none;
   border: none;
   border-radius: 10px;
-  border: 1px solid var(--add-link-border);
+  border: 2px solid var(--add-link-border);
   font-size: 14px;
-  outline: 2px solid var(--sat-search-shortcuts);
+  outline: 3px solid var(--sat-search-shortcuts);
 }
 #add-link-form input:hover {
-  outline: 2px solid var(--sat-accent-color1);
-  border: 1px solid var(--sat-accent-color1);
+  outline: 3px solid var(--saturn-input-hover);
   transition: var(--transition-speed-default);
 }
 
 #add-link-form input:focus {
-  outline: 2px solid var(--sat-accent-color1);
-  border: 1px solid var(--sat-accent-color1);
+  outline: 3px solid var(--saturn-input-hover);
   transition: var(--transition-speed-default);
 }
 
@@ -519,11 +514,19 @@ ul li {
   color: var(--sat-ids);
 }
 
-/* Fix settings (beta) */
+/* Fix side view & optimize for mobile use..
+ */
 @media (max-width: 900px) {
   .modal-content {
     width: 90%;
     height: 75%;
+  }
+  .cuteapps p {
+    font-size: 10px;
+  }
+  .cuteapps i {
+    font-size: 2.3em;
+    margin-top: 10px;
   }
 }
 

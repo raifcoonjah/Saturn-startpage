@@ -94,6 +94,7 @@ v2 CSS Core
   --sat-search-bar-hvr: #b9b9b9;
   --sat-search-bar-focus: #bebebe;
   --sat-tooltip-bg: #c0c0c0;
+  --saturn-input-hover: #c0c0c0;
   --default-font: "Poppins", sans-serif;
   --sat-default-hoveringspeed: 200ms;
   --sat-border-radius: 10px;
@@ -139,6 +140,7 @@ v2 CSS Core
   --sat-search-bar-hvr: #232933;
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #232933;
+  --saturn-input-hover: #232933;
   --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
@@ -180,7 +182,8 @@ v2 CSS Core
   --sat-setting-close-btn: #232933;
   --sat-search-bar-hvr: #2b2b2b;
   --sat-search-bar-focus: #2b2b2b;
-  --sat-tooltip-bg: #181818;
+  --sat-tooltip-bg: #222222;
+  --saturn-input-hover: #222;
   --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
@@ -223,7 +226,8 @@ v2 CSS Core
   --sat-setting-close-btn: #232933;
   --sat-search-bar-hvr: #2b2b2b;
   --sat-search-bar-focus: #2b2b2b;
-  --sat-tooltip-bg: #181818;
+  --sat-tooltip-bg: #222;
+  --saturn-input-hover: #222;
   --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
@@ -267,6 +271,7 @@ v2 CSS Core
   --sat-search-bar-hvr: #1b0e35;
   --sat-search-bar-focus: #0f061f;
   --sat-tooltip-bg: #6e46c5;
+  --saturn-input-hover: #a37bfa33;
   --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
@@ -777,17 +782,23 @@ img {
   /* box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); */
 }
 
-.snip-wid button:hover,
-.cuteapps:hover {
+.snip-wid button:hover {
   background-color: var(--sat-bg);
   border-color: var(--moreapps-hovering-clr);
   border: 3px solid var(--sat-accent-color1);
 }
+
+.cuteapps:hover {
+  color: var(--sat-ids);
+  background-color: var(--moreapps-bg-new);
+  border: 3px solid var(--sat-accent-color1);
+}
+
 .closebtn:hover {
   border-color: var(--moreapps-hovering-clr);
 }
 .cuteapps {
-  border: 3px solid var(--sat-bg);
+  border: 3px solid var(--sat-search-shortcuts);
 }
 .headerimg {
   width: 160px;
