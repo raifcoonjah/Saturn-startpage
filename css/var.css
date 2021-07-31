@@ -113,6 +113,7 @@ v2 CSS Core
   --switch-color-bg: #6e798a;
   --switch-color-bg-after: #3b77a5;
   --settings-button-outline: #bbbbbb;
+  --new-search-bg-hover-effect: rgb(177, 177, 177);
   /* --drop-shadow-color: rgba(85, 93, 112, 0.219); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -158,6 +159,7 @@ v2 CSS Core
   --switch-color-bg: #2f343d;
   --switch-color-bg-after: #0080e250;
   --settings-button-outline: #232933;
+  --new-search-bg-hover-effect: #282d38;
   /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -201,6 +203,7 @@ v2 CSS Core
   --switch-color-bg: #252525;
   --switch-color-bg-after: #ffb07d;
   --settings-button-outline: #252525;
+  --new-search-bg-hover-effect: #353535;
   /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -245,6 +248,7 @@ v2 CSS Core
   --switch-color-bg: #252525;
   --switch-color-bg-after: #686868;
   --settings-button-outline: #252525;
+  --new-search-bg-hover-effect: #2e2e2e;
   /* --drop-shadow-color: rgba(24, 27, 34, 0.37); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;

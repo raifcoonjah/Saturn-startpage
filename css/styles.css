@@ -5,19 +5,20 @@ v2 CSS
 
 body {
   box-sizing: border-box;
-  padding-top: 20px;
+  padding-top: 90px;
   overflow-x: hidden;
 }
 
 .search-bar {
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding: 15px 50px;
   text-align: left;
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 15px;
   box-sizing: border-box;
   outline: none;
+  border: 3px solid var(--sat-bg);
 }
 
 .search-engine-logo {
@@ -27,17 +28,19 @@ body {
   outline: none;
   width: 55px;
   height: 55px;
-  margin-top: 1px;
+  margin-top: 4px;
 }
+
 .search-engine-logo:hover {
   transform: scale(1.1);
 }
 
 .search-bar:hover {
-  border: 1px solid #323a4965;
+  background-color: var(--new-search-bg-hover-effect);
 }
+
 .search-bar:focus {
-  border: 1px solid #323a49a2;
+  border: 3px solid var(--new-search-bg-hover-effect);
 }
 
 .fill {
@@ -56,8 +59,8 @@ body {
 
 .gudmorning {
   font-weight: 500;
-  text-align: center;
-  font-size: 16px;
+  text-align: left;
+  font-size: 40px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -65,9 +68,9 @@ body {
 
 .time {
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   margin-top: -10px;
-  font-size: 18px;
+  font-size: 32px;
 }
 
 /* V1.0 Settings page - (Unstable) */
@@ -189,7 +192,7 @@ input:checked + .slider:before {
 .button-modal {
   outline: none;
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 12px;
   float: right;
   outline: 2px solid var(--sat-bg);
 }
@@ -256,7 +259,7 @@ ul.tabs li.current {
 
 /* Shortcuts */
 #apps {
-  margin-top: 10px;
+  margin-top: 5px;
   width: 105%;
 }
 
@@ -266,7 +269,7 @@ ul.tabs li.current {
   margin: 0 0.9% 10px;
   padding: 15px 5px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
 }
 
@@ -434,21 +437,21 @@ ul li {
   float: right;
   margin-top: -5px;
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 #content {
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 8px;
 }
 
 #fav-link li {
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 #fav-link img {
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 #fav-link li:last-child {
@@ -459,7 +462,7 @@ ul li {
   text-decoration: none;
   padding: 10px 10px;
   margin: -10px;
-  border-radius: 10px;
+  border-radius: 15px;
   color: var(--sat-ids);
 }
 
@@ -477,7 +480,7 @@ ul li {
   width: 50%;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 2px solid var(--add-link-border);
   font-size: 14px;
   outline: 3px solid var(--sat-search-shortcuts);
@@ -501,7 +504,7 @@ ul li {
   margin-top: 20px;
   font-size: 0.9em;
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 15px;
   width: 100%;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
@@ -566,7 +569,7 @@ ul li {
 
 .settings-background {
   border-radius: 15px;
-  padding: 10px;
+  padding: 15px;
   background: var(--sat-setting-bg-effect);
 }
 

@@ -1,15 +1,16 @@
 const determineGreet = (
   hours // Good morning/night text.
 ) =>
-  (document.getElementById("greetings").innerText = `Good ${
-    hours < 12
-      ? "morning! "
-      : hours < 18
-      ? "afternoon! "
-      : hours < 21 // After 21:00/9:00 display night instead.
-      ? "evening! "
-      : "night! "
-  } `);
+  (document.getElementById("greetings").innerText =
+    `Good ${
+      hours < 12
+        ? "morning, "
+        : hours < 18
+        ? "afternoon, "
+        : hours < 21 // After 21:00/9:00 display night instead.
+        ? "evening, "
+        : "night, "
+    } ` + localStorage.getItem("user"));
 
 // Get month:
 determineGreet(new Date().getHours());
@@ -202,3 +203,22 @@ ohpurpleButton.onclick = () => {
   localStorage.setItem("theme", "purple");
 };
 
+//username
+$(document).ready(function () {
+  // test - display previous stored username
+  $("#Uname").val(localStorage.getItem("user"));
+
+  $("#save").click(function () {
+    var valoare = $("#userSet").val();
+    if (typeof Storage !== "undefined") {
+      // Store
+      //localStorage.setItem("user", valoare);
+      localStorage.user = valoare;
+      // Retrieve
+      //document.getElementById("Uname").innerHTML = localStorage.user;
+      $("#Uname").val(localStorage.getItem("user"));
+    } else {
+      $("#Uname").val("Sorry, your browser does not support Web Storage...");
+    }
+  });
+});
