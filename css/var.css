@@ -104,7 +104,7 @@ v3.0.0 CSS Core
   --sat-border-radius: 15px;
   --sat-shortcuts-hover: #cacaca;
   --sat-modal-app-section: #dbdbdb;
-  --gudmrning-txt: linear-gradient(180deg, #054b2d 0%, #014f80 100%);
+  --gudmrning-txt: linear-gradient(to right, #000046, #1cb5e0);
   --sat-accent-color1: #017fcd;
   --brightness-headerimg: brightness(1);
   --moreapps-hovering-clr: #2082cd;
@@ -149,7 +149,7 @@ v3.0.0 CSS Core
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
-  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  --gudmrning-txt: linear-gradient(to right, #11edf8 0%, #4facfe 100%);
   --sat-accent-color1: #1ca8ff;
   --moreapps-hovering-clr: #1a659e;
   --reddit-hover-color: #39414e;
@@ -197,7 +197,7 @@ v3.0.0 CSS Core
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
-  --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #f78235 100%);
+  --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #e9772a 100%);
   --sat-accent-color1: #ffb07d;
   --moreapps-hovering-clr: #ffb07d;
   --reddit-hover-color: rgb(46, 46, 46);
@@ -245,7 +245,7 @@ v3.0.0 CSS Core
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
-  --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #f78235 100%);
+  --gudmrning-txt: linear-gradient(to right, #e6dada, #274046);
   --sat-accent-color1: #686868;
   --moreapps-hovering-clr: #686868;
   --reddit-hover-color: rgb(46, 46, 46);
@@ -293,7 +293,7 @@ v3.0.0 CSS Core
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
-  --gudmrning-txt: linear-gradient(to right, #6e46c5 0%, #773ff0 100%);
+  --gudmrning-txt: linear-gradient(to right, #8e2de2, #4a00e0);
   --sat-accent-color1: #6e46c5;
   --moreapps-hovering-clr: #6e46c5;
   --reddit-hover-color: #221242;
@@ -744,7 +744,7 @@ img {
 .morecontainer {
   background: var(--sat-setting-bg-color);
 }
-.button-modal,
+.setting-button,
 .app,
 .cuteapps,
 .removebtn {
@@ -766,7 +766,7 @@ img {
 #fav-link a:hover,
 .snip-wid button,
 .overlay,
-.button-modal:hover,
+.setting-button:hover,
 .btn-hide2:hover,
 .app:hover,
 .cuteapps:hover,
@@ -783,7 +783,7 @@ img {
 
 .removebtn:hover,
 .snip-wid button:hover,
-.button-modal:hover,
+.setting-button:hover,
 .app:hover,
 .cuteapps:hover {
   color: var(--for-white); /* force white to fix issues */
@@ -825,13 +825,13 @@ img {
 
 /* Font color */
 .overlay,
-.button-modal,
+.setting-button,
 .app,
 .cuteapps,
 .removebtn,
 .tooltiptext,
 .snip-wid button,
-.button-modal i,
+.setting-button i,
 .cuteapps:hover,
 #fav-link a:hover,
 .container {
