@@ -267,52 +267,6 @@ v3.0.0 CSS Core
   --transition-speed-slow: 0.4s;
 }
 
-/* Purpleeeeeee theme */
-
-.purple {
-  --sat-heading: #ffffff;
-  --sat-ids: #ffffff;
-  --sat-bg: #05010e;
-  --sat-search-shortcuts: #0c061a;
-  --sat-search-border: #0c061a;
-  --sat-icons: hsl(0, 0%, 95%);
-  --sat-icons-hovr: #fafafa;
-  --sat-links: hsl(0, 0%, 95%);
-  --sat-links-hovr: #6e46c5;
-  --sat-default-button-txt: #fcfcfc;
-  --sat-txt-selector-clr: #6e46c5;
-  --sat-txt-selector-clr-after: #ffffff;
-  --sat-setting-bg-color: #05010e;
-  --sat-setting-bg-effect: #150c29;
-  --sat-setting-close-btn: #232933;
-  --sat-search-bar-hvr: #1b0e35;
-  --sat-search-bar-focus: #0f061f;
-  --sat-tooltip-bg: #6e46c5;
-  --saturn-input-hover: #a37bfa33;
-  --sat-default-hoveringspeed: 200ms;
-  --sat-shortcuts-hover: #232933;
-  --sat-modal-app-section: #2329334d;
-  --default-font: "Poppins", sans-serif;
-  --gudmrning-txt: linear-gradient(to right, #8e2de2, #4a00e0);
-  --sat-accent-color1: #6e46c5;
-  --moreapps-hovering-clr: #6e46c5;
-  --reddit-hover-color: #221242;
-  --brightness-headerimg: brightness(1.1);
-  --for-white: #ffffff;
-  --snip-wid-btn: #23293363;
-  --settings-warning-bg: rgba(255, 255, 0, 0.075);
-  --add-link-border: rgb(41, 41, 41);
-  --delete-warning-bg: rgba(197, 42, 42, 0.76);
-  --switch-color-bg: #090413;
-  --switch-color-bg-after: #6e46c5;
-  --settings-button-outline: #20113f;
-  --sat-border-radius: 15px;
-
-  /* Multiple transition speeds */
-  --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.3s;
-  --transition-speed-slow: 0.4s;
-}
 
 /* Original Fork code */
 

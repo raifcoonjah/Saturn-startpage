@@ -152,7 +152,6 @@ const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
 const spaceButton = document.getElementById("space");
 const linkinParkButton = document.getElementById("linkin-park");
-const ohpurpleButton = document.getElementById("purple");
 const body = document.body;
 
 // Apply the cached theme on reload
@@ -167,7 +166,6 @@ darkButton.onclick = () => {
   body.classList.replace("light", "dark");
   body.classList.replace("space", "dark");
   body.classList.replace("linkin-park", "dark");
-  body.classList.replace("purple", "dark");
   localStorage.setItem("theme", "dark");
 };
 
@@ -175,7 +173,6 @@ lightButton.onclick = () => {
   body.classList.replace("dark", "light");
   body.classList.replace("space", "light");
   body.classList.replace("linkin-park", "light");
-  body.classList.replace("purple", "light");
   localStorage.setItem("theme", "light");
 };
 
@@ -183,7 +180,6 @@ spaceButton.onclick = () => {
   body.classList.replace("dark", "space");
   body.classList.replace("light", "space");
   body.classList.replace("linkin-park", "space");
-  body.classList.replace("purple", "space");
   localStorage.setItem("theme", "space");
 };
 
@@ -191,16 +187,7 @@ linkinParkButton.onclick = () => {
   body.classList.replace("dark", "linkin-park");
   body.classList.replace("light", "linkin-park");
   body.classList.replace("space", "linkin-park");
-  body.classList.replace("purple", "linkin-park");
   localStorage.setItem("theme", "linkin-park");
-};
-
-ohpurpleButton.onclick = () => {
-  body.classList.replace("dark", "purple");
-  body.classList.replace("light", "purple");
-  body.classList.replace("space", "purple");
-  body.classList.replace("linkin-park", "purple");
-  localStorage.setItem("theme", "purple");
 };
 
 //username
