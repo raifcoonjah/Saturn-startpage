@@ -27,7 +27,7 @@ $(document).ready(function () {
     // Reset form
     $title.val("");
     $url.val("");
-    $("#add-link-form").slideToggle("100");
+    $("#add-link-form").slideToggle("50");
   });
 
   // Remove item
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
   // Form toggle
   $("#new-link-button").click(function () {
-    $("#add-link-form").slideToggle("50");
+    $("#add-link-form").slideToggle("100");
   });
 
   $("#new-close-fav").click(function () {

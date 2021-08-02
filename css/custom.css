@@ -16,3 +16,15 @@
   top: 10px !important;
   position: relative;
 }
+
+.favorites-search input {
+  background-color: var(--sat-bg);
+  border: 2px solid var(--sat-bg);
+  border-radius: 20px;
+}
+.favorites-search input:hover {
+  border: 2px solid var(--sat-search-bar-hvr);
+}
+.favorites-search input:focus {
+  border: 2px solid var(--sat-search-bar-focus);
+}
