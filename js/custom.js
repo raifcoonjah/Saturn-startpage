@@ -1,5 +1,9 @@
 // Add Javascript here.
 // Think this should be in Saturn Startpage? Feel free to make a PR.
+
+
+
+// Favorites live search v1.0-pie
 (function ($) {
   jQuery.expr[":"].Contains = function (a, i, m) {
     return (
@@ -9,7 +13,6 @@
     );
   };
 
-  //live search function
   function live_search(list) {
     $(".searchfavorites")
       .change(function () {
