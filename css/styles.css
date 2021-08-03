@@ -535,6 +535,7 @@ ul li {
   padding: 10px 10px;
   outline: none;
   background: var(--sat-search-bar-hvr);
+  color: var(--sat-ids);
 }
 
 .new-button:hover {
