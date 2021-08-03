@@ -213,7 +213,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#save").click(function () {
     $("#sv-msg").text(
-      "( ﾟｏ⌒): Username saved. Please reload for these changes to take effect.. "
+      "( ﾟｏ⌒): Username saved, please reload for these changes to take effect. "
     );
   });
 });
