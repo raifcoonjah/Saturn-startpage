@@ -534,14 +534,14 @@ ul li {
 }
 
 .new-button {
-  padding: 10px 10px;
+  padding: 9px 20px;
   outline: none;
   background: var(--sat-search-bar-hvr);
   color: var(--sat-ids);
 }
 
 .new-button:hover {
-  background: var(--sat-tooltip-bg);
+  background: var(--sat-search-bar-focus);
   transition: var(--sat-default-hoveringspeed);
 }
 .saved-msg {
