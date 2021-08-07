@@ -500,10 +500,12 @@ ul li {
 
 .theme-icon img {
   width: 160px;
-  padding: 3px;
+  padding: 4px;
   margin: 2px;
   border-radius: 20px;
+  animation: slide-up-fade-in 0.3s ease;
 }
+
 .theme-icon img:hover {
   transition: var(--sat-default-hoveringspeed);
   background-color: var(--sat-accent-color1);
