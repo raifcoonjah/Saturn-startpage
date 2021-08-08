@@ -589,3 +589,12 @@ ul li {
 .easter-egg1 {
   text-decoration: none;
 }
+
+/* Favorites support for images, gifs and more.. */
+#fav-link img {
+  width: 20px;
+  height: 20px;
+  outline: none;
+  vertical-align: middle;
+  margin: 0px;
+}
