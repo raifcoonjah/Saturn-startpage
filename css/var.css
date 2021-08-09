@@ -93,7 +93,7 @@ v3.0.0 CSS Core
   --sat-txt-selector-clr: #303a58;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #eeeeee;
-  --sat-setting-bg-effect: #cacacadc;
+  --sat-setting-bg-effect: #dddddddc;
   --sat-setting-close-btn: rgb(182, 182, 182);
   --sat-search-bar-hvr: #b9b9b9;
   --sat-search-bar-focus: #999999;
@@ -113,15 +113,14 @@ v3.0.0 CSS Core
   --add-link-border: rgb(150, 151, 151);
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
   --delete-warning-bg: rgba(231, 19, 19, 0.644);
-  --switch-color-bg: #6e798a;
-  --switch-color-bg-after: #3b77a5;
+  --switch-color-bg: #c0c0c0;
   --settings-button-outline: #bbbbbb;
   --new-search-bg-hover-effect: rgb(177, 177, 177);
   /* --drop-shadow-color: rgba(85, 93, 112, 0.219); */
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.3s;
-  --transition-speed-slow: 0.4s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
 }
 /* Dark theme */
 .dark {
@@ -138,7 +137,7 @@ v3.0.0 CSS Core
   --sat-txt-selector-clr: #434e74;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #0d0f13;
-  --sat-setting-bg-effect: #1e232cde;
+  --sat-setting-bg-effect: #171c24ee;
   --sat-setting-close-btn: #232933;
   --sat-search-bar-hvr: #232933;
   --sat-search-bar-focus: #1e232c;
@@ -162,11 +161,12 @@ v3.0.0 CSS Core
   --settings-button-outline: #232933;
   --new-search-bg-hover-effect: #282d38;
   --sat-border-radius: 15px;
+  --switch-color-bg: #303846de;
 
   /* Transitions */
   --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.3s;
-  --transition-speed-slow: 0.4s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
 }
 
 /* Space theme */
@@ -185,7 +185,7 @@ v3.0.0 CSS Core
   --sat-txt-selector-clr: #ffb07d;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #0e0e0e;
-  --sat-setting-bg-effect: rgb(24, 24, 24);
+  --sat-setting-bg-effect: rgba(24, 24, 24, 0.904);
   --sat-setting-close-btn: #232933;
   --sat-search-bar-hvr: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
@@ -209,11 +209,12 @@ v3.0.0 CSS Core
   --settings-button-outline: #252525;
   --new-search-bg-hover-effect: #353535;
   --sat-border-radius: 15px;
+  --switch-color-bg: rgba(48, 48, 48, 0.904);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.3s;
-  --transition-speed-slow: 0.4s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
 }
 
 /* Linkin park theme (BETA) */
@@ -259,8 +260,8 @@ v3.0.0 CSS Core
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.3s;
-  --transition-speed-slow: 0.4s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
 }
 
 /* Original Fork code */
@@ -320,11 +321,8 @@ body {
   padding: 2rem;
   border-radius: var(--sat-border-radius);
   overflow-x: hidden;
-  word-break: break-word;
-  overflow-wrap: break-word;
   background: var(--sat-bg);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 
   /* Main body text */

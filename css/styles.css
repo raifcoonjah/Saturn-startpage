@@ -129,14 +129,15 @@ body {
 .slider-switch {
   display: inline-block;
   position: relative;
-  width: 66px;
-  height: 33px;
+  width: 67px;
+  height: 36px;
 }
 .slider-switch input {
   display: none;
 }
 .slider:hover {
-  background: var(--sat-search-bar-hvr);
+  transition: var(--sat-default-hoveringspeed);
+  border: 2px solid var(--sat-accent-color1);
 }
 
 .slider {
@@ -146,19 +147,20 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+  border: 2px solid var(--sat-setting-bg-effect);
 }
 
 .slider:before {
-  background-color: var(--sat-accent-color1);
+  background-color: var(--sat-ids);
   content: "";
-  left: 7px;
+  left: 5px;
   position: absolute;
-  bottom: 5px;
+  bottom: 4px;
   padding: 12px 12px;
 }
 
 input:checked + .slider {
-  background-color: var(--switch-color-bg);
+  background: var(--switch-color-bg);
 }
 
 input:checked + .slider:before {
@@ -248,7 +250,7 @@ ul.tabs li.current {
 .app {
   display: inline-block;
   width: 10%;
-  margin: 0 0.9% 10px;
+  margin: 0 0.9% 15px;
   padding: 15px 5px;
   text-align: center;
 }

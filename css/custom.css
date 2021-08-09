@@ -18,13 +18,19 @@
 }
 
 .favorites-search input {
+  padding: 10px;
+  width: 20%;
+  border: none;
   background-color: var(--sat-bg);
-  border: 2px solid var(--sat-bg);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .favorites-search input:hover {
-  border: 2px solid var(--sat-search-bar-hvr);
+  width: 35%;
+  transition: var(--transition-speed-default);
+  background-color: var(--settings-button-outline);
 }
 .favorites-search input:focus {
-  border: 2px solid var(--sat-search-bar-focus);
+  width: 35%;
+  transition: var(--transition-speed-default);
+  background-color: var(--settings-button-outline);
 }
