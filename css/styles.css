@@ -540,6 +540,7 @@ ul li {
   outline: none;
   background: var(--sat-search-bar-hvr);
   color: var(--sat-ids);
+  font-weight: 500;
 }
 
 .new-button:hover {
