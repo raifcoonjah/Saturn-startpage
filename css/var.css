@@ -697,10 +697,10 @@ img {
 .removebtn {
   background: var(--sat-search-shortcuts);
 }
-
+/* 
 .app {
   background: var(--sat-shortcuts-hover);
-}
+} */
 .tooltiptext {
   background: var(--sat-tooltip-bg);
 }

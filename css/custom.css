@@ -27,10 +27,10 @@
 .favorites-search input:hover {
   width: 35%;
   transition: var(--transition-speed-default);
-  background-color: var(--settings-button-outline);
+  background: var(--sat-search-shortcuts);
 }
 .favorites-search input:focus {
   width: 35%;
   transition: var(--transition-speed-default);
-  background-color: var(--settings-button-outline);
+  background: var(--sat-search-shortcuts);
 }
