@@ -421,7 +421,6 @@ ul li {
   padding: 10px;
   width: 50%;
   outline: none;
-  border: none;
   border: 2px solid var(--add-link-border);
   font-size: 14px;
   outline: 3px solid var(--sat-search-shortcuts);
