@@ -22,7 +22,7 @@
   width: 22%;
   border: none;
   background-color: var(--sat-bg);
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .favorites-search input:hover {
   width: 35%;
