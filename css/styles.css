@@ -18,6 +18,7 @@ body {
   box-sizing: border-box;
   outline: none;
   border: 3px solid var(--sat-bg);
+  border-radius: 20px;
 }
 
 .search-engine-logo {
@@ -151,7 +152,7 @@ body {
 }
 
 .slider:before {
-  background-color: var(--sat-ids);
+  background-color: #fff;
   content: "";
   left: 5px;
   position: absolute;
@@ -160,7 +161,7 @@ body {
 }
 
 input:checked + .slider {
-  background: var(--switch-color-bg);
+  background: var(--sat-accent-color1);
 }
 
 input:checked + .slider:before {
@@ -511,7 +512,10 @@ ul li {
   transition: var(--sat-default-hoveringspeed);
   background-color: var(--sat-accent-color1);
 }
-
+.new-icon {
+  color: red;
+  font-size: 10px;
+}
 .username input[type="button"] {
   font-size: 35px;
   padding: 0px;
