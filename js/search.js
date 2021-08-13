@@ -1,4 +1,4 @@
-let se = 5; // ALlow the user to press the button (set amount)  of times.
+let se = 4; // ALlow the user to press the button (set amount)  of times.
 
 // Listens for click event in se_button, once clicked, se increments by one and cycleSearchEngines() is called to update the icon, placeholder, and form action
 document.getElementById("se_button").addEventListener("click", function () {
