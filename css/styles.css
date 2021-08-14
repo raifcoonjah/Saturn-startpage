@@ -513,10 +513,6 @@ ul li {
   transition: var(--transition-speed-default);
   background-color: var(--sat-accent-color1);
 }
-.new-icon {
-  color: red;
-  font-size: 10px;
-}
 /* Fix side view & optimize for mobile use..
  */
 @media (max-width: 900px) {
@@ -545,6 +541,7 @@ ul li {
   background: var(--sat-search-bar-focus);
   transition: var(--transition-speed-default);
 }
+
 .saved-msg {
   visibility: hidden;
 }
@@ -564,4 +561,12 @@ ul li {
 
 .username-section input:focus {
   background-color: var(--sat-input-hover);
+}
+
+.social-icons {
+  font-size: 35px;
+  outline: none;
+}
+.social-icons:hover {
+  color: var(--sat-accent-color1);
 }
