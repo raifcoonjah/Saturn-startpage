@@ -137,12 +137,12 @@ body {
   display: none;
 }
 .slider:hover {
-  transition: var(--sat-default-hoveringspeed);
+  transition: var(--transition-speed-default);
   border: 2px solid var(--sat-accent-color1);
 }
 
 .slider {
-  background: var(--switch-color-bg);
+  background-color: var(--switch-color-bg);
   left: 1px;
   position: absolute;
   right: 0;
@@ -427,12 +427,12 @@ ul li {
   outline: 3px solid var(--sat-search-shortcuts);
 }
 #add-link-form input:hover {
-  outline: 3px solid var(--saturn-input-hover);
+  outline: 3px solid var(--sat-search-bar-hvr);
   transition: var(--transition-speed-default);
 }
 
 #add-link-form input:focus {
-  outline: 3px solid var(--saturn-input-hover);
+  outline: 3px solid var(--sat-search-bar-hvr);
   transition: var(--transition-speed-default);
 }
 
@@ -452,7 +452,7 @@ ul li {
 
 #new-link-button button:hover,
 #add-link-form button:hover {
-  background-color: var(--reddit-hover-color);
+  background-color: var(--favorites-hover);
   transition: var(--transition-speed-default);
   color: var(--sat-ids);
 }
@@ -484,13 +484,14 @@ ul li {
 }
 
 .new-close-fav:hover {
-  background-color: var(--reddit-hover-color);
+  background-color: var(--favorites-hover);
   transition: var(--transition-speed-default);
   color: var(--sat-ids);
 }
 
 .settings-background {
   margin: 5px;
+  margin-bottom: -10px;
   padding: 15px;
   background: var(--sat-setting-bg-effect);
 }
@@ -509,19 +510,13 @@ ul li {
 }
 
 .theme-icon img:hover {
-  transition: var(--sat-default-hoveringspeed);
+  transition: var(--transition-speed-default);
   background-color: var(--sat-accent-color1);
 }
 .new-icon {
   color: red;
   font-size: 10px;
 }
-.username input[type="button"] {
-  font-size: 35px;
-  padding: 0px;
-  background-color: var(--sat-bg);
-}
-
 /* Fix side view & optimize for mobile use..
  */
 @media (max-width: 900px) {
@@ -548,7 +543,7 @@ ul li {
 
 .new-button:hover {
   background: var(--sat-search-bar-focus);
-  transition: var(--sat-default-hoveringspeed);
+  transition: var(--transition-speed-default);
 }
 .saved-msg {
   visibility: hidden;
@@ -560,4 +555,13 @@ ul li {
 #sv-msg {
   font-weight: 500;
   font-size: 12px;
+}
+
+.username-section input {
+  background-color: var(--lighter-color);
+  border: 1px solid var(--new-search-bg-hover-effect);
+}
+
+.username-section input:focus {
+  background-color: var(--sat-input-hover);
 }

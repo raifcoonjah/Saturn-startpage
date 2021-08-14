@@ -210,18 +210,24 @@
             <h3></h3>
             <p style="text-align: center">-</p>
             <div class="side-text">
-              <h5><i class="las la-exclamation-circle"></i> Notice</h5>
-              Currently Favorites doesn't have a limit, but I recommend under
-              30.
-              <br />
-              <h5><i class="lar la-question-circle"></i> Need help?</h5>
-
-              Learn everything about favorites:
-              <a
-                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
-                target="_blank"
-                >here <i class="las la-external-link-alt"></i
-              ></a>
+              <details>
+                <summary>
+                  <i class="las la-exclamation-circle"></i> Notice
+                </summary>
+                Currently Favorites doesn't have a limit, but I recommend under
+                30.
+              </details>
+              <details>
+                <summary>
+                  <i class="lar la-question-circle"></i> Need help?
+                </summary>
+                Learn everything about favorites:
+                <a
+                  href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
+                  target="_blank"
+                  >here <i class="las la-external-link-alt"></i
+                ></a>
+              </details>
             </div>
           </div>
         </div>
@@ -234,7 +240,11 @@
           <div class="small-icons">
             <div class="container">
               <ul class="tabs">
-                <li class="tab-link" data-tab="tab-1">
+                <li
+                  class="tab-link"
+                  title="No notifications.."
+                  data-tab="tab-1"
+                >
                   <i class="las la-bell"></i>
                 </li>
               </ul>
@@ -264,15 +274,11 @@
                 <h3>| Notifications</h3>
                 <p>Most recent notifications..</p>
                 <p>(｡•́︿•̀｡): No recent notifications..</p>
-                <!-- <h6><i class="las la-calendar"></i> May 30th 2021</h6>
-                <h4>Update on: v3.0 redesign</h4>
+                <!-- <h6><i class="las la-calendar"></i> Aug 17th 2021</h6>
+                <h4>Saturn UI 3. Simpler, faster & cleaner.</h4>
                 <p>
-                  The redesign will be "lighter" than expected. Most of the UI
-                  changes will be refinements of current features, some features
-                  like Favorites & App lists will receive a full overhaul but
-                  the rest will stay pretty much the same. The biggest change
-                  will happen in the source code, where I plan to rewrite
-                  Saturn's core CSS & the main HTML to improve performance.
+                  After a few months of designing stuff, the new User interface
+                  is finally done.
 
                   <a
                     href="https://github.com/mraif13/Saturn-startpage/blob/v3-redesign/change.MD"
@@ -286,7 +292,7 @@
               <div class="settings-background">
                 <h3>Username</h3>
                 <p>Change your username to anything you want.</p>
-                <div id="popUp">
+                <div id="popUp" class="username-section">
                   <input
                     type="text"
                     name="setusername"
@@ -407,12 +413,12 @@
                   title="Dark theme"
                   alt="dark-icon.png"
               /></a>
-              <!-- <a id="space" href="#" class="theme-icon"
+              <a id="darkv2" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/new-dark.png"
                   title="Dark 2.0 theme"
                   alt="dark-icon.png"
-              /></a> -->
+              /></a>
               <a id="space" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/sexy-contrast.png"

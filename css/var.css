@@ -80,88 +80,72 @@ v3.0.0 CSS Core
 
 /* Light theme */
 .light {
-  --sat-heading: #000000;
-  --sat-ids: #1a1a1a;
-  --sat-bg: #ffffff;
-  --sat-search-shortcuts: #dadada;
-  --sat-search-border: #e5e7eb;
-  --sat-icons: #000000;
-  --sat-icons-hovr: #111111d8;
+  --sat-heading: #000000; /* Settings header, settings options title, app list title, favorites title, favorites title */
+  --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
+  --sat-bg: #ffffff; /* Main background */
+  --sat-search-shortcuts: #dadada; /* Favorites, app list & search, inputs. */
   --sat-links: #1a1a1a;
-  --sat-links-hovr: #494949;
-  --sat-default-button-txt: #ffffff;
   --sat-txt-selector-clr: #303a58;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #eeeeee;
   --sat-setting-bg-effect: #dddddddc;
-  --sat-setting-close-btn: rgb(182, 182, 182);
-  --sat-search-bar-hvr: #b9b9b9;
+  --sat-input-hover: #b1b1b1;
   --sat-search-bar-focus: #999999;
   --sat-tooltip-bg: #c0c0c0;
-  --saturn-input-hover: #c0c0c0;
   --default-font: "Poppins", sans-serif;
-  --sat-default-hoveringspeed: 200ms;
   --sat-border-radius: 15px;
-  --sat-shortcuts-hover: #cacaca;
-  --sat-modal-app-section: #dbdbdb;
   --gudmrning-txt: linear-gradient(to right, #000046, #1cb5e0);
   --sat-accent-color1: #017fcd;
   --moreapps-hovering-clr: #2082cd;
-  --reddit-hover-color: #c4c4c4;
+  --favorites-hover: #c4c4c4;
   --for-white: #ffffff;
-  --snip-wid-btn: #beb7b7;
   --add-link-border: rgb(150, 151, 151);
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
   --delete-warning-bg: rgba(231, 19, 19, 0.644);
   --switch-color-bg: #c0c0c0;
   --settings-button-outline: #bbbbbb;
   --new-search-bg-hover-effect: rgb(177, 177, 177);
-  /* --drop-shadow-color: rgba(85, 93, 112, 0.219); */
+  --lighter-color: rgb(
+    196,
+    196,
+    196
+  ); /* Every that needs a light background color */
+
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
 }
-/* Dark theme */
+/* New dark theme */
 .dark {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: #0d0f13;
-  --sat-search-shortcuts: #191c24;
-  --sat-search-border: #15191f;
-  --sat-icons: hsl(0, 0%, 95%);
-  --sat-icons-hovr: #fafafa;
+  --sat-bg: #0c0d11;
+  --sat-search-shortcuts: #13151b;
   --sat-links: hsl(0, 0%, 95%);
-  --sat-links-hovr: #919191;
-  --sat-default-button-txt: #fcfcfc;
-  --sat-txt-selector-clr: #434e74;
+  --sat-txt-selector-clr: #13151b;
   --sat-txt-selector-clr-after: #ffffff;
-  --sat-setting-bg-color: #0d0f13;
-  --sat-setting-bg-effect: #171c24ee;
-  --sat-setting-close-btn: #232933;
-  --sat-search-bar-hvr: #232933;
+  --sat-setting-bg-color: #0c0d11;
+  --sat-setting-bg-effect: #12161d;
+  --sat-input-hover: #2b323d;
   --sat-search-bar-focus: #1e232c;
-  --sat-tooltip-bg: #232933;
-  --saturn-input-hover: #232933;
-  --sat-default-hoveringspeed: 200ms;
-  --sat-shortcuts-hover: #232933;
-  --sat-modal-app-section: #2329334d;
+  --sat-tooltip-bg: #181b22;
   --default-font: "Poppins", sans-serif;
-  --gudmrning-txt: linear-gradient(to right, #11edf8 0%, #4facfe 100%);
-  --sat-accent-color1: #1ca8ff;
-  --moreapps-hovering-clr: #1a659e;
-  --reddit-hover-color: #39414e;
+  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #6eb8f8 100%);
+  --sat-accent-color1: #4facfe;
+  --moreapps-hovering-clr: #4190d4;
+  --favorites-hover: #232931;
   --for-white: #ffffff;
-  --snip-wid-btn: #23293363;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
-  --add-link-border: rgb(43, 52, 56);
+  --add-link-border: #1a1f25;
   --delete-warning-bg: rgba(197, 42, 42, 0.76);
   --switch-color-bg: #2f343d;
   --switch-color-bg-after: #0080e250;
   --settings-button-outline: #232933;
-  --new-search-bg-hover-effect: #282d38;
+  --new-search-bg-hover-effect: #1e222b;
   --sat-border-radius: 15px;
   --switch-color-bg: #303846de;
+  --lighter-color: #191d25; /* Every that needs a light background color */
 
   /* Transitions */
   --transition-speed-fast: 0.1s;
@@ -172,44 +156,44 @@ v3.0.0 CSS Core
 /* Space theme */
 
 .space {
-  --sat-heading: #ffffff;
-  --sat-ids: #ffffff;
-  --sat-bg: #0e0e0e;
-  --sat-search-shortcuts: #181818;
-  --sat-search-border: #181818;
-  --sat-icons: hsl(0, 0%, 95%);
-  --sat-icons-hovr: #fafafa;
-  --sat-links: hsl(0, 0%, 95%);
-  --sat-links-hovr: #fccbaa;
-  --sat-default-button-txt: #fcfcfc;
-  --sat-txt-selector-clr: #ffb07d;
-  --sat-txt-selector-clr-after: #ffffff;
-  --sat-setting-bg-color: #0e0e0e;
-  --sat-setting-bg-effect: rgba(24, 24, 24, 0.904);
-  --sat-setting-close-btn: #232933;
-  --sat-search-bar-hvr: #2b2b2b;
+  --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
+  --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
+  --sat-bg: #0e0e0e; /* Main background */
+  --sat-search-shortcuts: #181818; /* Favorites, app list & search, inputs. */
+  --sat-links: hsl(0, 0%, 95%); /* Links and stuff */
+  --sat-txt-selector-clr: #ffb07d; /* Text selector background color */
+  --sat-txt-selector-clr-after: #ffffff; /* Text selector color */
+  --sat-setting-bg-color: #0e0e0e; /* Settings background color */
+  --sat-setting-bg-effect: rgba(
+    24,
+    24,
+    24,
+    0.904
+  ); /* Settings options background color */
+  --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
-  --sat-tooltip-bg: #222222;
-  --saturn-input-hover: #222;
-  --sat-default-hoveringspeed: 200ms;
-  --sat-shortcuts-hover: #232933;
-  --sat-modal-app-section: #2329334d;
+  --sat-tooltip-bg: #222222; /* Tooltip background */
   --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #e9772a 100%);
   --sat-accent-color1: #ffb07d;
   --moreapps-hovering-clr: #ffb07d;
-  --reddit-hover-color: rgb(46, 46, 46);
+  --favorites-hover: rgb(46, 46, 46);
   --for-white: #ffffff;
-  --snip-wid-btn: #23293363;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
-  --add-link-border: rgb(41, 41, 41);
-  --delete-warning-bg: rgba(197, 42, 42, 0.76);
+  --add-link-border: rgb(41, 41, 41); /* Favorite input border color */
+  --delete-warning-bg: rgba(
+    197,
+    42,
+    42,
+    0.76
+  ); /* Favorite delete button color */
   --switch-color-bg: #252525;
   --switch-color-bg-after: #ffb07d;
-  --settings-button-outline: #252525;
-  --new-search-bg-hover-effect: #353535;
-  --sat-border-radius: 15px;
   --switch-color-bg: rgba(48, 48, 48, 0.904);
+  --settings-button-outline: #252525; /* The outline color on the open settings button */
+  --new-search-bg-hover-effect: #353535; /* New search hover color */
+  --sat-border-radius: 15px;
+  --lighter-color: #1f1f1f; /* Every that needs a light background color */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -224,31 +208,20 @@ v3.0.0 CSS Core
   --sat-ids: #ffffff;
   --sat-bg: url(/img/rock-legend-bg.png);
   --sat-search-shortcuts: #181818f5;
-  --sat-search-border: #181818f5;
-  --sat-icons: hsl(0, 0%, 95%);
-  --sat-icons-hovr: #fafafa;
   --sat-links: hsl(0, 0%, 95%);
-  --sat-links-hovr: #fccbaa;
-  --sat-default-button-txt: #fcfcfc;
   --sat-txt-selector-clr: #686868;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #0e0e0e;
   --sat-setting-bg-effect: rgb(24, 24, 24);
-  --sat-setting-close-btn: #232933;
-  --sat-search-bar-hvr: #2b2b2b;
+  --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222;
-  --saturn-input-hover: #222;
-  --sat-default-hoveringspeed: 200ms;
-  --sat-shortcuts-hover: #232933;
-  --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #e6dada, #274046);
   --sat-accent-color1: #686868;
   --moreapps-hovering-clr: #686868;
-  --reddit-hover-color: rgb(46, 46, 46);
+  --favorites-hover: rgb(46, 46, 46);
   --for-white: #ffffff;
-  --snip-wid-btn: #23293363;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(43, 52, 56);
   --delete-warning-bg: rgba(197, 42, 42, 0.76);
@@ -257,6 +230,7 @@ v3.0.0 CSS Core
   --settings-button-outline: #252525;
   --new-search-bg-hover-effect: #2e2e2e;
   --sat-border-radius: 15px;
+  --lighter-color: #1f1f1f; /* Every that needs a light background color */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -394,7 +368,7 @@ a {
 a:hover {
   color: var(--sat-accent-color1);
   text-decoration: underline;
-  transition: var(--sat-default-hoveringspeed);
+  transition: var(--transition-speed-fast);
 }
 
 abbr:hover {
@@ -405,7 +379,6 @@ abbr:hover {
 blockquote {
   padding: 1.5rem;
   background: var(--sat-search-shortcuts);
-  border-left: 5px solid var(--sat-search-border);
   border-radius: var(--sat-border-radius);
 }
 
@@ -420,7 +393,6 @@ blockquote *:last-child {
 
 header {
   background: var(--sat-search-shortcuts);
-  border-bottom: 1px solid var(--sat-search-border);
   padding: 2rem 1.5rem;
   margin: -2rem calc(0px - (50vw - 50%)) 2rem;
   padding-left: calc(50vw - 50%);
@@ -461,7 +433,7 @@ input[type="button"] {
   border-radius: var(--sat-border-radius);
   box-sizing: border-box;
   cursor: pointer;
-  color: var(--sat-default-button-txt);
+  color: var(--sat-ids);
 }
 
 a button[disabled],
@@ -483,16 +455,11 @@ samp,
 kbd,
 pre {
   /* The main preformatted style. This is changed slightly across different cases. */
-  background: var(--sat-search-shortcuts);
-  border: 1px solid var(--sat-search-border);
+  background: var(--sat-search-bar-focus);
   border-radius: var(--sat-border-radius);
   padding: 10px 5px;
   font-size: 0.9rem;
-}
-
-kbd {
-  /* Makes the kbd element look like a keyboard key */
-  border-bottom: 3px solid var(--sat-search-border);
+  border-radius: 5px;
 }
 
 pre {
@@ -525,8 +492,7 @@ code pre {
 details {
   /* Make the <details> look more "clickable" */
   padding: 0.6rem 1rem;
-  background: var(--sat-search-shortcuts);
-  border: 1px solid var(--sat-search-border);
+  background: var(--lighter-color);
   border-radius: var(--sat-border-radius);
 }
 
@@ -539,6 +505,7 @@ summary {
 details[open] {
   /* Adjust the <details> padding while open */
   padding-bottom: 0.75rem;
+  transition: var(--transition-speed-fast);
 }
 
 details[open] summary {
@@ -563,14 +530,12 @@ dd::before {
 hr {
   /* Reset the border of the <hr> separator, then set a better line */
   border: 0;
-  border-bottom: 1px solid var(--sat-search-border);
   margin: 1rem auto;
 }
 
 fieldset {
   margin-top: 1rem;
   padding: 2rem;
-  border: 1px solid var(--sat-search-border);
   border-radius: 4px;
 }
 
@@ -586,7 +551,6 @@ table {
 
 td,
 th {
-  border: 1px solid var(--sat-search-border);
   text-align: left;
   padding: 0.5rem;
 }
@@ -636,22 +600,23 @@ mark {
 textarea,
 select,
 input {
-  padding: 9px 10px;
+  padding: 14px 14px;
   margin-bottom: 0.5rem;
   background: var(--sat-search-shortcuts);
   color: var(--sat-ids);
-  border: 2px solid var(--new-search-bg-hover-effect);
+  border: none;
   border-radius: var(--sat-border-radius);
   box-shadow: none;
   box-sizing: border-box;
   outline: none;
 }
 
+.username-section input:hover,
 textarea:hover,
 select:hover,
 input:hover {
-  background-color: var(--sat-search-bar-hvr);
-  transition: var(--sat-default-hoveringspeed);
+  background-color: var(--sat-input-hover);
+  transition: var(--transition-speed-default);
 }
 
 textarea:focus,
@@ -672,7 +637,7 @@ img {
 }
 
 .search-bar:hover {
-  background: var(--sat-search-bar-hvr);
+  background: var(--sat-input-hover);
 }
 .search-bar:focus {
   background: var(--sat-search-bar-focus);
@@ -697,10 +662,6 @@ img {
 .removebtn {
   background: var(--sat-search-shortcuts);
 }
-/* 
-.app {
-  background: var(--sat-shortcuts-hover);
-} */
 .tooltiptext {
   background: var(--sat-tooltip-bg);
 }
@@ -761,7 +722,7 @@ img {
 }
 
 #fav-link a:hover {
-  background-color: var(--reddit-hover-color);
+  background-color: var(--favorites-hover);
   transition: var(--transition-speed-default);
 }
 
