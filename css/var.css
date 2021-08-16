@@ -78,7 +78,7 @@ v3.0.0 CSS Core
 
 /* Saturn's theme engine v3. */
 
-/* Light theme */
+/* Light theme */ 
 .light {
   --sat-heading: #000000; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
