@@ -78,7 +78,7 @@ v3.0.0 CSS Core
 
 /* Saturn's theme engine v3. */
 
-/* Light theme */ 
+/* Light theme */
 .light {
   --sat-heading: #000000; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
@@ -492,10 +492,9 @@ code pre {
 details {
   /* Make the <details> look more "clickable" */
   padding: 0.6rem 1rem;
-  background: var(--lighter-color);
+  background-color: var(--lighter-color);
   border-radius: var(--sat-border-radius);
 }
-
 summary {
   /* Makes the <summary> look more like a "clickable" link with the pointer cursor */
   cursor: pointer;
@@ -629,7 +628,7 @@ img {
   max-width: 100%;
 }
 
-/* Saturn Core v3.0.0  */
+/* Saturn Core v3.0  */
 
 #add-link-form,
 #content {
@@ -642,15 +641,12 @@ img {
 .search-bar:focus {
   background: var(--sat-search-bar-focus);
 }
-
 .modal {
   background-color: var(--sat-setting-bg-color);
 }
-
 .overlay {
   background: var(--sat-setting-bg-effect);
 }
-
 .modal-content,
 .overlay-content,
 .morecontainer {
@@ -670,7 +666,7 @@ img {
   background-image: var(--gudmrning-txt);
 }
 
-/* Hovering animations speed */
+/* Everything transition */
 #fav-link a:hover,
 .snip-wid button,
 .overlay,
@@ -699,13 +695,11 @@ img {
 
 .app {
   background: var(--sat-search-shortcuts);
-  /* box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); */
 }
 
 .app:hover {
   transform: translate3d(0px, -3px, 0px);
   background-color: var(--moreapps-hovering-clr);
-  /* box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); */
 }
 
 .cuteapps:hover {
@@ -731,7 +725,7 @@ img {
   transition: var(--transition-speed-default);
 }
 
-/* Font color */
+/* Text color */
 .overlay,
 .setting-button,
 .app,
