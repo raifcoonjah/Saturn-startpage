@@ -581,19 +581,14 @@ ul li {
 }
 
 .favorites-search input {
-  padding: 10px;
-  width: 22%;
-  border: none;
-  background-color: var(--sat-bg);
-  border-radius: 15px;
-}
-.favorites-search input:hover {
-  width: 35%;
-  transition: var(--transition-speed-default);
   background: var(--sat-search-shortcuts);
+  padding: 12px;
+  width: 32%;
+  border: 1px solid var(--sat-bg);
 }
+
+.favorites-search input:hover,
 .favorites-search input:focus {
-  width: 35%;
-  transition: var(--transition-speed-default);
-  background: var(--sat-search-shortcuts);
+  background-color: var(--sat-search-bar-focus);
+  border: 1px solid var(--new-search-bg-hover-effect);
 }
