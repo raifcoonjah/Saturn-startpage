@@ -78,17 +78,6 @@ function getDate() {
 document.getElementById("time").innerHTML =
   `It's ` + getDate() + `, ` + getTime();
 
-// Open overlay menu
-navy.addEventListener("click", openNav);
-navyclose.addEventListener("click", closeNav);
-
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
 
 // Hide favorites, jQuery.
 
@@ -227,9 +216,6 @@ darkv2Button.onclick = () => {
 
 //username
 $(document).ready(function () {
-  // test - display previous stored username
-  $("#Uname").val(localStorage.getItem("user"));
-
   $("#save").click(function () {
     var username = $("#userSet").val();
     if (typeof Storage !== "undefined") {

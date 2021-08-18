@@ -72,163 +72,68 @@
       </h5>
       <br />
       <div class="popup">
-        <div id="apps">
-          <!-- Row 1 -->
+        <div id="apps"></div>
+      </div>
+      <!-- End of app list -->
 
-          <!-- Example: -->
-          <!-- <a href="urlgoeshere.com">
-            <div class="app">
-              <span class="tooltiptext">Name</span>
-             Icons goes here: <i class="lar la-list-alt"></i></div
-          ></a> -->
-
-          <a href="https://ticktick.com/webapp/">
-            <div class="app">
-              <span class="tooltiptext">TickTick</span>
-              <i class="lar la-list-alt"></i></div
-          ></a>
-
-          <a href="https://youtube.com">
-            <div class="app">
-              <span class="tooltiptext">YouTube</span>
-              <i class="lab la-youtube"></i></div
-          ></a>
-          <a href="https://reddit.com">
-            <div class="app">
-              <span class="tooltiptext">Reddit</span>
-              <i class="lab la-reddit"></i></div
-          ></a>
-
-          <a href="https://netflix.com">
-            <div class="app">
-              <span class="tooltiptext">Netflix</span>
-              <i class="las la-play"></i></div
-          ></a>
-          <a href="https://twitter.com">
-            <div class="app">
-              <span class="tooltiptext">Twitter</span>
-              <i class="lab la-twitter"></i></div
-          ></a>
-
-          <a href="https://github.com">
-            <div class="app">
-              <span class="tooltiptext">Github</span>
-              <i class="lab la-github"></i></div
-          ></a>
-
-          <a href="https://drive.google.com">
-            <div class="app">
-              <span class="tooltiptext">Google Drive</span>
-              <i class="lab la-google-drive"></i></div
-          ></a>
-          <div class="apps_row2">
-            <a href="https://instagram.com">
-              <div class="app">
-                <span class="tooltiptext">Instagram</span>
-                <i class="lab la-instagram"></i></div
-            ></a>
-
-            <!-- Row 2 -->
-
-            <a href="https://anonaddy.com">
-              <div class="app">
-                <span class="tooltiptext">Anonaddy</span>
-                <i class="lar la-share-square"></i></div
-            ></a>
-
-            <a href="https://mail.google.com">
-              <div class="app">
-                <span class="tooltiptext">Gmail </span>
-                <i class="las la-inbox"></i></div
-            ></a>
-            <a href="https://keep.google.com">
-              <div class="app">
-                <span class="tooltiptext">Google Keep</span>
-                <i class="las la-lightbulb"></i></div
-            ></a>
-            <a href="https://codepen.io/">
-              <div class="app">
-                <span class="tooltiptext">Codepen</span>
-                <i class="lab la-codepen"></i></div
-            ></a>
-
-            <a href="https://deezer.com">
-              <div class="app">
-                <span class="tooltiptext">Deezer</span>
-                <i class="las la-music"></i></div
-            ></a>
-            <!-- End of row 2 -->
-
-            <!-- Open More apps -->
-            <div class="app" id="navy">
-              <span class="tooltiptext">More apps</span>
-              <i class="las la-icons"></i>
+      <!-- Favorite Feature 2.1 -->
+      <div id="fav-container" class="fav-container">
+        <h5 class="section-title"><i class="las la-bookmark"></i> Favorites</h5>
+        <br />
+        <div class="favorites-search">
+          <input
+            type="text"
+            placeholder="Search favorites..."
+            class="searchfavorites"
+          />
+        </div>
+        <div id="content">
+          <div id="sortSupport">
+            <ul id="fav-link"></ul>
+            <div id="new-link-button">
+              <button><i class="las la-plus"></i> Add favorite</button>
             </div>
           </div>
         </div>
-        <!-- End of app list -->
 
-        <!-- Favorite Feature 2.1 -->
-        <div id="fav-container" class="fav-container">
-          <h5 class="section-title">
-            <i class="las la-bookmark"></i> Favorites
-          </h5>
+        <!-- Add new link page -->
+        <div id="add-link-form">
+          <div id="new-close-fav">
+            <span class="new-close-fav"
+              ><i class="las la-times-circle"></i
+            ></span>
+          </div>
+          <label><i class="las la-heading"></i> Title or icon</label>
           <br />
-          <div class="favorites-search">
-            <input
-              type="text"
-              placeholder="Search favorites..."
-              class="searchfavorites"
-            />
-          </div>
-          <div id="content">
-            <div id="sortSupport">
-              <ul id="fav-link"></ul>
-              <div id="new-link-button">
-                <button><i class="las la-plus"></i> Add favorite</button>
-              </div>
-            </div>
-          </div>
+          <input id="title" placeholder="Site title.." autocomplete="off" />
 
-          <!-- Add new link page -->
-          <div id="add-link-form">
-            <div id="new-close-fav">
-              <span class="new-close-fav"
-                ><i class="las la-times-circle"></i
-              ></span>
-            </div>
-            <label><i class="las la-heading"></i> Title or icon</label>
-            <br />
-            <input id="title" placeholder="Site title.." autocomplete="off" />
-
-            <br /><label><i class="las la-link"></i> Url</label><br />
-            <input
-              id="url"
-              placeholder="https://example.org"
-              autocomplete="off"
-            /><br /><button id="add"><i class="lar la-save"></i> Save</button>
-            <h3></h3>
-            <p style="text-align: center">-</p>
-            <div class="side-text">
-              <details>
-                <summary>
-                  <i class="las la-exclamation-circle"></i> Notice
-                </summary>
-                Currently Favorites doesn't have a limit, but I recommend under
-                30.
-              </details>
-              <details>
-                <summary>
-                  <i class="lar la-question-circle"></i> Need help?
-                </summary>
-                Learn everything about favorites:
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
-                  target="_blank"
-                  >here <i class="las la-external-link-alt"></i
-                ></a>
-              </details>
-            </div>
+          <br /><label><i class="las la-link"></i> Url</label><br />
+          <input
+            id="url"
+            placeholder="https://example.org"
+            autocomplete="off"
+          /><br /><button id="add"><i class="lar la-save"></i> Save</button>
+          <h3></h3>
+          <p style="text-align: center">-</p>
+          <div class="side-text">
+            <details>
+              <summary>
+                <i class="las la-exclamation-circle"></i> Notice
+              </summary>
+              Currently Favorites doesn't have a limit, but I recommend under
+              30.
+            </details>
+            <details>
+              <summary>
+                <i class="lar la-question-circle"></i> Need help?
+              </summary>
+              Learn everything about favorites:
+              <a
+                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
+                target="_blank"
+                >here <i class="las la-external-link-alt"></i
+              ></a>
+            </details>
           </div>
         </div>
       </div>
@@ -237,27 +142,23 @@
       <div class="modal">
         <div class="modal-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
-          <div class="small-icons">
-            <div class="container">
-              <ul class="tabs">
-                <li
-                  class="tab-link"
-                  title="No notifications.."
-                  data-tab="tab-1"
-                >
-                  <i class="las la-bell"></i>
-                </li>
-              </ul>
-            </div>
-          </div>
+
           <h4 class="text-center">
-            <img class="settings-icon" src="/img/icon64.png" /> | Settings<span
-              class="settings-dot"
-              >.</span
-            >
+            <img
+              class="settings-icon"
+              src="https://github.com/mraif13/Saturn-startpage/blob/master/img/dynamic-icon.png"
+            />
+            | Settings<span class="settings-dot">.</span>
           </h4>
           <div class="container">
             <ul class="tabs">
+              <li
+                class="tab-link small-icons"
+                title="No notifications.."
+                data-tab="tab-1"
+              >
+                <i class="las la-bell"></i>
+              </li>
               <li class="tab-link current" data-tab="tab-2">
                 <i class="las la-cog"></i> General
               </li>
