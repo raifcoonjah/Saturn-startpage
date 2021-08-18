@@ -111,6 +111,28 @@ $(function () {
   });
 });
 
+// Hide searchbar
+$(function () {
+  var status = localStorage.getItem("search_hidden");
+  if (status == "true") {
+    $(".search_block").css("display", "none");
+    $(".hide-search").attr("checked", true);
+  } else {
+    $(".search_block").css("display", "block");
+    $(".hide-search").attr("checked", false);
+  }
+  $(".hide-search").click(function () {
+    if (this.checked) {
+      $(".search_block").hide();
+    } else {
+      $(".search_block").show();
+    }
+    localStorage.setItem("search_hidden", this.checked);
+  });
+});
+
+// search_block
+
 // Hide App row .2
 
 $(function () {
