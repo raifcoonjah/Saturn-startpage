@@ -214,7 +214,7 @@ ul.tabs li {
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
-  transition: 100ms;
+  transition: 90ms;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 

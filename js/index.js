@@ -78,7 +78,6 @@ function getDate() {
 document.getElementById("time").innerHTML =
   `It's ` + getDate() + `, ` + getTime();
 
-
 // Hide favorites, jQuery.
 
 $(function () {
