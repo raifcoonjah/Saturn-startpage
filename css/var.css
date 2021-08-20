@@ -564,7 +564,7 @@ code pre {
 details {
   /* Make the <details> look more "clickable" */
   padding: 0.6rem 1rem;
-  background: var(--sat-search-shortcuts);
+  background: var(--sat-search-bar-focus);
   border: 1px solid var(--sat-search-border);
   border-radius: 15px;
 }
@@ -578,6 +578,7 @@ summary {
 details[open] {
   /* Adjust the <details> padding while open */
   padding-bottom: 0.75rem;
+  transition: var(--transition-speed-default);
 }
 
 details[open] summary {
