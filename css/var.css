@@ -96,7 +96,6 @@ v2 CSS Core
   --sat-tooltip-bg: #c0c0c0;
   --saturn-input-hover: #c0c0c0;
   --default-font: "Poppins", sans-serif;
-  --sat-default-hoveringspeed: 200ms;
   --sat-border-radius: 10px;
   --sat-shortcuts-hover: #cacaca;
   --sat-modal-app-section: #dbdbdb;
@@ -141,7 +140,6 @@ v2 CSS Core
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #232933;
   --saturn-input-hover: #232933;
-  --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
@@ -184,7 +182,6 @@ v2 CSS Core
   --sat-search-bar-focus: #2b2b2b;
   --sat-tooltip-bg: #222222;
   --saturn-input-hover: #222;
-  --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
@@ -228,7 +225,6 @@ v2 CSS Core
   --sat-search-bar-focus: #2b2b2b;
   --sat-tooltip-bg: #222;
   --saturn-input-hover: #222;
-  --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
@@ -272,7 +268,6 @@ v2 CSS Core
   --sat-search-bar-focus: #0f061f;
   --sat-tooltip-bg: #6e46c5;
   --saturn-input-hover: #a37bfa33;
-  --sat-default-hoveringspeed: 200ms;
   --sat-shortcuts-hover: #232933;
   --sat-modal-app-section: #2329334d;
   --default-font: "Poppins", sans-serif;
@@ -428,7 +423,7 @@ a {
 
 a:hover {
   color: var(--sat-links-hovr);
-  transition: var(--sat-default-hoveringspeed);
+  transition: var(--transition-speed-default);
 }
 
 abbr:hover {
@@ -564,7 +559,7 @@ code pre {
 details {
   /* Make the <details> look more "clickable" */
   padding: 0.6rem 1rem;
-  background: var(--sat-search-shortcuts);
+  background: var(--sat-search-bar-focus);
   border: 1px solid var(--sat-search-border);
   border-radius: 15px;
 }
@@ -578,6 +573,7 @@ summary {
 details[open] {
   /* Adjust the <details> padding while open */
   padding-bottom: 0.75rem;
+  transition: var(--transition-speed-default);
 }
 
 details[open] summary {

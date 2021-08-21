@@ -86,10 +86,10 @@ body {
 }
 
 .text-center {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 25px;
   line-height: 33px;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   font-style: normal;
 }
