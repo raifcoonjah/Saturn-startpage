@@ -1,4 +1,4 @@
-##### Am taking a little break from developing this rn, I'll be back by the end August. Take care 🖤
+##### Am taking a little break from developing this rn, I'll be back by the end September. Take care 🖤
 ![Saturn-startpage](https://i.imgur.com/FDO3ufT.png)
 
 ## What's Saturn Startpage?
