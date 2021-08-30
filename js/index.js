@@ -1,5 +1,11 @@
+
+//
+// ========
+// + Good Morning text +
+// ========
+//
 const determineGreet = (
-  hours // Good morning/night text.
+  hours 
 ) =>
   (document.getElementById("greetings").innerText =
     `Good ${
@@ -15,7 +21,11 @@ const determineGreet = (
 // Get month:
 determineGreet(new Date().getHours());
 
-// Settings/Modal trigger + close button.
+//
+// ========
+// + Settings Modal trigger + close button +
+// ========
+//
 var modal = document.querySelector(".modal");
 var trigger = document.querySelector(".setting-button");
 var closeButton = document.querySelector(".close-button");
@@ -34,7 +44,11 @@ trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
-// Time v2.0
+//
+// ========
+// + Time and month text +
+// ========
+//
 function getTime() {
   let date = new Date(),
     min = date.getMinutes(),
@@ -78,7 +92,11 @@ function getDate() {
 document.getElementById("time").innerHTML =
   `It's ` + getDate() + `, ` + getTime();
 
-// Hide favorites, jQuery.
+//
+// ========
+// + Hide Favorites feature +
+// ========
+//
 
 $(function () {
   var status = localStorage.getItem("favorites_hidden");
@@ -99,7 +117,11 @@ $(function () {
   });
 });
 
-// Hide searchbar
+//
+// ========
+// + Hide searchbar +
+// ========
+//
 $(function () {
   var status = localStorage.getItem("search_hidden");
   if (status == "true") {
@@ -119,9 +141,12 @@ $(function () {
   });
 });
 
-// search_block
 
-// Hide App row .2
+//
+// ========
+// + Hide second row in App list +
+// ========
+//
 
 $(function () {
   var status = localStorage.getItem("apps_row2_hidden");
@@ -142,7 +167,11 @@ $(function () {
   });
 });
 
-// Settings Navigation.
+//
+// ========
+// + Settings navigation +
+// ========
+//
 $(document).ready(function () {
   $("ul.tabs li").click(function () {
     var tab_id = $(this).attr("data-tab");
@@ -155,8 +184,11 @@ $(document).ready(function () {
   });
 });
 
-// Saturn theme engine, powered by local storage and javascript.
-// v2.0-pancake
+//
+// ========
+// + Saturn's theme engine v2.0-m&ms +
+// ========
+//
 
 const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
@@ -173,6 +205,8 @@ if (theme) {
   body.classList.add(theme);
 }
 
+// Dark theme 
+
 darkButton.onclick = () => {
   body.classList.replace("light", "dark");
   body.classList.replace("space", "dark");
@@ -180,6 +214,8 @@ darkButton.onclick = () => {
   body.classList.replace("darkv2", "dark");
   localStorage.setItem("theme", "dark");
 };
+
+// Default light theme
 
 lightButton.onclick = () => {
   body.classList.replace("dark", "light");
@@ -189,6 +225,8 @@ lightButton.onclick = () => {
   localStorage.setItem("theme", "light");
 };
 
+// Material-ish dark theme 
+
 spaceButton.onclick = () => {
   body.classList.replace("dark", "space");
   body.classList.replace("light", "space");
@@ -197,6 +235,7 @@ spaceButton.onclick = () => {
   localStorage.setItem("theme", "space");
 };
 
+// linkinPark theme 
 linkinParkButton.onclick = () => {
   body.classList.replace("dark", "linkin-park");
   body.classList.replace("light", "linkin-park");
@@ -204,6 +243,8 @@ linkinParkButton.onclick = () => {
   body.classList.replace("darkv2", "linkin-park");
   localStorage.setItem("theme", "linkin-park");
 };
+
+// Dracula theme *This darkv2 will be change soon.
 
 darkv2Button.onclick = () => {
   body.classList.replace("dark", "darkv2");
@@ -213,22 +254,29 @@ darkv2Button.onclick = () => {
   localStorage.setItem("theme", "darkv2");
 };
 
-//username
+//
+// ========
+// + *New* Username feature +
+// ========
+//
+
 $(document).ready(function () {
   $("#save").click(function () {
     var username = $("#userSet").val();
     if (typeof Storage !== "undefined") {
-      // Store
-      //localStorage.setItem("user", username);
       localStorage.user = username;
-      // Retrieve
-      //document.getElementById("Uname").innerHTML = localStorage.user;
       $("#Uname").val(localStorage.getItem("user"));
     } else {
       $("#Uname").val("Sorry, your browser does not support Web Storage...");
     }
   });
 });
+
+//
+// ========
+// + When the user save show this:  +
+// ========
+//
 
 $(document).ready(function () {
   $("#save").click(function () {

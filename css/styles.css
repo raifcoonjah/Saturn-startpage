@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+/* 
+========
++ Search bar +
+========
+*/
 .search-bar {
   width: 100%;
   font-size: 1.3em;
@@ -57,6 +62,11 @@ body {
   width: 199px;
 }
 
+/* 
+========
++ Header good morning text and time +
+========
+*/
 .gudmorning {
   font-weight: 500;
   text-align: left;
@@ -73,10 +83,13 @@ body {
   font-size: 35px;
 }
 
-/* V3.0 Settings page - (Unstable) */
+/* 
+========
++ Settings page. Pretty much just a modal. +
+========
+*/
 
-/* Top text */
-.text-center {
+.settings-title {
   font-weight: 600;
   font-size: 23px;
   line-height: 33px;
@@ -86,7 +99,11 @@ body {
   font-style: normal;
 }
 
-/* Settings (Modal) */
+/* 
+========
++ The modal itself +
+========
+*/
 
 .modal {
   background-color: #15181f8a;
@@ -122,7 +139,11 @@ body {
   transition: visibility 0s linear 0s, opacity 100ms 0s, transform 100ms;
 }
 
-/* Switch */
+/* 
+========
++ Everything switch related +
+========
+*/
 
 .slider-switch-wrapper {
   display: flex;
@@ -182,8 +203,6 @@ input:checked + .slider:before {
   font-weight: 500;
 }
 
-/* Button used to open the settings page */
-
 .setting-button {
   outline: none;
   padding: 10px 10px;
@@ -200,7 +219,11 @@ input:checked + .slider:before {
   outline: 3px solid var(--settings-button-outline);
 }
 
-/* Settings navigation */
+/* 
+========
++ Settings navigation +
+========
+*/
 
 ul.tabs li {
   font-weight: 500;
@@ -237,7 +260,11 @@ ul.tabs li.current {
   display: inherit;
 }
 
-/* App list */
+/* 
+========
++ App list +
+========
+*/
 #apps {
   margin-top: 5px;
   width: 105%;
@@ -255,7 +282,14 @@ ul.tabs li.current {
   font-size: 2.3rem;
 }
 
-/* Tooltip container */
+/* 
+========
++ Apps list tooltip 
+(The tooltip is super *not design friendly rn* 
+but I will probably rework this later on) +
+========
+*/
+
 .app {
   position: relative;
   display: inline-block;
@@ -277,13 +311,22 @@ ul.tabs li.current {
   margin-left: -50px;
 }
 
-/* Show tooltip on shortcuts hover */
+/* 
+========
++ Show tooltip on app hover +
+========
+*/
+
 .app:hover .tooltiptext {
   visibility: visible;
   transition: var(--transition-speed-fast);
 }
 
-/* More apps */
+/* 
+========
++ More apps +
+========
+*/
 
 .morecontainer {
   margin: 0 auto;
@@ -314,7 +357,12 @@ ul.tabs li.current {
   font-weight: 500;
 }
 
-/* Overlay + typewriter effect */
+/* 
+========
++ Overlay for more apps +
+========
+*/
+
 .overlay {
   height: 0%;
   width: 100%;
@@ -354,7 +402,11 @@ ul.tabs li.current {
   }
 }
 
-/* Favorites feature */
+/* 
+========
++ Favorites +
+========
+*/
 
 #favorite-links:hover {
   transition: var(--transition-speed-default);
@@ -389,7 +441,13 @@ ul li {
   border: none;
 }
 
-/* Favorites support for images, gifs and more.. */
+/* 
+========
++ Optimizations for favorites features.
+Currently only images are fully supported. +
+========
+*/
+
 #fav-link img {
   width: 23px;
   height: 22px;
@@ -484,6 +542,12 @@ ul li {
   color: var(--sat-ids);
 }
 
+/* 
+========
++ The IOS 15 like background in settings. +
+========
+*/
+
 .settings-background {
   margin: 5px;
   margin-bottom: -10px;
@@ -495,6 +559,12 @@ ul li {
   padding: 10px;
   background: var(--settings-warning-bg);
 }
+
+/* 
+========
++ Theme Icons (YES, they are just small svg images that i make in figma.) +
+========
+*/
 
 .theme-icon img {
   width: 160px;
@@ -508,8 +578,13 @@ ul li {
   transition: var(--transition-speed-default);
   background-color: var(--sat-accent-color1);
 }
-/* Fix side view & optimize for mobile use..
- */
+
+/* 
+========
++ Mobile optimizations +
+========
+*/
+
 @media (max-width: 900px) {
   .modal-content {
     width: 90%;
@@ -524,7 +599,13 @@ ul li {
   }
 }
 
-.new-button {
+/* 
+========
++ The save button for username feature +
+========
+*/
+
+.save-button {
   padding: 9px 20px;
   outline: none;
   background: var(--sat-search-bar-hvr);
@@ -532,7 +613,7 @@ ul li {
   font-weight: 500;
 }
 
-.new-button:hover {
+.save-button:hover {
   background: var(--sat-search-bar-focus);
   transition: var(--transition-speed-default);
 }
@@ -541,9 +622,16 @@ ul li {
   visibility: hidden;
 }
 
+/* 
+========
++ The where to next text inside more apps. (top middle one) +
+========
+*/
+
 .typewritter_1 {
   font-weight: 600;
 }
+
 #sv-msg {
   font-weight: 600;
   font-size: 12px;
@@ -558,13 +646,22 @@ ul li {
   background-color: var(--sat-input-hover);
 }
 
+
+/* 
+========
++ Icons in Setting's about section +
+========
+*/
+
 .social-icons {
   font-size: 35px;
   outline: none;
 }
+
 .social-icons:hover {
   color: var(--sat-accent-color1);
 }
+
 .small-icons {
   font-size: 20px;
   padding: 10px !important;
@@ -579,6 +676,12 @@ ul li {
   top: 12px !important;
   position: relative;
 }
+
+/* 
+========
++ *NEW* Favorites search feature +
+========
+*/
 
 .favorites-search input {
   background: var(--sat-search-shortcuts);

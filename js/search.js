@@ -1,10 +1,22 @@
-let se = 4; // ALlow the user to press the button (set amount)  of times.
+//
+// ========
+// + Search Feature +
+// ========
+//
 
-// Listens for click event in se_button, once clicked, se increments by one and cycleSearchEngines() is called to update the icon, placeholder, and form action
+// ALlow user to press 4 time, increasing this number without adding 
+// more search_engines will cause some serious bugs to occur.
+
+let se = 4;
+
+// Listens for click event in se_button, once clicked, 
+// se increments by one and cycleSearchEngines() is called to update the icon, placeholder, and form action
 document.getElementById("se_button").addEventListener("click", function () {
   se++;
   cycleSearchEngines(se);
 });
+
+// Search providers 
 
 const search_engines = [
   {

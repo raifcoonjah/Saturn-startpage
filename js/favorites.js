@@ -1,4 +1,10 @@
-// Favorites v2.3 | [BUILD WITH JQUERY]
+//
+// ========
+// + FAVORITES v1.77.0 +
+// Original Source: https://codepen.io/4gray/pen/glGun 
+// ========
+//
+
 $(document).ready(function () {
   var $ul = $("#fav-link");
   var $title = $("#title");
@@ -47,7 +53,12 @@ $(document).ready(function () {
   });
 });
 
-// Favorites live search v1.0-pie
+//
+// ========
+// + FAVORITES Search v1.0-cheesecake
+// ========
+//
+
 (function ($) {
   jQuery.expr[":"].Contains = function (a, i, m) {
     return (
@@ -60,19 +71,19 @@ $(document).ready(function () {
   function live_search(list) {
     $(".searchfavorites")
       .change(function () {
-        //getting search value
+        // Getting search value
         var searchtext = $(this).val();
         if (searchtext) {
-          //finding If content matches with search keyword
+          // Finding If content matches with search keyword
           $matches = $(list)
             .find("a:Contains(" + searchtext + ")")
             .parent();
-          //hiding non matching lists
+          // Hiding non matching lists
           $("li", list).not($matches).fadeOut();
-          //showing matching lists
+          // Showing matching lists
           $matches.fadeIn(150);
         } else {
-          //if search keyword is empty then display all the lists
+          // If search keyword is empty then display all the lists
           $(list).find("li").fadeIn(150);
         }
         return false;
