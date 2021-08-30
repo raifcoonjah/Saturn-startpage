@@ -46,6 +46,8 @@ const search_engines = [
   },
 ];
 
+// This happens when the user presses on the se button. 
+
 const cycleSearchEngines = (se) => {
   const curData = search_engines[(se + 1) % search_engines.length];
 
