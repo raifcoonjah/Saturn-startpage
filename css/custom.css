@@ -23,34 +23,36 @@
 
 /* Settings navigation */
 
-.category-applist {
+.apps-category {
   margin-top: 20px;
 }
-ul.category-applist {
+ul.apps-category {
   padding: 0px;
   list-style: none;
 }
 
-ul.category-applist li {
+ul.apps-category li {
   font-weight: 500;
   background: none;
   color: var(--sat-ids);
   display: inline-block;
-  padding: 5px 10px;
+  padding: 6px 9px;
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: 20px;
+  border: 2px solid var(--sat-bg);
 }
 
-ul.category-applist li:hover {
+ul.apps-category li:hover {
+  border: 2px solid var(--sat-setting-bg-effect);
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
   transition: var(--transition-speed-default);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
-ul.category-applist li.current {
-  background: var(--sat-setting-bg-effect);
-  color: var(--sat-ids);
+ul.apps-category li.current {
+  border: 2px solid var(--sat-setting-bg-effect);
+  color: var(--sat-accent-color1);
   font-weight: 600;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }

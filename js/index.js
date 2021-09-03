@@ -186,10 +186,10 @@ $(document).ready(function () {
 // ========
 //
 $(document).ready(function () {
-  $("ul.category-applist li").click(function () {
+  $("ul.apps-category li").click(function () {
     var tab_id = $(this).attr("data-tab");
 
-    $("ul.category-applist li").removeClass("current");
+    $("ul.apps-category li").removeClass("current");
     $(".app-content").removeClass("current");
 
     $(this).addClass("current");
