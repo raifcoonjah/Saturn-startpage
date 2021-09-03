@@ -1,7 +1,6 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
 
-/* Themes */
 /* APPLICATIONS */
 .tabs {
   font-size: 15px;
@@ -20,4 +19,50 @@
 .tab-content {
   margin-left: 190px; /* Same as the width of the sidebar */
   padding: 0px 10px;
+}
+
+/* Settings navigation */
+
+.category-applist {
+  margin-top: 20px;
+}
+ul.category-applist {
+  padding: 0px;
+  list-style: none;
+}
+
+ul.category-applist li {
+  font-weight: 500;
+  background: none;
+  color: var(--sat-ids);
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+ul.category-applist li:hover {
+  color: var(--sat-ids);
+  background: var(--sat-setting-bg-effect);
+  transition: var(--transition-speed-default);
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+}
+
+ul.category-applist li.current {
+  background: var(--sat-setting-bg-effect);
+  color: var(--sat-ids);
+  font-weight: 600;
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+}
+
+.app-content {
+  display: none;
+}
+
+.app-content h4 i {
+  color: var(--sat-accent-color1);
+}
+
+.app-content.current {
+  display: inherit;
 }

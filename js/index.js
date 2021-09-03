@@ -1,12 +1,9 @@
-
 //
 // ========
 // + Good Morning text +
 // ========
 //
-const determineGreet = (
-  hours 
-) =>
+const determineGreet = (hours) =>
   (document.getElementById("greetings").innerText =
     `Good ${
       hours < 12
@@ -141,7 +138,6 @@ $(function () {
   });
 });
 
-
 //
 // ========
 // + Hide second row in App list +
@@ -186,6 +182,23 @@ $(document).ready(function () {
 
 //
 // ========
+// + App list category +
+// ========
+//
+$(document).ready(function () {
+  $("ul.category-applist li").click(function () {
+    var tab_id = $(this).attr("data-tab");
+
+    $("ul.category-applist li").removeClass("current");
+    $(".app-content").removeClass("current");
+
+    $(this).addClass("current");
+    $("#" + tab_id).addClass("current");
+  });
+});
+
+//
+// ========
 // + Saturn's theme engine v2.0-m&ms +
 // ========
 //
@@ -205,7 +218,7 @@ if (theme) {
   body.classList.add(theme);
 }
 
-// Dark theme 
+// Dark theme
 
 darkButton.onclick = () => {
   body.classList.replace("light", "dark");
@@ -225,7 +238,7 @@ lightButton.onclick = () => {
   localStorage.setItem("theme", "light");
 };
 
-// Material-ish dark theme 
+// Material-ish dark theme
 
 spaceButton.onclick = () => {
   body.classList.replace("dark", "space");
@@ -235,7 +248,7 @@ spaceButton.onclick = () => {
   localStorage.setItem("theme", "space");
 };
 
-// linkinPark theme 
+// linkinPark theme
 linkinParkButton.onclick = () => {
   body.classList.replace("dark", "linkin-park");
   body.classList.replace("light", "linkin-park");
