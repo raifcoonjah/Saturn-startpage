@@ -138,30 +138,6 @@ $(function () {
   });
 });
 
-//
-// ========
-// + Hide second row in App list +
-// ========
-//
-
-$(function () {
-  var status = localStorage.getItem("apps_row2_hidden");
-  if (status == "true") {
-    $(".apps_row2").css("display", "none");
-    $(".hideapprow2").attr("checked", true);
-  } else {
-    $(".apps_row2").css("display", "block");
-    $(".hideapprow2").attr("checked", false);
-  }
-  $(".hideapprow2").click(function () {
-    if (this.checked) {
-      $(".apps_row2").hide();
-    } else {
-      $(".apps_row2").show();
-    }
-    localStorage.setItem("apps_row2_hidden", this.checked);
-  });
-});
 
 //
 // ========

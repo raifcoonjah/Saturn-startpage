@@ -83,7 +83,7 @@ v3.0.0 CSS Core
   --sat-heading: #000000; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
   --sat-bg: #ffffff; /* Main background */
-  --sat-search-shortcuts: #dadada; /* Favorites, app list & search, inputs. */
+  --sat-search-shortcuts: #dfdfdf; /* Favorites, app list & search, inputs. */
   --sat-links: #1a1a1a;
   --sat-txt-selector-clr: #303a58;
   --sat-txt-selector-clr-after: #ffffff;
@@ -697,11 +697,12 @@ img {
 }
 
 .app {
+  border: 3px solid var(--sat-bg);
   background: var(--sat-search-shortcuts);
 }
 
 .app:hover {
-  transform: translate3d(0px, -3px, 0px);
+  border: 3px solid var(--sat-accent-color1);
   background-color: var(--moreapps-hovering-clr);
 }
 

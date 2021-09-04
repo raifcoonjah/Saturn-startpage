@@ -268,19 +268,19 @@ ul.tabs li.current {
 */
 #apps {
   margin-top: 20px;
-  width: 105%;
+  width: 104%;
+  align-items: left;
 }
 
 .app {
   display: inline-block;
-  width: 10%;
-  margin: 0 0.9% 15px;
-  padding: 15px 5px;
-  text-align: center;
+  margin: 5px 1px;
+  padding: 15px 45px;
 }
 
 .app i {
   font-size: 2.3rem;
+  right: 100%;
 }
 
 /* 
@@ -297,19 +297,20 @@ but I will probably rework this later on) +
 }
 
 /* Tooltip text */
-.app .tooltiptext {
-  opacity: 0.9;
-  visibility: hidden;
-  width: 95px;
-  text-align: center;
-  padding: 2px;
+.app span {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
+  margin: 0;
   position: absolute;
-  z-index: 1;
+  top: 49%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 40%;
+}
+
+.app i {
+  position: relative;
   bottom: 108%;
-  left: 50%;
-  margin-left: -50px;
 }
 
 /* 
@@ -318,10 +319,10 @@ but I will probably rework this later on) +
 ========
 */
 
-.app:hover .tooltiptext {
+/* .app:hover span {
   visibility: visible;
   transition: var(--transition-speed-fast);
-}
+} */
 
 /* 
 ========
