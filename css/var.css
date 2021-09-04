@@ -702,8 +702,9 @@ img {
 }
 
 .app:hover {
+  transition: var(--transition-speed-default);
   border: 3px solid var(--sat-accent-color1);
-  background-color: var(--moreapps-hovering-clr);
+  background-color: var(--sat-accent-color1);
 }
 
 .cuteapps:hover {
