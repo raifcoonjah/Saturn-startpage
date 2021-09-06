@@ -526,9 +526,11 @@ Currently only images are fully supported. +
   display: block;
   text-align: center;
 }
-.close-button:hover {
+
+.close-button:hover,
+.new-close-fav:hover {
   color: var(--sat-ids);
-  background: var(--sat-setting-bg-effect);
+  background-color: var(--favorites-hover);
   transition: var(--transition-speed-default);
 }
 
@@ -538,13 +540,6 @@ Currently only images are fully supported. +
   padding: 5px 10px;
   border-radius: 60px;
 }
-
-.new-close-fav:hover {
-  background-color: var(--favorites-hover);
-  transition: var(--transition-speed-default);
-  color: var(--sat-ids);
-}
-
 /* 
 ========
 + The IOS 15 like background in settings. +

@@ -183,7 +183,7 @@ const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
 const spaceButton = document.getElementById("space");
 const linkinParkButton = document.getElementById("linkin-park");
-const darkv2Button = document.getElementById("darkv2");
+const dracula_themeButton = document.getElementById("dracula_theme");
 const body = document.body;
 
 // Apply the cached theme on reload
@@ -200,7 +200,7 @@ darkButton.onclick = () => {
   body.classList.replace("light", "dark");
   body.classList.replace("space", "dark");
   body.classList.replace("linkin-park", "dark");
-  body.classList.replace("darkv2", "dark");
+  body.classList.replace("dracula_theme", "dark");
   localStorage.setItem("theme", "dark");
 };
 
@@ -210,7 +210,7 @@ lightButton.onclick = () => {
   body.classList.replace("dark", "light");
   body.classList.replace("space", "light");
   body.classList.replace("linkin-park", "light");
-  body.classList.replace("darkv2", "light");
+  body.classList.replace("dracula_theme", "light");
   localStorage.setItem("theme", "light");
 };
 
@@ -220,7 +220,7 @@ spaceButton.onclick = () => {
   body.classList.replace("dark", "space");
   body.classList.replace("light", "space");
   body.classList.replace("linkin-park", "space");
-  body.classList.replace("darkv2", "space");
+  body.classList.replace("dracula_theme", "space");
   localStorage.setItem("theme", "space");
 };
 
@@ -229,18 +229,18 @@ linkinParkButton.onclick = () => {
   body.classList.replace("dark", "linkin-park");
   body.classList.replace("light", "linkin-park");
   body.classList.replace("space", "linkin-park");
-  body.classList.replace("darkv2", "linkin-park");
+  body.classList.replace("dracula_theme", "linkin-park");
   localStorage.setItem("theme", "linkin-park");
 };
 
-// Dracula theme *This darkv2 will be change soon.
+// Dracula theme
 
-darkv2Button.onclick = () => {
-  body.classList.replace("dark", "darkv2");
-  body.classList.replace("light", "darkv2");
-  body.classList.replace("space", "darkv2");
-  body.classList.replace("linkin-park", "darkv2");
-  localStorage.setItem("theme", "darkv2");
+dracula_themeButton.onclick = () => {
+  body.classList.replace("dark", "dracula_theme");
+  body.classList.replace("light", "dracula_theme");
+  body.classList.replace("space", "dracula_theme");
+  body.classList.replace("linkin-park", "dracula_theme");
+  localStorage.setItem("theme", "dracula_theme");
 };
 
 //
