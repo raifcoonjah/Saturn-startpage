@@ -1,7 +1,7 @@
 //
 // ========
 // + FAVORITES v1.77.0 +
-// Original Source: https://codepen.io/4gray/pen/glGun 
+// Original Source: https://codepen.io/4gray/pen/glGun
 // ========
 //
 
@@ -55,7 +55,7 @@ $(document).ready(function () {
 
 //
 // ========
-// + FAVORITES Search v1.0-cheesecake
+// + FAVORITES Search v1.0-cheesecake +
 // ========
 //
 
