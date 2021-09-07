@@ -46,7 +46,7 @@ ul.apps-category li:hover {
   border: 2px solid var(--sat-setting-bg-effect);
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
-  transition: var(--transition-speed-default);
+  transition: var(--transition-speed-fast);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
