@@ -1,4 +1,4 @@
-##### Am taking a little break from developing this rn, I'll be back by the end September. Take care 🖤
+##### Development will be slower from now on, due to uni starting soon and other stuff happening irl. Take care 🖤
 ![Saturn-startpage](https://i.imgur.com/FDO3ufT.png)
 
 ## What's Saturn Startpage?
@@ -29,4 +29,4 @@ Saturn Startpage is a fully open source, community build new-tab replacement. **
 - HTML, CSS & Javascript. [I do have plans to move over to either react or vue sometime later this year] 
 
 ### Saturn status
-- Actively developed/Side Project. But as I'm starting Univercity soon and also learning python, development has slowed down.
+- Actively developed/Side Project. Updates happen every 2 months or so. 
