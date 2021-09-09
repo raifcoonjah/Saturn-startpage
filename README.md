@@ -29,4 +29,4 @@ Saturn Startpage is a fully open source, community build new-tab replacement. **
 - HTML, CSS & Javascript. [I do have plans to move over to either react or vue sometime later this year] 
 
 ### Saturn status
-- Actively developed/Side Project. Updates happen every 2 months or so. 
+- Actively developed/Side Project.
