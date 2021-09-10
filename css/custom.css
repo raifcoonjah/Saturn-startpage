@@ -70,5 +70,5 @@ ul.apps-category li.current {
 }
 
 .socials .app {
-  border: none !important;
+  border: 1px solid var(--lighter-color);
 }
