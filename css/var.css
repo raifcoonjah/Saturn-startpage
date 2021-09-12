@@ -4,77 +4,7 @@ v3.0.0 CSS Core
 */
 
 /* Fonts: Everything is loaded locally. */
-
-/* poppins-200 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 200;
-  src: local(""), url("../fonts/poppins-v15-latin-200.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v15-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-regular - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    url("../fonts/poppins-v15-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-500 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  src: local(""), url("../fonts/poppins-v15-latin-500.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v15-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-600 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: local(""), url("../fonts/poppins-v15-latin-600.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v15-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-700 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("../fonts/poppins-v15-latin-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v15-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-800 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 800;
-  src: local(""), url("../fonts/poppins-v15-latin-800.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v15-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-900 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 900;
-  src: local(""), url("../fonts/poppins-v15-latin-900.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v15-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Saturn's theme engine v3. */
 
@@ -92,7 +22,7 @@ v3.0.0 CSS Core
   --sat-input-hover: #b1b1b1;
   --sat-search-bar-focus: #999999;
   --sat-tooltip-bg: #c0c0c0;
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Urbanist", sans-serif;
   --sat-border-radius: 15px;
   --gudmrning-txt: linear-gradient(to right, #000046, #1cb5e0);
   --sat-accent-color1: #017fcd;
@@ -130,7 +60,7 @@ v3.0.0 CSS Core
   --sat-input-hover: #2b323d;
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #181b22;
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Urbanist", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #6eb8f8 100%);
   --sat-accent-color1: #4facfe;
   --moreapps-hovering-clr: #4190d4;
@@ -173,7 +103,7 @@ v3.0.0 CSS Core
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222222; /* Tooltip background */
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Urbanist", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #e9772a 100%);
   --sat-accent-color1: #ffb07d;
   --moreapps-hovering-clr: #ffb07d;
@@ -216,7 +146,7 @@ v3.0.0 CSS Core
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222;
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Urbanist", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #e6dada, #274046);
   --sat-accent-color1: #686868;
   --moreapps-hovering-clr: #686868;
