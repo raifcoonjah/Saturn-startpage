@@ -68,7 +68,7 @@ ul.apps-category li.current {
 .app-content.current {
   display: inherit;
 }
-
+/* 
 .socials .app {
-  border: 1px solid var(--lighter-color);
-}
+  border: none !important;
+} */
