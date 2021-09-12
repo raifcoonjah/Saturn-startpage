@@ -4,97 +4,76 @@ v3.0.0 CSS Core
 */
 
 /* Fonts: Everything is loaded locally. */
-/* urbanist-100 - latin */
-@font-face {
-  font-family: "Urbanist";
-  font-style: normal;
-  font-weight: 100;
-  src: local(""), url("../fonts/urbanist-v1-latin-100.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/urbanist-v1-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
-/* urbanist-200 - latin */
+/* poppins-200 - latin */
 @font-face {
-  font-family: "Urbanist";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
-  src: local(""), url("../fonts/urbanist-v1-latin-200.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-200.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/urbanist-v1-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* urbanist-300 - latin */
+/* poppins-regular - latin */
 @font-face {
-  font-family: "Urbanist";
-  font-style: normal;
-  font-weight: 300;
-  src: local(""), url("../fonts/urbanist-v1-latin-300.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/urbanist-v1-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* urbanist-regular - latin */
-@font-face {
-  font-family: "Urbanist";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   src: local(""),
-    url("../fonts/urbanist-v1-latin-regular.woff2") format("woff2"),
+    url("../fonts/poppins-v15-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/urbanist-v1-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* urbanist-500 - latin */
+/* poppins-500 - latin */
 @font-face {
-  font-family: "Urbanist";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: local(""), url("../fonts/urbanist-v1-latin-500.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-500.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/urbanist-v1-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* urbanist-700 - latin */
+/* poppins-600 - latin */
 @font-face {
-  font-family: "Urbanist";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("../fonts/urbanist-v1-latin-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/urbanist-v1-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* urbanist-600 - latin */
-@font-face {
-  font-family: "Urbanist";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: local(""), url("../fonts/urbanist-v1-latin-600.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-600.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/urbanist-v1-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* urbanist-800 - latin */
+/* poppins-700 - latin */
 @font-face {
-  font-family: "Urbanist";
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/poppins-v15-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v15-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
-  src: local(""), url("../fonts/urbanist-v1-latin-800.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-800.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/urbanist-v1-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* urbanist-100italic - latin */
-
-/* urbanist-900 - latin */
+/* poppins-900 - latin */
 @font-face {
-  font-family: "Urbanist";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("../fonts/urbanist-v1-latin-900.woff2") format("woff2"),
+  src: local(""), url("../fonts/poppins-v15-latin-900.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/urbanist-v1-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v15-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* Saturn's theme engine v3. */
@@ -113,7 +92,7 @@ v3.0.0 CSS Core
   --sat-input-hover: #b1b1b1;
   --sat-search-bar-focus: #999999;
   --sat-tooltip-bg: #c0c0c0;
-  --default-font: "Urbanist", sans-serif;
+  --default-font: "Poppins", sans-serif;
   --sat-border-radius: 15px;
   --gudmrning-txt: linear-gradient(to right, #000046, #1cb5e0);
   --sat-accent-color1: #017fcd;
@@ -151,7 +130,7 @@ v3.0.0 CSS Core
   --sat-input-hover: #2b323d;
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #181b22;
-  --default-font: "Urbanist", sans-serif;
+  --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #6eb8f8 100%);
   --sat-accent-color1: #4facfe;
   --moreapps-hovering-clr: #4190d4;
@@ -194,7 +173,7 @@ v3.0.0 CSS Core
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222222; /* Tooltip background */
-  --default-font: "Urbanist", sans-serif;
+  --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #e9772a 100%);
   --sat-accent-color1: #ffb07d;
   --moreapps-hovering-clr: #ffb07d;
@@ -237,7 +216,7 @@ v3.0.0 CSS Core
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222;
-  --default-font: "Urbanist", sans-serif;
+  --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #e6dada, #274046);
   --sat-accent-color1: #686868;
   --moreapps-hovering-clr: #686868;
@@ -273,7 +252,7 @@ v3.0.0 CSS Core
   --sat-setting-bg-effect: #333646; /* Settings options background color */
   --sat-input-hover: #282a36;
   --sat-search-bar-focus: #333646;
-  --default-font: "Urbanist", sans-serif;
+  --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #bd93f9 0%, #754dac 100%);
   --sat-accent-color1: #bd93f9;
   --moreapps-hovering-clr: #bd93f9;
@@ -403,27 +382,27 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 h6 {
-  font-size: 0.9rem;
+  font-size: 0.87rem;
 }
 
 a {
