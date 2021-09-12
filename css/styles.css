@@ -17,13 +17,13 @@ body {
 .search-bar {
   width: 100%;
   font-size: 1.3em;
-  padding: 15px 50px;
+  padding: 20px 50px;
   text-align: left;
   font-weight: 500;
   box-sizing: border-box;
   outline: none;
   border: 3px solid var(--sat-bg);
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .search-engine-logo {
@@ -33,7 +33,7 @@ body {
   outline: none;
   width: 55px;
   height: 55px;
-  margin-top: 4px;
+  margin-top: 7px;
 }
 
 .search-engine-logo:hover {
@@ -201,12 +201,13 @@ input:checked + .slider:before {
 
 .section-title {
   text-align: left;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .setting-button {
   outline: none;
-  padding: 10px 10px;
+  padding: 12px 10px;
   border-radius: 12px;
   float: right;
   outline: 2px solid var(--sat-bg);
@@ -233,6 +234,7 @@ ul.tabs li {
   padding: 12px 20px;
   margin: 10px;
   border-radius: var(--sat-border-radius);
+  font-size: 17px;
 }
 
 ul.tabs li:hover {
@@ -245,7 +247,7 @@ ul.tabs li:hover {
 ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
   color: var(--sat-ids);
-  font-weight: 600;
+  font-weight: 700;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
@@ -300,7 +302,7 @@ but I will probably rework this later on) +
 /* Tooltip text */
 .app span {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
   position: absolute;
   top: 49%;
@@ -479,7 +481,8 @@ Currently only images are fully supported. +
   width: 50%;
   outline: none;
   border: 2px solid var(--add-link-border);
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
   outline: 3px solid var(--sat-search-shortcuts);
 }
 #add-link-form input:hover {
@@ -500,7 +503,7 @@ Currently only images are fully supported. +
   padding: 10px;
   margin-top: 30px;
   font-size: 0.9em;
-  font-weight: 400;
+  font-weight: 600;
   width: 100%;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
@@ -608,7 +611,7 @@ Currently only images are fully supported. +
   outline: none;
   background: var(--sat-search-bar-hvr);
   color: var(--sat-ids);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .save-button:hover {
@@ -636,6 +639,7 @@ Currently only images are fully supported. +
 }
 
 .username-section input {
+  font-size: 15px;
   background-color: var(--lighter-color);
   border: 1px solid var(--new-search-bg-hover-effect);
 }
@@ -682,9 +686,9 @@ Currently only images are fully supported. +
 
 .favorites-search input {
   background: var(--sat-search-shortcuts);
-  padding: 12px;
-  width: 32%;
+  padding: 14px 14px;
   border: 1px solid var(--sat-bg);
+  font-weight: 500;
 }
 
 .favorites-search input:hover,
