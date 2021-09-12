@@ -11,8 +11,8 @@ $(document).ready(function () {
   var $url = $("#url");
 
   // Get links from local storage
-  if (localStorage.getItem("favorites-link")) {
-    $ul.html(localStorage.getItem("favorites-link"));
+  if (localStorage.getItem("vk-links")) {
+    $ul.html(localStorage.getItem("vk-links"));
   }
 
   // Add new link
@@ -28,7 +28,7 @@ $(document).ready(function () {
     );
 
     // Save changes to localstorage
-    localStorage.setItem("favorites-link", $ul.html());
+    localStorage.setItem("vk-links", $ul.html());
 
     // Reset form
     $title.val("");
@@ -40,7 +40,7 @@ $(document).ready(function () {
   $("#fav-link").on("click", ".removebtn", function () {
     $(this).parent().remove();
     // Save changes to localstorage
-    localStorage.setItem("favorites-link", $ul.html());
+    localStorage.setItem("vk-links", $ul.html());
   });
 
   // Form toggle
