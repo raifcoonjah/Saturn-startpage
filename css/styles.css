@@ -1,23 +1,29 @@
 /*
 Saturn Startpage: Open source & free.
-v2 CSS
+v3 CSS Main.Core
 */
 
 body {
   box-sizing: border-box;
-  padding-top: 20px;
+  padding-top: 90px;
   overflow-x: hidden;
 }
 
+/* 
+========
++ Search bar +
+========
+*/
 .search-bar {
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding: 15px 50px;
   text-align: left;
   font-weight: 500;
-  border-radius: 10px;
   box-sizing: border-box;
   outline: none;
+  border: 3px solid var(--sat-bg);
+  border-radius: 20px;
 }
 
 .search-engine-logo {
@@ -27,17 +33,19 @@ body {
   outline: none;
   width: 55px;
   height: 55px;
-  margin-top: 1px;
+  margin-top: 4px;
 }
+
 .search-engine-logo:hover {
   transform: scale(1.1);
 }
 
 .search-bar:hover {
-  border: 1px solid #323a4965;
+  background-color: var(--new-search-bg-hover-effect);
 }
+
 .search-bar:focus {
-  border: 1px solid #323a49a2;
+  border: 3px solid var(--new-search-bg-hover-effect);
 }
 
 .fill {
@@ -54,10 +62,15 @@ body {
   width: 199px;
 }
 
+/* 
+========
++ Header good morning text and time +
+========
+*/
 .gudmorning {
   font-weight: 500;
-  text-align: center;
-  font-size: 16px;
+  text-align: left;
+  font-size: 45px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -65,36 +78,33 @@ body {
 
 .time {
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   margin-top: -10px;
-  font-size: 18px;
+  font-size: 35px;
 }
 
-/* V1.0 Settings page - (Unstable) */
+/* 
+========
++ Settings page. 
+Pretty much just a modal. +
+========
+*/
 
-/* Snippet widgets */
-
-.snip-button {
-  position: absolute;
-  width: 48px;
-  height: 20px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 19px;
-}
-
-.text-center {
-  font-weight: 700;
-  font-size: 25px;
+.settings-title {
+  font-weight: 600;
+  font-size: 23px;
   line-height: 33px;
   text-align: left;
   padding: 20px;
+  margin: -15px;
   font-style: normal;
 }
 
-/* Settings */
+/* 
+========
++ The modal itself +
+========
+*/
 
 .modal {
   background-color: #15181f8a;
@@ -107,7 +117,10 @@ body {
   visibility: hidden;
   transform: scale(1.2);
   transition: visibility 0s linear 100ms, opacity 100ms 0s, transform 100ms;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
+
 .modal-content {
   position: absolute;
   top: 50%;
@@ -118,8 +131,8 @@ body {
   width: 60rem;
   height: 35rem;
   overflow-y: scroll;
-  border-radius: 20px;
 }
+
 .show-modal {
   opacity: 1;
   visibility: visible;
@@ -127,44 +140,51 @@ body {
   transition: visibility 0s linear 0s, opacity 100ms 0s, transform 100ms;
 }
 
-/* Settings: Dark mode switch */
+/* 
+========
++ Everything switch related +
+========
+*/
 
-.theme-switch-wrapper {
+.slider-switch-wrapper {
   display: flex;
   align-items: center;
 }
-.theme-switch {
+.slider-switch {
   display: inline-block;
   position: relative;
-  width: 66px;
-  height: 33px;
+  width: 67px;
+  height: 36px;
 }
-.theme-switch input {
+.slider-switch input {
   display: none;
+}
+.slider:hover {
+  transition: var(--transition-speed-default);
+  border: 2px solid var(--sat-accent-color1);
 }
 
 .slider {
-  background: var(--switch-color-bg);
-  cursor: pointer;
-  left: 2px;
+  background-color: var(--switch-color-bg);
+  left: 1px;
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
+  border: 2px solid var(--sat-setting-bg-effect);
 }
 
 .slider:before {
-  border: 3px solid #fff;
+  background-color: #fff;
   content: "";
-  left: 7px;
+  left: 5px;
   position: absolute;
-  bottom: 5px;
-  width: 17px;
-  height: 17px;
+  bottom: 4px;
+  padding: 12px 12px;
 }
 
 input:checked + .slider {
-  background-color: var(--switch-color-bg-after);
+  background: var(--sat-accent-color1);
 }
 
 input:checked + .slider:before {
@@ -179,59 +199,46 @@ input:checked + .slider:before {
   border-radius: 100px;
 }
 
-.yourapps {
+.section-title {
   text-align: left;
   font-weight: 500;
 }
 
-/* Button used to open the settings page */
-
-.button-modal {
+.setting-button {
   outline: none;
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 12px;
   float: right;
   outline: 2px solid var(--sat-bg);
 }
-.button-modal i {
+.setting-button i {
   font-size: 1.2rem;
 }
 
-.button-modal:hover {
+.setting-button:hover {
   transition: var(--transition-speed-default);
   outline: 3px solid var(--settings-button-outline);
 }
 
-.external-links {
-  text-decoration: none;
-}
-.external-links:hover {
-  color: var(--sat-accent-color1);
-  text-decoration: underline;
-}
-
-/* Settings navigation */
-ul.tabs {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
+/* 
+========
++ Settings navigation +
+========
+*/
 
 ul.tabs li {
   font-weight: 500;
   background: none;
   color: var(--sat-ids);
-  display: inline-block;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 14px;
-  border: 2px solid var(--sat-setting-bg-color);
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: var(--sat-border-radius);
 }
 
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
-  transition: var(--transition-speed-default);
+  transition: 90ms;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
@@ -254,59 +261,79 @@ ul.tabs li.current {
   display: inherit;
 }
 
-/* Shortcuts */
+/* 
+========
++ App list v2.0 +
+========
+*/
 #apps {
-  margin-top: 10px;
-  width: 105%;
+  margin-top: 20px;
+  width: 104%;
+  align-items: left;
 }
 
 .app {
   display: inline-block;
-  width: 10%;
-  margin: 0 0.9% 10px;
-  padding: 15px 5px;
-  text-align: center;
-  border-radius: 10px;
-  cursor: pointer;
+  margin: 5px 1px;
+  padding: 15px 45px;
+  border-radius: 20px !important;
 }
 
 .app i {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
+  right: 100%;
 }
 
-/* Tooltip container */
+/* 
+========
++ Apps list tooltip 
+(The tooltip is super *not design friendly rn* 
+but I will probably rework this later on) +
+========
+*/
+
 .app {
   position: relative;
   display: inline-block;
 }
 
 /* Tooltip text */
-.app .tooltiptext {
-  opacity: 0.9;
-  visibility: hidden;
-  width: 95px;
-  text-align: center;
-  padding: 2px 2px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 500;
+.app span {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
   position: absolute;
-  z-index: 1;
+  top: 49%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 40%;
+}
+
+.app i {
+  position: relative;
   bottom: 108%;
-  left: 50%;
-  margin-left: -50px;
 }
 
-/* Show tooltip on shortcuts hover */
-.app:hover .tooltiptext {
+/* 
+========
++ Show tooltip on app hover +
+========
+*/
+
+/* .app:hover span {
   visibility: visible;
-}
+  transition: var(--transition-speed-fast);
+} */
 
-/* More apps */
+/* 
+========
++ More apps +
+========
+*/
 
 .morecontainer {
   margin: 0 auto;
-  padding: 30px 4px;
+  padding: 26px 4px;
 }
 
 #cutieapps {
@@ -333,17 +360,12 @@ ul.tabs li.current {
   font-weight: 500;
 }
 
-.morecontainer::-webkit-scrollbar {
-  display: none;
-}
+/* 
+========
++ Overlay for more apps +
+========
+*/
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.morecontainer {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-/* Overlay + typewriter effect */
 .overlay {
   height: 0%;
   width: 100%;
@@ -383,41 +405,15 @@ ul.tabs li.current {
   }
 }
 
-.snip-wid div:hover,
+/* 
+========
++ Favorites +
+========
+*/
+
 #favorite-links:hover {
-  cursor: pointer;
   transition: var(--transition-speed-default);
 }
-
-#more {
-  display: none;
-  transition: 0.2s;
-}
-
-.em-links {
-  text-decoration: none;
-}
-
-.em-links:hover {
-  color: var(--sat-ids);
-}
-
-.snip-wid button {
-  padding: 9px 9px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  margin: 2px;
-  font-weight: 500;
-  border: 2px solid var(--sat-setting-bg-effect);
-}
-
-/* Clear floats (clearfix hack) */
-.snip-wid:after {
-  content: "";
-  clear: both;
-  display: table;
-  padding: 5px;
-}
-
 ul {
   padding: 0;
   margin: 0px;
@@ -434,32 +430,39 @@ ul li {
   float: right;
   margin-top: -5px;
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 13px;
 }
 
 #content {
-  border-radius: 10px;
-  padding: 8px;
+  padding: 10px;
 }
 
 #fav-link li {
   padding: 10px;
-  border-radius: 10px;
 }
-
-#fav-link img {
-  border-radius: 10px;
-}
-
 #fav-link li:last-child {
   border: none;
 }
 
+/* 
+========
++ Optimizations for favorites features.
+Currently only images are fully supported. +
+========
+*/
+
+#fav-link img {
+  width: 23px;
+  height: 22px;
+  outline: none;
+  vertical-align: middle;
+  margin: 0px;
+  border-radius: 6px !important;
+}
 #fav-link a {
   text-decoration: none;
   padding: 10px 10px;
   margin: -10px;
-  border-radius: 10px;
   color: var(--sat-ids);
 }
 
@@ -467,7 +470,6 @@ ul li {
   display: none;
   padding: 20px;
   margin: 5px;
-  border-radius: 10px;
 }
 
 #add-link-form input {
@@ -476,19 +478,17 @@ ul li {
   padding: 10px;
   width: 50%;
   outline: none;
-  border: none;
-  border-radius: 10px;
   border: 2px solid var(--add-link-border);
   font-size: 14px;
   outline: 3px solid var(--sat-search-shortcuts);
 }
 #add-link-form input:hover {
-  outline: 3px solid var(--saturn-input-hover);
+  outline: 3px solid var(--sat-search-bar-hvr);
   transition: var(--transition-speed-default);
 }
 
 #add-link-form input:focus {
-  outline: 3px solid var(--saturn-input-hover);
+  outline: 3px solid var(--sat-search-bar-hvr);
   transition: var(--transition-speed-default);
 }
 
@@ -498,10 +498,9 @@ ul li {
   margin-right: 0;
   margin-left: 0;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 0.9em;
-  font-weight: 500;
-  border-radius: 10px;
+  font-weight: 400;
   width: 100%;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
@@ -509,13 +508,81 @@ ul li {
 
 #new-link-button button:hover,
 #add-link-form button:hover {
-  background-color: var(--reddit-hover-color);
+  background-color: var(--favorites-hover);
   transition: var(--transition-speed-default);
   color: var(--sat-ids);
 }
 
-/* Fix side view & optimize for mobile use..
- */
+.close-button {
+  font-size: 24px;
+  float: right;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 60px;
+}
+
+.new-close-fav,
+.close-button i {
+  display: block;
+  text-align: center;
+}
+
+.close-button:hover,
+.new-close-fav:hover {
+  color: var(--sat-ids);
+  background-color: var(--favorites-hover);
+  transition: var(--transition-speed-default);
+}
+
+.new-close-fav {
+  font-size: 24px;
+  float: right;
+  padding: 5px 10px;
+  border-radius: 60px;
+}
+/* 
+========
++ The IOS 15 like background in settings. +
+========
+*/
+
+.settings-background {
+  margin: 5px;
+  margin-bottom: -10px;
+  padding: 10px;
+  background: var(--sat-setting-bg-effect);
+}
+
+.settings-background-warning {
+  padding: 10px;
+  background: var(--settings-warning-bg);
+}
+
+/* 
+========
++ Theme Icons (YES, they are just small svg images that i make in figma.) +
+========
+*/
+
+.theme-icon img {
+  width: 160px;
+  padding: 4px;
+  margin: 2px;
+  border-radius: 20px;
+  animation: slide-up-fade-in 0.3s ease;
+}
+
+.theme-icon img:hover {
+  transition: var(--transition-speed-default);
+  background-color: var(--sat-accent-color1);
+}
+
+/* 
+========
++ Mobile optimizations +
+========
+*/
+
 @media (max-width: 900px) {
   .modal-content {
     width: 90%;
@@ -530,64 +597,100 @@ ul li {
   }
 }
 
-.close-button {
-  font-size: 27px;
-  float: right;
-  padding: 10px 10px;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 60px;
+/* 
+========
++ The save button for username feature +
+========
+*/
+
+.save-button {
+  padding: 9px 20px;
+  outline: none;
+  background: var(--sat-search-bar-hvr);
+  color: var(--sat-ids);
+  font-weight: 500;
 }
 
-.new-close-fav,
-.close-button i {
-  display: block;
-  text-align: center;
-}
-.close-button:hover {
-  color: var(--sat-ids);
-  background: var(--sat-setting-bg-effect);
+.save-button:hover {
+  background: var(--sat-search-bar-focus);
   transition: var(--transition-speed-default);
 }
 
-.new-close-fav {
-  font-size: 24px;
-  float: right;
+.saved-msg {
+  visibility: hidden;
+}
+
+/* 
+========
++ The where to next text inside more apps. (top middle one) +
+========
+*/
+
+.typewritter_1 {
+  font-weight: 600;
+}
+
+#sv-msg {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.username-section input {
+  background-color: var(--lighter-color);
+  border: 1px solid var(--new-search-bg-hover-effect);
+}
+
+.username-section input:focus {
+  background-color: var(--sat-input-hover);
+}
+
+/* 
+========
++ Icons in Setting's about section +
+========
+*/
+
+.social-icons {
+  font-size: 35px;
+  outline: none;
+}
+
+.social-icons:hover {
+  color: var(--sat-accent-color1);
+}
+
+.small-icons {
+  font-size: 20px;
+  padding: 10px !important;
+  width: 20px;
   cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 60px;
 }
 
-.new-close-fav:hover {
-  background-color: var(--reddit-hover-color);
-  transition: var(--transition-speed-default);
-  color: var(--sat-ids);
+.settings-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  top: 12px !important;
+  position: relative;
 }
 
-.settings-background {
-  border-radius: 15px;
-  padding: 10px;
-  background: var(--sat-setting-bg-effect);
+/* 
+========
++ *NEW* Favorites search feature +
+========
+*/
+
+.favorites-search input {
+  background: var(--sat-search-shortcuts);
+  padding: 12px;
+  width: 32%;
+  border: 1px solid var(--sat-bg);
 }
 
-.settings-background-warning {
-  border-radius: 15px;
-  padding: 10px;
-  background: var(--settings-warning-bg);
-}
-.theme-icon img {
-  width: 160px;
-  padding: 3px;
-  border-radius: 20px;
-  margin: 2px;
-}
-.theme-icon img:hover {
-  transition: var(--sat-default-hoveringspeed);
-  background-color: var(--sat-accent-color1);
-}
-
-.easter-egg1 {
-  text-decoration: none;
+.favorites-search input:hover,
+.favorites-search input:focus {
+  background-color: var(--sat-search-bar-focus);
+  border: 1px solid var(--new-search-bg-hover-effect);
 }
 
 /* Favorites support for images, gifs and more.. */

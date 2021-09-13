@@ -1,22 +1,30 @@
-const determineGreet = (
-  hours // Good morning/night text.
-) =>
-  (document.getElementById("greetings").innerText = `Good ${
-    hours < 12
-      ? "morning! "
-      : hours < 18
-      ? "afternoon! "
-      : hours < 21 // After 21:00/9:00 display night instead.
-      ? "evening! "
-      : "night! "
-  } `);
+//
+// ========
+// + Good Morning text +
+// ========
+//
+const determineGreet = (hours) =>
+  (document.getElementById("greetings").innerText =
+    `Good ${
+      hours < 12
+        ? "morning, "
+        : hours < 18
+        ? "afternoon, "
+        : hours < 21 // After 21:00/9:00 display night instead.
+        ? "evening, "
+        : "night, "
+    } ` + localStorage.getItem("user"));
 
 // Get month:
 determineGreet(new Date().getHours());
 
-// Settings/Modal trigger + close button.
+//
+// ========
+// + Settings Modal trigger + close button +
+// ========
+//
 var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".button-modal");
+var trigger = document.querySelector(".setting-button");
 var closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
@@ -33,7 +41,11 @@ trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
-// Time v2.0
+//
+// ========
+// + Time and month text +
+// ========
+//
 function getTime() {
   let date = new Date(),
     min = date.getMinutes(),
@@ -77,30 +89,22 @@ function getDate() {
 document.getElementById("time").innerHTML =
   `It's ` + getDate() + `, ` + getTime();
 
-// Open overlay menu
-navy.addEventListener("click", openNav);
-navyclose.addEventListener("click", closeNav);
-
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-
-// Hide favorites, jQuery.
+//
+// ========
+// + Hide Favorites feature +
+// ========
+//
 
 $(function () {
   var status = localStorage.getItem("favorites_hidden");
   if (status == "true") {
     $(".fav-container").css("display", "none");
-    $(".AvGamesCheckBox_favo_compl").attr("checked", true);
+    $(".hide-favorite").attr("checked", true);
   } else {
     $(".fav-container").css("display", "block");
-    $(".AvGamesCheckBox_favo_compl").attr("checked", false);
+    $(".hide-favorite").attr("checked", false);
   }
-  $(".AvGamesCheckBox_favo_compl").click(function () {
+  $(".hide-favorite").click(function () {
     if (this.checked) {
       $(".fav-container").hide();
     } else {
@@ -110,28 +114,36 @@ $(function () {
   });
 });
 
-// Hide App row .2
-
+//
+// ========
+// + Hide searchbar +
+// ========
+//
 $(function () {
-  var status = localStorage.getItem("apps_row2_hidden");
+  var status = localStorage.getItem("search_hidden");
   if (status == "true") {
-    $(".apps_row2").css("display", "none");
-    $(".AvGamesCheckBox_apps_row2").attr("checked", true);
+    $(".search_block").css("display", "none");
+    $(".hide-search").attr("checked", true);
   } else {
-    $(".apps_row2").css("display", "block");
-    $(".AvGamesCheckBox_apps_row2").attr("checked", false);
+    $(".search_block").css("display", "block");
+    $(".hide-search").attr("checked", false);
   }
-  $(".AvGamesCheckBox_apps_row2").click(function () {
+  $(".hide-search").click(function () {
     if (this.checked) {
-      $(".apps_row2").hide();
+      $(".search_block").hide();
     } else {
-      $(".apps_row2").show();
+      $(".search_block").show();
     }
-    localStorage.setItem("apps_row2_hidden", this.checked);
+    localStorage.setItem("search_hidden", this.checked);
   });
 });
 
-// Settings Navigation.
+
+//
+// ========
+// + Settings navigation +
+// ========
+//
 $(document).ready(function () {
   $("ul.tabs li").click(function () {
     var tab_id = $(this).attr("data-tab");
@@ -144,14 +156,34 @@ $(document).ready(function () {
   });
 });
 
-// Saturn theme engine, powered by local storage and javascript.
-// v2.0-pancake
+//
+// ========
+// + App list category +
+// ========
+//
+$(document).ready(function () {
+  $("ul.apps-category li").click(function () {
+    var tab_id = $(this).attr("data-tab");
+
+    $("ul.apps-category li").removeClass("current");
+    $(".app-content").removeClass("current");
+
+    $(this).addClass("current");
+    $("#" + tab_id).addClass("current");
+  });
+});
+
+//
+// ========
+// + Saturn's theme engine v2.0-m&ms +
+// ========
+//
 
 const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
 const spaceButton = document.getElementById("space");
 const linkinParkButton = document.getElementById("linkin-park");
-const ohpurpleButton = document.getElementById("purple");
+const dracula_themeButton = document.getElementById("dracula_theme");
 const body = document.body;
 
 // Apply the cached theme on reload
@@ -162,30 +194,83 @@ if (theme) {
   body.classList.add(theme);
 }
 
+// Dark theme
+
 darkButton.onclick = () => {
   body.classList.replace("light", "dark");
   body.classList.replace("space", "dark");
   body.classList.replace("linkin-park", "dark");
+  body.classList.replace("dracula_theme", "dark");
   localStorage.setItem("theme", "dark");
 };
+
+// Default light theme
 
 lightButton.onclick = () => {
   body.classList.replace("dark", "light");
   body.classList.replace("space", "light");
   body.classList.replace("linkin-park", "light");
+  body.classList.replace("dracula_theme", "light");
   localStorage.setItem("theme", "light");
 };
+
+// Material-ish dark theme
 
 spaceButton.onclick = () => {
   body.classList.replace("dark", "space");
   body.classList.replace("light", "space");
   body.classList.replace("linkin-park", "space");
+  body.classList.replace("dracula_theme", "space");
   localStorage.setItem("theme", "space");
 };
 
+// linkinPark theme
 linkinParkButton.onclick = () => {
   body.classList.replace("dark", "linkin-park");
   body.classList.replace("light", "linkin-park");
   body.classList.replace("space", "linkin-park");
+  body.classList.replace("dracula_theme", "linkin-park");
   localStorage.setItem("theme", "linkin-park");
 };
+
+// Dracula theme
+
+dracula_themeButton.onclick = () => {
+  body.classList.replace("dark", "dracula_theme");
+  body.classList.replace("light", "dracula_theme");
+  body.classList.replace("space", "dracula_theme");
+  body.classList.replace("linkin-park", "dracula_theme");
+  localStorage.setItem("theme", "dracula_theme");
+};
+
+//
+// ========
+// + *New* Username feature +
+// ========
+//
+
+$(document).ready(function () {
+  $("#save").click(function () {
+    var username = $("#userSet").val();
+    if (typeof Storage !== "undefined") {
+      localStorage.user = username;
+      $("#Uname").val(localStorage.getItem("user"));
+    } else {
+      $("#Uname").val("Sorry, your browser does not support Web Storage...");
+    }
+  });
+});
+
+//
+// ========
+// + When the user save show this:  +
+// ========
+//
+
+$(document).ready(function () {
+  $("#save").click(function () {
+    $("#sv-msg").text(
+      "( ﾟｏ⌒): Username saved, please reload for these changes to take effect. "
+    );
+  });
+});
