@@ -16,7 +16,7 @@ document.getElementById("se_button").addEventListener("click", function () {
   cycleSearchEngines(se);
 });
 
-// Search providers 
+// List Search providers 
 
 const search_engines = [
   {
