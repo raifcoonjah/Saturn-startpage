@@ -255,7 +255,7 @@ $(document).ready(function () {
       localStorage.user = username;
       $("#Uname").val(localStorage.getItem("user"));
     } else {
-      $("#Uname").val("Sorry, your browser does not support Web Storage...");
+      $("#Uname").val("Sorry, your browser does not support Web Storage..");
     }
   });
 });

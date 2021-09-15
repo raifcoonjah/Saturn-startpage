@@ -3,6 +3,12 @@ Saturn Startpage: Open source & free.
 v3 CSS Main.Core
 */
 
+
+/* 
+========
++ Body +
+========
+*/
 body {
   box-sizing: border-box;
   padding-top: 90px;
@@ -26,6 +32,11 @@ body {
   border-radius: 20px;
 }
 
+/* 
+========
++ The logo inside search engnie logo +
+========
+*/
 .search-engine-logo {
   padding: 12px 10px;
   position: absolute;
@@ -85,8 +96,7 @@ body {
 
 /* 
 ========
-+ Settings page. 
-Pretty much just a modal. +
++ Setting title +
 ========
 */
 
@@ -249,6 +259,9 @@ ul.tabs li.current {
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
+ul.tabs li {
+  font-size: 15px;
+}
 .tab-content {
   display: none;
 }
@@ -266,6 +279,8 @@ ul.tabs li.current {
 + App list v2.0 +
 ========
 */
+
+
 #apps {
   margin-top: 20px;
   width: 104%;
@@ -612,7 +627,7 @@ Currently only images are fully supported. +
 }
 
 .save-button:hover {
-  background: var(--sat-search-bar-focus);
+  background: var(--lighter-color);
   transition: var(--transition-speed-default);
 }
 

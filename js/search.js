@@ -4,30 +4,30 @@
 // ========
 //
 
-// ALlow user to press 4 time, increasing this number without adding 
+// ALlow user to press 4 time, increasing this number without adding
 // more search_engines will cause some serious bugs to occur.
 
 let se = 4;
 
-// Listens for click event in se_button, once clicked, 
+// Listens for click event in se_button, once clicked,
 // se increments by one and cycleSearchEngines() is called to update the icon, placeholder, and form action
 document.getElementById("se_button").addEventListener("click", function () {
   se++;
   cycleSearchEngines(se);
 });
 
-// List Search providers 
+// List Search providers
 
 const search_engines = [
-  {
-    src: "duckduckgo.svg",
-    placeholder: "DuckDuckGo",
-    action: "https://www.duckduckgo.com/",
-  },
   {
     src: "google.svg",
     placeholder: "Google",
     action: "https://www.google.com/search?q=",
+  },
+  {
+    src: "duckduckgo.svg",
+    placeholder: "DuckDuckGo",
+    action: "https://www.duckduckgo.com/",
   },
   {
     src: "brave-search.svg",
@@ -46,7 +46,7 @@ const search_engines = [
   },
 ];
 
-// This happens when the user presses on the se button. 
+// This happens when the user presses on the se button.
 
 const cycleSearchEngines = (se) => {
   const curData = search_engines[(se + 1) % search_engines.length];
