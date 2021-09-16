@@ -750,11 +750,6 @@ img {
   background-color: var(--sat-accent-color1);
 }
 
-/* .cuteapps:hover {
-  background-color: var(--moreapps-bg-new);
-  border: 3px solid var(--sat-accent-color1);
-} */
-
 .closebtn:hover {
   border-color: var(--moreapps-hovering-clr);
 }
