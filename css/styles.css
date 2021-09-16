@@ -3,7 +3,6 @@ Saturn Startpage: Open source & free.
 v3 CSS Main.Core
 */
 
-
 /* 
 ========
 + Body +
@@ -280,7 +279,6 @@ ul.tabs li {
 ========
 */
 
-
 #apps {
   margin-top: 20px;
   width: 104%;
@@ -301,9 +299,7 @@ ul.tabs li {
 
 /* 
 ========
-+ Apps list tooltip 
-(The tooltip is super *not design friendly rn* 
-but I will probably rework this later on) +
++ Apps list & apps text +
 ========
 */
 
@@ -312,7 +308,6 @@ but I will probably rework this later on) +
   display: inline-block;
 }
 
-/* Tooltip text */
 .app span {
   font-size: 15px;
   font-weight: 600;
