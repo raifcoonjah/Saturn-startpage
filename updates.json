@@ -3,6 +3,46 @@
     "{aa7b057d-721f-4ed8-ae73-563f767006ee}": {
       "updates": [
         {
+          "version": "3.0.0",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v3.0.0/saturn_startpage-3.0.0-an+fx.xpi"
+        },
+        {
+          "version": "2.7.3",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.7.3/saturn_startpage-2.7.3-an+fx.xpi"
+        },
+        {
+          "version": "2.7.2.1",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.7.2.1/saturn_startpage-2.7.2.1-an+fx.xpi"
+        },
+        {
+          "version": "2.7.2",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.7.2/saturn_startpage-2.7.2-an+fx.xpi"
+        },
+        {
+          "version": "2.7.1",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.7.1/saturn_startpage-2.7.1-an+fx.xpi"
+        },
+        {
+          "version": "2.7.0",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.7.0/saturn_startpage-2.7.0-an+fx.xpi"
+        },
+        {
+          "version": "2.6.1.1",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.6.1.1/saturn_startpage-2.6.1.1-an+fx.xpi"
+        },
+        {
+          "version": "2.6.1",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.6.1/saturn_startpage-2.6.1-an+fx.xpi"
+        },
+        {
+          "version": "2.6.0",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.6.0/saturn_startpage-2.6.0-an+fx.xpi"
+        },
+        {
+          "version": "2.5.0",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.5.0/saturn_startpage-2.5.0-an+fx.xpi"
+        },
+        {
           "version": "2.4.1",
           "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.4.1/saturn_startpage-2.4.1-an+fx.xpi"
         },
@@ -45,38 +85,6 @@
         {
           "version": "2.1.0.2",
           "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.1.0.2/saturn_startpage-2.1.0.2-an+fx.xpi"
-        },
-        {
-          "version": "2.0.7.8",
-          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.0.7.8/saturn_startpage-2.0.7.8-an+fx.xpi"
-        },
-        {
-          "version": "2.0.7.7",
-          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.0.7.7/saturn_startpage-2.0.7.7-an+fx.xpi"
-        },
-        {
-          "version": "2.0.6.5",
-          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.0.6.5/saturn_startpage-2.0.6.5-an+fx.xpi"
-        },
-        {
-          "version": "2.0.6.4",
-          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.0.6.4/saturn_startpage-2.0.6.4-an+fx.xpi"
-        },
-        {
-          "version": "2.0.6.3",
-          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.0.6.3/saturn_startpage-2.0.6.3-an+fx.xpi"
-        },
-        {
-          "version": "2.0.6.1",
-          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.0.6.1/saturn_startpage-2.0.6.1-an+fx.xpi"
-        },
-        {
-          "version": "2.0.3",
-          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.0.3/saturn_startpage-2.0.3-an+fx.xpi"
-        },
-        {
-          "version": "2.0.2",
-          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v2.0/saturn_startpage-2.0.2-an+fx.xpi"
         }
       ]
     }

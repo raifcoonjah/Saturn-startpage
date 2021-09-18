@@ -21,7 +21,7 @@ document.getElementById("se_button").addEventListener("click", function () {
 const search_engines = [
   {
     src: "google.svg",
-    placeholder: "Google",
+    placeholder: "Google..",
     action: "https://www.google.com/search?q=",
   },
   {
@@ -31,17 +31,17 @@ const search_engines = [
   },
   {
     src: "brave-search.svg",
-    placeholder: "Brave Search",
+    placeholder: "Brave Search..",
     action: "https://search.brave.com/search?q=",
   },
   {
     src: "reddit.svg",
-    placeholder: "Reddit",
+    placeholder: "Reddit..",
     action: "https://www.reddit.com/search?q=",
   },
   {
     src: "youtube.svg",
-    placeholder: "YouTube",
+    placeholder: "YouTube..",
     action: "https://www.youtube.com/results?q=",
   },
 ];

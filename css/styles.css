@@ -702,3 +702,12 @@ Currently only images are fully supported. +
   background-color: var(--sat-search-bar-focus);
   border: 1px solid var(--new-search-bg-hover-effect);
 }
+
+/* Favorites support for images, gifs and more.. */
+#fav-link img {
+  width: 20px;
+  height: 20px;
+  outline: none;
+  vertical-align: middle;
+  margin: 0px;
+}
