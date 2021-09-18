@@ -138,7 +138,6 @@ $(function () {
   });
 });
 
-
 //
 // ========
 // + Settings navigation +
@@ -256,21 +255,39 @@ $(document).ready(function () {
       localStorage.user = username;
       $("#Uname").val(localStorage.getItem("user"));
     } else {
-      $("#Uname").val("Sorry, your browser does not support Web Storage...");
+      $("#Uname").val("Sorry, your browser does not support Web Storage..");
     }
   });
 });
 
 //
 // ========
-// + When the user save show this:  +
+// + Username feature: When the user save show this:  +
 // ========
 //
 
 $(document).ready(function () {
   $("#save").click(function () {
     $("#sv-msg").text(
-      "( ﾟｏ⌒): Username saved, please reload for these changes to take effect. "
+      "( ﾟｏ⌒): Username saved, please reload or open a new tab for these changes to take effect. "
     );
   });
 });
+
+//
+// ========
+// + More apps overlay stuff (This handles the very simple height
+// animation when the user presses on the button.)  +
+// ========
+//
+
+navy.addEventListener("click", openNav);
+navyclose.addEventListener("click", closeNav);
+
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}

@@ -3,6 +3,11 @@ Saturn Startpage: Open source & free.
 v3 CSS Main.Core
 */
 
+/* 
+========
++ Body +
+========
+*/
 body {
   box-sizing: border-box;
   padding-top: 90px;
@@ -26,6 +31,11 @@ body {
   border-radius: 20px;
 }
 
+/* 
+========
++ The logo inside search engnie logo +
+========
+*/
 .search-engine-logo {
   padding: 12px 10px;
   position: absolute;
@@ -85,14 +95,13 @@ body {
 
 /* 
 ========
-+ Settings page. 
-Pretty much just a modal. +
++ Setting title +
 ========
 */
 
 .settings-title {
   font-weight: 600;
-  font-size: 23px;
+  font-size: 25px;
   line-height: 33px;
   text-align: left;
   padding: 20px;
@@ -249,6 +258,9 @@ ul.tabs li.current {
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
+ul.tabs li {
+  font-size: 15px;
+}
 .tab-content {
   display: none;
 }
@@ -266,6 +278,7 @@ ul.tabs li.current {
 + App list v2.0 +
 ========
 */
+
 #apps {
   margin-top: 20px;
   width: 104%;
@@ -286,9 +299,7 @@ ul.tabs li.current {
 
 /* 
 ========
-+ Apps list tooltip 
-(The tooltip is super *not design friendly rn* 
-but I will probably rework this later on) +
++ Apps list & apps text +
 ========
 */
 
@@ -297,7 +308,6 @@ but I will probably rework this later on) +
   display: inline-block;
 }
 
-/* Tooltip text */
 .app span {
   font-size: 15px;
   font-weight: 600;
@@ -606,13 +616,13 @@ Currently only images are fully supported. +
 .save-button {
   padding: 9px 20px;
   outline: none;
-  background: var(--sat-search-bar-hvr);
+  background: var(--lighter-color);
   color: var(--sat-ids);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .save-button:hover {
-  background: var(--sat-search-bar-focus);
+  background-color: var(--sat-input-hover);
   transition: var(--transition-speed-default);
 }
 

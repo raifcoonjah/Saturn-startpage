@@ -25,7 +25,7 @@
           <form
             id="search_eng_form"
             method="get"
-            action="https://www.duckduckgo.com/"
+            action="https://www.google.com/"
           >
             <a
               href="javascript:void(0)"
@@ -34,7 +34,7 @@
             >
               <img
                 id="se_icon"
-                src="icons/duckduckgo.svg"
+                src="icons/google.svg"
                 alt="Search engine logo"
                 title="Click to change search engine"
               />
@@ -44,7 +44,7 @@
               class="search-bar"
               type="search"
               id="search"
-              placeholder="Search with DuckDuckGo.."
+              placeholder="Search with Google.."
               autocomplete="off"
               name="q"
               autofocus
@@ -57,7 +57,7 @@
         <i class="las la-cog"></i>
       </button>
 
-      <!-- App lists -->
+      <!-- App lists + App category -->
       <h5 class="section-title new">
         <i class="las la-grip-horizontal"></i> Apps list
       </h5>
@@ -74,8 +74,8 @@
         <li class="tab-link" data-tab="app-4">
           <i class="las la-photo-video"></i> Media
         </li>
-        <li class="tab-link" id="navy">
-          <i class="las la-icons"></i>
+        <li class="tab-link" id="navy" title="More apps">
+          <i class="lab la-buromobelexperte"></i>
         </li>
       </ul>
 
@@ -122,12 +122,12 @@
                 <span>Udemy</span>
               </div></a
             >
-            <a href="http://moodle.rbs.ac.mu/moodle/">
+            <!-- <a href="http://moodle.rbs.ac.mu/moodle/">
               <div class="app">
                 <i class="las la-file-alt"></i>
                 <span>Rushm.. Moodle</span>
               </div></a
-            >
+            > -->
             <a href="https://learn-anything.xyz/">
               <div class="app">
                 <i class="lar la-map"></i>
@@ -245,16 +245,9 @@
           <div class="side-text">
             <details>
               <summary>
-                <i class="las la-exclamation-circle"></i> Notice
-              </summary>
-              Currently Favorites doesn't have a limit, but I recommend under
-              30.
-            </details>
-            <details>
-              <summary>
                 <i class="lar la-question-circle"></i> Need help?
               </summary>
-              Learn everything about favorites:
+              <i class="las la-thumbtack"></i> Learn everything about favorites:
               <a
                 href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
                 target="_blank"
@@ -270,13 +263,13 @@
         <div class="modal-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
 
-          <h4 class="settings-title">
+          <h3 class="settings-title">
             <img
               class="settings-icon"
               src="https://raw.githubusercontent.com/mraif13/Saturn-startpage/dev/img/dynamic-icon.png"
             />
             | Settings<span class="settings-dot">.</span>
-          </h4>
+          </h3>
           <div class="container">
             <ul class="tabs">
               <li class="tab-link current" data-tab="tab-2">
@@ -351,12 +344,12 @@
                   >🪐</a
                 >
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.0.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.0.1"
                   target="_blank"
-                  >v3.0.0 [Milky Way]
+                  >v3.0.1 [Milky Way]
                   <i class="las la-external-link-alt"></i></a
                 ><br />
-                Saturn UI: v3.0.2021 [Blueberry]
+                Saturn UI: v3.0.2021
                 <br />
                 Want to help make saturn better?
                 <a
@@ -378,6 +371,14 @@
                       <div class="app">
                         <i class="lab la-github"></i>
                         <span>mraif13 Github</span>
+                      </div></a
+                    >
+                    <a
+                      href="https://github.com/mraif13/Saturn-startpage/blob/Chromium/info.md"
+                    >
+                      <div class="app">
+                        <i class="lab la-chrome"></i>
+                        <span>Chrome version</span>
                       </div></a
                     >
                   </div>
@@ -417,7 +418,7 @@
               <h5><i class="las la-moon"></i> Dark themes</h5>
               <a id="dark" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/dark-theme.png"
+                  src="/img/themes/dark.png"
                   title="Dark theme"
                   alt="dark-icon.png"
               /></a>
@@ -425,19 +426,19 @@
                 ><img
                   src="/img/themes/sexy-contrast.png"
                   title="Sexy Contrast theme"
-                  alt="dark-icon.png"
+                  alt="sexy-contrast.png"
               /></a>
               <a id="linkin-park" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/rock-legend.png"
                   title="RIP Linkin Park"
-                  alt="dark-icon.png"
+                  alt="rock-legend.png"
               /></a>
               <a id="dracula_theme" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/dracula-theme.png"
                   title="dracula theme theme"
-                  alt="dark-icon.png"
+                  alt="dracula-theme.png"
               /></a>
             </div>
           </div>
