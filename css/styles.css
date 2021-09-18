@@ -101,7 +101,7 @@ body {
 
 .settings-title {
   font-weight: 600;
-  font-size: 23px;
+  font-size: 25px;
   line-height: 33px;
   text-align: left;
   padding: 20px;
@@ -616,13 +616,13 @@ Currently only images are fully supported. +
 .save-button {
   padding: 9px 20px;
   outline: none;
-  background: var(--sat-search-bar-hvr);
+  background: var(--lighter-color);
   color: var(--sat-ids);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .save-button:hover {
-  background: var(--lighter-color);
+  background-color: var(--sat-input-hover);
   transition: var(--transition-speed-default);
 }
 

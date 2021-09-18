@@ -368,12 +368,12 @@ h6 {
   padding-top: 0.875rem;
 }
 
-h1 {
+/* line {
   color: var(--sat-heading);
   padding-bottom: 2px;
   margin-bottom: 8px;
   border-bottom: 1px solid var(--sat-search-shortcuts);
-}
+} */
 
 h4,
 h5,
