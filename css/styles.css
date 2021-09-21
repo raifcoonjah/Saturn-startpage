@@ -702,3 +702,7 @@ Currently only images are fully supported. +
   background-color: var(--sat-search-bar-focus);
   border: 1px solid var(--new-search-bg-hover-effect);
 }
+
+.cuteapps:hover {
+  color: var(--for-white); /* force white to fix issues */
+}

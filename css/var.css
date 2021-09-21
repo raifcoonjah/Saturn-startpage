@@ -733,8 +733,7 @@ img {
 .removebtn:hover,
 .snip-wid button:hover,
 .setting-button:hover,
-.app:hover,
-.cuteapps:hover {
+.app:hover {
   color: var(--for-white); /* force white to fix issues */
 }
 
