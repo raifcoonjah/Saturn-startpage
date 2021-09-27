@@ -51,6 +51,7 @@ ul.apps-category li:hover {
 }
 
 ul.apps-category li.current {
+  background: var(--sat-setting-bg-effect);
   border: 2px solid var(--sat-setting-bg-effect);
   color: var(--sat-accent-color1);
   font-weight: 600;
