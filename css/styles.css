@@ -469,6 +469,7 @@ Currently only images are fully supported. +
   margin: 0px;
   border-radius: 6px !important;
 }
+
 #fav-link a {
   text-decoration: none;
   padding: 10px 10px;
@@ -485,33 +486,32 @@ Currently only images are fully supported. +
 #add-link-form input {
   color: var(--sat-ids);
   margin: 10px 0;
-  padding: 10px;
-  width: 50%;
+  padding: 10px 10px 10px 10px;
   outline: none;
   border: 2px solid var(--add-link-border);
   font-size: 14px;
-  outline: 3px solid var(--sat-search-shortcuts);
 }
+
 #add-link-form input:hover {
-  outline: 3px solid var(--sat-search-bar-hvr);
+  background-color: var(--add-link-border);
   transition: var(--transition-speed-default);
 }
 
 #add-link-form input:focus {
-  outline: 3px solid var(--sat-search-bar-hvr);
   transition: var(--transition-speed-default);
 }
 
-#new-link-button button,
+#new-link-button button {
+}
+
 #add-link-form button {
-  display: block;
+  display: inline-block;
   margin-right: 0;
   margin-left: 0;
   padding: 10px;
-  margin-top: 30px;
+  margin: 5px;
   font-size: 0.9em;
-  font-weight: 400;
-  width: 100%;
+  font-weight: 600;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
