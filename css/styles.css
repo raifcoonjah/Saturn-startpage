@@ -502,6 +502,16 @@ Currently only images are fully supported. +
 }
 
 #new-link-button button {
+  display: block;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 0.9em;
+  font-weight: 400;
+  width: 100%;
+  color: var(--sat-ids);
+  background: var(--sat-search-shortcuts);
 }
 
 #add-link-form button {
