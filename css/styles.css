@@ -225,8 +225,8 @@ input:checked + .slider:before {
 }
 
 .setting-button:hover {
-  transition: var(--transition-speed-default);
-  outline: 3px solid var(--settings-button-outline);
+  transition: var(--transition-speed-fast);
+  outline: 4px solid var(--settings-button-outline);
 }
 
 /* 
