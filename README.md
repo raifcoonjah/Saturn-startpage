@@ -16,7 +16,7 @@ Saturn Startpage is a fully open source, community build new-tab replacement. **
 - Saturn Startpage **DOES NOT** collect any data about you. 90% of saturn is loaded locally.
 
 ## Installation on Firefox
-- Installation if super easy on **firefox**, just head over to the [release page](https://github.com/mraif13/Saturn-startpage/releases)
+- Installation is super easy on **firefox**, just head over to the [release page](https://github.com/mraif13/Saturn-startpage/releases)
 - Download the latest version ending with a .xpi extention, it should be under assets. (ex: saturn_startpage-2.6.1.1-an+fx.xpi)
 - Updates are automatically applied over the air. 
 
