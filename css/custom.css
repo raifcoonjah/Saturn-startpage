@@ -71,3 +71,8 @@ ul.apps-category li.current {
 .socials .app {
   border: 1px solid var(--lighter-color);
 }
+
+.theme-title {
+  font-weight: 500;
+  margin: 5px;
+}

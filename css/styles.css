@@ -140,6 +140,8 @@ body {
   width: 77rem;
   height: 35rem;
   overflow-y: scroll;
+  border-radius: 20px;
+  overflow-y: auto;
 }
 
 .show-modal {
@@ -237,17 +239,15 @@ input:checked + .slider:before {
 
 ul.tabs li {
   font-weight: 500;
-  background: none;
   color: var(--sat-ids);
   padding: 12px 20px;
-  margin: 10px;
+  margin: 5px;
   border-radius: var(--sat-border-radius);
 }
 
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
-  transition: 50ms;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
@@ -256,6 +256,14 @@ ul.tabs li.current {
   color: var(--sat-ids);
   font-weight: 600;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+}
+
+ul.tabs li.current i {
+  transition: var(--transition-speed-default);
+  font-size: 16px;
+  background-color: var(--sat-search-bar-focus);
+  padding: 4px;
+  border-radius: var(--sat-border-radius);
 }
 
 ul.tabs li {
