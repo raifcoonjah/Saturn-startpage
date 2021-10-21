@@ -261,7 +261,7 @@ ul.tabs li.current {
 ul.tabs li.current i {
   transition: var(--transition-speed-default);
   font-size: 16px;
-  background-color: var(--sat-search-bar-focus);
+  background-color: var(--lighter-color);
   padding: 4px;
   border-radius: var(--sat-border-radius);
 }
