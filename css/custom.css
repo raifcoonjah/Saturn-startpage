@@ -44,8 +44,7 @@ ul.apps-category li {
 
 ul.apps-category li:hover {
   border: 2px solid var(--sat-setting-bg-effect);
-  color: var(--sat-ids);
-  background: var(--sat-setting-bg-effect);
+  color: var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
@@ -71,4 +70,13 @@ ul.apps-category li.current {
 
 .socials .app {
   border: 1px solid var(--lighter-color);
+}
+
+.theme-title {
+  font-weight: 500;
+  margin: 5px;
+}
+
+.app-content {
+  animation: slide-up-fade-in 0.2s ease;
 }

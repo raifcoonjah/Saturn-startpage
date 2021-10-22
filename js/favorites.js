@@ -53,6 +53,12 @@ $(document).ready(function () {
   });
 });
 
+$("#cancel-fav-btn").click(function () {
+  $("#add-link-form").slideToggle("100");
+});
+
+// cancel-fav-btn
+
 //
 // ========
 // + FAVORITES Search v1.0-cheesecake +

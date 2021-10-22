@@ -137,9 +137,11 @@ body {
   transform: translate(-50%, -50%);
   padding: 5px 15px;
   padding-bottom: 20px;
-  width: 60rem;
+  width: 77rem;
   height: 35rem;
   overflow-y: scroll;
+  border-radius: 20px;
+  overflow-y: auto;
 }
 
 .show-modal {
@@ -225,8 +227,8 @@ input:checked + .slider:before {
 }
 
 .setting-button:hover {
-  transition: var(--transition-speed-default);
-  outline: 3px solid var(--settings-button-outline);
+  transition: var(--transition-speed-fast);
+  outline: 4px solid var(--settings-button-outline);
 }
 
 /* 
@@ -237,17 +239,15 @@ input:checked + .slider:before {
 
 ul.tabs li {
   font-weight: 500;
-  background: none;
   color: var(--sat-ids);
   padding: 12px 20px;
-  margin: 10px;
+  margin: 5px;
   border-radius: var(--sat-border-radius);
 }
 
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
-  transition: 90ms;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
@@ -258,8 +258,16 @@ ul.tabs li.current {
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
+ul.tabs li.current i {
+  transition: var(--transition-speed-default);
+  font-size: 16px;
+  background-color: var(--lighter-color);
+  padding: 4px;
+  border-radius: var(--sat-border-radius);
+}
+
 ul.tabs li {
-  font-size: 15px;
+  font-size: 16px;
 }
 .tab-content {
   display: none;
@@ -469,6 +477,7 @@ Currently only images are fully supported. +
   margin: 0px;
   border-radius: 6px !important;
 }
+
 #fav-link a {
   text-decoration: none;
   padding: 10px 10px;
@@ -485,25 +494,22 @@ Currently only images are fully supported. +
 #add-link-form input {
   color: var(--sat-ids);
   margin: 10px 0;
-  padding: 10px;
-  width: 50%;
+  padding: 10px 10px 10px 10px;
   outline: none;
   border: 2px solid var(--add-link-border);
   font-size: 14px;
-  outline: 3px solid var(--sat-search-shortcuts);
 }
+
 #add-link-form input:hover {
-  outline: 3px solid var(--sat-search-bar-hvr);
+  background-color: var(--add-link-border);
   transition: var(--transition-speed-default);
 }
 
 #add-link-form input:focus {
-  outline: 3px solid var(--sat-search-bar-hvr);
   transition: var(--transition-speed-default);
 }
 
-#new-link-button button,
-#add-link-form button {
+#new-link-button button {
   display: block;
   margin-right: 0;
   margin-left: 0;
@@ -512,6 +518,18 @@ Currently only images are fully supported. +
   font-size: 0.9em;
   font-weight: 400;
   width: 100%;
+  color: var(--sat-ids);
+  background: var(--sat-search-shortcuts);
+}
+
+#add-link-form button {
+  display: inline-block;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 10px;
+  margin: 5px;
+  font-size: 0.9em;
+  font-weight: 600;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
@@ -580,11 +598,13 @@ Currently only images are fully supported. +
   margin: 2px;
   border-radius: 20px;
   animation: slide-up-fade-in 0.3s ease;
+  position: relative;
 }
 
 .theme-icon img:hover {
   transition: var(--transition-speed-default);
   background-color: var(--sat-accent-color1);
+  top: -3px;
 }
 
 /* 
@@ -614,11 +634,11 @@ Currently only images are fully supported. +
 */
 
 .save-button {
-  padding: 9px 20px;
+  padding: 9px 11px;
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .save-button:hover {
@@ -647,7 +667,8 @@ Currently only images are fully supported. +
 
 .username-section input {
   background-color: var(--lighter-color);
-  border: 1px solid var(--new-search-bg-hover-effect);
+  padding: 13px !important;
+  font-size: 15px;
 }
 
 .username-section input:focus {
@@ -695,19 +716,16 @@ Currently only images are fully supported. +
   padding: 12px;
   width: 32%;
   border: 1px solid var(--sat-bg);
+  font-weight: 500;
 }
 
 .favorites-search input:hover,
 .favorites-search input:focus {
+  transition: var(--transition-speed-default);
   background-color: var(--sat-search-bar-focus);
   border: 1px solid var(--new-search-bg-hover-effect);
 }
 
-/* Favorites support for images, gifs and more.. */
-#fav-link img {
-  width: 20px;
-  height: 20px;
-  outline: none;
-  vertical-align: middle;
-  margin: 0px;
+.cuteapps:hover {
+  color: var(--for-white); /* force white to fix issues */
 }

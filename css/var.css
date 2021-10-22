@@ -85,7 +85,7 @@ v3.0.0 CSS Core
   --sat-bg: #ffffff; /* Main background */
   --sat-search-shortcuts: #dfdfdf; /* Favorites, app list & search, inputs. */
   --sat-links: #1a1a1a;
-  --sat-txt-selector-clr: #303a58;
+  --sat-txt-selector-clr: #000000;
   --sat-txt-selector-clr-after: #ffffff;
   --sat-setting-bg-color: #eeeeee;
   --sat-setting-bg-effect: #dddddddc;
@@ -94,9 +94,9 @@ v3.0.0 CSS Core
   --sat-tooltip-bg: #c0c0c0;
   --default-font: "Poppins", sans-serif;
   --sat-border-radius: 15px;
-  --gudmrning-txt: linear-gradient(to right, #000046, #1cb5e0);
-  --sat-accent-color1: #017fcd;
-  --moreapps-hovering-clr: #2082cd;
+  --gudmrning-txt: linear-gradient(to right, #3a3a3a, #474747);
+  --sat-accent-color1: #000000;
+  --moreapps-hovering-clr: #000000;
   --favorites-hover: #c4c4c4;
   --for-white: #ffffff;
   --add-link-border: rgb(150, 151, 151);
@@ -368,12 +368,12 @@ h6 {
   padding-top: 0.875rem;
 }
 
-/* line {
+h1 {
   color: var(--sat-heading);
   padding-bottom: 2px;
   margin-bottom: 8px;
   border-bottom: 1px solid var(--sat-search-shortcuts);
-} */
+}
 
 h4,
 h5,
@@ -733,8 +733,7 @@ img {
 .removebtn:hover,
 .snip-wid button:hover,
 .setting-button:hover,
-.app:hover,
-.cuteapps:hover {
+.app:hover {
   color: var(--for-white); /* force white to fix issues */
 }
 
@@ -801,7 +800,6 @@ ul.tabs li,
 
 /* Border radius */
 .search-bar,
-.modal-content,
 .app,
 .tooltiptext,
 #content,

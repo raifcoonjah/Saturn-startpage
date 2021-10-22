@@ -79,7 +79,7 @@
         </li>
       </ul>
 
-      <div id="app-1" class="app-content current slide-up-fade-in">
+      <div id="app-1" class="app-content current">
         <div class="popup">
           <div id="apps">
             <a href="https://github.com">
@@ -113,7 +113,7 @@
         </div>
       </div>
 
-      <div id="app-2" class="app-content slide-up-fade-in">
+      <div id="app-2" class="app-content">
         <div class="popup">
           <div id="apps">
             <a href="https://udemy.com">
@@ -122,12 +122,12 @@
                 <span>Udemy</span>
               </div></a
             >
-            <!-- <a href="http://moodle.rbs.ac.mu/moodle/">
+            <a href="http://moodle.rbs.ac.mu/moodle/">
               <div class="app">
                 <i class="las la-file-alt"></i>
                 <span>Rushm.. Moodle</span>
               </div></a
-            > -->
+            >
             <a href="https://learn-anything.xyz/">
               <div class="app">
                 <i class="lar la-map"></i>
@@ -150,7 +150,7 @@
         </div>
       </div>
 
-      <div id="app-3" class="app-content slide-up-fade-in">
+      <div id="app-3" class="app-content">
         <div class="popup">
           <div class="popup">
             <div id="apps">
@@ -171,7 +171,7 @@
         </div>
       </div>
 
-      <div id="app-4" class="app-content slide-up-fade-in">
+      <div id="app-4" class="app-content">
         <div class="popup">
           <div class="popup">
             <div class="popup">
@@ -210,7 +210,7 @@
         <div class="favorites-search">
           <input
             type="text"
-            placeholder="Search favorites.."
+            placeholder=" Search favorites.."
             class="searchfavorites"
           />
         </div>
@@ -239,7 +239,12 @@
             id="url"
             placeholder="https://example.org"
             autocomplete="off"
-          /><br /><button id="add"><i class="lar la-save"></i> Save</button>
+          /><br /><button id="add" style="background: var(--lighter-color)">
+            <i class="lar la-save"></i> Save
+          </button>
+          <button id="cancel-fav-btn">
+            <i class="las la-times"></i> Cancel
+          </button>
           <h3></h3>
           <p style="text-align: center"><i class="las la-grip-lines"></i></p>
           <div class="side-text">
@@ -283,16 +288,17 @@
               </li>
             </ul>
             <br />
+
             <div id="tab-2" class="tab-content current slide-up-fade-in">
               <div class="settings-background">
                 <h3><i class="las la-user-edit"></i> Username</h3>
-                <p>Change your username to anything you want.</p>
+                <p>Change your username to anything.</p>
                 <div id="popUp" class="username-section">
                   <input
                     type="text"
                     name="setusername"
                     id="userSet"
-                    placeholder="Jatoro Kujo"
+                    placeholder="Jatoro Kujo.."
                   />
                   <br />
                   <button id="save" class="save-button">
@@ -300,12 +306,10 @@
                   </button>
                 </div>
                 <label id="sv-msg"></label>
-              </div>
-              <br />
-              <div class="settings-background">
+                <br />
                 <h3><i class="las la-eye-slash"></i> Hide things</h3>
                 <p>Hide various elements from the main page.</p>
-                <h5>Hide Favorites completely</h5>
+                <h5>Hide Favorites</h5>
                 <p></p>
                 <label class="slider-switch">
                   <input type="checkbox" class="hide-favorite" />
@@ -318,7 +322,6 @@
                   <input type="checkbox" class="hide-search" />
                   <div class="slider round"></div>
                 </label>
-                <br />
               </div>
               <br />
               <div class="settings-background">
@@ -333,23 +336,26 @@
 
           <div id="tab-3" class="tab-content slide-up-fade-in">
             <div class="settings-background">
-              <h3><i class="las la-info"></i> About</h3>
+              <h6>
+                <i class="las la-folder-open"></i> |
+                <i class="las la-cog"></i> Settings /
+                <i class="las la-info-circle"></i> About /
+              </h6>
+              <h3><i class="las la-info-circle"></i> About</h3>
               <p>Version, created by & more..</p>
               <p>
                 Version:
                 <a
                   href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   class="easter-egg1"
-                  title="WARNING: PLS DO NOT PRESS THIS LINK!!!!!!!!!! ok thx "
+                  title="WARNING: if u click this, you're on your own. "
                   >🪐</a
                 >
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.0.1"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.1.0"
                   target="_blank"
-                  >v3.0.1 [Milky Way]
-                  <i class="las la-external-link-alt"></i></a
-                ><br />
-                Saturn UI: v3.0.2021
+                  >v3.1.0 [Milky Way] <i class="las la-external-link-alt"></i
+                ></a>
                 <br />
                 Want to help make saturn better?
                 <a
@@ -386,7 +392,8 @@
               </div>
               <h1></h1>
               <div class="dark-mode-bg5">
-                <h5><i class="lab la-paypal"></i> Support Saturn Startpage</h5>
+                <h3><i class="lab la-paypal"></i> Support Saturn Startpage</h3>
+                <br />
                 <p>
                   Saturn Startpage is free and doesn't have any ads, if it has
                   saved you time or helped you and you'd like to help out,
@@ -404,10 +411,18 @@
           </div>
           <div id="tab-4" class="tab-content slide-up-fade-in">
             <div class="settings-background">
-              <h3><i class="las la-palette"></i> Appearance</h3>
-              <p>Choose how Saturn looks to you.</p>
+              <h6>
+                <i class="las la-folder-open"></i> |
+                <i class="las la-cog"></i> Settings /
+                <i class="las la-pencil-ruler"></i> Customization /
+              </h6>
+              <h3><i class="las la-palette"></i> Theme</h3>
+              <p>
+                Personalize Saturn Startpage with themes to match your style,
+                mood, and personality.
+              </p>
 
-              <h5><i class="las la-sun"></i> Light theme</h5>
+              <p class="theme-title"><i class="las la-sun"></i> Light theme</p>
               <a id="light" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/light-theme.png"
@@ -415,7 +430,7 @@
                   alt="light-icon.png"
               /></a>
               <br />
-              <h5><i class="las la-moon"></i> Dark themes</h5>
+              <p class="theme-title"><i class="las la-moon"></i> Dark themes</p>
               <a id="dark" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/dark.png"
@@ -434,6 +449,14 @@
                   title="RIP Linkin Park"
                   alt="rock-legend.png"
               /></a>
+              <p class="theme-title">
+                <i class="las la-flask"></i>
+                <abbr
+                  title="⚠️ These themes are not finish expect some issues."
+                  >Experimental</abbr
+                >
+                theme
+              </p>
               <a id="dracula_theme" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/dracula-theme.png"
