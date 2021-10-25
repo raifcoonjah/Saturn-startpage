@@ -260,14 +260,15 @@ ul.tabs li.current {
 
 ul.tabs li.current i {
   transition: var(--transition-speed-default);
-  font-size: 16px;
+  font-size: 17px;
   background-color: var(--lighter-color);
   padding: 4px;
-  border-radius: var(--sat-border-radius);
+  border-radius: 10px;
+  color: var(--sat-accent-color1);
 }
 
 ul.tabs li {
-  font-size: 16px;
+  font-size: 17px;
 }
 .tab-content {
   display: none;

@@ -158,7 +158,7 @@ v3.0.0 CSS Core
 .space {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
-  --sat-bg: #0e0e0e; /* Main background */
+  --sat-bg: #0a0a0a; /* Main background */
   --sat-search-shortcuts: #181818; /* Favorites, app list & search, inputs. */
   --sat-links: hsl(0, 0%, 95%); /* Links and stuff */
   --sat-txt-selector-clr: #ffb07d; /* Text selector background color */
@@ -279,6 +279,9 @@ v3.0.0 CSS Core
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
 }
+
+
+/* Monochrome theme */
 
 /* New theme.. */
 /* I will add this later today or tomorrow.*/
