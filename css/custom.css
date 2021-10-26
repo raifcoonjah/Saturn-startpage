@@ -80,3 +80,9 @@ ul.apps-category li.current {
 .app-content {
   animation: fadeIn 0.2s ease;
 }
+
+.lighter_text {
+  color: var(--sat-ids);
+  font-size: 14px;
+  width: 50%;
+}

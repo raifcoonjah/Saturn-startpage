@@ -138,6 +138,27 @@ $(function () {
   });
 });
 
+$(function () {
+  var status = localStorage.getItem("apps_hidden");
+  if (status == "true") {
+    $(".apps_list").css("display", "none");
+    $(".hide-apps-list").attr("checked", true);
+  } else {
+    $(".apps_list").css("display", "block");
+    $(".hide-apps-list").attr("checked", false);
+  }
+  $(".hide-apps-list").click(function () {
+    if (this.checked) {
+      $(".apps_list").hide();
+    } else {
+      $(".apps_list").show();
+    }
+    localStorage.setItem("hide-apps-list", this.checked);
+  });
+});
+
+
+
 //
 // ========
 // + Settings navigation +
