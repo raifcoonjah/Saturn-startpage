@@ -81,8 +81,6 @@ ul.apps-category li.current {
   animation: fadeIn 0.2s ease;
 }
 
-.lighter_text {
-  color: var(--sat-ids);
-  font-size: 14px;
-  width: 50%;
+.fav_title {
+  font-size: 15px !important;
 }

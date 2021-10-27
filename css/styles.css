@@ -494,19 +494,22 @@ Currently only images are fully supported. +
 
 #add-link-form input {
   color: var(--sat-ids);
-  margin: 10px 0;
+  margin: 2px 0;
   padding: 10px 10px 10px 10px;
   outline: none;
   border: 2px solid var(--add-link-border);
   font-size: 14px;
+  border-radius: 12px;
 }
 
 #add-link-form input:hover {
-  background-color: var(--add-link-border);
-  transition: var(--transition-speed-default);
+  background-color: var(--none);
+  border: 2px solid var(--sat-accent-color1);
 }
 
 #add-link-form input:focus {
+  background-color: var(--none);
+  border: 2px solid var(--sat-accent-color1);
   transition: var(--transition-speed-default);
 }
 
@@ -605,7 +608,7 @@ Currently only images are fully supported. +
 .theme-icon img:hover {
   transition: var(--transition-speed-default);
   background-color: var(--sat-accent-color1);
-  top: -3px;
+  top: -4px;
 }
 
 /* 
@@ -639,12 +642,14 @@ Currently only images are fully supported. +
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);
-  font-weight: 500;
+  font-weight: 450;
+  border: 1px solid var(--lighter-color);
 }
 
 .save-button:hover {
   background-color: var(--sat-input-hover);
   transition: var(--transition-speed-default);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 .saved-msg {

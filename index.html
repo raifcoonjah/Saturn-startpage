@@ -232,11 +232,21 @@
               ><i class="las la-times-circle"></i
             ></span>
           </div>
-          <label><i class="las la-heading"></i> Title or icon</label>
+          <label class="fav_title">Title</label>
           <br />
           <input id="title" placeholder="Site title.." autocomplete="off" />
-
-          <br /><label><i class="las la-link"></i> Url</label><br />
+          <br />
+          <label class="fav_title"
+            ><i class="las la-lock"></i> Icon (Beta)</label
+          >
+          <br />
+          <input
+            id="title"
+            placeholder="[DISABLED] Icon URL.."
+            autocomplete="off"
+            disabled
+          />
+          <br /><label class="fav_title">URL</label><br />
           <input
             id="url"
             placeholder="https://example.org"
@@ -311,40 +321,30 @@
                 <br />
                 <h3><i class="las la-eye-slash"></i> Hide things</h3>
                 <p>Hide various elements from the main page.</p>
-                <h4>Hide Favorites</h4>
-                <p class="lighter_text">
-                  This will completely remove favorites from the homescreen
-                  (This will not remove any of your saved favorites, don't
-                  worry.)
-                </p>
+                <h5>Hide Favorites</h5>
                 <p></p>
                 <label class="slider-switch">
                   <input type="checkbox" class="hide-favorite" />
                   <div class="slider round"></div>
                 </label>
                 <br />
-                <h4>Hide Search bar</h4>
-                <p class="lighter_text">
-                  You can hide the search bar if you don't use it.
-                </p>
+                <h5>Hide Search bar</h5>
                 <p></p>
                 <label class="slider-switch">
                   <input type="checkbox" class="hide-search" />
                   <div class="slider round"></div>
                 </label>
                 <br />
-                <h4>Hide Apps list (Beta)</h4>
-                <p class="lighter_text">
-                  If you only use favorites or dislike apps list, you can now
-                  hide it completely.
-                </p>
+                <h5>Hide Apps list (Beta)</h5>
+                <p></p>
                 <label class="slider-switch">
                   <input type="checkbox" class="hide-apps-list" />
                   <div class="slider round"></div>
                 </label>
               </div>
               <br />
-              <h5>Did you know:</h5>
+              <h5><i class="las la-lightbulb"></i> Did you know?</h5>
+              <p></p>
               <div class="settings-background">
                 <h3><i class="las la-search"></i> Change Search</h3>
                 <p>
