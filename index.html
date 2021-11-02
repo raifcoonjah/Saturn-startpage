@@ -82,13 +82,13 @@
           </li>
         </ul>
         <div id="apps_list"></div>
-        <!-- Apps list has been moved over to javascript instead, to make the HTML file lighter-->
+        <!-- Apps list has been moved over to javascript instead (render.js), to make the HTML file lighter -->
       </div>
 
       <br />
       <!-- End of app list -->
 
-      <!-- Favorite Feature 2.1 -->
+      <!-- Favorite Feature v2.1 -->
       <div id="fav-container" class="fav-container">
         <h5 class="section-title"><i class="las la-bookmark"></i> Favorites</h5>
         <br />
@@ -119,22 +119,27 @@
           <br />
           <input id="title" placeholder="Site title.." autocomplete="off" />
           <br />
-          <label class="fav_title"
+          <!-- <label class="fav_title"
             ><i class="las la-lock"></i> Icon (Beta)</label
-          >
-          <br />
+          > -->
+          <!-- <br />
           <input
             id="title"
             placeholder="[DISABLED] Icon URL.."
             autocomplete="off"
             disabled
-          />
-          <br /><label class="fav_title">URL</label><br />
+          /> -->
+          <!-- <br /> -->
+          <label class="fav_title"><i class="las la-link"></i> URL</label><br />
           <input
             id="url"
             placeholder="https://example.org"
             autocomplete="off"
-          /><br /><button id="add" style="background: var(--lighter-color)">
+          /><br /><button
+            id="add"
+            style="background: var(--lighter-color)"
+            class="save-button"
+          >
             <i class="lar la-save"></i> Save
           </button>
           <button id="cancel-fav-btn">
@@ -215,6 +220,7 @@
                 <h3><i class="las la-eye-slash"></i> Hide things</h3>
                 <p>Hide various elements from the main page.</p>
                 <h5>Hide Favorites</h5>
+                <p>Hide favorites, your saved favorites will NOT be removed.</p>
                 <p></p>
                 <label class="slider-switch">
                   <input type="checkbox" class="hide-favorite" />
@@ -222,14 +228,14 @@
                 </label>
                 <br />
                 <h5>Hide Search bar</h5>
-                <p></p>
+                <p>Completely hide the search bar from the home screen.</p>
                 <label class="slider-switch">
                   <input type="checkbox" class="hide-search" />
                   <div class="slider round"></div>
                 </label>
                 <br />
                 <h5>Hide Apps list (Beta)</h5>
-                <p></p>
+                <p>Hide the new Apps list from your home screen.</p>
                 <label class="slider-switch">
                   <input type="checkbox" class="hide-apps-list" />
                   <div class="slider round"></div>

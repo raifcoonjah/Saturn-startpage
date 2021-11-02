@@ -339,6 +339,10 @@ details {
   background-color: var(--lighter-color);
   border-radius: var(--sat-border-radius);
 }
+
+summary:hover {
+  color: var(--sat-accent-color1);
+}
 summary {
   /* Makes the <summary> look more like a "clickable" link with the pointer cursor */
   cursor: pointer;
