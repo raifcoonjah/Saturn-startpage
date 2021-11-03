@@ -83,5 +83,13 @@ ul.apps-category li.current {
 
 .fav_title {
   font-size: 15px !important;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+.fav_title_new {
+  font-weight: 600;
+}
+
+.fav_title_new i {
+  color: var(--sat-accent-color1);
 }
