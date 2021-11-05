@@ -157,6 +157,25 @@ $(function () {
   });
 });
 
+$(function () {
+  var status = localStorage.getItem("didyouknow_hidden");
+  if (status == "true") {
+    $(".didyouknow").css("display", "none");
+    $(".hide-didyouknow").attr("checked", true);
+  } else {
+    $(".didyouknow").css("display", "block");
+    $(".hide-didyouknow").attr("checked", false);
+  }
+  $(".hide-didyou-know").click(function () {
+    if (this.checked) {
+      $(".didyouknow").hide();
+    } else {
+      $(".didyouknow").show();
+    }
+    localStorage.setItem("hide-didyou-know", this.checked);
+  });
+});
+
 //
 // ========
 // + Settings navigation +
