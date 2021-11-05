@@ -263,16 +263,16 @@ const settingAbout = (z) => {
                 <a
                   href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   class="easter-egg1"
-                  title="WARNING: if u click this, you're on your own. "
+                  title="sUSSss!: If you click this, you're on your own. "
                   >🪐</a
                 >
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.1.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.2.0"
                   target="_blank"
                   >v3.2.0 [Milky Way] <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
-                Want to help make saturn better?
+                Help make saturn better
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/projects/1"
                   target="_blank"
@@ -288,18 +288,10 @@ const settingAbout = (z) => {
                         <span>Source Code</span>
                       </div></a
                     >
-                    <a href="https://github.com/mraif13">
+                    <a href="https://www.paypal.com/paypalme/raifs">
                       <div class="app">
-                        <i class="lab la-github"></i>
-                        <span>mraif13 Github</span>
-                      </div></a
-                    >
-                    <a
-                      href="https://github.com/mraif13/Saturn-startpage/blob/Chromium/info.md"
-                    >
-                      <div class="app">
-                        <i class="lab la-chrome"></i>
-                        <span>Chrome version</span>
+                        <i class="lab la-paypal"></i>
+                        <span>Donate</span>
                       </div></a
                     >
                   </div>
@@ -307,20 +299,14 @@ const settingAbout = (z) => {
               </div>
               <h1></h1>
               <div class="dark-mode-bg5">
-                <h3><i class="lab la-paypal"></i> Support Saturn Startpage</h3>
+                <h3>Credits</h3>
                 <br />
                 <p>
-                  Saturn Startpage is free and doesn't have any ads, if it has
-                  saved you time or helped you and you'd like to help out,
-                  Here's my
-                  <a
-                    href="https://www.paypal.com/paypalme/raifs"
-                    target="_blank"
-                    >Paypal <i class="las la-external-link-alt"></i
-                  ></a>
+Icons: <a href="https://icons8.com/line-awesome">Icons8, Line-awesome <i class="las la-external-link-alt"></i
+                ></a> <br/>
+Saturn Icons: <a href="https://icons8.com/icon/u3NV8BcoUqTP/saturn">Icons8, Saturn <i class="las la-external-link-alt"></i
+                ></a><br/>
                 </p>
-
-                <p>- Thanks! <i class="las la-grin-beam"></i></p>
               </div>
             </div>
           </div>`);
