@@ -78,5 +78,18 @@ ul.apps-category li.current {
 }
 
 .app-content {
-  animation: slide-up-fade-in 0.2s ease;
+  animation: fadeIn 0.2s ease;
+}
+
+.fav_title {
+  font-size: 15px !important;
+  font-weight: 600;
+}
+
+.fav_title_new {
+  font-weight: 600;
+}
+
+.fav_title_new i {
+  color: var(--sat-accent-color1);
 }
