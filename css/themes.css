@@ -54,7 +54,7 @@
   --sat-tooltip-bg: #181b22;
   --default-font: "Poppins", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #6eb8f8 100%);
-  --sat-accent-color1: #4facfe;
+  --sat-accent-color1: hsl(208, 67%, 56%);
   --moreapps-hovering-clr: #4190d4;
   --favorites-hover: #232931;
   --for-white: #ffffff;

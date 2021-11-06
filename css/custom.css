@@ -34,7 +34,7 @@ ul.apps-category {
 ul.apps-category li {
   font-weight: 500;
   background: none;
-  color: var(--sat-ids);
+  color: var(--lighter-text-color);
   display: inline-block;
   padding: 6px 9px;
   cursor: pointer;
@@ -43,14 +43,15 @@ ul.apps-category li {
 }
 
 ul.apps-category li:hover {
-  border: 2px solid var(--sat-setting-bg-effect);
-  color: var(--sat-accent-color1);
+  background: var(--sat-search-shortcuts);
+  color: var(--sat-ids);
   transition: var(--transition-speed-fast);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+  font-weight: 600;
 }
 
 ul.apps-category li.current {
-  border: 2px solid var(--sat-setting-bg-effect);
+  background-color: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   font-weight: 600;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);

@@ -297,17 +297,6 @@ const settingAbout = (z) => {
                   </div>
                 </div>
               </div>
-              <h1></h1>
-              <div class="dark-mode-bg5">
-                <h3>Credits</h3>
-                <br />
-                <p>
-Icons: <a href="https://icons8.com/line-awesome">Icons8, Line-awesome <i class="las la-external-link-alt"></i
-                ></a> <br/>
-Saturn Icons: <a href="https://icons8.com/icon/u3NV8BcoUqTP/saturn">Icons8, Saturn <i class="las la-external-link-alt"></i
-                ></a><br/>
-                </p>
-              </div>
             </div>
           </div>`);
 };
