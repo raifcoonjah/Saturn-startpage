@@ -182,7 +182,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  border: 2px solid var(--sat-setting-bg-effect);
+  border: 2px solid var(--lighter-color);
 }
 
 .slider:before {

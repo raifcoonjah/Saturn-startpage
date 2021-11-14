@@ -27,7 +27,7 @@
           <form
             id="search_eng_form"
             method="get"
-            action="https://www.google.com/"
+            action="https://www.google.com/search"
           >
             <a
               href="javascript:void(0)"
@@ -193,6 +193,7 @@
               <li class="tab-link" data-tab="tab-3">
                 <i class="las la-info-circle"></i> About
               </li>
+              <h1></h1>
               <li class="tab-link" data-tab="tab-5">
                 <i class="las la-keyboard"></i> K-Shortcuts
               </li>
@@ -231,33 +232,39 @@
                 <br />
                 <h3><i class="las la-eye-slash"></i> Hide things</h3>
                 <p>Hide various elements from the main page.</p>
-                <h5>Hide Favorites</h5>
-                <p></p>
-                <label class="slider-switch">
-                  <input type="checkbox" class="hide-favorite" />
-                  <div class="slider round"></div>
-                </label>
-                <br />
-                <h5>Hide Search bar</h5>
-                <p></p>
-                <label class="slider-switch">
-                  <input type="checkbox" class="hide-search" />
-                  <div class="slider round"></div>
-                </label>
-                <br />
-                <h5>Hide Apps list</h5>
-                <p></p>
-                <label class="slider-switch">
-                  <input type="checkbox" class="hide-apps-list" />
-                  <div class="slider round"></div>
-                </label>
-                <br />
-                <h5>Hide "Did you section" (Beta)</h5>
-                <p></p>
-                <label class="slider-switch">
-                  <input type="checkbox" class="hide-didyou-know" />
-                  <div class="slider round"></div>
-                </label>
+                <details>
+                  <summary><i class="las la-home"></i> Home</summary>
+                  <h5>Hide Favorites</h5>
+                  <p></p>
+                  <label class="slider-switch">
+                    <input type="checkbox" class="hide-favorite" />
+                    <div class="slider round"></div>
+                  </label>
+                  <br />
+                  <h5>Hide Search bar</h5>
+                  <p></p>
+                  <label class="slider-switch">
+                    <input type="checkbox" class="hide-search" />
+                    <div class="slider round"></div>
+                  </label>
+                  <br />
+                  <h5>Hide Apps list</h5>
+                  <p></p>
+                  <label class="slider-switch">
+                    <input type="checkbox" class="hide-apps-list" />
+                    <div class="slider round"></div>
+                  </label>
+                  <br />
+                </details>
+                <details>
+                  <summary><i class="las la-cog"></i> Settings</summary>
+                  <h5>Hide "Did you section" (Beta)</h5>
+                  <p></p>
+                  <label class="slider-switch">
+                    <input type="checkbox" class="hide-didyou-know" />
+                    <div class="slider round"></div>
+                  </label>
+                </details>
               </div>
               <br />
             </div>
@@ -330,8 +337,11 @@
                 <i class="las la-cog"></i> Settings /
                 <i class="las la-keyboard"></i> K-Shortcuts /
               </h6>
-              <h2>Keyboard Shortcut (Beta)</h2>
-              <p>Get things done quicker by using keyboard shortcuts.</p>
+              <h2>K-Shortcuts (Beta)</h2>
+              <p>
+                K-Shortcuts allows you to use your keyboard to do things, saving
+                you time and effort.
+              </p>
               <h6>Settings shortcuts</h6>
               <p></p>
               <kbd>Esc</kbd> &rarr; Open and close settings.
