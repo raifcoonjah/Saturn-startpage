@@ -267,9 +267,9 @@ const settingAbout = (z) => {
                   >🪐</a
                 >
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.2.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.2.1"
                   target="_blank"
-                  >v3.2.0 [Milky Way] <i class="las la-external-link-alt"></i
+                  >v3.2.1 [Milky Way] <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
