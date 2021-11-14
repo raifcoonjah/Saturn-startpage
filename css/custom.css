@@ -31,7 +31,8 @@ ul.apps-category {
   list-style: none;
 }
 
-ul.apps-category li {
+ul.apps-category li,
+.more-apps {
   font-weight: 500;
   background: none;
   color: var(--lighter-text-color);
@@ -42,7 +43,8 @@ ul.apps-category li {
   border: 2px solid var(--sat-bg);
 }
 
-ul.apps-category li:hover {
+ul.apps-category li:hover,
+.more-apps:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-ids);
   transition: var(--transition-speed-fast);

@@ -47,7 +47,7 @@ const appsList = (x) => {
               >
               <a href="http://moodle.rbs.ac.mu/moodle/">
                 <div class="app">
-                  <i class="las la-file-alt"></i>
+                  <i class="las la-school"></i>
                   <span>Rushm.. Moodle</span>
                 </div></a
               >
@@ -259,7 +259,7 @@ const settingAbout = (z) => {
               <h3><i class="las la-info-circle"></i> About</h3>
               <p>Version, created by & more..</p>
               <p>
-                Version:
+               Version: 
                 <a
                   href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   class="easter-egg1"
@@ -267,9 +267,9 @@ const settingAbout = (z) => {
                   >🪐</a
                 >
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.2.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.3.0"
                   target="_blank"
-                  >v3.2.0 [Milky Way] <i class="las la-external-link-alt"></i
+                  >v3.3.0 [Milky Way] <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -278,7 +278,6 @@ const settingAbout = (z) => {
                   target="_blank"
                   >Contribute <i class="las la-external-link-alt"></i
                 ></a>
-              </p>
               <div class="socials">
                 <div class="popup">
                   <div id="apps">

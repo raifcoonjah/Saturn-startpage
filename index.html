@@ -55,7 +55,11 @@
         </div>
       </div>
 
-      <button class="setting-button" id="trigger" title="Settings">
+      <button
+        class="setting-button"
+        id="trigger"
+        title="Click to open Settings"
+      >
         <i class="las la-cog"></i>
       </button>
 
@@ -77,9 +81,9 @@
           <li class="tab-link" data-tab="app-4">
             <i class="las la-photo-video"></i> Media
           </li>
-          <li class="tab-link" id="navy" title="More apps">
+          <button class="more-apps" id="navy" title="More apps">
             <i class="lab la-buromobelexperte"></i>
-          </li>
+          </button>
         </ul>
         <div id="apps_list"></div>
         <!-- Apps list has been moved over to javascript instead (render.js), to make the HTML file lighter -->
@@ -110,7 +114,7 @@
 
         <!-- Add new link page -->
         <div id="add-link-form">
-          <div id="new-close-fav">
+          <div id="new-close-fav" class="new-fav">
             <span class="new-close-fav"
               ><i class="las la-times-circle"></i
             ></span>
@@ -143,7 +147,7 @@
             style="background: var(--lighter-color)"
             class="save-button"
           >
-            <i class="lar la-save"></i> Save
+            <i class="lar la-save" submit></i> Save
           </button>
           <button id="cancel-fav-btn">
             <i class="las la-times"></i> Cancel
@@ -167,7 +171,7 @@
       </div>
 
       <!-- v3.0 Settings -->
-      <div class="modal">
+      <div class="modal" id="openModal">
         <div class="modal-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
 
@@ -179,15 +183,18 @@
             | Settings<span class="settings-dot">.</span>
           </h3>
           <div class="container">
-            <ul class="tabs">
+            <ul class="tabs" id="tabs">
               <li class="tab-link current" data-tab="tab-2">
                 <i class="las la-cog"></i> General
               </li>
-              <li class="tab-link" data-tab="tab-4">
+              <li class="tab-link" id="tab-link" data-tab="tab-4">
                 <i class="las la-pencil-ruler"></i> Customization
               </li>
               <li class="tab-link" data-tab="tab-3">
                 <i class="las la-info-circle"></i> About
+              </li>
+              <li class="tab-link" data-tab="tab-5">
+                <i class="las la-keyboard"></i> K-Shortcuts
               </li>
             </ul>
             <br />
@@ -207,7 +214,7 @@
               <br />
               <div class="settings-background">
                 <h3><i class="las la-user-edit"></i> Username</h3>
-                <p>Change your username to anything.</p>
+                <p>Set your username to anything.</p>
                 <div id="popUp" class="username-section">
                   <input
                     type="text"
@@ -238,7 +245,7 @@
                   <div class="slider round"></div>
                 </label>
                 <br />
-                <h5>Hide Apps list (Beta)</h5>
+                <h5>Hide Apps list</h5>
                 <p></p>
                 <label class="slider-switch">
                   <input type="checkbox" class="hide-apps-list" />
@@ -300,7 +307,9 @@
               /></a>
               <p class="theme-title">
                 <i class="las la-flask"></i>
-                <abbr title="⚠️ These themes are not finish expect some issues."
+                <abbr
+                  title="⚠️ These themes are not finish expect some issues.
+                - These themes may come and go."
                   >Experimental</abbr
                 >
                 theme
@@ -311,6 +320,29 @@
                   title="Dracula Theme"
                   alt="dracula-theme.png"
               /></a>
+            </div>
+          </div>
+
+          <div id="tab-5" class="tab-content slide-up-fade-in">
+            <div class="settings-background">
+              <h6>
+                <i class="las la-folder-open"></i> |
+                <i class="las la-cog"></i> Settings /
+                <i class="las la-keyboard"></i> K-Shortcuts /
+              </h6>
+              <h2>Keyboard Shortcut (Beta)</h2>
+              <p>Get things done quicker by using keyboard shortcuts.</p>
+              <h6>Settings shortcuts</h6>
+              <p></p>
+              <kbd>Esc</kbd> &rarr; Open and close settings.
+              <br />
+              <h6>More apps shortcuts</h6>
+              <p></p>
+              <kbd>.</kbd> &rarr; Open More apps.
+              <br />
+              <br />
+              <kbd>,</kbd> &rarr; Close More apps.
+              <br />
             </div>
           </div>
         </div>

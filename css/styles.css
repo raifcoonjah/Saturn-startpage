@@ -125,7 +125,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: scale(1.2);
-  transition: visibility 0s linear 100ms, opacity 100ms 0s, transform 100ms;
+  transition: visibility 0s linear 30ms, opacity 30ms 0s, transform 30ms;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -263,7 +263,7 @@ ul.tabs li.current i {
   font-size: 17px;
   background-color: var(--lighter-color);
   padding: 4px;
-  border-radius: 10px;
+  border-radius: var(--sat-border-radius);
   color: var(--sat-accent-color1);
 }
 
@@ -597,18 +597,18 @@ Currently only images are fully supported. +
 */
 
 .theme-icon img {
-  width: 160px;
+  width: 150px;
   padding: 4px;
   margin: 2px;
   border-radius: 20px;
-  animation: slide-up-fade-in 0.3s ease;
+  animation: slide-up-fade-in 0.2s ease;
   position: relative;
 }
 
 .theme-icon img:hover {
   transition: var(--transition-speed-default);
   background-color: var(--sat-accent-color1);
-  top: -4px;
+  top: -5px;
 }
 
 /* 
@@ -719,8 +719,7 @@ Currently only images are fully supported. +
 
 .favorites-search input {
   background: var(--sat-search-shortcuts);
-  padding: 12px;
-  width: 32%;
+  padding: 15px 15px;
   border: 1px solid var(--sat-bg);
   font-weight: 500;
 }
