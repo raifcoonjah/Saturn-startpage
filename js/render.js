@@ -288,12 +288,16 @@ const settingAbout = (z) => {
                         <span>Star on Github</span>
                       </div></a
                     >
-                      <a href="##addsomethinghere..">
+                      <a href="https://github.com/mraif13/Saturn-startpage/tree/master#data-whats-that">
                       <div class="app" id="tab-2" class="tab-content slide-up-fade-in">
                         <i class="las la-user-secret"></i>
                         <span>Privacy</span>
                       </div></a
                     >
+                    <h1></h1>
+                    *Remove this before release* 
+                    <br/>
+                    you're running: DEV, RC2 2021
                   </div>
                 </div>
               </div>
