@@ -333,6 +333,22 @@ ul.tabs li {
   bottom: 108%;
 }
 
+.app-content {
+  animation: fadeIn 0.2s ease;
+}
+
+.app-content {
+  display: none;
+}
+
+.app-content h4 i {
+  color: var(--sat-accent-color1);
+}
+
+.app-content.current {
+  display: inherit;
+}
+
 /* 
 ========
 + Show tooltip on app hover +
@@ -611,6 +627,11 @@ Currently only images are fully supported. +
   top: -5px;
 }
 
+.theme-title {
+  font-weight: 500;
+  margin: 5px;
+}
+
 /* 
 ========
 + Mobile optimizations +
@@ -713,7 +734,7 @@ Currently only images are fully supported. +
 
 /* 
 ========
-+ *NEW* Favorites search feature +
++ Favorites search feature +
 ========
 */
 
@@ -733,4 +754,103 @@ Currently only images are fully supported. +
 
 .cuteapps:hover {
   color: var(--for-white); /* force white to fix issues */
+}
+
+/* 
+========
++ Apps List Category +
+========
+*/
+
+.apps-category {
+  margin-top: 20px;
+}
+ul.apps-category {
+  padding: 0px;
+  list-style: none;
+}
+
+ul.apps-category li,
+.more-apps {
+  font-weight: 500;
+  background: none;
+  color: var(--lighter-text-color);
+  display: inline-block;
+  padding: 6px 9px;
+  cursor: pointer;
+  border-radius: var(--sat-border-radius);
+  border: 2px solid var(--sat-bg);
+}
+
+ul.apps-category li:hover,
+.more-apps:hover {
+  background: var(--sat-search-shortcuts);
+  color: var(--sat-ids);
+  transition: var(--transition-speed-fast);
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+  font-weight: 600;
+}
+
+ul.apps-category li.current {
+  background-color: var(--sat-search-shortcuts);
+  color: var(--sat-accent-color1);
+  font-weight: 600;
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+}
+
+/* 
+========
++ Tabs (Settings navigation) +
+========
+*/
+.tabs {
+  font-size: 15px;
+  margin: 5px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 210px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 75px;
+  border-radius: var(--sat-border-radius);
+}
+
+.tab-content {
+  margin-left: 190px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+/* 
+========
++ Favorites new title +
+========
+*/
+.fav_title {
+  font-size: 15px !important;
+  font-weight: 600;
+}
+
+.fav_title_new {
+  font-weight: 600;
+}
+
+.fav_title_new i {
+  color: var(--sat-accent-color1);
+}
+/* 
+========
++ New About section - simple center +
+========
+*/
+
+.aboutwidgets,
+.new-about,
+.new-about img {
+  text-align: center;
+  font-weight: 500;
+  animation: slide-up-fade-in 0.2s ease;
+}
+.socials .app {
+  border: 1px solid var(--lighter-color);
 }
