@@ -251,25 +251,19 @@ const moreApps = (y) => {
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content slide-up-fade-in">
             <div class="settings-background">
-              <h6>
-                <i class="las la-folder-open"></i> |
-                <i class="las la-cog"></i> Settings /
-                <i class="las la-info-circle"></i> About /
-              </h6>
-              <h3><i class="las la-info-circle"></i> About</h3>
-              <p>Version, created by & more..</p>
-              <p>
-               Version: 
-                <a
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  class="easter-egg1"
-                  title="sUSSss!: If you click this, you're on your own. "
-                  >🪐</a
-                >
+              <h3 style="text-align:center;padding:15px;">About</h3>
+              <p class="new-about">
+              <img
+                  src="/img/about-logo.png"
+                  title="Saturn Logo"
+                  alt="Saturn-logo.png"
+                  /> 
+               <br/>
+                Saturn version:
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.3.0"
                   target="_blank"
-                  >v3.3.0 [Milky Way] <i class="las la-external-link-alt"></i
+                  >v3.3.0 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -278,19 +272,26 @@ const settingAbout = (z) => {
                   target="_blank"
                   >Contribute <i class="las la-external-link-alt"></i
                 ></a>
+                </p>
               <div class="socials">
-                <div class="popup">
+                <div class="popup aboutwidgets">
                   <div id="apps">
                     <a href="https://github.com/mraif13/saturn-startpage">
                       <div class="app">
                         <i class="las la-code"></i>
-                        <span>Source Code</span>
+                        <span>Source code</span>
                       </div></a
                     >
-                    <a href="https://www.paypal.com/paypalme/raifs">
+                      <a href="https://github.com/mraif13/saturn-startpage/">
                       <div class="app">
-                        <i class="lab la-paypal"></i>
-                        <span>Donate</span>
+                        <i class="lar la-star"></i>
+                        <span>Star on Github</span>
+                      </div></a
+                    >
+                      <a href="##addsomethinghere..">
+                      <div class="app" id="tab-2" class="tab-content slide-up-fade-in">
+                        <i class="las la-user-secret"></i>
+                        <span>Privacy</span>
                       </div></a
                     >
                   </div>

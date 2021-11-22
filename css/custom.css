@@ -96,3 +96,13 @@ ul.apps-category li.current {
 .fav_title_new i {
   color: var(--sat-accent-color1);
 }
+
+.new-about,
+.new-about img {
+  text-align: center;
+  font-weight: 500;
+}
+
+.aboutwidgets {
+  text-align: center;
+}
