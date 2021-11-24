@@ -10,19 +10,3 @@ document.body.addEventListener("keydown", function () {
     opnSetting.click();
   }
 });
-
-var openNavy = document.querySelector("#navyclose");
-document.body.addEventListener("keydown", function () {
-  if (event.keyCode == 188) {
-    // ,
-    openNavy.click();
-  }
-});
-
-var closeNavy = document.querySelector("#navy");
-document.body.addEventListener("keydown", function () {
-  if (event.keyCode == 190) {
-    // .
-    closeNavy.click();
-  }
-});
