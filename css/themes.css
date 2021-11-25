@@ -128,7 +128,7 @@
 .linkin-park {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: url(/img/rock-legend-bg.png);
+  --sat-bg: url(/img/image.jpg);
   --sat-search-shortcuts: #181818f5;
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: #686868;
@@ -153,48 +153,6 @@
   --new-search-bg-hover-effect: #2e2e2e;
   --sat-border-radius: 15px;
   --lighter-color: #1f1f1f; /* Every that needs a light background color */
-
-  /* Multiple transition speeds */
-  --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.2s;
-  --transition-speed-slow: 0.3s;
-}
-
-/* Dracula theme (BETA) */
-
-.dracula_theme {
-  --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
-  --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
-  --sat-bg: #282a36; /* Main background */
-  --sat-search-shortcuts: #333646; /* Favorites, app list & search, inputs. */
-  --sat-links: hsl(0, 0%, 95%); /* Links and stuff */
-  --sat-txt-selector-clr: #bd93f9; /* Text selector background color */
-  --sat-txt-selector-clr-after: #ffffff; /* Text selector color */
-  --sat-setting-bg-color: #282a36; /* Settings background color */
-  --sat-setting-bg-effect: #333646; /* Settings options background color */
-  --sat-input-hover: #282a36;
-  --sat-search-bar-focus: #333646;
-  --default-font: "Poppins", sans-serif;
-  --gudmrning-txt: linear-gradient(to right, #bd93f9 0%, #754dac 100%);
-  --sat-accent-color1: #bd93f9;
-  --moreapps-hovering-clr: #bd93f9;
-  --favorites-hover: #44485e;
-  --for-white: #ffffff;
-  --settings-warning-bg: rgba(255, 255, 0, 0.075);
-  --add-link-border: #44485e; /* Favorite input border color */
-  --delete-warning-bg: rgba(
-    197,
-    42,
-    42,
-    0.76
-  ); /* Favorite delete button color */
-  --switch-color-bg: #44485e;
-  --switch-color-bg-after: #bd93f9;
-  --switch-color-bg: #44485e;
-  --settings-button-outline: #44485e; /* The outline color on the open settings button */
-  --new-search-bg-hover-effect: #44485e; /* New search hover color */
-  --sat-border-radius: 15px;
-  --lighter-color: #3a3d4e; /* Every that needs a light background color */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;

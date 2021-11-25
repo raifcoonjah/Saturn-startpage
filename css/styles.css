@@ -172,7 +172,7 @@ body {
 }
 .slider:hover {
   transition: var(--transition-speed-default);
-  border: 2px solid var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 .slider {
@@ -182,20 +182,21 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  border: 2px solid var(--lighter-color);
+  border: 1px solid var(--switch-color-bg);
 }
 
 .slider:before {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   content: "";
   left: 5px;
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   padding: 12px 12px;
 }
 
 input:checked + .slider {
   background: var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 input:checked + .slider:before {
@@ -617,7 +618,6 @@ Currently only images are fully supported. +
   padding: 4px;
   margin: 2px;
   border-radius: 20px;
-  animation: slide-up-fade-in 0.2s ease;
   position: relative;
 }
 
@@ -806,8 +806,6 @@ ul.apps-category li.current {
 .tabs {
   font-size: 15px;
   margin: 5px;
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 210px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -849,7 +847,6 @@ ul.apps-category li.current {
 .new-about img {
   text-align: center;
   font-weight: 500;
-  animation: slide-up-fade-in 0.2s ease;
 }
 .socials .app {
   border: 1px solid var(--lighter-color);

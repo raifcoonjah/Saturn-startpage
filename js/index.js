@@ -237,7 +237,6 @@ darkButton.onclick = () => {
   body.classList.replace("light", "dark");
   body.classList.replace("space", "dark");
   body.classList.replace("linkin-park", "dark");
-  body.classList.replace("dracula_theme", "dark");
   localStorage.setItem("theme", "dark");
 };
 
@@ -247,7 +246,6 @@ lightButton.onclick = () => {
   body.classList.replace("dark", "light");
   body.classList.replace("space", "light");
   body.classList.replace("linkin-park", "light");
-  body.classList.replace("dracula_theme", "light");
   localStorage.setItem("theme", "light");
 };
 
@@ -257,7 +255,6 @@ spaceButton.onclick = () => {
   body.classList.replace("dark", "space");
   body.classList.replace("light", "space");
   body.classList.replace("linkin-park", "space");
-  body.classList.replace("dracula_theme", "space");
   localStorage.setItem("theme", "space");
 };
 
@@ -266,18 +263,7 @@ linkinParkButton.onclick = () => {
   body.classList.replace("dark", "linkin-park");
   body.classList.replace("light", "linkin-park");
   body.classList.replace("space", "linkin-park");
-  body.classList.replace("dracula_theme", "linkin-park");
   localStorage.setItem("theme", "linkin-park");
-};
-
-// Dracula theme
-
-dracula_themeButton.onclick = () => {
-  body.classList.replace("dark", "dracula_theme");
-  body.classList.replace("light", "dracula_theme");
-  body.classList.replace("space", "dracula_theme");
-  body.classList.replace("linkin-park", "dracula_theme");
-  localStorage.setItem("theme", "dracula_theme");
 };
 
 //

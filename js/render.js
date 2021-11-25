@@ -254,7 +254,7 @@ const settingAbout = (z) => {
               <h3 style="text-align:center;padding:15px;">About</h3>
               <p class="new-about">
               <img
-                  src="/img/about-logo.png"
+                  src="/img/dynamic-icon-big.png"
                   title="Saturn Logo"
                   alt="Saturn-logo.png"
                   /> 
