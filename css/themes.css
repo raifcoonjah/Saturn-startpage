@@ -4,8 +4,8 @@
 .light {
   --sat-heading: #000000; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
-  --sat-bg: #ffffff; /* Main background */
-  --sat-search-shortcuts: #dfdfdf; /* Favorites, app list & search, inputs. */
+  --sat-bg: #f9f9fb; /* Main background */
+  --sat-search-shortcuts: #e6e6e6; /* Favorites, app list & search, inputs. */
   --sat-links: #1a1a1a;
   --sat-txt-selector-clr: #000000;
   --sat-txt-selector-clr-after: #ffffff;
@@ -43,7 +43,7 @@
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
   --sat-bg: #0c0d11;
-  --sat-search-shortcuts: #13151b;
+  --sat-search-shortcuts: #15181f;
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: #262a36;
   --sat-txt-selector-clr-after: #ffffff;
@@ -53,7 +53,7 @@
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #181b22;
   --default-font: "Poppins", sans-serif;
-  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #6eb8f8 100%);
+  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
   --sat-accent-color1: hsl(208, 67%, 56%);
   --moreapps-hovering-clr: #4190d4;
   --favorites-hover: #232931;
@@ -128,7 +128,7 @@
 .linkin-park {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: url(/img/image.jpg);
+  --sat-bg: url(/img/rock-legend-bg.png);
   --sat-search-shortcuts: #181818f5;
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: #686868;

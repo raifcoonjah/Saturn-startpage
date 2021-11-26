@@ -116,7 +116,7 @@ body {
 */
 
 .modal {
-  background-color: #15181f8a;
+  background-color: #15181f42;
   position: fixed;
   left: 0;
   top: 0;
@@ -219,9 +219,10 @@ input:checked + .slider:before {
 .setting-button {
   outline: none;
   padding: 10px 10px;
-  border-radius: 12px;
+  border-radius: 16px !important;
   float: right;
   outline: 2px solid var(--sat-bg);
+  border: 4px solid var(--sat-bg);
 }
 .setting-button i {
   font-size: 1.2rem;
@@ -229,7 +230,7 @@ input:checked + .slider:before {
 
 .setting-button:hover {
   transition: var(--transition-speed-fast);
-  outline: 4px solid var(--settings-button-outline);
+  border: 4px solid var(--settings-button-outline);
 }
 
 /* 
@@ -264,7 +265,7 @@ ul.tabs li.current i {
   font-size: 17px;
   background-color: var(--lighter-color);
   padding: 4px;
-  border-radius: var(--sat-border-radius);
+  border-radius: 10px;
   color: var(--sat-accent-color1);
 }
 
@@ -615,7 +616,8 @@ Currently only images are fully supported. +
 
 .theme-icon img {
   width: 150px;
-  padding: 4px;
+  height: 75px;
+  padding: 3px;
   margin: 2px;
   border-radius: 20px;
   position: relative;
@@ -624,7 +626,7 @@ Currently only images are fully supported. +
 .theme-icon img:hover {
   transition: var(--transition-speed-default);
   background-color: var(--sat-accent-color1);
-  top: -5px;
+  top: -4px;
 }
 
 .theme-title {
@@ -694,8 +696,9 @@ Currently only images are fully supported. +
 
 .username-section input {
   background-color: var(--lighter-color);
-  padding: 13px !important;
+  padding: 13px 10px !important;
   font-size: 15px;
+  border: 2px solid var(--sat-search-shortcuts);
 }
 
 .username-section input:focus {
@@ -740,8 +743,7 @@ Currently only images are fully supported. +
 
 .favorites-search input {
   background: var(--sat-search-shortcuts);
-  padding: 15px 15px;
-  border: 1px solid var(--sat-bg);
+  padding: 13px 10px;
   font-weight: 500;
 }
 
@@ -749,7 +751,6 @@ Currently only images are fully supported. +
 .favorites-search input:focus {
   transition: var(--transition-speed-default);
   background-color: var(--sat-search-bar-focus);
-  border: 1px solid var(--new-search-bg-hover-effect);
 }
 
 .cuteapps:hover {
