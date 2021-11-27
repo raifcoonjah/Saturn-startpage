@@ -300,12 +300,10 @@ kbd,
 pre {
   /* The main preformatted style. This is changed slightly across different cases. */
   background: var(--sat-search-bar-focus);
-  border-radius: var(--sat-border-radius);
-  padding: 10px 5px;
+  padding: 10px 8px;
   font-size: 0.9rem;
-  border-radius: 5px;
+  border-radius: 8px;
 }
-
 pre {
   padding: 1rem 1.4rem;
   max-width: 100%;

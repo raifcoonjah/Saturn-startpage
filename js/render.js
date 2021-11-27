@@ -47,7 +47,7 @@ const appsList = (x) => {
               >
               <a href="http://moodle.rbs.ac.mu/moodle/">
                 <div class="app">
-                  <i class="las la-file-alt"></i>
+                  <i class="las la-school"></i>
                   <span>Rushm.. Moodle</span>
                 </div></a
               >
@@ -251,25 +251,19 @@ const moreApps = (y) => {
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content slide-up-fade-in">
             <div class="settings-background">
-              <h6>
-                <i class="las la-folder-open"></i> |
-                <i class="las la-cog"></i> Settings /
-                <i class="las la-info-circle"></i> About /
-              </h6>
-              <h3><i class="las la-info-circle"></i> About</h3>
-              <p>Version, created by & more..</p>
-              <p>
-                Version:
+              <h3 style="text-align:center;padding:15px;">About</h3>
+              <p class="new-about">
+              <img
+                  src="/img/dynamic-icon-big.png"
+                  title="Saturn Logo"
+                  alt="Saturn-logo.png"
+                  /> 
+               <br/>
+                Saturn version:
                 <a
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  class="easter-egg1"
-                  title="sUSSss!: If you click this, you're on your own. "
-                  >🪐</a
-                >
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.2.1"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.3.0"
                   target="_blank"
-                  >v3.2.1 [Milky Way] <i class="las la-external-link-alt"></i
+                  >v3.3.0 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -278,25 +272,30 @@ const settingAbout = (z) => {
                   target="_blank"
                   >Contribute <i class="las la-external-link-alt"></i
                 ></a>
-              </p>
+                </p>
               <div class="socials">
-                <div class="popup">
+                <div class="popup aboutwidgets">
                   <div id="apps">
                     <a href="https://github.com/mraif13/saturn-startpage">
                       <div class="app">
                         <i class="las la-code"></i>
-                        <span>Source Code</span>
+                        <span>Source code</span>
                       </div></a
                     >
-                    <a href="https://www.paypal.com/paypalme/raifs">
+                      <a href="https://github.com/mraif13/saturn-startpage/">
                       <div class="app">
-                        <i class="lab la-paypal"></i>
-                        <span>Donate</span>
+                        <i class="lar la-star"></i>
+                        <span>Star on Github</span>
+                      </div></a
+                    >
+                      <a href="https://github.com/mraif13/Saturn-startpage/tree/master#data-whats-that">
+                      <div class="app" id="tab-2" class="tab-content slide-up-fade-in">
+                        <i class="las la-user-secret"></i>
+                        <span>Privacy</span>
                       </div></a
                     >
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>`);

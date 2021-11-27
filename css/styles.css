@@ -116,7 +116,7 @@ body {
 */
 
 .modal {
-  background-color: #15181f8a;
+  background-color: #15181f42;
   position: fixed;
   left: 0;
   top: 0;
@@ -125,7 +125,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: scale(1.2);
-  transition: visibility 0s linear 100ms, opacity 100ms 0s, transform 100ms;
+  transition: visibility 0s linear 30ms, opacity 30ms 0s, transform 30ms;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -172,7 +172,7 @@ body {
 }
 .slider:hover {
   transition: var(--transition-speed-default);
-  border: 2px solid var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 .slider {
@@ -182,20 +182,21 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  border: 2px solid var(--sat-setting-bg-effect);
+  border: 1px solid var(--switch-color-bg);
 }
 
 .slider:before {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   content: "";
   left: 5px;
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   padding: 12px 12px;
 }
 
 input:checked + .slider {
   background: var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 input:checked + .slider:before {
@@ -218,9 +219,10 @@ input:checked + .slider:before {
 .setting-button {
   outline: none;
   padding: 10px 10px;
-  border-radius: 12px;
+  border-radius: 16px !important;
   float: right;
   outline: 2px solid var(--sat-bg);
+  border: 4px solid var(--sat-bg);
 }
 .setting-button i {
   font-size: 1.2rem;
@@ -228,7 +230,7 @@ input:checked + .slider:before {
 
 .setting-button:hover {
   transition: var(--transition-speed-fast);
-  outline: 4px solid var(--settings-button-outline);
+  border: 4px solid var(--settings-button-outline);
 }
 
 /* 
@@ -331,6 +333,22 @@ ul.tabs li {
 .app i {
   position: relative;
   bottom: 108%;
+}
+
+.app-content {
+  animation: fadeIn 0.2s ease;
+}
+
+.app-content {
+  display: none;
+}
+
+.app-content h4 i {
+  color: var(--sat-accent-color1);
+}
+
+.app-content.current {
+  display: inherit;
 }
 
 /* 
@@ -597,11 +615,11 @@ Currently only images are fully supported. +
 */
 
 .theme-icon img {
-  width: 160px;
-  padding: 4px;
+  width: 150px;
+  height: 75px;
+  padding: 3px;
   margin: 2px;
   border-radius: 20px;
-  animation: slide-up-fade-in 0.3s ease;
   position: relative;
 }
 
@@ -609,6 +627,11 @@ Currently only images are fully supported. +
   transition: var(--transition-speed-default);
   background-color: var(--sat-accent-color1);
   top: -4px;
+}
+
+.theme-title {
+  font-weight: 500;
+  margin: 5px;
 }
 
 /* 
@@ -673,8 +696,9 @@ Currently only images are fully supported. +
 
 .username-section input {
   background-color: var(--lighter-color);
-  padding: 13px !important;
+  padding: 13px 10px !important;
   font-size: 15px;
+  border: 2px solid var(--sat-search-shortcuts);
 }
 
 .username-section input:focus {
@@ -713,15 +737,13 @@ Currently only images are fully supported. +
 
 /* 
 ========
-+ *NEW* Favorites search feature +
++ Favorites search feature +
 ========
 */
 
 .favorites-search input {
   background: var(--sat-search-shortcuts);
-  padding: 12px;
-  width: 32%;
-  border: 1px solid var(--sat-bg);
+  padding: 13px 10px;
   font-weight: 500;
 }
 
@@ -729,9 +751,104 @@ Currently only images are fully supported. +
 .favorites-search input:focus {
   transition: var(--transition-speed-default);
   background-color: var(--sat-search-bar-focus);
-  border: 1px solid var(--new-search-bg-hover-effect);
 }
 
 .cuteapps:hover {
   color: var(--for-white); /* force white to fix issues */
+}
+
+/* 
+========
++ Apps List Category +
+========
+*/
+
+.apps-category {
+  margin-top: 20px;
+}
+ul.apps-category {
+  padding: 0px;
+  list-style: none;
+}
+
+ul.apps-category li,
+.more-apps {
+  font-weight: 500;
+  background: none;
+  color: var(--lighter-text-color);
+  display: inline-block;
+  padding: 6px 9px;
+  cursor: pointer;
+  border-radius: var(--sat-border-radius);
+  border: 2px solid var(--sat-bg);
+}
+
+ul.apps-category li:hover,
+.more-apps:hover {
+  background: var(--sat-search-shortcuts);
+  color: var(--sat-ids);
+  transition: var(--transition-speed-fast);
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+  font-weight: 600;
+}
+
+ul.apps-category li.current {
+  background-color: var(--sat-search-shortcuts);
+  color: var(--sat-accent-color1);
+  font-weight: 600;
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+}
+
+/* 
+========
++ Tabs (Settings navigation) +
+========
+*/
+.tabs {
+  font-size: 15px;
+  margin: 5px;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 75px;
+  border-radius: var(--sat-border-radius);
+}
+
+.tab-content {
+  margin-left: 190px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+/* 
+========
++ Favorites new title +
+========
+*/
+.fav_title {
+  font-size: 15px !important;
+  font-weight: 600;
+}
+
+.fav_title_new {
+  font-weight: 600;
+}
+
+.fav_title_new i {
+  color: var(--sat-accent-color1);
+}
+/* 
+========
++ New About section - simple center +
+========
+*/
+
+.aboutwidgets,
+.new-about,
+.new-about img {
+  text-align: center;
+  font-weight: 500;
+}
+.socials .app {
+  border: 1px solid var(--lighter-color);
 }

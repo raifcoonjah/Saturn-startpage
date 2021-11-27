@@ -157,6 +157,25 @@ $(function () {
   });
 });
 
+$(function () {
+  var status = localStorage.getItem("didyouknow_hidden");
+  if (status == "true") {
+    $(".didyouknow").css("display", "none");
+    $(".hide-didyouknow").attr("checked", true);
+  } else {
+    $(".didyouknow").css("display", "block");
+    $(".hide-didyouknow").attr("checked", false);
+  }
+  $(".hide-didyou-know").click(function () {
+    if (this.checked) {
+      $(".didyouknow").hide();
+    } else {
+      $(".didyouknow").show();
+    }
+    localStorage.setItem("hide-didyou-know", this.checked);
+  });
+});
+
 //
 // ========
 // + Settings navigation +
@@ -190,7 +209,7 @@ $(document).ready(function () {
     $("#" + tab_id).addClass("current");
   });
 });
-
+//
 //
 // ========
 // + Saturn's theme engine v2.0-m&ms +
@@ -201,7 +220,7 @@ const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
 const spaceButton = document.getElementById("space");
 const linkinParkButton = document.getElementById("linkin-park");
-const dracula_themeButton = document.getElementById("dracula_theme");
+// const darkSpace_themeButton = document.getElementById("darkSpace");
 const body = document.body;
 
 // Apply the cached theme on reload
@@ -218,7 +237,7 @@ darkButton.onclick = () => {
   body.classList.replace("light", "dark");
   body.classList.replace("space", "dark");
   body.classList.replace("linkin-park", "dark");
-  body.classList.replace("dracula_theme", "dark");
+  // body.classList.replace("darkSpace", "dark");
   localStorage.setItem("theme", "dark");
 };
 
@@ -228,7 +247,7 @@ lightButton.onclick = () => {
   body.classList.replace("dark", "light");
   body.classList.replace("space", "light");
   body.classList.replace("linkin-park", "light");
-  body.classList.replace("dracula_theme", "light");
+  // body.classList.replace("darkSpace", "light");
   localStorage.setItem("theme", "light");
 };
 
@@ -238,7 +257,7 @@ spaceButton.onclick = () => {
   body.classList.replace("dark", "space");
   body.classList.replace("light", "space");
   body.classList.replace("linkin-park", "space");
-  body.classList.replace("dracula_theme", "space");
+  // body.classList.replace("darkSpace", "space");
   localStorage.setItem("theme", "space");
 };
 
@@ -247,19 +266,19 @@ linkinParkButton.onclick = () => {
   body.classList.replace("dark", "linkin-park");
   body.classList.replace("light", "linkin-park");
   body.classList.replace("space", "linkin-park");
-  body.classList.replace("dracula_theme", "linkin-park");
+  // body.classList.replace("darkSpace", "linkin-park");
   localStorage.setItem("theme", "linkin-park");
 };
 
 // Dracula theme
 
-dracula_themeButton.onclick = () => {
-  body.classList.replace("dark", "dracula_theme");
-  body.classList.replace("light", "dracula_theme");
-  body.classList.replace("space", "dracula_theme");
-  body.classList.replace("linkin-park", "dracula_theme");
-  localStorage.setItem("theme", "dracula_theme");
-};
+// darkSpace_themeButton.onclick = () => {
+//   body.classList.replace("dark", "darkSpace");
+//   body.classList.replace("light", "darkSpace");
+//   body.classList.replace("space", "darkSpace");
+//   body.classList.replace("linkin-park", "darkSpace");
+//   localStorage.setItem("theme", "darkSpace");
+// };
 
 //
 // ========

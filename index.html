@@ -1,5 +1,3 @@
-<!-- What are you looking for? Easter Eggs ()  -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -55,7 +53,11 @@
         </div>
       </div>
 
-      <button class="setting-button" id="trigger" title="Settings">
+      <button
+        class="setting-button"
+        id="trigger"
+        title="Click to open Settings"
+      >
         <i class="las la-cog"></i>
       </button>
 
@@ -77,9 +79,9 @@
           <li class="tab-link" data-tab="app-4">
             <i class="las la-photo-video"></i> Media
           </li>
-          <li class="tab-link" id="navy" title="More apps">
+          <button class="more-apps" id="navy" title="More apps">
             <i class="lab la-buromobelexperte"></i>
-          </li>
+          </button>
         </ul>
         <div id="apps_list"></div>
         <!-- Apps list has been moved over to javascript instead (render.js), to make the HTML file lighter -->
@@ -110,42 +112,35 @@
 
         <!-- Add new link page -->
         <div id="add-link-form">
-          <div id="new-close-fav">
+          <div id="new-close-fav" class="new-fav">
             <span class="new-close-fav"
               ><i class="las la-times-circle"></i
             ></span>
           </div>
-          <h5 class="fav_title_new">✨ New favorite</h5>
+          <h5 class="fav_title_new">✨ Add favorite</h5>
           <h1></h1>
           <label class="fav_title">Title</label>
           <br />
           <input id="title" placeholder="Enter a title" autocomplete="off" />
           <br />
-          <!-- <label class="fav_title"
-            ><i class="las la-lock"></i> Icon (Beta)</label
-          > -->
-          <!-- <br />
-          <input
-            id="title"
-            placeholder="[DISABLED] Icon URL.."
-            autocomplete="off"
-            disabled
-          /> -->
-          <!-- <br /> -->
           <br />
-          <label class="fav_title"><i class="las la-link"></i> URL</label><br />
+          <label class="fav_title"><i class="las la-link"></i>URL</label><br />
           <input
             id="url"
             placeholder="Type or paste a URL"
             autocomplete="off"
-          /><br /><button
+          />
+
+          <br />
+          <br />
+          <button
             id="add"
             style="background: var(--lighter-color)"
             class="save-button"
           >
             <i class="lar la-save"></i> Save
           </button>
-          <button id="cancel-fav-btn">
+          <button id="cancel-fav-btn" class="cancel-fav-btn">
             <i class="las la-times"></i> Cancel
           </button>
           <h3></h3>
@@ -153,9 +148,10 @@
           <div class="side-text">
             <details>
               <summary>
-                <i class="lar la-question-circle"></i> Need help?
+                <i class="lar la-question-circle"></i> New user?
               </summary>
-              <i class="las la-thumbtack"></i> Learn everything about favorites:
+              <i class="las la-thumbtack"></i> Before using favorites, learn the
+              basics:
               <a
                 href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
                 target="_blank"
@@ -167,7 +163,7 @@
       </div>
 
       <!-- v3.0 Settings -->
-      <div class="modal">
+      <div class="modal" id="openModal">
         <div class="modal-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
 
@@ -179,33 +175,39 @@
             | Settings<span class="settings-dot">.</span>
           </h3>
           <div class="container">
-            <ul class="tabs">
+            <ul class="tabs" id="tabs">
               <li class="tab-link current" data-tab="tab-2">
                 <i class="las la-cog"></i> General
               </li>
-              <li class="tab-link" data-tab="tab-4">
+              <li class="tab-link" id="tab-link" data-tab="tab-4">
                 <i class="las la-pencil-ruler"></i> Customization
               </li>
               <li class="tab-link" data-tab="tab-3">
                 <i class="las la-info-circle"></i> About
               </li>
+              <h1></h1>
+              <li class="tab-link" data-tab="tab-5">
+                <i class="las la-keyboard"></i> K-Shortcuts
+              </li>
             </ul>
             <br />
 
             <div id="tab-2" class="tab-content current slide-up-fade-in">
-              <h5><i class="las la-lightbulb"></i> Did you know?</h5>
-              <p></p>
-              <div class="settings-background">
-                <h3><i class="las la-search"></i> Change Search</h3>
-                <p>
-                  You can easily change the search provider by clicking on the
-                  search engine icon found in the search bar.
-                </p>
+              <div class="didyouknow" id="didyouknow">
+                <h5><i class="las la-lightbulb"></i> Did you know?</h5>
+                <p></p>
+                <div class="settings-background">
+                  <h3><i class="las la-search"></i> Change Search</h3>
+                  <p>
+                    You can easily change the search provider by clicking on the
+                    search engine icon found in the search bar.
+                  </p>
+                </div>
               </div>
               <br />
               <div class="settings-background">
                 <h3><i class="las la-user-edit"></i> Username</h3>
-                <p>Change your username to anything.</p>
+                <p>Set your username to anything.</p>
                 <div id="popUp" class="username-section">
                   <input
                     type="text"
@@ -222,26 +224,39 @@
                 <br />
                 <h3><i class="las la-eye-slash"></i> Hide things</h3>
                 <p>Hide various elements from the main page.</p>
-                <h5>Hide Favorites</h5>
-                <p></p>
-                <label class="slider-switch">
-                  <input type="checkbox" class="hide-favorite" />
-                  <div class="slider round"></div>
-                </label>
-                <br />
-                <h5>Hide Search bar</h5>
-                <p></p>
-                <label class="slider-switch">
-                  <input type="checkbox" class="hide-search" />
-                  <div class="slider round"></div>
-                </label>
-                <br />
-                <h5>Hide Apps list (Beta)</h5>
-                <p></p>
-                <label class="slider-switch">
-                  <input type="checkbox" class="hide-apps-list" />
-                  <div class="slider round"></div>
-                </label>
+                <details>
+                  <summary><i class="las la-home"></i> Home</summary>
+                  <h5>Hide Favorites</h5>
+                  <p>This will not remove your stored favorites.</p>
+                  <label class="slider-switch">
+                    <input type="checkbox" class="hide-favorite" />
+                    <div class="slider round"></div>
+                  </label>
+                  <br />
+                  <h5>Hide Search bar</h5>
+                  <p></p>
+                  <label class="slider-switch">
+                    <input type="checkbox" class="hide-search" />
+                    <div class="slider round"></div>
+                  </label>
+                  <br />
+                  <h5>Hide Apps list</h5>
+                  <p></p>
+                  <label class="slider-switch">
+                    <input type="checkbox" class="hide-apps-list" />
+                    <div class="slider round"></div>
+                  </label>
+                  <br />
+                </details>
+                <details>
+                  <summary><i class="las la-cog"></i> Settings</summary>
+                  <h5>Hide "Did you section" (Beta)</h5>
+                  <p></p>
+                  <label class="slider-switch">
+                    <input type="checkbox" class="hide-didyou-know" />
+                    <div class="slider round"></div>
+                  </label>
+                </details>
               </div>
               <br />
             </div>
@@ -251,11 +266,6 @@
 
           <div id="tab-4" class="tab-content slide-up-fade-in">
             <div class="settings-background">
-              <h6>
-                <i class="las la-folder-open"></i> |
-                <i class="las la-cog"></i> Settings /
-                <i class="las la-pencil-ruler"></i> Customization /
-              </h6>
               <h3><i class="las la-palette"></i> Theme</h3>
               <p>
                 Personalize Saturn Startpage with themes to match your style,
@@ -283,25 +293,33 @@
                   title="Material-ish Theme"
                   alt="sexy-contrast.png"
               /></a>
+              <p class="theme-title">
+                <i class="las la-flask"></i>
+                <abbr
+                  title="⚠️ Try out new themes coming to saturn in the future, expect bugs and minor UI glitches. "
+                  >Experimental</abbr
+                >
+                theme
+              </p>
               <a id="linkin-park" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/rock-legend.png"
                   title="Linkin Park Theme"
                   alt="rock-legend.png"
               /></a>
-              <p class="theme-title">
-                <i class="las la-flask"></i>
-                <abbr title="⚠️ These themes are not finish expect some issues."
-                  >Experimental</abbr
-                >
-                theme
+            </div>
+          </div>
+
+          <div id="tab-5" class="tab-content slide-up-fade-in">
+            <div class="settings-background">
+              <h2>K-Shortcuts</h2>
+              <p>
+                K-Shortcuts allows you to use your keyboard to do things, saving
+                you time and effort.
               </p>
-              <a id="dracula_theme" href="#" class="theme-icon"
-                ><img
-                  src="/img/themes/dracula-theme.png"
-                  title="Dracula Theme"
-                  alt="dracula-theme.png"
-              /></a>
+              <h6>Settings shortcuts</h6>
+              <p></p>
+              <kbd>Esc</kbd> &rarr; Open and close settings
             </div>
           </div>
         </div>
