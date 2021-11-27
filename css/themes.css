@@ -1,11 +1,55 @@
 /* Saturn's theme engine v3. */
 
-/* Light theme */
 .light {
+  --sat-heading: #1a1a1a; /* Settings header, settings options title, app list title, favorites title, favorites title */
+  --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
+  --sat-bg: #fafafa; /* Main background */
+  --sat-search-shortcuts: #e4e4e4; /* Favorites, app list & search, inputs. */
+  --sat-links: #1a1a1a; /* Links and stuff */
+  --sat-txt-selector-clr: #000000; /* Text selector background color */
+  --sat-txt-selector-clr-after: #ffffff; /* Text selector color */
+  --sat-setting-bg-color: #eeeeee; /* Settings background color */
+  --sat-setting-bg-effect: #dddddddc; /* Settings options background color */
+  --sat-input-hover: #b1b1b1;
+  --sat-search-bar-focus: #999999;
+  --sat-tooltip-bg: #c0c0c0; /* Tooltip background */
+  --default-font: "Poppins", sans-serif;
+  --sat-border-radius: 15px;
+  --gudmrning-txt: linear-gradient(to right, #000000 0%, #646464 100%);
+  --sat-accent-color1: #000000;
+  --moreapps-hovering-clr: #000000;
+  --favorites-hover: #c4c4c4;
+  --for-white: #ffffff;
+  --settings-warning-bg: rgba(247, 247, 1, 0.322);
+  --add-link-border: rgb(150, 151, 151); /* Favorite input border color */
+  --delete-warning-bg: rgba(
+    197,
+    42,
+    42,
+    0.76
+  ); /* Favorite delete button color */
+  --switch-color-bg-after: #000000;
+  --switch-color-bg: #adadad;
+  --settings-button-outline: #bbbbbb; /* The outline color on the open settings button */
+  --new-search-bg-hover-effect: rgb(199, 199, 199);
+  --lighter-color: rgb(
+    196,
+    196,
+    196
+  ); /* Every that needs a light background color */
+
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
+}
+
+/* Light theme */
+.nothing {
   --sat-heading: #000000; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
-  --sat-bg: #f9f9fb; /* Main background */
-  --sat-search-shortcuts: #e6e6e6; /* Favorites, app list & search, inputs. */
+  --sat-bg: #ffffff; /* Main background */
+  --sat-search-shortcuts: #dfdfdf; /* Favorites, app list & search, inputs. */
   --sat-links: #1a1a1a;
   --sat-txt-selector-clr: #000000;
   --sat-txt-selector-clr-after: #ffffff;
@@ -38,6 +82,7 @@
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
 }
+
 /* New dark theme */
 .dark {
   --sat-heading: #ffffff;
@@ -80,7 +125,7 @@
 .space {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
-  --sat-bg: #0e0e0e; /* Main background */
+  --sat-bg: #0f0f0f; /* Main background */
   --sat-search-shortcuts: #181818; /* Favorites, app list & search, inputs. */
   --sat-links: hsl(0, 0%, 95%); /* Links and stuff */
   --sat-txt-selector-clr: #ffb07d; /* Text selector background color */

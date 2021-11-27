@@ -294,10 +294,6 @@ const settingAbout = (z) => {
                         <span>Privacy</span>
                       </div></a
                     >
-                    <h1></h1>
-                    *Remove this before release* 
-                    <br/>
-                    you're running: DEV, RC2 2021
                   </div>
                 </div>
               </div>
