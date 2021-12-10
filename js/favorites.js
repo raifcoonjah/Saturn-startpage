@@ -33,7 +33,6 @@ $(document).ready(function () {
     // Reset form
     $title.val("");
     $url.val("");
-    $("#add-link-form").slideToggle("50");
   });
 
   // Remove item
@@ -42,26 +41,11 @@ $(document).ready(function () {
     // Save changes to localstorage
     localStorage.setItem("vk-links", $ul.html());
   });
-
-  // Form toggle
-  $("#new-link-button").click(function () {
-    $("#add-link-form").slideToggle("100");
-  });
-
-  $("#new-close-fav").click(function () {
-    $("#add-link-form").slideToggle("100");
-  });
 });
-
-$("#cancel-fav-btn").click(function () {
-  $("#add-link-form").slideToggle("100");
-});
-
-// cancel-fav-btn
 
 //
 // ========
-// + FAVORITES Search v1.0-cheesecake +
+// + FAVORITES Search v1.1-cheesecake +
 // ========
 //
 
@@ -85,12 +69,12 @@ $("#cancel-fav-btn").click(function () {
             .find("a:Contains(" + searchtext + ")")
             .parent();
           // Hiding non matching lists
-          $("li", list).not($matches).fadeOut();
+          $("li", list).not($matches).fadeOut(50);
           // Showing matching lists
-          $matches.fadeIn(150);
+          $matches.fadeIn(50);
         } else {
           // If search keyword is empty then display all the lists
-          $(list).find("li").fadeIn(150);
+          $(list).find("li").fadeIn(50);
         }
         return false;
       })
@@ -103,3 +87,62 @@ $("#cancel-fav-btn").click(function () {
     live_search($("#content"));
   });
 })(jQuery);
+
+//
+// ========
+// + Keyboard Shortcuts +
+// ========
+//
+
+var opnSetting = document.querySelector(".close-button");
+document.body.addEventListener("keydown", function () {
+  if (event.keyCode == 27) {
+    // Esc
+    opnSetting.click();
+  }
+});
+
+//
+// ========
+// + Favorites Modal +
+// ========
+//
+
+// Get the favModal
+var favModal = document.getElementById("favModal");
+
+// Get the button that opens the favModal
+var btn = document.getElementById("favBtn");
+
+// Get the <span> element that closes the favModal
+var span = document.getElementsByClassName("cancel-fav-btn")[0];
+
+// When the user clicks on the button, open the favModal
+btn.onclick = function () {
+  favModal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the favModal
+span.onclick = function () {
+  favModal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the favModal, close it
+window.onclick = function (event) {
+  if (event.target == favModal) {
+    favModal.style.display = "none";
+  }
+};
+
+
+//
+// ========
+// + Show message when save button is pressed +
+// ========
+//
+
+$(document).ready(function () {
+  $("#add").click(function () {
+    $("#sv-msg2").text("🕺 Your new favorite has been saved sucessfully. ");
+  });
+});

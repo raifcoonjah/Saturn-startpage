@@ -117,136 +117,17 @@ const appsList = (x) => {
                       <span>Twitch</span>
                     </div></a
                   >
+                  <a href="https://www.lofi.cafe/">
+                    <div class="app">
+                      <i class="las la-record-vinyl"></i>
+                      <span>Lofi Cafe</span>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>`);
-};
-
-const moreApps = (y) => {
-  $(y).append(`<div id="cutieapps">
-              <a href="https://9to5mac.com/">
-                <div class="cuteapps">
-                  <i class="lab la-apple"></i>
-                  <p>9to5mac</p>
-                </div></a
-              >
-              <a href="https://aliexpress.com">
-                <div class="cuteapps">
-                  <i class="las la-shopping-basket"></i>
-                  <p>AliExpress</p>
-                </div></a
-              >
-              <a href="https://dev.to/">
-                <div class="cuteapps">
-                  <i class="lab la-dev"></i>
-                  <p>Dev.to</p>
-                </div></a
-              >
-              <a href="https://devdocs.io/">
-                <div class="cuteapps">
-                  <i class="las la-book"></i>
-                  <p>Dev docs</p>
-                </div></a
-              >
-              <a href="https://orchomenos.github.io/Design-resources/">
-                <div class="cuteapps">
-                  <i class="las la-pencil-ruler"></i>
-                  <p>Design resources</p>
-                </div></a
-              >
-              <a href="https://ebay.com">
-                <div class="cuteapps">
-                  <i class="lab la-ebay"></i>
-                  <p>eBay</p>
-                </div></a
-              >
-              <a href="https://facebook.com">
-                <div class="cuteapps">
-                  <i class="lab la-facebook-square"></i>
-                  <p>Facebook</p>
-                </div></a
-              >
-              <a href="https://freecodecamp.org">
-                <div class="cuteapps">
-                  <i class="lab la-free-code-camp"></i>
-                  <p>Freecodecamp</p>
-                </div></a
-              >
-              <a href="https://maps.google.com">
-                <div class="cuteapps">
-                  <i class="las la-map-marked"></i>
-                  <p>Google Maps</p>
-                </div></a
-              >
-              <a href="https://internetingishard.com/">
-                <div class="cuteapps">
-                  <i class="las la-wifi"></i>
-                  <p>Interneting is hard</p>
-                </div></a
-              >
-              <a href="https://learn-anything.xyz/">
-                <div class="cuteapps">
-                  <i class="las la-map"></i>
-                  <p>Learn anything</p>
-                </div></a
-              >
-              <a href="https://mail.protonmail.com/login">
-                <div class="cuteapps">
-                  <i class="las la-envelope"></i>
-                  <p>Protonmail</p>
-                </div></a
-              >
-              <a href="https://warez.now.sh/">
-                <div class="cuteapps">
-                  <i class="las la-skull-crossbones"></i>
-                  <p>Warezz</p>
-                </div></a
-              >
-              <a href="https://www.producthunt.com/">
-                <div class="cuteapps">
-                  <i class="lab la-product-hunt"></i>
-                  <p>Product Hunt</p>
-                </div></a
-              >
-              <a href="https://spotify.com">
-                <div class="cuteapps">
-                  <i class="lab la-spotify"></i>
-                  <p>Spotify webplayer</p>
-                </div></a
-              >
-              <a href="https://www.pinterest.com/">
-                <div class="cuteapps">
-                  <i class="lab la-pinterest"></i>
-                  <p>Pinterest</p>
-                </div></a
-              >
-              <a href="https://unsplash.com">
-                <div class="cuteapps">
-                  <i class="las la-image"></i>
-                  <p>Unsplash</p>
-                </div></a
-              >
-              <a href="https://wikipedia.com">
-                <div class="cuteapps">
-                  <i class="lab la-wikipedia-w"></i>
-                  <p>Wikipedia</p>
-                </div></a
-              >
-              <a href="https://web.whatsapp.com">
-                <div class="cuteapps">
-                  <i class="lab la-whatsapp"></i>
-                  <p>WhatsApp</p>
-                </div></a
-              >
-              <a href="https://raindrop.io">
-                <div class="cuteapps">
-                  <i class="las la-cloud-rain"></i>
-                  <p>Raindrop</p>
-                </div></a
-              >
-            </div>`);
 };
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content slide-up-fade-in">
@@ -261,9 +142,9 @@ const settingAbout = (z) => {
                <br/>
                 Saturn version:
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v3.3.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.0.0"
                   target="_blank"
-                  >v3.3.0 <i class="las la-external-link-alt"></i
+                  >v4.0.0 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -300,15 +181,13 @@ const settingAbout = (z) => {
             </div>
           </div>`);
 };
-const render_in_js = (x, y, z) => {
+const render_in_js = (x, z) => {
   let apps_list = $("#apps_list");
-  let more_apps = $("#more_apps");
   let setting_about = $("#setting_about");
 
   // pls dont break
   iLoadthings = setTimeout(function () {
     appsList(apps_list);
-    moreApps(more_apps);
     settingAbout(setting_about);
   });
 };
