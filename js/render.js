@@ -117,6 +117,12 @@ const appsList = (x) => {
                       <span>Twitch</span>
                     </div></a
                   >
+                  <a href="https://www.lofi.cafe/">
+                    <div class="app">
+                      <i class="las la-record-vinyl"></i>
+                      <span>Lofi Cafe</span>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -192,25 +198,20 @@ const moreApps = (y) => {
                   <p>Learn anything</p>
                 </div></a
               >
-              <a href="https://mail.protonmail.com/login">
-                <div class="cuteapps">
-                  <i class="las la-envelope"></i>
-                  <p>Protonmail</p>
-                </div></a
-              >
-              <a href="https://warez.now.sh/">
+              <a href="https://piracy.now.sh/">
                 <div class="cuteapps">
                   <i class="las la-skull-crossbones"></i>
                   <p>Warezz</p>
                 </div></a
               >
+              
               <a href="https://www.producthunt.com/">
                 <div class="cuteapps">
                   <i class="lab la-product-hunt"></i>
                   <p>Product Hunt</p>
                 </div></a
               >
-              <a href="https://spotify.com">
+              <a href="https://open.spotify.com">
                 <div class="cuteapps">
                   <i class="lab la-spotify"></i>
                   <p>Spotify webplayer</p>

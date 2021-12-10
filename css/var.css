@@ -304,6 +304,14 @@ pre {
   font-size: 0.9rem;
   border-radius: 8px;
 }
+kbd {
+  font-weight: 600;
+  background: var(--sat-search-bar-focus);
+  padding: 8px 30px;
+  font-size: 1rem;
+  border-radius: 7px;
+}
+
 pre {
   padding: 1rem 1.4rem;
   max-width: 100%;

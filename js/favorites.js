@@ -87,10 +87,10 @@ $("#cancel-fav-btn").click(function () {
           // Hiding non matching lists
           $("li", list).not($matches).fadeOut();
           // Showing matching lists
-          $matches.fadeIn(150);
+          $matches.fadeIn(1);
         } else {
           // If search keyword is empty then display all the lists
-          $(list).find("li").fadeIn(150);
+          $(list).find("li").fadeIn(1);
         }
         return false;
       })
