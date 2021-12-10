@@ -92,7 +92,9 @@
 
       <!-- Favorite Feature v2.1 -->
       <div id="fav-container" class="fav-container">
-        <h5 class="section-title"><i class="las la-bookmark"></i> Favorites</h5>
+        <h5 class="section-title">
+          <i class="las la-swatchbook"></i> Favorites
+        </h5>
         <br />
         <div class="favorites-search">
           <input
@@ -104,60 +106,72 @@
         <div id="content">
           <div id="sortSupport">
             <ul id="fav-link"></ul>
-            <div id="new-link-button">
-              <button><i class="las la-plus"></i> Add favorite</button>
+            <p></p>
+            <div id="myBtn" class="fav-btn">
+              <button><i class="las la-plus-circle"></i> Add favorite</button>
             </div>
           </div>
         </div>
 
-        <!-- Add new link page -->
-        <div id="add-link-form">
-          <div id="new-close-fav" class="new-fav">
-            <span class="new-close-fav"
-              ><i class="las la-times-circle"></i
-            ></span>
-          </div>
-          <h5 class="fav_title_new">✨ Add favorite</h5>
-          <h1></h1>
-          <label class="fav_title">Title</label>
-          <br />
-          <input id="title" placeholder="Enter a title" autocomplete="off" />
-          <br />
-          <br />
-          <label class="fav_title"><i class="las la-link"></i>URL</label><br />
-          <input
-            id="url"
-            placeholder="Type or paste a URL"
-            autocomplete="off"
-          />
-
-          <br />
-          <br />
-          <button
-            id="add"
-            style="background: var(--lighter-color)"
-            class="save-button"
-          >
-            <i class="lar la-save"></i> Save
-          </button>
-          <button id="cancel-fav-btn" class="cancel-fav-btn">
-            <i class="las la-times"></i> Cancel
-          </button>
-          <h3></h3>
-          <p style="text-align: center"><i class="las la-grip-lines"></i></p>
-          <div class="side-text">
-            <details>
-              <summary>
-                <i class="lar la-question-circle"></i> New user?
-              </summary>
-              <i class="las la-thumbtack"></i> Before using favorites, learn the
-              basics:
+        <div id="favModal" class="favModal">
+          <div class="fav-content">
+            <h3 class="fav-title">
+              <i class="las la-swatchbook"></i> New Favorite<span
+                class="settings-dot"
+                >.</span
+              >
+            </h3>
+            <p></p>
+            <label class="fav_title"
+              >Title or
               <a
-                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
+                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-images"
                 target="_blank"
-                >here <i class="las la-external-link-alt"></i
-              ></a>
-            </details>
+                >Image URL<i class="las la-external-link-alt"></i></a
+            ></label>
+            <br />
+            <input id="title" placeholder="Enter a title" autocomplete="off" />
+            <br />
+            <br />
+            <label class="fav_title"><i class="las la-link"></i> URL</label
+            ><br />
+            <input
+              id="url"
+              placeholder="Type or paste a URL"
+              autocomplete="off"
+            />
+
+            <br />
+            <br />
+            <button
+              id="add"
+              style="background: var(--lighter-color)"
+              class="save-button"
+            >
+              <i class="lar la-save"></i> Save
+            </button>
+            <button id="cancel-fav-btn" class="cancel-fav-btn">
+              <i class="las la-times"></i> Cancel
+            </button>
+            <h3></h3>
+            <label id="sv-msg2"></label>
+            <p style="text-align: center">
+              <i class="las la-grip-lines"></i>
+            </p>
+            <div class="side-text">
+              <details>
+                <summary>
+                  <i class="lar la-question-circle"></i> New user?
+                </summary>
+                <i class="las la-thumbtack"></i> Before using favorites, learn
+                the basics:
+                <a
+                  href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
+                  target="_blank"
+                  >here <i class="las la-external-link-alt"></i
+                ></a>
+              </details>
+            </div>
           </div>
         </div>
       </div>
@@ -193,18 +207,6 @@
             <br />
 
             <div id="tab-2" class="tab-content current slide-up-fade-in">
-              <div class="didyouknow" id="didyouknow">
-                <h5><i class="las la-lightbulb"></i> Did you know?</h5>
-                <p></p>
-                <div class="settings-background">
-                  <h3><i class="las la-search"></i> Change Search</h3>
-                  <p>
-                    You can easily change the search provider by clicking on the
-                    search engine icon found in the search bar.
-                  </p>
-                </div>
-              </div>
-              <br />
               <div class="settings-background">
                 <h3><i class="las la-user-edit"></i> Username</h3>
                 <p>Set your username to anything.</p>
@@ -248,17 +250,23 @@
                   </label>
                   <br />
                 </details>
-                <details>
+                <!-- <details>
                   <summary><i class="las la-cog"></i> Settings</summary>
-                  <h5>Hide "Did you section" (Beta)</h5>
-                  <p></p>
-                  <label class="slider-switch">
-                    <input type="checkbox" class="hide-didyou-know" />
-                    <div class="slider round"></div>
-                  </label>
-                </details>
+                  <h5>Nothing here yet..</h5>
+                </details> -->
               </div>
               <br />
+              <div class="didyouknow" id="didyouknow">
+                <h5><i class="las la-lightbulb"></i> Did you know?</h5>
+                <p></p>
+                <div class="settings-background">
+                  <h3><i class="las la-search"></i> Change Search</h3>
+                  <p>
+                    You can easily change the search provider by clicking on the
+                    search engine icon found in the search bar.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 

@@ -1,2 +1,202 @@
 /* Add your custom css code here
 / Think this should be in Saturn? Make a pull request */
+/* The Modal (background) */
+/* The Modal (background) */
+.favModal {
+  background-color: #0a0a0a73;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: var(--sat-border-radius);
+}
+
+/* Modal Content/Box */
+.fav-content {
+  background-color: var(--sat-setting-bg-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 15px;
+  padding-bottom: 20px;
+  width: 40rem;
+  height: 30rem;
+  overflow-y: scroll;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+
+/* The Close Button */
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+}
+
+/* 
+========
++ Favorites v3 +
+========
+*/
+
+#favorite-links:hover {
+  transition: var(--transition-speed-default);
+}
+ul {
+  padding: 0;
+  margin: 0px;
+}
+
+ul li {
+  margin: 0;
+  list-style: none;
+}
+
+.removebtn {
+  border: none;
+  background: none;
+  float: right;
+  margin-top: -5px;
+  padding: 8px;
+  border-radius: 13px;
+}
+
+#content {
+  padding: 10px;
+  overflow: hidden;
+}
+
+#fav-link li {
+  padding: 10px;
+}
+#fav-link li:last-child {
+  border: none;
+}
+
+/* 
+========
++ Optimizations for favorites features.
+Currently only images are fully supported. +
+========
+*/
+
+/* Improved image support so now they act as icons */
+#fav-link img {
+  width: 23px;
+  height: 22px;
+  outline: none;
+  vertical-align: middle;
+  margin: 0px;
+  border-radius: 6px !important;
+}
+/* Improved iframe support so now they fit properly inside the container */
+#fav-link iframe {
+  width: 90%;
+  height: 30%;
+  outline: none;
+  vertical-align: middle;
+  margin: 0px;
+  border: 1px;
+  border-radius: 6px !important;
+}
+
+#fav-link a {
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: -10px;
+  color: var(--sat-ids);
+}
+
+.favModal input {
+  width: 100%;
+  color: var(--sat-ids);
+  margin: 5px 0;
+  padding: 13px 13px 13px 13px;
+  outline: none;
+  border: 2px solid var(--add-link-border);
+  font-size: 14px;
+  border-radius: var(--sat-border-radius);
+}
+
+.add-link-form input:hover {
+  background-color: var(--none);
+  border: 2px solid var(--sat-accent-color1);
+}
+
+#add-link-form input:focus {
+  background-color: var(--none);
+  border: 2px solid var(--sat-accent-color1);
+  transition: var(--transition-speed-default);
+}
+
+.fav-btn button {
+  display: block;
+  padding: 13px;
+  margin-right: 10px;
+  margin-top: 30px;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: var(--sat-ids);
+  background: var(--lighter-color);
+  border: 1px solid var(--lighter-color);
+  float: right;
+}
+.fav-btn button:hover {
+  border: 1px solid var(--sat-accent-color1);
+}
+
+.cancel-fav-btn {
+  background-color: var(--sat-setting-bg-color);
+}
+.close-button {
+  font-size: 25px;
+  float: right;
+  padding: 6px 12px;
+  margin: 10px;
+  border-radius: 100px;
+}
+
+.new-close-fav,
+.close-button,
+.close i {
+  display: block;
+  text-align: center;
+}
+
+.cancel-fav-btn:hover,
+.close:hover,
+.close-button:hover,
+.new-close-fav:hover {
+  color: var(--sat-ids);
+  background-color: var(--favorites-hover);
+  transition: var(--transition-speed-default);
+}
+
+.new-close-fav {
+  font-size: 24px;
+  float: right;
+  padding: 5px 10px;
+  border-radius: 60px;
+}
+
+.fav-title {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.close {
+  font-size: 25px;
+  float: right;
+  padding: 10px 10px;
+  margin: -10px;
+  border-radius: 100px;
+}

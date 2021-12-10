@@ -33,7 +33,6 @@ $(document).ready(function () {
     // Reset form
     $title.val("");
     $url.val("");
-    $("#add-link-form").slideToggle("50");
   });
 
   // Remove item
@@ -42,19 +41,6 @@ $(document).ready(function () {
     // Save changes to localstorage
     localStorage.setItem("vk-links", $ul.html());
   });
-
-  // Form toggle
-  $("#new-link-button").click(function () {
-    $("#add-link-form").slideToggle("100");
-  });
-
-  $("#new-close-fav").click(function () {
-    $("#add-link-form").slideToggle("100");
-  });
-});
-
-$("#cancel-fav-btn").click(function () {
-  $("#add-link-form").slideToggle("100");
 });
 
 // cancel-fav-btn
@@ -85,12 +71,12 @@ $("#cancel-fav-btn").click(function () {
             .find("a:Contains(" + searchtext + ")")
             .parent();
           // Hiding non matching lists
-          $("li", list).not($matches).fadeOut();
+          $("li", list).not($matches).fadeOut(50);
           // Showing matching lists
-          $matches.fadeIn(1);
+          $matches.fadeIn(50);
         } else {
           // If search keyword is empty then display all the lists
-          $(list).find("li").fadeIn(1);
+          $(list).find("li").fadeIn(50);
         }
         return false;
       })

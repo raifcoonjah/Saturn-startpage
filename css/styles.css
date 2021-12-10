@@ -444,154 +444,6 @@ ul.tabs li {
 
 /* 
 ========
-+ Favorites +
-========
-*/
-
-#favorite-links:hover {
-  transition: var(--transition-speed-default);
-}
-ul {
-  padding: 0;
-  margin: 0px;
-}
-
-ul li {
-  margin: 0;
-  list-style: none;
-}
-
-.removebtn {
-  border: none;
-  background: none;
-  float: right;
-  margin-top: -5px;
-  padding: 8px;
-  border-radius: 13px;
-}
-
-#content {
-  padding: 10px;
-}
-
-#fav-link li {
-  padding: 10px;
-}
-#fav-link li:last-child {
-  border: none;
-}
-
-/* 
-========
-+ Optimizations for favorites features.
-Currently only images are fully supported. +
-========
-*/
-
-#fav-link img {
-  width: 23px;
-  height: 22px;
-  outline: none;
-  vertical-align: middle;
-  margin: 0px;
-  border-radius: 6px !important;
-}
-
-#fav-link a {
-  text-decoration: none;
-  padding: 10px 10px;
-  margin: -10px;
-  color: var(--sat-ids);
-}
-
-#add-link-form {
-  display: none;
-  padding: 20px;
-  margin: 5px;
-}
-
-#add-link-form input {
-  color: var(--sat-ids);
-  margin: 2px 0;
-  padding: 10px 10px 10px 10px;
-  outline: none;
-  border: 2px solid var(--add-link-border);
-  font-size: 14px;
-  border-radius: 12px;
-}
-
-#add-link-form input:hover {
-  background-color: var(--none);
-  border: 2px solid var(--sat-accent-color1);
-}
-
-#add-link-form input:focus {
-  background-color: var(--none);
-  border: 2px solid var(--sat-accent-color1);
-  transition: var(--transition-speed-default);
-}
-
-#new-link-button button {
-  display: block;
-  margin-right: 0;
-  margin-left: 0;
-  padding: 10px;
-  margin-top: 30px;
-  font-size: 0.9em;
-  font-weight: 400;
-  width: 100%;
-  color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
-}
-
-#add-link-form button {
-  display: inline-block;
-  margin-right: 0;
-  margin-left: 0;
-  padding: 10px;
-  margin: 5px;
-  font-size: 0.9em;
-  font-weight: 600;
-  color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
-}
-
-#new-link-button button:hover,
-#add-link-form button:hover {
-  background-color: var(--favorites-hover);
-  transition: var(--transition-speed-default);
-  color: var(--sat-ids);
-}
-
-.close-button {
-  font-size: 24px;
-  float: right;
-  padding: 10px 10px;
-  margin: 10px;
-  border-radius: 60px;
-}
-
-.new-close-fav,
-.close-button i {
-  display: block;
-  text-align: center;
-}
-
-.close-button:hover,
-.new-close-fav:hover {
-  color: var(--sat-ids);
-  background-color: var(--favorites-hover);
-  transition: var(--transition-speed-default);
-}
-
-.new-close-fav {
-  font-size: 24px;
-  float: right;
-  padding: 5px 10px;
-  border-radius: 60px;
-}
-/* 
-========
 + The IOS 15 like background in settings. +
 ========
 */
@@ -665,7 +517,7 @@ Currently only images are fully supported. +
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);
-  font-weight: 450;
+  font-weight: 410;
   border: 1px solid var(--lighter-color);
 }
 
@@ -689,7 +541,8 @@ Currently only images are fully supported. +
   font-weight: 600;
 }
 
-#sv-msg {
+#sv-msg,
+#sv-msg2 {
   font-weight: 600;
   font-size: 12px;
 }
@@ -744,7 +597,7 @@ Currently only images are fully supported. +
 .favorites-search input {
   background: var(--sat-search-shortcuts);
   padding: 13px 10px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .favorites-search input:hover,
