@@ -220,7 +220,7 @@ const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
 const spaceButton = document.getElementById("space");
 const linkinParkButton = document.getElementById("linkin-park");
-// const darkSpace_themeButton = document.getElementById("darkSpace");
+const lighterdark_theme_button = document.getElementById("lighterdarktheme");
 const body = document.body;
 
 // Apply the cached theme on reload
@@ -237,7 +237,7 @@ darkButton.onclick = () => {
   body.classList.replace("light", "dark");
   body.classList.replace("space", "dark");
   body.classList.replace("linkin-park", "dark");
-  // body.classList.replace("darkSpace", "dark");
+  body.classList.replace("lighterdarktheme", "dark");
   localStorage.setItem("theme", "dark");
 };
 
@@ -247,7 +247,7 @@ lightButton.onclick = () => {
   body.classList.replace("dark", "light");
   body.classList.replace("space", "light");
   body.classList.replace("linkin-park", "light");
-  // body.classList.replace("darkSpace", "light");
+  body.classList.replace("lighterdarktheme", "light");
   localStorage.setItem("theme", "light");
 };
 
@@ -257,7 +257,7 @@ spaceButton.onclick = () => {
   body.classList.replace("dark", "space");
   body.classList.replace("light", "space");
   body.classList.replace("linkin-park", "space");
-  // body.classList.replace("darkSpace", "space");
+  body.classList.replace("lighterdarktheme", "space");
   localStorage.setItem("theme", "space");
 };
 
@@ -266,19 +266,19 @@ linkinParkButton.onclick = () => {
   body.classList.replace("dark", "linkin-park");
   body.classList.replace("light", "linkin-park");
   body.classList.replace("space", "linkin-park");
-  // body.classList.replace("darkSpace", "linkin-park");
+  body.classList.replace("lighterdarktheme", "linkin-park");
   localStorage.setItem("theme", "linkin-park");
 };
 
 // Dracula theme
 
-// darkSpace_themeButton.onclick = () => {
-//   body.classList.replace("dark", "darkSpace");
-//   body.classList.replace("light", "darkSpace");
-//   body.classList.replace("space", "darkSpace");
-//   body.classList.replace("linkin-park", "darkSpace");
-//   localStorage.setItem("theme", "darkSpace");
-// };
+lighterdark_theme_button.onclick = () => {
+  body.classList.replace("dark", "lighterdarktheme");
+  body.classList.replace("light", "lighterdarktheme");
+  body.classList.replace("space", "lighterdarktheme");
+  body.classList.replace("linkin-park", "lighterdarktheme");
+  localStorage.setItem("theme", "lighterdarktheme");
+};
 
 //
 // ========
