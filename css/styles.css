@@ -397,37 +397,6 @@ ul.tabs li {
   font-weight: 500;
 }
 
-/* 
-========
-+ Overlay for more apps +
-========
-*/
-
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-y: scroll;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 15px;
-  right: 45px;
-  font-size: 40px;
-}
-
 @media screen and (max-height: 450px) {
   .overlay {
     overflow-y: auto;
@@ -675,23 +644,6 @@ ul.apps-category li.current {
 }
 /* 
 ========
-+ Favorites new title +
-========
-*/
-.fav_title {
-  font-size: 15px !important;
-  font-weight: 600;
-}
-
-.fav_title_new {
-  font-weight: 600;
-}
-
-.fav_title_new i {
-  color: var(--sat-accent-color1);
-}
-/* 
-========
 + New About section - simple center +
 ========
 */
@@ -704,4 +656,191 @@ ul.apps-category li.current {
 }
 .socials .app {
   border: 1px solid var(--lighter-color);
+}
+
+/* 
+========
++ Favorite Modal +
+========
+*/
+.favModal {
+  background-color: #0a0a0a73;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+/* Favorite modal Content/Box */
+.fav-content {
+  background-color: var(--sat-setting-bg-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 15px;
+  padding-bottom: 20px;
+  width: 40rem;
+  height: 31rem;
+  overflow-y: scroll;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+
+/* 
+========
++ Optimizations for favorites features.
+Currently only images and iframes are fully supported. +
+========
+*/
+
+/* Improved image support so now they act as icons */
+#fav-link img {
+  width: 23px;
+  height: 22px;
+  outline: none;
+  vertical-align: middle;
+  margin: 0px;
+  border-radius: 6px !important;
+}
+/* Improved iframe support so now they fit properly inside the container */
+#fav-link iframe {
+  width: 90%;
+  height: 30%;
+  outline: none;
+  vertical-align: middle;
+  margin: 0px;
+  border: 1px;
+  border-radius: 6px !important;
+}
+
+#fav-link a {
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: -10px;
+  color: var(--sat-ids);
+}
+
+/* 
+========
++ Favorites V3. +
+========
+*/
+
+#favorite-links:hover {
+  transition: var(--transition-speed-default);
+}
+
+ul {
+  padding: 0;
+  margin: 0px;
+}
+
+ul li {
+  margin: 0;
+  list-style: none;
+}
+
+.removebtn {
+  border: none;
+  background: none;
+  float: right;
+  margin-top: -5px;
+  padding: 8px;
+  border-radius: 13px;
+}
+
+#content {
+  padding: 10px;
+  overflow: hidden;
+}
+
+#fav-link li {
+  padding: 10px;
+}
+#fav-link li:last-child {
+  border: none;
+}
+
+.favModal input {
+  width: 100%;
+  color: var(--sat-ids);
+  margin: 5px 0;
+  padding: 13px 13px 13px 13px;
+  outline: none;
+  border: 2px solid var(--add-link-border);
+  font-size: 14px;
+  border-radius: var(--sat-border-radius);
+}
+
+.favModal input:hover,
+.favModal input:focus {
+  background-color: var(--none);
+  border: 2px solid var(--sat-accent-color1);
+}
+/* Large add favorite button */
+
+.fav-btn button {
+  display: block;
+  padding: 11px;
+  margin-top: 30px;
+  font-size: 0.9em;
+  font-weight: 450;
+  color: var(--sat-ids);
+  background: var(--lighter-color);
+  border: 1px solid var(--lighter-color);
+  width: 100%;
+}
+
+.fav-btn button:hover {
+  border: 1px solid var(--sat-accent-color1);
+}
+
+
+/* Every close button uses this */
+
+.close-button {
+  font-size: 25px;
+  float: right;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 100px;
+}
+
+.close-button i {
+  display: block;
+  text-align: center;
+}
+
+.close-button:hover {
+  color: var(--sat-ids);
+  background-color: var(--favorites-hover);
+  transition: var(--transition-speed-default);
+}
+
+/* Header inside Favorites */
+.fav-title {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Favorites input title */
+.fav_title {
+  font-weight: 450;
+  font-size: 15px;
+}
+
+/* Hiding the background color for cancel button */
+
+.cancel-fav-btn {
+  background-color: var(--sat-setting-bg-color);
 }

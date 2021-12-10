@@ -311,21 +311,3 @@ $(document).ready(function () {
     );
   });
 });
-
-//
-// ========
-// + More apps overlay stuff (This handles the very simple height
-// animation when the user presses on the button.)  +
-// ========
-//
-
-navy.addEventListener("click", openNav);
-navyclose.addEventListener("click", closeNav);
-
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}

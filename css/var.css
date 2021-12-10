@@ -506,6 +506,7 @@ img {
 .morecontainer {
   background: var(--sat-setting-bg-color);
 }
+
 .setting-button,
 .app,
 .cuteapps,
@@ -571,6 +572,7 @@ img {
   transition: var(--transition-speed-default);
 }
 
+.cancel-fav-btn:hover,
 .removebtn:hover {
   background-color: var(--delete-warning-bg);
   transition: var(--transition-speed-default);
