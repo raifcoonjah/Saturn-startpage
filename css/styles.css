@@ -213,7 +213,7 @@ input:checked + .slider:before {
 
 .section-title {
   text-align: left;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .setting-button {
@@ -466,6 +466,10 @@ ul.tabs li {
     width: 90%;
     height: 75%;
   }
+  ul.tabs li {
+    padding: 7px 7px;
+  }
+
   .cuteapps p {
     font-size: 10px;
   }
@@ -514,6 +518,10 @@ ul.tabs li {
 #sv-msg2 {
   font-weight: 600;
   font-size: 12px;
+}
+
+#sv-msg2 {
+  font-size: 14px;
 }
 
 .username-section input {
@@ -673,9 +681,10 @@ ul.apps-category li.current {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   border-radius: 20px;
+  animation: slide-up-fade-in 0.2s ease;
 }
 
 /* Favorite modal Content/Box */
@@ -687,7 +696,7 @@ ul.apps-category li.current {
   transform: translate(-50%, -50%);
   padding: 15px 15px;
   padding-bottom: 20px;
-  width: 40rem;
+  width: 38rem;
   height: 31rem;
   overflow-y: scroll;
   border-radius: 20px;
@@ -802,7 +811,6 @@ ul li {
 .fav-btn button:hover {
   border: 1px solid var(--sat-accent-color1);
 }
-
 
 /* Every close button uses this */
 

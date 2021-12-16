@@ -156,26 +156,6 @@ $(function () {
     localStorage.setItem("hide-apps-list", this.checked);
   });
 });
-
-$(function () {
-  var status = localStorage.getItem("didyouknow_hidden");
-  if (status == "true") {
-    $(".didyouknow").css("display", "none");
-    $(".hide-didyouknow").attr("checked", true);
-  } else {
-    $(".didyouknow").css("display", "block");
-    $(".hide-didyouknow").attr("checked", false);
-  }
-  $(".hide-didyou-know").click(function () {
-    if (this.checked) {
-      $(".didyouknow").hide();
-    } else {
-      $(".didyouknow").show();
-    }
-    localStorage.setItem("hide-didyou-know", this.checked);
-  });
-});
-
 //
 // ========
 // + Settings navigation +
@@ -270,7 +250,7 @@ linkinParkButton.onclick = () => {
   localStorage.setItem("theme", "linkin-park");
 };
 
-// Dracula theme
+// Lighter Grey ish theme theme
 
 lighterdark_theme_button.onclick = () => {
   body.classList.replace("dark", "lighterdarktheme");

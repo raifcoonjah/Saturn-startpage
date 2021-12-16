@@ -122,7 +122,7 @@ btn.onclick = function () {
   favModal.style.display = "block";
 };
 
-// When the user clicks on <span> (x), close the favModal
+// When the user clicks on <span> (cancel), close the favModal
 span.onclick = function () {
   favModal.style.display = "none";
 };
@@ -134,7 +134,6 @@ window.onclick = function (event) {
   }
 };
 
-
 //
 // ========
 // + Show message when save button is pressed +
@@ -143,6 +142,6 @@ window.onclick = function (event) {
 
 $(document).ready(function () {
   $("#add").click(function () {
-    $("#sv-msg2").text("🕺 Your new favorite has been saved sucessfully. ");
+    $("#sv-msg2").text("🎉 New favorite saved successfully! ");
   });
 });
