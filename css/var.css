@@ -348,11 +348,12 @@ details {
 
 summary:hover {
   color: var(--sat-accent-color1);
+  transition: var(--transition-speed-fast);
 }
 summary {
   /* Makes the <summary> look more like a "clickable" link with the pointer cursor */
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 details[open] {
@@ -363,7 +364,7 @@ details[open] {
 
 details[open] summary {
   /* Adjust the <details> padding while open */
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 
 details[open] > *:last-child {
