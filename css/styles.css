@@ -684,7 +684,7 @@ ul.apps-category li.current {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-radius: 20px;
-  animation: slide-up-fade-in 0.2s ease;
+  animation: fadeIn 0.2s ease;
 }
 
 /* Favorite modal Content/Box */
