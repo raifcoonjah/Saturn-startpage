@@ -39,18 +39,16 @@ const appsList = (x) => {
         <div id="app-2" class="app-content">
           <div class="popup">
             <div id="apps">
-              <a href="https://udemy.com">
-                <div class="app">
-                  <i class="las la-chalkboard-teacher"></i>
-                  <span>Udemy</span>
-                </div></a
-              >
               <a href="http://moodle.rbs.ac.mu/moodle/">
                 <div class="app">
                   <i class="las la-school"></i>
                   <span>Rushm.. Moodle</span>
-                </div></a
-              >
+                </div></a>  
+              <a href="https://udemy.com">
+                <div class="app">
+                  <i class="las la-chalkboard-teacher"></i>
+                  <span>Udemy</span>
+                </div></a>
               <a href="https://learn-anything.xyz/">
                 <div class="app">
                   <i class="lar la-map"></i>
