@@ -23,12 +23,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
   --add-link-border: rgb(150, 151, 151); /* Favorite input border color */
-  --delete-warning-bg: rgba(
-    197,
-    42,
-    42,
-    0.76
-  ); /* Favorite delete button color */
+  --delete-warning-bg: #d55454; /* Favorite delete button color */
   --switch-color-bg-after: #000000;
   --switch-color-bg: #adadad;
   --settings-button-outline: #bbbbbb; /* The outline color on the open settings button */
@@ -44,46 +39,6 @@
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
 }
-
-/* Light theme */
-.nothing {
-  --sat-heading: #000000; /* Settings header, settings options title, app list title, favorites title, favorites title */
-  --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
-  --sat-bg: #ffffff; /* Main background */
-  --sat-search-shortcuts: #dfdfdf; /* Favorites, app list & search, inputs. */
-  --sat-links: #1a1a1a;
-  --sat-txt-selector-clr: #000000;
-  --sat-txt-selector-clr-after: #ffffff;
-  --sat-setting-bg-color: #eeeeee;
-  --sat-setting-bg-effect: #dddddddc;
-  --sat-input-hover: #b1b1b1;
-  --sat-search-bar-focus: #999999;
-  --sat-tooltip-bg: #c0c0c0;
-  --default-font: "Poppins", sans-serif;
-  --sat-border-radius: 15px;
-  --gudmrning-txt: linear-gradient(to right, #3a3a3a, #474747);
-  --sat-accent-color1: #000000;
-  --moreapps-hovering-clr: #000000;
-  --favorites-hover: #c4c4c4;
-  --for-white: #ffffff;
-  --add-link-border: rgb(150, 151, 151);
-  --settings-warning-bg: rgba(247, 247, 1, 0.322);
-  --delete-warning-bg: rgba(231, 19, 19, 0.644);
-  --switch-color-bg: #c0c0c0;
-  --settings-button-outline: #bbbbbb;
-  --new-search-bg-hover-effect: rgb(177, 177, 177);
-  --lighter-color: rgb(
-    196,
-    196,
-    196
-  ); /* Every that needs a light background color */
-
-  /* Multiple transition speeds */
-  --transition-speed-fast: 0.1s;
-  --transition-speed-default: 0.2s;
-  --transition-speed-slow: 0.3s;
-}
-
 /* New dark theme */
 .dark {
   --sat-heading: #ffffff;
@@ -106,7 +61,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #1a1f25;
-  --delete-warning-bg: rgba(197, 42, 42, 0.76);
+  --delete-warning-bg: #d55454;
   --switch-color-bg-new: #2f343d;
   --switch-color-bg-after: #0080e250;
   --settings-button-outline: #232933;
@@ -149,12 +104,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(41, 41, 41); /* Favorite input border color */
-  --delete-warning-bg: rgba(
-    197,
-    42,
-    42,
-    0.76
-  ); /* Favorite delete button color */
+  --delete-warning-bg: #d55454; /* Favorite delete button color */
   --switch-color-bg-new: #303030;
   --switch-color-bg-after: #ffb07d;
   --switch-color-bg: rgba(48, 48, 48, 0.904);
@@ -192,7 +142,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(43, 52, 56);
-  --delete-warning-bg: rgba(197, 42, 42, 0.76);
+  --delete-warning-bg: #d55454;
   --switch-color-bg-new: #303030;
   --switch-color-bg-after: #686868;
   --settings-button-outline: #252525;
@@ -233,12 +183,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #3e4349; /* Favorite input border color */
-  --delete-warning-bg: rgba(
-    197,
-    42,
-    42,
-    0.76
-  ); /* Favorite delete button color */
+  --delete-warning-bg: #d55454; /* Favorite delete button color */
   --switch-color-bg-new: #3e4349;
   --switch-color-bg-after: #ffb07d;
   --switch-color-bg: rgba(48, 48, 48, 0.904);

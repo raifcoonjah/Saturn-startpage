@@ -553,19 +553,15 @@ img {
   background: var(--sat-search-shortcuts);
 }
 
-.app:hover,
-.cuteapps:hover {
-  transition: var(--transition-speed-default);
+
+.app:hover {
+  transition: 0.1s;
   border: 3px solid var(--sat-accent-color1);
   background-color: var(--sat-accent-color1);
 }
 
 .closebtn:hover {
   border-color: var(--moreapps-hovering-clr);
-}
-
-.cuteapps {
-  border: 3px solid var(--sat-search-shortcuts);
 }
 
 #fav-link a:hover {

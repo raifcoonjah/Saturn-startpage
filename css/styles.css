@@ -33,7 +33,7 @@ body {
 
 /* 
 ========
-+ The logo inside search engnie logo +
++ The logo inside search engine logo +
 ========
 */
 .search-engine-logo {
@@ -349,66 +349,6 @@ ul.tabs li {
 
 .app-content.current {
   display: inherit;
-}
-
-/* 
-========
-+ Show tooltip on app hover +
-========
-*/
-
-/* .app:hover span {
-  visibility: visible;
-  transition: var(--transition-speed-fast);
-} */
-
-/* 
-========
-+ More apps +
-========
-*/
-
-.morecontainer {
-  margin: 0 auto;
-  padding: 26px 4px;
-}
-
-#cutieapps {
-  margin-top: 30px;
-}
-
-.cuteapps {
-  display: inline-block;
-  width: 12%;
-  margin: 0 0.5% 19px;
-  padding: 4px 20px;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.cuteapps i {
-  font-size: 2.6em;
-  margin-top: 10px;
-}
-
-.cuteapps p {
-  font-size: 16px;
-  margin-top: 10px;
-  font-weight: 500;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {
-    overflow-y: auto;
-  }
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
 }
 
 /* 
