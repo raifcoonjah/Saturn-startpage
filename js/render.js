@@ -140,9 +140,9 @@ const settingAbout = (z) => {
                <br/>
                 Saturn version:
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.0.1"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.1.0"
                   target="_blank"
-                  >v4.0.1 RC5 <i class="las la-external-link-alt"></i
+                  >v4.1.0 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better

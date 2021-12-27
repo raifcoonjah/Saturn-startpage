@@ -499,11 +499,13 @@ h6 {
   padding-top: 0.875rem;
 }
 
+/* == Shows a small line 
+instead of text == */
+
 .line {
-  color: var(--sat-heading);
   padding-bottom: 2px;
   margin-bottom: 8px;
-  border-bottom: 1px solid var(--sat-search-shortcuts);
+  border-bottom: 1px solid var(--lighter-color);
 }
 
 h1 {

@@ -218,7 +218,7 @@ input:checked + .slider:before {
 
 .setting-button {
   outline: none;
-  padding: 10px 10px;
+  padding: 12px 10px;
   border-radius: 16px !important;
   float: right;
   outline: 2px solid var(--sat-bg);
@@ -426,7 +426,7 @@ ul.tabs li {
 */
 
 .save-button {
-  padding: 9px 11px;
+  padding: 12px 11px;
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);
@@ -438,6 +438,12 @@ ul.tabs li {
   background-color: var(--sat-input-hover);
   transition: var(--transition-speed-default);
   border: 1px solid var(--sat-accent-color1);
+}
+
+.cancel-fav-btn {
+  padding: 12px 11px;
+  outline: none;
+  color: var(--sat-ids);
 }
 
 .saved-msg {
@@ -515,6 +521,7 @@ ul.tabs li {
   background: var(--sat-search-shortcuts);
   padding: 13px 10px;
   font-weight: 400;
+  font-size: 14px;
 }
 
 .favorites-search input:hover,
@@ -737,7 +744,7 @@ ul li {
 
 .fav-btn button {
   display: block;
-  padding: 11px;
+  padding: 13px;
   margin-top: 30px;
   font-size: 0.9em;
   font-weight: 450;
