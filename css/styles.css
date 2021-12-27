@@ -394,6 +394,9 @@ ul.tabs li {
   margin: 5px;
 }
 
+.theme-title i {
+  color: var(--sat-accent-color1);
+}
 /* 
 ========
 + Mobile optimizations +
