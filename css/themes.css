@@ -4,6 +4,7 @@
   --sat-heading: #1a1a1a; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
   --sat-bg: #fafafa; /* Main background */
+  --sat-bg-borders: #fafafa; /* Same as background color, but used inside of settings-button and app */
   --sat-search-shortcuts: #e4e4e4; /* Favorites, app list & search, inputs. */
   --sat-links: #1a1a1a; /* Links and stuff */
   --sat-txt-selector-clr: #000000; /* Text selector background color */
@@ -44,6 +45,7 @@
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
   --sat-bg: #0c0d11;
+  --sat-bg-borders: #0c0d11;
   --sat-search-shortcuts: #15181f;
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: #262a36;
@@ -82,6 +84,7 @@
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
   --sat-bg: #0f0f0f; /* Main background */
+  --sat-bg-borders: #0f0f0f;
   --sat-search-shortcuts: #181818; /* Favorites, app list & search, inputs. */
   --sat-links: hsl(0, 0%, 95%); /* Links and stuff */
   --sat-txt-selector-clr: #ffb07d; /* Text selector background color */
@@ -124,7 +127,9 @@
 .linkin-park {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: url(/img/rock-legend-bg.png);
+  --sat-bg: url(/img/linkin-park.png);
+  --sat-bg-borders: #0e0e0e;
+  --sat-bg-fix: #0e0e0e;
   --sat-search-shortcuts: #181818f5;
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: #686868;
@@ -162,6 +167,7 @@
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
   --sat-bg: #212427; /* Main background */
+  --sat-bg-borders: #212427;
   --sat-search-shortcuts: #282c31; /* Favorites, app list & search, inputs. */
   --sat-links: hsl(0, 0%, 95%); /* Links and stuff */
   --sat-txt-selector-clr: hsl(

@@ -27,7 +27,7 @@ body {
   font-weight: 500;
   box-sizing: border-box;
   outline: none;
-  border: 3px solid var(--sat-bg);
+  border: 3px solid var(--sat-bg-borders);
   border-radius: 20px;
 }
 
@@ -221,8 +221,7 @@ input:checked + .slider:before {
   padding: 12px 10px;
   border-radius: 16px !important;
   float: right;
-  outline: 2px solid var(--sat-bg);
-  border: 4px solid var(--sat-bg);
+  border: 4px solid var(--sat-bg-borders);
 }
 .setting-button i {
   font-size: 1.2rem;
@@ -371,7 +370,7 @@ ul.tabs li {
 
 /* 
 ========
-+ Theme Icons (YES, they are just small svg images that i make in figma.) +
++ Theme Icons (YES, they are just small png images that i make in figma.) +
 ========
 */
 
@@ -456,10 +455,6 @@ ul.tabs li {
 ========
 */
 
-.typewritter_1 {
-  font-weight: 600;
-}
-
 #sv-msg,
 #sv-msg2 {
   font-weight: 600;
@@ -474,7 +469,7 @@ ul.tabs li {
   background-color: var(--lighter-color);
   padding: 13px 10px !important;
   font-size: 15px;
-  border: 2px solid var(--sat-search-shortcuts);
+  border: 2px solid var(--sat-setting-bg-effect);
 }
 
 .username-section input:focus {

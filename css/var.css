@@ -550,7 +550,7 @@ img {
 }
 
 .app {
-  border: 3px solid var(--sat-bg);
+  border: 3px solid var(--sat-bg-borders);
   background: var(--sat-search-shortcuts);
 }
 
