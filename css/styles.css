@@ -612,7 +612,7 @@ ul.apps-category li.current {
 ========
 */
 .favModal {
-  background-color: #0a0a0a73;
+  background-color: #0a0a0abd;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -621,10 +621,9 @@ ul.apps-category li.current {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border-radius: 20px;
-  animation: fadeIn 0.2s ease;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 200ms ease;
 }
 
 /* Favorite modal Content/Box */
