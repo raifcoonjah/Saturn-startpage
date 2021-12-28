@@ -27,13 +27,13 @@ body {
   font-weight: 500;
   box-sizing: border-box;
   outline: none;
-  border: 3px solid var(--sat-bg);
+  border: 3px solid var(--sat-bg-borders);
   border-radius: 20px;
 }
 
 /* 
 ========
-+ The logo inside search engnie logo +
++ The logo inside search engine logo +
 ========
 */
 .search-engine-logo {
@@ -182,7 +182,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  border: 1px solid var(--switch-color-bg);
+  border: 1px solid var(--switch-color-bg-new);
 }
 
 .slider:before {
@@ -213,16 +213,15 @@ input:checked + .slider:before {
 
 .section-title {
   text-align: left;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .setting-button {
   outline: none;
-  padding: 10px 10px;
+  padding: 12px 10px;
   border-radius: 16px !important;
   float: right;
-  outline: 2px solid var(--sat-bg);
-  border: 4px solid var(--sat-bg);
+  border: 4px solid var(--sat-bg-borders);
 }
 .setting-button i {
   font-size: 1.2rem;
@@ -353,66 +352,6 @@ ul.tabs li {
 
 /* 
 ========
-+ Show tooltip on app hover +
-========
-*/
-
-/* .app:hover span {
-  visibility: visible;
-  transition: var(--transition-speed-fast);
-} */
-
-/* 
-========
-+ More apps +
-========
-*/
-
-.morecontainer {
-  margin: 0 auto;
-  padding: 26px 4px;
-}
-
-#cutieapps {
-  margin-top: 30px;
-}
-
-.cuteapps {
-  display: inline-block;
-  width: 12%;
-  margin: 0 0.5% 19px;
-  padding: 4px 20px;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.cuteapps i {
-  font-size: 2.6em;
-  margin-top: 10px;
-}
-
-.cuteapps p {
-  font-size: 16px;
-  margin-top: 10px;
-  font-weight: 500;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {
-    overflow-y: auto;
-  }
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-/* 
-========
 + The IOS 15 like background in settings. +
 ========
 */
@@ -431,7 +370,7 @@ ul.tabs li {
 
 /* 
 ========
-+ Theme Icons (YES, they are just small svg images that i make in figma.) +
++ Theme Icons (YES, they are just small png images that i make in figma.) +
 ========
 */
 
@@ -455,6 +394,9 @@ ul.tabs li {
   margin: 5px;
 }
 
+.theme-title i {
+  color: var(--sat-accent-color1);
+}
 /* 
 ========
 + Mobile optimizations +
@@ -466,6 +408,10 @@ ul.tabs li {
     width: 90%;
     height: 75%;
   }
+  ul.tabs li {
+    padding: 7px 7px;
+  }
+
   .cuteapps p {
     font-size: 10px;
   }
@@ -482,7 +428,7 @@ ul.tabs li {
 */
 
 .save-button {
-  padding: 9px 11px;
+  padding: 12px 11px;
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);
@@ -496,6 +442,12 @@ ul.tabs li {
   border: 1px solid var(--sat-accent-color1);
 }
 
+.cancel-fav-btn {
+  padding: 12px 11px;
+  outline: none;
+  color: var(--sat-ids);
+}
+
 .saved-msg {
   visibility: hidden;
 }
@@ -506,21 +458,21 @@ ul.tabs li {
 ========
 */
 
-.typewritter_1 {
-  font-weight: 600;
-}
-
 #sv-msg,
 #sv-msg2 {
   font-weight: 600;
   font-size: 12px;
 }
 
+#sv-msg2 {
+  font-size: 14px;
+}
+
 .username-section input {
   background-color: var(--lighter-color);
   padding: 13px 10px !important;
   font-size: 15px;
-  border: 2px solid var(--sat-search-shortcuts);
+  border: 2px solid var(--sat-setting-bg-effect);
 }
 
 .username-section input:focus {
@@ -567,6 +519,7 @@ ul.tabs li {
   background: var(--sat-search-shortcuts);
   padding: 13px 10px;
   font-weight: 400;
+  font-size: 14px;
 }
 
 .favorites-search input:hover,
@@ -664,7 +617,7 @@ ul.apps-category li.current {
 ========
 */
 .favModal {
-  background-color: #0a0a0a73;
+  background-color: #0a0a0abd;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -675,7 +628,7 @@ ul.apps-category li.current {
   overflow: auto; /* Enable scroll if needed */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border-radius: 20px;
+  animation: fadeIn 200ms ease;
 }
 
 /* Favorite modal Content/Box */
@@ -687,7 +640,7 @@ ul.apps-category li.current {
   transform: translate(-50%, -50%);
   padding: 15px 15px;
   padding-bottom: 20px;
-  width: 40rem;
+  width: 38rem;
   height: 31rem;
   overflow-y: scroll;
   border-radius: 20px;
@@ -789,7 +742,7 @@ ul li {
 
 .fav-btn button {
   display: block;
-  padding: 11px;
+  padding: 13px;
   margin-top: 30px;
   font-size: 0.9em;
   font-weight: 450;
@@ -802,7 +755,6 @@ ul li {
 .fav-btn button:hover {
   border: 1px solid var(--sat-accent-color1);
 }
-
 
 /* Every close button uses this */
 

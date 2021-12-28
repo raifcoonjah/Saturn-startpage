@@ -39,18 +39,16 @@ const appsList = (x) => {
         <div id="app-2" class="app-content">
           <div class="popup">
             <div id="apps">
-              <a href="https://udemy.com">
-                <div class="app">
-                  <i class="las la-chalkboard-teacher"></i>
-                  <span>Udemy</span>
-                </div></a
-              >
               <a href="http://moodle.rbs.ac.mu/moodle/">
                 <div class="app">
                   <i class="las la-school"></i>
                   <span>Rushm.. Moodle</span>
-                </div></a
-              >
+                </div></a>  
+              <a href="https://udemy.com">
+                <div class="app">
+                  <i class="las la-chalkboard-teacher"></i>
+                  <span>Udemy</span>
+                </div></a>
               <a href="https://learn-anything.xyz/">
                 <div class="app">
                   <i class="lar la-map"></i>
@@ -142,9 +140,9 @@ const settingAbout = (z) => {
                <br/>
                 Saturn version:
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.0.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.1.0"
                   target="_blank"
-                  >v4.0.0 <i class="las la-external-link-alt"></i
+                  >v4.1.0 RC <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better

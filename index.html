@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" />
     <!-- All the CSS needed to make Saturn Work -->
-    <link rel="stylesheet" href="css/var.css" />
+    <link rel="stylesheet" href="css/core.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/anim.min.css" />
+    <link rel="stylesheet" href="css/anim.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/themes.css" />
     <link rel="stylesheet" href="icons/css/line-awesome.min.css" />
@@ -18,7 +18,6 @@
   <body class="light">
     <p class="gudmorning" id="greetings"></p>
     <p class="time" id="time"></p>
-
     <main>
       <div class="full">
         <div class="search_block">
@@ -63,18 +62,18 @@
 
       <!-- App lists + App category -->
       <div class="apps_list">
-        <h5 class="section-title new">
+        <h4 class="section-title new">
           <i class="las la-grip-horizontal"></i> Apps list
-        </h5>
+        </h4>
         <ul class="apps-category">
           <li class="tab-link current" data-tab="app-1">
-            <i class="las la-heart"></i> Most used
+            <i class="lab la-gratipay"></i> Most used
           </li>
           <li class="tab-link" data-tab="app-2">
             <i class="las la-book-reader"></i> Study
           </li>
           <li class="tab-link" data-tab="app-3">
-            <i class="las la-users"></i> Social
+            <i class="las la-share-alt"></i> Social
           </li>
           <li class="tab-link" data-tab="app-4">
             <i class="las la-photo-video"></i> Media
@@ -89,9 +88,9 @@
 
       <!-- Favorite v3.0 -->
       <div id="fav-container" class="fav-container">
-        <h5 class="section-title">
+        <h4 class="section-title">
           <i class="las la-swatchbook"></i> Favorites
-        </h5>
+        </h4>
         <br />
         <div class="favorites-search">
           <input
@@ -140,15 +139,15 @@
 
             <br />
             <br />
+            <button id="cancel-fav-btn" class="cancel-fav-btn">
+              <i class="las la-times-circle"></i> Cancel
+            </button>
             <button
               id="add"
-              style="background: var(--lighter-color)"
+              style="background: var(--lighter-color); font-weight: 600"
               class="save-button"
             >
               <i class="lar la-save"></i> Save
-            </button>
-            <button id="cancel-fav-btn" class="cancel-fav-btn">
-              <i class="las la-times"></i> Cancel
             </button>
             <h3></h3>
             <label id="sv-msg2"></label>
@@ -156,18 +155,18 @@
               <i class="las la-grip-lines"></i>
             </p>
             <div class="side-text">
-              <details>
-                <summary>
-                  <i class="lar la-question-circle"></i> Learn about favorites
-                </summary>
-                <i class="las la-thumbtack"></i> Unlock the full potential of
-                favorites, learn more
+              <div class="settings-background">
+                <span class="settings-dot"
+                  ><i class="las la-thumbtack"></i
+                ></span>
+                Unlock the full potential of favorites, learn more
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
                   target="_blank"
-                  >here <i class="las la-external-link-alt"></i
-                ></a>
-              </details>
+                  >here <i class="las la-external-link-alt"></i></a
+                >.
+              </div>
+              <br />
               <p style="text-align: center; font-weight: 500; font-size: 13px">
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/issues/new"
@@ -203,7 +202,7 @@
               <li class="tab-link" data-tab="tab-3">
                 <i class="las la-info-circle"></i> About
               </li>
-              <h1></h1>
+              <p class="line"></p>
               <li class="tab-link" data-tab="tab-5">
                 <i class="las la-keyboard"></i> K-Shortcuts
               </li>
@@ -298,6 +297,18 @@
                   src="/img/themes/lighterdark.png"
                   title="Dark theme"
                   alt="dark-icon.png"
+              /></a>
+              <a id="dracula" href="#" class="theme-icon"
+                ><img
+                  src="/img/themes/dracula.png"
+                  title="Dracula theme"
+                  alt="dracula-icon.png"
+              /></a>
+              <a id="nord" href="#" class="theme-icon"
+                ><img
+                  src="/img/themes/nord.png"
+                  title="Nord theme"
+                  alt="nord-icon.png"
               /></a>
               <p class="theme-title">
                 <i class="las la-cloud-moon"></i> Darker themes

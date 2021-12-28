@@ -1,9 +1,16 @@
 /*
-Saturn Startpage: Open source & free.
-v3.0.0 CSS Core
+Saturn Startpage: Open source & free startpage. 
+var.css v2 - v4.0.0 CSS Core
 */
 
-/* Fonts: Everything is loaded locally. */
+/* 
+========
++ Fonts +
++ We're loading all fonts locally to reduce the 
+amount of time saturn takes to load +
++ Last updated: 11.06.2020 +
+========
+*/
 
 /* poppins-200 - latin */
 @font-face {
@@ -78,14 +85,342 @@ v3.0.0 CSS Core
 
 /* 
 ========
-+ Original Fork Code +
-- This is currently being completely rewritten from the ground up. 
-- This file will eventually be replaced by the core.css
++ normalize.css v8.0.1 | MIT License +
++ github.com/necolas/normalize.css +
++ Some stuff has been remove or modified +
+========
+*/
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* 
+========
++ Core.css previously known as var.css +
++ GNU General Public License v3.0 +
++ github.com/mraif13/saturn-startpage +
++ v4.0.0 CSS Core +
 ========
 */
 
 * {
-  /* Reset margins and padding */
   margin: 0;
   padding: 0;
 }
@@ -135,25 +470,22 @@ button {
 body {
   /* Center body in page */
   margin: 0 auto;
-  max-width: 750px;
-  padding: 2rem;
+  max-width: 760px;
   border-radius: var(--sat-border-radius);
   overflow-x: hidden;
   background: var(--sat-bg);
-  background-position: center;
-  background-size: cover;
+
+  /* Minor ajustments for better image background support */
+  /* This should fix all issues we had before */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 
   /* Main body text */
   color: var(--sat-ids);
   font-size: 1.03rem;
   line-height: 1.5;
   font-family: var(--default-font);
-}
-
-::selection {
-  /* Set background color for selected text */
-  background: var(--sat-txt-selector-clr);
-  color: var(--sat-txt-selector-clr-after);
 }
 
 h1,
@@ -167,41 +499,36 @@ h6 {
   padding-top: 0.875rem;
 }
 
-h1 {
-  color: var(--sat-heading);
+/* == Shows a small line 
+instead of text == */
+
+.line {
   padding-bottom: 2px;
   margin-bottom: 8px;
-  border-bottom: 1px solid var(--sat-search-shortcuts);
-}
-
-h4,
-h5,
-h6 {
-  margin-bottom: 0.3rem;
+  border-bottom: 1px solid var(--lighter-color);
 }
 
 h1 {
-  font-size: 1.9rem;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.17em;
 }
-
 h4 {
-  font-size: 1.2rem;
+  font-size: 1em;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 0.83em;
 }
 
 h6 {
-  font-size: 0.87rem;
+  font-size: 0.75em;
 }
 
 a {
@@ -215,18 +542,13 @@ a:hover {
   transition: var(--transition-speed-fast);
 }
 
+/* 
+========
++ Set a '?' cursor while hovering an abbreviation +
+========
+*/
+
 abbr:hover {
-  /* Set the '?' cursor while hovering an abbreviation */
-  cursor: help;
-}
-
-blockquote {
-  padding: 1.5rem;
-  background: var(--sat-search-shortcuts);
-  border-radius: var(--sat-border-radius);
-}
-
-abbr {
   cursor: help;
 }
 
@@ -235,6 +557,12 @@ blockquote *:last-child {
   margin-bottom: 0;
 }
 
+/* 
+========
++ This will probably never get used as Saturn doesn't
+have any headers. +
+========
+*/
 header {
   background: var(--sat-search-shortcuts);
   padding: 2rem 1.5rem;
@@ -248,11 +576,6 @@ header h2,
 header h3 {
   padding-bottom: 0;
   border-bottom: 0;
-}
-
-header > *:first-child {
-  margin-top: 0;
-  padding-top: 0;
 }
 
 header > *:last-child {
@@ -287,23 +610,25 @@ input[type="reset"][disabled],
 input[type="button"][disabled] {
   cursor: default;
   opacity: 0.5;
-
-  /* Set the [X] cursor while hovering a disabled link */
   cursor: not-allowed;
 }
-
-/* Let the browser load its default font instead of setting one */
 
 code,
 samp,
 kbd,
 pre {
-  /* The main preformatted style. This is changed slightly across different cases. */
   background: var(--sat-search-bar-focus);
   padding: 10px 8px;
   font-size: 0.9rem;
   border-radius: 8px;
 }
+
+/* 
+========
++ Custom kdb styles +
+========
+*/
+
 kbd {
   font-weight: 600;
   background: var(--sat-search-bar-focus);
@@ -319,7 +644,6 @@ pre {
 }
 
 pre code {
-  /* When <code> is in a <pre>, reset it's formatting to blend in */
   background: inherit;
   font-size: inherit;
   color: inherit;
@@ -329,7 +653,6 @@ pre code {
 }
 
 code pre {
-  /* When <pre> is in a <code>, reset it's formatting to blend in */
   display: inline;
   background: inherit;
   font-size: inherit;
@@ -340,10 +663,16 @@ code pre {
 }
 
 details {
-  /* Make the <details> look more "clickable" */
+  display: block;
   padding: 0.6rem 1rem;
   background-color: var(--lighter-color);
   border-radius: var(--sat-border-radius);
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 summary:hover {
@@ -351,25 +680,16 @@ summary:hover {
   transition: var(--transition-speed-fast);
 }
 
-summary {
-  /* Makes the <summary> look more like a "clickable" link with the pointer cursor */
-  cursor: pointer;
-  font-weight: 600;
-}
-
 details[open] {
-  /* Adjust the <details> padding while open */
   padding-bottom: 0.75rem;
   transition: var(--transition-speed-fast);
 }
 
 details[open] summary {
-  /* Adjust the <details> padding while open */
   margin-bottom: 3px;
 }
 
 details[open] > *:last-child {
-  /* Resets the bottom margin of the last element in the <details> while <details> is opened. This prevents double margins/paddings. */
   margin-bottom: 0;
 }
 
@@ -378,12 +698,10 @@ dt {
 }
 
 dd::before {
-  /* Add an arrow to data table definitions */
-  content: "→ ";
+  content: " →";
 }
 
 hr {
-  /* Reset the border of the <hr> separator, then set a better line */
   border: 0;
   margin: 1rem auto;
 }
@@ -399,7 +717,6 @@ legend {
 }
 
 table {
-  /* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
   border-collapse: collapse;
   width: 100%;
 }
@@ -415,7 +732,6 @@ th {
 }
 
 tr:nth-child(even) {
-  /* Set every other cell slightly darker. Improves readability. */
   background: var(--sat-search-shortcuts);
 }
 
@@ -425,13 +741,11 @@ table caption {
 }
 
 textarea {
-  /* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
   max-width: 100%;
 }
 
 ol,
 ul {
-  /* Replace the browser default padding */
   padding-left: 2rem;
 }
 
@@ -482,9 +796,16 @@ input:focus {
 
 img {
   max-width: 100%;
+  border-style: none;
 }
 
-/* Saturn Core v3.0  */
+/* 
+========
++ Saturn Startpage Main Core v4.0.0 +
+========
+*/
+
+/* == Favorites background stuff == */
 
 #add-link-form,
 #content {
@@ -497,15 +818,10 @@ img {
 .search-bar:focus {
   background: var(--sat-search-bar-focus);
 }
-.modal {
-  background-color: var(--sat-setting-bg-color);
-}
-.overlay {
-  background: var(--sat-setting-bg-effect);
-}
-.modal-content,
-.overlay-content,
-.morecontainer {
+
+/* == Settings background color == */
+
+.modal-content {
   background: var(--sat-setting-bg-color);
 }
 
@@ -515,15 +831,20 @@ img {
 .removebtn {
   background: var(--sat-search-shortcuts);
 }
-.tooltiptext {
-  background: var(--sat-tooltip-bg);
-}
+
+/* == Allows the "header text" to make use of gradient effect == */
+
 .gudmorning {
   background-color: var(--gudmrning-txt-bg);
   background-image: var(--gudmrning-txt);
 }
 
-/* Everything transition */
+/* 
+========
++ Everything that makes use of a similar
+transition speed. +
+========
+*/
 #fav-link a:hover,
 .snip-wid button,
 .overlay,
@@ -533,24 +854,21 @@ img {
 .cuteapps:hover,
 .slider:before,
 .search-bar:hover,
-.search-bar:focus .app:hover .tooltip {
+.search-bar:focus .app:hover {
   transition: var(--transition-speed-default);
 }
 
-.snip-wid button {
-  background-color: var(--sat-setting-bg-effect);
-  color: var(--sat-heading);
-}
+/* == Force the use of while 
+color to fix some issues == */
 
 .removebtn:hover,
-.snip-wid button:hover,
 .setting-button:hover,
 .app:hover {
-  color: var(--for-white); /* force white to fix issues */
+  color: var(--for-white);
 }
 
 .app {
-  border: 3px solid var(--sat-bg-borders);
+  border: 3px solid var(--sat-bg);
   background: var(--sat-search-shortcuts);
 }
 
@@ -575,14 +893,12 @@ img {
   transition: var(--transition-speed-default);
 }
 
-/* Text color */
-.overlay,
+/* == Make everything use the 
+current color var == */
 .setting-button,
 .app,
 .cuteapps,
 .removebtn,
-.tooltiptext,
-.snip-wid button,
 .setting-button i,
 .cuteapps:hover,
 #fav-link a:hover,
@@ -590,7 +906,15 @@ img {
   color: var(--sat-ids);
 }
 
-/* Everything that needs a cursor */
+/* == Can be in seen in action in 
+the settings title == */
+
+.settings-dot {
+  color: var(--sat-accent-color1);
+}
+
+/* == Some stuff that require the cursor 
+to become a pointer == */
 .slider,
 ul.tabs li,
 .app,
@@ -600,7 +924,8 @@ ul.tabs li,
   cursor: pointer;
 }
 
-/* Border radius */
+/* == Setting up everything to 
+use the correct border radius == */
 .search-bar,
 .app,
 .tooltiptext,
