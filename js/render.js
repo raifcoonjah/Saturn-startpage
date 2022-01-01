@@ -142,7 +142,7 @@ const settingAbout = (z) => {
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.1.0"
                   target="_blank"
-                  >v4.1.0 RC <i class="las la-external-link-alt"></i
+                  >v4.2.0 RC <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
