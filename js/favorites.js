@@ -1,7 +1,8 @@
 //
 // ========
-// + FAVORITES v1.77.0 +
+// + FAVORITES v1.77.1 +
 // Original Source: https://codepen.io/4gray/pen/glGun
+// Heavily modified and improve various things
 // ========
 //
 
@@ -24,7 +25,12 @@ $(document).ready(function () {
         '">' +
         $title.val() +
         "</a>" +
-        '<button class="removebtn" title="Delete favorite"><i class="las la-minus-circle"></i></button></li>'
+        '<button class="removebtn" title="Delete favorite"><i class="las la-minus-circle"></i></button>' +
+        '<a target="_blank" href="' +
+        $url.val() +
+        '">' +
+        '<button class="removebtn2" title="Open in new tab"><i class="las la-external-link-square-alt"></i></button>' +
+        "</a></li>"
     );
 
     // Save changes to localstorage
