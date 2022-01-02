@@ -273,6 +273,7 @@ ul.tabs li {
 }
 .tab-content {
   display: none;
+  animation: slide-up-fade-in 170ms;
 }
 
 .tab-content h4 i {
@@ -378,7 +379,7 @@ ul.tabs li {
   width: 150px;
   height: 75px;
   padding: 3px;
-  margin: 2px;
+  margin: 10px;
   border-radius: 20px;
   position: relative;
 }
@@ -562,7 +563,7 @@ ul.apps-category li:hover,
 .more-apps:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-ids);
-  transition: var(--transition-speed-fast);
+  transition: var(--transition-speed-default);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
   font-weight: 600;
 }

@@ -20,13 +20,6 @@ determineGreet(new Date().getHours());
 
 //
 // ========
-// + setTimeout function to 
-// reload saturn every 1 min (60 seconds) +
-// ========
-//
-setTimeout(() => window.location.reload(), 60000);
-//
-// ========
 // + Settings Modal trigger + close button +
 // ========
 //

@@ -209,7 +209,7 @@
             </ul>
             <br />
 
-            <div id="tab-2" class="tab-content current slide-up-fade-in">
+            <div id="tab-2" class="tab-content current">
               <div class="settings-background">
                 <h3><i class="las la-user-edit"></i> Username</h3>
                 <p>Set your username to anything.</p>
@@ -275,7 +275,8 @@
 
           <div id="setting_about"></div>
 
-          <div id="tab-4" class="tab-content slide-up-fade-in">
+          <!-- Theme section -- Refactoring in progress .. -->
+          <div id="tab-4" class="tab-content">
             <div class="settings-background">
               <h3><i class="las la-palette"></i> Theme</h3>
               <p>
@@ -286,45 +287,113 @@
               <p class="theme-title"><i class="las la-sun"></i> Light theme</p>
               <a id="light" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/light-theme.png"
+                  src="/img/themes/light-theme.jpg"
                   title="Light theme"
-                  alt="light-icon.png"
+                  alt="light-icon.jpg"
               /></a>
-              <br />
+
+              <!-- Small button used to show theme info. -->
+              <button class="theme-info-btn" title="Theme info">
+                <div class="tooltip">
+                  <i class="las la-ellipsis-h"></i>
+                  <span class="tooltiptext">
+                    <h6>Theme name:</h6>
+                    <p>Default light</p>
+                    <h6>Author:</h6>
+                    <p>mraif13</p>
+                  </span>
+                </div>
+              </button>
+
               <p class="theme-title"><i class="las la-moon"></i> Dark themes</p>
               <a id="lighterdarktheme" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/lighterdark.png"
+                  src="/img/themes/lighterdark.jpg"
                   title="Dark theme"
-                  alt="dark-icon.png"
+                  alt="dark-icon.jpg"
               /></a>
+              <button class="theme-info-btn" title="Theme info">
+                <div class="tooltip">
+                  <i class="las la-ellipsis-h"></i>
+                  <span class="tooltiptext">
+                    <h6>Theme name:</h6>
+                    <p>Notion-ish theme</p>
+                    <h6>Author:</h6>
+                    <p>mraif13</p>
+                  </span>
+                </div>
+              </button>
               <a id="dracula" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/dracula.png"
+                  src="/img/themes/dracula.jpg"
                   title="Dracula theme"
-                  alt="dracula-icon.png"
+                  alt="dracula-icon.jpg"
               /></a>
+              <button class="theme-info-btn" title="Theme info">
+                <div class="tooltip">
+                  <i class="las la-ellipsis-h"></i>
+                  <span class="tooltiptext">
+                    <h6>Theme name:</h6>
+                    <p>Dracula theme</p>
+                    <h6>Author:</h6>
+                    <p>mraif13</p>
+                  </span>
+                </div>
+              </button>
               <a id="nord" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/nord.png"
+                  src="/img/themes/nord.jpg"
                   title="Nord theme"
-                  alt="nord-icon.png"
+                  alt="nord-icon.jpg"
               /></a>
+              <button class="theme-info-btn" title="Theme info">
+                <div class="tooltip">
+                  <i class="las la-ellipsis-h"></i>
+                  <span class="tooltiptext">
+                    <h6>Theme name:</h6>
+                    <p>Nord theme</p>
+                    <h6>Author:</h6>
+                    <p>mraif13</p>
+                  </span>
+                </div>
+              </button>
               <p class="theme-title">
                 <i class="las la-cloud-moon"></i> Darker themes
               </p>
               <a id="dark" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/dark.png"
+                  src="/img/themes/dark.jpg"
                   title="Darker theme"
-                  alt="dark-icon.png"
+                  alt="dark-icon.jpg"
               /></a>
+              <button class="theme-info-btn" title="Theme info">
+                <div class="tooltip">
+                  <i class="las la-ellipsis-h"></i>
+                  <span class="tooltiptext">
+                    <h6>Theme name:</h6>
+                    <p>Default dark</p>
+                    <h6>Author:</h6>
+                    <p>mraif13</p>
+                  </span>
+                </div>
+              </button>
               <a id="space" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/sexy-contrast.png"
+                  src="/img/themes/sexy-contrast.jpg"
                   title="Material-ish Theme"
-                  alt="sexy-contrast.png"
+                  alt="sexy-contrast.jpg"
               /></a>
+              <button class="theme-info-btn" title="Theme info">
+                <div class="tooltip">
+                  <i class="las la-ellipsis-h"></i>
+                  <span class="tooltiptext">
+                    <h6>Theme name:</h6>
+                    <p>Default darkv2</p>
+                    <h6>Author:</h6>
+                    <p>mraif13</p>
+                  </span>
+                </div>
+              </button>
               <p class="theme-title">
                 <i class="las la-flask"></i>
                 <abbr
@@ -333,16 +402,28 @@
                 >
                 theme
               </p>
+              <br />
               <a id="linkin-park" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/rock-legend.png"
+                  src="/img/themes/rock-legend.jpg"
                   title="Linkin Park Theme"
-                  alt="rock-legend.png"
+                  alt="rock-legend.jpg"
               /></a>
+              <button class="theme-info-btn" title="Theme info">
+                <div class="tooltip">
+                  <i class="las la-ellipsis-h"></i>
+                  <span class="tooltiptext">
+                    <h6>Theme name:</h6>
+                    <p>LinkinPark light</p>
+                    <h6>Author:</h6>
+                    <p>mraif13</p>
+                  </span>
+                </div>
+              </button>
             </div>
           </div>
 
-          <div id="tab-5" class="tab-content slide-up-fade-in">
+          <div id="tab-5" class="tab-content">
             <div class="settings-background">
               <h2>K-Shortcuts</h2>
               <p>
