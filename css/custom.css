@@ -57,9 +57,9 @@
   border: none;
   border-radius: 9px;
   margin: -10px;
-  border: 1px solid var(--lighter-color);
+  border: 2px solid var(--lighter-color);
 }
 
 .theme-info-btn:hover {
-  border: 1px solid var(--sat-accent-color1);
+  border: 2px solid var(--sat-accent-color1);
 }
