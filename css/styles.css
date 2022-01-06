@@ -244,14 +244,14 @@ ul.tabs li {
   padding: 10px 20px;
   margin: 5px;
   border-radius: var(--sat-border-radius);
-  border: 2px solid var(--sat-setting-bg-color);
+  border: 1px solid var(--sat-setting-bg-color);
 }
 
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
-  border: 2px solid var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 ul.tabs li.current {
@@ -259,7 +259,7 @@ ul.tabs li.current {
   color: var(--sat-ids);
   font-weight: 600;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
-  border: 2px solid var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 ul.tabs li.current i {
