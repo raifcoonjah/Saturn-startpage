@@ -20,16 +20,16 @@ $(document).ready(function () {
   $("#add").click(function () {
     // Add new item
     $("#fav-link").append(
-      '<li><a href="' +
+      '<li class="fav-link"><a href="' +
         $url.val() +
         '">' +
         $title.val() +
         "</a>" +
         '<button class="removebtn" title="Delete favorite"><i class="las la-minus-circle"></i></button>' +
-        '<a target="_blank" href="' +
+        '<a class="no_hover" target="_blank" href="' +
         $url.val() +
         '">' +
-        '<button class="removebtn2" title="Open in new tab"><i class="las la-external-link-square-alt"></i></button>' +
+        '<button class="newtabbtn" title="Open in new tab"><i class="las la-external-link-square-alt"></i></button>' +
         "</a></li>"
     );
 

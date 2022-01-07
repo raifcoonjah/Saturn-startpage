@@ -241,17 +241,15 @@ input:checked + .slider:before {
 ul.tabs li {
   font-weight: 500;
   color: var(--sat-ids);
-  padding: 10px 20px;
+  padding: 9px 20px;
   margin: 5px;
-  border-radius: var(--sat-border-radius);
-  border: 1px solid var(--sat-setting-bg-color);
+  border-radius: 12px;
 }
 
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
-  border: 1px solid var(--sat-accent-color1);
 }
 
 ul.tabs li.current {
@@ -259,7 +257,6 @@ ul.tabs li.current {
   color: var(--sat-ids);
   font-weight: 600;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
-  border: 1px solid var(--sat-accent-color1);
 }
 
 ul.tabs li.current i {
@@ -361,7 +358,8 @@ ul.tabs li {
 */
 
 .settings-background {
-  margin: 5px;
+  margin: -1px;
+  margin-left: -20px;
   margin-bottom: -10px;
   padding: 10px;
   background: var(--sat-setting-bg-effect);
@@ -390,7 +388,7 @@ ul.tabs li {
 .theme-icon img:hover {
   transition: var(--transition-speed-default);
   background-color: var(--sat-accent-color1);
-  top: -4px;
+  top: -3px;
 }
 
 .theme-title {
@@ -712,6 +710,20 @@ ul li {
   margin-top: -5px;
   padding: 8px;
   border-radius: 13px;
+}
+
+.newtabbtn {
+  border: none;
+  background: none;
+  float: right;
+  margin-top: -5px;
+  padding: 8px;
+  border-radius: 13px;
+  visibility: visible;
+}
+
+.newtabbtn:hover {
+  background-color: var(--sat-accent-color1);
 }
 
 #content {

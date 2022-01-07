@@ -5,61 +5,16 @@
 ========
 */
 
-/* theme-info text */
-.theme-info {
-  visibility: hidden;
-  width: 120px;
-  background-color: var(--lighter-color);
-  text-align: center;
-  border-radius: var(--sat-border-radius);
-  border: 1px solid var(--lighter-color);
-
-  /* Position the theme-info text */
-  position: absolute;
-  z-index: 1;
-  bottom: 128%;
-  left: 50%;
-  margin-left: -60px;
-
-  /* Fade in theme-info */
-  opacity: 0;
-  transition: opacity var(--transition-speed-default);
-}
-
-.theme-info p {
-  font-size: 13px;
-  margin: 5px;
-}
-
-/* theme-info arrow */
-.theme-info::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -4px;
-  border-width: 4px;
-  border-style: solid;
-  border-color: var(--lighter-color) transparent transparent transparent;
-}
-
 /* Show the theme-info text when you mouse over the theme-info container */
-.theme-info-btn:hover .theme-info {
+.theme-icon:hover .theme-info {
   visibility: visible;
   opacity: 1;
 }
 
-.theme-info-btn {
-  position: absolute;
-  background-color: var(--lighter-color);
-  font-size: 16px;
-  padding: 2px 5px;
-  border: none;
-  border-radius: 9px;
-  margin: -10px;
-  border: 2px solid var(--lighter-color);
+.no_hover {
+  visibility: hidden;
 }
 
-.theme-info-btn:hover {
-  border: 2px solid var(--sat-accent-color1);
+.no_hover:hover {
+  visibility: hidden;
 }
