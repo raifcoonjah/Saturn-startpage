@@ -101,7 +101,7 @@ body {
 
 .settings-title {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 26px;
   line-height: 33px;
   text-align: left;
   padding: 20px;
@@ -241,7 +241,7 @@ input:checked + .slider:before {
 ul.tabs li {
   font-weight: 500;
   color: var(--sat-ids);
-  padding: 12px 20px;
+  padding: 12px 25px;
   margin: 5px;
   border-radius: var(--sat-border-radius);
 }
@@ -273,6 +273,7 @@ ul.tabs li {
 }
 .tab-content {
   display: none;
+  animation: slide-up-fade-in 170ms;
 }
 
 .tab-content h4 i {
@@ -378,7 +379,6 @@ ul.tabs li {
   width: 150px;
   height: 75px;
   padding: 3px;
-  margin: 2px;
   border-radius: 20px;
   position: relative;
 }
@@ -386,7 +386,7 @@ ul.tabs li {
 .theme-icon img:hover {
   transition: var(--transition-speed-default);
   background-color: var(--sat-accent-color1);
-  top: -4px;
+  top: -3px;
 }
 
 .theme-title {
@@ -562,7 +562,7 @@ ul.apps-category li:hover,
 .more-apps:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-ids);
-  transition: var(--transition-speed-fast);
+  transition: var(--transition-speed-default);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
   font-weight: 600;
 }
@@ -706,8 +706,24 @@ ul li {
   background: none;
   float: right;
   margin-top: -5px;
-  padding: 8px;
-  border-radius: 13px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.newtabbtn {
+  border: none;
+  background: none;
+  float: right;
+  margin-top: -5px;
+  padding: 10px;
+  border-radius: 12px;
+  visibility: visible; /* Force visibility to fix issues */
+}
+
+.newtabbtn:hover {
+  background-color: var(--sat-accent-color1);
+  transition: var(--transition-speed-default);
+  color: var(--for-white);
 }
 
 #content {

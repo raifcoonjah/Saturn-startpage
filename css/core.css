@@ -1,6 +1,9 @@
-/*
-Saturn Startpage: Open source & free startpage. 
-var.css v2 - v4.0.0 CSS Core
+/* 
+========
++ Saturn Startpage +
++ var.css v2 (work in progress - renamed to core.css) +
++ Build v31.12.2021 +
+========
 */
 
 /* 
@@ -85,9 +88,9 @@ amount of time saturn takes to load +
 
 /* 
 ========
++ Part of: +
 + normalize.css v8.0.1 | MIT License +
 + github.com/necolas/normalize.css +
-+ Some stuff has been remove or modified +
 ========
 */
 

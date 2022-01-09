@@ -159,11 +159,11 @@
                 <span class="settings-dot"
                   ><i class="las la-thumbtack"></i
                 ></span>
-                Unlock the full potential of favorites, learn more
+                Unlock the full potential of favorites,
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
                   target="_blank"
-                  >here <i class="las la-external-link-alt"></i></a
+                  >learn more <i class="las la-external-link-alt"></i></a
                 >.
               </div>
               <br />
@@ -179,7 +179,7 @@
         </div>
       </div>
 
-      <!-- v3.0 Settings -->
+      <!-- v3.1 Settings -->
       <div class="modal" id="openModal">
         <div class="modal-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
@@ -197,7 +197,7 @@
                 <i class="las la-cog"></i> General
               </li>
               <li class="tab-link" id="tab-link" data-tab="tab-4">
-                <i class="las la-pencil-ruler"></i> Customization
+                <i class="las la-palette"></i> Themes
               </li>
               <li class="tab-link" data-tab="tab-3">
                 <i class="las la-info-circle"></i> About
@@ -209,8 +209,12 @@
             </ul>
             <br />
 
-            <div id="tab-2" class="tab-content current slide-up-fade-in">
+            <div id="tab-2" class="tab-content current">
               <div class="settings-background">
+                <h2>General</h2>
+                <p></p>
+                <p class="line"></p>
+
                 <h3><i class="las la-user-edit"></i> Username</h3>
                 <p>Set your username to anything.</p>
                 <div id="popUp" class="username-section">
@@ -275,56 +279,74 @@
 
           <div id="setting_about"></div>
 
-          <div id="tab-4" class="tab-content slide-up-fade-in">
-            <div class="settings-background">
-              <h3><i class="las la-palette"></i> Theme</h3>
-              <p>
-                Personalize Saturn Startpage with themes to match your style,
-                mood, and personality.
-              </p>
+          <!-- 
++ Theme section /i settings +
++ Refactoring in progress +
+-->
 
+          <!-- + Header bar + -->
+          <div id="tab-4" class="tab-content">
+            <div class="settings-background">
+              <h2>Theme</h2>
+              <p>
+                Personalize Saturn Startpage with themes to match your style &
+                mood.
+              </p>
+              <p class="line"></p>
+
+              <!-- + Light theme section + -->
               <p class="theme-title"><i class="las la-sun"></i> Light theme</p>
+
               <a id="light" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/light-theme.png"
+                  src="/img/themes/light-theme.jpg"
                   title="Light theme"
-                  alt="light-icon.png"
+                  alt="light-icon.jpg"
               /></a>
-              <br />
+
+              <!-- + Dark theme section + -->
               <p class="theme-title"><i class="las la-moon"></i> Dark themes</p>
               <a id="lighterdarktheme" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/lighterdark.png"
+                  src="/img/themes/lighterdark.jpg"
                   title="Dark theme"
-                  alt="dark-icon.png"
+                  alt="dark-icon.jpg"
               /></a>
+
               <a id="dracula" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/dracula.png"
+                  src="/img/themes/dracula.jpg"
                   title="Dracula theme"
-                  alt="dracula-icon.png"
+                  alt="dracula-icon.jpg"
               /></a>
+
               <a id="nord" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/nord.png"
+                  src="/img/themes/nord.jpg"
                   title="Nord theme"
-                  alt="nord-icon.png"
+                  alt="nord-icon.jpg"
               /></a>
+
+              <!-- + Darker theme section + -->
               <p class="theme-title">
                 <i class="las la-cloud-moon"></i> Darker themes
               </p>
+
               <a id="dark" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/dark.png"
+                  src="/img/themes/dark.jpg"
                   title="Darker theme"
-                  alt="dark-icon.png"
+                  alt="dark-icon.jpg"
               /></a>
+
               <a id="space" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/sexy-contrast.png"
+                  src="/img/themes/sexy-contrast.jpg"
                   title="Material-ish Theme"
-                  alt="sexy-contrast.png"
+                  alt="sexy-contrast.jpg"
               /></a>
+
+              <!-- + Experimental theme section + -->
               <p class="theme-title">
                 <i class="las la-flask"></i>
                 <abbr
@@ -335,14 +357,14 @@
               </p>
               <a id="linkin-park" href="#" class="theme-icon"
                 ><img
-                  src="/img/themes/rock-legend.png"
+                  src="/img/themes/rock-legend.jpg"
                   title="Linkin Park Theme"
-                  alt="rock-legend.png"
+                  alt="rock-legend.jpg"
               /></a>
             </div>
           </div>
 
-          <div id="tab-5" class="tab-content slide-up-fade-in">
+          <div id="tab-5" class="tab-content">
             <div class="settings-background">
               <h2>K-Shortcuts</h2>
               <p>

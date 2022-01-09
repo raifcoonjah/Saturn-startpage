@@ -128,7 +128,7 @@ const appsList = (x) => {
         </div>`);
 };
 const settingAbout = (z) => {
-  $(z).append(`<div id="tab-3" class="tab-content slide-up-fade-in">
+  $(z).append(`<div id="tab-3" class="tab-content">
             <div class="settings-background">
               <h3 style="text-align:center;padding:15px;">About</h3>
               <p class="new-about">
@@ -140,9 +140,9 @@ const settingAbout = (z) => {
                <br/>
                 Saturn version:
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.1.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.2.0"
                   target="_blank"
-                  >v4.1.0 RC <i class="las la-external-link-alt"></i
+                  >v4.2.0 RC <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better

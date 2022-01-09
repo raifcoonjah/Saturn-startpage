@@ -4,3 +4,25 @@
 + Think this should be in Saturn? Make a pull request +
 ========
 */
+
+/* Show the theme-info text when you mouse over the theme-info container */
+.theme-icon:hover .theme-info {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 
+========
++ This fixes a major hover issue related to favorites. +
++ This code just prevents a small bar from 
+appearing when the user hovers on the open in new tab button.
+========
+*/
+
+.hide_fav_bar {
+  visibility: hidden;
+}
+
+.hide_fav_bar:hover {
+  visibility: hidden;
+}
