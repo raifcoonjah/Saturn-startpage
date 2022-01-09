@@ -11,10 +11,18 @@
   opacity: 1;
 }
 
-.no_hover {
+/* 
+========
++ This fixes a major hover issue related to favorites. +
++ This code just prevents a small bar from 
+appearing when the user hovers on the open in new tab button.
+========
+*/
+
+.hide_fav_bar {
   visibility: hidden;
 }
 
-.no_hover:hover {
+.hide_fav_bar:hover {
   visibility: hidden;
 }

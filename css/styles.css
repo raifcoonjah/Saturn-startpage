@@ -101,7 +101,7 @@ body {
 
 .settings-title {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 26px;
   line-height: 33px;
   text-align: left;
   padding: 20px;
@@ -241,9 +241,9 @@ input:checked + .slider:before {
 ul.tabs li {
   font-weight: 500;
   color: var(--sat-ids);
-  padding: 9px 25px;
+  padding: 12px 25px;
   margin: 5px;
-  border-radius: 12px;
+  border-radius: var(--sat-border-radius);
 }
 
 ul.tabs li:hover {
@@ -706,8 +706,8 @@ ul li {
   background: none;
   float: right;
   margin-top: -5px;
-  padding: 8px;
-  border-radius: 13px;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 .newtabbtn {
@@ -715,13 +715,15 @@ ul li {
   background: none;
   float: right;
   margin-top: -5px;
-  padding: 8px;
-  border-radius: 13px;
-  visibility: visible;
+  padding: 10px;
+  border-radius: 12px;
+  visibility: visible; /* Force visibility to fix issues */
 }
 
 .newtabbtn:hover {
   background-color: var(--sat-accent-color1);
+  transition: var(--transition-speed-default);
+  color: var(--for-white);
 }
 
 #content {
