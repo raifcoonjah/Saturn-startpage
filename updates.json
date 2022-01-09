@@ -3,6 +3,10 @@
     "{aa7b057d-721f-4ed8-ae73-563f767006ee}": {
       "updates": [
         {
+          "version": "4.2.0",
+          "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v4.2.0/saturn_startpage-4.2.0-an+fx.xpi"
+        },
+        {
           "version": "4.1.0",
           "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v4.1.0/saturn_startpage-4.1.0-an+fx.xpi"
         },
