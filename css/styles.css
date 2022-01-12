@@ -521,12 +521,16 @@ ul.tabs li {
   padding: 13px 10px;
   font-weight: 400;
   font-size: 14px;
+  width: 35%;
 }
 
 .favorites-search input:hover,
 .favorites-search input:focus {
   transition: var(--transition-speed-default);
   background-color: var(--sat-search-bar-focus);
+  width: 100%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
 .cuteapps:hover {
