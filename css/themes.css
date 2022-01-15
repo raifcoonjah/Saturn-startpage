@@ -12,7 +12,7 @@
   --sat-input-hover: #b1b1b1;
   --sat-search-bar-focus: #999999;
   --sat-tooltip-bg: #c0c0c0; /* Tooltip background */
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Inter", sans-serif;
   --sat-border-radius: 15px;
   --gudmrning-txt: linear-gradient(to right, #000000 0%, #646464 100%);
   --sat-accent-color1: #000000;
@@ -52,7 +52,7 @@
   --sat-input-hover: #2b323d;
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #181b22;
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
   --sat-accent-color1: hsl(208, 67%, 56%);
   --moreapps-hovering-clr: #4190d4;
@@ -96,7 +96,7 @@
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222222; /* Tooltip background */
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #e9772a 100%);
   --sat-accent-color1: #ffb07d;
   --moreapps-hovering-clr: #ffb07d;
@@ -135,7 +135,7 @@
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222;
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #e6dada, #274046);
   --sat-accent-color1: #686868;
   --moreapps-hovering-clr: #686868;
@@ -177,7 +177,7 @@
   --sat-input-hover: #3e4349;
   --sat-search-bar-focus: #3e4349;
   --sat-tooltip-bg: #3e4349; /* Tooltip background */
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
   --sat-accent-color1: hsl(208, 67%, 56%);
   --moreapps-hovering-clr: hsl(208, 67%, 56%);
@@ -220,7 +220,7 @@
   --sat-input-hover: #606581;
   --sat-search-bar-focus: #44485c;
   --sat-tooltip-bg: #3e4349; /* Tooltip background */
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ff79c6 0%, #bd93f9 100%);
   --sat-accent-color1: hsl(265 89% 78%);
   --moreapps-hovering-clr: hsl(265 89% 78%);
@@ -256,7 +256,7 @@
   --sat-setting-bg-effect: #3b4252; /* Settings options background color */
   --sat-input-hover: #434c5e;
   --sat-search-bar-focus: #434c5f;
-  --default-font: "Poppins", sans-serif;
+  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #88c0d0 0%, #8fbcbb 100%);
   --sat-accent-color1: #88c0d0;
   --moreapps-hovering-clr: #88c0d0;
