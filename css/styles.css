@@ -242,7 +242,7 @@ ul.tabs li {
   font-weight: 500;
   color: var(--sat-ids);
   padding: 12px 25px;
-  margin: 5px;
+  margin: 3px;
 
   border-radius: var(--sat-border-radius);
 }
@@ -299,7 +299,7 @@ ul.tabs li {
 
 .app {
   display: inline-block;
-  margin: 5px 1px;
+  margin: 5px 2px;
   padding: 15px 45px;
   border-radius: 20px !important;
 }
@@ -337,7 +337,7 @@ ul.tabs li {
 }
 
 .app-content {
-  animation: fadeIn 0.2s ease;
+  animation: fadeIn 150ms ease;
 }
 
 .app-content {
@@ -562,10 +562,9 @@ ul.apps-category li,
 ul.apps-category li:hover,
 .more-apps:hover {
   background: var(--sat-search-shortcuts);
-  color: var(--sat-ids);
+  color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
-  font-weight: 600;
 }
 
 ul.apps-category li.current {
@@ -581,8 +580,8 @@ ul.apps-category li.current {
 ========
 */
 .tabs {
-  font-size: 15px;
-  margin: 5px;
+  font-size: 16px;
+  margin: 15px;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -593,7 +592,7 @@ ul.apps-category li.current {
 }
 
 .tab-content {
-  margin-left: 190px; /* Same as the width of the sidebar */
+  margin-left: 180px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 /* 
