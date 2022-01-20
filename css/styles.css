@@ -471,7 +471,7 @@ ul.tabs li {
 
 .username-section input {
   background-color: var(--lighter-color);
-  padding: 13px 10px !important;
+  width: 30%;
   font-size: 15px;
   border: 2px solid var(--sat-setting-bg-effect);
 }
