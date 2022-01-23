@@ -661,8 +661,14 @@ Currently only images and iframes are fully supported. +
   outline: none;
   vertical-align: middle;
   margin: 0px;
-  border-radius: 6px !important;
+  border-radius: 8px !important;
 }
+
+#fav-link img {
+  background-color: white;
+  padding: 3px;
+}
+
 /* Improved iframe support so now they fit properly inside the container */
 #fav-link iframe {
   width: 90%;
