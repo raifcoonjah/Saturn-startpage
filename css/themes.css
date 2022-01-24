@@ -22,7 +22,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
   --add-link-border: rgb(150, 151, 151); /* Favorite input border color */
-  --delete-warning-bg: #d55454; /* Favorite delete button color */
+  --delete-warning-bg: #d75352; /* Favorite delete button color */
   --switch-color-bg-after: #000000;
   --switch-color-bg: #adadad;
   --settings-button-outline: #bbbbbb; /* The outline color on the open settings button */
@@ -60,7 +60,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #1a1f25;
-  --delete-warning-bg: #d55454;
+  --delete-warning-bg: #d75352;
   --switch-color-bg-new: #2f343d;
   --switch-color-bg-after: #0080e250;
   --settings-button-outline: #232933;
@@ -104,7 +104,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(41, 41, 41); /* Favorite input border color */
-  --delete-warning-bg: #d55454; /* Favorite delete button color */
+  --delete-warning-bg: #d75352; /* Favorite delete button color */
   --switch-color-bg-new: #303030;
   --switch-color-bg-after: #ffb07d;
   --switch-color-bg: rgba(48, 48, 48, 0.904);
@@ -143,7 +143,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(43, 52, 56);
-  --delete-warning-bg: #d55454;
+  --delete-warning-bg: #d75352;
   --switch-color-bg-new: #303030;
   --switch-color-bg-after: #686868;
   --settings-button-outline: #252525;
@@ -185,7 +185,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #3e4349; /* Favorite input border color */
-  --delete-warning-bg: #d55454; /* Favorite delete button color */
+  --delete-warning-bg: #d75352; /* Favorite delete button color */
   --switch-color-bg-new: #3e4349;
   --switch-color-bg-after: #ffb07d;
   --switch-color-bg: rgba(48, 48, 48, 0.904);
@@ -228,7 +228,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #575b75; /* Favorite input border color */
-  --delete-warning-bg: #d55454; /* Favorite delete button color */
+  --delete-warning-bg: #d75352; /* Favorite delete button color */
   --switch-color-bg-new: #525468;
   --switch-color-bg: #44475a;
   --settings-button-outline: #44485c; /* The outline color on the open settings button */
@@ -264,7 +264,7 @@
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #4c566a; /* Favorite input border color */
-  --delete-warning-bg: #d55454; /* Favorite delete button color */
+  --delete-warning-bg: #d75352; /* Favorite delete button color */
   --switch-color-bg-new: #4c566a;
   --settings-button-outline: #4c566a; /* The outline color on the open settings button */
   --new-search-bg-hover-effect: #434c5f; /* New search hover color */

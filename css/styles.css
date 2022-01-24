@@ -354,7 +354,7 @@ ul.tabs li {
 
 /* 
 ========
-+ The IOS 15 like background in settings. +
++ The iOS 15 like background in settings. +
 ========
 */
 
@@ -398,9 +398,10 @@ ul.tabs li {
 .theme-title i {
   color: var(--sat-accent-color1);
 }
+
 /* 
 ========
-+ Mobile optimizations +
++ Mobile optimizations (work in progress..) +
 ========
 */
 
@@ -434,13 +435,11 @@ ul.tabs li {
   background: var(--lighter-color);
   color: var(--sat-ids);
   font-weight: 410;
-  border: 1px solid var(--lighter-color);
 }
 
 .save-button:hover {
   background-color: var(--sat-accent-color1) !important;
   transition: var(--transition-speed-default);
-  border: 1px solid var(--sat-accent-color1);
 }
 
 .cancel-fav-btn {
@@ -665,7 +664,7 @@ Currently only images and iframes are fully supported. +
 }
 
 #fav-link img {
-  background-color: white;
+  background-color: #fff;
   padding: 3px;
 }
 
@@ -722,7 +721,7 @@ ul li {
   float: right;
   margin-top: -5px;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: var(--sat-border-radius);
   visibility: visible; /* Force visibility to fix issues */
 }
 
