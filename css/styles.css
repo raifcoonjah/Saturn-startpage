@@ -164,39 +164,38 @@ body {
 .slider-switch {
   display: inline-block;
   position: relative;
-  width: 67px;
-  height: 36px;
+  width: 55px;
+  height: 25px;
 }
 .slider-switch input {
   display: none;
 }
 .slider:hover {
   transition: var(--transition-speed-default);
-  border: 1px solid var(--sat-accent-color1);
+  border: 2px solid var(--sat-accent-color1);
 }
 
 .slider {
-  background-color: var(--switch-color-bg-new);
   left: 1px;
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  border: 1px solid var(--switch-color-bg-new);
+  border: 2px solid var(--switch-color-bg-new);
 }
 
 .slider:before {
   background-color: rgb(255, 255, 255);
   content: "";
-  left: 5px;
+  left: 3px;
   position: absolute;
-  bottom: 5px;
-  padding: 12px 12px;
+  bottom: 3px;
+  padding: 8px 8px;
 }
 
 input:checked + .slider {
   background: var(--sat-accent-color1);
-  border: 1px solid var(--sat-accent-color1);
+  border: 2px solid var(--sat-accent-color1);
 }
 
 input:checked + .slider:before {
@@ -204,11 +203,15 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 100px;
+  border-radius: 200px;
 }
 
 .slider.round:before {
-  border-radius: 100px;
+  border-radius: 200px;
+}
+
+.slider:before:hover {
+  background-color: red;
 }
 
 .section-title {
