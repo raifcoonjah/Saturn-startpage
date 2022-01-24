@@ -243,10 +243,11 @@ input:checked + .slider:before {
 ul.tabs li {
   font-weight: 500;
   color: var(--sat-ids);
-  padding: 12px 25px;
+  padding: 12px 35px;
   margin: 3px;
-
   border-radius: var(--sat-border-radius);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
 }
 
 ul.tabs li:hover {
@@ -583,13 +584,13 @@ ul.apps-category li.current {
 */
 .tabs {
   font-size: 16px;
-  margin: 15px;
+  margin: -10px;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 75px;
+  padding-top: 99px;
   border-radius: var(--sat-border-radius);
 }
 
