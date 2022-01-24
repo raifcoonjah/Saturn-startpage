@@ -210,10 +210,6 @@ input:checked + .slider:before {
   border-radius: 200px;
 }
 
-.slider:before:hover {
-  background-color: red;
-}
-
 .section-title {
   text-align: left;
   font-weight: 600;
@@ -716,7 +712,7 @@ ul li {
   float: right;
   margin-top: -5px;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 13px;
 }
 
 .newtabbtn {
@@ -725,7 +721,7 @@ ul li {
   float: right;
   margin-top: -5px;
   padding: 10px;
-  border-radius: var(--sat-border-radius);
+  border-radius: 13px;
   visibility: visible; /* Force visibility to fix issues */
 }
 
