@@ -159,17 +159,19 @@ body {
 
 .slider-switch-wrapper {
   display: flex;
-  align-items: center;
 }
+
 .slider-switch {
   display: inline-block;
   position: relative;
   width: 55px;
-  height: 27px;
+  height: 26px;
 }
+
 .slider-switch input {
   display: none;
 }
+
 .slider:hover {
   transition: var(--transition-speed-default);
   border: 2px solid var(--sat-accent-color1);
@@ -187,9 +189,9 @@ body {
 .slider:before {
   background-color: rgb(255, 255, 255);
   content: "";
-  left: 5px;
+  left: 3px;
   position: absolute;
-  bottom: 3px;
+  bottom: 2.5px;
   padding: 9px 9px;
 }
 
@@ -199,7 +201,8 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(25px);
+  transform: translateX(28px);
+  background-color: var(--sat-search-shortcuts);
 }
 
 .slider.round {
