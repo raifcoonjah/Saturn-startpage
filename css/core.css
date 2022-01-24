@@ -862,6 +862,7 @@ transition speed. +
 /* == Force the use of while 
 color to fix some issues == */
 
+.cancel-fav-btn:hover,
 .removebtn:hover,
 .setting-button:hover,
 .app:hover {

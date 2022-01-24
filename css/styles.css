@@ -440,6 +440,7 @@ ul.tabs li {
 .save-button:hover {
   background-color: var(--sat-accent-color1) !important;
   transition: var(--transition-speed-default);
+  color: var(--for-white);
 }
 
 .cancel-fav-btn {
