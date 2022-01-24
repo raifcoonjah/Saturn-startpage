@@ -165,7 +165,7 @@ body {
   display: inline-block;
   position: relative;
   width: 55px;
-  height: 25px;
+  height: 27px;
 }
 .slider-switch input {
   display: none;
@@ -187,10 +187,10 @@ body {
 .slider:before {
   background-color: rgb(255, 255, 255);
   content: "";
-  left: 3px;
+  left: 5px;
   position: absolute;
   bottom: 3px;
-  padding: 8px 8px;
+  padding: 9px 9px;
 }
 
 input:checked + .slider {
@@ -199,7 +199,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(29px);
+  transform: translateX(25px);
 }
 
 .slider.round {
