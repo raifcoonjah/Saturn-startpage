@@ -433,17 +433,17 @@ ul.tabs li {
 */
 
 .save-button {
-  padding: 12px 11px;
+  padding: 10px 11px;
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);
   font-weight: 410;
+  border: 3px solid transparent;
 }
 
 .save-button:hover {
-  background-color: var(--sat-accent-color1) !important;
+  border: 3px solid var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  color: var(--for-white);
 }
 
 .cancel-fav-btn {
