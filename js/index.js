@@ -139,23 +139,24 @@ $(function () {
 });
 
 $(function () {
-  var status = localStorage.getItem("apps_hidden");
+  var status = localStorage.getItem("hide-calendar-btn");
   if (status == "true") {
-    $(".apps_list").css("display", "none");
+    $(".calendar-btn").css("display", "none");
     $(".hide-apps-list").attr("checked", true);
   } else {
-    $(".apps_list").css("display", "block");
-    $(".hide-apps-list").attr("checked", false);
+    $(".calendar-btn").css("display", "block");
+    $(".hide-calendar-btn").attr("checked", false);
   }
-  $(".hide-apps-list").click(function () {
+  $(".hide-calendar-btn").click(function () {
     if (this.checked) {
-      $(".apps_list").hide();
+      $(".calendar-btn").hide();
     } else {
-      $(".apps_list").show();
+      $(".calendar-btn").show();
     }
-    localStorage.setItem("hide-apps-list", this.checked);
+    localStorage.setItem("hide-calendar-btn", this.checked);
   });
 });
+
 //
 // ========
 // + Settings navigation +

@@ -22,7 +22,7 @@ body {
 .search-bar {
   width: 100%;
   font-size: 1.3em;
-  padding: 15px 50px;
+  padding: 17px 50px;
   text-align: left;
   font-weight: 500;
   box-sizing: border-box;
@@ -159,56 +159,58 @@ body {
 
 .slider-switch-wrapper {
   display: flex;
-  align-items: center;
 }
+
 .slider-switch {
   display: inline-block;
   position: relative;
-  width: 67px;
-  height: 36px;
+  width: 55px;
+  height: 26px;
 }
+
 .slider-switch input {
   display: none;
 }
+
 .slider:hover {
   transition: var(--transition-speed-default);
-  border: 1px solid var(--sat-accent-color1);
+  border: 2px solid var(--sat-accent-color1);
 }
 
 .slider {
-  background-color: var(--switch-color-bg-new);
   left: 1px;
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  border: 1px solid var(--switch-color-bg-new);
+  border: 2px solid var(--switch-color-bg-new);
 }
 
 .slider:before {
   background-color: rgb(255, 255, 255);
   content: "";
-  left: 5px;
+  left: 3px;
   position: absolute;
-  bottom: 5px;
-  padding: 12px 12px;
+  bottom: 2.5px;
+  padding: 9px 9px;
 }
 
 input:checked + .slider {
   background: var(--sat-accent-color1);
-  border: 1px solid var(--sat-accent-color1);
+  border: 2px solid var(--sat-accent-color1);
 }
 
 input:checked + .slider:before {
-  transform: translateX(29px);
+  transform: translateX(28px);
+  background-color: var(--sat-search-shortcuts);
 }
 
 .slider.round {
-  border-radius: 100px;
+  border-radius: 200px;
 }
 
 .slider.round:before {
-  border-radius: 100px;
+  border-radius: 200px;
 }
 
 .section-title {
@@ -241,10 +243,11 @@ input:checked + .slider:before {
 ul.tabs li {
   font-weight: 500;
   color: var(--sat-ids);
-  padding: 12px 25px;
-  margin: 5px;
-
+  padding: 12px 35px;
+  margin: 3px;
   border-radius: var(--sat-border-radius);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
 }
 
 ul.tabs li:hover {
@@ -299,7 +302,7 @@ ul.tabs li {
 
 .app {
   display: inline-block;
-  margin: 5px 1px;
+  margin: 5px 2px;
   padding: 15px 45px;
   border-radius: 20px !important;
 }
@@ -337,7 +340,7 @@ ul.tabs li {
 }
 
 .app-content {
-  animation: fadeIn 0.2s ease;
+  animation: fadeIn 150ms ease;
 }
 
 .app-content {
@@ -354,7 +357,7 @@ ul.tabs li {
 
 /* 
 ========
-+ The IOS 15 like background in settings. +
++ The iOS 15 like background in settings. +
 ========
 */
 
@@ -398,9 +401,10 @@ ul.tabs li {
 .theme-title i {
   color: var(--sat-accent-color1);
 }
+
 /* 
 ========
-+ Mobile optimizations +
++ Mobile optimizations (work in progress..) +
 ========
 */
 
@@ -429,18 +433,17 @@ ul.tabs li {
 */
 
 .save-button {
-  padding: 12px 11px;
+  padding: 10px 11px;
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);
   font-weight: 410;
-  border: 1px solid var(--lighter-color);
+  border: 3px solid transparent;
 }
 
 .save-button:hover {
-  background-color: var(--sat-input-hover);
+  border: 3px solid var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  border: 1px solid var(--sat-accent-color1);
 }
 
 .cancel-fav-btn {
@@ -471,7 +474,7 @@ ul.tabs li {
 
 .username-section input {
   background-color: var(--lighter-color);
-  padding: 13px 10px !important;
+  width: 30%;
   font-size: 15px;
   border: 2px solid var(--sat-setting-bg-effect);
 }
@@ -562,10 +565,9 @@ ul.apps-category li,
 ul.apps-category li:hover,
 .more-apps:hover {
   background: var(--sat-search-shortcuts);
-  color: var(--sat-ids);
+  color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
-  font-weight: 600;
 }
 
 ul.apps-category li.current {
@@ -581,19 +583,19 @@ ul.apps-category li.current {
 ========
 */
 .tabs {
-  font-size: 15px;
-  margin: 5px;
+  font-size: 16px;
+  margin: -10px;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 75px;
+  padding-top: 99px;
   border-radius: var(--sat-border-radius);
 }
 
 .tab-content {
-  margin-left: 190px; /* Same as the width of the sidebar */
+  margin-left: 180px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 /* 
@@ -629,7 +631,7 @@ ul.apps-category li.current {
   overflow: auto; /* Enable scroll if needed */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  animation: fadeIn 200ms ease;
+  animation: fadeIn 150ms ease;
 }
 
 /* Favorite modal Content/Box */
@@ -640,9 +642,8 @@ ul.apps-category li.current {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 15px 15px;
-  padding-bottom: 20px;
-  width: 38rem;
-  height: 31rem;
+  width: 35rem;
+  height: 30rem;
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
@@ -662,8 +663,14 @@ Currently only images and iframes are fully supported. +
   outline: none;
   vertical-align: middle;
   margin: 0px;
-  border-radius: 6px !important;
+  border-radius: 8px !important;
 }
+
+#fav-link img {
+  background-color: #fff;
+  padding: 3px;
+}
+
 /* Improved iframe support so now they fit properly inside the container */
 #fav-link iframe {
   width: 90%;
@@ -708,7 +715,7 @@ ul li {
   float: right;
   margin-top: -5px;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 13px;
 }
 
 .newtabbtn {
@@ -717,7 +724,7 @@ ul li {
   float: right;
   margin-top: -5px;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 13px;
   visibility: visible; /* Force visibility to fix issues */
 }
 

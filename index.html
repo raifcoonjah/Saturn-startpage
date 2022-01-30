@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>New Tab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     <!-- All the CSS needed to make Saturn Work -->
     <link rel="stylesheet" href="css/core.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -59,12 +59,14 @@
       >
         <i class="las la-cog"></i>
       </button>
-      <a href="https://calendar.google.com">
-        <button class="setting-button" title="Click to open Google Calendar">
-          <i class="las la-calendar"></i>
-        </button>
-      </a>
 
+      <a href="https://calendar.google.com">
+        <div class="calendar-btn">
+          <button class="setting-button" title="Click to open Google Calendar">
+            <i class="las la-calendar"></i>
+          </button>
+        </div>
+      </a>
       <!-- App lists + App category -->
       <div class="apps_list">
         <h4 class="section-title new">
@@ -108,7 +110,7 @@
           <div id="sortSupport">
             <ul id="fav-link"></ul>
             <div id="favBtn" class="fav-btn">
-              <button><i class="las la-plus-circle"></i> Add favorite</button>
+              <button><i class="las la-plus"></i> Add favorite</button>
             </div>
           </div>
         </div>
@@ -128,7 +130,7 @@
               <a
                 href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-images"
                 target="_blank"
-                >Image URL<i class="las la-external-link-alt"></i></a
+                >Image<i class="las la-external-link-alt"></i></a
             ></label>
             <br />
             <input id="title" placeholder="Enter a title" autocomplete="off" />
@@ -140,6 +142,7 @@
               id="url"
               placeholder="Type or paste a URL"
               autocomplete="off"
+              value="https://"
             />
 
             <br />
@@ -161,9 +164,7 @@
             </p>
             <div class="side-text">
               <div class="settings-background">
-                <span class="settings-dot"
-                  ><i class="las la-thumbtack"></i
-                ></span>
+                <span class="settings-dot">✨</span>
                 Unlock the full potential of favorites,
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
@@ -216,10 +217,6 @@
 
             <div id="tab-2" class="tab-content current">
               <div class="settings-background">
-                <h2>General</h2>
-                <p></p>
-                <p class="line"></p>
-
                 <h3><i class="las la-user-edit"></i> Username</h3>
                 <p>Set your username to anything.</p>
                 <div id="popUp" class="username-section">
@@ -240,27 +237,26 @@
                 <p>Hide various elements from the main page.</p>
                 <details>
                   <summary><i class="las la-home"></i> Home</summary>
-                  <h5>Hide Favorites</h5>
+                  <h5><i class="las la-swatchbook"></i> Hide Favorites</h5>
                   <p>This will not remove your stored favorites.</p>
                   <label class="slider-switch">
                     <input type="checkbox" class="hide-favorite" />
                     <div class="slider round"></div>
                   </label>
                   <br />
-                  <h5>Hide Search bar</h5>
+                  <h5><i class="las la-search"></i> Hide Search bar</h5>
                   <p></p>
                   <label class="slider-switch">
                     <input type="checkbox" class="hide-search" />
                     <div class="slider round"></div>
                   </label>
                   <br />
-                  <h5>Hide Apps list</h5>
+                  <h5><i class="las la-calendar"></i> Hide Calendar button</h5>
                   <p></p>
                   <label class="slider-switch">
-                    <input type="checkbox" class="hide-apps-list" />
+                    <input type="checkbox" class="hide-calendar-btn" />
                     <div class="slider round"></div>
                   </label>
-                  <br />
                 </details>
               </div>
               <br />
@@ -383,6 +379,8 @@
           </div>
         </div>
       </div>
+      <br />
+      <!-- Why the: [<br/>]? | Add space on the bottom, I will probably replace this with a margin later on, but this should work for now.-->
       <!-- All the javascript needed to make saturn's core features work  -->
       <script type="text/javascript" src="js/index.js"></script>
       <script type="text/javascript" src="js/search.js"></script>
