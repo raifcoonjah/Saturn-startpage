@@ -614,6 +614,9 @@ ul.apps-category li.current {
   border: 1px solid var(--lighter-color);
 }
 
+.socials .app:hover {
+  border: 1px solid transparent;
+}
 /* 
 ========
 + Favorite Modal +

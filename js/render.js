@@ -130,7 +130,7 @@ const appsList = (x) => {
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content">
             <div class="settings-background">
-              <h3 style="text-align:center;padding:15px;">About</h3>
+              <h2 style="text-align:center;padding:15px;">About</h2>
               <p class="new-about">
               <img
                   src="/img/dynamic-icon-big.png"
@@ -140,9 +140,9 @@ const settingAbout = (z) => {
                <br/>
                 Saturn version:
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.2.2"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.2.3"
                   target="_blank"
-                  >v4.2.2 RC2 <i class="las la-external-link-alt"></i
+                  >v4.2.3 RC3 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
