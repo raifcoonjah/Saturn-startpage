@@ -766,6 +766,7 @@ ul li {
   border-radius: var(--sat-border-radius);
 }
 
+.fav_ptgi_btn:hover, /* added this to make the hover animation similar */
 .favModal input:hover,
 .favModal input:focus {
   background-color: var(--none);

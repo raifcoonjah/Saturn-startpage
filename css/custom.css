@@ -37,3 +37,36 @@ appearing when the user hovers on the open in new tab button.
   font-size: 15px;
   border: 1px solid var(--sat-accent-color1);
 }
+
+/* 
+========
++ Apps List Category +
+========
+*/
+
+.fav_ptgi_category {
+  margin-top: 20px;
+}
+
+ul.fav_ptgi_category {
+  padding: 0px;
+  list-style: none;
+}
+
+ul.fav_ptgi_category li {
+  font-weight: 500;
+  background: var(--sat-search-shortcuts);
+  color: var(--lighter-text-color);
+  display: inline-block;
+  padding: 6px 9px;
+  cursor: pointer;
+  border-radius: var(--sat-border-radius);
+  border: 2px solid var(--add-link-border);
+}
+
+.fav_ptgi_btn:hover {
+  background: var(--sat-search-shortcuts);
+  color: var(--sat-accent-color1);
+  transition: var(--transition-speed-default);
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+}
