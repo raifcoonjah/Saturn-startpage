@@ -667,7 +667,11 @@ Currently only images and iframes are fully supported. +
   outline: none;
   vertical-align: middle;
   margin: 0px;
-  border-radius: 8px !important;
+}
+
+/* Improving SVG support */
+#fav-link svg {
+  filter: var(--svg-invert);
 }
 
 #fav-link img {

@@ -37,6 +37,10 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(0%);
 }
 /* New dark theme */
 .dark {
@@ -73,6 +77,10 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
 
 /* Space theme */
@@ -117,6 +125,10 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
 
 /* Linkin park theme (BETA) */
@@ -155,6 +167,10 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
 
 /* lighterdarktheme theme */
@@ -198,6 +214,10 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
 
 /* Dracula theme */
@@ -240,6 +260,10 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
 
 /* Nord theme */
@@ -275,4 +299,8 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
