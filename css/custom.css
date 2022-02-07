@@ -26,3 +26,14 @@ appearing when the user hovers on the open in new tab button.
 .hide_fav_bar:hover {
   visibility: hidden;
 }
+
+/* Used by the small pill inside favorites */
+
+.fav_ptgi {
+  margin-top: -10px;
+}
+
+.fav_ptgi ul li {
+  font-size: 15px;
+  border: 1px solid var(--sat-accent-color1);
+}
