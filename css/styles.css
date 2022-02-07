@@ -660,7 +660,8 @@ Currently only images and iframes are fully supported. +
 */
 
 /* Improved image support so now they act as icons */
-#fav-link img {
+#fav-link img,
+#fav-link svg {
   width: 23px;
   height: 22px;
   outline: none;
