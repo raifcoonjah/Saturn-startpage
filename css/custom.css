@@ -27,22 +27,15 @@ appearing when the user hovers on the open in new tab button.
   visibility: hidden;
 }
 
-/* Used by the small pill inside favorites */
+/* 
+========
++ "Get Icon feature" [Part of Favorites]+
+========
+*/
 
 .fav_ptgi {
   margin-top: -10px;
 }
-
-.fav_ptgi ul li {
-  font-size: 15px;
-  border: 1px solid var(--sat-accent-color1);
-}
-
-/* 
-========
-+ Apps List Category +
-========
-*/
 
 .fav_ptgi_category {
   margin-top: 20px;
@@ -54,7 +47,7 @@ ul.fav_ptgi_category {
 }
 
 ul.fav_ptgi_category li {
-  font-weight: 500;
+  font-size: 15px;
   background: var(--sat-search-shortcuts);
   color: var(--lighter-text-color);
   display: inline-block;
@@ -67,6 +60,6 @@ ul.fav_ptgi_category li {
 .fav_ptgi_btn:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
-  transition: var(--transition-speed-default);
+  transition: var(--transition-speed-fast);
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
