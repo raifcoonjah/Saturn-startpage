@@ -725,6 +725,7 @@ ul li {
   margin-top: -5px;
   padding: 10px;
   border-radius: 13px;
+  border: 1px solid transparent;
 }
 
 .newtabbtn {
@@ -735,10 +736,12 @@ ul li {
   padding: 10px;
   border-radius: 13px;
   visibility: visible; /* Force visibility to fix issues */
+  border: 1px solid transparent;
 }
 
 .newtabbtn:hover {
-  background-color: var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color1);
+  background-color: var(--sat-accent-color-lighter);
   transition: var(--transition-speed-default);
   color: var(--for-white);
 }

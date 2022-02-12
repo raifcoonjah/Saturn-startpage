@@ -891,7 +891,8 @@ color to fix some issues == */
 
 .cancel-fav-btn:hover,
 .removebtn:hover {
-  background-color: var(--delete-warning-bg);
+  background-color: var(--delete-warning-border);
+  border: 1px solid var(--delete-warning-bg);
   transition: var(--transition-speed-default);
 }
 
