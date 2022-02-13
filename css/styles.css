@@ -644,9 +644,9 @@ ul.apps-category li.current {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px 15px;
+  padding: 15px 15px;
   width: 35rem;
-  height: 36rem;
+  height: 30rem;
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
@@ -667,7 +667,6 @@ Currently only images and iframes are fully supported. +
   outline: none;
   vertical-align: middle;
   margin: 0px;
-  border-radius: 2px !important;
 }
 
 /* Improving SVG support */
