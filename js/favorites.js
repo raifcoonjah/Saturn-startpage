@@ -146,8 +146,10 @@ window.onclick = function (event) {
 // ========
 //
 
-$(document).ready(function () {
-  $("#add").click(function () {
-    $("#sv-msg2").text("🎉 New favorite saved successfully! ");
-  });
-});
+document.getElementById("add").onclick = function () {
+  var x = document.getElementById("saveMsgBar");
+  x.className = "show";
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 3000);
+};

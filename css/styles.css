@@ -245,6 +245,7 @@ ul.tabs li {
   color: var(--sat-ids);
   padding: 12px 35px;
   margin: 3px;
+  margin-left: 10px;
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
@@ -258,6 +259,7 @@ ul.tabs li:hover {
 
 ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
+  border-left: 3px solid var(--sat-accent-color1);
   color: var(--sat-ids);
   font-weight: 600;
   box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
@@ -266,7 +268,7 @@ ul.tabs li.current {
 ul.tabs li.current i {
   transition: var(--transition-speed-default);
   font-size: 17px;
-  /* background-color: var(--lighter-color); */
+  background-color: var(--lighter-color);
   padding: 4px;
   border-radius: 10px;
   color: var(--sat-accent-color1);
@@ -442,7 +444,7 @@ ul.tabs li {
 }
 
 .save-button:hover {
-  border: 3px solid var(--sat-accent-color1);
+  background: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
 }
 
@@ -644,9 +646,9 @@ ul.apps-category li.current {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 15px 15px;
+  padding: 1px 11px;
   width: 35rem;
-  height: 30rem;
+  height: 35rem;
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
@@ -667,6 +669,7 @@ Currently only images and iframes are fully supported. +
   outline: none;
   vertical-align: middle;
   margin: 0px;
+  border-radius: 0px !important;
 }
 
 /* Improving SVG support */
