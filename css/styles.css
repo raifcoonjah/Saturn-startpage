@@ -368,6 +368,11 @@ ul.tabs li {
   margin-bottom: -10px;
   padding: 10px;
   background: var(--sat-setting-bg-effect);
+  border: 1px solid transparent;
+}
+
+.settings-background:hover {
+  border: 1px solid var(--sat-accent-color-lighter);
 }
 
 .settings-background-warning {

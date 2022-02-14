@@ -193,7 +193,7 @@ $(document).ready(function () {
 //
 //
 // ========
-// + Saturn's theme engine v2.0-m&ms +
+// + Saturn's theme engine v2.1 +
 // ========
 //
 
@@ -273,6 +273,7 @@ lighterdark_theme_button.onclick = () => {
   localStorage.setItem("theme", "lighterdarktheme");
 };
 
+// Dracula theme (beta)
 draculaButton.onclick = () => {
   body.classList.replace("dark", "dracula");
   body.classList.replace("light", "dracula");
@@ -283,6 +284,7 @@ draculaButton.onclick = () => {
   localStorage.setItem("theme", "dracula");
 };
 
+// Nord theme (beta)
 nordButton.onclick = () => {
   body.classList.replace("dark", "nord");
   body.classList.replace("light", "nord");
