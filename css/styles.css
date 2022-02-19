@@ -418,7 +418,7 @@ ul.tabs li {
 */
 
 @media (max-width: 900px) {
-  .modal-content {
+  .settings-content {
     width: 90%;
     height: 75%;
   }
