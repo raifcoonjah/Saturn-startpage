@@ -1,5 +1,6 @@
 /* Saturn's theme engine v3. */
 
+/* Default Light theme */
 .light {
   --sat-heading: #1a1a1a; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
@@ -44,7 +45,8 @@
   /* fixing svg support by inverting its color accordingly */
   --svg-invert: invert(0%);
 }
-/* New dark theme */
+
+/* Default Dark theme */
 .dark {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
@@ -87,7 +89,7 @@
   --svg-invert: invert(100%);
 }
 
-/* Space theme */
+/* Space theme [Darker] */
 
 .space {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
@@ -181,7 +183,7 @@
   --svg-invert: invert(100%);
 }
 
-/* lighterdarktheme theme */
+/* Grey-ish theme */
 
 .lighterdarktheme {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
@@ -230,7 +232,7 @@
   --svg-invert: invert(100%);
 }
 
-/* Dracula theme */
+/* Dracula (c) theme */
 
 .dracula {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
@@ -307,7 +309,7 @@
   --settings-button-outline: #4c566a; /* The outline color on the open settings button */
   --new-search-bg-hover-effect: #434c5f; /* New search hover color */
   --sat-border-radius: 15px;
-  --lighter-color: #434c5e; /* Every that needs a light background color */
+  --lighter-color: #424a5c; /* Every that needs a light background color */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;

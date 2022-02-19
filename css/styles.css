@@ -115,7 +115,7 @@ body {
 ========
 */
 
-.modal {
+.settings_modal {
   background-color: #15181f42;
   position: fixed;
   left: 0;
@@ -130,7 +130,7 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.modal-content {
+.settings-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -223,8 +223,9 @@ input:checked + .slider:before {
   padding: 12px 10px;
   border-radius: 16px !important;
   float: right;
-  border: 4px solid var(--sat-bg-borders);
+  border: 4px solid var(--sat-bg-borders); /* This should be remove for a much more optimized version */
 }
+
 .setting-button i {
   font-size: 1.2rem;
 }
@@ -297,6 +298,7 @@ ul.tabs li {
 */
 
 #apps {
+  margin-bottom: 15px;
   margin-top: 20px;
   width: 104%;
   align-items: left;
@@ -364,21 +366,20 @@ ul.tabs li {
 */
 
 .settings-background {
-  margin: 5px;
-  margin-bottom: -10px;
+  margin: 10px;
   padding: 10px;
   background: var(--sat-setting-bg-effect);
   border: 1px solid transparent;
-}
-
-.settings-background:hover {
-  border: 1px solid var(--sat-accent-color-lighter);
 }
 
 .settings-background-warning {
   padding: 10px;
   background: var(--settings-warning-bg);
 }
+
+/* .settings-background:hover {
+  border: 1px solid var(--lighter-color);
+} */
 
 /* 
 ========
@@ -486,7 +487,8 @@ ul.tabs li {
   border: 2px solid var(--sat-setting-bg-effect);
 }
 
-.username-section input:focus {
+.username-section input:focus,
+.username-section input:hover {
   background-color: var(--sat-input-hover);
 }
 
@@ -527,6 +529,7 @@ ul.tabs li {
 */
 
 .favorites-search input {
+  margin-top: 15px;
   background: var(--sat-search-shortcuts);
   padding: 13px 10px;
   font-weight: 400;
@@ -557,8 +560,7 @@ ul.apps-category {
   list-style: none;
 }
 
-ul.apps-category li,
-.more-apps {
+ul.apps-category li {
   font-weight: 500;
   background: none;
   color: var(--lighter-text-color);
@@ -569,8 +571,7 @@ ul.apps-category li,
   border: 2px solid var(--sat-bg);
 }
 
-ul.apps-category li:hover,
-.more-apps:hover {
+ul.apps-category li:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
@@ -653,7 +654,7 @@ ul.apps-category li.current {
   transform: translate(-50%, -50%);
   padding: 1px 11px;
   width: 35rem;
-  height: 35rem;
+  height: 33rem;
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
@@ -824,7 +825,6 @@ ul li {
 /* Header inside Favorites */
 .fav-title {
   font-weight: 500;
-  font-size: 20px;
   text-align: center;
   padding: 20px;
 }
@@ -832,11 +832,166 @@ ul li {
 /* Favorites input title */
 .fav_title {
   font-weight: 450;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* Hiding the background color for cancel button */
 
 .cancel-fav-btn {
   background-color: var(--sat-setting-bg-color);
+}
+
+/* 
+========
++ "Get Icon feature" [Part of Favorites]+
+========
+*/
+
+.fav_ptgi {
+  margin-top: -10px;
+}
+
+.fav_ptgi_category {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ul.fav_ptgi_category {
+  padding: 0px;
+  list-style: none;
+}
+
+ul.fav_ptgi_category li {
+  font-size: 15px;
+  background: var(--sat-search-shortcuts);
+  color: var(--lighter-text-color);
+  display: inline-block;
+  padding: 6px 9px;
+  cursor: pointer;
+  border-radius: var(--sat-border-radius);
+  border: 2px solid var(--add-link-border);
+}
+
+.fav_ptgi_btn:hover {
+  background: var(--sat-search-shortcuts);
+  color: var(--sat-accent-color1);
+  transition: var(--transition-speed-fast);
+  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+}
+
+/* 
+========
++ Snackbar +
+========
+*/
+
+#saveMsgBar,
+#save_username {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: var(--sat-setting-bg-color);
+  color: var(--sat-ids);
+  text-align: center;
+  border-radius: var(--sat-border-radius);
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 47%;
+  bottom: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Align save username snackbar to the center */
+#save_username {
+  left: 40%;
+  bottom: 30px;
+}
+
+#saveMsgBar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#save_username.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.9s 4.5s;
+  animation: fadein 0.5s, fadeout 0.9s 4.5s;
+}
+
+/* 
+========
++ fadein and fadeout animation used by the snackbar +
+========
+*/
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/* Text on the bottom of favorites modal. */
+.side-text {
+  text-align: center;
+}
+
+/* Make whats new text smaller. */
+.whatsnew li {
+  font-size: 15px;
+}
+
+/* 
+========
++ This fixes a major hover issue related to favorites. +
++ This code just prevents a small bar from 
+appearing when the user hovers on the open in new tab button.
+========
+*/
+
+.hide_fav_bar {
+  visibility: hidden;
+}
+
+.hide_fav_bar:hover {
+  visibility: hidden;
 }

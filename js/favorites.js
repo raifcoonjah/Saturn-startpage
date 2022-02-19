@@ -25,11 +25,11 @@ $(document).ready(function () {
         '">' +
         $title.val() +
         "</a>" +
-        '<button class="removebtn" title="Delete favorite"><i class="las la-minus-circle"></i></button>' +
+        '<button class="removebtn" title="Delete favorite"><i class="las la-trash-alt"></i></button>' +
         '<a class="hide_fav_bar" target="_blank" href="' +
         $url.val() +
         '">' +
-        '<button class="newtabbtn" title="Open in new tab"><i class="las la-external-link-square-alt"></i></button>' +
+        '<button class="newtabbtn" title="Open in new tab"><i class="las la-external-link-alt"></i></button>' +
         "</a></li>"
     );
 
@@ -152,4 +152,12 @@ document.getElementById("add").onclick = function () {
   setTimeout(function () {
     x.className = x.className.replace("show", "");
   }, 3000);
+};
+
+document.getElementById("save").onclick = function () {
+  var save_username = document.getElementById("save_username");
+  save_username.className = "show";
+  setTimeout(function () {
+    save_username.className = save_username.className.replace("show", "");
+  }, 4000);
 };

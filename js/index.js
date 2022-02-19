@@ -23,7 +23,7 @@ determineGreet(new Date().getHours());
 // + Settings Modal trigger + close button +
 // ========
 //
-var modal = document.querySelector(".modal");
+var modal = document.querySelector(".settings_modal");
 var trigger = document.querySelector(".setting-button");
 var closeButton = document.querySelector(".close-button");
 
@@ -319,10 +319,10 @@ $(document).ready(function () {
 // ========
 //
 
-$(document).ready(function () {
-  $("#save").click(function () {
-    $("#sv-msg").text(
-      "🔔 Your username has been saved. Please reload or open a new tab to see the changes. "
-    );
-  });
-});
+// $(document).ready(function () {
+//   $("#save").click(function () {
+//     $("#sv-msg").text(
+//       "🔔 Your username has been saved. Please reload or open a new tab to see the changes. "
+//     );
+//   });
+// });

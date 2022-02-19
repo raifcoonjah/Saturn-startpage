@@ -127,6 +127,7 @@ const appsList = (x) => {
           </div>
         </div>`);
 };
+
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content">
             <div class="settings-background">
@@ -140,9 +141,9 @@ const settingAbout = (z) => {
                <br/>
                 Saturn version:
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.2.3"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.0"
                   target="_blank"
-                  >v4.2.3 RC3 <i class="las la-external-link-alt"></i
+                  >v4.3.0 RC1 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -179,14 +180,90 @@ const settingAbout = (z) => {
             </div>
           </div>`);
 };
-const render_in_js = (x, z) => {
+
+const whatsNewSection = (w) => {
+  $(w).append(`<ul class="whatsnew">
+                <h5>✨ New features:</h5>
+                <li>
+                  » Saturn now natively supports SVG icons.
+                  <br />
+                  » Added "Get custom icons", this is a list of natively
+                  supported custom icons that you can add to your favorites. You
+                  can learn more by clicking the "<i
+                    class="lar la-question-circle"
+                  ></i
+                  >" inside favorites.
+                  <br />
+                  » Settings navigation now includes an indicator on the left to
+                  indicate the current tab.
+                  <br />
+                  » Instead of using a text popup, saturn now has a snackbar
+                  feature that will showup when adding a new favorites or saving
+                  your username.
+                  <br />
+                  » Favorite modal is now much smaller in size to save screen
+                  space.
+                  <br />
+                  » This release includes a much cleaner and more organized
+                  index.html file to improve experience when adding new
+                  features.
+                  <br />
+                  » Added a new "What's new section" inside settings. [You're
+                  viewing it right now :D]
+                  <br />
+                  » K-shortcuts got a small design update.
+                  <br />
+                  » Added a border hover effect when the user hovers over the
+                  "IOS like" settings background. [BETA]
+                  <br />
+                  » Favorites will include new icons that should the user
+                  understand what they do. [Applies to only new favorites]
+                </li>
+                <p class="line"></p>
+                <h5>🐞 Bug fixes:</h5>
+                <li>
+                  » Fix various weird border issues.
+                  <br />
+                  » Fix a strange inconsistency issues related to icons
+                  background [Settings navigation]
+                  <br />
+                  » Fix SVG icons not switching to a light color when a dark
+                  theme is applied.
+                  <br />
+                  » Fix tons of margin issues.
+                  <br />
+                  » Fix cancel button border issue.
+                  <br />
+                  » Fix save button not switching to a lighter color when you
+                  hover on them.
+                  <br />
+                  » Fix kdb (keyboard keys) not properly changing color when a
+                  light theme is applied.
+                  <br />
+                  » Removed all border-radius that were previously applied to
+                  favorites images/icons.
+                  <br />
+                  » Fix kdb (keyboard keys) not properly changing color when a
+                  light theme is applied.
+                  <br />
+                  » Removed tons of break code that were used inside the
+                  index.html in favor of css alternatives.
+                  <br />
+                  » Other various user experience improvements and bug fixes! 
+                </li>
+              </ul>`);
+};
+
+const render_in_js = (x, z, w) => {
   let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
+  let whats_newsection = $("#whats_new");
 
   // pls dont break
   iLoadthings = setTimeout(function () {
     appsList(apps_list);
     settingAbout(setting_about);
+    whatsNewSection(whats_newsection);
   });
 };
 window.onload = render_in_js();
