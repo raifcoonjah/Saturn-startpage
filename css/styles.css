@@ -377,9 +377,10 @@ ul.tabs li {
   background: var(--settings-warning-bg);
 }
 
-/* .settings-background:hover {
-  border: 1px solid var(--lighter-color);
-} */
+.settings-background:hover {
+  border: 1px solid var(--sat-input-hover);
+  transition: var(--transition-speed-fast);
+}
 
 /* 
 ========
@@ -604,6 +605,7 @@ ul.apps-category li.current {
 
 .tab-content {
   margin-left: 180px; /* Same as the width of the sidebar */
+  margin-top: 30px;
   padding: 0px 10px;
 }
 /* 

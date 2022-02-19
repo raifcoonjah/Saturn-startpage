@@ -183,7 +183,7 @@ const settingAbout = (z) => {
 
 const whatsNewSection = (w) => {
   $(w).append(`<ul class="whatsnew">
-                <h5>✨ New features:</h5>
+                <h4>✨ New features: </h4>
                 <li>
                   » Saturn now natively supports SVG icons.
                   <br />
@@ -219,8 +219,9 @@ const whatsNewSection = (w) => {
                   » Favorites will include new icons that should the user
                   understand what they do. [Applies to only new favorites]
                 </li>
+                              <br />
                 <p class="line"></p>
-                <h5>🐞 Bug fixes:</h5>
+                <h4>🐞 Bug fixes:</h4>
                 <li>
                   » Fix various weird border issues.
                   <br />
