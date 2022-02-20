@@ -686,7 +686,7 @@ Currently only images and iframes are fully supported. +
 }
 
 #fav-link img {
-  background-color: #fff;
+  background: transparent; /* This should fix some backgrounds having a white background instead of being transparent. */
   padding: 3px;
 }
 
