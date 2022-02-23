@@ -532,15 +532,17 @@ ul.tabs li {
 .favorites-search input {
   margin-top: 15px;
   background: var(--sat-search-shortcuts);
-  padding: 13px 10px;
+  padding: 11px 10px;
   font-weight: 400;
   font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid transparent;
 }
 
 .favorites-search input:hover,
 .favorites-search input:focus {
   transition: var(--transition-speed-default);
-  background-color: var(--sat-search-bar-focus);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 .cuteapps:hover {

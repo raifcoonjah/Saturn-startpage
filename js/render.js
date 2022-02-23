@@ -130,6 +130,16 @@ const appsList = (x) => {
 
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content">
+              <div class="settings-background">
+                <h3>✨ What's new</h3>
+                <p>
+                This release includes various new features, bug fixes and stability improvements. <br/>
+                Read the full release note on
+              <a href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.0"
+                ><i class="lab la-github"></i> Github.</a
+              >
+                </p>
+              </div>
             <div class="settings-background">
               <h2 style="text-align:center;padding:15px;">About</h2>
               <p class="new-about">
@@ -178,16 +188,6 @@ const settingAbout = (z) => {
                 </div>
               </div>
             </div>
-            <div class="settings-background">
-                <h3>✨ What's new</h3>
-                <p>
-                This release includes various new features, bug fixes and stability improvements. <br/>
-                Read the full release note on
-              <a href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.0"
-                ><i class="lab la-github"></i> Github.</a
-              >
-                </p>
-              </div>
           </div>`);
 };
 
