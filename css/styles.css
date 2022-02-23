@@ -442,7 +442,7 @@ ul.tabs li {
 */
 
 .save-button {
-  padding: 10px 11px;
+  padding: 12px 11px;
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);
