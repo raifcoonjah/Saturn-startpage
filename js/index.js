@@ -312,17 +312,3 @@ $(document).ready(function () {
     }
   });
 });
-
-//
-// ========
-// + Username feature: When the user save show this:  +
-// ========
-//
-
-// $(document).ready(function () {
-//   $("#save").click(function () {
-//     $("#sv-msg").text(
-//       "🔔 Your username has been saved. Please reload or open a new tab to see the changes. "
-//     );
-//   });
-// });

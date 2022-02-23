@@ -470,17 +470,6 @@ ul.tabs li {
 + The where to next text inside more apps. (top middle one) +
 ========
 */
-
-#sv-msg,
-#sv-msg2 {
-  font-weight: 600;
-  font-size: 12px;
-}
-
-#sv-msg2 {
-  font-size: 14px;
-}
-
 .username-section input {
   background-color: var(--lighter-color);
   width: 30%;

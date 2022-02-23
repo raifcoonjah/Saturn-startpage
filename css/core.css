@@ -681,6 +681,7 @@ summary {
 summary:hover {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
+  text-decoration: underline;
 }
 
 details[open] {
