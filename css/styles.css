@@ -244,8 +244,8 @@ input:checked + .slider:before {
 ul.tabs li {
   font-weight: 500;
   color: var(--sat-ids);
-  padding: 12px 35px;
-  margin: 3px;
+  padding: 10px 35px;
+  margin: 5px;
   margin-left: 10px;
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
@@ -255,7 +255,6 @@ ul.tabs li {
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
-  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
 ul.tabs li.current {
@@ -263,7 +262,6 @@ ul.tabs li.current {
   border-left: 3px solid var(--sat-accent-color1);
   color: var(--sat-ids);
   font-weight: 600;
-  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
 ul.tabs li.current i {
@@ -344,7 +342,7 @@ ul.tabs li {
 }
 
 .app-content {
-  animation: fadeIn 150ms ease;
+  animation: fadeIn 130ms ease;
 }
 
 .app-content {
@@ -567,14 +565,14 @@ ul.apps-category li:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+  box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
 ul.apps-category li.current {
   background-color: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   font-weight: 600;
-  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+  box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
 /* 
@@ -869,7 +867,6 @@ ul.fav_ptgi_category li {
   background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
-  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
 /* 
