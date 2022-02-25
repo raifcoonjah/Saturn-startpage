@@ -27,7 +27,7 @@ body {
   font-weight: 500;
   box-sizing: border-box;
   outline: none;
-  border: 3px solid var(--sat-bg-borders);
+  border: 3px solid transparent;
   border-radius: 20px;
 }
 
