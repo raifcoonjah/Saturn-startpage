@@ -43,7 +43,15 @@ const appsList = (x) => {
                 <div class="app">
                   <i class="las la-school"></i>
                   <span>Rushm.. Moodle</span>
-                </div></a>  
+                </div></a>
+              
+                 <a href="https://docs.google.com">
+                <div class="app">
+                  <i class="las la-file-alt"></i>
+                  <span>Google Docs</span>
+                </div></a
+              >
+
               <a href="https://udemy.com">
                 <div class="app">
                   <i class="las la-chalkboard-teacher"></i>
@@ -53,12 +61,6 @@ const appsList = (x) => {
                 <div class="app">
                   <i class="lar la-map"></i>
                   <span>Learn Anything</span>
-                </div></a
-              >
-              <a href="https://docs.google.com">
-                <div class="app">
-                  <i class="las la-file-alt"></i>
-                  <span>Google Docs</span>
                 </div></a
               >
               <a href="https://www.litcharts.com/">
@@ -115,6 +117,12 @@ const appsList = (x) => {
                       <span>Twitch</span>
                     </div></a
                   >
+                <a href="https://lifeat.io">
+                <div class="app">
+                  <i class="las la-ticket-alt"></i>
+                  <span>LifeAt</span>
+                </div></a
+              >
                   <a href="https://www.lofi.cafe/">
                     <div class="app">
                       <i class="las la-record-vinyl"></i>
