@@ -25,11 +25,11 @@ $(document).ready(function () {
         '">' +
         $title.val() +
         "</a>" +
-        '<button class="removebtn" title="Delete favorite"><i class="las la-minus-circle"></i></button>' +
+        '<button class="removebtn" title="Delete favorite.."><i class="las la-trash-alt"></i></button>' +
         '<a class="hide_fav_bar" target="_blank" href="' +
         $url.val() +
         '">' +
-        '<button class="newtabbtn" title="Open in new tab"><i class="las la-external-link-square-alt"></i></button>' +
+        '<button class="newtabbtn" title="Open favorite in new tab.."><i class="las la-external-link-alt"></i></button>' +
         "</a></li>"
     );
 
@@ -75,12 +75,12 @@ $(document).ready(function () {
             .find("a:Contains(" + searchtext + ")")
             .parent();
           // Hiding non matching lists
-          $("li", list).not($matches).fadeOut(50);
+          $("li", list).not($matches).fadeOut(20);
           // Showing matching lists
-          $matches.fadeIn(50);
+          $matches.fadeIn(20);
         } else {
           // If search keyword is empty then display all the lists
-          $(list).find("li").fadeIn(50);
+          $(list).find("li").fadeIn(20);
         }
         return false;
       })
@@ -146,8 +146,18 @@ window.onclick = function (event) {
 // ========
 //
 
-$(document).ready(function () {
-  $("#add").click(function () {
-    $("#sv-msg2").text("🎉 New favorite saved successfully! ");
-  });
-});
+document.getElementById("add").onclick = function () {
+  var x = document.getElementById("saveMsgBar");
+  x.className = "show";
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 3000);
+};
+
+document.getElementById("save").onclick = function () {
+  var save_username = document.getElementById("save_username");
+  save_username.className = "show";
+  setTimeout(function () {
+    save_username.className = save_username.className.replace("show", "");
+  }, 4000);
+};

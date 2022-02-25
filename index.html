@@ -6,19 +6,26 @@
     <title>New Tab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
-    <!-- All the CSS needed to make Saturn Work -->
+
+    <!-- =+=+= All the CSS needed to make Saturn Work =+=+= -->
     <link rel="stylesheet" href="css/core.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/anim.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/themes.css" />
     <link rel="stylesheet" href="icons/css/line-awesome.min.css" />
+
+    <!-- =+=+= jQuery [v3.6.0] =+=+= -->
     <script src="js/jquery.js"></script>
   </head>
+
   <body class="light">
+    <!-- =+=+= Good morning/afternoon/night and time text =+=+= -->
     <p class="gudmorning" id="greetings"></p>
     <p class="time" id="time"></p>
+
     <main>
+      <!-- =+=+= Saturn Search =+=+= -->
       <div class="full">
         <div class="search_block">
           <form
@@ -35,7 +42,7 @@
                 id="se_icon"
                 src="icons/google.svg"
                 alt="Search engine logo"
-                title="Click to change search engine"
+                title="Change search engine.."
               />
             </a>
 
@@ -46,28 +53,25 @@
               placeholder="Search with Google.."
               autocomplete="off"
               name="q"
-              autofocus
             />
           </form>
         </div>
       </div>
 
-      <button
-        class="setting-button"
-        id="trigger"
-        title="Click to open Settings"
-      >
+      <!-- =+=+= Main Buttons =+=+= -->
+      <button class="setting-button" id="trigger" title="Open settings..">
         <i class="las la-cog"></i>
       </button>
 
       <a href="https://calendar.google.com">
         <div class="calendar-btn">
-          <button class="setting-button" title="Click to open Google Calendar">
+          <button class="setting-button" title="Open google calendar..">
             <i class="las la-calendar"></i>
           </button>
         </div>
       </a>
-      <!-- App lists + App category -->
+
+      <!-- =+=+= App lists + App category =+=+= -->
       <div class="apps_list">
         <h4 class="section-title new">
           <i class="las la-grip-horizontal"></i> Apps list
@@ -87,25 +91,22 @@
           </li>
         </ul>
         <div id="apps_list"></div>
-        <!-- Find everything inside render.js-->
+        <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
       </div>
 
-      <br />
       <!-- End of app list -->
 
-      <!-- Favorite v3.0 -->
+      <!-- =+=+= Favorite v3.2 =+=+= -->
       <div id="fav-container" class="fav-container">
         <h4 class="section-title">
           <i class="las la-swatchbook"></i> Favorites
         </h4>
-        <br />
+
+        <!-- =+=+= Favorites search.. =+=+=-->
         <div class="favorites-search">
-          <input
-            type="text"
-            placeholder="Search favorites.."
-            class="searchfavorites"
-          />
+          <input type="text" placeholder="Search.." class="searchfavorites" />
         </div>
+
         <div id="content">
           <div id="sortSupport">
             <ul id="fav-link"></ul>
@@ -115,16 +116,15 @@
           </div>
         </div>
 
-        <!-- Favorites Modal -->
+        <!-- =+=+= Favorites Modal =+=+= -->
         <div id="favModal" class="favModal">
           <div class="fav-content">
+            <!-- =+=+= Header =+=+=  -->
             <h3 class="fav-title">
-              <i class="las la-plus-circle"></i> Add favorite<span
-                class="settings-dot"
-                >.</span
-              >
+              <i class="las la-plus-circle"></i> Add favorite
             </h3>
-            <p></p>
+
+            <!-- =+=+= Input ++ Favorite title =+=+=-->
             <label class="fav_title"
               >Title or
               <a
@@ -132,10 +132,48 @@
                 target="_blank"
                 >Image<i class="las la-external-link-alt"></i></a
             ></label>
-            <br />
             <input id="title" placeholder="Enter a title" autocomplete="off" />
             <br />
-            <br />
+
+            <!-- =+=+= Get custom icons =+=+=-->
+            <label class="fav_title"
+              >Get custom icons<i class="las la-external-link-alt"></i>
+              (Beta)</label
+            >
+            <div class="fav_ptgi">
+              <ul class="fav_ptgi_category">
+                <a
+                  href="https://simpleicons.org/"
+                  title="Get Simple icons.."
+                  target="_blank"
+                >
+                  <li class="fav_ptgi_btn">Simple Icons</li></a
+                >
+                <a
+                  href="https://icons8.com/line-awesome"
+                  title="Get line-awesome icons.."
+                  target="_blank"
+                >
+                  <li class="fav_ptgi_btn">Line Awesome</li></a
+                >
+                <a
+                  href="https://lineicons.com/icons"
+                  title="Get line icons.."
+                  target="_blank"
+                >
+                  <li class="fav_ptgi_btn">Line Icons</li></a
+                >
+                <a
+                  href="https://mraif13.notion.site/How-to-use-the-new-Get-custom-icons-80dc51dad7604dffb99d9ab9e6997df2"
+                  target="_blank"
+                >
+                  <li class="fav_ptgi_btn" title="What is this?">
+                    <i class="lar la-question-circle"></i></li
+                ></a>
+              </ul>
+            </div>
+
+            <!-- =+=+= Input ++ Favorite URL =+=+=-->
             <label class="fav_title"><i class="las la-link"></i> URL</label
             ><br />
             <input
@@ -150,18 +188,11 @@
             <button id="cancel-fav-btn" class="cancel-fav-btn">
               <i class="las la-times-circle"></i> Cancel
             </button>
-            <button
-              id="add"
-              style="background: var(--lighter-color); font-weight: 600"
-              class="save-button"
-            >
+            <button id="add" class="save-button">
               <i class="lar la-save"></i> Save
             </button>
             <h3></h3>
-            <label id="sv-msg2"></label>
-            <p style="text-align: center">
-              <i class="las la-grip-lines"></i>
-            </p>
+
             <div class="side-text">
               <div class="settings-background">
                 <span class="settings-dot">✨</span>
@@ -169,34 +200,39 @@
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
                   target="_blank"
-                  >learn more <i class="las la-external-link-alt"></i></a
-                >.
+                  >learn more <i class="las la-external-link-alt"></i
+                ></a>
               </div>
               <br />
               <p style="text-align: center; font-weight: 500; font-size: 13px">
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/issues/new"
                   target="_blank"
-                  >Report an issue <i class="las la-external-link-alt"></i
-                ></a>
+                  ><i class="las la-bug"></i> Report an issue
+                </a>
               </p>
             </div>
+          </div>
+          <!-- =+=+= Save message =+=+= -->
+          <div id="saveMsgBar">
+            <i class="las la-smile-wink"></i> Awesome, new favorite saved
+            successfully!
           </div>
         </div>
       </div>
 
-      <!-- v3.1 Settings -->
-      <div class="modal" id="openModal">
-        <div class="modal-content">
+      <!-- =+=+= Saturn Settings =+=+= -->
+      <div class="settings_modal" id="openModal">
+        <div class="settings-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
 
+          <!-- =+=+= Settings Header/title =+=+= -->
           <h3 class="settings-title">
-            <img
-              class="settings-icon"
-              src="https://raw.githubusercontent.com/mraif13/Saturn-startpage/master/img/dynamic-icon.png"
-            />
-            | Settings<span class="settings-dot">.</span>
+            <img class="settings-icon" src="/img/dynamic-icon.png" />
+            | Settings
           </h3>
+
+          <!-- =+=+= Settings Navigation =+=+=-->
           <div class="container">
             <ul class="tabs" id="tabs">
               <li class="tab-link current" data-tab="tab-2">
@@ -213,10 +249,11 @@
                 <i class="las la-keyboard"></i> K-Shortcuts
               </li>
             </ul>
-            <br />
 
+            <!-- =+=+= General Settings =+=+= -->
             <div id="tab-2" class="tab-content current">
               <div class="settings-background">
+                <!-- =+=+= Username =+=+= -->
                 <h3><i class="las la-user-edit"></i> Username</h3>
                 <p>Set your username to anything.</p>
                 <div id="popUp" class="username-section">
@@ -224,33 +261,35 @@
                     type="text"
                     name="setusername"
                     id="userSet"
-                    placeholder="Jatoro Kujo.."
+                    placeholder="Jolyne Kujo..."
                   />
-                  <br />
                   <button id="save" class="save-button">
                     <i class="las la-save"></i> Save
                   </button>
                 </div>
-                <label id="sv-msg"></label>
-                <br />
+
+                <!-- =+=+= Hide things =+=+= -->
                 <h3><i class="las la-eye-slash"></i> Hide things</h3>
-                <p>Hide various elements from the main page.</p>
+                <p>Hide various elements from view.</p>
+
                 <details>
-                  <summary><i class="las la-home"></i> Home</summary>
+                  <summary>Home</summary>
+
+                  <!-- =+=+= HT: Options1 =+=+=-->
                   <h5><i class="las la-swatchbook"></i> Hide Favorites</h5>
                   <p>This will not remove your stored favorites.</p>
                   <label class="slider-switch">
                     <input type="checkbox" class="hide-favorite" />
                     <div class="slider round"></div>
                   </label>
-                  <br />
+                  <!-- =+=+= HT: Options2 =+=+=-->
                   <h5><i class="las la-search"></i> Hide Search bar</h5>
                   <p></p>
                   <label class="slider-switch">
                     <input type="checkbox" class="hide-search" />
                     <div class="slider round"></div>
                   </label>
-                  <br />
+                  <!-- =+=+= HT: Options3 =+=+=-->
                   <h5><i class="las la-calendar"></i> Hide Calendar button</h5>
                   <p></p>
                   <label class="slider-switch">
@@ -259,7 +298,8 @@
                   </label>
                 </details>
               </div>
-              <br />
+
+              <!-- =+=+= Change Search  =+=+= -->
               <div class="settings-background">
                 <h3><i class="las la-search"></i> Change Search</h3>
                 <p>
@@ -267,13 +307,12 @@
                   search engine icon found in the search bar.
                 </p>
               </div>
-              <br />
               <p style="text-align: center; font-weight: 500; font-size: 13px">
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/issues/new"
                   target="_blank"
-                  >Report an issue <i class="las la-external-link-alt"></i
-                ></a>
+                  ><i class="las la-bug"></i> Report an issue
+                </a>
               </p>
             </div>
           </div>
@@ -285,9 +324,10 @@
 + Refactoring in progress +
 -->
 
-          <!-- + Header bar + -->
+          <!-- =+=+= Theme section =+=+=-->
           <div id="tab-4" class="tab-content">
             <div class="settings-background">
+              <!-- + Title/Header section + -->
               <h2>Theme</h2>
               <p>
                 Personalize Saturn Startpage with themes to match your style &
@@ -295,7 +335,9 @@
               </p>
               <p class="line"></p>
 
-              <!-- + Light theme section + -->
+              <!-- =+=+= Themes =+=+=-->
+
+              <!-- =+=+= Light/Day theme =+=+=-->
               <p class="theme-title"><i class="las la-sun"></i> Light theme</p>
 
               <a id="light" href="#" class="theme-icon"
@@ -305,22 +347,23 @@
                   alt="light-icon.jpg"
               /></a>
 
-              <!-- + Dark theme section + -->
+              <!-- =+=+= Dark/Night themes =+=+=-->
               <p class="theme-title"><i class="las la-moon"></i> Dark themes</p>
+              <!-- =+=+= Grey-ish theme =+=+=-->
               <a id="lighterdarktheme" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/lighterdark.jpg"
                   title="Dark theme"
                   alt="dark-icon.jpg"
               /></a>
-
+              <!-- =+=+= Dracula theme =+=+=-->
               <a id="dracula" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/dracula.jpg"
                   title="Dracula theme"
                   alt="dracula-icon.jpg"
               /></a>
-
+              <!-- =+=+= Nord theme =+=+=-->
               <a id="nord" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/nord.jpg"
@@ -328,11 +371,12 @@
                   alt="nord-icon.jpg"
               /></a>
 
-              <!-- + Darker theme section + -->
+              <!-- + Darker/Mid-night theme section + -->
               <p class="theme-title">
                 <i class="las la-cloud-moon"></i> Darker themes
               </p>
 
+              <!-- =+=+= Default Dark theme =+=+=-->
               <a id="dark" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/dark.jpg"
@@ -340,6 +384,7 @@
                   alt="dark-icon.jpg"
               /></a>
 
+              <!-- =+=+= Space Dark theme =+=+=-->
               <a id="space" href="#" class="theme-icon"
                 ><img
                   src="/img/themes/sexy-contrast.jpg"
@@ -351,7 +396,7 @@
               <p class="theme-title">
                 <i class="las la-flask"></i>
                 <abbr
-                  title="⚠️ Try out new themes coming to saturn in the future, expect bugs and minor UI glitches. "
+                  title="Try out new themes coming to saturn in the future, expect bugs and glitches. "
                   >Experimental</abbr
                 >
                 theme
@@ -365,6 +410,7 @@
             </div>
           </div>
 
+          <!-- + Keyboard Shortcuts section + -->
           <div id="tab-5" class="tab-content">
             <div class="settings-background">
               <h2>K-Shortcuts</h2>
@@ -372,11 +418,15 @@
                 K-Shortcuts allows you to use your keyboard to do things, saving
                 you time and effort.
               </p>
-              <h6>Settings shortcuts</h6>
-              <p></p>
-              <kbd>Esc</kbd> &rarr; Open and close settings
+              <h4>While on the home screen:</h4>
+              <br />
+              Press <kbd>Esc</kbd> to open and close settings.
             </div>
           </div>
+        </div>
+        <div id="save_username">
+          🔔 Your username has been saved. Please reload or open a new tab to
+          see the changes.
         </div>
       </div>
       <br />

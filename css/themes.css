@@ -1,5 +1,6 @@
 /* Saturn's theme engine v3. */
 
+/* Default Light theme */
 .light {
   --sat-heading: #1a1a1a; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
@@ -16,6 +17,7 @@
   --sat-border-radius: 15px;
   --gudmrning-txt: linear-gradient(to right, #000000 0%, #646464 100%);
   --sat-accent-color1: hsl(208, 67%, 56%);
+  --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.63);
   --moreapps-hovering-clr: hsl(208, 67%, 56%);
   --favorites-hover: #c4c4c4;
   --switch-color-bg-new: #919191;
@@ -23,6 +25,7 @@
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
   --add-link-border: rgb(150, 151, 151); /* Favorite input border color */
   --delete-warning-bg: #d75352; /* Favorite delete button color */
+  --delete-warning-border: #d75252a2;
   --switch-color-bg-after: #000000;
   --switch-color-bg: #adadad;
   --settings-button-outline: #bbbbbb; /* The outline color on the open settings button */
@@ -37,8 +40,13 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(0%);
 }
-/* New dark theme */
+
+/* Default Dark theme */
 .dark {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
@@ -55,12 +63,14 @@
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
   --sat-accent-color1: hsl(208, 67%, 56%);
+  --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.63);
   --moreapps-hovering-clr: hsl(208, 67%, 56%);
   --favorites-hover: #232931;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #1a1f25;
   --delete-warning-bg: #d75352;
+  --delete-warning-border: #d75252a2;
   --switch-color-bg-new: #2f343d;
   --switch-color-bg-after: #0080e250;
   --settings-button-outline: #232933;
@@ -73,9 +83,13 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
 
-/* Space theme */
+/* Space theme [Darker] */
 
 .space {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
@@ -99,12 +113,14 @@
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #e9772a 100%);
   --sat-accent-color1: #ffb07d;
+  --sat-accent-color-lighter: #ffb17dad;
   --moreapps-hovering-clr: #ffb07d;
   --favorites-hover: rgb(46, 46, 46);
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(41, 41, 41); /* Favorite input border color */
   --delete-warning-bg: #d75352; /* Favorite delete button color */
+  --delete-warning-border: #d75252a2;
   --switch-color-bg-new: #303030;
   --switch-color-bg-after: #ffb07d;
   --switch-color-bg: rgba(48, 48, 48, 0.904);
@@ -117,6 +133,10 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
 
 /* Linkin park theme (BETA) */
@@ -138,12 +158,14 @@
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #e6dada, #274046);
   --sat-accent-color1: #686868;
+  --sat-accent-color-lighter: #68686896;
   --moreapps-hovering-clr: #686868;
   --favorites-hover: rgb(46, 46, 46);
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: rgb(43, 52, 56);
   --delete-warning-bg: #d75352;
+  --delete-warning-border: #d75252a2;
   --switch-color-bg-new: #303030;
   --switch-color-bg-after: #686868;
   --settings-button-outline: #252525;
@@ -155,9 +177,13 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
 
-/* lighterdarktheme theme */
+/* Grey-ish theme */
 
 .lighterdarktheme {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
@@ -180,12 +206,14 @@
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
   --sat-accent-color1: hsl(208, 67%, 56%);
+  --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.658);
   --moreapps-hovering-clr: hsl(208, 67%, 56%);
   --favorites-hover: #3e4349;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #3e4349; /* Favorite input border color */
   --delete-warning-bg: #d75352; /* Favorite delete button color */
+  --delete-warning-border: #d75252a2;
   --switch-color-bg-new: #3e4349;
   --switch-color-bg-after: #ffb07d;
   --switch-color-bg: rgba(48, 48, 48, 0.904);
@@ -198,9 +226,13 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
 
-/* Dracula theme */
+/* Dracula (c) theme */
 
 .dracula {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
@@ -223,12 +255,14 @@
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ff79c6 0%, #bd93f9 100%);
   --sat-accent-color1: hsl(265 89% 78%);
+  --sat-accent-color-lighter: rgba(191, 149, 249, 0.548);
   --moreapps-hovering-clr: hsl(265 89% 78%);
   --favorites-hover: #5c6079;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #575b75; /* Favorite input border color */
   --delete-warning-bg: #d75352; /* Favorite delete button color */
+  --delete-warning-border: #d75252a2;
   --switch-color-bg-new: #525468;
   --switch-color-bg: #44475a;
   --settings-button-outline: #44485c; /* The outline color on the open settings button */
@@ -240,6 +274,10 @@
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }
 
 /* Nord theme */
@@ -259,20 +297,26 @@
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #88c0d0 0%, #8fbcbb 100%);
   --sat-accent-color1: #88c0d0;
+  --sat-accent-color-lighter: #88c0d09f;
   --moreapps-hovering-clr: #88c0d0;
   --favorites-hover: #4c566a;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #4c566a; /* Favorite input border color */
   --delete-warning-bg: #d75352; /* Favorite delete button color */
+  --delete-warning-border: #d75252a2;
   --switch-color-bg-new: #4c566a;
   --settings-button-outline: #4c566a; /* The outline color on the open settings button */
   --new-search-bg-hover-effect: #434c5f; /* New search hover color */
   --sat-border-radius: 15px;
-  --lighter-color: #434c5e; /* Every that needs a light background color */
+  --lighter-color: #424a5c; /* Every that needs a light background color */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
 }

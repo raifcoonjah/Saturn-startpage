@@ -23,7 +23,7 @@ determineGreet(new Date().getHours());
 // + Settings Modal trigger + close button +
 // ========
 //
-var modal = document.querySelector(".modal");
+var modal = document.querySelector(".settings_modal");
 var trigger = document.querySelector(".setting-button");
 var closeButton = document.querySelector(".close-button");
 
@@ -193,7 +193,7 @@ $(document).ready(function () {
 //
 //
 // ========
-// + Saturn's theme engine v2.0-m&ms +
+// + Saturn's theme engine v2.1 +
 // ========
 //
 
@@ -273,6 +273,7 @@ lighterdark_theme_button.onclick = () => {
   localStorage.setItem("theme", "lighterdarktheme");
 };
 
+// Dracula theme (beta)
 draculaButton.onclick = () => {
   body.classList.replace("dark", "dracula");
   body.classList.replace("light", "dracula");
@@ -283,6 +284,7 @@ draculaButton.onclick = () => {
   localStorage.setItem("theme", "dracula");
 };
 
+// Nord theme (beta)
 nordButton.onclick = () => {
   body.classList.replace("dark", "nord");
   body.classList.replace("light", "nord");
@@ -308,19 +310,5 @@ $(document).ready(function () {
     } else {
       $("#Uname").val("Sorry, your browser does not support Web Storage..");
     }
-  });
-});
-
-//
-// ========
-// + Username feature: When the user save show this:  +
-// ========
-//
-
-$(document).ready(function () {
-  $("#save").click(function () {
-    $("#sv-msg").text(
-      "🔔 Your username has been saved. Please reload or open a new tab to see the changes. "
-    );
   });
 });

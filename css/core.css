@@ -195,7 +195,6 @@ strong {
  */
 
 code,
-kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
@@ -471,7 +470,7 @@ button {
 body {
   /* Center body in page */
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 780px;
   border-radius: var(--sat-border-radius);
   overflow-x: hidden;
   background: var(--sat-bg);
@@ -631,11 +630,14 @@ pre {
 */
 
 kbd {
-  font-weight: 600;
-  background: var(--sat-search-bar-focus);
-  padding: 8px 30px;
+  font-weight: 550;
+  background: var(--lighter-color);
+  color: var(--sat-ids);
+  padding: 2px 10px;
+  text-align: center;
   font-size: 1rem;
   border-radius: 7px;
+  font-style: var(--default-font);
 }
 
 pre {
@@ -679,6 +681,7 @@ summary {
 summary:hover {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
+  text-decoration: underline;
 }
 
 details[open] {
@@ -822,7 +825,7 @@ img {
 
 /* == Settings background color == */
 
-.modal-content {
+.settings-content {
   background: var(--sat-setting-bg-color);
 }
 
@@ -862,6 +865,7 @@ transition speed. +
 /* == Force the use of while 
 color to fix some issues == */
 
+.save-button:hover,
 .cancel-fav-btn:hover,
 .removebtn:hover,
 .setting-button:hover,
@@ -870,13 +874,12 @@ color to fix some issues == */
 }
 
 .app {
-  border: 3px solid var(--sat-search-shortcuts);
+  border: 3px solid transparent;
   background: var(--sat-search-shortcuts);
 }
 
 .app:hover {
-  transition: 0.1s;
-  border: 3px solid var(--sat-accent-color1);
+  border: 3px solid transparent;
   background-color: var(--sat-accent-color1);
 }
 
@@ -889,14 +892,20 @@ color to fix some issues == */
   transition: var(--transition-speed-default);
 }
 
-.cancel-fav-btn:hover,
 .removebtn:hover {
-  background-color: var(--delete-warning-bg);
+  background-color: var(--delete-warning-border);
+  border: 1px solid var(--delete-warning-bg);
   transition: var(--transition-speed-default);
+}
+
+.cancel-fav-btn:hover {
+  transition: var(--transition-speed-default);
+  background-color: var(--delete-warning-bg);
 }
 
 /* == Make everything use the 
 current color var == */
+
 .setting-button,
 .app,
 .cuteapps,
@@ -906,13 +915,6 @@ current color var == */
 #fav-link a:hover,
 .container {
   color: var(--sat-ids);
-}
-
-/* == Can be in seen in action in 
-the settings title == */
-
-.settings-dot {
-  color: var(--sat-accent-color1);
 }
 
 /* == Some stuff that require the cursor 

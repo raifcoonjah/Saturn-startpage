@@ -27,7 +27,7 @@ body {
   font-weight: 500;
   box-sizing: border-box;
   outline: none;
-  border: 3px solid var(--sat-bg-borders);
+  border: 3px solid transparent;
   border-radius: 20px;
 }
 
@@ -115,7 +115,7 @@ body {
 ========
 */
 
-.modal {
+.settings_modal {
   background-color: #15181f42;
   position: fixed;
   left: 0;
@@ -130,7 +130,7 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.modal-content {
+.settings-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -223,8 +223,9 @@ input:checked + .slider:before {
   padding: 12px 10px;
   border-radius: 16px !important;
   float: right;
-  border: 4px solid var(--sat-bg-borders);
+  border: 4px solid var(--sat-bg-borders); /* This should be remove for a much more optimized version */
 }
+
 .setting-button i {
   font-size: 1.2rem;
 }
@@ -243,8 +244,9 @@ input:checked + .slider:before {
 ul.tabs li {
   font-weight: 500;
   color: var(--sat-ids);
-  padding: 12px 35px;
-  margin: 3px;
+  padding: 10px 35px;
+  margin: 5px;
+  margin-left: 10px;
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
@@ -253,14 +255,13 @@ ul.tabs li {
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
-  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
 ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
+  border-left: 3px solid var(--sat-accent-color1);
   color: var(--sat-ids);
   font-weight: 600;
-  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
 }
 
 ul.tabs li.current i {
@@ -295,6 +296,7 @@ ul.tabs li {
 */
 
 #apps {
+  margin-bottom: 15px;
   margin-top: 20px;
   width: 104%;
   align-items: left;
@@ -311,7 +313,6 @@ ul.tabs li {
   font-size: 2.3rem;
   right: 100%;
 }
-
 /* 
 ========
 + Apps list & apps text +
@@ -340,7 +341,7 @@ ul.tabs li {
 }
 
 .app-content {
-  animation: fadeIn 150ms ease;
+  animation: fadeIn 130ms ease;
 }
 
 .app-content {
@@ -362,15 +363,20 @@ ul.tabs li {
 */
 
 .settings-background {
-  margin: 5px;
-  margin-bottom: -10px;
+  margin: 10px;
   padding: 10px;
   background: var(--sat-setting-bg-effect);
+  border: 1px solid transparent;
 }
 
 .settings-background-warning {
   padding: 10px;
   background: var(--settings-warning-bg);
+}
+
+.settings-background:hover {
+  border: 1px solid var(--sat-input-hover);
+  transition: var(--transition-speed-fast);
 }
 
 /* 
@@ -409,7 +415,7 @@ ul.tabs li {
 */
 
 @media (max-width: 900px) {
-  .modal-content {
+  .settings-content {
     width: 90%;
     height: 75%;
   }
@@ -433,7 +439,7 @@ ul.tabs li {
 */
 
 .save-button {
-  padding: 10px 11px;
+  padding: 12px 11px;
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);
@@ -442,12 +448,12 @@ ul.tabs li {
 }
 
 .save-button:hover {
-  border: 3px solid var(--sat-accent-color1);
+  background: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
 }
 
 .cancel-fav-btn {
-  padding: 12px 11px;
+  padding: 15px 11px;
   outline: none;
   color: var(--sat-ids);
 }
@@ -461,17 +467,6 @@ ul.tabs li {
 + The where to next text inside more apps. (top middle one) +
 ========
 */
-
-#sv-msg,
-#sv-msg2 {
-  font-weight: 600;
-  font-size: 12px;
-}
-
-#sv-msg2 {
-  font-size: 14px;
-}
-
 .username-section input {
   background-color: var(--lighter-color);
   width: 30%;
@@ -479,7 +474,8 @@ ul.tabs li {
   border: 2px solid var(--sat-setting-bg-effect);
 }
 
-.username-section input:focus {
+.username-section input:focus,
+.username-section input:hover {
   background-color: var(--sat-input-hover);
 }
 
@@ -520,16 +516,19 @@ ul.tabs li {
 */
 
 .favorites-search input {
+  margin-top: 15px;
   background: var(--sat-search-shortcuts);
-  padding: 13px 10px;
+  padding: 11px 10px;
   font-weight: 400;
   font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid transparent;
 }
 
 .favorites-search input:hover,
 .favorites-search input:focus {
   transition: var(--transition-speed-default);
-  background-color: var(--sat-search-bar-focus);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 .cuteapps:hover {
@@ -550,8 +549,7 @@ ul.apps-category {
   list-style: none;
 }
 
-ul.apps-category li,
-.more-apps {
+ul.apps-category li {
   font-weight: 500;
   background: none;
   color: var(--lighter-text-color);
@@ -562,19 +560,18 @@ ul.apps-category li,
   border: 2px solid var(--sat-bg);
 }
 
-ul.apps-category li:hover,
-.more-apps:hover {
+ul.apps-category li:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+  box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
 ul.apps-category li.current {
   background-color: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   font-weight: 600;
-  box-shadow: 1px 16px 25px 1px var(--drop-shadow-color);
+  box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
 /* 
@@ -596,6 +593,7 @@ ul.apps-category li.current {
 
 .tab-content {
   margin-left: 180px; /* Same as the width of the sidebar */
+  margin-top: 30px;
   padding: 0px 10px;
 }
 /* 
@@ -614,6 +612,9 @@ ul.apps-category li.current {
   border: 1px solid var(--lighter-color);
 }
 
+.socials .app:hover {
+  border: 1px solid transparent;
+}
 /* 
 ========
 + Favorite Modal +
@@ -641,9 +642,9 @@ ul.apps-category li.current {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 15px 15px;
+  padding: 1px 11px;
   width: 35rem;
-  height: 30rem;
+  height: 33rem;
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
@@ -657,17 +658,23 @@ Currently only images and iframes are fully supported. +
 */
 
 /* Improved image support so now they act as icons */
-#fav-link img {
+#fav-link img,
+#fav-link svg {
   width: 23px;
   height: 22px;
   outline: none;
   vertical-align: middle;
   margin: 0px;
-  border-radius: 8px !important;
+  border-radius: 0px !important;
+}
+
+/* Improving SVG support */
+#fav-link svg {
+  filter: var(--svg-invert);
 }
 
 #fav-link img {
-  background-color: #fff;
+  background: transparent; /* This should fix some backgrounds having a white background instead of being transparent. */
   padding: 3px;
 }
 
@@ -716,6 +723,7 @@ ul li {
   margin-top: -5px;
   padding: 10px;
   border-radius: 13px;
+  border: 1px solid transparent;
 }
 
 .newtabbtn {
@@ -726,10 +734,12 @@ ul li {
   padding: 10px;
   border-radius: 13px;
   visibility: visible; /* Force visibility to fix issues */
+  border: 1px solid transparent;
 }
 
 .newtabbtn:hover {
-  background-color: var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color1);
+  background-color: var(--sat-accent-color-lighter);
   transition: var(--transition-speed-default);
   color: var(--for-white);
 }
@@ -757,6 +767,7 @@ ul li {
   border-radius: var(--sat-border-radius);
 }
 
+.fav_ptgi_btn:hover, /* added this to make the hover animation similar */
 .favModal input:hover,
 .favModal input:focus {
   background-color: var(--none);
@@ -804,7 +815,6 @@ ul li {
 /* Header inside Favorites */
 .fav-title {
   font-weight: 500;
-  font-size: 20px;
   text-align: center;
   padding: 20px;
 }
@@ -812,11 +822,165 @@ ul li {
 /* Favorites input title */
 .fav_title {
   font-weight: 450;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* Hiding the background color for cancel button */
 
 .cancel-fav-btn {
   background-color: var(--sat-setting-bg-color);
+}
+
+/* 
+========
++ "Get Icon feature" [Part of Favorites]+
+========
+*/
+
+.fav_ptgi {
+  margin-top: -10px;
+}
+
+.fav_ptgi_category {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ul.fav_ptgi_category {
+  padding: 0px;
+  list-style: none;
+}
+
+ul.fav_ptgi_category li {
+  font-size: 15px;
+  background: var(--sat-search-shortcuts);
+  color: var(--lighter-text-color);
+  display: inline-block;
+  padding: 6px 9px;
+  cursor: pointer;
+  border-radius: var(--sat-border-radius);
+  border: 2px solid var(--add-link-border);
+}
+
+.fav_ptgi_btn:hover {
+  background: var(--sat-search-shortcuts);
+  color: var(--sat-accent-color1);
+  transition: var(--transition-speed-fast);
+}
+
+/* 
+========
++ Snackbar +
+========
+*/
+
+#saveMsgBar,
+#save_username {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: var(--sat-setting-bg-color);
+  color: var(--sat-ids);
+  text-align: center;
+  border-radius: var(--sat-border-radius);
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 47%;
+  bottom: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Align save username snackbar to the center */
+#save_username {
+  left: 40%;
+  bottom: 30px;
+}
+
+#saveMsgBar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#save_username.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.9s 4.5s;
+  animation: fadein 0.5s, fadeout 0.9s 4.5s;
+}
+
+/* 
+========
++ fadein and fadeout animation used by the snackbar +
+========
+*/
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/* Text on the bottom of favorites modal. */
+.side-text {
+  text-align: center;
+}
+
+/* Make whats new text smaller. */
+.whatsnew li {
+  font-size: 15px;
+}
+
+/* 
+========
++ This fixes a major hover issue related to favorites. +
++ This code just prevents a small bar from 
+appearing when the user hovers on the open in new tab button.
+========
+*/
+
+.hide_fav_bar {
+  visibility: hidden;
+}
+
+.hide_fav_bar:hover {
+  visibility: hidden;
 }

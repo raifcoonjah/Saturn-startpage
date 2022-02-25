@@ -43,7 +43,15 @@ const appsList = (x) => {
                 <div class="app">
                   <i class="las la-school"></i>
                   <span>Rushm.. Moodle</span>
-                </div></a>  
+                </div></a>
+              
+                 <a href="https://docs.google.com">
+                <div class="app">
+                  <i class="las la-file-alt"></i>
+                  <span>Google Docs</span>
+                </div></a
+              >
+
               <a href="https://udemy.com">
                 <div class="app">
                   <i class="las la-chalkboard-teacher"></i>
@@ -53,12 +61,6 @@ const appsList = (x) => {
                 <div class="app">
                   <i class="lar la-map"></i>
                   <span>Learn Anything</span>
-                </div></a
-              >
-              <a href="https://docs.google.com">
-                <div class="app">
-                  <i class="las la-file-alt"></i>
-                  <span>Google Docs</span>
                 </div></a
               >
               <a href="https://www.litcharts.com/">
@@ -115,6 +117,12 @@ const appsList = (x) => {
                       <span>Twitch</span>
                     </div></a
                   >
+                <a href="https://lifeat.io">
+                <div class="app">
+                  <i class="las la-ticket-alt"></i>
+                  <span>LifeAt</span>
+                </div></a
+              >
                   <a href="https://www.lofi.cafe/">
                     <div class="app">
                       <i class="las la-record-vinyl"></i>
@@ -127,10 +135,21 @@ const appsList = (x) => {
           </div>
         </div>`);
 };
+
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content">
+              <div class="settings-background">
+                <h3>✨ What's new</h3>
+                <p>
+                This release includes various new features, bug fixes and stability improvements. <br/>
+                Read the full release note on
+              <a href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.0"
+                ><i class="lab la-github"></i> Github.</a
+              >
+                </p>
+              </div>
             <div class="settings-background">
-              <h3 style="text-align:center;padding:15px;">About</h3>
+              <h2 style="text-align:center;padding:15px;">About</h2>
               <p class="new-about">
               <img
                   src="/img/dynamic-icon-big.png"
@@ -140,9 +159,9 @@ const settingAbout = (z) => {
                <br/>
                 Saturn version:
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.2.2"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.0"
                   target="_blank"
-                  >v4.2.2 RC2 <i class="las la-external-link-alt"></i
+                  >v4.3.0 RC1 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -179,6 +198,7 @@ const settingAbout = (z) => {
             </div>
           </div>`);
 };
+
 const render_in_js = (x, z) => {
   let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
