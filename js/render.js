@@ -141,7 +141,7 @@ const settingAbout = (z) => {
               <div class="settings-background">
                 <h3>✨ What's new</h3>
                 <p>
-                This release includes various new features, bug fixes and stability improvements. <br/>
+                This release includes various bug fixes, and the addition of tooltips (thanks to <a href="https://github.com/eliortabeka/tootik">toolik</a>). <br/>
                 Read the full release note on
               <a href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.0"
                 ><i class="lab la-github"></i> Github.</a
@@ -159,15 +159,15 @@ const settingAbout = (z) => {
                <br/>
                 Saturn version:
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.0"
-                  target="_blank"
-                  >v4.3.0 RC1 <i class="las la-external-link-alt"></i
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.1"
+                  target="_blank" 
+                  >v4.3.1 RC1 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/projects/1"
-                  target="_blank"
+                  target="_blank" data-tootik="Thanks for your interest ❤️" data-tootik-conf="right"
                   >Contribute <i class="las la-external-link-alt"></i
                 ></a>
                 </p>

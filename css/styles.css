@@ -278,7 +278,7 @@ ul.tabs li {
 }
 .tab-content {
   display: none;
-  animation: slide-up-fade-in 170ms;
+  animation: slide-up-fade-in 90ms;
 }
 
 .tab-content h4 i {
@@ -653,10 +653,10 @@ ul.apps-category li.current {
 /* 
 ========
 + Optimizations for favorites features.
-Currently only images and iframes are fully supported. +
++ favorite support +
++ WIP, I'm currently adding more and more support. +
 ========
 */
-
 /* Improved image support so now they act as icons */
 #fav-link img,
 #fav-link svg {
