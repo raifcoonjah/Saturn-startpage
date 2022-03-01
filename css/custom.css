@@ -5,3 +5,13 @@
 ========
 */
 
+.se_icon {
+  filter: var(--svg-invert);
+}
+
+.quote {
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: 500;
+  margin-top: -10px;
+}

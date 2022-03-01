@@ -13,7 +13,9 @@ const determineGreet = (hours) =>
         : hours < 21 // After 21:00/9:00 display night instead.
         ? "evening, "
         : "night, "
-    } ` + localStorage.getItem("user"));
+    } ` +
+    localStorage.getItem("user") +
+    `.`);
 
 // Get month:
 determineGreet(new Date().getHours());
@@ -72,22 +74,13 @@ function getDate() {
       "Dec",
     ],
     cmonth = months[date.getMonth()],
-    days = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ],
+    days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"],
     cday = days[date.getDay()],
     cnum = date.getDate();
   return " " + cday + " " + cnum + " " + cmonth;
 }
 // Set up the clock and date
-document.getElementById("time").innerHTML =
-  `It's ` + getDate() + `, ` + getTime();
+document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
 
 //
 // ========
@@ -157,6 +150,25 @@ $(function () {
   });
 });
 
+$(function () {
+  var status = localStorage.getItem("hide-headerimg");
+  if (status == "true") {
+    $(".calendar-btn").css("display", "none");
+    $(".hide-apps-list").attr("checked", true);
+  } else {
+    $(".calendar-btn").css("display", "block");
+    $(".hide-calendar-btn").attr("checked", false);
+  }
+  $(".hide-calendar-btn").click(function () {
+    if (this.checked) {
+      $(".calendar-btn").hide();
+    } else {
+      $(".calendar-btn").show();
+    }
+    localStorage.setItem("hide-calendar-btn", this.checked);
+  });
+});
+
 //
 // ========
 // + Settings navigation +
@@ -180,7 +192,7 @@ $(document).ready(function () {
 // ========
 //
 $(document).ready(function () {
-  $("ul.apps-category li").click(function () {
+  $("ul.apps-category li").hover(function () {
     var tab_id = $(this).attr("data-tab");
 
     $("ul.apps-category li").removeClass("current");

@@ -474,6 +474,7 @@ body {
   border-radius: var(--sat-border-radius);
   overflow-x: hidden;
   background: var(--sat-bg);
+  margin-top: -10px;
 
   /* Minor ajustments for better image background support */
   /* This should fix all issues we had before */

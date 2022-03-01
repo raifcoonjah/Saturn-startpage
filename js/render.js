@@ -141,9 +141,9 @@ const settingAbout = (z) => {
               <div class="settings-background">
                 <h3>✨ What's new</h3>
                 <p>
-                This release includes various bug fixes, and the addition of tooltips (thanks to <a href="https://github.com/eliortabeka/tootik">toolik</a>). <br/>
+                This release includes the brand new Home v2 that include quotes, tons of speed improvements, better time viewing experience and bug fixes. 
                 Read the full release note on
-              <a href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.0"
+              <a href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                 ><i class="lab la-github"></i> Github.</a
               >
                 </p>
@@ -157,11 +157,10 @@ const settingAbout = (z) => {
                   alt="Saturn-logo.png"
                   /> 
                <br/>
-                Saturn version:
                 <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.1"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                   target="_blank" 
-                  >v4.3.1 RC1 <i class="las la-external-link-alt"></i
+                  >v5.0.0 Dev <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better

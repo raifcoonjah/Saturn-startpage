@@ -22,8 +22,20 @@
 
   <body class="light">
     <!-- =+=+= Good morning/afternoon/night and time text =+=+= -->
-    <p class="gudmorning" id="greetings"></p>
     <p class="time" id="time"></p>
+    <p class="gudmorning" id="greetings"></p>
+    <p
+      class="quote"
+      id="quotation"
+      data-tootik="Reload or open a new tab see new quotes."
+      data-tootik-conf="top"
+    ></p>
+    <p
+      class="quote source"
+      id="source"
+      data-tootik="Author of the quote."
+      data-tootik-conf="bottom"
+    ></p>
 
     <main>
       <!-- =+=+= Saturn Search =+=+= -->
@@ -43,6 +55,7 @@
                 id="se_icon"
                 src="icons/google.svg"
                 alt="Search engine logo"
+                class="se_icon"
                 title="Change search engine.."
               />
             </a>
@@ -58,8 +71,6 @@
           </form>
         </div>
       </div>
-
-      <!-- =+=+= Main Buttons =+=+= -->
 
       <button class="setting-button" title="Open Settings.." id="trigger">
         <i class="las la-cog"></i>
@@ -80,11 +91,11 @@
       <!-- =+=+= App lists + App category =+=+= -->
       <div class="apps_list">
         <h4 class="section-title new">
-          <i class="las la-grip-horizontal"></i> Apps list
+          <i class="las la-chevron-right"></i> Apps list
         </h4>
         <ul class="apps-category">
           <li class="tab-link current" data-tab="app-1">
-            <i class="lab la-gratipay"></i> Most used
+            <i class="las la-history"></i> Most used
           </li>
           <li class="tab-link" data-tab="app-2">
             <i class="las la-book-reader"></i> Study
@@ -107,7 +118,7 @@
 
       <div id="fav-container" class="fav-container">
         <h4 class="section-title">
-          <i class="las la-swatchbook"></i> Favorites
+          <i class="las la-chevron-right"></i> Favorites
         </h4>
 
         <!-- =+=+= Favorites search.. =+=+=-->
@@ -116,119 +127,117 @@
         </div>
 
         <div id="content">
-            <ul id="fav-link"></ul>
-            <div id="favBtn" class="fav-btn">
-              <button><i class="las la-plus"></i> Add favorite</button>
-            </div>
+          <ul id="fav-link"></ul>
+          <div id="favBtn" class="fav-btn">
+            <button><i class="las la-plus"></i> Add favorite</button>
           </div>
         </div>
+      </div>
 
-        <!-- =+=+= Favorites Modal =+=+= -->
-        <div id="favModal" class="favModal">
-          <div class="fav-content">
-            <!-- =+=+= Header =+=+=  -->
-            <h3 class="fav-title">
-              <i class="las la-plus-circle"></i> Add favorite
-            </h3>
+      <!-- =+=+= Favorites Modal =+=+= -->
+      <div id="favModal" class="favModal">
+        <div class="fav-content">
+          <!-- =+=+= Header =+=+=  -->
+          <h3 class="fav-title">
+            <i class="las la-plus-circle"></i> Add favorite
+          </h3>
 
-            <!-- =+=+= Input ++ Favorite title =+=+=-->
-            <label class="fav_title"
-              >Title or
+          <!-- =+=+= Input ++ Favorite title =+=+=-->
+          <label class="fav_title"
+            >Title or
+            <a
+              href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-images"
+              target="_blank"
+              >Image<i class="las la-external-link-alt"></i></a
+          ></label>
+          <input id="title" placeholder="Enter a title" autocomplete="off" />
+          <br />
+
+          <!-- =+=+= Get custom icons =+=+=-->
+          <label class="fav_title"
+            >Get custom icons<i class="las la-external-link-alt"></i>
+            (Beta)</label
+          >
+          <div class="fav_ptgi">
+            <ul class="fav_ptgi_category">
               <a
-                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-images"
+                href="https://simpleicons.org/"
+                title="Get Simple icons.."
                 target="_blank"
-                >Image<i class="las la-external-link-alt"></i></a
-            ></label>
-            <input id="title" placeholder="Enter a title" autocomplete="off" />
-            <br />
-
-            <!-- =+=+= Get custom icons =+=+=-->
-            <label class="fav_title"
-              >Get custom icons<i class="las la-external-link-alt"></i>
-              (Beta)</label
-            >
-            <div class="fav_ptgi">
-              <ul class="fav_ptgi_category">
-                <a
-                  href="https://simpleicons.org/"
-                  title="Get Simple icons.."
-                  target="_blank"
+              >
+                <li class="fav_ptgi_btn">Simple Icons</li></a
+              >
+              <a
+                href="https://icons8.com/line-awesome"
+                title="Get line-awesome icons.."
+                target="_blank"
+              >
+                <li class="fav_ptgi_btn">Line Awesome</li></a
+              >
+              <a
+                href="https://lineicons.com/icons"
+                title="Get line icons.."
+                target="_blank"
+              >
+                <li class="fav_ptgi_btn">Line Icons</li></a
+              >
+              <a
+                href="https://mraif13.notion.site/How-to-use-the-new-Get-custom-icons-80dc51dad7604dffb99d9ab9e6997df2"
+                target="_blank"
+              >
+                <li
+                  class="fav_ptgi_btn"
+                  data-tootik="What the f*ck is this?"
+                  data-tootik-conf="right"
                 >
-                  <li class="fav_ptgi_btn">Simple Icons</li></a
-                >
-                <a
-                  href="https://icons8.com/line-awesome"
-                  title="Get line-awesome icons.."
-                  target="_blank"
-                >
-                  <li class="fav_ptgi_btn">Line Awesome</li></a
-                >
-                <a
-                  href="https://lineicons.com/icons"
-                  title="Get line icons.."
-                  target="_blank"
-                >
-                  <li class="fav_ptgi_btn">Line Icons</li></a
-                >
-                <a
-                  href="https://mraif13.notion.site/How-to-use-the-new-Get-custom-icons-80dc51dad7604dffb99d9ab9e6997df2"
-                  target="_blank"
-                >
-                  <li
-                    class="fav_ptgi_btn"
-                    data-tootik="Learn how to use this"
-                    data-tootik-conf="right"
-                  >
-                    <i class="lar la-question-circle"></i></li
-                ></a>
-              </ul>
-            </div>
-
-            <!-- =+=+= Input ++ Favorite URL =+=+=-->
-            <label class="fav_title"><i class="las la-link"></i> URL</label
-            ><br />
-            <input
-              id="url"
-              placeholder="Type or paste a URL"
-              autocomplete="off"
-              value="https://"
-            />
-
-            <br />
-            <br />
-            <button id="cancel-fav-btn" class="cancel-fav-btn">
-              <i class="las la-times-circle"></i> Cancel
-            </button>
-            <button id="add" class="save-button">
-              <i class="lar la-save"></i> Save
-            </button>
-            <h3></h3>
-
-            <div class="side-text">
-              <div class="settings-background">
-                <span class="settings-dot">✨</span>
-                Unlock the full potential of favorites,
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
-                  target="_blank"
-                  >learn more <i class="las la-external-link-alt"></i
-                ></a>
-              </div>
-              <br />
-              <p style="text-align: center; font-weight: 500; font-size: 13px">
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/issues/new"
-                  target="_blank"
-                  ><i class="las la-bug"></i> Report an issue
-                </a>
-              </p>
-            </div>
+                  <i class="lar la-question-circle"></i></li
+              ></a>
+            </ul>
           </div>
-          <!-- =+=+= Save message =+=+= -->
-          <div id="saveMsgBar">
-            <i class="las la-smile-wink"></i> Awesome, new favorite saved
-            successfully!
+
+          <!-- =+=+= Input ++ Favorite URL =+=+=-->
+          <label class="fav_title"><i class="las la-link"></i> URL</label><br />
+          <input
+            id="url"
+            placeholder="Type or paste a URL"
+            autocomplete="off"
+            value="https://"
+          />
+
+          <br />
+          <br />
+          <button id="cancel-fav-btn" class="cancel-fav-btn">
+            <i class="las la-times-circle"></i> Cancel
+          </button>
+          <button id="add" class="save-button">
+            <i class="lar la-save"></i> Save
+          </button>
+          <h3></h3>
+
+          <div class="side-text">
+            <div class="settings-background">
+              <span class="settings-dot">✨</span>
+              Unlock the full potential of favorites,
+              <a
+                href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
+                target="_blank"
+                >learn more <i class="las la-external-link-alt"></i
+              ></a>
+            </div>
+            <br />
+            <p style="text-align: center; font-weight: 500; font-size: 13px">
+              <a
+                href="https://github.com/mraif13/Saturn-startpage/issues/new"
+                target="_blank"
+                ><i class="las la-bug"></i> Report an issue
+              </a>
+            </p>
           </div>
+        </div>
+        <!-- =+=+= Save message =+=+= -->
+        <div id="saveMsgBar">
+          <i class="las la-smile-wink"></i> Awesome, new favorite saved
+          successfully!
         </div>
       </div>
 
@@ -448,6 +457,7 @@
       <script type="text/javascript" src="js/favorites.js"></script>
       <script type="text/javascript" src="js/render.js"></script>
       <script type="text/javascript" src="js/custom.js"></script>
+      <script type="text/javascript" src="js/quote.js"></script>
     </main>
   </body>
 </html>
