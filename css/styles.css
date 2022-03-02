@@ -123,8 +123,8 @@ body {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.2);
-  transition: visibility 0s linear 30ms, opacity 30ms 0s, transform 30ms;
+  transform: scale(0.9);
+  transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -147,7 +147,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 100ms 0s, transform 100ms;
+  transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
 }
 
 /* 
@@ -278,7 +278,7 @@ ul.tabs li {
 }
 .tab-content {
   display: none;
-  animation: slide-up-fade-in 90ms;
+  animation: slide-up-fade-in 180ms;
 }
 
 .tab-content h4 i {
@@ -341,7 +341,7 @@ ul.tabs li {
 }
 
 .app-content {
-  animation: fadeIn 130ms ease;
+  animation: fadeIn 90ms ease;
 }
 
 .app-content {
@@ -621,7 +621,7 @@ ul.apps-category li.current {
 ========
 */
 .favModal {
-  background-color: #0a0a0abd;
+  background-color: #15181f42;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -632,7 +632,7 @@ ul.apps-category li.current {
   overflow: auto; /* Enable scroll if needed */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  animation: fadeIn 150ms ease;
+  animation: scale 150ms;
 }
 
 /* Favorite modal Content/Box */
