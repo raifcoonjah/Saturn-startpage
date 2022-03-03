@@ -278,7 +278,7 @@ ul.tabs li {
 }
 .tab-content {
   display: none;
-  animation: slide-up-fade-in 180ms;
+  animation: slide-up-fade-in 150ms;
 }
 
 .tab-content h4 i {
@@ -632,7 +632,7 @@ ul.apps-category li.current {
   overflow: auto; /* Enable scroll if needed */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  animation: scale 150ms;
+  animation: scale 100ms;
 }
 
 /* Favorite modal Content/Box */
