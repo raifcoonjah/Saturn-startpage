@@ -439,7 +439,7 @@ ul.tabs li {
 */
 
 .save-button {
-  padding: 12px 11px;
+  padding: 11px 11px;
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);
@@ -453,7 +453,7 @@ ul.tabs li {
 }
 
 .cancel-fav-btn {
-  padding: 15px 11px;
+  padding: 13px 11px;
   outline: none;
   color: var(--sat-ids);
 }
@@ -859,7 +859,7 @@ ul.fav_ptgi_category li {
   padding: 6px 9px;
   cursor: pointer;
   border-radius: var(--sat-border-radius);
-  border: 2px solid var(--add-link-border);
+  border: 2px solid transparent;
 }
 
 .fav_ptgi_btn:hover {

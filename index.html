@@ -24,12 +24,7 @@
     <!-- =+=+= Good morning/afternoon/night and time text =+=+= -->
     <p class="time" id="time"></p>
     <p class="gudmorning" id="greetings"></p>
-    <p
-      class="quote"
-      id="quotation"
-      data-tootik="Reload or open a new tab see new quotes."
-      data-tootik-conf="top"
-    ></p>
+    <p class="quote" id="quotation"></p>
     <p
       class="quote source"
       id="source"
@@ -143,15 +138,11 @@
           </h3>
 
           <!-- =+=+= Input ++ Favorite title =+=+=-->
-          <label class="fav_title"
-            >Title or
-            <a
-              href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature#how-do-you-add-images"
-              target="_blank"
-              >Image<i class="las la-external-link-alt"></i></a
-          ></label>
-          <input id="title" placeholder="Enter a title" autocomplete="off" />
-          <br />
+
+          <div class="fav-input-block">
+            <input id="title" required autocomplete="off" spellcheck="false" />
+            <span class="placeholder"> Favorite title </span>
+          </div>
 
           <!-- =+=+= Get custom icons =+=+=-->
           <label class="fav_title"
@@ -196,15 +187,12 @@
           </div>
 
           <!-- =+=+= Input ++ Favorite URL =+=+=-->
-          <label class="fav_title"><i class="las la-link"></i> URL</label><br />
-          <input
-            id="url"
-            placeholder="Type or paste a URL"
-            autocomplete="off"
-            value="https://"
-          />
+          <label class="fav_title"><i class="las la-link"></i> URL</label>
+          <div class="fav-input-block">
+            <input id="url" required autocomplete="off" spellcheck="false" />
+            <span class="placeholder"> Type or paste a URL </span>
+          </div>
 
-          <br />
           <br />
           <button id="cancel-fav-btn" class="cancel-fav-btn">
             <i class="las la-times-circle"></i> Cancel
