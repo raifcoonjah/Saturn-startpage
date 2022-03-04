@@ -1,6 +1,6 @@
 /* Saturn's theme engine v3. */
 
-/* Default Light theme */
+/* Default Light theme [New]  */
 .light {
   --sat-heading: #1a1a1a; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
@@ -28,6 +28,11 @@
   --delete-warning-border: #d75252a2;
   --switch-color-bg-after: #000000;
   --switch-color-bg: #adadad;
+  --theme-container: rgb(
+    206,
+    206,
+    206
+  ); /* Used by the contains that contain themes icons and text. */
   --settings-button-outline: #bbbbbb; /* The outline color on the open settings button */
   --new-search-bg-hover-effect: rgb(199, 199, 199);
   --lighter-color: rgb(
@@ -77,6 +82,7 @@
   --new-search-bg-hover-effect: #1e222b;
   --sat-border-radius: 15px;
   --switch-color-bg: #303846de;
+  --theme-container: #181e27; /* Used by the contains that contain themes icons and text. */
   --lighter-color: #191d25; /* Every that needs a light background color */
 
   /* Transitions */

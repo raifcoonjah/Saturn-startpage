@@ -946,3 +946,27 @@ use the correct border radius == */
 .settings-background-warning {
   border-radius: var(--sat-border-radius);
 }
+
+/* 
+========
++ Mobile optimizations (work in progress..) +
+========
+*/
+
+@media (max-width: 900px) {
+  .settings-content {
+    max-width: 90%;
+  }
+  ul.tabs li,
+  ul.tabs li.current {
+    width: 40px;
+    font-size: 16px;
+  }
+  .tab-content {
+    width: 75%;
+    margin-left: 90px !important;
+  }
+  .username-section input {
+    width: 50%;
+  }
+}

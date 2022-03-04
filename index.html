@@ -140,6 +140,7 @@
 
           <!-- =+=+= Input ++ Favorite title =+=+=-->
 
+          <label class="fav_title">Favorite title</label>
           <div class="fav-input-block">
             <input id="title" required autocomplete="off" spellcheck="false" />
             <span class="placeholder"> Favorite title </span>
@@ -331,16 +332,20 @@
           <!-- 
 + Theme section /i settings +
 + Refactoring in progress +
++ new design: released. +
 -->
 
           <!-- =+=+= Theme section =+=+=-->
           <div id="tab-4" class="tab-content">
             <div class="settings-background">
               <!-- + Title/Header section + -->
-              <h2>Theme</h2>
-              <p>
-                Personalize Saturn Startpage with themes to match your style &
-                mood.
+              <h2 style="text-align: center; padding: 15px; font-weight: 500">
+                Select a theme
+              </h2>
+              <p style="text-align: center">
+                Personalize
+                <span style="font-weight: 500">Saturn Startpage</span> with
+                themes to match your style & mood.
               </p>
               <p class="line"></p>
 
@@ -349,73 +354,91 @@
               <!-- =+=+= Light/Day theme =+=+=-->
               <p class="theme-title"><i class="las la-sun"></i> Light theme</p>
 
-              <a id="light" href="#" class="theme-icon"
-                ><img
-                  src="/img/themes/light-theme.jpg"
+              <div class="theme-container" id="light">
+                <img
+                  class="theme-icon"
+                  src="/img/themes/light.jpg"
                   title="Light theme"
                   alt="light-icon.jpg"
-              /></a>
+                />
+                <span class="theme-name">Default light</span>
+              </div>
 
               <!-- =+=+= Dark/Night themes =+=+=-->
               <p class="theme-title"><i class="las la-moon"></i> Dark themes</p>
               <!-- =+=+= Grey-ish theme =+=+=-->
-              <a id="lighterdarktheme" href="#" class="theme-icon"
-                ><img
-                  src="/img/themes/lighterdark.jpg"
-                  title="Dark theme"
-                  alt="dark-icon.jpg"
-              /></a>
-              <!-- =+=+= Dracula theme =+=+=-->
-              <a id="dracula" href="#" class="theme-icon"
-                ><img
+              <div class="theme-container" id="lighterdarktheme">
+                <img
+                  class="theme-icon"
+                  src="/img/themes/lightdark.jpg"
+                  title="Lighter dark theme"
+                  alt="lighterdark-icon.jpg"
+                />
+                <span class="theme-name">Lighter dark</span>
+              </div>
+              <div class="theme-container" id="dracula">
+                <img
+                  class="theme-icon"
                   src="/img/themes/dracula.jpg"
                   title="Dracula theme"
                   alt="dracula-icon.jpg"
-              /></a>
-              <!-- =+=+= Nord theme =+=+=-->
-              <a id="nord" href="#" class="theme-icon"
-                ><img
+                />
+                <span class="theme-name">Dracula</span>
+              </div>
+              <div class="theme-container" id="nord">
+                <img
+                  class="theme-icon"
                   src="/img/themes/nord.jpg"
                   title="Nord theme"
                   alt="nord-icon.jpg"
-              /></a>
-
+                />
+                <span class="theme-name">Nord</span>
+              </div>
               <!-- + Darker/Mid-night theme section + -->
               <p class="theme-title">
                 <i class="las la-cloud-moon"></i> Darker themes
               </p>
 
               <!-- =+=+= Default Dark theme =+=+=-->
-              <a id="dark" href="#" class="theme-icon"
-                ><img
+              <div class="theme-container" id="dark">
+                <img
+                  class="theme-icon"
                   src="/img/themes/dark.jpg"
-                  title="Darker theme"
-                  alt="dark-icon.jpg"
-              /></a>
-
+                  title="Dark theme"
+                  alt="darktheme-icon.jpg"
+                />
+                <span class="theme-name">Default dark</span>
+              </div>
               <!-- =+=+= Space Dark theme =+=+=-->
-              <a id="space" href="#" class="theme-icon"
-                ><img
-                  src="/img/themes/sexy-contrast.jpg"
-                  title="Material-ish Theme"
-                  alt="sexy-contrast.jpg"
-              /></a>
-
+              <div class="theme-container" id="space">
+                <img
+                  class="theme-icon"
+                  src="/img/themes/space.jpg"
+                  title="Space dark theme"
+                  alt="spacedark-icon.jpg"
+                />
+                <span class="theme-name">Space dark</span>
+              </div>
               <!-- + Experimental theme section + -->
               <p class="theme-title">
                 <i class="las la-flask"></i>
                 <abbr
-                  title="Try out new themes coming to saturn in the future, expect bugs and glitches. "
+                  title=""
+                  data-tootik="Try out new themes coming to saturn in the future, expect bugs and glitches. "
+                  data-tootik-conf="top multiline"
                   >Experimental</abbr
                 >
                 theme
               </p>
-              <a id="linkin-park" href="#" class="theme-icon"
-                ><img
+              <div class="theme-container" id="linkin-park">
+                <img
+                  class="theme-icon"
                   src="/img/themes/rock-legend.jpg"
-                  title="Linkin Park Theme"
-                  alt="rock-legend.jpg"
-              /></a>
+                  title="Experimental theme"
+                  alt="experimental-icon.jpg"
+                />
+                <span class="theme-name">Linkin Park</span>
+              </div>
             </div>
           </div>
 

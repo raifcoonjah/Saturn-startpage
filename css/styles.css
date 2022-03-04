@@ -385,18 +385,39 @@ ul.tabs li {
 ========
 */
 
-.theme-icon img {
-  width: 150px;
-  height: 75px;
-  padding: 3px;
-  border-radius: 20px;
-  position: relative;
+.theme-icon {
+  margin: -2.5px;
+  border-radius: 13px;
+  height: 4.5rem;
+  margin-bottom: 0.1px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-.theme-icon img:hover {
+div.theme-container {
+  display: table;
+  padding: 2.5px 0px;
+  margin: 2px;
+  border-radius: var(--sat-border-radius);
+
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid var(--lighter-color);
+  cursor: pointer;
+}
+
+.theme-container:hover {
+  color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  background-color: var(--sat-accent-color1);
-  top: -3px;
+  border: 2px solid var(--sat-accent-color1);
+}
+
+.theme-name {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: -0.5px;
 }
 
 .theme-title {
@@ -405,31 +426,12 @@ ul.tabs li {
 }
 
 .theme-title i {
+  transition: var(--transition-speed-default);
+  font-size: 17px;
+  background-color: var(--lighter-color);
+  padding: 4px;
+  border-radius: 10px;
   color: var(--sat-accent-color1);
-}
-
-/* 
-========
-+ Mobile optimizations (work in progress..) +
-========
-*/
-
-@media (max-width: 900px) {
-  .settings-content {
-    width: 90%;
-    height: 75%;
-  }
-  ul.tabs li {
-    padding: 7px 7px;
-  }
-
-  .cuteapps p {
-    font-size: 10px;
-  }
-  .cuteapps i {
-    font-size: 2.3em;
-    margin-top: 10px;
-  }
 }
 
 /* 
@@ -469,7 +471,7 @@ ul.tabs li {
 */
 .username-section input {
   background-color: var(--lighter-color);
-  width: 30%;
+  padding: 13px;
   font-size: 15px;
   border: 2px solid transparent;
 }
