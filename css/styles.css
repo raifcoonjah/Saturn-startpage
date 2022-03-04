@@ -471,7 +471,7 @@ ul.tabs li {
   background-color: var(--lighter-color);
   width: 30%;
   font-size: 15px;
-  border: 2px solid var(--sat-setting-bg-effect);
+  border: 2px solid transparent;
 }
 
 .username-section input:focus,
