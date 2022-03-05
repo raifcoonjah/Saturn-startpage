@@ -22,12 +22,12 @@ body {
 .search-bar {
   width: 100%;
   font-size: 1.3em;
-  padding: 17px 50px;
+  padding: 20px 48px;
   text-align: left;
   font-weight: 500;
   box-sizing: border-box;
   outline: none;
-  border: 3px solid transparent;
+  border: 1px solid var(--sat-bg-borders);
   border-radius: 20px;
 }
 
@@ -52,12 +52,13 @@ body {
 
 .search-bar:hover {
   background-color: var(--new-search-bg-hover-effect);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 .search-bar:focus {
-  border: 3px solid var(--new-search-bg-hover-effect);
+  border: 1px solid var(--sat-accent-color1);
+  background-color: var(--new-search-bg-hover-effect);
 }
-
 .fill {
   display: flex;
   justify-content: center;

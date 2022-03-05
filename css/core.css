@@ -789,14 +789,14 @@ input {
 textarea:hover,
 select:hover,
 input:hover {
-  background-color: var(--sat-input-hover);
+  background-color: var(--lighter-color);
   transition: var(--transition-speed-default);
 }
 
 textarea:focus,
 select:focus,
 input:focus {
-  background-color: var(--sat-search-bar-focus);
+  background-color: var(--lighter-color);
 }
 
 img {
