@@ -244,13 +244,12 @@ input:checked + .slider:before {
 ul.tabs li {
   font-weight: 500;
   color: var(--sat-ids);
-  padding: 8px 33px;
+  padding: 10px 35px;
   margin: 5px;
   margin-left: 10px;
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
-  border-top: 3px solid transparent;
 }
 
 ul.tabs li:hover {
@@ -986,4 +985,26 @@ appearing when the user hovers on the open in new tab button.
 
 .hide_fav_bar:hover {
   visibility: hidden;
+}
+
+/* 
+========
++ Used to fix issues with new search icons +
+========
+*/
+
+.se_icon {
+  filter: var(--svg-invert);
+}
+
+/* 
+========
++ Quote feature +
+========
+*/
+.quote {
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: 500;
+  margin-top: -10px;
 }

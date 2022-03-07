@@ -5,16 +5,7 @@
 ========
 */
 
-.se_icon {
-  filter: var(--svg-invert);
-}
 
-.quote {
-  font-size: 0.9em;
-  text-align: center;
-  font-weight: 500;
-  margin-top: -10px;
-}
 
 div.fav-input-block {
   position: relative;
@@ -24,7 +15,6 @@ div.fav-input-block input {
   font-weight: 500;
   font-size: 14px;
   color: var(--sat-ids);
-
   padding: 15px 15px;
   border: 2px solid transparent;
   outline: none;
@@ -34,17 +24,12 @@ div.fav-input-block span.placeholder {
   position: absolute;
   margin: 17px 0;
   padding: 0 4px;
-
   color: #6c757d;
-
   display: flex;
   align-items: center;
-
   font-size: 14px;
-
   top: 0;
   left: 17px;
-
   transition: all 0.2s;
   transform-origin: 0% 0%;
   background: none;
