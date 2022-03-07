@@ -953,7 +953,7 @@ use the correct border radius == */
 ========
 */
 
-@media (max-width: 900px) {
+@media (max-width: 68.75em) {
   .settings-content {
     max-width: 90%;
   }

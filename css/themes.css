@@ -15,7 +15,7 @@
   --sat-tooltip-bg: #c0c0c0; /* Tooltip background */
   --default-font: "Inter", sans-serif;
   --sat-border-radius: 15px;
-  --gudmrning-txt: linear-gradient(to right, #000000 0%, #646464 100%);
+  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
   --sat-accent-color1: hsl(208, 67%, 56%);
   --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.63);
   --moreapps-hovering-clr: hsl(208, 67%, 56%);
@@ -34,7 +34,7 @@
     206
   ); /* Used by the contains that contain themes icons and text. */
   --settings-button-outline: #bbbbbb; /* The outline color on the open settings button */
-  --new-search-bg-hover-effect: rgb(199, 199, 199);
+  --new-search-bg-hover-effect: rgb(218, 218, 218);
   --lighter-color: rgb(
     196,
     196,
@@ -55,7 +55,7 @@
 .dark {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: #0c0d11;
+  --sat-bg: #101116;
   --sat-bg-borders: #0c0d11;
   --sat-search-shortcuts: #15181f;
   --sat-links: hsl(0, 0%, 95%);
@@ -271,13 +271,7 @@
   --delete-warning-border: #d75252a2;
   --switch-color-bg-new: #525468;
   --switch-color-bg: #44475a;
-  --settings-button-outline: #44485c; /* The outline color on the open settings button */
-  --new-search-bg-hover-effect: #44485c; /* New search hover color */
-  --sat-border-radius: 15px;
-  --lighter-color: #404252; /* Every that needs a light background color */
-
-  /* Multiple transition speeds */
-  --transition-speed-fast: 0.1s;
+  --settings-button-outline: #44485409eff
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
 
@@ -316,6 +310,45 @@
   --new-search-bg-hover-effect: #434c5f; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #424a5c; /* Every that needs a light background color */
+
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
+}
+
+/* Default Dark theme */
+.highcontrast {
+  --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
+  --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
+  --sat-bg: #0a0c10; /* Main background */
+  --sat-bg-borders: #0a0c10;
+  --sat-search-shortcuts: #272b33; /* Favorites, app list & search, inputs. */
+  --sat-links: hsl(0, 0%, 95%); /* Links and stuff */
+  /* Text selector color */
+  --sat-setting-bg-color: #0a0c10; /* Settings background color */
+  --sat-setting-bg-effect: #272b33; /* Settings options background color */
+  --sat-input-hover: #3a404d;
+  --default-font: "Inter", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #409eff 0%, #5baaf8 100%);
+  --sat-accent-color1: #409eff;
+  --sat-accent-color-lighter: #409eff;
+  --moreapps-hovering-clr: #409eff;
+  --favorites-hover: #4c566a;
+  --for-white: #ffffff;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --add-link-border: #4c566a; /* Favorite input border color */
+  --delete-warning-bg: #d75352; /* Favorite delete button color */
+  --delete-warning-border: #d75252a2;
+  --switch-color-bg-new: #6f7782;
+  --settings-button-outline: #6f7782; /* The outline color on the open settings button */
+  --new-search-bg-hover-effect: #313641; /* New search hover color */
+  --sat-border-radius: 15px;
+  --lighter-color: #434a58; /* Every that needs a light background color */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;

@@ -22,9 +22,12 @@
 
   <body class="light">
     <!-- =+=+= Good morning/afternoon/night and time text =+=+= -->
-    <p class="time" id="time"></p>
-    <p class="gudmorning" id="greetings"></p>
-    <p class="quote" id="quotation"></p>
+    <div class="sat-header">
+      <p class="time" id="time"></p>
+      <p class="gudmorning" id="greetings"></p>
+      <p class="quote" id="quotation"></p>
+    </div>
+
     <p
       class="quote source"
       id="source"
@@ -357,8 +360,8 @@
               <div class="theme-container" id="light">
                 <img
                   class="theme-icon"
-                  src="/img/themes/light.jpg"
-                  alt="light-icon.jpg"
+                  src="/img/themes/light.png"
+                  alt="light-icon.png"
                 />
                 <span class="theme-name">Default Light</span>
               </div>
@@ -369,26 +372,26 @@
               <div class="theme-container" id="lighterdarktheme">
                 <img
                   class="theme-icon"
-                  src="/img/themes/lightdark.jpg"
-                  alt="lighterdark-icon.jpg"
+                  src="/img/themes/lightdark.png"
+                  alt="lighterdark-icon.png"
                 />
                 <span class="theme-name">Light Grey</span>
               </div>
               <div class="theme-container" id="dracula">
                 <img
                   class="theme-icon"
-                  src="/img/themes/dracula.jpg"
+                  src="/img/themes/dracula.png"
                   title="Dracula theme"
-                  alt="dracula-icon.jpg"
+                  alt="dracula-icon.png"
                 />
                 <span class="theme-name">Dracula</span>
               </div>
               <div class="theme-container" id="nord">
                 <img
                   class="theme-icon"
-                  src="/img/themes/nord.jpg"
+                  src="/img/themes/nord.png"
                   title="Nord theme"
-                  alt="nord-icon.jpg"
+                  alt="nord-icon.png"
                 />
                 <span class="theme-name">Nord</span>
               </div>
@@ -398,12 +401,21 @@
               </p>
 
               <!-- =+=+= Default Dark theme =+=+=-->
+              <div class="theme-container" id="highcontrast">
+                <img
+                  class="theme-icon"
+                  src="/img/themes/highcontrast.png"
+                  title="Dark theme"
+                  alt="highconstrast-icon.png"
+                />
+                <span class="theme-name">Default Dark</span>
+              </div>
               <div class="theme-container" id="dark">
                 <img
                   class="theme-icon"
-                  src="/img/themes/dark.jpg"
+                  src="/img/themes/dark.png"
                   title="Dark theme"
-                  alt="darktheme-icon.jpg"
+                  alt="darktheme-icon.png"
                 />
                 <span class="theme-name">Default Dark</span>
               </div>
@@ -411,9 +423,9 @@
               <div class="theme-container" id="space">
                 <img
                   class="theme-icon"
-                  src="/img/themes/space.jpg"
+                  src="/img/themes/space.png"
                   title="Space dark theme"
-                  alt="spacedark-icon.jpg"
+                  alt="spacedark-icon.png"
                 />
                 <span class="theme-name">Space dark</span>
               </div>
@@ -431,12 +443,19 @@
               <div class="theme-container" id="linkin-park">
                 <img
                   class="theme-icon"
-                  src="/img/themes/rock-legend.jpg"
+                  src="/img/themes/rock-legend.png"
                   title="Experimental theme"
-                  alt="experimental-icon.jpg"
+                  alt="experimental-icon.png"
                 />
                 <span class="theme-name">Linkin Park</span>
               </div>
+            </div>
+            <div class="settings-background">
+              <select id="select">
+                <option value="grey" id="grey">Grey</option>
+                <option value="black" id="black">Black</option>
+                <option value="green" id="green">Green</option>
+              </select>
             </div>
           </div>
 

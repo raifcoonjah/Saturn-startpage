@@ -157,7 +157,7 @@ const settingAbout = (z) => {
                   alt="Saturn-logo.png"
                   /> 
                <br/>
-                <a
+                Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                   target="_blank" 
                   >v5.0.0 <i class="las la-external-link-alt"></i

@@ -10,7 +10,7 @@ const determineGreet = (hours) =>
         ? "morning, "
         : hours < 18
         ? "afternoon, "
-        : hours < 21 // After 21:00/9:00 display night instead.
+        : hours < 21
         ? "evening, "
         : "night, "
     } ` +
@@ -57,6 +57,10 @@ function getTime() {
     "" + (hour < 10 ? "0" + hour : hour) + ":" + (min < 10 ? "0" + min : min)
   );
 }
+
+// testing reload..
+window.setTimeout(getTime, 1000);
+
 function getDate() {
   let date = new Date(),
     months = [
@@ -77,6 +81,9 @@ function getDate() {
     days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"],
     cday = days[date.getDay()],
     cnum = date.getDate();
+  if (cnum < 10) {
+    cnum = "0" + cnum;
+  }
   return " " + cday + " " + cnum + " " + cmonth;
 }
 // Set up the clock and date
@@ -192,7 +199,7 @@ $(document).ready(function () {
 // ========
 //
 $(document).ready(function () {
-  $("ul.apps-category li").hover(function () {
+  $("ul.apps-category li").click(function () {
     var tab_id = $(this).attr("data-tab");
 
     $("ul.apps-category li").removeClass("current");
@@ -209,13 +216,23 @@ $(document).ready(function () {
 // ========
 //
 
+// Default themes
 const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
+
+// Darker themes
 const spaceButton = document.getElementById("space");
+
+// Experimental themes
 const linkinParkButton = document.getElementById("linkin-park");
+
+// Dark themes
 const lighterdark_theme_button = document.getElementById("lighterdarktheme");
 const draculaButton = document.getElementById("dracula");
 const nordButton = document.getElementById("nord");
+
+// High contrast theme
+const highcontrastButton = document.getElementById("highcontrast");
 const body = document.body;
 
 // Apply the cached theme on reload
@@ -235,6 +252,9 @@ darkButton.onclick = () => {
   body.classList.replace("lighterdarktheme", "dark");
   body.classList.replace("dracula", "dark");
   body.classList.replace("nord", "dark");
+  body.classList.replace("highcontrast", "dark");
+  // Adding new theme? Use this sample code:
+  // body.classList.replace("yourthemeID", "name of the current theme");
   localStorage.setItem("theme", "dark");
 };
 
@@ -247,6 +267,7 @@ lightButton.onclick = () => {
   body.classList.replace("lighterdarktheme", "light");
   body.classList.replace("dracula", "light");
   body.classList.replace("nord", "light");
+  body.classList.replace("highcontrast", "light");
   localStorage.setItem("theme", "light");
 };
 
@@ -259,6 +280,7 @@ spaceButton.onclick = () => {
   body.classList.replace("lighterdarktheme", "space");
   body.classList.replace("dracula", "space");
   body.classList.replace("nord", "space");
+  body.classList.replace("highcontrast", "space");
   localStorage.setItem("theme", "space");
 };
 
@@ -270,6 +292,7 @@ linkinParkButton.onclick = () => {
   body.classList.replace("lighterdarktheme", "linkin-park");
   body.classList.replace("dracula", "linkin-park");
   body.classList.replace("nord", "linkin-park");
+  body.classList.replace("highcontrast", "linkin-park");
   localStorage.setItem("theme", "linkin-park");
 };
 
@@ -282,6 +305,7 @@ lighterdark_theme_button.onclick = () => {
   body.classList.replace("linkin-park", "lighterdarktheme");
   body.classList.replace("dracula", "lighterdarktheme");
   body.classList.replace("nord", "lighterdarktheme");
+  body.classList.replace("highcontrast", "lighterdarktheme");
   localStorage.setItem("theme", "lighterdarktheme");
 };
 
@@ -293,6 +317,7 @@ draculaButton.onclick = () => {
   body.classList.replace("lighterdarktheme", "dracula");
   body.classList.replace("space", "dracula");
   body.classList.replace("nord", "dracula");
+  body.classList.replace("highcontrast", "dracula");
   localStorage.setItem("theme", "dracula");
 };
 
@@ -304,7 +329,18 @@ nordButton.onclick = () => {
   body.classList.replace("linkin-park", "nord");
   body.classList.replace("lighterdarktheme", "nord");
   body.classList.replace("dracula", "nord");
+  body.classList.replace("highcontrast", "nord");
   localStorage.setItem("theme", "nord");
+};
+
+highcontrast.onclick = () => {
+  body.classList.replace("light", "highcontrast");
+  body.classList.replace("space", "highcontrast");
+  body.classList.replace("linkin-park", "highcontrast");
+  body.classList.replace("lighterdarktheme", "highcontrast");
+  body.classList.replace("dracula", "highcontrast");
+  body.classList.replace("nord", "highcontrast");
+  localStorage.setItem("theme", "highcontrast");
 };
 
 //
