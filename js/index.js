@@ -335,6 +335,7 @@ nordButton.onclick = () => {
 
 highcontrast.onclick = () => {
   body.classList.replace("light", "highcontrast");
+  body.classList.replace("dark", "highcontrast");
   body.classList.replace("space", "highcontrast");
   body.classList.replace("linkin-park", "highcontrast");
   body.classList.replace("lighterdarktheme", "highcontrast");
