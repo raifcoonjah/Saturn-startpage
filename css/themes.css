@@ -271,7 +271,13 @@
   --delete-warning-border: #d75252a2;
   --switch-color-bg-new: #525468;
   --switch-color-bg: #44475a;
-  --settings-button-outline: #44485409eff
+  --settings-button-outline: #44485c; /* The outline color on the open settings button */
+  --new-search-bg-hover-effect: #44485c; /* New search hover color */
+  --sat-border-radius: 15px;
+  --lighter-color: #404252; /* Every that needs a light background color */
+
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
   --transition-speed-default: 0.2s;
   --transition-speed-slow: 0.3s;
 
@@ -330,7 +336,7 @@
   --sat-search-shortcuts: #272b33; /* Favorites, app list & search, inputs. */
   --sat-links: hsl(0, 0%, 95%); /* Links and stuff */
   /* Text selector color */
-  --sat-setting-bg-color: #0a0c10; /* Settings background color */
+  --sat-setting-bg-color: #11141b; /* Settings background color */
   --sat-setting-bg-effect: #272b33; /* Settings options background color */
   --sat-input-hover: #3a404d;
   --default-font: "Inter", sans-serif;
