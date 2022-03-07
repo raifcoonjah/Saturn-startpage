@@ -777,19 +777,15 @@ ul li {
 }
 /* Large add favorite button */
 
-.fav-btn button {
-  display: block;
-  padding: 13px;
-  margin-top: 30px;
-  font-size: 0.9em;
-  font-weight: 450;
+.fav-btn {
+  padding: 11px;
+  font-weight: 500;
   color: var(--sat-ids);
-  background: var(--lighter-color);
-  border: 1px solid var(--lighter-color);
-  width: 100%;
+  background: var(--sat-search-shortcuts);
+  border: 1px solid var(--sat-search-shortcuts);
 }
 
-.fav-btn button:hover {
+.fav-btn:hover {
   border: 1px solid var(--sat-accent-color1);
 }
 

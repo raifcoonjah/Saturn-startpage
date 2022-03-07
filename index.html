@@ -26,14 +26,14 @@
       <p class="time" id="time"></p>
       <p class="gudmorning" id="greetings"></p>
       <p class="quote" id="quotation"></p>
-    </div>
 
-    <p
-      class="quote source"
-      id="source"
-      data-tootik="Author of the quote."
-      data-tootik-conf="bottom"
-    ></p>
+      <p
+        class="quote source"
+        id="source"
+        data-tootik="Author of the quote."
+        data-tootik-conf="bottom"
+      ></p>
+    </div>
 
     <main>
       <!-- =+=+= Saturn Search =+=+= -->
@@ -112,8 +112,6 @@
       <!-- End of app list -->
 
       <!-- =+=+= Favorite v3.2 =+=+= -->
-      <!-- =+=+= Save message =+=+= -->
-
       <div id="fav-container" class="fav-container">
         <h4 class="section-title">
           <i class="las la-chevron-right"></i> Favorites
@@ -123,13 +121,13 @@
 
         <div class="favorites-search">
           <input type="text" placeholder="Search..." class="searchfavorites" />
+          <button class="fav-btn" id="favBtn">
+            <i class="las la-plus"></i> Add
+          </button>
         </div>
 
         <div id="content">
           <ul id="fav-link"></ul>
-          <div id="favBtn" class="fav-btn">
-            <button><i class="las la-plus"></i> Add favorite</button>
-          </div>
         </div>
       </div>
 
@@ -408,7 +406,7 @@
                   title="Dark theme"
                   alt="highconstrast-icon.png"
                 />
-                <span class="theme-name">Default Dark</span>
+                <span class="theme-name">High contrast</span>
               </div>
               <div class="theme-container" id="dark">
                 <img
@@ -449,13 +447,6 @@
                 />
                 <span class="theme-name">Linkin Park</span>
               </div>
-            </div>
-            <div class="settings-background">
-              <select id="select">
-                <option value="grey" id="grey">Grey</option>
-                <option value="black" id="black">Black</option>
-                <option value="green" id="green">Green</option>
-              </select>
             </div>
           </div>
 
