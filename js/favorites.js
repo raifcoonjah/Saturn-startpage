@@ -1,6 +1,6 @@
 //
 // ========
-// + FAVORITES v1.78.0 +
+// + FAVORITES v1.79.0 +
 // Original Source: https://codepen.io/4gray/pen/glGun
 // Heavily modified and improve various things
 // ========
@@ -29,7 +29,7 @@ $(document).ready(function () {
         '<a class="hide_fav_bar" target="_blank" href="' +
         $url.val() +
         '">' +
-        '<button class="newtabbtn" data-tootik="Open favorite in new tab.." data-tootik-conf="left"><i class="las la-external-link-alt"></i></button>' +
+        '<button class="newtabbtn" data-tootik="Open in a new tab" data-tootik-conf="left"><i class="las la-external-link-alt"></i></button>' +
         "</a></li>"
     );
 

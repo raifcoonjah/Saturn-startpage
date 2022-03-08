@@ -142,10 +142,13 @@
           <!-- =+=+= Input ++ Favorite title =+=+=-->
 
           <label class="fav_title">Favorite title</label>
-          <div class="fav-input-block">
-            <input id="title" required autocomplete="off" spellcheck="false" />
-            <span class="placeholder"> Enter a title </span>
-          </div>
+          <input
+            id="title"
+            placeholder="Enter a title"
+            required
+            autocomplete="off"
+            spellcheck="false"
+          />
 
           <!-- =+=+= Get custom icons =+=+=-->
           <label class="fav_title"
@@ -191,20 +194,21 @@
 
           <!-- =+=+= Input ++ Favorite URL =+=+=-->
           <label class="fav_title"><i class="las la-link"></i> URL</label>
-          <div class="fav-input-block">
-            <input id="url" required autocomplete="off" spellcheck="false" />
-            <span class="placeholder"> Type or paste a URL </span>
+          <input
+            id="url"
+            placeholder="Enter or paste a URL"
+            required
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <div class="buttons-container">
+            <button id="cancel-fav-btn" class="cancel-fav-btn">
+              <i class="las la-times-circle"></i> Cancel
+            </button>
+            <button id="add" class="save-button">
+              <i class="lar la-save"></i> Save
+            </button>
           </div>
-
-          <br />
-          <button id="cancel-fav-btn" class="cancel-fav-btn">
-            <i class="las la-times-circle"></i> Cancel
-          </button>
-          <button id="add" class="save-button">
-            <i class="lar la-save"></i> Save
-          </button>
-          <h3></h3>
-
           <div class="side-text">
             <div class="settings-background">
               <span class="settings-dot">✨</span>
@@ -361,7 +365,7 @@
                   src="/img/themes/light.png"
                   alt="light-icon.png"
                 />
-                <span class="theme-name">Default Light</span>
+                <span class="theme-name">Saturn Light</span>
               </div>
 
               <!-- =+=+= Dark/Night themes =+=+=-->
@@ -398,6 +402,15 @@
                 <i class="las la-cloud-moon"></i> Darker themes
               </p>
 
+              <div class="theme-container" id="dark">
+                <img
+                  class="theme-icon"
+                  src="/img/themes/dark.png"
+                  title="Dark theme"
+                  alt="darktheme-icon.png"
+                />
+                <span class="theme-name">Saturn Dark</span>
+              </div>
               <!-- =+=+= Default Dark theme =+=+=-->
               <div class="theme-container" id="highcontrast">
                 <img
@@ -407,15 +420,6 @@
                   alt="highconstrast-icon.png"
                 />
                 <span class="theme-name">High contrast</span>
-              </div>
-              <div class="theme-container" id="dark">
-                <img
-                  class="theme-icon"
-                  src="/img/themes/dark.png"
-                  title="Dark theme"
-                  alt="darktheme-icon.png"
-                />
-                <span class="theme-name">Default Dark</span>
               </div>
               <!-- =+=+= Space Dark theme =+=+=-->
               <div class="theme-container" id="space">
@@ -465,8 +469,7 @@
           </div>
         </div>
         <div id="save_username">
-          🔔 Your username has been saved. Please reload or open a new tab to
-          see the changes.
+          🔔 Username saved successfully! Saturn will reload in 5 seconds...
         </div>
       </div>
       <br />
