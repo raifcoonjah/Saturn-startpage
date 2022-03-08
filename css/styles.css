@@ -473,12 +473,29 @@ div.theme-container {
   background-color: var(--lighter-color);
   padding: 13px;
   font-size: 15px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 
+/* 
+========
++ Consistent UI / Input bars +
+========
+*/
+
+.favorites-search input,
+.username-section input {
+  border: 1px solid transparent;
+}
+
+.fav_ptgi_btn:hover, /* added this to make the hover animation similar */
+.favModal input:hover,
+.favModal input:focus,
+.favorites-search input:hover,
+.favorites-search input:focus,
 .username-section input:focus,
 .username-section input:hover {
-  background-color: var(--sat-input-hover);
+  border: 1px solid var(--sat-accent-color1);
+  transition: var(--transition-speed-fast);
 }
 
 /* 
@@ -524,13 +541,6 @@ div.theme-container {
   font-weight: 400;
   font-size: 14px;
   border-radius: 12px;
-  border: 1px solid transparent;
-}
-
-.favorites-search input:hover,
-.favorites-search input:focus {
-  transition: var(--transition-speed-default);
-  border: 1px solid var(--sat-accent-color1);
 }
 
 .cuteapps:hover {
@@ -764,17 +774,11 @@ ul li {
   margin: 5px 0;
   padding: 13px 13px 13px 13px;
   outline: none;
-  border: 2px solid var(--add-link-border);
+  border: 1px solid transparent;
   font-size: 14px;
   border-radius: var(--sat-border-radius);
 }
 
-.fav_ptgi_btn:hover, /* added this to make the hover animation similar */
-.favModal input:hover,
-.favModal input:focus {
-  background-color: var(--none);
-  border: 2px solid var(--sat-accent-color1);
-}
 /* Large add favorite button */
 
 .fav-btn {
@@ -857,7 +861,7 @@ ul.fav_ptgi_category li {
   padding: 6px 9px;
   cursor: pointer;
   border-radius: var(--sat-border-radius);
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 
 .fav_ptgi_btn:hover {

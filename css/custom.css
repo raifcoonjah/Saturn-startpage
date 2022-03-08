@@ -5,48 +5,7 @@
 ========
 */
 
-
-
-div.fav-input-block {
-  position: relative;
-}
-
-div.fav-input-block input {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--sat-ids);
-  padding: 15px 15px;
-  border: 2px solid transparent;
-  outline: none;
-}
-
-div.fav-input-block span.placeholder {
-  position: absolute;
-  margin: 17px 0;
-  padding: 0 4px;
-  color: #6c757d;
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  top: 0;
-  left: 17px;
-  transition: all 0.2s;
-  transform-origin: 0% 0%;
-  background: none;
-  pointer-events: none;
-}
-
-div.fav-input-block input:valid + span.placeholder,
-div.fav-input-block input:focus + span.placeholder {
-  transform: scale(0.8) translateY(-25px);
-  background: var(--sat-setting-bg-color);
-}
-
-div.fav-input-block input:focus {
-  color: var(--sat-ids);
-  border-color: var(--sat-accent-color1);
-}
-
-div.fav-input-block input:focus + span.placeholder {
-  color: var(--sat-accent-color1);
+.buttons-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
