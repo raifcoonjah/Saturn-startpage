@@ -145,15 +145,15 @@
   --svg-invert: invert(100%);
 }
 
-/* Linkin park theme (BETA) */
+/* Linkin park theme (BETA version 1.17.009) */
 
 .linkin-park {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: url(/img/linkin-park.png);
+  --sat-bg: url(/img/rock-legend.jpg);
   --sat-bg-borders: #0e0e0e;
   --sat-bg-fix: #0e0e0e;
-  --sat-search-shortcuts: #181818f5;
+  --sat-search-shortcuts: #23221d;
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: #686868;
   --sat-setting-bg-color: #0e0e0e;
@@ -163,9 +163,9 @@
   --sat-tooltip-bg: #222;
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #e6dada, #274046);
-  --sat-accent-color1: #686868;
-  --sat-accent-color-lighter: #68686896;
-  --moreapps-hovering-clr: #686868;
+  --sat-accent-color1: #99998f;
+  --sat-accent-color-lighter: #b8b8aa;
+  --moreapps-hovering-clr: #99998f;
   --favorites-hover: rgb(46, 46, 46);
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
