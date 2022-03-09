@@ -124,8 +124,8 @@ body {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.2);
-  transition: visibility 0s linear 30ms, opacity 30ms 0s, transform 30ms;
+  transform: scale(0.9);
+  transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -148,7 +148,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 100ms 0s, transform 100ms;
+  transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
 }
 
 /* 

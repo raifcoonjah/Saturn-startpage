@@ -15,7 +15,7 @@
   --sat-tooltip-bg: #c0c0c0; /* Tooltip background */
   --default-font: "Inter", sans-serif;
   --sat-border-radius: 15px;
-  --gudmrning-txt: linear-gradient(to right, #000000 0%, #646464 100%);
+  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
   --sat-accent-color1: hsl(208, 67%, 56%);
   --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.63);
   --moreapps-hovering-clr: hsl(208, 67%, 56%);
