@@ -662,6 +662,7 @@ ul.apps-category li.current {
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
+  overflow: hidden;
 }
 
 /* 

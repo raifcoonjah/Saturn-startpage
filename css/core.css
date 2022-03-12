@@ -969,4 +969,8 @@ use the correct border radius == */
   .username-section input {
     width: 50%;
   }
+  .fav-content {
+    width: 23rem !important;
+    height: 36rem !important;
+  }
 }
