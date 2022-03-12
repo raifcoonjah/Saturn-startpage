@@ -957,10 +957,12 @@ use the correct border radius == */
   .settings-content {
     max-width: 90%;
   }
+  ul.tabs li {
+    font-size: 12px !important;
+  }
   ul.tabs li,
   ul.tabs li.current {
     width: 40px;
-    font-size: 16px;
   }
   .tab-content {
     width: 75%;
@@ -972,5 +974,11 @@ use the correct border radius == */
   .fav-content {
     width: 23rem !important;
     height: 36rem !important;
+  }
+  .app {
+    display: inline-block;
+    margin: 5px 2px;
+    padding: 12px 46px !important;
+    border-radius: 20px !important;
   }
 }
