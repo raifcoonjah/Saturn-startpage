@@ -203,9 +203,10 @@ const render_in_js = (x, z) => {
   let setting_about = $("#setting_about");
 
   // pls dont break
-  iLoadthings = setTimeout(function () {
+  loader = setTimeout(function () {
     appsList(apps_list);
     settingAbout(setting_about);
   });
 };
+
 window.onload = render_in_js();

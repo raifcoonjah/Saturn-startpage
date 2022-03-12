@@ -657,12 +657,11 @@ ul.apps-category li.current {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1px 11px;
-  width: 35rem;
-  height: 34rem;
+  width: 40rem;
+  height: 36rem;
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
-  overflow: hidden;
 }
 
 /* 
@@ -673,6 +672,9 @@ ul.apps-category li.current {
 ========
 */
 /* Improved image support so now they act as icons */
+
+.fav-livepreview img,
+.fav-livepreview svg,
 #fav-link img,
 #fav-link svg {
   width: 23px;
@@ -684,24 +686,22 @@ ul.apps-category li.current {
 }
 
 /* Improving SVG support */
+.fav-livepreview svg,
 #fav-link svg {
   filter: var(--svg-invert);
 }
 
+.fav-livepreview img,
 #fav-link img {
   background: transparent; /* This should fix some backgrounds having a white background instead of being transparent. */
   padding: 3px;
 }
 
-/* Improved iframe support so now they fit properly inside the container */
+/* Iframes will be hidden by default because they don't work on firefox. */
+
+.fav-livepreview iframe,
 #fav-link iframe {
-  width: 90%;
-  height: 30%;
-  outline: none;
-  vertical-align: middle;
-  margin: 0px;
-  border: 1px;
-  border-radius: 6px !important;
+  visibility: hidden;
 }
 
 #fav-link a {

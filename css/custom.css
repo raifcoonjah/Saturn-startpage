@@ -9,3 +9,17 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.fav-livepreview {
+  background-color: var(--sat-search-shortcuts);
+  color: var(--sat-ids);
+  padding: 10px 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.fav-livepreview svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
