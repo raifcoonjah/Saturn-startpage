@@ -124,8 +124,8 @@ body {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.2);
-  transition: visibility 0s linear 30ms, opacity 30ms 0s, transform 30ms;
+  transform: scale(0.9);
+  transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -148,7 +148,7 @@ body {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 100ms 0s, transform 100ms;
+  transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
 }
 
 /* 
@@ -278,7 +278,7 @@ ul.tabs li {
 }
 .tab-content {
   display: none;
-  animation: slide-up-fade-in 170ms;
+  animation: slide-up-fade-in 90ms;
 }
 
 .tab-content h4 i {
@@ -653,10 +653,10 @@ ul.apps-category li.current {
 /* 
 ========
 + Optimizations for favorites features.
-Currently only images and iframes are fully supported. +
++ favorite support +
++ WIP, I'm currently adding more and more support. +
 ========
 */
-
 /* Improved image support so now they act as icons */
 #fav-link img,
 #fav-link svg {
@@ -807,8 +807,8 @@ ul li {
 }
 
 .close-button:hover {
-  color: var(--sat-ids);
-  background-color: var(--favorites-hover);
+  color: var(--close-button-color); /* for black to make it look better. */
+  background-color: var(--delete-warning-bg);
   transition: var(--transition-speed-default);
 }
 

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/themes.css" />
     <link rel="stylesheet" href="icons/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="css/tootik.min.css" />
 
     <!-- =+=+= jQuery [v3.6.0] =+=+= -->
     <script src="js/jquery.js"></script>
@@ -59,13 +60,18 @@
       </div>
 
       <!-- =+=+= Main Buttons =+=+= -->
-      <button class="setting-button" id="trigger" title="Open settings..">
+
+      <button class="setting-button" title="Open Settings.." id="trigger">
         <i class="las la-cog"></i>
       </button>
 
       <a href="https://calendar.google.com">
         <div class="calendar-btn">
-          <button class="setting-button" title="Open google calendar..">
+          <button
+            class="setting-button"
+            data-tootik="Open Google Calendar"
+            data-tootik-conf="left"
+          >
             <i class="las la-calendar"></i>
           </button>
         </div>
@@ -97,6 +103,8 @@
       <!-- End of app list -->
 
       <!-- =+=+= Favorite v3.2 =+=+= -->
+      <!-- =+=+= Save message =+=+= -->
+
       <div id="fav-container" class="fav-container">
         <h4 class="section-title">
           <i class="las la-swatchbook"></i> Favorites
@@ -104,11 +112,10 @@
 
         <!-- =+=+= Favorites search.. =+=+=-->
         <div class="favorites-search">
-          <input type="text" placeholder="Search.." class="searchfavorites" />
+          <input type="text" placeholder="Search..." class="searchfavorites" />
         </div>
 
         <div id="content">
-          <div id="sortSupport">
             <ul id="fav-link"></ul>
             <div id="favBtn" class="fav-btn">
               <button><i class="las la-plus"></i> Add favorite</button>
@@ -167,7 +174,11 @@
                   href="https://mraif13.notion.site/How-to-use-the-new-Get-custom-icons-80dc51dad7604dffb99d9ab9e6997df2"
                   target="_blank"
                 >
-                  <li class="fav_ptgi_btn" title="What is this?">
+                  <li
+                    class="fav_ptgi_btn"
+                    data-tootik="Learn how to use this"
+                    data-tootik-conf="right"
+                  >
                     <i class="lar la-question-circle"></i></li
                 ></a>
               </ul>
@@ -425,8 +436,7 @@
           </div>
         </div>
         <div id="save_username">
-          🔔 Your username has been saved. Please reload or open a new tab to
-          see the changes.
+          🔔 Username saved successfully! Saturn will reload in 5 seconds...
         </div>
       </div>
       <br />

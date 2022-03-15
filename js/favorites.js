@@ -29,7 +29,7 @@ $(document).ready(function () {
         '<a class="hide_fav_bar" target="_blank" href="' +
         $url.val() +
         '">' +
-        '<button class="newtabbtn" title="Open favorite in new tab.."><i class="las la-external-link-alt"></i></button>' +
+        '<button class="newtabbtn" data-tootik="Open in a new tab" data-tootik-conf="left"><i class="las la-external-link-alt"></i></button>' +
         "</a></li>"
     );
 
@@ -160,4 +160,12 @@ document.getElementById("save").onclick = function () {
   setTimeout(function () {
     save_username.className = save_username.className.replace("show", "");
   }, 4000);
+};
+
+document.getElementById("removebtn").onclick = function () {
+  var x = document.getElementById("deleteMsgBar");
+  x.className = "show";
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 3000);
 };
