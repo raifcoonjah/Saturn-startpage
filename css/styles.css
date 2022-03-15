@@ -807,8 +807,8 @@ ul li {
 }
 
 .close-button:hover {
-  color: var(--sat-ids);
-  background-color: var(--favorites-hover);
+  color: var(--close-button-color); /* for black to make it look better. */
+  background-color: var(--delete-warning-bg);
   transition: var(--transition-speed-default);
 }
 

@@ -35,6 +35,7 @@
     196,
     196
   ); /* Every that needs a light background color */
+  --close-button-color: rgb(255, 255, 255); /* Used by close buttons */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -78,6 +79,7 @@
   --sat-border-radius: 15px;
   --switch-color-bg: #303846de;
   --lighter-color: #191d25; /* Every that needs a light background color */
+  --close-button-color: #000; /* Used by close buttons */
 
   /* Transitions */
   --transition-speed-fast: 0.1s;
@@ -128,6 +130,7 @@
   --new-search-bg-hover-effect: #353535; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #1f1f1f; /* Every that needs a light background color */
+  --close-button-color: #000; /* Used by close buttons */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -147,7 +150,7 @@
   --sat-bg: url(/img/linkin-park.png);
   --sat-bg-borders: #0e0e0e;
   --sat-bg-fix: #0e0e0e;
-  --sat-search-shortcuts: #181818f5;
+  --sat-search-shortcuts: #181818;
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: #686868;
   --sat-setting-bg-color: #0e0e0e;
@@ -172,6 +175,7 @@
   --new-search-bg-hover-effect: #2e2e2e;
   --sat-border-radius: 15px;
   --lighter-color: #1f1f1f; /* Every that needs a light background color */
+  --close-button-color: #000; /* Used by close buttons */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -221,6 +225,7 @@
   --new-search-bg-hover-effect: #3e4349; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #2f3338; /* Every that needs a light background color */
+  --close-button-color: #000; /* Used by close buttons */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -269,6 +274,7 @@
   --new-search-bg-hover-effect: #44485c; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #404252; /* Every that needs a light background color */
+  --close-button-color: #000; /* Used by close buttons */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -310,6 +316,7 @@
   --new-search-bg-hover-effect: #434c5f; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #424a5c; /* Every that needs a light background color */
+  --close-button-color: #000; /* Used by close buttons */
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
