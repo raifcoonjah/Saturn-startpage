@@ -6,3 +6,4 @@ var livepreview = document.getElementById("title");
 livepreview.onkeyup = function () {
   document.getElementById("livepreview").innerHTML = livepreview.value;
 };
+

@@ -161,11 +161,3 @@ document.getElementById("save").onclick = function () {
     save_username.className = save_username.className.replace("show", "");
   }, 4000);
 };
-
-document.getElementById("removebtn").onclick = function () {
-  var x = document.getElementById("deleteMsgBar");
-  x.className = "show";
-  setTimeout(function () {
-    x.className = x.className.replace("show", "");
-  }, 3000);
-};

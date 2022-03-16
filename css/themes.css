@@ -40,6 +40,7 @@
     196,
     196
   ); /* Every that needs a light background color */
+  --close-button-color: #fff;
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -84,6 +85,7 @@
   --switch-color-bg: #303846de;
   --theme-container: #181e27; /* Used by the contains that contain themes icons and text. */
   --lighter-color: #191d25; /* Every that needs a light background color */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Transitions */
   --transition-speed-fast: 0.1s;
@@ -134,6 +136,7 @@
   --new-search-bg-hover-effect: #353535; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #1f1f1f; /* Every that needs a light background color */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -178,6 +181,8 @@
   --new-search-bg-hover-effect: #2e2e2e;
   --sat-border-radius: 15px;
   --lighter-color: #1f1f1f; /* Every that needs a light background color */
+  --close-button-color: rgb(0, 0, 0);
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -227,6 +232,7 @@
   --new-search-bg-hover-effect: #3e4349; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #2f3338; /* Every that needs a light background color */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -275,6 +281,7 @@
   --new-search-bg-hover-effect: #44485c; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #404252; /* Every that needs a light background color */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -316,6 +323,7 @@
   --new-search-bg-hover-effect: #434c5f; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #424a5c; /* Every that needs a light background color */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -355,6 +363,7 @@
   --new-search-bg-hover-effect: #313641; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #434a58; /* Every that needs a light background color */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;

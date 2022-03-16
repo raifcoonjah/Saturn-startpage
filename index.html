@@ -20,8 +20,9 @@
     <script src="js/jquery.js"></script>
   </head>
 
-  <body class="light">
+  <body class="light" id="box">
     <!-- =+=+= Good morning/afternoon/night and time text =+=+= -->
+
     <div class="sat-header">
       <p class="time" id="time"></p>
       <p class="gudmorning" id="greetings"></p>
@@ -265,6 +266,9 @@
               <li class="tab-link" id="tab-link" data-tab="tab-4">
                 <i class="las la-palette"></i> Themes
               </li>
+              <li class="tab-link" id="tab-link" data-tab="tab-6">
+                <i class="las la-images"></i> Layout
+              </li>
               <li class="tab-link" data-tab="tab-3">
                 <i class="las la-info-circle"></i> About
               </li>
@@ -273,6 +277,36 @@
                 <i class="las la-keyboard"></i> K-Shortcuts
               </li>
             </ul>
+
+            <div id="tab-6" class="tab-content">
+              <div class="settings-background">
+                <h2 style="text-align: center; padding: 15px; font-weight: 500">
+                  Select a layout
+                </h2>
+                <p style="text-align: center">
+                  Personalize
+                  <span style="font-weight: 500">Saturn Startpage</span> with a
+                  custom layout.
+                </p>
+                <br />
+                <div class="theme-container" id="default-layout">
+                  <img
+                    class="theme-icon"
+                    src="/img/default-layout.png"
+                    alt="light-icon.png"
+                  />
+                  <span class="theme-name">Default Layout</span>
+                </div>
+                <div class="theme-container" id="compact-design">
+                  <img
+                    class="theme-icon"
+                    src="/img/not-soo-compact-layout.png"
+                    alt="light-icon.png"
+                  />
+                  <span class="theme-name">Compact Layout</span>
+                </div>
+              </div>
+            </div>
 
             <!-- =+=+= General Settings =+=+= -->
             <div id="tab-2" class="tab-content current">
@@ -482,6 +516,7 @@
         </div>
       </div>
       <br />
+
       <!-- Why the: [<br/>]? | Add space on the bottom, I will probably replace this with a margin later on, but this should work for now.-->
       <!-- All the javascript needed to make saturn's core features work  -->
       <script type="text/javascript" src="js/index.js"></script>
@@ -490,6 +525,7 @@
       <script type="text/javascript" src="js/render.js"></script>
       <script type="text/javascript" src="js/custom.js"></script>
       <script type="text/javascript" src="js/quote.js"></script>
+      <script type="text/javascript" src="js/layout.js"></script>
     </main>
   </body>
 </html>

@@ -473,6 +473,7 @@ body {
   max-width: 800px;
   border-radius: var(--sat-border-radius);
   overflow-x: hidden;
+  display: block;
   background: var(--sat-bg);
   margin-top: -10px;
 
@@ -622,6 +623,10 @@ pre {
   padding: 10px 8px;
   font-size: 0.9rem;
   border-radius: 8px;
+}
+
+code {
+  padding: 2px 2px;
 }
 
 /* 
