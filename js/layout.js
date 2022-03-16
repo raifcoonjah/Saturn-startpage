@@ -17,4 +17,19 @@ removeBtn.addEventListener("click", function () {
   localStorage.removeItem("display");
 });
 
-// 
+// Show first Message. [Compact]
+document.getElementById("compact-design").onclick = function () {
+  var compact_layout = document.getElementById("compact_layout");
+  compact_layout.className = "show";
+  setTimeout(function () {
+    compact_layout.className = compact_layout.className.replace("show", "");
+  }, 3000);
+};
+
+document.getElementById("default-layout").onclick = function () {
+  var default_layout = document.getElementById("default_layout");
+  default_layout.className = "show";
+  setTimeout(function () {
+    default_layout.className = default_layout.className.replace("show", "");
+  }, 3000);
+};

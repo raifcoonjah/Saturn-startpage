@@ -4,7 +4,7 @@
 // ========
 //
 
-// ALlow user to press 4 time, increasing this number without adding
+// ALlow user to press 3 time, increasing this number without adding
 // more search_engines will cause some serious bugs to occur.
 
 let se = 3;

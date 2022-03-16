@@ -879,6 +879,8 @@ ul.fav_ptgi_category li {
 ========
 */
 
+#default_layout,
+#compact_layout,
 #saveMsgBar,
 #save_username {
   visibility: hidden;
@@ -903,6 +905,11 @@ ul.fav_ptgi_category li {
   bottom: 30px;
 }
 
+#default_layout,
+#compact_layout {
+  bottom: 10px !important;
+}
+
 #saveMsgBar.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -913,6 +920,13 @@ ul.fav_ptgi_category li {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.9s 4.5s;
   animation: fadein 0.5s, fadeout 0.9s 4.5s;
+}
+
+#default_layout.show,
+#compact_layout.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 /* 
