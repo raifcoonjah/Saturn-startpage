@@ -1,3 +1,14 @@
+<!--
+  _____       _                          _             _                          
+/  ___|     | |                        | |           | |                         
+\ `--.  __ _| |_ _   _ _ __ _ __    ___| |_ __ _ _ __| |_ _ __   __ _  __ _  ___ 
+ `--. \/ _` | __| | | | '__| '_ \  / __| __/ _` | '__| __| '_ \ / _` |/ _` |/ _ \
+/\__/ / (_| | |_| |_| | |  | | | | \__ \ || (_| | |  | |_| |_) | (_| | (_| |  __/
+\____/ \__,_|\__|\__,_|_|  |_| |_| |___/\__\__,_|_|   \__| .__/ \__,_|\__, |\___|
+                                                         | |           __/ |     
+                                                         |_|          |___/ 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,13 +36,13 @@
 
     <div class="sat-header">
       <p class="time" id="time"></p>
-      <p class="gudmorning" id="greetings"></p>
+      <p class="good_morning" id="good_morning"></p>
       <p class="quote" id="quotation"></p>
 
       <p
         class="quote source"
         id="source"
-        data-tootik="Author of the quote."
+        data-tootik="Quote author"
         data-tootik-conf="bottom"
       ></p>
     </div>
@@ -164,43 +175,8 @@
           <label class="fav_title"
             ><i class="las la-icons"></i> Get custom icons
           </label>
-          <div class="fav_ptgi">
-            <ul class="fav_ptgi_category">
-              <a
-                href="https://simpleicons.org/"
-                title="Get Simple icons.."
-                target="_blank"
-              >
-                <li class="fav_ptgi_btn">Simple Icons</li></a
-              >
-              <a
-                href="https://lineicons.com/icons"
-                title="Get line icons.."
-                target="_blank"
-              >
-                <li class="fav_ptgi_btn">Line Icons</li></a
-              >
-              <a
-                href="https://icons8.com/line-awesome"
-                title="Get line-awesome icons.."
-                target="_blank"
-              >
-                <li class="fav_ptgi_btn">Line Awesome</li></a
-              >
-              <a
-                href="https://mraif13.notion.site/How-to-use-the-new-Get-custom-icons-80dc51dad7604dffb99d9ab9e6997df2"
-                target="_blank"
-              >
-                <li
-                  class="fav_ptgi_btn"
-                  data-tootik="What the f*ck is this?"
-                  data-tootik-conf="right"
-                >
-                  <i class="lar la-question-circle"></i></li
-              ></a>
-            </ul>
-          </div>
 
+          <div id="fav_icons"></div>
           <!-- =+=+= Input ++ Favorite URL =+=+=-->
           <label class="fav_title"><i class="las la-link"></i> URL</label>
           <input
@@ -278,36 +254,6 @@
               </li>
             </ul>
 
-            <div id="tab-6" class="tab-content">
-              <div class="settings-background">
-                <h2 style="text-align: center; padding: 15px; font-weight: 500">
-                  Select a layout
-                </h2>
-                <p style="text-align: center">
-                  Personalize
-                  <span style="font-weight: 500">Saturn Startpage</span> with a
-                  custom layout.
-                </p>
-                <br />
-                <div class="theme-container" id="default-layout">
-                  <img
-                    class="theme-icon"
-                    src="/img/default-layout.png"
-                    alt="light-icon.png"
-                  />
-                  <span class="theme-name">Default Layout</span>
-                </div>
-                <div class="theme-container" id="compact-design">
-                  <img
-                    class="theme-icon"
-                    src="/img/not-soo-compact-layout.png"
-                    alt="light-icon.png"
-                  />
-                  <span class="theme-name">Compact Layout</span>
-                </div>
-              </div>
-            </div>
-
             <!-- =+=+= General Settings =+=+= -->
             <div id="tab-2" class="tab-content current">
               <div class="settings-background">
@@ -324,6 +270,9 @@
                   <button id="save" class="save-button">
                     <i class="las la-save"></i> Save
                   </button>
+                  <p class="small_text">
+                    Note: A reload is required to see the changes.
+                  </p>
                 </div>
 
                 <!-- =+=+= Hide things =+=+= -->
@@ -382,13 +331,8 @@
             </div>
           </div>
 
+          <!-- RenderJS stuff -->
           <div id="setting_about"></div>
-
-          <!-- 
-+ Theme section /i settings +
-+ Refactoring in progress +
-+ new design: released. +
--->
 
           <!-- =+=+= Theme section =+=+=-->
           <div id="tab-4" class="tab-content">
@@ -504,23 +448,40 @@
             </div>
           </div>
 
-          <!-- + Keyboard Shortcuts section + -->
-          <div id="tab-5" class="tab-content">
+          <div id="tab-6" class="tab-content">
             <div class="settings-background">
-              <h2>K-Shortcuts</h2>
-              <p>
-                K-Shortcuts allows you to use your keyboard to do things, saving
-                you time and effort.
+              <h2 style="text-align: center; padding: 15px; font-weight: 500">
+                Select a layout
+              </h2>
+              <p style="text-align: center">
+                Personalize
+                <span style="font-weight: 500">Saturn Startpage</span> with a
+                custom layout.
               </p>
-              <h4>While on the home screen:</h4>
               <br />
-              Press <kbd>Esc</kbd> to open and close settings.
+              <div class="theme-container" id="default-layout">
+                <img
+                  class="theme-icon"
+                  src="/img/default-layout.png"
+                  alt="light-icon.png"
+                />
+                <span class="theme-name">Default Layout</span>
+              </div>
+              <div class="theme-container" id="compact-design">
+                <img
+                  class="theme-icon"
+                  src="/img/not-soo-compact-layout.png"
+                  alt="light-icon.png"
+                />
+                <span class="theme-name">Compact Layout</span>
+              </div>
             </div>
           </div>
+          <!-- K shortcuts -->
+          <div id="k_shortcuts"></div>
         </div>
-        <div id="save_username">
-          🔔 Username saved successfully! Saturn will reload in 5 seconds...
-        </div>
+
+        <!-- Message displayed if layout is changed. -->
         <div id="compact_layout">
           <i class="las la-compress-arrows-alt"></i> Switched to compact layout
         </div>
@@ -531,15 +492,19 @@
       </div>
       <br />
 
-      <!-- Why the: [<br/>]? | Add space on the bottom, I will probably replace this with a margin later on, but this should work for now.-->
       <!-- All the javascript needed to make saturn's core features work  -->
       <script type="text/javascript" src="js/index.js"></script>
+      <!-- Main JS - File -->
       <script type="text/javascript" src="js/search.js"></script>
+      <!-- Search JS - File -->
       <script type="text/javascript" src="js/favorites.js"></script>
+      <!-- Favorites JS - File -->
       <script type="text/javascript" src="js/render.js"></script>
-      <script type="text/javascript" src="js/custom.js"></script>
+      <!-- Render JS - File -->
       <script type="text/javascript" src="js/quote.js"></script>
+      <!-- Quote JS - File -->
       <script type="text/javascript" src="js/layout.js"></script>
+      <!-- Layout JS - File -->
     </main>
   </body>
 </html>

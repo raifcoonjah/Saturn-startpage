@@ -154,10 +154,8 @@ document.getElementById("add").onclick = function () {
   }, 3000);
 };
 
-document.getElementById("save").onclick = function () {
-  var save_username = document.getElementById("save_username");
-  save_username.className = "show";
-  setTimeout(function () {
-    save_username.className = save_username.className.replace("show", "");
-  }, 4000);
+const livepreview = document.getElementById("title");
+
+livepreview.onkeyup = function () {
+  document.getElementById("livepreview").innerHTML = livepreview.value;
 };

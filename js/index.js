@@ -4,7 +4,7 @@
 // ========
 //
 const determineGreet = (hours) =>
-  (document.getElementById("greetings").innerText =
+  (document.getElementById("good_morning").innerText =
     `Good ${
       hours < 12
         ? "morning, "
@@ -28,17 +28,14 @@ determineGreet(new Date().getHours());
 var modal = document.querySelector(".settings_modal");
 var trigger = document.querySelector(".setting-button");
 var closeButton = document.querySelector(".close-button");
-
 function toggleModal() {
   modal.classList.toggle("show-modal");
 }
-
 function windowOnClick(event) {
   if (event.target === modal) {
     toggleModal();
   }
 }
-
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
@@ -57,9 +54,6 @@ function getTime() {
     "" + (hour < 10 ? "0" + hour : hour) + ":" + (min < 10 ? "0" + min : min)
   );
 }
-
-// testing reload..
-window.setTimeout(getTime, 1000);
 
 function getDate() {
   let date = new Date(),
@@ -88,6 +82,11 @@ function getDate() {
 }
 // Set up the clock and date
 document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
+
+// Reload time after a certain amount of time [BETA, testing tbh]
+setInterval(() => {
+  document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
+}, 59 * 1000);
 
 //
 // ========
@@ -137,28 +136,13 @@ $(function () {
     localStorage.setItem("search_hidden", this.checked);
   });
 });
-
+//
+// ========
+// + Hide Calendar Button +
+// ========
+//
 $(function () {
   var status = localStorage.getItem("hide-calendar-btn");
-  if (status == "true") {
-    $(".calendar-btn").css("display", "none");
-    $(".hide-apps-list").attr("checked", true);
-  } else {
-    $(".calendar-btn").css("display", "block");
-    $(".hide-calendar-btn").attr("checked", false);
-  }
-  $(".hide-calendar-btn").click(function () {
-    if (this.checked) {
-      $(".calendar-btn").hide();
-    } else {
-      $(".calendar-btn").show();
-    }
-    localStorage.setItem("hide-calendar-btn", this.checked);
-  });
-});
-
-$(function () {
-  var status = localStorage.getItem("hide-headerimg");
   if (status == "true") {
     $(".calendar-btn").css("display", "none");
     $(".hide-apps-list").attr("checked", true);
@@ -181,6 +165,7 @@ $(function () {
 // + Settings navigation +
 // ========
 //
+
 $(document).ready(function () {
   $("ul.tabs li").click(function () {
     var tab_id = $(this).attr("data-tab");
@@ -209,6 +194,7 @@ $(document).ready(function () {
     $("#" + tab_id).addClass("current");
   });
 });
+
 //
 //
 // ========
@@ -244,7 +230,6 @@ if (theme) {
 }
 
 // Dark theme
-
 darkButton.onclick = () => {
   body.classList.replace("light", "dark");
   body.classList.replace("space", "dark");
@@ -259,7 +244,6 @@ darkButton.onclick = () => {
 };
 
 // Default light theme
-
 lightButton.onclick = () => {
   body.classList.replace("dark", "light");
   body.classList.replace("space", "light");
@@ -272,7 +256,6 @@ lightButton.onclick = () => {
 };
 
 // Material-ish dark theme
-
 spaceButton.onclick = () => {
   body.classList.replace("dark", "space");
   body.classList.replace("light", "space");
@@ -284,7 +267,7 @@ spaceButton.onclick = () => {
   localStorage.setItem("theme", "space");
 };
 
-// linkinPark theme
+// LinkinPark theme
 linkinParkButton.onclick = () => {
   body.classList.replace("dark", "linkin-park");
   body.classList.replace("light", "linkin-park");
@@ -297,7 +280,6 @@ linkinParkButton.onclick = () => {
 };
 
 // Lighter Grey ish theme theme
-
 lighterdark_theme_button.onclick = () => {
   body.classList.replace("dark", "lighterdarktheme");
   body.classList.replace("light", "lighterdarktheme");
@@ -355,12 +337,23 @@ $(document).ready(function () {
     var username = $("#userSet").val();
     if (typeof Storage !== "undefined") {
       localStorage.user = username;
+      $("#save").text("↻ Saved, reloading..");
       $("#Uname").val(localStorage.getItem("user"));
       setTimeout(function () {
         window.location.reload(1);
-      }, 5000);
+      }, 1000);
+      if (localStorage.getItem("user") == "") {
+        $("#userSet").attr(
+          "placeholder",
+          "Using default username, as input field is empty.."
+        );
+        $("#userSet").css("border", "1px solid var(--delete-warning-bg)");
+        localStorage.user = "null";
+      }
     } else {
       $("#Uname").val("Sorry, your browser does not support Web Storage..");
     }
   });
 });
+
+// toggle to switch between 12 h and 24 h time

@@ -258,7 +258,6 @@ input {
   /* 1 */
   overflow: visible;
 }
-
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
@@ -476,7 +475,8 @@ body {
   display: block;
   background: var(--sat-bg);
   margin-top: -10px;
-
+  padding-top: 90px;
+  box-sizing: border-box;
   /* Minor ajustments for better image background support */
   /* This should fix all issues we had before */
   background-repeat: no-repeat;
@@ -678,6 +678,10 @@ details {
   border-radius: var(--sat-border-radius);
 }
 
+details img {
+  border-radius: var(--sat-border-radius);
+}
+
 summary {
   display: list-item;
   cursor: pointer;
@@ -844,7 +848,7 @@ img {
 
 /* == Allows the "header text" to make use of gradient effect == */
 
-.gudmorning {
+.good_morning {
   background-color: var(--gudmrning-txt-bg);
   background-image: var(--gudmrning-txt);
 }
@@ -952,6 +956,12 @@ use the correct border radius == */
   border-radius: var(--sat-border-radius);
 }
 
+.mobile-warning {
+  background-color: var(--delete-warning-bg);
+  border-radius: 5px;
+  visibility: hidden;
+  font-weight: 700;
+}
 /* 
 ========
 + Mobile optimizations (work in progress..) +
@@ -968,10 +978,21 @@ use the correct border radius == */
   ul.tabs li,
   ul.tabs li.current {
     width: 40px;
+    padding: 10px 20px 1px 5px !important;
+    visibility: hidden;
   }
+  .mobile-warning {
+    visibility: visible;
+  }
+  ul.tabs li i {
+    visibility: visible !important;
+    padding: 20px 20px !important;
+    font-size: 20px !important;
+  }
+
   .tab-content {
-    width: 75%;
-    margin-left: 90px !important;
+    width: 86%;
+    margin-left: 45px !important;
   }
   .username-section input {
     width: 50%;
@@ -985,5 +1006,8 @@ use the correct border radius == */
     margin: 5px 2px;
     padding: 12px 46px !important;
     border-radius: 20px !important;
+  }
+  .settings-title {
+    font-size: 1.2rem !important;
   }
 }

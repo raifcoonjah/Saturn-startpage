@@ -191,6 +191,12 @@ const settingAbout = (z) => {
                         <span>Privacy</span>
                       </div></a
                     >
+                    <a href="https://paypal.me/raifs">
+                      <div class="app">
+                        <i class="las la-donate"></i>
+                        <span>Donate</span>
+                      </div></a
+                    >
                   </div>
                 </div>
               </div>
@@ -198,14 +204,73 @@ const settingAbout = (z) => {
           </div>`);
 };
 
-const render_in_js = (x, z) => {
+const kShortcuts = (ks) => {
+  $(ks).append(`<!-- + Keyboard Shortcuts section + -->
+          <div id="tab-5" class="tab-content">
+            <div class="settings-background">
+              <h2>K-Shortcuts</h2>
+              <p>
+                K-Shortcuts allows you to use your keyboard to do things, saving
+                you time and effort.
+              </p>
+              <h4>While on the home screen:</h4>
+              <br />
+              Press <kbd>Esc</kbd> to open and close settings.
+            </div>
+          </div>`);
+};
+
+const favIcons = (fav) => {
+  $(fav).append(`<div class="fav_ptgi">
+            <ul class="fav_ptgi_category">
+              <a
+                href="https://simpleicons.org/"
+                title="Get Simple icons.."
+                target="_blank"
+              >
+                <li class="fav_ptgi_btn">Simple Icons</li></a
+              >
+              <a
+                href="https://lineicons.com/icons"
+                title="Get line icons.."
+                target="_blank"
+              >
+                <li class="fav_ptgi_btn">Line Icons</li></a
+              >
+              <a
+                href="https://icons8.com/line-awesome"
+                title="Get line-awesome icons.."
+                target="_blank"
+              >
+                <li class="fav_ptgi_btn">Line Awesome</li></a
+              >
+              <a
+                href="https://mraif13.notion.site/How-to-use-the-new-Get-custom-icons-80dc51dad7604dffb99d9ab9e6997df2"
+                target="_blank"
+              >
+                <li
+                  class="fav_ptgi_btn"
+                  data-tootik="What the f*ck is this?"
+                  data-tootik-conf="right"
+                >
+                  <i class="lar la-question-circle"></i></li
+              ></a>
+            </ul>
+          </div>`);
+};
+
+const render_in_js = (x, z, ks) => {
   let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
+  let kshortcuts = $("#k_shortcuts");
+  let fav_icons = $("#fav_icons");
 
   // pls dont break
   loader = setTimeout(function () {
     appsList(apps_list);
     settingAbout(setting_about);
+    kShortcuts(kshortcuts);
+    favIcons(fav_icons);
   });
 };
 

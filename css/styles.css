@@ -5,17 +5,6 @@ v3 CSS Main.Core
 
 /* 
 ========
-+ Body +
-========
-*/
-body {
-  box-sizing: border-box;
-  padding-top: 90px;
-  overflow-x: hidden;
-}
-
-/* 
-========
 + Search bar +
 ========
 */
@@ -59,26 +48,14 @@ body {
   border: 1px solid var(--sat-accent-color1);
   background-color: var(--new-search-bg-hover-effect);
 }
-.fill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  text-align: center;
-}
-
-.fill img {
-  flex-shrink: 0;
-  width: 199px;
-}
 
 /* 
 ========
 + Header good morning text and time +
 ========
 */
-.gudmorning {
+
+.good_morning {
   font-weight: 500;
   text-align: center;
   font-size: 35px;
@@ -257,6 +234,7 @@ ul.tabs li {
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
+  transition: 100ms ease-in-out;
 }
 
 ul.tabs li.current {
@@ -407,12 +385,14 @@ div.theme-container {
   text-align: center;
   border: 2px solid var(--lighter-color);
   cursor: pointer;
+  outline: 2px solid transparent;
 }
 
 .theme-container:hover {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
   border: 2px solid var(--sat-accent-color1);
+  outline: 2px solid var(--sat-accent-color-lighter);
 }
 
 .theme-name {
@@ -473,7 +453,7 @@ div.theme-container {
 */
 .username-section input {
   background-color: var(--lighter-color);
-  padding: 13px;
+  padding: 15px;
   font-size: 15px;
   border: 1px solid transparent;
 }
@@ -628,6 +608,7 @@ ul.apps-category li.current {
 
 .socials .app:hover {
   border: 1px solid transparent;
+  transform: scale(0.96); /* Equal to scaleX(0.7) scaleY(0.7) */
 }
 /* 
 ========
@@ -1016,7 +997,7 @@ appearing when the user hovers on the open in new tab button.
 
 /* 
 ========
-+ Quote feature +
++ Quote +
 ========
 */
 .quote {
@@ -1024,4 +1005,42 @@ appearing when the user hovers on the open in new tab button.
   text-align: center;
   font-weight: 500;
   margin-top: -10px;
+}
+
+/* 
+========
++ Favorites live preview +
+========
+*/
+.fav-livepreview {
+  background-color: var(--sat-search-shortcuts);
+  color: var(--sat-ids);
+  padding: 10px 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.fav-livepreview svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.small_text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.colored i {
+  color: var(--sat-accent-color1) !important;
+}
+
+/* 
+========
++ Used for spacing +
+========
+*/
+.buttons-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

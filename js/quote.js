@@ -94,6 +94,52 @@ const quotes = [
     quote: "Die with memories, not dreams.",
     source: "Unknown",
   },
+  {
+    quote: "To be or not to be.",
+    source: "Unknown",
+  },
+  {
+    quote: "I have nothing to declare except my genius.",
+    source: "Oscar Wilde",
+  },
+  {
+    quote: "The truth is rarely pure and never simple.",
+    source: "Oscar Wilde",
+  },
+  {
+    quote: "When I let go of what I am, I become what I might be.",
+    source: "Tao Te Ching",
+  },
+  {
+    quote: "The best way to predict the future is to create it.",
+    source: "Abraham Lincoln",
+  },
+  {
+    quote:
+      "The best way to find yourself is to lose yourself in the service of others.",
+    source: "Mahatma Gandhi",
+  },
+  {
+    quote: "The only thing that I am is the result of my thoughts.",
+    source: "Bruce Lee",
+  },
+  {
+    quote: "Always forgive your enemies; nothing annoys them so much.",
+    source: "Oscar Wilde",
+  },
+  {
+    quote:
+      "The weak can never forgive. Forgiveness is the attribute of the strong.",
+    source: "Oscar Wilde",
+  },
+  {
+    quote: "The best revenge is massive success.",
+    source: "Oscar Wilde",
+  },
+  {
+    quote: "You only live once, but if you do it right, once is enough.",
+    source: "Mae West",
+  },
 ];
 
 function randomQuote() {
