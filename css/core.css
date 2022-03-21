@@ -984,10 +984,17 @@ use the correct border radius == */
   .mobile-warning {
     visibility: visible;
   }
+  ul.tabs li i:hover {
+    background: var(--sat-search-shortcuts);
+    color: var(--sat-accent-color1);
+    transition: var(--transition-speed-default);
+    box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
+  }
   ul.tabs li i {
     visibility: visible !important;
     padding: 20px 20px !important;
     font-size: 20px !important;
+    border-radius: 10px;
   }
 
   .tab-content {
