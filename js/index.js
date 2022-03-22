@@ -325,7 +325,6 @@ highcontrast.onclick = () => {
   body.classList.replace("nord", "highcontrast");
   localStorage.setItem("theme", "highcontrast");
 };
-
 //
 // ========
 // + *New* Username feature +
@@ -356,4 +355,5 @@ $(document).ready(function () {
   });
 });
 
-// toggle to switch between 12 h and 24 h time
+// check if github.com is online and display a green dot 
+// if it is, otherwise display a red dot

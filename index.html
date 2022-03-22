@@ -116,8 +116,12 @@
           <li class="tab-link" data-tab="app-4">
             <i class="las la-photo-video"></i> Media
           </li>
+          <li class="tab-link cloud_apps" data-tab="app-5">
+            <i class="las la-cloud"></i> Cloud
+          </li>
         </ul>
         <div id="apps_list"></div>
+        <div id="custom_apps_list"></div>
         <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
       </div>
 
@@ -306,6 +310,7 @@
                 </details>
               </div>
 
+              <h3><i class="las la-info-circle"></i> Info</h3>
               <!-- =+=+= Change Search  =+=+= -->
               <div class="settings-background">
                 <h3><i class="las la-search"></i> Change Search</h3>
@@ -320,6 +325,10 @@
                     alt="Image loading error..."
                   />
                 </details>
+              </div>
+              <div class="settings-background">
+                <h3><i class="las la-cloud"></i> Cloud apps</h3>
+                <p>Cloud apps are loaded from the dynamic-apps.js file found <a href="">here</a></p>
               </div>
               <p style="text-align: center; font-weight: 500; font-size: 13px">
                 <a
@@ -505,6 +514,7 @@
       <!-- Quote JS - File -->
       <script type="text/javascript" src="js/layout.js"></script>
       <!-- Layout JS - File -->
+      <script type="text/javascript" src="/js/dynamic-apps.js"></script>
     </main>
   </body>
 </html>
