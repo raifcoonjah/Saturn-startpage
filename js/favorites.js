@@ -101,8 +101,8 @@ $(document).ready(function () {
 
 var opnSetting = document.querySelector(".close-button");
 document.body.addEventListener("keydown", function () {
-  if (event.keyCode == 27) {
-    // Esc key
+  if (event.keyCode == 65 && event.shiftKey) {
+    // Shift + S key
     opnSetting.click();
   }
 });
@@ -113,16 +113,23 @@ document.body.addEventListener("keydown", function () {
 // ========
 //
 
+// Ctrl and F open click favBtn
+document.addEventListener("keydown", function (e) {
+  if (e.ctrlKey && e.keyCode == 90) {
+    document.getElementById("favBtn").click();
+  }
+});
+
 // Get the favModal
 var favModal = document.getElementById("favModal");
 
 // Get the button that opens the favModal
 var btn = document.getElementById("favBtn");
-
 // Get the <span> element that closes the favModal
 var span = document.getElementsByClassName("cancel-fav-btn")[0];
 
 // When the user clicks on the button, open the favModal
+
 btn.onclick = function () {
   favModal.style.display = "block";
 };

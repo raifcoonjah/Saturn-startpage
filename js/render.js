@@ -209,13 +209,22 @@ const kShortcuts = (ks) => {
           <div id="tab-5" class="tab-content">
             <div class="settings-background">
               <h2>K-Shortcuts</h2>
-              <p>
+              <p>This menu will get a full design once my exams are over, for now you can use the following shortcuts:</p>
+           <!--   <p>
                 K-Shortcuts allows you to use your keyboard to do things, saving
                 you time and effort.
-              </p>
+              </p> -->
               <h4>While on the home screen:</h4>
               <br />
-              Press <kbd>Esc</kbd> to open and close settings.
+              Press <kbd>Shift</kbd> + <kbd>A</kbd> to open settings menu.
+              <br/>
+              <h4>While anywhere:</h4>
+              <br />
+              Press <kbd>Ctrl</kbd> + <kbd>Z</kbd> to open add favorites menu.
+              <br/>
+              <br/>
+              Press on <kbd>Esc</kbd> to close the both settings and add favorites menu.
+              <br/>
             </div>
           </div>`);
 };
@@ -259,49 +268,11 @@ const favIcons = (fav) => {
           </div>`);
 };
 
-// const customAppsList = (cu) => {
-//   $(cu).append(`<div id="app-5" class="app-content">
-//           <div class="popup">
-//             <div id="apps">
-//             <p> Loaded from server.json </p>
-//               <a href="https://github.com">
-//                 <div class="app">
-//                   <i class="lab la-github"></i>
-//                   <span>Github</span>
-//                 </div></a
-//               >
-//               <a href="https://youtube.com">
-//                 <div class="app">
-//                   <span>YouTube</span>
-//                   <i class="lab la-youtube"></i></div
-//               ></a>
-//               <a href="https://reddit.com">
-//                 <div class="app">
-//                   <span>Reddit</span>
-//                   <i class="lab la-reddit"></i></div
-//               ></a>
-//               <a href="https://mail.protonmail.com">
-//                 <div class="app">
-//                   <span>Proton Mail </span>
-//                   <i class="las la-inbox"></i></div
-//               ></a>
-
-//               <a href="https://mail.google.com">
-//                 <div class="app">
-//                   <span>Gmail</span>
-//                   <i class="las la-envelope"></i></div
-//               ></a>
-//             </div>
-//           </div>
-//         </div>`);
-// };
-
 const render_in_js = (x, z, ks, cu) => {
   let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
   let kshortcuts = $("#k_shortcuts");
   let fav_icons = $("#fav_icons");
-  // let custom_apps_list = $("#custom_apps_list");
 
   // pls dont break
   loader = setTimeout(function () {
@@ -309,7 +280,6 @@ const render_in_js = (x, z, ks, cu) => {
     settingAbout(setting_about);
     kShortcuts(kshortcuts);
     favIcons(fav_icons);
-    // customAppsList(custom_apps_list);
   });
 };
 

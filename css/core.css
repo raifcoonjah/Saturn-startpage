@@ -640,6 +640,7 @@ kbd {
   background: var(--lighter-color);
   color: var(--sat-ids);
   padding: 2px 10px;
+  margin: -1px;
   text-align: center;
   font-size: 1rem;
   border-radius: 7px;
@@ -1007,12 +1008,6 @@ use the correct border radius == */
   .fav-content {
     width: 23rem !important;
     height: 36rem !important;
-  }
-  .app {
-    display: inline-block;
-    margin: 5px 2px;
-    padding: 12px 46px !important;
-    border-radius: 20px !important;
   }
   .settings-title {
     font-size: 1.2rem !important;

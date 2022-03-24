@@ -178,6 +178,15 @@ $(document).ready(function () {
   });
 });
 
+// Esc to close settings and favModal
+$(document).keyup(function (e) {
+  if (e.keyCode == 27) {
+    $(".settings_modal").removeClass("show-modal");
+    // click on cancel-fav-btn
+    $(".cancel-fav-btn").click();
+  }
+});
+
 //
 // ========
 // + App list category +
@@ -325,6 +334,7 @@ highcontrast.onclick = () => {
   body.classList.replace("nord", "highcontrast");
   localStorage.setItem("theme", "highcontrast");
 };
+
 //
 // ========
 // + *New* Username feature +
@@ -354,6 +364,3 @@ $(document).ready(function () {
     }
   });
 });
-
-// check if github.com is online and display a green dot 
-// if it is, otherwise display a red dot

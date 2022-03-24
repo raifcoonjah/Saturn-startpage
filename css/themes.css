@@ -1,45 +1,53 @@
 /* Saturn's theme engine v3. */
 
-/* Default Light theme [New]  */
+/* Default Light theme [New] - v2.0 */
 .light {
   --sat-heading: #1a1a1a; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
-  --sat-bg: #fafafa; /* Main background */
-  --sat-bg-borders: #fafafa; /* Same as background color, but used inside of settings-button and app */
-  --sat-search-shortcuts: #e4e4e4; /* Favorites, app list & search, inputs. */
+  --sat-bg: rgb(255, 255, 255); /* Main background */
+  --sat-bg-borders: rgb(
+    255,
+    255,
+    255
+  ); /* Same as background color, but used inside of settings-button and app */
+  --sat-search-shortcuts: rgb(233, 233, 233); /* Favorites, app list & search, inputs. */
   --sat-links: #1a1a1a; /* Links and stuff */
-  --sat-setting-bg-color: #eeeeee; /* Settings background color */
-  --sat-setting-bg-effect: #dddddddc; /* Settings options background color */
+  --sat-setting-bg-color: rgb(239, 240, 241); /* Settings background color */
+  --sat-setting-bg-effect: rgb(
+    228,
+    228,
+    228
+  ); /* Settings options background color */
   --sat-input-hover: #b1b1b1;
   --sat-search-bar-focus: #999999;
   --sat-tooltip-bg: #c0c0c0; /* Tooltip background */
   --default-font: "Inter", sans-serif;
   --sat-border-radius: 15px;
-  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
-  --sat-accent-color1: hsl(208, 67%, 56%);
-  --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.63);
-  --moreapps-hovering-clr: hsl(208, 67%, 56%);
-  --favorites-hover: #c4c4c4;
-  --switch-color-bg-new: #919191;
+  --gudmrning-txt: linear-gradient(
+    to right,
+    rgb(61, 174, 233) 0%,
+    #6fbeec 100%
+  );
+  --sat-accent-color1: rgb(61, 174, 233);
+  --sat-accent-color-lighter: #96c9e6;
+  --moreapps-hovering-clr: rgb(61, 174, 233);
+  --favorites-hover: #dbdbdb;
+  --switch-color-bg-new: #aaaaaa;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
-  --add-link-border: rgb(209, 209, 209); /* Favorite input border color */
+  --add-link-border: rgb(239, 240, 241); /* Favorite input border color */
   --delete-warning-bg: #d75352; /* Favorite delete button color */
   --delete-warning-border: #d75252a2;
   --switch-color-bg-after: #000000;
-  --switch-color-bg: #adadad;
+  --switch-color-bg: rgb(239, 240, 241);
   --theme-container: rgb(
     206,
     206,
     206
   ); /* Used by the contains that contain themes icons and text. */
-  --settings-button-outline: #bbbbbb; /* The outline color on the open settings button */
+  --settings-button-outline: #d4d4d4; /* The outline color on the open settings button */
   --new-search-bg-hover-effect: rgb(218, 218, 218);
-  --lighter-color: rgb(
-    196,
-    196,
-    196
-  ); /* Every that needs a light background color */
+  --lighter-color: rgb(214, 214, 214); /* Every that needs a light background color */
   --close-button-color: #fff;
 
   /* Multiple transition speeds */
