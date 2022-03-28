@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Saturn Startpage",
+  "name": "Saturn Startpage Beta",
   "short_name": "Saturn-start",
-  "version": "5.0.0",
-  "description": "Saturn is a free & open source new-tab replacement build with speed and user experience in mind.",
+  "version": "4.9.28",
+  "description": "Saturn startpage is a free & open source new-tab replacement build with speed and user experience in mind.",
   "author": "mraif13",
 
   "icons": {
