@@ -592,17 +592,26 @@ input[type="button"] {
   font-size: 1rem;
   display: inline-block;
   outline: none;
-  padding: 9px 9px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
-  border: 0;
+  border: 1px solid transparent;
   border-radius: var(--sat-border-radius);
   box-sizing: border-box;
   cursor: pointer;
   color: var(--sat-ids);
+}
+
+.theme-container:active,
+.close-button:active,
+button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
 }
 
 a button[disabled],

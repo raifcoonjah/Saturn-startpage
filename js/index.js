@@ -184,6 +184,8 @@ $(document).keyup(function (e) {
     $(".settings_modal").removeClass("show-modal");
     // click on cancel-fav-btn
     $(".cancel-fav-btn").click();
+    // unfocus search-bar
+    $(".search-bar").blur();
   }
 });
 
@@ -225,6 +227,38 @@ $(document).keyup(function (protonmail) {
 $(document).keyup(function (twitter) {
   if (twitter.keyCode == 84 && twitter.altKey && twitter.ctrlKey) {
     window.location.replace("https://twitter.com");
+  }
+});
+
+// Ctrl + Alt + T to open twitter.com
+$(document).keyup(function (google_calendar) {
+  if (
+    google_calendar.keyCode == 67 &&
+    google_calendar.altKey &&
+    google_calendar.ctrlKey
+  ) {
+    window.location.replace("https://calendar.google.com");
+  }
+});
+
+// Ctrl + Alt + M to open mail.google.com
+$(document).keyup(function (google_mail) {
+  if (google_mail.keyCode == 77 && google_mail.altKey && google_mail.ctrlKey) {
+    window.location.replace("https://mail.google.com");
+  }
+});
+
+// Ctrl + / to focus on searchbar
+$(document).keyup(function (search) {
+  if (search.keyCode == 191 && search.ctrlKey) {
+    $(".search-bar").focus();
+  }
+});
+
+// Ctrl + ArrowUp to click on se_icon
+$(document).keyup(function (se_icon) {
+  if (se_icon.keyCode == 38 && se_icon.ctrlKey) {
+    $(".se_icon").click();
   }
 });
 
