@@ -159,7 +159,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                   target="_blank" 
-                  >v5.0.0 | Build 4.9.28 <i class="las la-external-link-alt"></i
+                  >v5.0.0 | Build 4.9.29 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -221,9 +221,6 @@ const kShortcuts = (ks) => {
               <p> Press <kbd>Ctrl</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
               <p> Press on <kbd>Esc</kbd> to close the both settings and favorites menu. </p>
               <h4><i class="las la-icons"></i> | Apps:</h4>
-              <p class="small_text">
-                Note: All apps will open in a new tab.
-              </p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open Github. </p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open Youtube. </p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> to open Reddit. </p>
