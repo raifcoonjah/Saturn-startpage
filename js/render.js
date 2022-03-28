@@ -139,13 +139,12 @@ const appsList = (x) => {
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content">
               <div class="settings-background">
-                <h3>✨ What's new</h3>
+                <h3>✨ What's new?</h3>
                 <p>
-                This release includes the brand new Home v2 that include quotes, tons of speed improvements, better time viewing experience and bug fixes. 
-                Read the full release note on
+                The biggest update since the creation of Saturn, learn more on
               <a href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                 ><i class="lab la-github"></i> Github.</a
-              >
+              > 
                 </p>
               </div>
             <div class="settings-background">
@@ -160,7 +159,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                   target="_blank" 
-                  >v5.0.0 Build 3.24.712 <i class="las la-external-link-alt"></i
+                  >v5.0.0 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -208,24 +207,36 @@ const kShortcuts = (ks) => {
   $(ks).append(`<!-- + Keyboard Shortcuts section + -->
           <div id="tab-5" class="tab-content">
             <div class="settings-background">
-              <h2>K-Shortcuts</h2>
-              <p>This menu will get a full design once my exams are over, for now you can use the following shortcuts:</p>
-           <!--   <p>
-                K-Shortcuts allows you to use your keyboard to do things, saving
-                you time and effort.
-              </p> -->
-              <h4>While on the home screen:</h4>
-              <br />
-              Press <kbd>Shift</kbd> + <kbd>A</kbd> to open settings menu.
-              <br/>
-              <h4>While anywhere:</h4>
-              <br />
-              Press <kbd>Ctrl</kbd> + <kbd>Z</kbd> to open add favorites menu.
-              <br/>
-              <br/>
-              Press on <kbd>Esc</kbd> to close the both settings and add favorites menu.
-              <br/>
+              <h2 style="text-align: center; padding: 15px; font-weight: 500">
+                Keyboard Shortcuts
+              </h2>
+              <p style="text-align: center">
+                Shortcuts allows you to do things without ever needing to touch your <i class="las la-mouse"></i> mouse again.
+              </p>
+              <h4><i class="las la-home"></i> | While on the home screen:</h4>
+              <p></p>
+              <p> Press <kbd>Shift</kbd> + <kbd>S</kbd> to open & close settings menu. </p>
+              <h4><i class="las la-globe"></i> | While anywhere:</h4>
+              <p></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
+              <p> Press on <kbd>Esc</kbd> to close the both settings and favorites menu. </p>
+              <h4><i class="las la-icons"></i> | Apps:</h4>
+              <p class="small_text">
+                Note: All apps will open in a new tab.
+              </p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open Github. </p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open Youtube. </p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> to open Reddit. </p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> to open ProtonMail. </p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> to open Twitter. </p>
             </div>
+             <p style="text-align: center; font-weight: 500; font-size: 13px">
+                <a
+                  href="https://github.com/mraif13/Saturn-startpage/issues/new"
+                  target="_blank"
+                  ><i class="las la-keyboard"></i> Request a shortcut
+                </a>
+              </p>
           </div>`);
 };
 

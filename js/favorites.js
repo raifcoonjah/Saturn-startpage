@@ -101,7 +101,7 @@ $(document).ready(function () {
 
 var opnSetting = document.querySelector(".close-button");
 document.body.addEventListener("keydown", function () {
-  if (event.keyCode == 65 && event.shiftKey) {
+  if (event.keyCode == 83 && event.shiftKey) {
     // Shift + S key
     opnSetting.click();
   }
@@ -113,7 +113,6 @@ document.body.addEventListener("keydown", function () {
 // ========
 //
 
-// Ctrl and F open click favBtn
 document.addEventListener("keydown", function (e) {
   if (e.ctrlKey && e.keyCode == 90) {
     document.getElementById("favBtn").click();

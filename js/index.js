@@ -189,6 +189,48 @@ $(document).keyup(function (e) {
 
 //
 // ========
+// + Apps Shortcut +
+// ========
+//
+
+// Ctrl + Alt + G to open github.com
+$(document).keyup(function (github) {
+  if (github.keyCode == 71 && github.altKey && github.ctrlKey) {
+    window.open("https://github.com");
+  }
+});
+
+// Ctrl + Alt + Y to open youtube.com
+$(document).keyup(function (youtube) {
+  if (youtube.keyCode == 89 && youtube.altKey && youtube.ctrlKey) {
+    window.open("https://youtube.com");
+  }
+});
+
+// Ctrl + Alt + R to open reddit.com
+$(document).keyup(function (reddit) {
+  if (reddit.keyCode == 82 && reddit.altKey && reddit.ctrlKey) {
+    window.open("https://reddit.com");
+  }
+});
+
+// Ctrl + Alt + P to open protonmail.com
+$(document).keyup(function (protonmail) {
+  if (protonmail.keyCode == 80 && protonmail.altKey && protonmail.ctrlKey) {
+    window.open("https://mail.protonmail.com");
+  }
+});
+
+// Ctrl + Alt + T to open twitter.com
+$(document).keyup(function (twitter) {
+  if (twitter.keyCode == 84 && twitter.altKey && twitter.ctrlKey) {
+    window.open("https://twitter.com");
+  }
+});
+
+
+//
+// ========
 // + App list category +
 // ========
 //

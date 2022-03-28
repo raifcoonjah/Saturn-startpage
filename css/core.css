@@ -639,7 +639,7 @@ kbd {
   font-weight: 550;
   background: var(--lighter-color);
   color: var(--sat-ids);
-  padding: 2px 10px;
+  padding: 1px 5px;
   margin: -1px;
   text-align: center;
   font-size: 1rem;
