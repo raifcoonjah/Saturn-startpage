@@ -148,7 +148,9 @@ const settingAbout = (z) => {
                 </p>
               </div>
             <div class="settings-background">
-              <h2 style="text-align:center;padding:15px;">About</h2>
+              <h2 style="text-align: center; padding: 15px; font-weight: 500">
+                About
+              </h2>
               <p class="new-about">
               <img
                   src="/img/dynamic-icon-big.png"
@@ -159,7 +161,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                   target="_blank" 
-                  >v5.0.0 | Build 4.9.30 <i class="las la-external-link-alt"></i
+                  >v5.0.0 | Build 4.9.31 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
