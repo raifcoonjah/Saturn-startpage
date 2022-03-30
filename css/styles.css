@@ -209,6 +209,7 @@ input:checked + .slider:before {
 .setting-button i {
   font-size: 1.2rem;
 }
+
 .setting-button:hover {
   transition: var(--transition-speed-fast);
   outline: 4px solid var(--settings-button-outline);
@@ -359,7 +360,7 @@ ul.tabs li {
 
 /* 
 ========
-+ Theme Icons (YES, they are just small png images that i make in figma.) +
++ Theme Icons (No longer figma made, instead we're using a screenshot of the theme) +
 ========
 */
 
@@ -476,6 +477,10 @@ div.theme-container {
 .username-section input:hover {
   border: 1px solid var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
+}
+
+.favorites-search input:hover {
+  background-color: var(--new-search-bg-hover-effect);
 }
 
 /* 
@@ -639,10 +644,11 @@ ul.apps-category li.current {
   transform: translate(-50%, -50%);
   padding: 1px 11px;
   width: 40rem;
-  height: 36rem;
+  height: 39rem;
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
 }
 
 /* 
@@ -1013,17 +1019,19 @@ appearing when the user hovers on the open in new tab button.
 ========
 */
 .fav-livepreview {
-  background-color: var(--sat-search-shortcuts);
+  border: 3px solid var(--sat-search-shortcuts);
   color: var(--sat-ids);
-  padding: 10px 10px;
+  padding: 25px 10px;
   border-radius: 15px;
-  margin-bottom: 10px;
 }
 
 .fav-livepreview svg {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  width: 23px;
+  height: 22px;
+  outline: none;
+  vertical-align: middle;
+  margin: 0px;
+  border-radius: 0px !important;
 }
 
 .small_text {

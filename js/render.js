@@ -139,9 +139,9 @@ const appsList = (x) => {
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content">
               <div class="settings-background">
-                <h3>✨ What's new?</h3>
+                <h3>✨ What's new</h3>
                 <p>
-                The biggest update since the creation of Saturn, learn more on
+                Saturn 5 brings tons of new features, bug fixes and stability improvements. Learn more on
               <a href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                 ><i class="lab la-github"></i> Github.</a
               > 
@@ -161,7 +161,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                   target="_blank" 
-                  >v5.0.0 | Build 4.9.31 <i class="las la-external-link-alt"></i
+                  >v5.0.0 | Build 4.9.32 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better

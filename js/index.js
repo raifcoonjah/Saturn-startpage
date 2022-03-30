@@ -425,7 +425,7 @@ $(document).ready(function () {
       $("#Uname").val(localStorage.getItem("user"));
       setTimeout(function () {
         window.location.reload(1);
-      }, 1000);
+      }, 2000);
       if (localStorage.getItem("user") == "") {
         $("#userSet").attr(
           "placeholder",
