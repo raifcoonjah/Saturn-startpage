@@ -38,13 +38,7 @@
       <p class="time" id="time"></p>
       <p class="good_morning" id="good_morning"></p>
       <p class="quote" id="quotation"></p>
-
-      <p
-        class="quote source"
-        id="source"
-        data-tootik="Quote author"
-        data-tootik-conf="bottom"
-      ></p>
+      <p class="quote source" id="source"></p>
     </div>
 
     <main>
@@ -66,7 +60,7 @@
                 src="icons/google.svg"
                 alt="Search engine logo"
                 class="se_icon"
-                title="Change search engine.."
+                title="Change search engine.. (Ctrl + Arrow Up)"
               />
             </a>
 
@@ -82,7 +76,11 @@
         </div>
       </div>
 
-      <button class="setting-button" title="Open Settings.." id="trigger">
+      <button
+        class="setting-button"
+        title="Open Settings (Shift + S)"
+        id="trigger"
+      >
         <i class="las la-cog"></i>
       </button>
 
@@ -90,8 +88,8 @@
         <div class="calendar-btn">
           <button
             class="setting-button"
-            data-tootik="Open Google Calendar"
-            data-tootik-conf="left"
+            data-tootik="Open Calendar (Ctrl + Alt + C)"
+            data-tootik-conf="left shadow no-arrow"
           >
             <i class="las la-calendar"></i>
           </button>
@@ -134,7 +132,7 @@
 
         <div class="favorites-search">
           <input type="text" placeholder="Search..." class="searchfavorites" />
-          <button class="fav-btn" id="favBtn">
+          <button class="fav-btn" id="favBtn" title="Add favorites (Ctrl + Z)">
             <i class="las la-plus"></i> Add
           </button>
         </div>
@@ -237,20 +235,38 @@
           <!-- =+=+= Settings Navigation =+=+=-->
           <div class="container">
             <ul class="tabs" id="tabs">
-              <li class="tab-link current" data-tab="tab-2">
+              <li
+                class="tab-link current"
+                data-tab="tab-2"
+                title="Username and info section.."
+              >
                 <i class="las la-cog"></i> General
               </li>
-              <li class="tab-link" id="tab-link" data-tab="tab-4">
+              <li
+                class="tab-link"
+                id="tab-link"
+                data-tab="tab-4"
+                title="Saturn themes.."
+              >
                 <i class="las la-palette"></i> Themes
               </li>
-              <li class="tab-link" id="tab-link" data-tab="tab-6">
+              <li
+                class="tab-link"
+                id="tab-link"
+                data-tab="tab-6"
+                title="Saturn layout and hide things"
+              >
                 <i class="las la-images"></i> Layout
               </li>
-              <li class="tab-link" data-tab="tab-3">
+              <li
+                class="tab-link"
+                data-tab="tab-3"
+                title="About saturn, Links and what's new"
+              >
                 <i class="las la-info-circle"></i> About
               </li>
               <p class="line"></p>
-              <li class="tab-link" data-tab="tab-5">
+              <li class="tab-link" data-tab="tab-5" title="Saturn shortcuts..">
                 <i class="las la-keyboard"></i> K-Shortcuts
               </li>
             </ul>
@@ -276,42 +292,6 @@
                     button.
                   </p>
                 </div>
-
-                <!-- =+=+= Hide things =+=+= -->
-                <h3><i class="las la-eye-slash"></i> Hide things</h3>
-                <p>Hide various elements from view.</p>
-
-                <details>
-                  <summary>Home</summary>
-
-                  <!-- =+=+= HT: Options1 =+=+=-->
-                  <h5><i class="las la-swatchbook"></i> Hide Favorites</h5>
-                  <p>
-                    This will
-                    <span style="font-weight: 700">not remove</span> your stored
-                    favorites.
-                  </p>
-                  <label class="slider-switch">
-                    <input type="checkbox" class="hide-favorite" />
-                    <div class="slider round"></div>
-                  </label>
-                  <!-- =+=+= HT: Options2 =+=+=-->
-                  <h5><i class="las la-search"></i> Hide Search bar</h5>
-                  <p></p>
-                  <label class="slider-switch">
-                    <input type="checkbox" class="hide-search" />
-                    <div class="slider round"></div>
-                  </label>
-                  <!-- =+=+= HT: Options3 =+=+=-->
-                  <h5>
-                    <i class="las la-calendar"></i> Hide Google calendar button
-                  </h5>
-                  <p></p>
-                  <label class="slider-switch">
-                    <input type="checkbox" class="hide-calendar-btn" />
-                    <div class="slider round"></div>
-                  </label>
-                </details>
               </div>
 
               <h3><i class="las la-info-circle"></i> Info</h3>
@@ -484,6 +464,46 @@
                 />
                 <span class="theme-name">Compact Layout</span>
               </div>
+            </div>
+            <div class="settings-background">
+              <!-- =+=+= Hide things =+=+= -->
+              <h2 style="text-align: center; padding: 15px; font-weight: 500">
+                Hide things
+              </h2>
+              <p style="text-align: center">Hide various elements from view.</p>
+              <br />
+
+              <details>
+                <summary>Home</summary>
+
+                <!-- =+=+= HT: Options1 =+=+=-->
+                <h5><i class="las la-swatchbook"></i> Hide Favorites</h5>
+                <p>
+                  This will
+                  <span style="font-weight: 700">not remove</span> your stored
+                  favorites.
+                </p>
+                <label class="slider-switch">
+                  <input type="checkbox" class="hide-favorite" />
+                  <div class="slider round"></div>
+                </label>
+                <!-- =+=+= HT: Options2 =+=+=-->
+                <h5><i class="las la-search"></i> Hide Search bar</h5>
+                <p></p>
+                <label class="slider-switch">
+                  <input type="checkbox" class="hide-search" />
+                  <div class="slider round"></div>
+                </label>
+                <!-- =+=+= HT: Options3 =+=+=-->
+                <h5>
+                  <i class="las la-calendar"></i> Hide Google calendar button
+                </h5>
+                <p></p>
+                <label class="slider-switch">
+                  <input type="checkbox" class="hide-calendar-btn" />
+                  <div class="slider round"></div>
+                </label>
+              </details>
             </div>
           </div>
           <!-- K shortcuts -->

@@ -161,13 +161,13 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                   target="_blank" 
-                  >v5.0.0 | Build 4.9.32 <i class="las la-external-link-alt"></i
+                  >v5.0.0 | Build 4.9.33 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/projects/1"
-                  target="_blank" data-tootik="Thanks for your interest ❤️" data-tootik-conf="right"
+                  target="_blank"
                   >Contribute <i class="las la-external-link-alt"></i
                 ></a>
                 </p>

@@ -93,6 +93,7 @@ $(document).ready(function () {
     live_search($("#content"));
   });
 })(jQuery);
+
 //
 // ========
 // + Keyboard Shortcuts +

@@ -86,7 +86,7 @@ document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
 // Reload time after a certain amount of time [BETA, testing tbh]
 setInterval(() => {
   document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
-}, 59 * 1000);
+}, 60 * 1000);
 
 //
 // ========
@@ -409,6 +409,7 @@ highcontrast.onclick = () => {
   body.classList.replace("nord", "highcontrast");
   localStorage.setItem("theme", "highcontrast");
 };
+
 
 //
 // ========

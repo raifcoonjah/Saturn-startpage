@@ -10,7 +10,11 @@
     255,
     255
   ); /* Same as background color, but used inside of settings-button and app */
-  --sat-search-shortcuts: rgb(233, 233, 233); /* Favorites, app list & search, inputs. */
+  --sat-search-shortcuts: rgb(
+    233,
+    233,
+    233
+  ); /* Favorites, app list & search, inputs. */
   --sat-links: #1a1a1a; /* Links and stuff */
   --sat-setting-bg-color: rgb(239, 240, 241); /* Settings background color */
   --sat-setting-bg-effect: rgb(
@@ -47,7 +51,11 @@
   ); /* Used by the contains that contain themes icons and text. */
   --settings-button-outline: #d4d4d4; /* The outline color on the open settings button */
   --new-search-bg-hover-effect: rgb(218, 218, 218);
-  --lighter-color: rgb(214, 214, 214); /* Every that needs a light background color */
+  --lighter-color: rgb(
+    214,
+    214,
+    214
+  ); /* Every that needs a light background color */
   --close-button-color: #fff;
 
   /* Multiple transition speeds */

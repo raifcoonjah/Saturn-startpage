@@ -119,6 +119,7 @@ v3 CSS Main.Core
   border-radius: 20px;
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
+  border: 1px solid var(--lighter-color);
 }
 
 .show-modal {
@@ -126,6 +127,10 @@ v3 CSS Main.Core
   visibility: visible;
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
+}
+
+body.show-modal {
+  overflow-y: none;
 }
 
 /* 
@@ -649,6 +654,7 @@ ul.apps-category li.current {
   border-radius: 20px;
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
+  border: 1px solid var(--lighter-color);
 }
 
 /* 
