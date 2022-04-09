@@ -83,7 +83,6 @@ amount of time saturn takes to load +
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/inter-v7-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 /* 
 ========
 + Part of: +
@@ -469,12 +468,12 @@ button {
 body {
   /* Center body in page */
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 805px;
   border-radius: var(--sat-border-radius);
   overflow-x: hidden;
   display: block;
   background: var(--sat-bg);
-  margin-top: -10px;
+  margin-top: -30px;
   padding-top: 90px;
   box-sizing: border-box;
   /* Minor ajustments for better image background support */
@@ -608,7 +607,6 @@ input[type="button"] {
 /* Press effect that happens when you press on buttons.. */
 
 ul.fav_ptgi_category li:active,
-ul.apps-category li:active,
 .app:active,
 .theme-container:active,
 .close-button:active,
@@ -850,6 +848,7 @@ img {
 
 /* == Settings background color == */
 
+.sounds-modal-content,
 .settings-content {
   background: var(--sat-setting-bg-color);
 }
@@ -949,6 +948,7 @@ ul.tabs li,
 .app,
 #favorite-links:hover,
 .close-button,
+.close-sounds,
 .new-close-fav {
   cursor: pointer;
 }

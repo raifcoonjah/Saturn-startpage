@@ -138,19 +138,9 @@ const appsList = (x) => {
 
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content">
-              <div class="settings-background">
-                <h3>✨ What's new</h3>
-                <p>
-                Saturn 5 brings tons of new features, bug fixes and stability improvements. Learn more on
-              <a href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
-                ><i class="lab la-github"></i> Github.</a
-              > 
-                </p>
-              </div>
+              <p class="settings-item-title">About</p>
+              <p class="settings-item-under-title">About Saturn startpage.</p>
             <div class="settings-background">
-              <h2 style="text-align: center; padding: 15px; font-weight: 500">
-                About
-              </h2>
               <p class="new-about">
               <img
                   src="/img/dynamic-icon-big.png"
@@ -161,7 +151,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                   target="_blank" 
-                  >v5.0.0 | Build 4.9.33 <i class="las la-external-link-alt"></i
+                  >v5.0.0 | Build 4.9.34 <i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -208,13 +198,10 @@ const settingAbout = (z) => {
 const kShortcuts = (ks) => {
   $(ks).append(`<!-- + Keyboard Shortcuts section + -->
           <div id="tab-5" class="tab-content">
+            <p class="settings-item-title">Keyboard Shortcuts</p>
+            <p class="settings-item-under-title">Shortcuts allows you to do things without ever needing to touch your 
+            <i class="las la-mouse"></i> mouse again.</p>
             <div class="settings-background">
-              <h2 style="text-align: center; padding: 15px; font-weight: 500">
-                Keyboard Shortcuts
-              </h2>
-              <p style="text-align: center">
-                Shortcuts allows you to do things without ever needing to touch your <i class="las la-mouse"></i> mouse again.
-              </p>
               <h4><i class="las la-home"></i> While on the home screen:</h4>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.</p>

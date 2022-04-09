@@ -4,3 +4,19 @@
 + Think this should be in Saturn? Make a pull request +
 ========
 */
+
+.settings-item-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 10px !important;
+}
+
+.settings-item-under-title {
+  font-size: 17px;
+  margin-top: -15px;
+  margin-left: 10px !important;
+}
+
+.center-content {
+  display: inline-block;
+}

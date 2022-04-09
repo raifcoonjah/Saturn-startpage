@@ -67,7 +67,7 @@ v3 CSS Main.Core
 .time {
   font-weight: 700;
   text-align: center;
-  font-size: 55px;
+  font-size: 60px;
 }
 
 /* 
@@ -92,6 +92,21 @@ v3 CSS Main.Core
 ========
 */
 
+.sounds_modal {
+  background-color: #15181f42;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
 .settings_modal {
   background-color: #15181f42;
   position: fixed;
@@ -105,6 +120,21 @@ v3 CSS Main.Core
   transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+}
+
+.sounds-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 15px;
+  padding-bottom: 20px;
+  width: 40rem;
+  height: 35rem;
+  border-radius: 20px;
+  overflow-y: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
+  border: 1px solid var(--lighter-color);
 }
 
 .settings-content {
@@ -129,10 +159,12 @@ v3 CSS Main.Core
   transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
 }
 
-body.show-modal {
-  overflow-y: none;
+.show-sounds-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
 }
-
 /* 
 ========
 + Everything switch related +
@@ -202,6 +234,7 @@ input:checked + .slider:before {
   color: var(--sat-ids);
 }
 
+.sounds-button,
 .setting-button {
   outline: none;
   padding: 12px 10px;
@@ -211,10 +244,12 @@ input:checked + .slider:before {
   outline: 4px solid transparent; /* This should be remove for a much more optimized version */
 }
 
+.sounds-button i,
 .setting-button i {
   font-size: 1.2rem;
 }
 
+.sounds-button:hover,
 .setting-button:hover {
   transition: var(--transition-speed-fast);
   outline: 4px solid var(--settings-button-outline);
@@ -227,9 +262,8 @@ input:checked + .slider:before {
 */
 
 ul.tabs li {
-  font-weight: 500;
   color: var(--sat-ids);
-  padding: 10px 35px;
+  padding: 10px 45px;
   margin-left: 10px;
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
@@ -245,7 +279,7 @@ ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
   border-left: 3px solid var(--sat-accent-color1);
   color: var(--sat-ids);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 ul.tabs li.current i {
@@ -309,7 +343,7 @@ ul.tabs li {
 }
 
 .app span {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   margin: 0;
   position: absolute;
@@ -324,10 +358,12 @@ ul.tabs li {
   bottom: 108%;
 }
 
+.page-content,
 .app-content {
   animation: fadeIn 90ms ease;
 }
 
+.page-content,
 .app-content {
   display: none;
 }
@@ -336,6 +372,7 @@ ul.tabs li {
   color: var(--sat-accent-color1);
 }
 
+.page-content.current,
 .app-content.current {
   display: inherit;
 }
@@ -348,9 +385,9 @@ ul.tabs li {
 
 .settings-background {
   margin: 10px;
-  padding: 11px;
+  padding: 10px;
   background: var(--sat-setting-bg-effect);
-  border: 1px solid transparent;
+  outline: 1px solid transparent;
 }
 
 .settings-background-warning {
@@ -359,7 +396,7 @@ ul.tabs li {
 }
 
 .settings-background:hover {
-  border: 1px solid var(--sat-input-hover);
+  outline: 1px solid var(--sat-input-hover);
   transition: var(--transition-speed-fast);
 }
 
@@ -543,16 +580,20 @@ div.theme-container {
 ========
 */
 
+.sounds-category,
 .apps-category {
   margin-top: 20px;
 }
+
+ul.sounds-category,
 ul.apps-category {
   padding: 0px;
   list-style: none;
 }
 
+ul.sounds-category li,
 ul.apps-category li {
-  font-weight: 500;
+  font-size: 16px;
   background: none;
   color: var(--lighter-text-color);
   display: inline-block;
@@ -562,6 +603,7 @@ ul.apps-category li {
   border: 2px solid var(--sat-bg);
 }
 
+ul.sounds-category li:hover,
 ul.apps-category li:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
@@ -569,10 +611,11 @@ ul.apps-category li:hover {
   box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
+ul.sounds-category li.current,
 ul.apps-category li.current {
   background-color: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
-  font-weight: 600;
+  font-weight: 500;
   box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
@@ -582,7 +625,6 @@ ul.apps-category li.current {
 ========
 */
 .tabs {
-  font-size: 16px;
   margin: -10px;
   margin-top: -5px;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -649,7 +691,7 @@ ul.apps-category li.current {
   transform: translate(-50%, -50%);
   padding: 1px 11px;
   width: 40rem;
-  height: 39rem;
+  height: 37rem;
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
@@ -791,6 +833,7 @@ ul li {
 
 /* Every close button uses this */
 
+.close-sounds,
 .close-button {
   font-size: 25px;
   float: right;
@@ -799,11 +842,13 @@ ul li {
   border-radius: 100px;
 }
 
+.close-sounds i,
 .close-button i {
   display: block;
   text-align: center;
 }
 
+.close-sounds:hover,
 .close-button:hover {
   color: var(--close-button-color);
   background-color: var(--delete-warning-bg);

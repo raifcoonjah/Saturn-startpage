@@ -96,6 +96,14 @@
         </div>
       </a>
 
+      <button
+        class="sounds-button"
+        id="SBtntrigger"
+        title="Open Saturn sounds (Shift + B)"
+      >
+        <i class="las la-headphones"></i>
+      </button>
+
       <!-- =+=+= App lists + App category =+=+= -->
       <div class="apps_list">
         <h4 class="section-title new">
@@ -103,20 +111,19 @@
         </h4>
         <ul class="apps-category">
           <li class="tab-link current" data-tab="app-1">
-            <i class="las la-history"></i> Most used
+            <i class="lar la-grin-hearts"></i> Most used
           </li>
           <li class="tab-link" data-tab="app-2">
-            <i class="las la-book-reader"></i> Study
+            <i class="las la-graduation-cap"></i> Education
           </li>
           <li class="tab-link" data-tab="app-3">
-            <i class="las la-share-alt"></i> Social
+            <i class="las la-share-alt"></i> Social media
           </li>
           <li class="tab-link" data-tab="app-4">
-            <i class="las la-photo-video"></i> Media
+            <i class="las la-play-circle"></i> Multimedia
           </li>
         </ul>
         <div id="apps_list"></div>
-        <div id="custom_apps_list"></div>
         <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
       </div>
 
@@ -209,7 +216,7 @@
               <a
                 href="https://github.com/mraif13/Saturn-startpage/issues/new"
                 target="_blank"
-                ><i class="las la-bug"></i> Report an issue
+                ><i class="las la-bug"></i> Report a bug
               </a>
             </p>
           </div>
@@ -222,7 +229,7 @@
       </div>
 
       <!-- =+=+= Saturn Settings =+=+= -->
-      <div class="settings_modal" id="openModal">
+      <div class="settings_modal">
         <div class="settings-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
 
@@ -267,16 +274,17 @@
               </li>
               <p class="line"></p>
               <li class="tab-link" data-tab="tab-5" title="Saturn shortcuts..">
-                <i class="las la-keyboard"></i> K-Shortcuts
+                <i class="las la-keyboard"></i> Shortcuts
               </li>
             </ul>
 
             <!-- =+=+= General Settings =+=+= -->
             <div id="tab-2" class="tab-content current">
+              <p class="settings-item-title">General</p>
               <div class="settings-background">
                 <!-- =+=+= Username =+=+= -->
-                <h3><i class="las la-user-edit"></i> Username</h3>
-                <p>This will be displayed on the home screen.</p>
+                <h3><i class="las la-user-edit"></i>Username</h3>
+                <p>Your username will be displayed on the home screen.</p>
                 <div id="popUp" class="username-section">
                   <input
                     type="text"
@@ -308,13 +316,20 @@
                     src="/img/change-search.gif"
                     alt="Image loading error..."
                   />
+
+                  <p>
+                    Or: Press <kbd>Ctrl</kbd> +
+                    <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up)
+                    to switch between search engines.
+                  </p>
                 </details>
               </div>
+
               <p style="text-align: center; font-weight: 500; font-size: 13px">
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/issues/new"
                   target="_blank"
-                  ><i class="las la-bug"></i> Report an issue
+                  ><i class="las la-bug"></i> Report a bug
                 </a>
               </p>
             </div>
@@ -325,18 +340,9 @@
 
           <!-- =+=+= Theme section =+=+=-->
           <div id="tab-4" class="tab-content">
+            <p class="settings-item-title">Themes</p>
+            <p class="settings-item-under-title">Choose your theme.</p>
             <div class="settings-background">
-              <!-- + Title/Header section + -->
-              <h2 style="text-align: center; padding: 15px; font-weight: 500">
-                Select a theme
-              </h2>
-              <p style="text-align: center">
-                Personalize
-                <span style="font-weight: 500">Saturn Startpage</span> with
-                themes to match your style & mood.
-              </p>
-              <p class="line"></p>
-
               <!-- =+=+= Themes =+=+=-->
 
               <!-- =+=+= Light/Day theme =+=+=-->
@@ -438,17 +444,10 @@
           </div>
 
           <div id="tab-6" class="tab-content">
-            <div class="settings-background">
-              <h2 style="text-align: center; padding: 15px; font-weight: 500">
-                Select a layout
-              </h2>
-              <p style="text-align: center">
-                Personalize
-                <span style="font-weight: 500">Saturn Startpage</span> with a
-                custom layout. (Beta)
-              </p>
-              <br />
-              <div class="theme-container" id="default-layout">
+            <p class="settings-item-title">Layout</p>
+            <p class="settings-item-under-title">Choose a custom layout.</p>
+            <div class="settings-background center-content">
+              <div class="theme-container center-container" id="default-layout">
                 <img
                   class="theme-icon"
                   src="/img/default-layout.png"
@@ -465,45 +464,37 @@
                 <span class="theme-name">Compact Layout</span>
               </div>
             </div>
+
+            <p class="settings-item-title">Hide things</p>
+            <p class="settings-item-under-title">Hide things from view.</p>
             <div class="settings-background">
-              <!-- =+=+= Hide things =+=+= -->
-              <h2 style="text-align: center; padding: 15px; font-weight: 500">
-                Hide things
-              </h2>
-              <p style="text-align: center">Hide various elements from view.</p>
-              <br />
-
-              <details>
-                <summary>Home</summary>
-
-                <!-- =+=+= HT: Options1 =+=+=-->
-                <h5><i class="las la-swatchbook"></i> Hide Favorites</h5>
-                <p>
-                  This will
-                  <span style="font-weight: 700">not remove</span> your stored
-                  favorites.
-                </p>
-                <label class="slider-switch">
-                  <input type="checkbox" class="hide-favorite" />
-                  <div class="slider round"></div>
-                </label>
-                <!-- =+=+= HT: Options2 =+=+=-->
-                <h5><i class="las la-search"></i> Hide Search bar</h5>
-                <p></p>
-                <label class="slider-switch">
-                  <input type="checkbox" class="hide-search" />
-                  <div class="slider round"></div>
-                </label>
-                <!-- =+=+= HT: Options3 =+=+=-->
-                <h5>
-                  <i class="las la-calendar"></i> Hide Google calendar button
-                </h5>
-                <p></p>
-                <label class="slider-switch">
-                  <input type="checkbox" class="hide-calendar-btn" />
-                  <div class="slider round"></div>
-                </label>
-              </details>
+              <!-- =+=+= HT: Options1 =+=+=-->
+              <h5><i class="las la-swatchbook"></i> Hide Favorites</h5>
+              <p>
+                This will
+                <span style="font-weight: 700">not remove</span> your stored
+                favorites.
+              </p>
+              <label class="slider-switch">
+                <input type="checkbox" class="hide-favorite" />
+                <div class="slider round"></div>
+              </label>
+              <!-- =+=+= HT: Options2 =+=+=-->
+              <h5><i class="las la-search"></i> Hide Search bar</h5>
+              <p></p>
+              <label class="slider-switch">
+                <input type="checkbox" class="hide-search" />
+                <div class="slider round"></div>
+              </label>
+              <!-- =+=+= HT: Options3 =+=+=-->
+              <h5>
+                <i class="las la-calendar"></i> Hide Google calendar button
+              </h5>
+              <p></p>
+              <label class="slider-switch">
+                <input type="checkbox" class="hide-calendar-btn" />
+                <div class="slider round"></div>
+              </label>
             </div>
           </div>
           <!-- K shortcuts -->
@@ -519,6 +510,43 @@
           layout
         </div>
       </div>
+
+      <div class="sounds_modal">
+        <div class="sounds-modal-content">
+          <span class="close-sounds"><i class="las la-times-circle"></i></span>
+          <h3 class="settings-title">
+            <img class="settings-icon" src="/img/dynamic-icon.png" />
+            | Saturn Sounds (Beta)
+          </h3>
+          <div class="sounds-category">
+            <h4 class="section-title new">Choose a Category</h4>
+            <ul class="sounds-category">
+              <li class="tab-link current" data-tab="page-1">
+                <i class="lar la-grin-hearts"></i> Category1
+              </li>
+              <li class="tab-link" data-tab="page-2">
+                <i class="las la-graduation-cap"></i> Category2
+              </li>
+              <li class="tab-link" data-tab="page-3">
+                <i class="las la-share-alt"></i> Category3
+              </li>
+              <li class="tab-link" data-tab="page-4">
+                <i class="las la-play-circle"></i> Category4
+              </li>
+              <li class="tab-link" data-tab="page-5">
+                <i class="las la-play-circle"></i> Category5
+              </li>
+            </ul>
+            <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
+          </div>
+          <div id="page-1" class="page-content current">Hello world...</div>
+          <div id="page-2" class="page-content">Hello world2...</div>
+          <div id="page-3" class="page-content">Hello world3...</div>
+          <div id="page-4" class="page-content">Hello world4...</div>
+          <div id="page-5" class="page-content">Hello world5...</div>
+        </div>
+      </div>
+
       <br />
 
       <!-- All the javascript needed to make saturn's core features work  -->

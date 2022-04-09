@@ -25,6 +25,7 @@ determineGreet(new Date().getHours());
 // + Settings Modal trigger + close button +
 // ========
 //
+
 var modal = document.querySelector(".settings_modal");
 var trigger = document.querySelector(".setting-button");
 var closeButton = document.querySelector(".close-button");
@@ -39,6 +40,27 @@ function windowOnClick(event) {
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+//
+// ========
+// + Background sounds + close-button +
+//
+
+var soundsModal = document.querySelector(".sounds_modal");
+var SBtntrigger = document.querySelector(".sounds-button");
+var closeSoundsButton = document.querySelector(".close-sounds");
+
+function toggleSounds() {
+  soundsModal.classList.toggle("show-sounds-modal");
+}
+function windowOutclick(event) {
+  if (event.target === soundsModal) {
+    toggleSounds();
+  }
+}
+SBtntrigger.addEventListener("click", toggleSounds);
+closeSoundsButton.addEventListener("click", toggleSounds);
+window.addEventListener("click", windowOutclick);
 
 //
 // ========
@@ -280,6 +302,23 @@ $(document).ready(function () {
 });
 
 //
+// ========
+// + Sounds category +
+// ========
+//
+$(document).ready(function () {
+  $("ul.sounds-category li").click(function () {
+    var tab_id = $(this).attr("data-tab");
+
+    $("ul.sounds-category li").removeClass("current");
+    $(".page-content").removeClass("current");
+
+    $(this).addClass("current");
+    $("#" + tab_id).addClass("current");
+  });
+});
+
+//
 //
 // ========
 // + Saturn's theme engine v2.1 +
@@ -409,7 +448,6 @@ highcontrast.onclick = () => {
   body.classList.replace("nord", "highcontrast");
   localStorage.setItem("theme", "highcontrast");
 };
-
 
 //
 // ========
