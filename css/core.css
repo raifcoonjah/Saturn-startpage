@@ -984,9 +984,11 @@ use the correct border radius == */
 */
 
 @media (max-width: 68.75em) {
+  .sounds-modal-content,
   .settings-content {
     max-width: 90%;
   }
+
   ul.tabs li {
     font-size: 12px !important;
   }
