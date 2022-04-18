@@ -268,11 +268,15 @@ ul.tabs li {
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
+  border-left: 3px solid transparent;
 }
 
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
+  background: var(--sat-setting-bg-effect);
+  border-left: 3px solid var(--sat-accent-color-lighter);
+  color: var(--sat-ids);
 }
 
 ul.tabs li.current {
