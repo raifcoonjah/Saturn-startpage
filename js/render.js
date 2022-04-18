@@ -117,7 +117,7 @@ const appsList = (x) => {
                       <span>Twitch</span>
                     </div></a
                   >
-                <a href="https://lifeat.io">
+                <a href="https://lifeat.io/app">
                 <div class="app">
                   <i class="las la-ticket-alt"></i>
                   <span>LifeAt</span>
@@ -211,6 +211,7 @@ const kShortcuts = (ks) => {
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
               <p> Press on <kbd>Esc</kbd> to close the both settings, favorites menu or to unfocus search bar.</p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. </p>
               <h4><i class="las la-icons"></i> Apps:</h4>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span></p>

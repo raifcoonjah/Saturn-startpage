@@ -129,8 +129,8 @@ v3 CSS Main.Core
   transform: translate(-50%, -50%);
   padding: 5px 15px;
   padding-bottom: 20px;
-  width: 40rem;
-  height: 35rem;
+  width: 26rem;
+  height: 25rem;
   border-radius: 20px;
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
@@ -249,6 +249,8 @@ input:checked + .slider:before {
   font-size: 1.2rem;
 }
 
+.control-button:hover,
+.audio-button:hover,
 .sounds-button:hover,
 .setting-button:hover {
   transition: var(--transition-speed-fast);
@@ -525,6 +527,7 @@ div.theme-container {
   transition: var(--transition-speed-fast);
 }
 
+.favorites-search input:focus,
 .favorites-search input:hover {
   background-color: var(--new-search-bg-hover-effect);
 }
@@ -583,19 +586,15 @@ div.theme-container {
 + Apps List Category +
 ========
 */
-
-.sounds-category,
 .apps-category {
   margin-top: 20px;
 }
 
-ul.sounds-category,
 ul.apps-category {
   padding: 0px;
   list-style: none;
 }
 
-ul.sounds-category li,
 ul.apps-category li {
   font-size: 16px;
   background: none;
@@ -607,7 +606,6 @@ ul.apps-category li {
   border: 2px solid var(--sat-bg);
 }
 
-ul.sounds-category li:hover,
 ul.apps-category li:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
@@ -615,7 +613,6 @@ ul.apps-category li:hover {
   box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
-ul.sounds-category li.current,
 ul.apps-category li.current {
   background-color: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
@@ -837,11 +834,18 @@ ul li {
 
 /* Every close button uses this */
 
-.close-sounds,
 .close-button {
   font-size: 25px;
   float: right;
   padding: 10px 10px;
+  margin: 10px;
+  border-radius: 100px;
+}
+
+.close-sounds {
+  font-size: 25px;
+  float: right;
+  padding: 5px;
   margin: 10px;
   border-radius: 100px;
 }

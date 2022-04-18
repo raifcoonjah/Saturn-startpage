@@ -284,6 +284,7 @@ $(document).keyup(function (se_icon) {
   }
 });
 
+
 //
 // ========
 // + App list category +
@@ -295,23 +296,6 @@ $(document).ready(function () {
 
     $("ul.apps-category li").removeClass("current");
     $(".app-content").removeClass("current");
-
-    $(this).addClass("current");
-    $("#" + tab_id).addClass("current");
-  });
-});
-
-//
-// ========
-// + Sounds category +
-// ========
-//
-$(document).ready(function () {
-  $("ul.sounds-category li").click(function () {
-    var tab_id = $(this).attr("data-tab");
-
-    $("ul.sounds-category li").removeClass("current");
-    $(".page-content").removeClass("current");
 
     $(this).addClass("current");
     $("#" + tab_id).addClass("current");
@@ -477,4 +461,46 @@ $(document).ready(function () {
       $("#Uname").val("Sorry, your browser does not support Web Storage..");
     }
   });
+});
+
+// Saturn Soundboard
+// v1.0
+
+var x = document.getElementById("raineffect");
+var y = document.getElementById("fireplace");
+x.loop = true;
+y.loop = true;
+
+// if play button is pressed change text to pause and if button is pressed pause audio
+$("#play").click(function () {
+  if (x.paused) {
+    x.play();
+    $("#play").addClass("pause");
+  } else {
+    x.pause();
+    $("#play").removeClass("pause");
+  }
+});
+
+// if button play is clicked y.play and pause y.pause
+$("#play-fireplace").click(function () {
+  if (y.paused) {
+    y.play();
+    $("#play-fireplace").addClass("pause");
+  } else {
+    y.pause();
+    $("#play-fireplace").removeClass("pause");
+  }
+});
+
+// button-increase volume
+$("#volume-increase").click(function () {
+  x.volume += 0.1;
+  y.volume += 0.1;
+});
+
+// button-decrease to decrease volume
+$("#volume-decrease").click(function () {
+  x.volume -= 0.1;
+  y.volume -= 0.1;
 });

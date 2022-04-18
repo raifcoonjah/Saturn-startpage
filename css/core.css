@@ -648,7 +648,8 @@ code {
 */
 
 kbd {
-  font-weight: 550;
+  font-weight: 600;
+  font-family: var(--default-font);
   background: var(--lighter-color);
   color: var(--sat-ids);
   padding: 1px 5px;
@@ -656,7 +657,6 @@ kbd {
   text-align: center;
   font-size: 1rem;
   border-radius: 7px;
-  font-style: var(--default-font);
 }
 
 pre {

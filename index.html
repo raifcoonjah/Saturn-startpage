@@ -88,20 +88,15 @@
         <div class="calendar-btn">
           <button
             class="setting-button"
-            data-tootik="Open Calendar (Ctrl + Alt + C)"
-            data-tootik-conf="left shadow no-arrow"
+            title="Open Google calendar (Ctrl + Alt + C)"
           >
             <i class="las la-calendar"></i>
           </button>
         </div>
       </a>
 
-      <button
-        class="sounds-button"
-        id="SBtntrigger"
-        title="Open Saturn sounds (Shift + B)"
-      >
-        <i class="las la-headphones"></i>
+      <button class="sounds-button" id="SBtntrigger" title="Open Soundboard">
+        <i class="las la-sliders-h"></i>
       </button>
 
       <!-- =+=+= App lists + App category =+=+= -->
@@ -167,9 +162,7 @@
             autocomplete="off"
             spellcheck="false"
           />
-          <label class="fav_title">
-            <i class="las la-eye"></i> Preview (Beta)</label
-          >
+          <label class="fav_title"> <i class="las la-eye"></i> Preview</label>
           <br />
           <div
             class="fav-livepreview"
@@ -179,16 +172,16 @@
           ></div>
           <!-- =+=+= Get custom icons =+=+=-->
           <label class="fav_title"
-            ><i class="las la-icons"></i> Get custom icons
+            ><i class="las la-icons"></i> Custom icons
           </label>
 
           <div id="fav_icons"></div>
+
           <!-- =+=+= Input ++ Favorite URL =+=+=-->
           <label class="fav_title"><i class="las la-link"></i> URL</label>
           <input
             id="url"
             placeholder="Enter or paste a URL"
-            required
             value="https://"
             autocomplete="off"
             spellcheck="false"
@@ -223,8 +216,7 @@
         </div>
         <!-- =+=+= Save message =+=+= -->
         <div id="saveMsgBar">
-          <i class="las la-smile-wink"></i> Awesome, new favorite saved
-          successfully!
+          <i class="las la-smile-wink"></i> Favorite saved successfully
         </div>
       </div>
 
@@ -253,7 +245,7 @@
                 class="tab-link"
                 id="tab-link"
                 data-tab="tab-4"
-                title="Saturn themes.."
+                title="Themes.."
               >
                 <i class="las la-palette"></i> Themes
               </li>
@@ -261,14 +253,14 @@
                 class="tab-link"
                 id="tab-link"
                 data-tab="tab-6"
-                title="Saturn layout and hide things"
+                title="Saturn layout and hide things.."
               >
                 <i class="las la-images"></i> Layout
               </li>
               <li
                 class="tab-link"
                 data-tab="tab-3"
-                title="About saturn, Links and what's new"
+                title="About saturn, Links and what's new.."
               >
                 <i class="las la-info-circle"></i> About
               </li>
@@ -284,7 +276,7 @@
               <div class="settings-background">
                 <!-- =+=+= Username =+=+= -->
                 <h3><i class="las la-user-edit"></i>Username</h3>
-                <p>Your username will be displayed on the home screen.</p>
+                <p>This will be displayed on the home screen.</p>
                 <div id="popUp" class="username-section">
                   <input
                     type="text"
@@ -312,10 +304,7 @@
                 </p>
                 <details>
                   <summary>Change Search</summary>
-                  <img
-                    src="/img/change-search.gif"
-                    alt="Image loading error..."
-                  />
+                  <img src="/img/change-search.gif" alt="change-search" />
 
                   <p>
                     Or: Press <kbd>Ctrl</kbd> +
@@ -341,7 +330,9 @@
           <!-- =+=+= Theme section =+=+=-->
           <div id="tab-4" class="tab-content">
             <p class="settings-item-title">Themes</p>
-            <p class="settings-item-under-title">Choose your theme.</p>
+            <p class="settings-item-under-title">
+              Choose a theme to match your mood and style.
+            </p>
             <div class="settings-background">
               <!-- =+=+= Themes =+=+=-->
 
@@ -354,7 +345,7 @@
                   src="/img/themes/light.png"
                   alt="light-icon.png"
                 />
-                <span class="theme-name">Saturn Light</span>
+                <span class="theme-name">Default light</span>
               </div>
 
               <!-- =+=+= Dark/Night themes =+=+=-->
@@ -366,7 +357,7 @@
                   src="/img/themes/lightdark.png"
                   alt="lighterdark-icon.png"
                 />
-                <span class="theme-name">Light Grey</span>
+                <span class="theme-name">Light grey</span>
               </div>
               <div class="theme-container" id="dracula">
                 <img
@@ -398,7 +389,7 @@
                   title="Dark theme"
                   alt="darktheme-icon.png"
                 />
-                <span class="theme-name">Saturn Dark</span>
+                <span class="theme-name">Default dark</span>
               </div>
               <!-- =+=+= Default Dark theme =+=+=-->
               <div class="theme-container" id="highcontrast">
@@ -425,7 +416,7 @@
                 <i class="las la-flask"></i>
                 <abbr
                   title=""
-                  data-tootik="Try out new themes coming to saturn in the future, expect bugs and glitches. "
+                  data-tootik="Try out new themes coming to saturn in the future. "
                   data-tootik-conf="top multiline"
                   >Experimental</abbr
                 >
@@ -514,36 +505,38 @@
       <div class="sounds_modal">
         <div class="sounds-modal-content">
           <span class="close-sounds"><i class="las la-times-circle"></i></span>
-          <h3 class="settings-title">
-            <img class="settings-icon" src="/img/dynamic-icon.png" />
-            | Saturn Sounds (Beta)
-          </h3>
-          <div class="sounds-category">
-            <h4 class="section-title new">Choose a Category</h4>
-            <ul class="sounds-category">
-              <li class="tab-link current" data-tab="page-1">
-                <i class="lar la-grin-hearts"></i> Category1
-              </li>
-              <li class="tab-link" data-tab="page-2">
-                <i class="las la-graduation-cap"></i> Category2
-              </li>
-              <li class="tab-link" data-tab="page-3">
-                <i class="las la-share-alt"></i> Category3
-              </li>
-              <li class="tab-link" data-tab="page-4">
-                <i class="las la-play-circle"></i> Category4
-              </li>
-              <li class="tab-link" data-tab="page-5">
-                <i class="las la-play-circle"></i> Category5
-              </li>
-            </ul>
-            <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
+          <p></p>
+          <h3 class="settings-title">Soundboard (Beta)</h3>
+          <button id="volume-decrease" class="control-button" type="button">
+            <i class="las la-minus"></i>
+          </button>
+          <button id="volume-increase" class="control-button" type="button">
+            <i class="las la-plus-circle"></i>
+          </button>
+          <div class="soundboard">
+            <div class="soundboard-container">
+              <!-- Audio src -->
+              <audio id="raineffect">
+                <source src="/soundboard/rain.mp3" type="audio/mpeg" />
+              </audio>
+
+              <!-- Audio Control (Includes play/pause/volup/voldown) -->
+              <button id="play" class="audio-button" type="button">
+                <i class="las la-cloud-rain"></i>
+              </button>
+            </div>
+            <div class="soundboard-container">
+              <!-- Audio src -->
+              <audio id="fireplace">
+                <source src="/soundboard/fireplace.mp3" type="audio/mpeg" />
+              </audio>
+
+              <!-- Audio Control (Includes play/pause/volup/voldown) -->
+              <button id="play-fireplace" class="audio-button" type="button">
+                <i class="las la-fire"></i>
+              </button>
+            </div>
           </div>
-          <div id="page-1" class="page-content current">Hello world...</div>
-          <div id="page-2" class="page-content">Hello world2...</div>
-          <div id="page-3" class="page-content">Hello world3...</div>
-          <div id="page-4" class="page-content">Hello world4...</div>
-          <div id="page-5" class="page-content">Hello world5...</div>
         </div>
       </div>
 

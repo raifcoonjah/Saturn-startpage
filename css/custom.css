@@ -20,3 +20,35 @@
 .center-content {
   display: inline-block;
 }
+
+.pause {
+  color: var(--sat-accent-color1);
+}
+
+.control-button {
+  font-size: 16px;
+  border-radius: 13px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+}
+
+.soundboard-container {
+  display: inline-block;
+}
+
+.audio-button i {
+  font-size: 60px;
+  display: block;
+}
+
+.audio-button {
+  outline: none;
+  padding: 10px 15px;
+  margin: 4px;
+  margin-top: 15px;
+  border-radius: 13px !important;
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+  display: block;
+}
