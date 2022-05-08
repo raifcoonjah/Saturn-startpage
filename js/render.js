@@ -202,14 +202,13 @@ const kShortcuts = (ks) => {
             <p class="settings-item-under-title">Shortcuts allows you to do things without ever needing to touch your 
             <i class="las la-mouse"></i> mouse again.</p>
             <div class="settings-background">
-              <h4><i class="las la-home"></i> While on the home screen:</h4>
+              <h4><i class="las la-home"></i> General</h4>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.</p>
               <p> Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.</p>
               <p> Press <kbd>Shift</kbd> + <kbd>S</kbd> to open & close settings menu. </p>
-              <h4><i class="las la-globe"></i> While anywhere:</h4>
               <p></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
+              <p> Press <kbd>Shift</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
               <p> Press on <kbd>Esc</kbd> to close the both settings, favorites menu or to unfocus search bar.</p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. </p>
               <h4><i class="las la-icons"></i> Apps:</h4>
@@ -221,6 +220,7 @@ const kShortcuts = (ks) => {
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> to open <span style="font-weight: 700;">Twitter.</span></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> to open <span style="font-weight: 700;">Google Calendar.</span></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd> to open <span style="font-weight: 700;">Gmail.</span></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd> to open <span style="font-weight: 700;">Instagram.</span></p>
             </div>
              <p style="text-align: center; font-weight: 500; font-size: 13px">
                 <a

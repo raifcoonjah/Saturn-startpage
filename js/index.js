@@ -73,7 +73,10 @@ function getTime() {
     //sec = date.getSeconds(),
     hour = date.getHours();
   return (
-    "" + (hour < 10 ? "0" + hour : hour) + ":" + (min < 10 ? "0" + min : min)
+    "" +
+    (hour < 10 ? "0" + hour : hour) +
+    "<span>:</span>" +
+    (min < 10 ? "0" + min : min)
   );
 }
 
@@ -284,6 +287,14 @@ $(document).keyup(function (se_icon) {
   }
 });
 
+// Ctrl + Alt + I to open instagram.com
+$(document).keyup(function (instagram) {
+  if (instagram.keyCode == 73 && instagram.altKey && instagram.ctrlKey) {
+    window.location.replace("https://instagram.com");
+  }
+});
+
+// Shift + B to open soundboard
 
 //
 // ========

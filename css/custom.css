@@ -26,11 +26,10 @@
 }
 
 .control-button {
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 13px;
+  width: 49%;
   margin-top: 10px;
-  margin-right: 10px;
-  padding: 10px 15px;
   outline: 4px solid transparent; /* This should be remove for a much more optimized version */
 }
 

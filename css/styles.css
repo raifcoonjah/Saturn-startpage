@@ -16,7 +16,7 @@ v3 CSS Main.Core
   font-weight: 500;
   box-sizing: border-box;
   outline: none;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   border-radius: 20px;
 }
 
@@ -41,11 +41,11 @@ v3 CSS Main.Core
 
 .search-bar:hover {
   background-color: var(--new-search-bg-hover-effect);
-  border: 1px solid var(--sat-accent-color1);
+  border: 3px solid var(--sat-accent-color1);
 }
 
 .search-bar:focus {
-  border: 1px solid var(--sat-accent-color1);
+  border: 3px solid var(--sat-accent-color1);
   background-color: var(--new-search-bg-hover-effect);
 }
 
@@ -70,6 +70,17 @@ v3 CSS Main.Core
   font-size: 60px;
 }
 
+.time span {
+  color: var(--sat-accent-color1);
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* 
 ========
 + Setting title +
@@ -77,12 +88,12 @@ v3 CSS Main.Core
 */
 
 .settings-title {
-  font-weight: 500;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 24px;
   line-height: 33px;
   text-align: left;
   padding: 20px;
-  margin: -15px;
+  margin: -5px;
   font-style: normal;
 }
 
@@ -93,7 +104,6 @@ v3 CSS Main.Core
 */
 
 .sounds_modal {
-  background-color: #15181f42;
   position: fixed;
   left: 0;
   top: 0;
@@ -108,7 +118,6 @@ v3 CSS Main.Core
 }
 
 .settings_modal {
-  background-color: #15181f42;
   position: fixed;
   left: 0;
   top: 0;
@@ -130,7 +139,7 @@ v3 CSS Main.Core
   padding: 5px 15px;
   padding-bottom: 20px;
   width: 26rem;
-  height: 25rem;
+  height: 23rem;
   border-radius: 20px;
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
@@ -508,7 +517,7 @@ div.theme-container {
 
 .favorites-search input,
 .username-section input {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .fav_ptgi_btn:hover, /* added this to make the hover animation similar */
@@ -518,13 +527,8 @@ div.theme-container {
 .favorites-search input:focus,
 .username-section input:focus,
 .username-section input:hover {
-  border: 1px solid var(--sat-accent-color1);
+  border: 2px solid var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
-}
-
-.favorites-search input:focus,
-.favorites-search input:hover {
-  background-color: var(--new-search-bg-hover-effect);
 }
 
 /* 
@@ -566,10 +570,10 @@ div.theme-container {
 .favorites-search input {
   margin-top: 15px;
   background: var(--sat-search-shortcuts);
-  padding: 11px 10px;
+  padding: 13px 13px;
   font-weight: 400;
   font-size: 14px;
-  border-radius: 12px;
+  border-radius: 13px;
 }
 
 .cuteapps:hover {
@@ -686,7 +690,7 @@ ul.apps-category li.current {
   transform: translate(-50%, -50%);
   padding: 1px 11px;
   width: 35rem;
-  height: 32.5rem;
+  height: 33.7rem;
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
@@ -805,9 +809,9 @@ ul li {
   width: 100%;
   color: var(--sat-ids);
   margin: 5px 0;
-  padding: 13px 13px 13px 13px;
+  padding: 16px 15px;
   outline: none;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   font-size: 14px;
   border-radius: var(--sat-border-radius);
 }
@@ -815,15 +819,16 @@ ul li {
 /* Large add favorite button */
 
 .fav-btn {
-  padding: 11px;
+  padding: 13px 12px;
   font-weight: 500;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
-  border: 1px solid var(--sat-search-shortcuts);
 }
 
 .fav-btn:hover {
-  border: 1px solid var(--sat-accent-color1);
+  background-color: var(--sat-accent-color1);
+  transition: var(--transition-speed-default);
+  color: var(--for-white);
 }
 
 /* Every close button uses this */
@@ -904,7 +909,7 @@ ul.fav_ptgi_category li {
   padding: 6px 9px;
   cursor: pointer;
   border-radius: var(--sat-border-radius);
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .fav_ptgi_btn:hover {
@@ -1074,7 +1079,7 @@ appearing when the user hovers on the open in new tab button.
 .fav-livepreview {
   border: 3px solid var(--sat-search-shortcuts);
   color: var(--sat-ids);
-  padding: 25px 10px;
+  padding: 20px 10px;
   border-radius: 15px;
 }
 

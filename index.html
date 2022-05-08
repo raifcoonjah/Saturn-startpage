@@ -71,6 +71,7 @@
               placeholder="Search with Google.."
               autocomplete="off"
               name="q"
+              title="Click to search (Ctrl + /)"
             />
           </form>
         </div>
@@ -101,9 +102,6 @@
 
       <!-- =+=+= App lists + App category =+=+= -->
       <div class="apps_list">
-        <h4 class="section-title new">
-          <i class="las la-chevron-right"></i> Apps list
-        </h4>
         <ul class="apps-category">
           <li class="tab-link current" data-tab="app-1">
             <i class="lar la-grin-hearts"></i> Most used
@@ -147,9 +145,9 @@
       <!-- =+=+= Favorites Modal =+=+= -->
       <div id="favModal" class="favModal">
         <div class="fav-content">
-          <!-- =+=+= Input ++ Favorite title =+=+=-->
           <p></p>
 
+          <!-- =+=+= Input ++ Favorite title =+=+=-->
           <label class="fav_title">Favorite title</label>
           <input
             id="title"
@@ -158,13 +156,14 @@
             autocomplete="off"
             spellcheck="false"
           />
-          <label class="fav_title"> <i class="las la-eye"></i> Preview</label>
+
+          <label class="fav_title"><i class="las la-eye"></i> Preview</label>
           <br />
           <div
             class="fav-livepreview"
             id="livepreview"
-            data-tootik="Start typing to see a preview of your favorite..."
-            data-tootik-conf="bottom"
+            data-tootik="Start typing to see a preview of your favorite"
+            data-tootik-conf="bottom no-arrow"
           ></div>
           <!-- =+=+= Get custom icons =+=+=-->
           <label class="fav_title"
@@ -197,7 +196,7 @@
               <a
                 href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
                 target="_blank"
-                >learn more <i class="las la-external-link-alt"></i
+                >learn more. <i class="las la-external-link-alt"></i
               ></a>
             </div>
 
@@ -222,10 +221,7 @@
           <span class="close-button"><i class="las la-times-circle"></i></span>
 
           <!-- =+=+= Settings Header/title =+=+= -->
-          <h3 class="settings-title">
-            <img class="settings-icon" src="/img/dynamic-icon.png" />
-            | Settings
-          </h3>
+          <h3 class="settings-title">Settings</h3>
 
           <!-- =+=+= Settings Navigation =+=+=-->
           <div class="container">
@@ -237,12 +233,7 @@
               >
                 <i class="las la-cog"></i> General
               </li>
-              <li
-                class="tab-link"
-                id="tab-link"
-                data-tab="tab-4"
-                title="Themes.."
-              >
+              <li class="tab-link" id="tab-link" data-tab="tab-4">
                 <i class="las la-palette"></i> Themes
               </li>
               <li
@@ -253,11 +244,7 @@
               >
                 <i class="las la-images"></i> Layout
               </li>
-              <li
-                class="tab-link"
-                data-tab="tab-3"
-                title="About saturn, Links and what's new.."
-              >
+              <li class="tab-link" data-tab="tab-3">
                 <i class="las la-info-circle"></i> About
               </li>
               <p class="line"></p>
@@ -271,8 +258,8 @@
               <p class="settings-item-title">General</p>
               <div class="settings-background">
                 <!-- =+=+= Username =+=+= -->
-                <h3><i class="las la-user-edit"></i>Username</h3>
-                <p>This will be displayed on the home screen.</p>
+                <h3><i class="las la-user-edit"></i> Username</h3>
+                <p>Set a username that will be displayed on the home screen.</p>
                 <div id="popUp" class="username-section">
                   <input
                     type="text"
@@ -303,9 +290,10 @@
                   <img src="/img/change-search.gif" alt="change-search" />
 
                   <p>
-                    Or: Press <kbd>Ctrl</kbd> +
+                    Or
+                    <br />
+                    Press <kbd>Ctrl</kbd> +
                     <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up)
-                    to switch between search engines.
                   </p>
                 </details>
               </div>
@@ -341,7 +329,7 @@
                   src="/img/themes/light.png"
                   alt="light-icon.png"
                 />
-                <span class="theme-name">Default light</span>
+                <span class="theme-name">Default Light</span>
               </div>
 
               <!-- =+=+= Dark/Night themes =+=+=-->
@@ -353,7 +341,7 @@
                   src="/img/themes/lightdark.png"
                   alt="lighterdark-icon.png"
                 />
-                <span class="theme-name">Light grey</span>
+                <span class="theme-name">Light Grey</span>
               </div>
               <div class="theme-container" id="dracula">
                 <img
@@ -385,7 +373,7 @@
                   title="Dark theme"
                   alt="darktheme-icon.png"
                 />
-                <span class="theme-name">Default dark</span>
+                <span class="theme-name">Default Dark</span>
               </div>
               <!-- =+=+= Default Dark theme =+=+=-->
               <div class="theme-container" id="highcontrast">
@@ -395,7 +383,7 @@
                   title="Dark theme"
                   alt="highconstrast-icon.png"
                 />
-                <span class="theme-name">High contrast</span>
+                <span class="theme-name">High Contrast</span>
               </div>
               <!-- =+=+= Space Dark theme =+=+=-->
               <div class="theme-container" id="space">
@@ -405,7 +393,7 @@
                   title="Space dark theme"
                   alt="spacedark-icon.png"
                 />
-                <span class="theme-name">Space dark</span>
+                <span class="theme-name">Space Dark</span>
               </div>
               <!-- + Experimental theme section + -->
               <p class="theme-title">
@@ -413,7 +401,7 @@
                 <abbr
                   title=""
                   data-tootik="Try out new themes coming to saturn in the future. "
-                  data-tootik-conf="top multiline"
+                  data-tootik-conf="top multiline no-arrow"
                   >Experimental</abbr
                 >
                 theme
@@ -501,15 +489,8 @@
       <div class="sounds_modal">
         <div class="sounds-modal-content">
           <span class="close-sounds"><i class="las la-times-circle"></i></span>
-          <p></p>
-          <h3 class="settings-title">Soundboard (Beta)</h3>
-          <button id="volume-decrease" class="control-button" type="button">
-            <i class="las la-minus"></i>
-          </button>
-          <button id="volume-increase" class="control-button" type="button">
-            <i class="las la-plus-circle"></i>
-          </button>
           <div class="soundboard">
+            <h4>Local</h4>
             <div class="soundboard-container">
               <!-- Audio src -->
               <audio id="raineffect">
@@ -532,6 +513,18 @@
                 <i class="las la-fire"></i>
               </button>
             </div>
+            <h4>External</h4>
+            <p class="small_text">Requires an internet connection.</p>
+            <h6>Nothing here yet.. 😥</h6>
+            <br />
+            <p class="line"></p>
+            <h4>Audio controls</h4>
+            <button id="volume-decrease" class="control-button" type="button">
+              <i class="las la-minus"></i>
+            </button>
+            <button id="volume-increase" class="control-button" type="button">
+              <i class="las la-plus-circle"></i>
+            </button>
           </div>
         </div>
       </div>

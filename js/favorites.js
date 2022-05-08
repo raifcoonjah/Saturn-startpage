@@ -114,8 +114,8 @@ document.body.addEventListener("keydown", function () {
 // ========
 //
 
-document.addEventListener("keydown", function (e) {
-  if (e.ctrlKey && e.keyCode == 90) {
+document.addEventListener("keydown", function (favModal) {
+  if (favModal.keyCode == 90 && favModal.shiftKey) {
     document.getElementById("favBtn").click();
   }
 });
