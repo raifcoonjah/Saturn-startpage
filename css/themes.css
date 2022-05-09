@@ -1,41 +1,63 @@
 /* Saturn's theme engine v3. */
 
-/* Default Light theme */
+/* Default Light theme [New] - v2.0 */
 .light {
   --sat-heading: #1a1a1a; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #1a1a1a; /* Every icon and text apart from links and above. */
-  --sat-bg: #fafafa; /* Main background */
-  --sat-bg-borders: #fafafa; /* Same as background color, but used inside of settings-button and app */
-  --sat-search-shortcuts: #e4e4e4; /* Favorites, app list & search, inputs. */
+  --sat-lighter-ids: #3e3e3e; /* Every icon and text apart from links and above. */
+  --sat-bg: rgb(255, 255, 255); /* Main background */
+  --sat-bg-borders: rgb(
+    255,
+    255,
+    255
+  ); /* Same as background color, but used inside of settings-button and app */
+  --sat-search-shortcuts: rgb(
+    233,
+    233,
+    233
+  ); /* Favorites, app list & search, inputs. */
   --sat-links: #1a1a1a; /* Links and stuff */
-  --sat-setting-bg-color: #eeeeee; /* Settings background color */
-  --sat-setting-bg-effect: #dddddddc; /* Settings options background color */
+  --sat-setting-bg-color: rgb(239, 240, 241); /* Settings background color */
+  --sat-setting-bg-effect: rgb(
+    228,
+    228,
+    228
+  ); /* Settings options background color */
   --sat-input-hover: #b1b1b1;
   --sat-search-bar-focus: #999999;
   --sat-tooltip-bg: #c0c0c0; /* Tooltip background */
   --default-font: "Inter", sans-serif;
   --sat-border-radius: 15px;
-  --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
-  --sat-accent-color1: hsl(208, 67%, 56%);
-  --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.63);
-  --moreapps-hovering-clr: hsl(208, 67%, 56%);
-  --favorites-hover: #c4c4c4;
-  --switch-color-bg-new: #919191;
+  --gudmrning-txt: linear-gradient(
+    to right,
+    rgb(61, 174, 233) 0%,
+    #6fbeec 100%
+  );
+  --sat-accent-color1: rgb(61, 174, 233);
+  --sat-accent-color-lighter: #96c9e6;
+  --moreapps-hovering-clr: rgb(61, 174, 233);
+  --favorites-hover: #dbdbdb;
+  --switch-color-bg-new: #aaaaaa;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
-  --add-link-border: rgb(150, 151, 151); /* Favorite input border color */
+  --add-link-border: rgb(239, 240, 241); /* Favorite input border color */
   --delete-warning-bg: #d75352; /* Favorite delete button color */
   --delete-warning-border: #d75252a2;
   --switch-color-bg-after: #000000;
-  --switch-color-bg: #adadad;
-  --settings-button-outline: #bbbbbb; /* The outline color on the open settings button */
-  --new-search-bg-hover-effect: rgb(199, 199, 199);
+  --switch-color-bg: rgb(239, 240, 241);
+  --theme-container: rgb(
+    206,
+    206,
+    206
+  ); /* Used by the contains that contain themes icons and text. */
+  --settings-button-outline: #d4d4d4; /* The outline color on the open settings button */
+  --new-search-bg-hover-effect: rgb(218, 218, 218);
   --lighter-color: rgb(
-    196,
-    196,
-    196
+    214,
+    214,
+    214
   ); /* Every that needs a light background color */
-  --close-button-color: rgb(255, 255, 255); /* Used by close buttons */
+  --close-button-color: #fff;
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -51,7 +73,8 @@
 .dark {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: #0c0d11;
+  --sat-lighter-ids: #ffffffe2; /* Every icon and text apart from links and above. */
+  --sat-bg: #101116;
   --sat-bg-borders: #0c0d11;
   --sat-search-shortcuts: #15181f;
   --sat-links: hsl(0, 0%, 95%);
@@ -78,8 +101,9 @@
   --new-search-bg-hover-effect: #1e222b;
   --sat-border-radius: 15px;
   --switch-color-bg: #303846de;
+  --theme-container: #181e27; /* Used by the contains that contain themes icons and text. */
   --lighter-color: #191d25; /* Every that needs a light background color */
-  --close-button-color: #000; /* Used by close buttons */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Transitions */
   --transition-speed-fast: 0.1s;
@@ -96,6 +120,7 @@
 .space {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
+  --sat-lighter-ids: #ffffffe2; /* Every icon and text apart from links and above. */
   --sat-bg: #0f0f0f; /* Main background */
   --sat-bg-borders: #0f0f0f;
   --sat-search-shortcuts: #181818; /* Favorites, app list & search, inputs. */
@@ -113,10 +138,10 @@
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222222; /* Tooltip background */
   --default-font: "Inter", sans-serif;
-  --gudmrning-txt: linear-gradient(to right, #ffb07d 0%, #e9772a 100%);
-  --sat-accent-color1: #ffb07d;
-  --sat-accent-color-lighter: #ffb17dad;
-  --moreapps-hovering-clr: #ffb07d;
+  --gudmrning-txt: linear-gradient(to right, #ff9f6d 0%, #e07b44 100%);
+  --sat-accent-color1: #ff9f6d;
+  --sat-accent-color-lighter: #f4b593aa;
+  --moreapps-hovering-clr: #ff9f6d;
   --favorites-hover: rgb(46, 46, 46);
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
@@ -130,7 +155,7 @@
   --new-search-bg-hover-effect: #353535; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #1f1f1f; /* Every that needs a light background color */
-  --close-button-color: #000; /* Used by close buttons */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -142,15 +167,16 @@
   --svg-invert: invert(100%);
 }
 
-/* Linkin park theme (BETA) */
+/* Linkin park theme (BETA version 1.17.009) */
 
 .linkin-park {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
-  --sat-bg: url(/img/linkin-park.png);
+  --sat-lighter-ids: #ffffffe2; /* Every icon and text apart from links and above. */
+  --sat-bg: url(/img/rock-legend.jpg);
   --sat-bg-borders: #0e0e0e;
   --sat-bg-fix: #0e0e0e;
-  --sat-search-shortcuts: #181818;
+  --sat-search-shortcuts: #23221d;
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: #686868;
   --sat-setting-bg-color: #0e0e0e;
@@ -160,9 +186,9 @@
   --sat-tooltip-bg: #222;
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #e6dada, #274046);
-  --sat-accent-color1: #686868;
-  --sat-accent-color-lighter: #68686896;
-  --moreapps-hovering-clr: #686868;
+  --sat-accent-color1: #99998f;
+  --sat-accent-color-lighter: #b8b8aa;
+  --moreapps-hovering-clr: #99998f;
   --favorites-hover: rgb(46, 46, 46);
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
@@ -175,7 +201,8 @@
   --new-search-bg-hover-effect: #2e2e2e;
   --sat-border-radius: 15px;
   --lighter-color: #1f1f1f; /* Every that needs a light background color */
-  --close-button-color: #000; /* Used by close buttons */
+  --close-button-color: rgb(0, 0, 0);
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -192,6 +219,7 @@
 .lighterdarktheme {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
+  --sat-lighter-ids: #ffffffe2; /* Every icon and text apart from links and above. */
   --sat-bg: #212427; /* Main background */
   --sat-bg-borders: #212427;
   --sat-search-shortcuts: #282c31; /* Favorites, app list & search, inputs. */
@@ -225,7 +253,7 @@
   --new-search-bg-hover-effect: #3e4349; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #2f3338; /* Every that needs a light background color */
-  --close-button-color: #000; /* Used by close buttons */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -242,6 +270,7 @@
 .dracula {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
+  --sat-lighter-ids: #ffffffe2; /* Every icon and text apart from links and above. */
   --sat-bg: #282a36; /* Main background */
   --sat-bg-borders: #282a36;
   --sat-search-shortcuts: #343644; /* Favorites, app list & search, inputs. */
@@ -274,7 +303,7 @@
   --new-search-bg-hover-effect: #44485c; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #404252; /* Every that needs a light background color */
-  --close-button-color: #000; /* Used by close buttons */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -291,6 +320,7 @@
 .nord {
   --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
   --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
+  --sat-lighter-ids: #ffffffe2; /* Every icon and text apart from links and above. */
   --sat-bg: #2e3440; /* Main background */
   --sat-bg-borders: #2e3440;
   --sat-search-shortcuts: #3b4252; /* Favorites, app list & search, inputs. */
@@ -316,7 +346,7 @@
   --new-search-bg-hover-effect: #434c5f; /* New search hover color */
   --sat-border-radius: 15px;
   --lighter-color: #424a5c; /* Every that needs a light background color */
-  --close-button-color: #000; /* Used by close buttons */
+  --close-button-color: rgb(0, 0, 0);
 
   /* Multiple transition speeds */
   --transition-speed-fast: 0.1s;
@@ -326,4 +356,134 @@
   /* Favorites improvements */
   /* fixing svg support by inverting its color accordingly */
   --svg-invert: invert(100%);
+}
+
+/* Default Dark theme */
+.highcontrast {
+  --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
+  --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
+  --sat-lighter-ids: #ffffffe2; /* used by description */
+  --sat-bg: #0a0c10; /* Main background */
+  --sat-bg-borders: #0a0c10;
+  --sat-search-shortcuts: #272b33; /* Favorites, app list & search, inputs. */
+  --sat-links: hsl(0, 0%, 95%); /* Links and stuff */
+  /* Text selector color */
+  --sat-setting-bg-color: #11141b; /* Settings background color */
+  --sat-setting-bg-effect: #272b33; /* Settings options background color */
+  --sat-input-hover: #3a404d;
+  --default-font: "Inter", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #409eff 0%, #5baaf8 100%);
+  --sat-accent-color1: #409eff;
+  --sat-accent-color-lighter: #40a0ffb9;
+  --moreapps-hovering-clr: #409eff;
+  --favorites-hover: #4c566a;
+  --for-white: #ffffff;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --add-link-border: #4c566a; /* Favorite input border color */
+  --delete-warning-bg: #d75352; /* Favorite delete button color */
+  --delete-warning-border: #d75252a2;
+  --switch-color-bg-new: #6f7782;
+  --settings-button-outline: #6f7782; /* The outline color on the open settings button */
+  --new-search-bg-hover-effect: #313641; /* New search hover color */
+  --sat-border-radius: 15px;
+  --lighter-color: #434a58; /* Every that needs a light background color */
+  --close-button-color: rgb(0, 0, 0);
+
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
+}
+
+/* Amazingly Purple theme */
+.amazinglypurple {
+  --sat-heading: #ffffff; /* Settings header, settings options title, app list title, favorites title, favorites title */
+  --sat-ids: #ffffff; /* Every icon and text apart from links and above. */
+  --sat-lighter-ids: #ffffffe2; /* used by description */
+  --sat-bg: #1e1c26; /* Main background */
+  --sat-bg-borders: #ec2121;
+  --sat-search-shortcuts: #2a2833; /* Favorites, app list & search, inputs. */
+  --sat-links: hsl(0, 0%, 95%); /* Links and stuff */
+  /* Text selector color */
+  --sat-setting-bg-color: #211f2a; /* Settings background color */
+  --sat-setting-bg-effect: #2f2c3b; /* Settings options background color */
+
+  --default-font: "Inter", sans-serif;
+  --gudmrning-txt: linear-gradient(to right, #966fd6 0%, #5d2ea9 100%);
+  --sat-accent-color1: #966fd6;
+  --sat-accent-color-lighter: #966fd6d1;
+  --moreapps-hovering-clr: #409eff;
+  --favorites-hover: #423762;
+  --for-white: #ffffff;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --delete-warning-bg: #d75352; /* Favorite delete button color */
+  --delete-warning-border: #d75252a2;
+  --switch-color-bg-new: #413d52;
+  --settings-button-outline: #413d52; /* The outline color on the open settings button */
+  --new-search-bg-hover-effect: #413d52; /* New search hover color */
+  --sat-border-radius: 15px;
+  --lighter-color: #444055; /* Every that needs a light background color */
+  --close-button-color: rgb(0, 0, 0);
+
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(100%);
+}
+
+.lightplusplus {
+  --sat-heading: #1a1a1a; /* Settings header, settings options title, app list title, favorites title, favorites title */
+  --sat-ids: #000000; /* Every icon and text apart from links and above. */
+  --sat-lighter-ids: #141414; /* Every icon and text apart from links and above. */
+  --sat-bg: #ffffff; /* Main background */
+  --sat-bg-borders: rgb(
+    255,
+    255,
+    255
+  ); /* Same as background color, but used inside of settings-button and app */
+  --sat-search-shortcuts: #e7ecf0; /* Favorites, app list & search, inputs. */
+  --sat-links: #1a1a1a; /* Links and stuff */
+  --sat-setting-bg-color: #ffffff; /* Settings background color */
+  --sat-setting-bg-effect: #e7ecf0; /* Settings options background color */
+  --default-font: "Inter", sans-serif;
+  --sat-border-radius: 15px;
+  --gudmrning-txt: linear-gradient(to right, #0349b4 0%, #6fbeec 100%);
+  --sat-accent-color1: #0349b4;
+  --sat-accent-color-lighter: #0a4fb788;
+  --moreapps-hovering-clr: #0349b4;
+  --favorites-hover: #dbdbdb;
+  --switch-color-bg-new: #aaaaaa;
+  --for-white: #ffffff;
+  --settings-warning-bg: rgba(247, 247, 1, 0.322);
+  --add-link-border: rgb(239, 240, 241); /* Favorite input border color */
+  --delete-warning-bg: #d75352; /* Favorite delete button color */
+  --delete-warning-border: #d75252a2;
+  --switch-color-bg-after: #000000;
+  --switch-color-bg: rgb(239, 240, 241);
+  --theme-container: rgb(
+    206,
+    206,
+    206
+  ); /* Used by the contains that contain themes icons and text. */
+  --settings-button-outline: #d4d9dd; /* The outline color on the open settings button */
+  --new-search-bg-hover-effect: #e7ecf0;
+  --lighter-color: #ffffff; /* Every that needs a light background color */
+  --close-button-color: #fff;
+
+  /* Multiple transition speeds */
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
+
+  /* Favorites improvements */
+  /* fixing svg support by inverting its color accordingly */
+  --svg-invert: invert(0%);
 }

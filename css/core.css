@@ -83,7 +83,6 @@ amount of time saturn takes to load +
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/inter-v7-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 /* 
 ========
 + Part of: +
@@ -258,7 +257,6 @@ input {
   /* 1 */
   overflow: visible;
 }
-
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
@@ -470,11 +468,14 @@ button {
 body {
   /* Center body in page */
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 805px;
   border-radius: var(--sat-border-radius);
   overflow-x: hidden;
+  display: block;
   background: var(--sat-bg);
-
+  margin-top: -30px;
+  padding-top: 90px;
+  box-sizing: border-box;
   /* Minor ajustments for better image background support */
   /* This should fix all issues we had before */
   background-repeat: no-repeat;
@@ -590,17 +591,30 @@ input[type="button"] {
   font-size: 1rem;
   display: inline-block;
   outline: none;
-  padding: 9px 9px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
-  border: 0;
+  border: 1px solid transparent;
   border-radius: var(--sat-border-radius);
   box-sizing: border-box;
   cursor: pointer;
   color: var(--sat-ids);
+}
+
+/* Press effect that happens when you press on buttons.. */
+
+ul.fav_ptgi_category li:active,
+.app:active,
+.theme-container:active,
+.close-button:active,
+button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
 }
 
 a button[disabled],
@@ -623,6 +637,10 @@ pre {
   border-radius: 8px;
 }
 
+code {
+  padding: 2px 2px;
+}
+
 /* 
 ========
 + Custom kdb styles +
@@ -630,14 +648,15 @@ pre {
 */
 
 kbd {
-  font-weight: 550;
+  font-weight: 600;
+  font-family: var(--default-font);
   background: var(--lighter-color);
   color: var(--sat-ids);
-  padding: 2px 10px;
+  padding: 1px 5px;
+  margin: -1px;
   text-align: center;
   font-size: 1rem;
   border-radius: 7px;
-  font-style: var(--default-font);
 }
 
 pre {
@@ -667,8 +686,12 @@ code pre {
 
 details {
   display: block;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1rem;
   background-color: var(--lighter-color);
+  border-radius: var(--sat-border-radius);
+}
+
+details img {
   border-radius: var(--sat-border-radius);
 }
 
@@ -681,7 +704,6 @@ summary {
 summary:hover {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
-  text-decoration: underline;
 }
 
 details[open] {
@@ -788,14 +810,14 @@ input {
 textarea:hover,
 select:hover,
 input:hover {
-  background-color: var(--sat-input-hover);
+  background-color: var(--lighter-color);
   transition: var(--transition-speed-default);
 }
 
 textarea:focus,
 select:focus,
 input:focus {
-  background-color: var(--sat-search-bar-focus);
+  background-color: var(--lighter-color);
 }
 
 img {
@@ -825,6 +847,7 @@ img {
 
 /* == Settings background color == */
 
+.sounds-modal-content,
 .settings-content {
   background: var(--sat-setting-bg-color);
 }
@@ -838,7 +861,7 @@ img {
 
 /* == Allows the "header text" to make use of gradient effect == */
 
-.gudmorning {
+.good_morning {
   background-color: var(--gudmrning-txt-bg);
   background-image: var(--gudmrning-txt);
 }
@@ -924,6 +947,7 @@ ul.tabs li,
 .app,
 #favorite-links:hover,
 .close-button,
+.close-sounds,
 .new-close-fav {
   cursor: pointer;
 }
@@ -944,4 +968,63 @@ use the correct border radius == */
 .settings-background,
 .settings-background-warning {
   border-radius: var(--sat-border-radius);
+}
+
+.mobile-warning {
+  background-color: var(--delete-warning-bg);
+  border-radius: 5px;
+  visibility: hidden;
+  font-weight: 700;
+}
+/* 
+========
++ Mobile optimizations (work in progress..) +
+========
+*/
+
+@media (max-width: 68.75em) {
+  .sounds-modal-content,
+  .settings-content {
+    max-width: 90%;
+  }
+
+  ul.tabs li {
+    font-size: 12px !important;
+  }
+  ul.tabs li,
+  ul.tabs li.current {
+    background: transparent !important;
+    width: 40px;
+    padding: 10px 20px 1px 5px !important;
+    font-size: 0px !important;
+  }
+  .mobile-warning {
+    visibility: visible;
+  }
+  ul.tabs li i:hover {
+    background: var(--sat-search-shortcuts);
+    color: var(--sat-accent-color1);
+    transition: var(--transition-speed-default);
+    box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
+  }
+  ul.tabs li i {
+    padding: 20px 20px !important;
+    font-size: 20px !important;
+    border-radius: 10px;
+  }
+
+  .tab-content {
+    width: 86%;
+    margin-left: 45px !important;
+  }
+  .username-section input {
+    width: 50%;
+  }
+  .fav-content {
+    width: 23rem !important;
+    height: 36rem !important;
+  }
+  .settings-title {
+    font-size: 1.2rem !important;
+  }
 }

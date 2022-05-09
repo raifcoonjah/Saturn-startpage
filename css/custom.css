@@ -5,3 +5,55 @@
 ========
 */
 
+.settings-item-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 10px !important;
+}
+
+.settings-item-under-title {
+  font-size: 17px;
+  margin-top: -15px;
+  margin-left: 10px !important;
+}
+
+.center-content {
+  display: inline-block;
+}
+
+.pause {
+  color: var(--sat-accent-color1);
+}
+
+.control-button {
+  font-size: 20px;
+  border-radius: 13px;
+  width: 49%;
+  margin-top: 25px;
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+}
+
+.soundboard-container {
+  display: inline-block;
+}
+
+.audio-button i {
+  font-size: 60px;
+  display: block;
+}
+
+.audio-button {
+  outline: none;
+  padding: 10px 15px;
+  margin: 4px;
+  margin-top: 15px;
+  border-radius: 13px !important;
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+  display: block;
+  display: inline-block;
+}
+
+.description {
+  color: var(--sat-lighter-ids) !important;
+  font-size: 16px;
+}

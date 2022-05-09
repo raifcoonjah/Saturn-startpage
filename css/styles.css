@@ -5,24 +5,13 @@ v3 CSS Main.Core
 
 /* 
 ========
-+ Body +
-========
-*/
-body {
-  box-sizing: border-box;
-  padding-top: 90px;
-  overflow-x: hidden;
-}
-
-/* 
-========
 + Search bar +
 ========
 */
 .search-bar {
   width: 100%;
   font-size: 1.3em;
-  padding: 17px 50px;
+  padding: 20px 48px;
   text-align: left;
   font-weight: 500;
   box-sizing: border-box;
@@ -52,24 +41,12 @@ body {
 
 .search-bar:hover {
   background-color: var(--new-search-bg-hover-effect);
+  border: 3px solid var(--sat-accent-color1);
 }
 
 .search-bar:focus {
-  border: 3px solid var(--new-search-bg-hover-effect);
-}
-
-.fill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  text-align: center;
-}
-
-.fill img {
-  flex-shrink: 0;
-  width: 199px;
+  border: 3px solid var(--sat-accent-color1);
+  background-color: var(--new-search-bg-hover-effect);
 }
 
 /* 
@@ -77,20 +54,31 @@ body {
 + Header good morning text and time +
 ========
 */
-.gudmorning {
+
+.good_morning {
   font-weight: 500;
-  text-align: left;
-  font-size: 45px;
+  text-align: center;
+  font-size: 30px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .time {
-  font-weight: 500;
-  text-align: left;
-  margin-top: -10px;
-  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 60px;
+}
+
+.time span {
+  color: var(--sat-accent-color1);
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 /* 
@@ -100,12 +88,12 @@ body {
 */
 
 .settings-title {
-  font-weight: 500;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 24px;
   line-height: 33px;
   text-align: left;
   padding: 20px;
-  margin: -15px;
+  margin: -5px;
   font-style: normal;
 }
 
@@ -115,8 +103,7 @@ body {
 ========
 */
 
-.settings_modal {
-  background-color: #15181f42;
+.sounds_modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -130,6 +117,35 @@ body {
   backdrop-filter: blur(10px);
 }
 
+.settings_modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.sounds-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 15px;
+  padding-bottom: 20px;
+  width: 30rem;
+  height: 21rem;
+  border-radius: 20px;
+  overflow-y: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
+  border: 1px solid var(--lighter-color);
+}
+
 .settings-content {
   position: absolute;
   top: 50%;
@@ -139,9 +155,10 @@ body {
   padding-bottom: 20px;
   width: 77rem;
   height: 35rem;
-  overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
+  border: 1px solid var(--lighter-color);
 }
 
 .show-modal {
@@ -151,6 +168,12 @@ body {
   transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
 }
 
+.show-sounds-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
+}
 /* 
 ========
 + Everything switch related +
@@ -215,24 +238,32 @@ input:checked + .slider:before {
 
 .section-title {
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--sat-ids);
 }
 
+.sounds-button,
 .setting-button {
   outline: none;
-  padding: 12px 10px;
-  border-radius: 16px !important;
+  padding: 12px 12px;
+  margin: 4px;
+  border-radius: 13px !important;
   float: right;
-  border: 4px solid var(--sat-bg-borders); /* This should be remove for a much more optimized version */
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
 }
 
+.sounds-button i,
 .setting-button i {
   font-size: 1.2rem;
 }
 
+.control-button:hover,
+.audio-button:hover,
+.sounds-button:hover,
 .setting-button:hover {
   transition: var(--transition-speed-fast);
-  border: 4px solid var(--settings-button-outline);
+  outline: 4px solid var(--settings-button-outline);
 }
 
 /* 
@@ -242,26 +273,28 @@ input:checked + .slider:before {
 */
 
 ul.tabs li {
-  font-weight: 500;
   color: var(--sat-ids);
-  padding: 10px 35px;
-  margin: 5px;
+  padding: 10px 45px;
   margin-left: 10px;
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
+  border-left: 3px solid transparent;
 }
 
 ul.tabs li:hover {
   color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
+  background: var(--sat-setting-bg-effect);
+  border-left: 3px solid var(--sat-accent-color-lighter);
+  color: var(--sat-ids);
 }
 
 ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
   border-left: 3px solid var(--sat-accent-color1);
   color: var(--sat-ids);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 ul.tabs li.current i {
@@ -278,7 +311,7 @@ ul.tabs li {
 }
 .tab-content {
   display: none;
-  animation: slide-up-fade-in 90ms;
+  animation: slide-up-fade-in 180ms;
 }
 
 .tab-content h4 i {
@@ -291,7 +324,7 @@ ul.tabs li {
 
 /* 
 ========
-+ App list v2.0 +
++ App list v2.5 +
 ========
 */
 
@@ -325,7 +358,7 @@ ul.tabs li {
 }
 
 .app span {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   margin: 0;
   position: absolute;
@@ -340,10 +373,12 @@ ul.tabs li {
   bottom: 108%;
 }
 
+.page-content,
 .app-content {
-  animation: fadeIn 130ms ease;
+  animation: fadeIn 90ms ease;
 }
 
+.page-content,
 .app-content {
   display: none;
 }
@@ -352,6 +387,7 @@ ul.tabs li {
   color: var(--sat-accent-color1);
 }
 
+.page-content.current,
 .app-content.current {
   display: inherit;
 }
@@ -366,7 +402,7 @@ ul.tabs li {
   margin: 10px;
   padding: 10px;
   background: var(--sat-setting-bg-effect);
-  border: 1px solid transparent;
+  outline: 1px solid transparent;
 }
 
 .settings-background-warning {
@@ -374,29 +410,47 @@ ul.tabs li {
   background: var(--settings-warning-bg);
 }
 
-.settings-background:hover {
-  border: 1px solid var(--sat-input-hover);
-  transition: var(--transition-speed-fast);
-}
-
 /* 
 ========
-+ Theme Icons (YES, they are just small png images that i make in figma.) +
++ Theme Icons (No longer figma made, instead we're using a screenshot of the theme) +
 ========
 */
 
-.theme-icon img {
-  width: 150px;
-  height: 75px;
-  padding: 3px;
-  border-radius: 20px;
-  position: relative;
+.theme-icon {
+  margin: -2.5px;
+  border-radius: 13px;
+  height: 4.5rem;
+  margin-bottom: 0.1px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-.theme-icon img:hover {
+div.theme-container {
+  display: table;
+  padding: 2.5px 0px;
+  margin: 2px;
+  border-radius: var(--sat-border-radius);
+
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid var(--lighter-color);
+  cursor: pointer;
+  outline: 2px solid transparent;
+}
+
+.theme-container:hover {
+  color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  background-color: var(--sat-accent-color1);
-  top: -3px;
+  border: 2px solid var(--sat-accent-color1);
+  outline: 2px solid var(--sat-accent-color-lighter);
+}
+
+.theme-name {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: -0.5px;
 }
 
 .theme-title {
@@ -405,31 +459,12 @@ ul.tabs li {
 }
 
 .theme-title i {
+  transition: var(--transition-speed-default);
+  font-size: 17px;
+  background-color: var(--lighter-color);
+  padding: 4px;
+  border-radius: 10px;
   color: var(--sat-accent-color1);
-}
-
-/* 
-========
-+ Mobile optimizations (work in progress..) +
-========
-*/
-
-@media (max-width: 900px) {
-  .settings-content {
-    width: 90%;
-    height: 75%;
-  }
-  ul.tabs li {
-    padding: 7px 7px;
-  }
-
-  .cuteapps p {
-    font-size: 10px;
-  }
-  .cuteapps i {
-    font-size: 2.3em;
-    margin-top: 10px;
-  }
 }
 
 /* 
@@ -453,7 +488,7 @@ ul.tabs li {
 }
 
 .cancel-fav-btn {
-  padding: 15px 11px;
+  padding: 13px 11px;
   outline: none;
   color: var(--sat-ids);
 }
@@ -469,14 +504,31 @@ ul.tabs li {
 */
 .username-section input {
   background-color: var(--lighter-color);
-  width: 30%;
+  padding: 15px;
   font-size: 15px;
-  border: 2px solid var(--sat-setting-bg-effect);
+  border: 1px solid transparent;
 }
 
+/* 
+========
++ Consistent UI / Input bars +
+========
+*/
+
+.favorites-search input,
+.username-section input {
+  border: 2px solid transparent;
+}
+
+.fav_ptgi_btn:hover, /* added this to make the hover animation similar */
+.favModal input:hover,
+.favModal input:focus,
+.favorites-search input:hover,
+.favorites-search input:focus,
 .username-section input:focus,
 .username-section input:hover {
-  background-color: var(--sat-input-hover);
+  border: 2px solid var(--sat-accent-color1);
+  transition: var(--transition-speed-fast);
 }
 
 /* 
@@ -518,17 +570,10 @@ ul.tabs li {
 .favorites-search input {
   margin-top: 15px;
   background: var(--sat-search-shortcuts);
-  padding: 11px 10px;
+  padding: 13px 13px;
   font-weight: 400;
   font-size: 14px;
-  border-radius: 12px;
-  border: 1px solid transparent;
-}
-
-.favorites-search input:hover,
-.favorites-search input:focus {
-  transition: var(--transition-speed-default);
-  border: 1px solid var(--sat-accent-color1);
+  border-radius: 13px;
 }
 
 .cuteapps:hover {
@@ -540,17 +585,17 @@ ul.tabs li {
 + Apps List Category +
 ========
 */
-
 .apps-category {
   margin-top: 20px;
 }
+
 ul.apps-category {
   padding: 0px;
   list-style: none;
 }
 
 ul.apps-category li {
-  font-weight: 500;
+  font-size: 16px;
   background: none;
   color: var(--lighter-text-color);
   display: inline-block;
@@ -570,7 +615,7 @@ ul.apps-category li:hover {
 ul.apps-category li.current {
   background-color: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
-  font-weight: 600;
+  font-weight: 500;
   box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
@@ -580,8 +625,8 @@ ul.apps-category li.current {
 ========
 */
 .tabs {
-  font-size: 16px;
   margin: -10px;
+  margin-top: -5px;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -593,7 +638,7 @@ ul.apps-category li.current {
 
 .tab-content {
   margin-left: 180px; /* Same as the width of the sidebar */
-  margin-top: 30px;
+  margin-top: 31px;
   padding: 0px 10px;
 }
 /* 
@@ -613,6 +658,7 @@ ul.apps-category li.current {
 }
 
 .socials .app:hover {
+  transition: var(--transition-speed-default);
   border: 1px solid transparent;
 }
 /* 
@@ -620,8 +666,8 @@ ul.apps-category li.current {
 + Favorite Modal +
 ========
 */
+
 .favModal {
-  background-color: #0a0a0abd;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -632,7 +678,7 @@ ul.apps-category li.current {
   overflow: auto; /* Enable scroll if needed */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  animation: fadeIn 150ms ease;
+  animation: scale 100ms;
 }
 
 /* Favorite modal Content/Box */
@@ -644,10 +690,12 @@ ul.apps-category li.current {
   transform: translate(-50%, -50%);
   padding: 1px 11px;
   width: 35rem;
-  height: 33rem;
+  height: 33.7rem;
   overflow-y: scroll;
   border-radius: 20px;
   overflow-y: auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
+  border: 1px solid var(--lighter-color);
 }
 
 /* 
@@ -658,6 +706,9 @@ ul.apps-category li.current {
 ========
 */
 /* Improved image support so now they act as icons */
+
+.fav-livepreview img,
+.fav-livepreview svg,
 #fav-link img,
 #fav-link svg {
   width: 23px;
@@ -669,24 +720,22 @@ ul.apps-category li.current {
 }
 
 /* Improving SVG support */
+.fav-livepreview svg,
 #fav-link svg {
   filter: var(--svg-invert);
 }
 
+.fav-livepreview img,
 #fav-link img {
   background: transparent; /* This should fix some backgrounds having a white background instead of being transparent. */
   padding: 3px;
 }
 
-/* Improved iframe support so now they fit properly inside the container */
+/* Iframes will be hidden by default because they don't work on firefox. */
+
+.fav-livepreview iframe,
 #fav-link iframe {
-  width: 90%;
-  height: 30%;
-  outline: none;
-  vertical-align: middle;
-  margin: 0px;
-  border: 1px;
-  border-radius: 6px !important;
+  visibility: hidden;
 }
 
 #fav-link a {
@@ -760,35 +809,26 @@ ul li {
   width: 100%;
   color: var(--sat-ids);
   margin: 5px 0;
-  padding: 13px 13px 13px 13px;
+  padding: 16px 15px;
   outline: none;
-  border: 2px solid var(--add-link-border);
+  border: 2px solid transparent;
   font-size: 14px;
   border-radius: var(--sat-border-radius);
 }
 
-.fav_ptgi_btn:hover, /* added this to make the hover animation similar */
-.favModal input:hover,
-.favModal input:focus {
-  background-color: var(--none);
-  border: 2px solid var(--sat-accent-color1);
-}
 /* Large add favorite button */
 
-.fav-btn button {
-  display: block;
-  padding: 13px;
-  margin-top: 30px;
-  font-size: 0.9em;
-  font-weight: 450;
+.fav-btn {
+  padding: 13px 12px;
+  font-weight: 500;
   color: var(--sat-ids);
-  background: var(--lighter-color);
-  border: 1px solid var(--lighter-color);
-  width: 100%;
+  background: var(--sat-search-shortcuts);
 }
 
-.fav-btn button:hover {
-  border: 1px solid var(--sat-accent-color1);
+.fav-btn:hover {
+  background-color: var(--sat-accent-color1);
+  transition: var(--transition-speed-default);
+  color: var(--for-white);
 }
 
 /* Every close button uses this */
@@ -801,13 +841,23 @@ ul li {
   border-radius: 100px;
 }
 
+.close-sounds {
+  font-size: 25px;
+  float: right;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 100px;
+}
+
+.close-sounds i,
 .close-button i {
   display: block;
   text-align: center;
 }
 
+.close-sounds:hover,
 .close-button:hover {
-  color: var(--close-button-color); /* for black to make it look better. */
+  color: var(--close-button-color);
   background-color: var(--delete-warning-bg);
   transition: var(--transition-speed-default);
 }
@@ -859,7 +909,7 @@ ul.fav_ptgi_category li {
   padding: 6px 9px;
   cursor: pointer;
   border-radius: var(--sat-border-radius);
-  border: 2px solid var(--add-link-border);
+  border: 2px solid transparent;
 }
 
 .fav_ptgi_btn:hover {
@@ -874,6 +924,8 @@ ul.fav_ptgi_category li {
 ========
 */
 
+#default_layout,
+#compact_layout,
 #saveMsgBar,
 #save_username {
   visibility: hidden;
@@ -898,6 +950,11 @@ ul.fav_ptgi_category li {
   bottom: 30px;
 }
 
+#default_layout,
+#compact_layout {
+  bottom: 10px !important;
+}
+
 #saveMsgBar.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -908,6 +965,13 @@ ul.fav_ptgi_category li {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.9s 4.5s;
   animation: fadein 0.5s, fadeout 0.9s 4.5s;
+}
+
+#default_layout.show,
+#compact_layout.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 /* 
@@ -983,4 +1047,66 @@ appearing when the user hovers on the open in new tab button.
 
 .hide_fav_bar:hover {
   visibility: hidden;
+}
+
+/* 
+========
++ Used to fix issues with new search icons +
+========
+*/
+
+.se_icon {
+  filter: var(--svg-invert);
+}
+
+/* 
+========
++ Quote +
+========
+*/
+.quote {
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+/* 
+========
++ Favorites live preview +
+========
+*/
+.fav-livepreview {
+  border: 3px solid var(--sat-search-shortcuts);
+  color: var(--sat-ids);
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+
+.fav-livepreview svg {
+  width: 23px;
+  height: 22px;
+  outline: none;
+  vertical-align: middle;
+  margin: 0px;
+  border-radius: 0px !important;
+}
+
+.small_text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.colored i {
+  color: var(--sat-accent-color1) !important;
+}
+
+/* 
+========
++ Used for spacing +
+========
+*/
+.buttons-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

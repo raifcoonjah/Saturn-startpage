@@ -1,6 +1,6 @@
 //
 // ========
-// + FAVORITES v1.78.0 +
+// + FAVORITES v1.79.0 +
 // Original Source: https://codepen.io/4gray/pen/glGun
 // Heavily modified and improve various things
 // ========
@@ -102,8 +102,8 @@ $(document).ready(function () {
 
 var opnSetting = document.querySelector(".close-button");
 document.body.addEventListener("keydown", function () {
-  if (event.keyCode == 27) {
-    // Esc key
+  if (event.keyCode == 83 && event.shiftKey) {
+    // Shift + S key
     opnSetting.click();
   }
 });
@@ -114,16 +114,22 @@ document.body.addEventListener("keydown", function () {
 // ========
 //
 
+document.addEventListener("keydown", function (favModal) {
+  if (favModal.keyCode == 90 && favModal.shiftKey) {
+    document.getElementById("favBtn").click();
+  }
+});
+
 // Get the favModal
 var favModal = document.getElementById("favModal");
 
 // Get the button that opens the favModal
 var btn = document.getElementById("favBtn");
-
 // Get the <span> element that closes the favModal
 var span = document.getElementsByClassName("cancel-fav-btn")[0];
 
 // When the user clicks on the button, open the favModal
+
 btn.onclick = function () {
   favModal.style.display = "block";
 };
@@ -154,18 +160,8 @@ document.getElementById("add").onclick = function () {
   }, 3000);
 };
 
-document.getElementById("save").onclick = function () {
-  var save_username = document.getElementById("save_username");
-  save_username.className = "show";
-  setTimeout(function () {
-    save_username.className = save_username.className.replace("show", "");
-  }, 4000);
-};
+const livepreview = document.getElementById("title");
 
-document.getElementById("removebtn").onclick = function () {
-  var x = document.getElementById("deleteMsgBar");
-  x.className = "show";
-  setTimeout(function () {
-    x.className = x.className.replace("show", "");
-  }, 3000);
+livepreview.onkeyup = function () {
+  document.getElementById("livepreview").innerHTML = livepreview.value;
 };

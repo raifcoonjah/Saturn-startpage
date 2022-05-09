@@ -4,16 +4,18 @@
 // ========
 //
 const determineGreet = (hours) =>
-  (document.getElementById("greetings").innerText =
+  (document.getElementById("good_morning").innerText =
     `Good ${
       hours < 12
         ? "morning, "
         : hours < 18
         ? "afternoon, "
-        : hours < 21 // After 21:00/9:00 display night instead.
+        : hours < 21
         ? "evening, "
         : "night, "
-    } ` + localStorage.getItem("user"));
+    } ` +
+    localStorage.getItem("user") +
+    `.`);
 
 // Get month:
 determineGreet(new Date().getHours());
@@ -23,23 +25,42 @@ determineGreet(new Date().getHours());
 // + Settings Modal trigger + close button +
 // ========
 //
+
 var modal = document.querySelector(".settings_modal");
 var trigger = document.querySelector(".setting-button");
 var closeButton = document.querySelector(".close-button");
-
 function toggleModal() {
   modal.classList.toggle("show-modal");
 }
-
 function windowOnClick(event) {
   if (event.target === modal) {
     toggleModal();
   }
 }
-
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+//
+// ========
+// + Background sounds + close-button +
+//
+
+var soundsModal = document.querySelector(".sounds_modal");
+var SBtntrigger = document.querySelector(".sounds-button");
+var closeSoundsButton = document.querySelector(".close-sounds");
+
+function toggleSounds() {
+  soundsModal.classList.toggle("show-sounds-modal");
+}
+function windowOutclick(event) {
+  if (event.target === soundsModal) {
+    toggleSounds();
+  }
+}
+SBtntrigger.addEventListener("click", toggleSounds);
+closeSoundsButton.addEventListener("click", toggleSounds);
+window.addEventListener("click", windowOutclick);
 
 //
 // ========
@@ -52,9 +73,13 @@ function getTime() {
     //sec = date.getSeconds(),
     hour = date.getHours();
   return (
-    "" + (hour < 10 ? "0" + hour : hour) + ":" + (min < 10 ? "0" + min : min)
+    "" +
+    (hour < 10 ? "0" + hour : hour) +
+    "<span>:</span>" +
+    (min < 10 ? "0" + min : min)
   );
 }
+
 function getDate() {
   let date = new Date(),
     months = [
@@ -72,22 +97,21 @@ function getDate() {
       "Dec",
     ],
     cmonth = months[date.getMonth()],
-    days = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ],
+    days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"],
     cday = days[date.getDay()],
     cnum = date.getDate();
+  if (cnum < 10) {
+    cnum = "0" + cnum;
+  }
   return " " + cday + " " + cnum + " " + cmonth;
 }
 // Set up the clock and date
-document.getElementById("time").innerHTML =
-  `It's ` + getDate() + `, ` + getTime();
+document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
+
+// Reload time after a certain amount of time [BETA, testing tbh]
+setInterval(() => {
+  document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
+}, 60 * 1000);
 
 //
 // ========
@@ -137,7 +161,11 @@ $(function () {
     localStorage.setItem("search_hidden", this.checked);
   });
 });
-
+//
+// ========
+// + Hide Calendar Button +
+// ========
+//
 $(function () {
   var status = localStorage.getItem("hide-calendar-btn");
   if (status == "true") {
@@ -162,6 +190,7 @@ $(function () {
 // + Settings navigation +
 // ========
 //
+
 $(document).ready(function () {
   $("ul.tabs li").click(function () {
     var tab_id = $(this).attr("data-tab");
@@ -173,6 +202,99 @@ $(document).ready(function () {
     $("#" + tab_id).addClass("current");
   });
 });
+
+// Esc to close settings and favModal
+$(document).keyup(function (e) {
+  if (e.keyCode == 27) {
+    $(".settings_modal").removeClass("show-modal");
+    // click on cancel-fav-btn
+    $(".cancel-fav-btn").click();
+    // unfocus search-bar
+    $(".search-bar").blur();
+  }
+});
+
+//
+// ========
+// + Apps Shortcut +
+// ========
+//
+
+// Ctrl + Alt + G to open github.com
+$(document).keyup(function (github) {
+  if (github.keyCode == 71 && github.altKey && github.ctrlKey) {
+    window.location.replace("https://github.com");
+  }
+});
+
+// Ctrl + Alt + Y to open youtube.com
+$(document).keyup(function (youtube) {
+  if (youtube.keyCode == 89 && youtube.altKey && youtube.ctrlKey) {
+    window.location.replace("https://youtube.com");
+  }
+});
+
+// Ctrl + Alt + R to open reddit.com
+$(document).keyup(function (reddit) {
+  if (reddit.keyCode == 82 && reddit.altKey && reddit.ctrlKey) {
+    window.location.replace("https://reddit.com");
+  }
+});
+
+// Ctrl + Alt + P to open protonmail.com
+$(document).keyup(function (protonmail) {
+  if (protonmail.keyCode == 80 && protonmail.altKey && protonmail.ctrlKey) {
+    window.location.replace("https://mail.protonmail.com");
+  }
+});
+
+// Ctrl + Alt + T to open twitter.com
+$(document).keyup(function (twitter) {
+  if (twitter.keyCode == 84 && twitter.altKey && twitter.ctrlKey) {
+    window.location.replace("https://twitter.com");
+  }
+});
+
+// Ctrl + Alt + T to open twitter.com
+$(document).keyup(function (google_calendar) {
+  if (
+    google_calendar.keyCode == 67 &&
+    google_calendar.altKey &&
+    google_calendar.ctrlKey
+  ) {
+    window.location.replace("https://calendar.google.com");
+  }
+});
+
+// Ctrl + Alt + M to open mail.google.com
+$(document).keyup(function (google_mail) {
+  if (google_mail.keyCode == 77 && google_mail.altKey && google_mail.ctrlKey) {
+    window.location.replace("https://mail.google.com");
+  }
+});
+
+// Ctrl + / to focus on searchbar
+$(document).keyup(function (search) {
+  if (search.keyCode == 191 && search.ctrlKey) {
+    $(".search-bar").focus();
+  }
+});
+
+// Ctrl + ArrowUp to click on se_icon
+$(document).keyup(function (se_icon) {
+  if (se_icon.keyCode == 38 && se_icon.ctrlKey) {
+    $(".se_icon").click();
+  }
+});
+
+// Ctrl + Alt + I to open instagram.com
+$(document).keyup(function (instagram) {
+  if (instagram.keyCode == 73 && instagram.altKey && instagram.ctrlKey) {
+    window.location.replace("https://instagram.com");
+  }
+});
+
+// Shift + B to open soundboard
 
 //
 // ========
@@ -190,110 +312,6 @@ $(document).ready(function () {
     $("#" + tab_id).addClass("current");
   });
 });
-//
-//
-// ========
-// + Saturn's theme engine v2.1 +
-// ========
-//
-
-const darkButton = document.getElementById("dark");
-const lightButton = document.getElementById("light");
-const spaceButton = document.getElementById("space");
-const linkinParkButton = document.getElementById("linkin-park");
-const lighterdark_theme_button = document.getElementById("lighterdarktheme");
-const draculaButton = document.getElementById("dracula");
-const nordButton = document.getElementById("nord");
-const body = document.body;
-
-// Apply the cached theme on reload
-
-const theme = localStorage.getItem("theme");
-
-if (theme) {
-  body.classList.add(theme);
-}
-
-// Dark theme
-
-darkButton.onclick = () => {
-  body.classList.replace("light", "dark");
-  body.classList.replace("space", "dark");
-  body.classList.replace("linkin-park", "dark");
-  body.classList.replace("lighterdarktheme", "dark");
-  body.classList.replace("dracula", "dark");
-  body.classList.replace("nord", "dark");
-  localStorage.setItem("theme", "dark");
-};
-
-// Default light theme
-
-lightButton.onclick = () => {
-  body.classList.replace("dark", "light");
-  body.classList.replace("space", "light");
-  body.classList.replace("linkin-park", "light");
-  body.classList.replace("lighterdarktheme", "light");
-  body.classList.replace("dracula", "light");
-  body.classList.replace("nord", "light");
-  localStorage.setItem("theme", "light");
-};
-
-// Material-ish dark theme
-
-spaceButton.onclick = () => {
-  body.classList.replace("dark", "space");
-  body.classList.replace("light", "space");
-  body.classList.replace("linkin-park", "space");
-  body.classList.replace("lighterdarktheme", "space");
-  body.classList.replace("dracula", "space");
-  body.classList.replace("nord", "space");
-  localStorage.setItem("theme", "space");
-};
-
-// linkinPark theme
-linkinParkButton.onclick = () => {
-  body.classList.replace("dark", "linkin-park");
-  body.classList.replace("light", "linkin-park");
-  body.classList.replace("space", "linkin-park");
-  body.classList.replace("lighterdarktheme", "linkin-park");
-  body.classList.replace("dracula", "linkin-park");
-  body.classList.replace("nord", "linkin-park");
-  localStorage.setItem("theme", "linkin-park");
-};
-
-// Lighter Grey ish theme theme
-
-lighterdark_theme_button.onclick = () => {
-  body.classList.replace("dark", "lighterdarktheme");
-  body.classList.replace("light", "lighterdarktheme");
-  body.classList.replace("space", "lighterdarktheme");
-  body.classList.replace("linkin-park", "lighterdarktheme");
-  body.classList.replace("dracula", "lighterdarktheme");
-  body.classList.replace("nord", "lighterdarktheme");
-  localStorage.setItem("theme", "lighterdarktheme");
-};
-
-// Dracula theme (beta)
-draculaButton.onclick = () => {
-  body.classList.replace("dark", "dracula");
-  body.classList.replace("light", "dracula");
-  body.classList.replace("linkin-park", "dracula");
-  body.classList.replace("lighterdarktheme", "dracula");
-  body.classList.replace("space", "dracula");
-  body.classList.replace("nord", "dracula");
-  localStorage.setItem("theme", "dracula");
-};
-
-// Nord theme (beta)
-nordButton.onclick = () => {
-  body.classList.replace("dark", "nord");
-  body.classList.replace("light", "nord");
-  body.classList.replace("space", "nord");
-  body.classList.replace("linkin-park", "nord");
-  body.classList.replace("lighterdarktheme", "nord");
-  body.classList.replace("dracula", "nord");
-  localStorage.setItem("theme", "nord");
-};
 
 //
 // ========
@@ -306,12 +324,83 @@ $(document).ready(function () {
     var username = $("#userSet").val();
     if (typeof Storage !== "undefined") {
       localStorage.user = username;
+      $("#save").text("↻ Saved, reloading..");
       $("#Uname").val(localStorage.getItem("user"));
       setTimeout(function () {
         window.location.reload(1);
-      }, 5000);
+      }, 2000);
+      if (localStorage.getItem("user") == "") {
+        $("#userSet").attr(
+          "placeholder",
+          "Using default username, as input field is empty.."
+        );
+        $("#userSet").css("border", "1px solid var(--delete-warning-bg)");
+        localStorage.user = "null";
+      }
     } else {
       $("#Uname").val("Sorry, your browser does not support Web Storage..");
     }
   });
+});
+
+// Saturn Soundboard
+// v1.0
+
+var rainefffect = document.getElementById("raineffect");
+var fireplace = document.getElementById("fireplace");
+var waves = document.getElementById("waves");
+rainefffect.loop = true;
+fireplace.loop = true;
+waves.loop = true;
+
+// rain effect
+
+$("#play").click(function () {
+  if (rainefffect.paused) {
+    rainefffect.volume = 0.1;
+    rainefffect.play();
+    $("#play").addClass("pause");
+  } else {
+    rainefffect.pause();
+    $("#play").removeClass("pause");
+  }
+});
+
+// fireplace effect
+
+$("#play-fireplace").click(function () {
+  if (fireplace.paused) {
+    fireplace.volume = 0.1;
+    fireplace.play();
+    $("#play-fireplace").addClass("pause");
+  } else {
+    fireplace.pause();
+    $("#play-fireplace").removeClass("pause");
+  }
+});
+
+// waves effect
+$("#play-waves").click(function () {
+  if (waves.paused) {
+    waves.volume = 0.1;
+    waves.play();
+    $("#play-waves").addClass("pause");
+  } else {
+    waves.pause();
+    $("#play-waves").removeClass("pause");
+  }
+});
+
+// button-increase volume
+$("#volume-increase").click(function () {
+  rainefffect.volume += 0.1;
+  fireplace.volume += 0.1;
+  waves.volume += 0.1;
+});
+
+// button-decrease to decrease volume
+$("#volume-decrease").click(function () {
+  rainefffect.volume -= 0.1;
+  fireplace.volume -= 0.1;
+  waves.volume -= 0.1;
 });

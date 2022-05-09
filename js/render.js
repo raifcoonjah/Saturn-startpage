@@ -117,7 +117,7 @@ const appsList = (x) => {
                       <span>Twitch</span>
                     </div></a
                   >
-                <a href="https://lifeat.io">
+                <a href="https://lifeat.io/app">
                 <div class="app">
                   <i class="las la-ticket-alt"></i>
                   <span>LifeAt</span>
@@ -138,18 +138,9 @@ const appsList = (x) => {
 
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content">
-              <div class="settings-background">
-                <h3>✨ What's new</h3>
-                <p>
-                This release includes various bug fixes, and the addition of tooltips (thanks to <a href="https://github.com/eliortabeka/tootik">toolik</a>). <br/>
-                Read the full release note on
-              <a href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.3.0"
-                ><i class="lab la-github"></i> Github.</a
-              >
-                </p>
-              </div>
+              <p class="settings-item-title">About</p>
+              <p class="settings-item-under-title description">About Saturn startpage.</p>
             <div class="settings-background">
-              <h2 style="text-align:center;padding:15px;">About</h2>
               <p class="new-about">
               <img
                   src="/img/dynamic-icon-big.png"
@@ -157,18 +148,17 @@ const settingAbout = (z) => {
                   alt="Saturn-logo.png"
                   /> 
                <br/>
-                Saturn Desktop:
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v4.4.0"
+                Saturn Desktop: <a
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
                   target="_blank" 
-                  >v4.4.0<i class="las la-external-link-alt"></i
+                  >v5.0.0<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/projects/1"
-                  target="_blank" data-tootik="Thanks for your interest ❤️" data-tootik-conf="right"
-                  >Contribute <i class="las la-external-link-alt"></i
+                  target="_blank"
+                  >Contribute<i class="las la-external-link-alt"></i
                 ></a>
                 </p>
               <div class="socials">
@@ -192,6 +182,12 @@ const settingAbout = (z) => {
                         <span>Privacy</span>
                       </div></a
                     >
+                    <a href="https://paypal.me/raifs">
+                      <div class="app">
+                        <i class="las la-donate"></i>
+                        <span>Donate</span>
+                      </div></a
+                    >
                   </div>
                 </div>
               </div>
@@ -199,14 +195,95 @@ const settingAbout = (z) => {
           </div>`);
 };
 
-const render_in_js = (x, z) => {
+const kShortcuts = (ks) => {
+  $(ks).append(`<!-- + Keyboard Shortcuts section + -->
+          <div id="tab-5" class="tab-content">
+            <p class="settings-item-title">Keyboard Shortcuts</p>
+            <p class="settings-item-under-title description">Shortcuts allows you to do things without ever needing to touch your 
+            <i class="las la-mouse"></i> mouse again.</p>
+            <div class="settings-background">
+              <h4><i class="las la-home"></i> General</h4>
+              <p></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.</p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.</p>
+              <p> Press <kbd>Shift</kbd> + <kbd>S</kbd> to open & close settings menu. </p>
+              <p></p>
+              <p> Press <kbd>Shift</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
+              <p> Press on <kbd>Esc</kbd> to close the both settings, favorites menu or to unfocus search bar.</p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. </p>
+              <h4><i class="las la-icons"></i> Apps:</h4>
+              <p></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open <span style="font-weight: 700;">Youtube.</span></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> to open <span style="font-weight: 700;">Reddit.</span></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> to open <span style="font-weight: 700;">ProtonMail.</span></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> to open <span style="font-weight: 700;">Twitter.</span></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> to open <span style="font-weight: 700;">Google Calendar.</span></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd> to open <span style="font-weight: 700;">Gmail.</span></p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd> to open <span style="font-weight: 700;">Instagram.</span></p>
+            </div>
+             <p style="text-align: center; font-weight: 500; font-size: 13px">
+                <a
+                  href="https://github.com/mraif13/Saturn-startpage/issues/new"
+                  target="_blank"
+                  ><i class="las la-keyboard"></i> Request a shortcut
+                </a>
+              </p>
+          </div>`);
+};
+
+const favIcons = (fav) => {
+  $(fav).append(`<div class="fav_ptgi">
+            <ul class="fav_ptgi_category">
+              <a
+                href="https://simpleicons.org/"
+                title="Get Simple icons.."
+                target="_blank"
+              >
+                <li class="fav_ptgi_btn">Simple Icons</li></a
+              >
+              <a
+                href="https://lineicons.com/icons"
+                title="Get line icons.."
+                target="_blank"
+              >
+                <li class="fav_ptgi_btn">Line Icons</li></a
+              >
+              <a
+                href="https://icons8.com/line-awesome"
+                title="Get line-awesome icons.."
+                target="_blank"
+              >
+                <li class="fav_ptgi_btn">Line Awesome</li></a
+              >
+              <a
+                href="https://mraif13.notion.site/How-to-use-the-new-Get-custom-icons-80dc51dad7604dffb99d9ab9e6997df2"
+                target="_blank"
+              >
+                <li
+                  class="fav_ptgi_btn"
+                  data-tootik="What the f*ck is this?"
+                  data-tootik-conf="right"
+                >
+                  <i class="lar la-question-circle"></i></li
+              ></a>
+            </ul>
+          </div>`);
+};
+
+const render_in_js = (x, z, ks, cu) => {
   let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
+  let kshortcuts = $("#k_shortcuts");
+  let fav_icons = $("#fav_icons");
 
   // pls dont break
-  iLoadthings = setTimeout(function () {
+  loader = setTimeout(function () {
     appsList(apps_list);
     settingAbout(setting_about);
+    kShortcuts(kshortcuts);
+    favIcons(fav_icons);
   });
 };
+
 window.onload = render_in_js();
