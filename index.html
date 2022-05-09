@@ -196,7 +196,7 @@
               <a
                 href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature"
                 target="_blank"
-                >learn more. <i class="las la-external-link-alt"></i
+                >learn more.<i class="las la-external-link-alt"></i
               ></a>
             </div>
 
@@ -259,7 +259,9 @@
               <div class="settings-background">
                 <!-- =+=+= Username =+=+= -->
                 <h3><i class="las la-user-edit"></i> Username</h3>
-                <p>Set a username that will be displayed on the home screen.</p>
+                <p class="description">
+                  Set a username that will be displayed on the home screen.
+                </p>
                 <div id="popUp" class="username-section">
                   <input
                     type="text"
@@ -270,7 +272,7 @@
                   <button id="save" class="save-button">
                     <i class="las la-save"></i> Save
                   </button>
-                  <p class="small_text">
+                  <p class="small_text description">
                     Note: Saturn will reload after you've pressed the save
                     button.
                   </p>
@@ -280,10 +282,9 @@
               <h3><i class="las la-info-circle"></i> Info</h3>
               <!-- =+=+= Change Search  =+=+= -->
               <div class="settings-background">
-                <h3><i class="las la-search"></i> Change Search</h3>
-                <p>
-                  You can easily switch between different search providers, See
-                  how:
+                <h3><i class="las la-search"></i> Saturn Search</h3>
+                <p class="description">
+                  Easily switch between different search engines. See how:
                 </p>
                 <details>
                   <summary>Change Search</summary>
@@ -298,7 +299,10 @@
                 </details>
               </div>
 
-              <p style="text-align: center; font-weight: 500; font-size: 13px">
+              <p
+                class="description"
+                style="text-align: center; font-weight: 500; font-size: 13px"
+              >
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/issues/new"
                   target="_blank"
@@ -314,7 +318,7 @@
           <!-- =+=+= Theme section =+=+=-->
           <div id="tab-4" class="tab-content">
             <p class="settings-item-title">Themes</p>
-            <p class="settings-item-under-title">
+            <p class="settings-item-under-title description">
               Choose a theme to match your mood and style.
             </p>
             <div class="settings-background">
@@ -330,6 +334,15 @@
                   alt="light-icon.png"
                 />
                 <span class="theme-name">Default Light</span>
+              </div>
+
+              <div class="theme-container" id="lightplusplus">
+                <img
+                  class="theme-icon"
+                  src="/img/themes/light.png"
+                  alt="light-icon.png"
+                />
+                <span class="theme-name">Light++</span>
               </div>
 
               <!-- =+=+= Dark/Night themes =+=+=-->
@@ -360,6 +373,15 @@
                   alt="nord-icon.png"
                 />
                 <span class="theme-name">Nord</span>
+              </div>
+              <div class="theme-container" id="amazinglypurple">
+                <img
+                  class="theme-icon"
+                  src="/img/themes/amazinglypurple.png"
+                  title="Experimental theme"
+                  alt="experimental-icon.png"
+                />
+                <span class="theme-name">Amazingly Purple</span>
               </div>
               <!-- + Darker/Mid-night theme section + -->
               <p class="theme-title">
@@ -395,6 +417,7 @@
                 />
                 <span class="theme-name">Space Dark</span>
               </div>
+
               <!-- + Experimental theme section + -->
               <p class="theme-title">
                 <i class="las la-flask"></i>
@@ -420,7 +443,9 @@
 
           <div id="tab-6" class="tab-content">
             <p class="settings-item-title">Layout</p>
-            <p class="settings-item-under-title">Choose a custom layout.</p>
+            <p class="settings-item-under-title description">
+              Choose a custom layout.
+            </p>
             <div class="settings-background center-content">
               <div class="theme-container center-container" id="default-layout">
                 <img
@@ -441,11 +466,13 @@
             </div>
 
             <p class="settings-item-title">Hide things</p>
-            <p class="settings-item-under-title">Hide things from view.</p>
+            <p class="settings-item-under-title description">
+              Hide things from view.
+            </p>
             <div class="settings-background">
               <!-- =+=+= HT: Options1 =+=+=-->
               <h5><i class="las la-swatchbook"></i> Hide Favorites</h5>
-              <p>
+              <p class="description">
                 This will
                 <span style="font-weight: 700">not remove</span> your stored
                 favorites.
@@ -478,44 +505,71 @@
 
         <!-- Message displayed if layout is changed. -->
         <div id="compact_layout">
-          <i class="las la-compress-arrows-alt"></i> Switched to compact layout
+          <i class="las la-compress-arrows-alt"></i> Applied compact layout
         </div>
         <div id="default_layout">
-          <i class="las la-expand-arrows-alt"></i> Switched back to default
-          layout
+          <i class="las la-expand-arrows-alt"></i> Applied default layout
         </div>
       </div>
 
       <div class="sounds_modal">
         <div class="sounds-modal-content">
           <span class="close-sounds"><i class="las la-times-circle"></i></span>
+          <br />
           <div class="soundboard">
-            <h4>Local</h4>
+            <h4>Soundboard</h4>
+            <p class="small_text description">All sounds are loaded locally.</p>
             <div class="soundboard-container">
-              <!-- Audio src -->
+              <!-- Audio src [Rain] -->
               <audio id="raineffect">
                 <source src="/soundboard/rain.mp3" type="audio/mpeg" />
               </audio>
 
-              <!-- Audio Control (Includes play/pause/volup/voldown) -->
-              <button id="play" class="audio-button" type="button">
+              <!-- The button itself [Rain] -->
+              <button
+                id="play"
+                class="audio-button"
+                data-tootik="Rain"
+                data-tootik-conf="bottom no-arrow"
+                type="button"
+              >
                 <i class="las la-cloud-rain"></i>
               </button>
             </div>
             <div class="soundboard-container">
-              <!-- Audio src -->
+              <!-- Audio src [fireplace] -->
               <audio id="fireplace">
                 <source src="/soundboard/fireplace.mp3" type="audio/mpeg" />
               </audio>
 
-              <!-- Audio Control (Includes play/pause/volup/voldown) -->
-              <button id="play-fireplace" class="audio-button" type="button">
+              <!-- The button itself [fireplace] -->
+              <button
+                id="play-fireplace"
+                class="audio-button"
+                data-tootik="Fireplace "
+                data-tootik-conf="bottom no-arrow"
+                type="button"
+              >
                 <i class="las la-fire"></i>
               </button>
+
+              <!-- Audio src [waves] -->
+              <audio id="waves">
+                <source src="/soundboard/waves.mp3" type="audio/mpeg" />
+              </audio>
+
+              <!-- The button itself [fireplace] -->
+              <button
+                id="play-waves"
+                class="audio-button"
+                data-tootik="Waves "
+                data-tootik-conf="bottom no-arrow"
+                type="button"
+              >
+                <i class="las la-water"></i>
+              </button>
             </div>
-            <h4>External</h4>
-            <p class="small_text">Requires an internet connection.</p>
-            <h6>Nothing here yet.. 😥</h6>
+            <br />
             <br />
             <p class="line"></p>
             <h4>Audio controls</h4>
@@ -543,6 +597,8 @@
       <script type="text/javascript" src="js/quote.js"></script>
       <!-- Quote JS - File -->
       <script type="text/javascript" src="js/layout.js"></script>
+      <!-- THEMES JS - File -->
+      <script type="text/javascript" src="js/themes.js"></script>
     </main>
   </body>
 </html>

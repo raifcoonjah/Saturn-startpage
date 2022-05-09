@@ -314,137 +314,6 @@ $(document).ready(function () {
 });
 
 //
-//
-// ========
-// + Saturn's theme engine v2.1 +
-// ========
-//
-
-// Default themes
-const darkButton = document.getElementById("dark");
-const lightButton = document.getElementById("light");
-
-// Darker themes
-const spaceButton = document.getElementById("space");
-
-// Experimental themes
-const linkinParkButton = document.getElementById("linkin-park");
-
-// Dark themes
-const lighterdark_theme_button = document.getElementById("lighterdarktheme");
-const draculaButton = document.getElementById("dracula");
-const nordButton = document.getElementById("nord");
-
-// High contrast theme
-const highcontrastButton = document.getElementById("highcontrast");
-const body = document.body;
-
-// Apply the cached theme on reload
-
-const theme = localStorage.getItem("theme");
-
-if (theme) {
-  body.classList.add(theme);
-}
-
-// Dark theme
-darkButton.onclick = () => {
-  body.classList.replace("light", "dark");
-  body.classList.replace("space", "dark");
-  body.classList.replace("linkin-park", "dark");
-  body.classList.replace("lighterdarktheme", "dark");
-  body.classList.replace("dracula", "dark");
-  body.classList.replace("nord", "dark");
-  body.classList.replace("highcontrast", "dark");
-  // Adding new theme? Use this sample code:
-  // body.classList.replace("yourthemeID", "name of the current theme");
-  localStorage.setItem("theme", "dark");
-};
-
-// Default light theme
-lightButton.onclick = () => {
-  body.classList.replace("dark", "light");
-  body.classList.replace("space", "light");
-  body.classList.replace("linkin-park", "light");
-  body.classList.replace("lighterdarktheme", "light");
-  body.classList.replace("dracula", "light");
-  body.classList.replace("nord", "light");
-  body.classList.replace("highcontrast", "light");
-  localStorage.setItem("theme", "light");
-};
-
-// Material-ish dark theme
-spaceButton.onclick = () => {
-  body.classList.replace("dark", "space");
-  body.classList.replace("light", "space");
-  body.classList.replace("linkin-park", "space");
-  body.classList.replace("lighterdarktheme", "space");
-  body.classList.replace("dracula", "space");
-  body.classList.replace("nord", "space");
-  body.classList.replace("highcontrast", "space");
-  localStorage.setItem("theme", "space");
-};
-
-// LinkinPark theme
-linkinParkButton.onclick = () => {
-  body.classList.replace("dark", "linkin-park");
-  body.classList.replace("light", "linkin-park");
-  body.classList.replace("space", "linkin-park");
-  body.classList.replace("lighterdarktheme", "linkin-park");
-  body.classList.replace("dracula", "linkin-park");
-  body.classList.replace("nord", "linkin-park");
-  body.classList.replace("highcontrast", "linkin-park");
-  localStorage.setItem("theme", "linkin-park");
-};
-
-// Lighter Grey ish theme theme
-lighterdark_theme_button.onclick = () => {
-  body.classList.replace("dark", "lighterdarktheme");
-  body.classList.replace("light", "lighterdarktheme");
-  body.classList.replace("space", "lighterdarktheme");
-  body.classList.replace("linkin-park", "lighterdarktheme");
-  body.classList.replace("dracula", "lighterdarktheme");
-  body.classList.replace("nord", "lighterdarktheme");
-  body.classList.replace("highcontrast", "lighterdarktheme");
-  localStorage.setItem("theme", "lighterdarktheme");
-};
-
-// Dracula theme (beta)
-draculaButton.onclick = () => {
-  body.classList.replace("dark", "dracula");
-  body.classList.replace("light", "dracula");
-  body.classList.replace("linkin-park", "dracula");
-  body.classList.replace("lighterdarktheme", "dracula");
-  body.classList.replace("space", "dracula");
-  body.classList.replace("nord", "dracula");
-  body.classList.replace("highcontrast", "dracula");
-  localStorage.setItem("theme", "dracula");
-};
-
-// Nord theme (beta)
-nordButton.onclick = () => {
-  body.classList.replace("dark", "nord");
-  body.classList.replace("light", "nord");
-  body.classList.replace("space", "nord");
-  body.classList.replace("linkin-park", "nord");
-  body.classList.replace("lighterdarktheme", "nord");
-  body.classList.replace("dracula", "nord");
-  body.classList.replace("highcontrast", "nord");
-  localStorage.setItem("theme", "nord");
-};
-
-highcontrast.onclick = () => {
-  body.classList.replace("light", "highcontrast");
-  body.classList.replace("dark", "highcontrast");
-  body.classList.replace("space", "highcontrast");
-  body.classList.replace("linkin-park", "highcontrast");
-  body.classList.replace("lighterdarktheme", "highcontrast");
-  body.classList.replace("dracula", "highcontrast");
-  body.classList.replace("nord", "highcontrast");
-  localStorage.setItem("theme", "highcontrast");
-};
-
-//
 // ========
 // + *New* Username feature +
 // ========
@@ -477,41 +346,61 @@ $(document).ready(function () {
 // Saturn Soundboard
 // v1.0
 
-var x = document.getElementById("raineffect");
-var y = document.getElementById("fireplace");
-x.loop = true;
-y.loop = true;
+var rainefffect = document.getElementById("raineffect");
+var fireplace = document.getElementById("fireplace");
+var waves = document.getElementById("waves");
+rainefffect.loop = true;
+fireplace.loop = true;
+waves.loop = true;
 
-// if play button is pressed change text to pause and if button is pressed pause audio
+// rain effect
+
 $("#play").click(function () {
-  if (x.paused) {
-    x.play();
+  if (rainefffect.paused) {
+    rainefffect.volume = 0.1;
+    rainefffect.play();
     $("#play").addClass("pause");
   } else {
-    x.pause();
+    rainefffect.pause();
     $("#play").removeClass("pause");
   }
 });
 
-// if button play is clicked y.play and pause y.pause
+// fireplace effect
+
 $("#play-fireplace").click(function () {
-  if (y.paused) {
-    y.play();
+  if (fireplace.paused) {
+    fireplace.volume = 0.1;
+    fireplace.play();
     $("#play-fireplace").addClass("pause");
   } else {
-    y.pause();
+    fireplace.pause();
     $("#play-fireplace").removeClass("pause");
+  }
+});
+
+// waves effect
+$("#play-waves").click(function () {
+  if (waves.paused) {
+    waves.volume = 0.1;
+    waves.play();
+    $("#play-waves").addClass("pause");
+  } else {
+    waves.pause();
+    $("#play-waves").removeClass("pause");
   }
 });
 
 // button-increase volume
 $("#volume-increase").click(function () {
-  x.volume += 0.1;
-  y.volume += 0.1;
+  rainefffect.volume += 0.1;
+  fireplace.volume += 0.1;
+  waves.volume += 0.1;
 });
 
 // button-decrease to decrease volume
 $("#volume-decrease").click(function () {
-  x.volume -= 0.1;
-  y.volume -= 0.1;
+  rainefffect.volume -= 0.1;
+  fireplace.volume -= 0.1;
+  waves.volume -= 0.1;
 });

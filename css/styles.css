@@ -138,8 +138,8 @@ v3 CSS Main.Core
   transform: translate(-50%, -50%);
   padding: 5px 15px;
   padding-bottom: 20px;
-  width: 26rem;
-  height: 23rem;
+  width: 30rem;
+  height: 21rem;
   border-radius: 20px;
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
@@ -246,7 +246,7 @@ input:checked + .slider:before {
 .sounds-button,
 .setting-button {
   outline: none;
-  padding: 12px 10px;
+  padding: 12px 12px;
   margin: 4px;
   border-radius: 13px !important;
   float: right;
@@ -311,7 +311,7 @@ ul.tabs li {
 }
 .tab-content {
   display: none;
-  animation: slide-up-fade-in 135ms;
+  animation: slide-up-fade-in 180ms;
 }
 
 .tab-content h4 i {
@@ -474,7 +474,7 @@ div.theme-container {
 */
 
 .save-button {
-  padding: 11px 11px;
+  padding: 12px 11px;
   outline: none;
   background: var(--lighter-color);
   color: var(--sat-ids);

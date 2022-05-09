@@ -29,7 +29,7 @@
   font-size: 20px;
   border-radius: 13px;
   width: 49%;
-  margin-top: 10px;
+  margin-top: 25px;
   outline: 4px solid transparent; /* This should be remove for a much more optimized version */
 }
 
@@ -50,4 +50,10 @@
   border-radius: 13px !important;
   outline: 4px solid transparent; /* This should be remove for a much more optimized version */
   display: block;
+  display: inline-block;
+}
+
+.description {
+  color: var(--sat-lighter-ids) !important;
+  font-size: 16px;
 }
