@@ -475,7 +475,7 @@
   ); /* Used by the contains that contain themes icons and text. */
   --settings-button-outline: #d4d9dd; /* The outline color on the open settings button */
   --new-search-bg-hover-effect: #e7ecf0;
-  --lighter-color: #ffffff; /* Every that needs a light background color */
+  --lighter-color: #d9dfe3; /* Every that needs a light background color */
   --close-button-color: #fff;
 
   /* Multiple transition speeds */
