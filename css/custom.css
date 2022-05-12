@@ -25,6 +25,10 @@
   color: var(--sat-accent-color1);
 }
 
+.pause i {
+  animation: blinker 2.5s linear infinite;
+}
+
 .control-button {
   font-size: 20px;
   border-radius: 13px;
