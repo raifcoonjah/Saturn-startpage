@@ -211,6 +211,7 @@ $(document).keyup(function (e) {
     $(".cancel-fav-btn").click();
     // unfocus search-bar
     $(".search-bar").blur();
+    $(".sounds_modal").removeClass("show-sounds-modal");
   }
 });
 
@@ -291,6 +292,13 @@ $(document).keyup(function (se_icon) {
 $(document).keyup(function (instagram) {
   if (instagram.keyCode == 73 && instagram.altKey && instagram.ctrlKey) {
     window.location.replace("https://instagram.com");
+  }
+});
+
+// Shift + B to open Soundboard_modal
+$(document).keyup(function (soundboard) {
+  if (soundboard.keyCode == 66 && soundboard.shiftKey) {
+    $(".sounds_modal").addClass("show-sounds-modal");
   }
 });
 
