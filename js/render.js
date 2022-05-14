@@ -199,19 +199,20 @@ const kShortcuts = (ks) => {
   $(ks).append(`<!-- + Keyboard Shortcuts section + -->
           <div id="tab-5" class="tab-content">
             <p class="settings-item-title">Keyboard Shortcuts</p>
-            <p class="settings-item-under-title description">Shortcuts allows you to do things without ever needing to touch your 
+            <p class="settings-item-under-title description">Shortcuts allow you to do things without ever needing to touch your 
             <i class="las la-mouse"></i> mouse again.</p>
             <div class="settings-background">
-              <h4><i class="las la-home"></i> General</h4>
+              <h4>General</h4>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.</p>
               <p> Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.</p>
               <p> Press <kbd>Shift</kbd> + <kbd>S</kbd> to open & close settings menu. </p>
               <p></p>
               <p> Press <kbd>Shift</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
-              <p> Press on <kbd>Esc</kbd> to close the both settings, favorites menu or to unfocus search bar.</p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. </p>
-              <h4><i class="las la-icons"></i> Apps:</h4>
+              <p> Press <kbd>Shift</kbd> + <kbd>B</kbd> to open soundboard. </p>
+              <p> Press on <kbd>Esc</kbd> to close any modal.</p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. (Provided by firefox) </p>
+              <h4>Apps:</h4>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open <span style="font-weight: 700;">Youtube.</span></p>
