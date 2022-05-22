@@ -1,5 +1,4 @@
-##### Development will be slower from now on, due to uni starting soon and other stuff happening irl. Take care 🖤
-![Saturn-startpage](https://i.imgur.com/FDO3ufT.png)
+![Saturn-startpage](https://i.imgur.com/JkdwZMW.png)
 
 ## What's Saturn Startpage?
 Saturn Startpage is a fully open source, community build new-tab replacement. **Build with speed and user experience in mind**. Saturn was original build for myself but later on I decided to open source it.
@@ -9,11 +8,11 @@ Saturn Startpage is a fully open source, community build new-tab replacement. **
 ### Simple by design
 - Everything is straight forward and gets you where you need to go quickly.
 
-### Fast & Super lightweight
+### Fast & lightweight
 - Saturn was made with speed in mind, no useless animations or bulky code. Everything loads in a matter of seconds.
 
 ### Data? What's that
-- Saturn Startpage **DOES NOT** collect any data about you. 90% of saturn is loaded locally.
+- Saturn Startpage **DOES NOT** collect any data about you.
 
 ## Installation on Firefox
 - Installation is super easy on **firefox**, just head over to the [release page](https://github.com/mraif13/Saturn-startpage/releases)
@@ -26,7 +25,4 @@ Saturn Startpage is a fully open source, community build new-tab replacement. **
 - Please head over to: [Chromium installation](https://github.com/mraif13/Saturn-startpage/blob/Chromium/info.md)
 
 ### Tech used
-- HTML, CSS & Javascript. [I do have plans to move over to either react or vue sometime later this year] 
-
-### Saturn status
-- Actively developed/Side Project.
+- HTML, CSS & Javascript. [Plans to move to react are on **hold** atm]
