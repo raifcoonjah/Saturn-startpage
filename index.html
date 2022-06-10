@@ -109,10 +109,11 @@
 
       <div class="favorites-search">
         <input type="text" placeholder="Search..." class="searchfavorites" />
-        <button class="fav-btn" id="favBtn" title="Add favorites (Ctrl + Z)">
+        <button class="favorite-button" title="Add favorites (Ctrl + Z)">
           <i class="las la-plus"></i> Add
         </button>
       </div>
+
 
       <div id="content">
         <ul id="fav-link"></ul>
@@ -120,25 +121,31 @@
     </div>
 
     <!-- =+=+= Favorites Modal =+=+= -->
-    <div id="favModal" class="favModal">
-      <div class="fav-content">
-        <p></p>
+    <div id="fav_modal" class="fav_modal">
+      <div class="favorites_modal_content">
+        <p class="settings-item-title" style="margin-top:10px;">Favorites (Beta)</p>
+        <p class="settings-item-under-title description">
+          Add your favorite websites and apps. <a
+            href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature" target="_blank"
+            style="color:var(--sat-accent-color1);">Learn more..
+          </a>
+        </p>
+
+
 
         <!-- =+=+= Input ++ Favorite title =+=+=-->
-        <label class="fav_title">Favorite title</label>
+        <label class="fav_title">Title</label>
         <input id="title" placeholder="Enter a title" required autocomplete="off" spellcheck="false" />
-
-        <label class="fav_title"><i class="las la-eye"></i> Preview</label>
-        <br />
-        <div class="fav-livepreview" id="livepreview" data-tootik="Start typing to see a preview of your favorite"
-          data-tootik-conf="bottom no-arrow"></div>
-        <!-- =+=+= Get custom icons =+=+=-->
         <label class="fav_title"><i class="las la-icons"></i> Custom icons
         </label>
 
         <div id="fav_icons"></div>
-
-        <!-- =+=+= Input ++ Favorite URL =+=+=-->
+        <label class="fav_title"><i class="las la-eye"></i> Preview</label>
+        <br />
+        <div class="fav-livepreview" id="livepreview" data-tootik="Start typing to see a preview of your favorite"
+          data-tootik-conf="bottom no-arrow"></div>
+        <br />
+        <!-- =+=+= Input ++ Favorite URL =+=+= -->
         <label class="fav_title"><i class="las la-link"></i> URL</label>
         <input id="url" placeholder="Enter or paste a URL" value="https://" autocomplete="off" spellcheck="false" />
         <div class="buttons-container">
@@ -148,20 +155,6 @@
           <button id="add" class="save-button">
             <i class="lar la-save"></i> Save
           </button>
-        </div>
-        <div class="side-text">
-          <div class="settings-background">
-            <span class="settings-dot">✨</span>
-            Unlock the full potential of favorites,
-            <a href="https://github.com/mraif13/Saturn-startpage/wiki/Favorites-feature" target="_blank">learn more.<i
-                class="las la-external-link-alt"></i></a>
-          </div>
-
-          <p style="text-align: center; font-weight: 500; font-size: 13px">
-            <a href="https://github.com/mraif13/Saturn-startpage/issues/new" target="_blank"><i class="las la-bug"></i>
-              Report a bug
-            </a>
-          </p>
         </div>
       </div>
       <!-- =+=+= Save message =+=+= -->
@@ -401,9 +394,12 @@
         <span class="close-sounds"><i class="las la-times-circle"></i></span>
         <br />
         <div class="soundboard">
-          <h4>Soundboard</h4>
-          <p class="small_text description" style="font-size: 14px;">Choose a sound to play in the background while you
-            work.</p>
+
+          <p class="settings-item-title">Soundboard</p>
+          <p class="settings-item-under-title description" style="font-size: 14px;">
+            Choose a sound to play in the background while you
+            work.
+          </p>
           <div class="soundboard-container">
             <!-- Audio src [Rain] -->
             <audio id="raineffect">

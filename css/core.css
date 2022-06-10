@@ -847,6 +847,7 @@ img {
 
 /* == Settings background color == */
 
+.favorites_modal_content,
 .sounds-modal-content,
 .settings-content {
   background: var(--sat-setting-bg-color);
@@ -983,6 +984,7 @@ use the correct border radius == */
 */
 
 @media (max-width: 68.75em) {
+  .favorites_modal_content,
   .sounds-modal-content,
   .settings-content {
     max-width: 90%;

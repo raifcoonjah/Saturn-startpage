@@ -62,6 +62,25 @@ SBtntrigger.addEventListener("click", toggleSounds);
 closeSoundsButton.addEventListener("click", toggleSounds);
 window.addEventListener("click", windowOutclick);
 
+// Favorites modal
+var favModal = document.querySelector(".fav_modal");
+var FavBtntrigger = document.querySelector(".favorite-button");
+var closeFavoritesButton = document.querySelector(".cancel-fav-btn");
+
+function toggleFavorites() {
+  favModal.classList.toggle("show-favorite-modal");
+}
+
+function windowOutclick2(event) {
+  if (event.target === favModal) {
+    toggleFavorites();
+  }
+}
+
+FavBtntrigger.addEventListener("click", toggleFavorites);
+closeFavoritesButton.addEventListener("click", toggleFavorites);
+window.addEventListener("click", windowOutclick2);
+
 //
 // ========
 // + Time and month text +
@@ -203,12 +222,26 @@ $(document).ready(function () {
   });
 });
 
+//
+// ========
+// + Keyboard Shortcuts +
+// ========
+//
+
+var opnSetting = document.querySelector(".close-button");
+document.body.addEventListener("keydown", function () {
+  if (event.keyCode == 83 && event.shiftKey) {
+    // Shift + S key
+    opnSetting.click();
+  }
+});
+
 // Esc to close settings and favModal
 $(document).keyup(function (e) {
   if (e.keyCode == 27) {
     $(".settings_modal").removeClass("show-modal");
     // click on cancel-fav-btn
-    $(".cancel-fav-btn").click();
+    $(".fav_modal").removeClass("show-favorite-modal");
     // unfocus search-bar
     $(".search-bar").blur();
     $(".sounds_modal").removeClass("show-sounds-modal");

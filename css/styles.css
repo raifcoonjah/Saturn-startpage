@@ -102,6 +102,7 @@ v3.1 CSS Main.Core
 ========
 */
 
+.fav_modal,
 .settings_modal,
 .sounds_modal {
   position: fixed;
@@ -115,6 +116,7 @@ v3.1 CSS Main.Core
   transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
 }
 
+.favorites_modal_content,
 .settings-content,
 .sounds-modal-content {
   position: absolute;
@@ -133,11 +135,18 @@ v3.1 CSS Main.Core
   width: 30rem;
   height: 21rem;
 }
+
 .settings-content {
   width: 77rem;
   height: 35rem;
 }
 
+.favorites_modal_content {
+  width: 40rem;
+  height: 33rem;
+}
+
+.show-favorite-modal,
 .show-sounds-modal,
 .show-modal {
   opacity: 1;
@@ -428,7 +437,7 @@ div.theme-container {
 */
 
 .save-button {
-  padding: 14px 11px;
+  padding: 14px 15px;
   background: var(--lighter-color);
   color: var(--sat-ids);
 }
@@ -439,7 +448,7 @@ div.theme-container {
 }
 
 .cancel-fav-btn {
-  padding: 13px 11px;
+  padding: 14px 15px;
   outline: none;
   color: var(--sat-ids);
 }
@@ -468,14 +477,25 @@ div.theme-container {
 }
 
 .fav_ptgi_btn:hover, /* added this to make the hover animation similar */
-.favModal input:hover,
-.favModal input:focus,
 .favorites-search input:hover,
 .favorites-search input:focus,
+.fav_modal input:hover,
+.fav_modal input:focus,
 .username-section input:focus,
 .username-section input:hover {
   border: 2px solid var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
+}
+
+.fav_modal input {
+  width: 100%;
+  color: var(--sat-ids);
+  margin: 5px 0;
+  padding: 16px 15px;
+  outline: none;
+  border: 2px solid transparent;
+  font-size: 14px;
+  border-radius: var(--sat-border-radius);
 }
 
 /* 
@@ -594,37 +614,6 @@ ul.apps-category li.current {
 ========
 */
 
-.favModal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  animation: scale 100ms;
-}
-
-/* Favorite modal Content/Box */
-.fav-content {
-  background-color: var(--sat-setting-bg-color);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1px 11px;
-  width: 35rem;
-  height: 33.7rem;
-  overflow-y: scroll;
-  border-radius: 20px;
-  overflow-y: auto;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
-  border: 1px solid var(--lighter-color);
-}
-
 /* 
 ========
 + Optimizations for favorites features.
@@ -727,17 +716,6 @@ ul li {
   border: none;
 }
 
-.favModal input {
-  width: 100%;
-  color: var(--sat-ids);
-  margin: 5px 0;
-  padding: 16px 15px;
-  outline: none;
-  border: 2px solid transparent;
-  font-size: 14px;
-  border-radius: var(--sat-border-radius);
-}
-
 /* Large add favorite button */
 
 .fav-btn {
@@ -810,8 +788,8 @@ ul li {
 */
 
 .fav_ptgi_category {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 ul.fav_ptgi_category {
