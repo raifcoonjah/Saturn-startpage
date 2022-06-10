@@ -1,6 +1,6 @@
 /*
 Saturn Startpage: Open source & free.
-v3 CSS Main.Core
+v3.1 CSS Main.Core
 */
 
 /* 
@@ -74,6 +74,8 @@ v3 CSS Main.Core
   color: var(--sat-accent-color1);
   animation: blinker 1s linear infinite;
 }
+
+/* New blinker effect! */
 
 @keyframes blinker {
   50% {
@@ -442,7 +444,6 @@ div.theme-container {
   color: var(--sat-ids);
 }
 
-
 /* 
 ========
 + The where to next text inside more apps. (top middle one) +
@@ -483,15 +484,6 @@ div.theme-container {
 ========
 */
 
-.social-icons {
-  font-size: 35px;
-  outline: none;
-}
-
-.social-icons:hover {
-  color: var(--sat-accent-color1);
-}
-
 .small-icons {
   font-size: 20px;
   padding: 10px !important;
@@ -522,10 +514,6 @@ div.theme-container {
   border-radius: 13px;
 }
 
-.cuteapps:hover {
-  color: var(--for-white); /* force white to fix issues */
-}
-
 /* 
 ========
 + Apps List Category +
@@ -543,26 +531,22 @@ ul.apps-category {
 ul.apps-category li {
   font-size: 16px;
   background: none;
-  color: var(--lighter-text-color);
   display: inline-block;
-  padding: 6px 9px;
+  padding: 7px 9px;
   cursor: pointer;
   border-radius: var(--sat-border-radius);
-  border: 2px solid var(--sat-bg);
 }
 
 ul.apps-category li:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
 ul.apps-category li.current {
   background-color: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   font-weight: 500;
-  box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
 /* 
@@ -570,6 +554,7 @@ ul.apps-category li.current {
 + Tabs (Settings navigation) +
 ========
 */
+
 .tabs {
   margin: -10px;
   margin-top: -5px;
@@ -587,6 +572,7 @@ ul.apps-category li.current {
   margin-top: 31px;
   padding: 0px 10px;
 }
+
 /* 
 ========
 + New About section - simple center +
@@ -597,15 +583,10 @@ ul.apps-category li.current {
 .new-about,
 .new-about img {
   text-align: center;
-  font-weight: 500;
-}
-.socials .app {
-  border: 1px solid var(--lighter-color);
 }
 
 .socials .app:hover {
   transition: var(--transition-speed-default);
-  border: 1px solid transparent;
 }
 /* 
 ========
@@ -712,8 +693,6 @@ ul li {
 }
 
 .removebtn {
-  border: none;
-  background: none;
   float: right;
   margin-top: -5px;
   padding: 10px;
@@ -722,8 +701,6 @@ ul li {
 }
 
 .newtabbtn {
-  border: none;
-  background: none;
   float: right;
   margin-top: -5px;
   padding: 10px;
@@ -736,7 +713,6 @@ ul li {
   border: 1px solid var(--sat-accent-color1);
   background-color: var(--sat-accent-color-lighter);
   transition: var(--transition-speed-default);
-  color: var(--for-white);
 }
 
 #content {
@@ -833,10 +809,6 @@ ul li {
 ========
 */
 
-.fav_ptgi {
-  margin-top: -10px;
-}
-
 .fav_ptgi_category {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -920,63 +892,9 @@ ul.fav_ptgi_category li {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-/* 
-========
-+ fadein and fadeout animation used by the snackbar +
-========
-*/
-@-webkit-keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-
 /* Text on the bottom of favorites modal. */
 .side-text {
   text-align: center;
-}
-
-/* Make whats new text smaller. */
-.whatsnew li {
-  font-size: 15px;
 }
 
 /* 
@@ -984,6 +902,7 @@ ul.fav_ptgi_category li {
 + This fixes a major hover issue related to favorites. +
 + This code just prevents a small bar from 
 appearing when the user hovers on the open in new tab button.
++ This is a "hack" and will need to be completely fix in the future. +
 ========
 */
 
@@ -998,6 +917,7 @@ appearing when the user hovers on the open in new tab button.
 /* 
 ========
 + Used to fix issues with new search icons +
++ Works on any SVG +
 ========
 */
 
@@ -1052,7 +972,78 @@ appearing when the user hovers on the open in new tab button.
 + Used for spacing +
 ========
 */
+
 .buttons-container {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/*
+========
++ New settings layout & design improvements +
+========
+*/
+
+.settings-item-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 10px !important;
+}
+
+.settings-item-under-title {
+  font-size: 17px;
+  margin-top: -15px;
+  margin-left: 10px !important;
+}
+
+.description {
+  color: var(--sat-lighter-ids) !important;
+  font-size: 16px;
+}
+
+/* 
+========
++ Soundboard +
+========
+*/
+.pause {
+  color: var(--sat-accent-color1);
+}
+
+.pause i {
+  animation: blinker 2.5s linear infinite;
+}
+
+.control-button {
+  font-size: 20px;
+  border-radius: 13px;
+  width: 49%;
+  margin-top: 25px;
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+}
+
+.soundboard-container {
+  display: inline-block;
+}
+
+.audio-button i {
+  font-size: 60px;
+  display: block;
+}
+
+.audio-button {
+  outline: none;
+  padding: 10px 15px;
+  margin: 4px;
+  margin-top: 15px;
+  border-radius: 13px !important;
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+  display: block;
+  display: inline-block;
+}
+
+/* Used to fix some bugs */
+
+.center-content {
+  display: inline-block;
 }
