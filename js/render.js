@@ -263,7 +263,7 @@ const favIcons = (fav) => {
               >
                 <li
                   class="fav_ptgi_btn"
-                  data-tootik="What the f*ck is this?"
+                  data-tootik="Refer to the guide for more info."
                   data-tootik-conf="right"
                 >
                   <i class="lar la-question-circle"></i></li

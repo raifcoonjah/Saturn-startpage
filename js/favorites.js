@@ -94,7 +94,6 @@ $(document).ready(function () {
   });
 })(jQuery);
 
-
 //
 // ========
 // + Show message when save button is pressed +
