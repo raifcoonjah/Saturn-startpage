@@ -718,14 +718,14 @@ ul li {
 
 /* Large add favorite button */
 
-.fav-btn {
+.favorite-button {
   padding: 13px 12px;
   font-weight: 500;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
 
-.fav-btn:hover {
+.favorite-button:hover {
   background-color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
   color: var(--for-white);
@@ -1004,8 +1004,8 @@ appearing when the user hovers on the open in new tab button.
   display: inline-block;
 }
 
-.audio-button i {
-  font-size: 60px;
+.audio-button {
+  font-size: 45px;
   display: block;
 }
 
