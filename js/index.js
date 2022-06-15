@@ -236,7 +236,7 @@ document.body.addEventListener("keydown", function () {
   }
 });
 
-// Esc to close settings and favModal
+// Esc to close modals
 $(document).keyup(function (e) {
   if (e.keyCode == 27) {
     $(".settings_modal").removeClass("show-modal");
@@ -335,7 +335,12 @@ $(document).keyup(function (soundboard) {
   }
 });
 
-// Shift + B to open soundboard
+// Shift + Z to open favModal
+$(document).keyup(function (favModal) {
+  if (favModal.keyCode == 90 && favModal.shiftKey) {
+    $(".fav_modal").addClass("show-favorite-modal");
+  }
+});
 
 //
 // ========
@@ -356,30 +361,17 @@ $(document).ready(function () {
 
 //
 // ========
-// + *New* Username feature +
+// + *New* Username feature v2 +
 // ========
 //
-
 $(document).ready(function () {
   $("#save").click(function () {
-    var username = $("#userSet").val();
-    if (typeof Storage !== "undefined") {
-      localStorage.user = username;
-      $("#save").text("↻ Saved, reloading..");
-      $("#Uname").val(localStorage.getItem("user"));
-      setTimeout(function () {
-        window.location.reload(1);
-      }, 2000);
-      if (localStorage.getItem("user") == "") {
-        $("#userSet").attr(
-          "placeholder",
-          "Using default username, as input field is empty.."
-        );
-        $("#userSet").css("border", "1px solid var(--delete-warning-bg)");
-        localStorage.user = "null";
-      }
+    var username = $("#username_input").val();
+    if (username == "") {
+      $("#username_input").css("border", "2px solid var(--delete-warning-bg)");
     } else {
-      $("#Uname").val("Sorry, your browser does not support Web Storage..");
+      localStorage.setItem("user", username);
+      location.reload();
     }
   });
 });
