@@ -347,6 +347,15 @@ ul.tabs li {
   left: 40%;
 }
 
+.app svg {
+  margin: 0;
+  position: absolute;
+  top: 49%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 40%;
+}
+
 .app i {
   position: relative;
   bottom: 108%;

@@ -1,6 +1,8 @@
-// Add Javascript here.
-// Think this should be in Saturn Startpage? Feel free to make a PR.
-
+//
+// ========
+// + RENDER.js +
+// ========
+//
 const appsList = (x) => {
   $(x).append(`<div id="app-1" class="app-content current">
           <div class="popup">
