@@ -437,3 +437,19 @@ $("#volume-decrease").click(function () {
   fireplace.volume -= 0.1;
   waves.volume -= 0.1;
 });
+
+// Get input from image_url and save it inside image_url localStorage
+$("#save-image").click(function () {
+  var image_url = $("#image_url").val();
+  localStorage.setItem("image_url", image_url);
+  // reload page
+  location.reload();
+});
+
+// get input from image_url and set it as the body background and keep it everytime the page is refreshed
+$(document).ready(function () {
+  var image_url = localStorage.getItem("image_url");
+  if (image_url) {
+    $("body").css("background-image", "url(" + image_url + ")");
+  }
+});
