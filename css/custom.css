@@ -6,8 +6,8 @@
 */
 
 .sqaure_box {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   background-color: var(--lighter-color);
   padding: 5px;
   margin: 10px;

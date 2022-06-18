@@ -480,14 +480,11 @@ div.theme-container {
   border: 1px solid transparent;
 }
 
-
-
 /* 
 ========
 + Consistent UI / Input bars +
 ========
 */
-
 
 .favorites-search input,
 .username-section input {

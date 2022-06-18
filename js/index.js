@@ -479,3 +479,4 @@ $("#delete_custom_image").click(function () {
   localStorage.removeItem("image_url");
   location.reload();
 });
+

@@ -981,6 +981,7 @@ use the correct border radius == */
 */
 
 @media (max-width: 68.75em) {
+  .wallpaper_modal_content,
   .favorites_modal_content,
   .sounds-modal-content,
   .settings-content {
