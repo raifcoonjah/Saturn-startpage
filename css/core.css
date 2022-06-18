@@ -860,13 +860,6 @@ img {
   background: var(--sat-search-shortcuts);
 }
 
-/* == Allows the "header text" to make use of gradient effect == */
-
-.good_morning {
-  background-color: var(--gudmrning-txt-bg);
-  background-image: var(--gudmrning-txt);
-}
-
 /* 
 ========
 + Everything that makes use of a similar

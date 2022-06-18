@@ -438,6 +438,10 @@ $("#volume-decrease").click(function () {
   waves.volume -= 0.1;
 });
 
+
+
+
+
 // Get input from image_url and save it inside image_url localStorage
 $("#save-image").click(function () {
   var image_url = $("#image_url").val();
