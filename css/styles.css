@@ -99,6 +99,7 @@ v3.1 CSS Main.Core
 ========
 */
 
+.wallpaper_modal,
 .fav_modal,
 .settings_modal,
 .sounds_modal {
@@ -113,6 +114,7 @@ v3.1 CSS Main.Core
   transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
 }
 
+.wallpaper_modal_content,
 .favorites_modal_content,
 .settings-content,
 .sounds-modal-content {
@@ -126,6 +128,11 @@ v3.1 CSS Main.Core
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
   border: 1px solid var(--lighter-color);
+}
+
+.wallpaper_modal_content {
+  width: 35rem;
+  height: 20rem;
 }
 
 .sounds-modal-content {
@@ -143,6 +150,7 @@ v3.1 CSS Main.Core
   height: 33rem;
 }
 
+.show-wallpaper-modal,
 .show-favorite-modal,
 .show-sounds-modal,
 .show-modal {
@@ -453,6 +461,7 @@ div.theme-container {
   transition: var(--transition-speed-default);
 }
 
+.close-wallpaper,
 .cancel-fav-btn {
   padding: 14px 15px;
   outline: none;
@@ -471,11 +480,14 @@ div.theme-container {
   border: 1px solid transparent;
 }
 
+
+
 /* 
 ========
 + Consistent UI / Input bars +
 ========
 */
+
 
 .favorites-search input,
 .username-section input {
@@ -487,6 +499,8 @@ div.theme-container {
 .favorites-search input:focus,
 .fav_modal input:hover,
 .fav_modal input:focus,
+.wallpaper-input input:hover,
+.wallpaper-input input:focus,
 .username-section input:focus,
 .username-section input:hover {
   border: 2px solid var(--sat-accent-color1);
@@ -783,8 +797,9 @@ ul li {
 
 /* Hiding the background color for cancel button */
 
+.close-wallpaper,
 .cancel-fav-btn {
-  background-color: var(--sat-setting-bg-color);
+  background-color: transparent;
 }
 
 /* 

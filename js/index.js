@@ -58,9 +58,29 @@ function windowOutclick(event) {
     toggleSounds();
   }
 }
+
 SBtntrigger.addEventListener("click", toggleSounds);
 closeSoundsButton.addEventListener("click", toggleSounds);
 window.addEventListener("click", windowOutclick);
+
+// Background wallpaper modal
+var wallpaperModal = document.querySelector(".wallpaper_modal");
+var wallpaperButton = document.getElementById("wallpaper-button");
+var closeWallpaperButton = document.querySelector(".close-wallpaper");
+
+function toggleWallpaper() {
+  wallpaperModal.classList.toggle("show-wallpaper-modal");
+}
+
+function windowOutclick3(event) {
+  if (event.target === wallpaperModal) {
+    toggleWallpaper();
+  }
+}
+
+wallpaperButton.addEventListener("click", toggleWallpaper);
+closeWallpaperButton.addEventListener("click", toggleWallpaper);
+window.addEventListener("click", windowOutclick3);
 
 // Favorites modal
 var favModal = document.querySelector(".fav_modal");
@@ -438,10 +458,6 @@ $("#volume-decrease").click(function () {
   waves.volume -= 0.1;
 });
 
-
-
-
-
 // Get input from image_url and save it inside image_url localStorage
 $("#save-image").click(function () {
   var image_url = $("#image_url").val();
@@ -456,4 +472,10 @@ $(document).ready(function () {
   if (image_url) {
     $("body").css("background-image", "url(" + image_url + ")");
   }
+});
+
+// clicking on button with id "delete_custom_image" will delete the image_url localStorage
+$("#delete_custom_image").click(function () {
+  localStorage.removeItem("image_url");
+  location.reload();
 });

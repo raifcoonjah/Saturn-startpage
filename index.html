@@ -208,15 +208,28 @@
               </div>
             </div>
 
-            <p class="settings-item-title">Custom background (Beta)</p>
+
+            <!-- Custom background feature -->
+            <p class="settings-item-title">Custom background</p>
             <p class="settings-item-under-title description">
               Set Saturn's background to anything you want.
             </p>
             <div class="settings-background">
-              <input type="text" name="setusername" id="image_url" placeholder="IMAGEURL........." />
-              <button id="save-image" class="save-button">
-                <i class="las la-save"></i> Save image URL....
-              </button>
+
+              <div class="cbw_container">
+
+                <button class="sqaure_box" id="wallpaper-button">
+                  <i class="las la-plus"></i>
+                  <span>Set wallpaper</span>
+                </button>
+
+                <button class="sqaure_box red_text" id="delete_custom_image" title="Delete custom background...."
+                  data-tootik="Delete custom background" data-tootik-conf="top no-arrow">
+                  <i class="las la-trash-alt"></i>
+                  <span>Delete</span>
+                </button>
+              </div>
+
             </div>
 
 
@@ -244,7 +257,8 @@
 
             <p class="description" style="text-align: center; font-weight: 500; font-size: 13px">
               <a href="https://github.com/mraif13/Saturn-startpage/issues/new" target="_blank"><i
-                  class="las la-bug"></i> Report a bug
+                  class="las la-bug"></i>
+                Report a bug
               </a>
             </p>
           </div>
@@ -462,22 +476,54 @@
       </div>
     </div>
 
-    <br />
+    <div id="wallpaper_modal" class="wallpaper_modal">
+      <div class="wallpaper_modal_content">
+        <br />
+        <p class="settings-item-title">Custom wallpaper (Beta)</p>
+        <p class="settings-item-under-title description" style="font-size: 14px;">
+          Set a custom url that will be used as a wallpaper.
+        </p>
 
-    <!-- All the javascript needed to make saturn's core features work  -->
-    <script type="text/javascript" src="js/index.js"></script>
-    <!-- Main JS - File -->
-    <script type="text/javascript" src="js/search.js"></script>
-    <!-- Search JS - File -->
-    <script type="text/javascript" src="js/favorites.js"></script>
-    <!-- Favorites JS - File -->
-    <script type="text/javascript" src="js/render.js"></script>
-    <!-- Render JS - File -->
-    <script type="text/javascript" src="js/quote.js"></script>
-    <!-- Quote JS - File -->
-    <script type="text/javascript" src="js/layout.js"></script>
-    <!-- THEMES JS - File -->
-    <script type="text/javascript" src="js/themes.js"></script>
+
+        <input type="text" style="width:100%;" id="image_url" placeholder="Image URL.." />
+
+        <div class="buttons-container">
+          <button id="close-wallpaper" class="close-wallpaper">
+            <i class="las la-times-circle"></i> Cancel
+          </button>
+          <button id="save-image" class="save-button">
+            <i class="lar la-save"></i> Save
+          </button>
+        </div>
+        <details>
+          <summary>Learn more</summary>
+          <img src="/img/change-search.gif" alt="change-search" />
+
+          <p>
+            Or
+            press <kbd>Ctrl</kbd> +
+            <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up)
+          </p>
+        </details>
+      </div>
+
+
+      <br />
+
+      <!-- All the javascript needed to make saturn's core features work  -->
+      <script type="text/javascript" src="js/index.js"></script>
+      <!-- Main JS - File -->
+      <script type="text/javascript" src="js/search.js"></script>
+      <!-- Search JS - File -->
+      <script type="text/javascript" src="js/favorites.js"></script>
+      <!-- Favorites JS - File -->
+      <script type="text/javascript" src="js/render.js"></script>
+      <!-- Render JS - File -->
+      <script type="text/javascript" src="js/quote.js"></script>
+      <!-- Quote JS - File -->
+      <script type="text/javascript" src="js/layout.js"></script>
+      <!-- THEMES JS - File -->
+      <script type="text/javascript" src="js/themes.js"></script>
   </main>
 </body>
 
