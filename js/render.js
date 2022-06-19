@@ -153,7 +153,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.1.0"
                   target="_blank" 
-                  >v5.1.0<i class="las la-external-link-alt"></i
+                  >v5.1.0 (BETA v5.0.96)<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -213,8 +213,8 @@ const kShortcuts = (ks) => {
               <p> Press <kbd>Shift</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
               <p> Press <kbd>Shift</kbd> + <kbd>B</kbd> to open soundboard. </p>
               <p> Press on <kbd>Esc</kbd> to close any modal.</p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. (Provided by firefox) </p>
-              <h4>Apps:</h4>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. (Provided by Firefox) </p>
+              <h4>Apps</h4>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open <span style="font-weight: 700;">Youtube.</span></p>
