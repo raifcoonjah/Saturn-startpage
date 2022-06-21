@@ -265,6 +265,7 @@ $(document).keyup(function (e) {
     // unfocus search-bar
     $(".search-bar").blur();
     $(".sounds_modal").removeClass("show-sounds-modal");
+    $(".wallpaper_modal").removeClass("show-wallpaper-modal");
   }
 });
 
@@ -352,6 +353,13 @@ $(document).keyup(function (instagram) {
 $(document).keyup(function (soundboard) {
   if (soundboard.keyCode == 66 && soundboard.shiftKey) {
     $(".sounds_modal").addClass("show-sounds-modal");
+  }
+});
+
+// Shift + Alt + C to open wallpaper_modal
+$(document).keyup(function (wallpaper) {
+  if (wallpaper.keyCode == 67 && wallpaper.shiftKey && wallpaper.altKey) {
+    $(".wallpaper_modal").addClass("show-wallpaper-modal");
   }
 });
 
@@ -461,6 +469,8 @@ $("#volume-decrease").click(function () {
 //
 // ========
 // + *New* Wallpaper Feature +
+// Leaving the input bar empty will default to the theme's background color instead, this should prevent
+// weird issues.
 // ========
 //
 
