@@ -381,7 +381,7 @@ $(document).ready(function () {
 
 //
 // ========
-// + *New* Username feature v2 +
+// + Username feature v2 +
 // ========
 //
 $(document).ready(function () {
@@ -458,7 +458,12 @@ $("#volume-decrease").click(function () {
   waves.volume -= 0.1;
 });
 
-// Get input from image_url and save it inside image_url localStorage
+//
+// ========
+// + *New* Wallpaper Feature +
+// ========
+//
+
 $("#save-image").click(function () {
   var image_url = $("#image_url").val();
   localStorage.setItem("image_url", image_url);
@@ -479,4 +484,3 @@ $("#delete_custom_image").click(function () {
   localStorage.removeItem("image_url");
   location.reload();
 });
-
