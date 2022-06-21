@@ -1054,16 +1054,18 @@ appearing when the user hovers on the open in new tab button.
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: 1.7rem;
   cursor: pointer;
   flex-direction: column;
+  border: 1px solid transparent;
 }
 
 .sqaure_box:hover {
   transition: ease-in var(--transition-speed-default);
   background-color: var(--favorites-hover);
   color: var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color-lighter);
 }
 
 .sqaure_box span {
@@ -1081,4 +1083,8 @@ appearing when the user hovers on the open in new tab button.
 /* Used to make any text red */
 .red_text {
   color: var(--delete-warning-bg) !important;
+}
+
+.red_text:hover {
+  border: 1px solid var(--delete-warning-bg);
 }
