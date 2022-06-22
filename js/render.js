@@ -194,6 +194,31 @@ const settingAbout = (z) => {
                 </div>
               </div>
             </div>
+             <p class="settings-item-title">What's new</p>
+            <p class="settings-item-under-title description">Learn what's new in this release.</p>
+            <div class="settings-background"> 
+            
+
+            <h2><i class="las la-meteor"></i> v5.1</h2>
+            <p class="description">Smooth experience, custom background, and more!</p>
+
+            <h3>🌄 Custom background</h3>
+            <p> Saturn now supports the ability to add images or GIF as your background, 
+            try it out. Head to Settings > General > Custom background </p>
+
+            <h3>🧘 Username</h3>
+            <p> The username feature got rewritten from the scratch for both better stability 
+            and performance. </p>
+
+            <h3>⭐ Favorites upgrades</h3>
+            <p> Favorites modal got a complete overhaul with a brand new user interface and a bunch of bug fixes.  
+            You can now also include iframes inside of your favorites (beta). </p>
+
+            <h3>🐞 Bunch of fixes and overall cleanup</h3>
+            <p> This release includes tons of bug fixes, including some issues that were caused by the big 5.0 release. </p>
+
+            </div>
+
           </div>`);
 };
 
