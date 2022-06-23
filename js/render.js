@@ -153,7 +153,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.1.0"
                   target="_blank" 
-                  >v5.1.0 (BETA v5.0.98)<i class="las la-external-link-alt"></i
+                  >v5.1.0<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -204,7 +204,7 @@ const settingAbout = (z) => {
 
             <h3>🌄 Custom background</h3>
             <p> Saturn now supports the ability to add images or GIF as your background, 
-            try it out. Head to Settings > General > Custom background </p>
+            try it out. Head to Settings > General > Custom background > Set background</p>
 
             <h3>🧘 Username</h3>
             <p> The username feature got rewritten from the scratch for both better stability 
