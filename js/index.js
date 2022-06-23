@@ -58,9 +58,48 @@ function windowOutclick(event) {
     toggleSounds();
   }
 }
+
 SBtntrigger.addEventListener("click", toggleSounds);
 closeSoundsButton.addEventListener("click", toggleSounds);
 window.addEventListener("click", windowOutclick);
+
+// Background wallpaper modal
+var wallpaperModal = document.querySelector(".wallpaper_modal");
+var wallpaperButton = document.getElementById("wallpaper-button");
+var closeWallpaperButton = document.querySelector(".close-wallpaper");
+
+function toggleWallpaper() {
+  wallpaperModal.classList.toggle("show-wallpaper-modal");
+}
+
+function windowOutclick3(event) {
+  if (event.target === wallpaperModal) {
+    toggleWallpaper();
+  }
+}
+
+wallpaperButton.addEventListener("click", toggleWallpaper);
+closeWallpaperButton.addEventListener("click", toggleWallpaper);
+window.addEventListener("click", windowOutclick3);
+
+// Favorites modal
+var favModal = document.querySelector(".fav_modal");
+var FavBtntrigger = document.querySelector(".favorite-button");
+var closeFavoritesButton = document.querySelector(".cancel-fav-btn");
+
+function toggleFavorites() {
+  favModal.classList.toggle("show-favorite-modal");
+}
+
+function windowOutclick2(event) {
+  if (event.target === favModal) {
+    toggleFavorites();
+  }
+}
+
+FavBtntrigger.addEventListener("click", toggleFavorites);
+closeFavoritesButton.addEventListener("click", toggleFavorites);
+window.addEventListener("click", windowOutclick2);
 
 //
 // ========
@@ -203,14 +242,30 @@ $(document).ready(function () {
   });
 });
 
-// Esc to close settings and favModal
+//
+// ========
+// + Keyboard Shortcuts +
+// ========
+//
+
+var opnSetting = document.querySelector(".close-button");
+document.body.addEventListener("keydown", function () {
+  if (event.keyCode == 83 && event.shiftKey) {
+    // Shift + S key
+    opnSetting.click();
+  }
+});
+
+// Esc to close modals
 $(document).keyup(function (e) {
   if (e.keyCode == 27) {
     $(".settings_modal").removeClass("show-modal");
     // click on cancel-fav-btn
-    $(".cancel-fav-btn").click();
+    $(".fav_modal").removeClass("show-favorite-modal");
     // unfocus search-bar
     $(".search-bar").blur();
+    $(".sounds_modal").removeClass("show-sounds-modal");
+    $(".wallpaper_modal").removeClass("show-wallpaper-modal");
   }
 });
 
@@ -294,7 +349,26 @@ $(document).keyup(function (instagram) {
   }
 });
 
-// Shift + B to open soundboard
+// Shift + B to open Soundboard_modal
+$(document).keyup(function (soundboard) {
+  if (soundboard.keyCode == 66 && soundboard.shiftKey) {
+    $(".sounds_modal").addClass("show-sounds-modal");
+  }
+});
+
+// Shift + Alt + C to open wallpaper_modal
+$(document).keyup(function (wallpaper) {
+  if (wallpaper.keyCode == 67 && wallpaper.shiftKey && wallpaper.altKey) {
+    $(".wallpaper_modal").addClass("show-wallpaper-modal");
+  }
+});
+
+// Shift + Z to open favModal
+$(document).keyup(function (favModal) {
+  if (favModal.keyCode == 90 && favModal.shiftKey) {
+    $(".fav_modal").addClass("show-favorite-modal");
+  }
+});
 
 //
 // ========
@@ -315,30 +389,17 @@ $(document).ready(function () {
 
 //
 // ========
-// + *New* Username feature +
+// + Username feature v2 +
 // ========
 //
-
 $(document).ready(function () {
   $("#save").click(function () {
-    var username = $("#userSet").val();
-    if (typeof Storage !== "undefined") {
-      localStorage.user = username;
-      $("#save").text("↻ Saved, reloading..");
-      $("#Uname").val(localStorage.getItem("user"));
-      setTimeout(function () {
-        window.location.reload(1);
-      }, 2000);
-      if (localStorage.getItem("user") == "") {
-        $("#userSet").attr(
-          "placeholder",
-          "Using default username, as input field is empty.."
-        );
-        $("#userSet").css("border", "1px solid var(--delete-warning-bg)");
-        localStorage.user = "null";
-      }
+    var username = $("#username_input").val();
+    if (username == "") {
+      $("#username_input").css("border", "2px solid var(--delete-warning-bg)");
     } else {
-      $("#Uname").val("Sorry, your browser does not support Web Storage..");
+      localStorage.setItem("user", username);
+      location.reload();
     }
   });
 });
@@ -403,4 +464,33 @@ $("#volume-decrease").click(function () {
   rainefffect.volume -= 0.1;
   fireplace.volume -= 0.1;
   waves.volume -= 0.1;
+});
+
+//
+// ========
+// + *New* Wallpaper Feature +
+// Leaving the input bar empty will default to the theme's background color instead, this should prevent
+// weird issues.
+// ========
+//
+
+$("#save-image").click(function () {
+  var image_url = $("#image_url").val();
+  localStorage.setItem("image_url", image_url);
+  // reload page
+  location.reload();
+});
+
+// get input from image_url and set it as the body background and keep it everytime the page is refreshed
+$(document).ready(function () {
+  var image_url = localStorage.getItem("image_url");
+  if (image_url) {
+    $("body").css("background-image", "url(" + image_url + ")");
+  }
+});
+
+// clicking on button with id "delete_custom_image" will delete the image_url localStorage
+$("#delete_custom_image").click(function () {
+  localStorage.removeItem("image_url");
+  location.reload();
 });

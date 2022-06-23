@@ -1,6 +1,8 @@
-// Add Javascript here.
-// Think this should be in Saturn Startpage? Feel free to make a PR.
-
+//
+// ========
+// + RENDER.js +
+// ========
+//
 const appsList = (x) => {
   $(x).append(`<div id="app-1" class="app-content current">
           <div class="popup">
@@ -149,9 +151,9 @@ const settingAbout = (z) => {
                   /> 
                <br/>
                 Saturn Desktop: <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.0.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.1.0"
                   target="_blank" 
-                  >v5.0.0<i class="las la-external-link-alt"></i
+                  >v5.1.0 (BETA v5.0.98)<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -192,6 +194,52 @@ const settingAbout = (z) => {
                 </div>
               </div>
             </div>
+             <p class="settings-item-title">What's new</p>
+            <p class="settings-item-under-title description">Learn what's new in this release.</p>
+            <div class="settings-background"> 
+            
+
+            <h2><i class="las la-meteor"></i> v5.1</h2>
+            <p class="description">Smooth experience, custom background, and more!</p>
+
+            <h3>🌄 Custom background</h3>
+            <p> Saturn now supports the ability to add images or GIF as your background, 
+            try it out. Head to Settings > General > Custom background </p>
+
+            <h3>🧘 Username</h3>
+            <p> The username feature got rewritten from the scratch for both better stability 
+            and performance. </p>
+
+            <h3>⭐ Favorites upgrades</h3>
+            <p> Favorites modal got a complete overhaul with a brand new user interface and a bunch of bug fixes.  
+            You can now also include iframes inside of your favorites (beta). </p>
+
+            <h3>🐞 Bunch of fixes and overall cleanup</h3>
+            <p> This release includes tons of bug fixes, including some issues that were caused by the big 5.0 release. </p>
+
+            <h3>🥳 TONS of Other small improvements</h3>
+            <ul>
+            <li>
+            - Toggle switch got a complete rewritten and overhaul to fix tons of issues.
+            </li>
+            <li>
+            - Several themes fixes including modern theme causing some minor UI consistency issues. 
+            </li>
+            <li>
+            - Many user experience improvements, things and actions should be clearer now. 
+            </li>
+            <li>
+            - Added more shortcuts (Saturn ❤️ ⌨️)
+            </li>
+            <li>
+           - When an audio is playing, its icon will have fadein and fadeout animation.
+           </li>
+           <li>
+           - Tweaked settings menu design.
+           </li>
+            </ul>
+            </div>
+
           </div>`);
 };
 
@@ -199,19 +247,21 @@ const kShortcuts = (ks) => {
   $(ks).append(`<!-- + Keyboard Shortcuts section + -->
           <div id="tab-5" class="tab-content">
             <p class="settings-item-title">Keyboard Shortcuts</p>
-            <p class="settings-item-under-title description">Shortcuts allows you to do things without ever needing to touch your 
+            <p class="settings-item-under-title description">Shortcuts allow you to do things without ever needing to touch your 
             <i class="las la-mouse"></i> mouse again.</p>
             <div class="settings-background">
-              <h4><i class="las la-home"></i> General</h4>
+              <h4>General</h4>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.</p>
               <p> Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.</p>
               <p> Press <kbd>Shift</kbd> + <kbd>S</kbd> to open & close settings menu. </p>
               <p></p>
+              <p> Press <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> to open Custom wallpaper modal. </p>
               <p> Press <kbd>Shift</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
-              <p> Press on <kbd>Esc</kbd> to close the both settings, favorites menu or to unfocus search bar.</p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. </p>
-              <h4><i class="las la-icons"></i> Apps:</h4>
+              <p> Press <kbd>Shift</kbd> + <kbd>B</kbd> to open soundboard. </p>
+              <p> Press on <kbd>Esc</kbd> to close any modal.</p>
+              <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. (Provided by Firefox) </p>
+              <h4>Apps</h4>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open <span style="font-weight: 700;">Youtube.</span></p>
@@ -262,7 +312,7 @@ const favIcons = (fav) => {
               >
                 <li
                   class="fav_ptgi_btn"
-                  data-tootik="What the f*ck is this?"
+                  data-tootik="Refer to the guide for more info."
                   data-tootik-conf="right"
                 >
                   <i class="lar la-question-circle"></i></li

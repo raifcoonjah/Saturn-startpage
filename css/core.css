@@ -847,6 +847,8 @@ img {
 
 /* == Settings background color == */
 
+.wallpaper_modal_content,
+.favorites_modal_content,
 .sounds-modal-content,
 .settings-content {
   background: var(--sat-setting-bg-color);
@@ -857,13 +859,6 @@ img {
 .cuteapps,
 .removebtn {
   background: var(--sat-search-shortcuts);
-}
-
-/* == Allows the "header text" to make use of gradient effect == */
-
-.good_morning {
-  background-color: var(--gudmrning-txt-bg);
-  background-image: var(--gudmrning-txt);
 }
 
 /* 
@@ -888,6 +883,7 @@ transition speed. +
 /* == Force the use of while 
 color to fix some issues == */
 
+.close-wallpaper:hover,
 .save-button:hover,
 .cancel-fav-btn:hover,
 .removebtn:hover,
@@ -921,6 +917,7 @@ color to fix some issues == */
   transition: var(--transition-speed-default);
 }
 
+.close-wallpaper:hover,
 .cancel-fav-btn:hover {
   transition: var(--transition-speed-default);
   background-color: var(--delete-warning-bg);
@@ -948,6 +945,7 @@ ul.tabs li,
 #favorite-links:hover,
 .close-button,
 .close-sounds,
+.close-wallpaper,
 .new-close-fav {
   cursor: pointer;
 }
@@ -983,6 +981,8 @@ use the correct border radius == */
 */
 
 @media (max-width: 68.75em) {
+  .wallpaper_modal_content,
+  .favorites_modal_content,
   .sounds-modal-content,
   .settings-content {
     max-width: 90%;

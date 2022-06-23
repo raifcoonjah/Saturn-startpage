@@ -1,6 +1,6 @@
 /*
 Saturn Startpage: Open source & free.
-v3 CSS Main.Core
+v3.1 CSS Main.Core
 */
 
 /* 
@@ -25,11 +25,11 @@ v3 CSS Main.Core
 + The logo inside search engine logo +
 ========
 */
+
 .search-engine-logo {
   padding: 12px 10px;
   position: absolute;
   box-sizing: border-box;
-  outline: none;
   width: 55px;
   height: 55px;
   margin-top: 4px;
@@ -58,22 +58,21 @@ v3 CSS Main.Core
 .good_morning {
   font-weight: 500;
   text-align: center;
-  font-size: 30px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 32px;
 }
 
 .time {
   font-weight: 700;
   text-align: center;
-  font-size: 60px;
+  font-size: 62px;
 }
 
 .time span {
   color: var(--sat-accent-color1);
   animation: blinker 1s linear infinite;
 }
+
+/* New blinker effect! */
 
 @keyframes blinker {
   50% {
@@ -89,12 +88,9 @@ v3 CSS Main.Core
 
 .settings-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 1.5em;
   text-align: left;
   padding: 20px;
-  margin: -5px;
-  font-style: normal;
 }
 
 /* 
@@ -103,6 +99,9 @@ v3 CSS Main.Core
 ========
 */
 
+.wallpaper_modal,
+.fav_modal,
+.settings_modal,
 .sounds_modal {
   position: fixed;
   left: 0;
@@ -113,24 +112,11 @@ v3 CSS Main.Core
   visibility: hidden;
   transform: scale(0.9);
   transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 
-.settings_modal {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(0.9);
-  transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-}
-
+.wallpaper_modal_content,
+.favorites_modal_content,
+.settings-content,
 .sounds-modal-content {
   position: absolute;
   top: 50%;
@@ -138,29 +124,35 @@ v3 CSS Main.Core
   transform: translate(-50%, -50%);
   padding: 5px 15px;
   padding-bottom: 20px;
-  width: 30rem;
-  height: 21rem;
   border-radius: 20px;
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
   border: 1px solid var(--lighter-color);
+}
+
+.wallpaper_modal_content {
+  width: 35rem;
+  height: 16rem;
+}
+
+.sounds-modal-content {
+  width: 30rem;
+  height: 21rem;
 }
 
 .settings-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 5px 15px;
-  padding-bottom: 20px;
   width: 77rem;
   height: 35rem;
-  border-radius: 20px;
-  overflow-y: auto;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
-  border: 1px solid var(--lighter-color);
 }
 
+.favorites_modal_content {
+  width: 40rem;
+  height: 33rem;
+}
+
+.show-wallpaper-modal,
+.show-favorite-modal,
+.show-sounds-modal,
 .show-modal {
   opacity: 1;
   visibility: visible;
@@ -168,72 +160,73 @@ v3 CSS Main.Core
   transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
 }
 
-.show-sounds-modal {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
-}
 /* 
 ========
 + Everything switch related +
 ========
 */
 
-.slider-switch-wrapper {
-  display: flex;
-}
-
-.slider-switch {
-  display: inline-block;
+/* The switch - the box around the slider */
+.switch {
   position: relative;
-  width: 55px;
-  height: 26px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-.slider-switch input {
-  display: none;
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.slider:hover {
-  transition: var(--transition-speed-default);
-  border: 2px solid var(--sat-accent-color1);
-}
-
+/* The slider */
 .slider {
-  left: 1px;
   position: absolute;
-  right: 0;
+  cursor: pointer;
   top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  border: 2px solid var(--switch-color-bg-new);
+  background-color: var(--lighter-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .slider:before {
-  background-color: rgb(255, 255, 255);
-  content: "";
-  left: 3px;
   position: absolute;
-  bottom: 2.5px;
-  padding: 9px 9px;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 input:checked + .slider {
-  background: var(--sat-accent-color1);
-  border: 2px solid var(--sat-accent-color1);
+  background-color: var(--sat-accent-color1);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--sat-accent-color1);
 }
 
 input:checked + .slider:before {
-  transform: translateX(28px);
-  background-color: var(--sat-search-shortcuts);
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
+/* Rounded sliders */
 .slider.round {
-  border-radius: 200px;
+  border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 200px;
+  border-radius: 50%;
 }
 
 .section-title {
@@ -287,31 +280,23 @@ ul.tabs li:hover {
   background: var(--sat-setting-bg-effect);
   background: var(--sat-setting-bg-effect);
   border-left: 3px solid var(--sat-accent-color-lighter);
-  color: var(--sat-ids);
+  color: var(--sat-accent-color1);
 }
 
 ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
   border-left: 3px solid var(--sat-accent-color1);
-  color: var(--sat-ids);
-  font-weight: 500;
-}
-
-ul.tabs li.current i {
-  transition: var(--transition-speed-default);
-  font-size: 17px;
-  background-color: var(--lighter-color);
-  padding: 4px;
-  border-radius: 10px;
   color: var(--sat-accent-color1);
+  font-weight: 500;
 }
 
 ul.tabs li {
   font-size: 17px;
 }
+
 .tab-content {
   display: none;
-  animation: slide-up-fade-in 180ms;
+  animation: slide-up-fade-in ease 0.2s;
 }
 
 .tab-content h4 i {
@@ -336,10 +321,9 @@ ul.tabs li {
 }
 
 .app {
-  display: inline-block;
   margin: 5px 2px;
   padding: 15px 45px;
-  border-radius: 20px !important;
+  border-radius: 20px;
 }
 
 .app i {
@@ -368,6 +352,15 @@ ul.tabs li {
   left: 40%;
 }
 
+.app svg {
+  margin: 0;
+  position: absolute;
+  top: 49%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 40%;
+}
+
 .app i {
   position: relative;
   bottom: 108%;
@@ -375,16 +368,7 @@ ul.tabs li {
 
 .page-content,
 .app-content {
-  animation: fadeIn 90ms ease;
-}
-
-.page-content,
-.app-content {
   display: none;
-}
-
-.app-content h4 i {
-  color: var(--sat-accent-color1);
 }
 
 .page-content.current,
@@ -400,9 +384,8 @@ ul.tabs li {
 
 .settings-background {
   margin: 10px;
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   background: var(--sat-setting-bg-effect);
-  outline: 1px solid transparent;
 }
 
 .settings-background-warning {
@@ -421,8 +404,8 @@ ul.tabs li {
   border-radius: 13px;
   height: 4.5rem;
   margin-bottom: 0.1px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
 }
 
 div.theme-container {
@@ -430,20 +413,16 @@ div.theme-container {
   padding: 2.5px 0px;
   margin: 2px;
   border-radius: var(--sat-border-radius);
-
-  vertical-align: top;
   display: inline-block;
   text-align: center;
-  border: 2px solid var(--lighter-color);
+  border: 3px solid var(--lighter-color);
   cursor: pointer;
-  outline: 2px solid transparent;
 }
 
 .theme-container:hover {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  border: 2px solid var(--sat-accent-color1);
-  outline: 2px solid var(--sat-accent-color-lighter);
+  border: 3px solid var(--sat-accent-color1);
 }
 
 .theme-name {
@@ -459,8 +438,6 @@ div.theme-container {
 }
 
 .theme-title i {
-  transition: var(--transition-speed-default);
-  font-size: 17px;
   background-color: var(--lighter-color);
   padding: 4px;
   border-radius: 10px;
@@ -474,12 +451,9 @@ div.theme-container {
 */
 
 .save-button {
-  padding: 12px 11px;
-  outline: none;
+  padding: 14px 15px;
   background: var(--lighter-color);
   color: var(--sat-ids);
-  font-weight: 410;
-  border: 3px solid transparent;
 }
 
 .save-button:hover {
@@ -487,14 +461,11 @@ div.theme-container {
   transition: var(--transition-speed-default);
 }
 
+.close-wallpaper,
 .cancel-fav-btn {
-  padding: 13px 11px;
+  padding: 14px 15px;
   outline: none;
   color: var(--sat-ids);
-}
-
-.saved-msg {
-  visibility: hidden;
 }
 
 /* 
@@ -521,14 +492,27 @@ div.theme-container {
 }
 
 .fav_ptgi_btn:hover, /* added this to make the hover animation similar */
-.favModal input:hover,
-.favModal input:focus,
 .favorites-search input:hover,
 .favorites-search input:focus,
+.fav_modal input:hover,
+.fav_modal input:focus,
+.wallpaper-input input:hover,
+.wallpaper-input input:focus,
 .username-section input:focus,
 .username-section input:hover {
   border: 2px solid var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
+}
+
+.fav_modal input {
+  width: 100%;
+  color: var(--sat-ids);
+  margin: 5px 0;
+  padding: 16px 15px;
+  outline: none;
+  border: 2px solid transparent;
+  font-size: 14px;
+  border-radius: var(--sat-border-radius);
 }
 
 /* 
@@ -536,15 +520,6 @@ div.theme-container {
 + Icons in Setting's about section +
 ========
 */
-
-.social-icons {
-  font-size: 35px;
-  outline: none;
-}
-
-.social-icons:hover {
-  color: var(--sat-accent-color1);
-}
 
 .small-icons {
   font-size: 20px;
@@ -576,10 +551,6 @@ div.theme-container {
   border-radius: 13px;
 }
 
-.cuteapps:hover {
-  color: var(--for-white); /* force white to fix issues */
-}
-
 /* 
 ========
 + Apps List Category +
@@ -597,26 +568,22 @@ ul.apps-category {
 ul.apps-category li {
   font-size: 16px;
   background: none;
-  color: var(--lighter-text-color);
   display: inline-block;
-  padding: 6px 9px;
+  padding: 7px 9px;
   cursor: pointer;
   border-radius: var(--sat-border-radius);
-  border: 2px solid var(--sat-bg);
 }
 
 ul.apps-category li:hover {
   background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
 ul.apps-category li.current {
   background-color: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   font-weight: 500;
-  box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
 }
 
 /* 
@@ -624,6 +591,7 @@ ul.apps-category li.current {
 + Tabs (Settings navigation) +
 ========
 */
+
 .tabs {
   margin: -10px;
   margin-top: -5px;
@@ -641,6 +609,7 @@ ul.apps-category li.current {
   margin-top: 31px;
   padding: 0px 10px;
 }
+
 /* 
 ========
 + New About section - simple center +
@@ -651,51 +620,14 @@ ul.apps-category li.current {
 .new-about,
 .new-about img {
   text-align: center;
-  font-weight: 500;
-}
-.socials .app {
-  border: 1px solid var(--lighter-color);
 }
 
 .socials .app:hover {
   transition: var(--transition-speed-default);
-  border: 1px solid transparent;
-}
-/* 
-========
-+ Favorite Modal +
-========
-*/
-
-.favModal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  animation: scale 100ms;
 }
 
-/* Favorite modal Content/Box */
-.fav-content {
-  background-color: var(--sat-setting-bg-color);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1px 11px;
-  width: 35rem;
-  height: 33.7rem;
-  overflow-y: scroll;
-  border-radius: 20px;
-  overflow-y: auto;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
-  border: 1px solid var(--lighter-color);
+.fav-container {
+  margin-bottom: 10px;
 }
 
 /* 
@@ -766,8 +698,6 @@ ul li {
 }
 
 .removebtn {
-  border: none;
-  background: none;
   float: right;
   margin-top: -5px;
   padding: 10px;
@@ -776,8 +706,6 @@ ul li {
 }
 
 .newtabbtn {
-  border: none;
-  background: none;
   float: right;
   margin-top: -5px;
   padding: 10px;
@@ -805,27 +733,16 @@ ul li {
   border: none;
 }
 
-.favModal input {
-  width: 100%;
-  color: var(--sat-ids);
-  margin: 5px 0;
-  padding: 16px 15px;
-  outline: none;
-  border: 2px solid transparent;
-  font-size: 14px;
-  border-radius: var(--sat-border-radius);
-}
-
 /* Large add favorite button */
 
-.fav-btn {
+.favorite-button {
   padding: 13px 12px;
   font-weight: 500;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
 }
 
-.fav-btn:hover {
+.favorite-button:hover {
   background-color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
   color: var(--for-white);
@@ -877,8 +794,9 @@ ul li {
 
 /* Hiding the background color for cancel button */
 
+.close-wallpaper,
 .cancel-fav-btn {
-  background-color: var(--sat-setting-bg-color);
+  background-color: transparent;
 }
 
 /* 
@@ -887,13 +805,9 @@ ul li {
 ========
 */
 
-.fav_ptgi {
-  margin-top: -10px;
-}
-
 .fav_ptgi_category {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 ul.fav_ptgi_category {
@@ -974,63 +888,9 @@ ul.fav_ptgi_category li {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-/* 
-========
-+ fadein and fadeout animation used by the snackbar +
-========
-*/
-@-webkit-keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-
 /* Text on the bottom of favorites modal. */
 .side-text {
   text-align: center;
-}
-
-/* Make whats new text smaller. */
-.whatsnew li {
-  font-size: 15px;
 }
 
 /* 
@@ -1038,6 +898,7 @@ ul.fav_ptgi_category li {
 + This fixes a major hover issue related to favorites. +
 + This code just prevents a small bar from 
 appearing when the user hovers on the open in new tab button.
++ This is a "hack" and will need to be completely fix in the future. +
 ========
 */
 
@@ -1052,6 +913,7 @@ appearing when the user hovers on the open in new tab button.
 /* 
 ========
 + Used to fix issues with new search icons +
++ Works on any SVG +
 ========
 */
 
@@ -1106,7 +968,124 @@ appearing when the user hovers on the open in new tab button.
 + Used for spacing +
 ========
 */
+
 .buttons-container {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/*
+========
++ New settings layout & design improvements +
+========
+*/
+
+.settings-item-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 10px !important;
+}
+
+.settings-item-under-title {
+  font-size: 17px;
+  margin-top: -15px;
+  margin-left: 10px !important;
+}
+
+.description {
+  color: var(--sat-lighter-ids) !important;
+  font-size: 16px;
+}
+
+/* 
+========
++ Soundboard +
+========
+*/
+.pause {
+  color: var(--sat-accent-color1);
+}
+
+.pause i {
+  animation: blinker 2.5s linear infinite;
+}
+
+.control-button {
+  font-size: 20px;
+  border-radius: 13px;
+  width: 49%;
+  margin-top: 25px;
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+}
+
+.soundboard-container {
+  display: inline-block;
+}
+
+.audio-button {
+  font-size: 45px;
+  display: block;
+}
+
+.audio-button {
+  outline: none;
+  padding: 10px 15px;
+  margin: 4px;
+  margin-top: 15px;
+  border-radius: 13px !important;
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+  display: block;
+  display: inline-block;
+}
+
+/* Used to fix some bugs */
+
+.center-content {
+  display: inline-block;
+}
+
+/* Set wallpaper button */
+
+.sqaure_box {
+  width: 110px;
+  height: 110px;
+  background-color: var(--lighter-color);
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  flex-direction: column;
+  border: 1px solid transparent;
+}
+
+.sqaure_box:hover {
+  transition: ease-in var(--transition-speed-default);
+  background-color: var(--favorites-hover);
+  color: var(--sat-accent-color1);
+  border: 1px solid var(--sat-accent-color-lighter);
+}
+
+.sqaure_box span {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 3px;
+}
+
+/* Container used to align Wallpaper buttons next to each other. */
+.cbw_container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Used to make any text red */
+.red_text {
+  color: var(--delete-warning-bg) !important;
+}
+
+.red_text:hover {
+  border: 1px solid var(--delete-warning-bg);
 }

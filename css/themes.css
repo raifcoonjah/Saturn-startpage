@@ -415,9 +415,9 @@
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #966fd6 0%, #5d2ea9 100%);
   --sat-accent-color1: #966fd6;
-  --sat-accent-color-lighter: #966fd6d1;
+  --sat-accent-color-lighter: #966fd694;
   --moreapps-hovering-clr: #409eff;
-  --favorites-hover: #423762;
+  --favorites-hover: #413e51;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --delete-warning-bg: #d75352; /* Favorite delete button color */
@@ -459,7 +459,7 @@
   --sat-accent-color1: #0349b4;
   --sat-accent-color-lighter: #0a4fb788;
   --moreapps-hovering-clr: #0349b4;
-  --favorites-hover: #dbdbdb;
+  --favorites-hover: #d6d6d6;
   --switch-color-bg-new: #aaaaaa;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
@@ -475,7 +475,7 @@
   ); /* Used by the contains that contain themes icons and text. */
   --settings-button-outline: #d4d9dd; /* The outline color on the open settings button */
   --new-search-bg-hover-effect: #e7ecf0;
-  --lighter-color: #ffffff; /* Every that needs a light background color */
+  --lighter-color: #d9dfe3; /* Every that needs a light background color */
   --close-button-color: #fff;
 
   /* Multiple transition speeds */

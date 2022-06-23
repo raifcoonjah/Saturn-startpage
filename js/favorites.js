@@ -96,58 +96,6 @@ $(document).ready(function () {
 
 //
 // ========
-// + Keyboard Shortcuts +
-// ========
-//
-
-var opnSetting = document.querySelector(".close-button");
-document.body.addEventListener("keydown", function () {
-  if (event.keyCode == 83 && event.shiftKey) {
-    // Shift + S key
-    opnSetting.click();
-  }
-});
-
-//
-// ========
-// + Favorites Modal +
-// ========
-//
-
-document.addEventListener("keydown", function (favModal) {
-  if (favModal.keyCode == 90 && favModal.shiftKey) {
-    document.getElementById("favBtn").click();
-  }
-});
-
-// Get the favModal
-var favModal = document.getElementById("favModal");
-
-// Get the button that opens the favModal
-var btn = document.getElementById("favBtn");
-// Get the <span> element that closes the favModal
-var span = document.getElementsByClassName("cancel-fav-btn")[0];
-
-// When the user clicks on the button, open the favModal
-
-btn.onclick = function () {
-  favModal.style.display = "block";
-};
-
-// When the user clicks on <span> (cancel), close the favModal
-span.onclick = function () {
-  favModal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the favModal, close it
-window.onclick = function (event) {
-  if (event.target == favModal) {
-    favModal.style.display = "none";
-  }
-};
-
-//
-// ========
 // + Show message when save button is pressed +
 // ========
 //
