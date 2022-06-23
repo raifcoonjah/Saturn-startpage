@@ -234,6 +234,9 @@ const settingAbout = (z) => {
             <li>
            - When an audio is playing, its icon will have fadein and fadeout animation.
            </li>
+           <li>
+           - Tweaked settings menu design.
+           </li>
             </ul>
             </div>
 
