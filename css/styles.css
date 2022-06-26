@@ -290,6 +290,12 @@ ul.tabs li.current {
   font-weight: 500;
 }
 
+ul.tabs li i {
+  background-color: var(--lighter-color);
+  padding: 3px 3px;
+  border-radius: 6px;
+}
+
 ul.tabs li {
   font-size: 17px;
 }
@@ -1088,4 +1094,8 @@ appearing when the user hovers on the open in new tab button.
 
 .red_text:hover {
   border: 1px solid var(--delete-warning-bg);
+}
+
+.red_background {
+  background-color: var(--delete-warning-bg) !important;
 }

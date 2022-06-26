@@ -494,3 +494,10 @@ $("#delete_custom_image").click(function () {
   localStorage.removeItem("image_url");
   location.reload();
 });
+
+document.getElementById("reset_button").addEventListener("click", reset_data);
+
+function reset_data() {
+  localStorage.clear();
+  location.reload();
+}

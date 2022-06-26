@@ -151,9 +151,9 @@ const settingAbout = (z) => {
                   /> 
                <br/>
                 Saturn Desktop: <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.1.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.2.0"
                   target="_blank" 
-                  >v5.1.0 (BETA v5.0.98)<i class="las la-external-link-alt"></i
+                  >v5.2.0 (BETA v5.1.80)<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -199,45 +199,8 @@ const settingAbout = (z) => {
             <div class="settings-background"> 
             
 
-            <h2><i class="las la-meteor"></i> v5.1</h2>
-            <p class="description">Smooth experience, custom background, and more!</p>
-
-            <h3>🌄 Custom background</h3>
-            <p> Saturn now supports the ability to add images or GIF as your background, 
-            try it out. Head to Settings > General > Custom background </p>
-
-            <h3>🧘 Username</h3>
-            <p> The username feature got rewritten from the scratch for both better stability 
-            and performance. </p>
-
-            <h3>⭐ Favorites upgrades</h3>
-            <p> Favorites modal got a complete overhaul with a brand new user interface and a bunch of bug fixes.  
-            You can now also include iframes inside of your favorites (beta). </p>
-
-            <h3>🐞 Bunch of fixes and overall cleanup</h3>
-            <p> This release includes tons of bug fixes, including some issues that were caused by the big 5.0 release. </p>
-
-            <h3>🥳 TONS of Other small improvements</h3>
-            <ul>
-            <li>
-            - Toggle switch got a complete rewritten and overhaul to fix tons of issues.
-            </li>
-            <li>
-            - Several themes fixes including modern theme causing some minor UI consistency issues. 
-            </li>
-            <li>
-            - Many user experience improvements, things and actions should be clearer now. 
-            </li>
-            <li>
-            - Added more shortcuts (Saturn ❤️ ⌨️)
-            </li>
-            <li>
-           - When an audio is playing, its icon will have fadein and fadeout animation.
-           </li>
-           <li>
-           - Tweaked settings menu design.
-           </li>
-            </ul>
+            <h2><i class="las la-meteor"></i> v5.2</h2>
+            <p class="description">Stability, new features & bug fixes!</p>
             </div>
 
           </div>`);
