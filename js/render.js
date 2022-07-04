@@ -201,7 +201,14 @@ const settingAbout = (z) => {
 
             <h2><i class="las la-meteor"></i> v5.2</h2>
             <p class="description">Stability, new features & bug fixes!</p>
+
+            <h2>New</h2>
+            <h3>🖱️ No more apps category clicks!</h3>
+            <p>
+            You can now hover on apps category to switch between them, No more clicking required. (Beta)
+            </p>
             </div>
+
 
           </div>`);
 };

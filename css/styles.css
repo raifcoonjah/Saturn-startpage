@@ -293,7 +293,7 @@ ul.tabs li.current {
 ul.tabs li i {
   background-color: var(--lighter-color);
   padding: 3px 3px;
-  border-radius: 6px;
+  border-radius: 7px;
 }
 
 ul.tabs li {
@@ -564,6 +564,7 @@ div.theme-container {
 */
 .apps-category {
   margin-top: 20px;
+  margin: 0px;
 }
 
 ul.apps-category {
@@ -575,8 +576,8 @@ ul.apps-category li {
   font-size: 16px;
   background: none;
   display: inline-block;
-  padding: 7px 9px;
-  cursor: pointer;
+  padding: 7px 10px;
+  cursor: default;
   border-radius: var(--sat-border-radius);
 }
 
@@ -673,7 +674,7 @@ ul.apps-category li.current {
 
 .fav-livepreview iframe,
 #fav-link iframe {
-  visibility: hidden;
+  border: 3px solid var(--delete-warning-bg);
 }
 
 #fav-link a {

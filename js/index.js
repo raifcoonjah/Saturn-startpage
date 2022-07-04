@@ -376,7 +376,7 @@ $(document).keyup(function (favModal) {
 // ========
 //
 $(document).ready(function () {
-  $("ul.apps-category li").click(function () {
+  $("ul.apps-category li").hover(function () {
     var tab_id = $(this).attr("data-tab");
 
     $("ul.apps-category li").removeClass("current");
