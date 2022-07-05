@@ -151,9 +151,9 @@ const settingAbout = (z) => {
                   /> 
                <br/>
                 Saturn Desktop: <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.1.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.1.1"
                   target="_blank" 
-                  >v5.1.0<i class="las la-external-link-alt"></i
+                  >v5.1.1<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -198,7 +198,12 @@ const settingAbout = (z) => {
             <p class="settings-item-under-title description">Learn what's new in this release.</p>
             <div class="settings-background"> 
             
+            <h2><i class="las la-meteor"></i> v5.1.1</h2>
+            <p class="description">Urgent bug fix.</p>
 
+            <p>- Fixes a rare issue that causes firefox to crash. </p>
+
+           <p class="line"></p>
             <h2><i class="las la-meteor"></i> v5.1</h2>
             <p class="description">Smooth experience, custom background, and more!</p>
 
