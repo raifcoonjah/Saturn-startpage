@@ -4,7 +4,7 @@
 // ========
 //
 const appsList = (x) => {
-  $(x).append(`<div id="app-1" class="app-content current">
+  $(x).append(`<div id="app-1" class="app-content">
           <div class="popup">
             <div id="apps">
               <a href="https://github.com">

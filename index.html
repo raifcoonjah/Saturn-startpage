@@ -77,10 +77,11 @@
     <!-- =+=+= App lists + App category =+=+= -->
     <div class="apps_list">
       <ul class="apps-category">
-        <!-- <li class="tab-link" data-tab="app-9">
-          <i class="las la-bookmark"></i> Favorites
-        </li> -->
-        <li class="tab-link current" data-tab="app-1">
+        <li class="tab-link current" data-tab="app-9">
+          <i class="las la-smile"></i> Favorites
+        </li>
+        <span class="description" style="opacity:0.89;">|</span>
+        <li class="tab-link" data-tab="app-1">
           <i class="lar la-grin-hearts"></i> Most used
         </li>
         <li class="tab-link" data-tab="app-2">
@@ -99,26 +100,29 @@
 
     <!-- End of app list -->
 
-    <!-- =+=+= Favorite v3.2 =+=+= -->
-    <div id="fav-container" class="fav-container">
-      <h4 class="section-title">
-        <i class="las la-chevron-right"></i> Favorites
-      </h4>
+    <div id="app-9" class="tab-link current">
+      <!-- =+=+= Favorite v3.2 =+=+= -->
+      <div id="fav-container" class="fav-container">
+        <h4 class="section-title">
+          <i class="las la-chevron-right"></i> Favorites
+        </h4>
 
-      <!-- =+=+= Favorites search.. =+=+=-->
+        <!-- =+=+= Favorites search.. =+=+=-->
 
-      <div class="favorites-search">
-        <input type="text" placeholder="Search..." class="searchfavorites" />
-        <button class="favorite-button" title="Add favorites (Ctrl + Z)">
-          <i class="las la-plus"></i> Add
-        </button>
-      </div>
+        <div class="favorites-search">
+          <input type="text" placeholder="Search..." class="searchfavorites" />
+          <button class="favorite-button" title="Add favorites (Ctrl + Z)">
+            <i class="las la-plus"></i> Add
+          </button>
+        </div>
 
 
-      <div id="content">
-        <ul id="fav-link"></ul>
+        <div id="content">
+          <ul id="fav-link"></ul>
+        </div>
       </div>
     </div>
+
 
     <!-- =+=+= Favorites Modal =+=+= -->
     <div id="fav_modal" class="fav_modal">
@@ -501,7 +505,8 @@
         <br />
         <p class="settings-item-title">Custom background</p>
         <p class="settings-item-under-title description" style="font-size: 14px;">
-          Set an Image or GIF as your background. <a
+          Set an Image or GIF as your background. This process may take up to 5 seconds depending on
+          your internet connection. <a
             href="https://mraif13.notion.site/How-to-use-Custom-background-0ad28bcc78b54aab89739e9c34e94b5a"
             target="_blank" style="color:var(--sat-accent-color1);">Learn
             more...</a>

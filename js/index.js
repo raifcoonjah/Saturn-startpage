@@ -376,7 +376,7 @@ $(document).keyup(function (favModal) {
 // ========
 //
 $(document).ready(function () {
-  $("ul.apps-category li").hover(function () {
+  $("ul.apps-category li").click(function () {
     var tab_id = $(this).attr("data-tab");
 
     $("ul.apps-category li").removeClass("current");
@@ -474,11 +474,14 @@ $("#volume-decrease").click(function () {
 // ========
 //
 
+var save_image_btn = document.getElementById("save-image");
 $("#save-image").click(function () {
   var image_url = $("#image_url").val();
+  $("#save-image").text("👏 Saving..");
+  setTimeout(function () {
+    location.reload();
+  }, 5000);
   localStorage.setItem("image_url", image_url);
-  // reload page
-  location.reload();
 });
 
 // get input from image_url and set it as the body background and keep it everytime the page is refreshed
@@ -494,6 +497,8 @@ $("#delete_custom_image").click(function () {
   localStorage.removeItem("image_url");
   location.reload();
 });
+
+// Reset feature
 
 document.getElementById("reset_button").addEventListener("click", reset_data);
 

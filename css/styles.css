@@ -22,6 +22,20 @@ v3.1 CSS Main.Core
 
 /* 
 ========
++ Adding transparency to multiple UI elements. (Testing)+
+========
+*/
+
+.sounds-button,
+.setting-button,
+#apps,
+#content,
+.search_block form {
+  opacity: 0.98;
+}
+
+/* 
+========
 + The logo inside search engine logo +
 ========
 */
@@ -132,7 +146,7 @@ v3.1 CSS Main.Core
 
 .wallpaper_modal_content {
   width: 35rem;
-  height: 16rem;
+  height: 18rem;
 }
 
 .sounds-modal-content {
@@ -330,6 +344,7 @@ ul.tabs li {
   margin: 5px 2px;
   padding: 15px 45px;
   border-radius: 20px;
+  border: 3px solid transparent;
 }
 
 .app i {
@@ -341,7 +356,6 @@ ul.tabs li {
 + Apps list & apps text +
 ========
 */
-
 .app {
   position: relative;
   display: inline-block;
@@ -577,7 +591,7 @@ ul.apps-category li {
   background: none;
   display: inline-block;
   padding: 7px 10px;
-  cursor: default;
+  cursor: pointer;
   border-radius: var(--sat-border-radius);
 }
 

@@ -473,9 +473,8 @@ body {
   overflow-x: hidden;
   display: block;
   background: var(--sat-bg);
-  margin-top: -30px;
-  padding-top: 90px;
-  box-sizing: border-box;
+  margin-top: auto;
+  padding-top: 100px;
   /* Minor ajustments for better image background support */
   /* This should fix all issues we had before */
   background-repeat: no-repeat;
@@ -833,7 +832,6 @@ img {
 
 /* == Favorites background stuff == */
 
-#add-link-form,
 #content {
   background: var(--sat-search-shortcuts);
 }
