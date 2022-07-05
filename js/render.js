@@ -151,9 +151,9 @@ const settingAbout = (z) => {
                   /> 
                <br/>
                 Saturn Desktop: <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.1.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.1.1"
                   target="_blank" 
-                  >v5.1.0<i class="las la-external-link-alt"></i
+                  >v5.1.1<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better

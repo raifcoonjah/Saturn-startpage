@@ -473,12 +473,14 @@ $("#volume-decrease").click(function () {
 // weird issues.
 // ========
 //
-
+var save_image_btn = document.getElementById("save-image");
 $("#save-image").click(function () {
   var image_url = $("#image_url").val();
+  $("#save-image").text("🥳 Saving..");
+  setTimeout(function () {
+    location.reload();
+  }, 5000);
   localStorage.setItem("image_url", image_url);
-  // reload page
-  location.reload();
 });
 
 // get input from image_url and set it as the body background and keep it everytime the page is refreshed
