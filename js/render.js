@@ -153,7 +153,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.2.0"
                   target="_blank" 
-                  >v5.2.0 (BETA v5.1.80)<i class="las la-external-link-alt"></i
+                  >v5.2.0 (BETA v5.1.81)<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -202,11 +202,7 @@ const settingAbout = (z) => {
             <h2><i class="las la-meteor"></i> v5.2</h2>
             <p class="description">Stability, new features & bug fixes!</p>
 
-            <h2>New</h2>
-            <h3>🖱️ No more apps category clicks!</h3>
-            <p>
-            You can now hover on apps category to switch between them, No more clicking required. (Beta)
-            </p>
+<code> Nothing here yet...</code>
             </div>
 
 
