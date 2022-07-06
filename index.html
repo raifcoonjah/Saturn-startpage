@@ -78,7 +78,7 @@
     <div class="apps_list">
       <ul class="apps-category">
         <li class="tab-link current" data-tab="app-9">
-          <i class="las la-smile"></i> Favorites
+          <i class="lab la-gratipay"></i> Favorites
         </li>
         <span class="description" style="opacity:0.89;">|</span>
         <li class="tab-link" data-tab="app-1">
@@ -94,34 +94,30 @@
           <i class="las la-play-circle"></i> Multimedia
         </li>
       </ul>
+
       <div id="apps_list"></div>
       <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
-    </div>
+      <!-- End of app list -->
 
-    <!-- End of app list -->
-
-    <div id="app-9" class="tab-link current">
-      <!-- =+=+= Favorite v3.2 =+=+= -->
-      <div id="fav-container" class="fav-container">
-        <h4 class="section-title">
-          <i class="las la-chevron-right"></i> Favorites
-        </h4>
-
-        <!-- =+=+= Favorites search.. =+=+=-->
-
-        <div class="favorites-search">
-          <input type="text" placeholder="Search..." class="searchfavorites" />
-          <button class="favorite-button" title="Add favorites (Ctrl + Z)">
-            <i class="las la-plus"></i> Add
-          </button>
-        </div>
+      <div id="app-9" class="tab-link current">
+        <!-- =+=+= Favorite v3.2 =+=+= -->
+        <div id="fav-container" class="fav-container">
+          <div class="favorites-search">
+            <input type="text" placeholder="Search favorites..." class="searchfavorites" />
+            <button class="favorite-button" title="Add favorites (Ctrl + Z)">
+              <i class="las la-plus"></i> Add
+            </button>
+          </div>
 
 
-        <div id="content">
-          <ul id="fav-link"></ul>
+          <div id="content">
+            <ul id="fav-link"></ul>
+          </div>
         </div>
       </div>
     </div>
+
+
 
 
     <!-- =+=+= Favorites Modal =+=+= -->
@@ -523,6 +519,13 @@
             <i class="lar la-save"></i> Save
           </button>
         </div>
+        <p class="line"></p>
+        <details>
+          <summary>Background url</summary>
+          <i class="las la-link"></i>
+          <code id="your_image_url"></code>
+
+        </details>
       </div>
 
       <!-- All the javascript needed to make saturn's core features work  -->

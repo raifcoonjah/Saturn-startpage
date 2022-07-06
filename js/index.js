@@ -474,17 +474,31 @@ $("#volume-decrease").click(function () {
 // ========
 //
 
-var save_image_btn = document.getElementById("save-image");
 $("#save-image").click(function () {
   var image_url = $("#image_url").val();
-  $("#save-image").text("👏 Saving..");
-  setTimeout(function () {
-    location.reload();
-  }, 5000);
-  localStorage.setItem("image_url", image_url);
+
+  // if image_url is empty display a red border around the input bar
+  if (image_url == "") {
+    $("#image_url").css("border", "2px solid var(--delete-warning-bg)");
+    $("#save-image").text("😢 Error!");
+  } else {
+    $("#image_url").css("border", "2px solid #73d673");
+    $("#save-image").text("🥳 Saving..");
+    setTimeout(function () {
+      location.reload();
+    }, 5000);
+    localStorage.setItem("image_url", image_url);
+  }
 });
 
-// get input from image_url and set it as the body background and keep it everytime the page is refreshed
+// Display the saved image url
+$(document).ready(function () {
+  var image_url = localStorage.getItem("image_url");
+  $("#your_image_url").text(image_url);
+});
+
+
+
 $(document).ready(function () {
   var image_url = localStorage.getItem("image_url");
   if (image_url) {
@@ -492,7 +506,7 @@ $(document).ready(function () {
   }
 });
 
-// clicking on button with id "delete_custom_image" will delete the image_url localStorage
+
 $("#delete_custom_image").click(function () {
   localStorage.removeItem("image_url");
   location.reload();
