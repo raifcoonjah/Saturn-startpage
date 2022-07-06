@@ -497,15 +497,12 @@ $(document).ready(function () {
   $("#your_image_url").text(image_url);
 });
 
-
-
 $(document).ready(function () {
   var image_url = localStorage.getItem("image_url");
   if (image_url) {
     $("body").css("background-image", "url(" + image_url + ")");
   }
 });
-
 
 $("#delete_custom_image").click(function () {
   localStorage.removeItem("image_url");
@@ -517,6 +514,9 @@ $("#delete_custom_image").click(function () {
 document.getElementById("reset_button").addEventListener("click", reset_data);
 
 function reset_data() {
+  document.getElementById("reset_button").innerHTML = "🚮";
+  setTimeout(function () {
+    location.reload();
+  }, 5000);
   localStorage.clear();
-  location.reload();
 }
