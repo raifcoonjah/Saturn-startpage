@@ -871,7 +871,6 @@ transition speed. +
 .setting-button:hover,
 .btn-hide2:hover,
 .app:hover,
-.cuteapps:hover,
 .slider:before,
 .search-bar:hover,
 .search-bar:focus .app:hover {
@@ -898,6 +897,7 @@ color to fix some issues == */
 .app:hover {
   border: 3px solid transparent;
   background-color: var(--sat-accent-color1);
+  transform: translateY(-0.1rem);
 }
 
 .closebtn:hover {
@@ -929,7 +929,6 @@ current color var == */
 .cuteapps,
 .removebtn,
 .setting-button i,
-.cuteapps:hover,
 #fav-link a:hover,
 .container {
   color: var(--sat-ids);

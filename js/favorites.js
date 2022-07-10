@@ -113,3 +113,22 @@ const livepreview = document.getElementById("title");
 livepreview.onkeyup = function () {
   document.getElementById("livepreview").innerHTML = livepreview.value;
 };
+
+//
+// ========
+// + Favorites Icon finder +
+// ========
+//
+
+// Button that adds a <img> tag inside input bar with id title
+const addImg = document.getElementById("addImg");
+addImg.onclick = function () {
+  const title = document.getElementById("title");
+  const favicon_URL = document.getElementById("favicon-url");
+  const img = document.createElement("img");
+  img.src = "https://www.google.com/s2/favicons?domain=" + favicon_URL.value;
+  img.style.width = "20px";
+  img.style.height = "20px";
+  title.value = '<img src="' + img.src + '">';
+  favicon_URL.value = "";
+};

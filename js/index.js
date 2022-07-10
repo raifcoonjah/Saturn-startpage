@@ -151,32 +151,6 @@ document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
 setInterval(() => {
   document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
 }, 60 * 1000);
-
-//
-// ========
-// + Hide Favorites feature +
-// ========
-//
-
-$(function () {
-  var status = localStorage.getItem("favorites_hidden");
-  if (status == "true") {
-    $(".fav-container").css("display", "none");
-    $(".hide-favorite").attr("checked", true);
-  } else {
-    $(".fav-container").css("display", "block");
-    $(".hide-favorite").attr("checked", false);
-  }
-  $(".hide-favorite").click(function () {
-    if (this.checked) {
-      $(".fav-container").hide();
-    } else {
-      $(".fav-container").show();
-    }
-    localStorage.setItem("favorites_hidden", this.checked);
-  });
-});
-
 //
 // ========
 // + Hide searchbar +
@@ -476,14 +450,13 @@ $("#volume-decrease").click(function () {
 
 $("#save-image").click(function () {
   var image_url = $("#image_url").val();
-
-  // if image_url is empty display a red border around the input bar
   if (image_url == "") {
     $("#image_url").css("border", "2px solid var(--delete-warning-bg)");
-    $("#save-image").text("😢 Error!");
-  } else {
+    $("#save-image").text("😢 Error");
+    $("#error-text-wallpaper").text("Image URL is empty");
+  } else if (image_url.includes("http")) {
     $("#image_url").css("border", "2px solid #73d673");
-    $("#save-image").text("🥳 Saving..");
+    $("#save-image").text("🥳 Saving...");
     setTimeout(function () {
       location.reload();
     }, 5000);
