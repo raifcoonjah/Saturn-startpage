@@ -153,7 +153,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.2.0"
                   target="_blank" 
-                  >v5.2.0 (BETA-UNSTABLE v5.1.82)<i class="las la-external-link-alt"></i
+                  >v5.2.0 (BETA-UNSTABLE v5.1.82.5)<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -199,10 +199,12 @@ const settingAbout = (z) => {
             <div class="settings-background"> 
             
 
-            <h2><i class="las la-meteor"></i> v5.2</h2>
+            <h2><i class="las la-meteor"></i> v5.2 (5.1.82.5)</h2>
             <p class="description">Stability, new features & bug fixes!</p>
 
-<code> Nothing here yet...</code>
+<code> * Rewrote most parts of apps shortcuts in vanilla JS. </br>
+* Replace deprecated keyCode property with key property instead. (some still left) </br>
+* Some minor bug fixes</code>
             </div>
 
 
