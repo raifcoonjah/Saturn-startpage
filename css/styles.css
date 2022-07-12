@@ -161,7 +161,7 @@ v3.1 CSS Main.Core
 
 .favorites_modal_content {
   width: 40rem;
-  height: 36.5rem;
+  height: 39rem;
 }
 
 .show-wallpaper-modal,
@@ -697,6 +697,7 @@ ul.apps-category li.current {
   margin: -10px;
   color: var(--sat-ids);
 }
+
 /* 
 ========
 + Favorites V3. +

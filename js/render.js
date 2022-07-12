@@ -222,7 +222,6 @@ const kShortcuts = (ks) => {
               <p> Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.</p>
               <p> Press <kbd>Shift</kbd> + <kbd>S</kbd> to open & close settings menu. </p>
               <p></p>
-              <p> Press <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> to open Custom wallpaper modal. </p>
               <p> Press <kbd>Shift</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
               <p> Press <kbd>Shift</kbd> + <kbd>B</kbd> to open soundboard. </p>
               <p> Press on <kbd>Esc</kbd> to close any modal.</p>
