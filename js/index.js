@@ -22,87 +22,6 @@ determineGreet(new Date().getHours());
 
 //
 // ========
-// + Settings Modal trigger + close button +
-// ========
-//
-
-var modal = document.querySelector(".settings_modal");
-var trigger = document.querySelector(".setting-button");
-var closeButton = document.querySelector(".close-button");
-function toggleModal() {
-  modal.classList.toggle("show-modal");
-}
-function windowOnClick(event) {
-  if (event.target === modal) {
-    toggleModal();
-  }
-}
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
-//
-// ========
-// + Background sounds + close-button +
-//
-
-var soundsModal = document.querySelector(".sounds_modal");
-var SBtntrigger = document.querySelector(".sounds-button");
-var closeSoundsButton = document.querySelector(".close-sounds");
-
-function toggleSounds() {
-  soundsModal.classList.toggle("show-sounds-modal");
-}
-function windowOutclick(event) {
-  if (event.target === soundsModal) {
-    toggleSounds();
-  }
-}
-
-SBtntrigger.addEventListener("click", toggleSounds);
-closeSoundsButton.addEventListener("click", toggleSounds);
-window.addEventListener("click", windowOutclick);
-
-// Background wallpaper modal
-var wallpaperModal = document.querySelector(".wallpaper_modal");
-var wallpaperButton = document.getElementById("wallpaper-button");
-var closeWallpaperButton = document.querySelector(".close-wallpaper");
-
-function toggleWallpaper() {
-  wallpaperModal.classList.toggle("show-wallpaper-modal");
-}
-
-function windowOutclick3(event) {
-  if (event.target === wallpaperModal) {
-    toggleWallpaper();
-  }
-}
-
-wallpaperButton.addEventListener("click", toggleWallpaper);
-closeWallpaperButton.addEventListener("click", toggleWallpaper);
-window.addEventListener("click", windowOutclick3);
-
-// Favorites modal
-var favModal = document.querySelector(".fav_modal");
-var FavBtntrigger = document.querySelector(".favorite-button");
-var closeFavoritesButton = document.querySelector(".cancel-fav-btn");
-
-function toggleFavorites() {
-  favModal.classList.toggle("show-favorite-modal");
-}
-
-function windowOutclick2(event) {
-  if (event.target === favModal) {
-    toggleFavorites();
-  }
-}
-
-FavBtntrigger.addEventListener("click", toggleFavorites);
-closeFavoritesButton.addEventListener("click", toggleFavorites);
-window.addEventListener("click", windowOutclick2);
-
-//
-// ========
 // + Time and month text +
 // ========
 //
@@ -151,6 +70,99 @@ document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
 setInterval(() => {
   document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
 }, 60 * 1000);
+
+//
+// ========
+// + Settings Modal trigger + close button +
+// ========
+//
+
+var modal = document.querySelector(".settings_modal");
+var trigger = document.querySelector(".setting-button");
+var closeButton = document.querySelector(".close-button");
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+}
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
+//
+// ========
+// + Soundboard Modal +
+// ========
+//
+
+var soundsModal = document.querySelector(".sounds_modal");
+var SBtntrigger = document.querySelector(".sounds-button");
+var closeSoundsButton = document.querySelector(".close-sounds");
+
+function toggleSounds() {
+  soundsModal.classList.toggle("show-sounds-modal");
+}
+function windowOutclick(event) {
+  if (event.target === soundsModal) {
+    toggleSounds();
+  }
+}
+
+SBtntrigger.addEventListener("click", toggleSounds);
+closeSoundsButton.addEventListener("click", toggleSounds);
+window.addEventListener("click", windowOutclick);
+
+//
+// ========
+// + Wallpaper Modal +
+// ========
+//
+
+var wallpaperModal = document.querySelector(".wallpaper_modal");
+var wallpaperButton = document.getElementById("wallpaper-button");
+var closeWallpaperButton = document.querySelector(".close-wallpaper");
+
+function toggleWallpaper() {
+  wallpaperModal.classList.toggle("show-wallpaper-modal");
+}
+
+function windowOutclick3(event) {
+  if (event.target === wallpaperModal) {
+    toggleWallpaper();
+  }
+}
+
+wallpaperButton.addEventListener("click", toggleWallpaper);
+closeWallpaperButton.addEventListener("click", toggleWallpaper);
+window.addEventListener("click", windowOutclick3);
+
+//
+// ========
+// + Favorites Modal +
+// ========
+//
+
+var favModal = document.querySelector(".fav_modal");
+var FavBtntrigger = document.querySelector(".favorite-button");
+var closeFavoritesButton = document.querySelector(".cancel-fav-btn");
+
+function toggleFavorites() {
+  favModal.classList.toggle("show-favorite-modal");
+}
+
+function windowOutclick2(event) {
+  if (event.target === favModal) {
+    toggleFavorites();
+  }
+}
+
+FavBtntrigger.addEventListener("click", toggleFavorites);
+closeFavoritesButton.addEventListener("click", toggleFavorites);
+window.addEventListener("click", windowOutclick2);
+
 //
 // ========
 // + Hide searchbar +
@@ -217,10 +229,26 @@ $(document).ready(function () {
   });
 });
 
+//
+// ========
+// + App list category +
+// ========
+//
+$(document).ready(function () {
+  $("ul.apps-category li").click(function () {
+    var tab_id = $(this).attr("data-tab");
+
+    $("ul.apps-category li").removeClass("current");
+    $(".app-content").removeClass("current");
+
+    $(this).addClass("current");
+    $("#" + tab_id).addClass("current");
+  });
+});
+
+//
 // ========
 // + Keyboard Shortcuts +
-// Refactoring:
-// rewrite everything over to vanilla JS.
 // ========
 //
 
@@ -348,36 +376,19 @@ document.addEventListener("keyup", function (favModal) {
 
 //
 // ========
-// + App list category +
-// ========
-//
-$(document).ready(function () {
-  $("ul.apps-category li").click(function () {
-    var tab_id = $(this).attr("data-tab");
-
-    $("ul.apps-category li").removeClass("current");
-    $(".app-content").removeClass("current");
-
-    $(this).addClass("current");
-    $("#" + tab_id).addClass("current");
-  });
-});
-
-//
-// ========
 // + Username feature v2 +
 // ========
 //
-$(document).ready(function () {
-  $("#save").click(function () {
-    var username = $("#username_input").val();
-    if (username == "") {
-      $("#username_input").css("border", "2px solid var(--delete-warning-bg)");
-    } else {
-      localStorage.setItem("user", username);
-      location.reload();
-    }
-  });
+// if save button is clicked in vanilla js
+document.querySelector("#save").addEventListener("click", function () {
+  var username = document.querySelector("#username_input").value;
+  if (username == "") {
+    document.querySelector("#username_input").style.border =
+      "2px solid var(--delete-warning-bg)";
+  } else {
+    localStorage.setItem("user", username);
+    location.reload();
+  }
 });
 
 // Saturn Soundboard
@@ -449,16 +460,17 @@ $("#volume-decrease").click(function () {
 // weird issues.
 // ========
 //
-
-$("#save-image").click(function () {
-  var image_url = $("#image_url").val();
+document.querySelector("#save-image").addEventListener("click", function () {
+  var image_url = document.querySelector("#image_url").value;
   if (image_url == "") {
-    $("#image_url").css("border", "2px solid var(--delete-warning-bg)");
-    $("#save-image").text("😢 Error");
-    $("#error-text-wallpaper").text("Image URL is empty");
-  } else if (image_url.includes("http")) {
-    $("#image_url").css("border", "2px solid #73d673");
-    $("#save-image").text("🥳 Saving...");
+    document.querySelector("#image_url").style.border =
+      "2px solid var(--delete-warning-bg)";
+    document.querySelector("#save-image").innerHTML = "😢 Error";
+    document.querySelector("#error-text-wallpaper").innerHTML =
+      "Image URL is empty!";
+  } else if (image_url.includes("https://")) {
+    document.querySelector("#image_url").style.border = "2px solid #73d673";
+    document.querySelector("#save-image").innerHTML = "🥳 Saving...";
     setTimeout(function () {
       location.reload();
     }, 5000);
@@ -466,22 +478,21 @@ $("#save-image").click(function () {
   }
 });
 
-// Display the saved image url
-$(document).ready(function () {
-  var image_url = localStorage.getItem("image_url");
-  $("#your_image_url").text(image_url);
-});
-
-$(document).ready(function () {
-  var image_url = localStorage.getItem("image_url");
-  if (image_url) {
-    $("body").css("background-image", "url(" + image_url + ")");
-  }
-});
+// Apply background-image to body
+if (localStorage.getItem("image_url")) {
+  document.querySelector("body").style.backgroundImage =
+    "url(" + localStorage.getItem("image_url") + ")";
+}
 
 $("#delete_custom_image").click(function () {
   localStorage.removeItem("image_url");
   location.reload();
+});
+
+// Display the saved image url
+$(document).ready(function () {
+  var image_url = localStorage.getItem("image_url");
+  $("#your_image_url").text(image_url);
 });
 
 // Reset feature
