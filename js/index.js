@@ -456,8 +456,6 @@ $("#volume-decrease").click(function () {
 //
 // ========
 // + *New* Wallpaper Feature +
-// Leaving the input bar empty will default to the theme's background color instead, this should prevent
-// weird issues.
 // ========
 //
 document.querySelector("#save-image").addEventListener("click", function () {
@@ -467,7 +465,7 @@ document.querySelector("#save-image").addEventListener("click", function () {
       "2px solid var(--delete-warning-bg)";
     document.querySelector("#save-image").innerHTML = "😢 Error";
     document.querySelector("#error-text-wallpaper").innerHTML =
-      "Image URL is empty!";
+      "Image URL cannot be empty.";
   } else if (image_url.includes("https://")) {
     document.querySelector("#image_url").style.border = "2px solid #73d673";
     document.querySelector("#save-image").innerHTML = "🥳 Saving...";
@@ -478,25 +476,43 @@ document.querySelector("#save-image").addEventListener("click", function () {
   }
 });
 
-// Apply background-image to body
+//
+// ========
+// + *New* Apply URL to body +
+// ========
+//
 if (localStorage.getItem("image_url")) {
   document.querySelector("body").style.backgroundImage =
     "url(" + localStorage.getItem("image_url") + ")";
 }
 
-$("#delete_custom_image").click(function () {
-  localStorage.removeItem("image_url");
-  location.reload();
-});
+//
+// ========
+// + *New* Delete and clear image_url +
+// ========
+//
+document
+  .querySelector("#delete_custom_image")
+  .addEventListener("click", function () {
+    localStorage.removeItem("image_url");
+    location.reload();
+  });
 
-// Display the saved image url
-$(document).ready(function () {
-  var image_url = localStorage.getItem("image_url");
-  $("#your_image_url").text(image_url);
-});
+//
+// ========
+// + *New* Display saved image_url +
+// ========
+//
+var image_url = localStorage.getItem("image_url");
+if (image_url) {
+  document.querySelector("#image_url").value = image_url;
+}
 
-// Reset feature
-
+//
+// ========
+// + *New* Reset button  +
+// ========
+//
 document.getElementById("reset_button").addEventListener("click", reset_data);
 
 function reset_data() {

@@ -135,18 +135,18 @@
         <!-- =+=+= Input ++ Favorite title =+=+=-->
         <label class="fav_title">Name</label>
         <input id="title" placeholder="Enter a name" required autocomplete="off" spellcheck="false" />
-        <label class="fav_title"> Icons
-        </label>
-        <div id="fav_icons"></div>
         <label class="fav_title">Favicon finder (Beta)</label>
-        <br />
-        <input type="text" style="width:50%;height:7%;" id="favicon-url" placeholder="Enter a website URL" />
-        <button id="addImg">Find icon</button>
+        <p class="small_text description" style="font-size:15px;">Provided by <a
+            href="https://unavatar.io/">unavatar.io</a>
+          </hp>
+          <br />
+          <input type="text" style="width:50%;height:7%;" id="favicon-url" placeholder="Enter a website URL" />
+          <button id="addImg" class="save-button"><i class="las la-search"></i> Find icon</button>
 
-        <br />
-
+          <br />
+          <label class="fav_title">Custom icons</label>
+        <div id="fav_icons"></div>
         <label class="fav_title"> Preview</label>
-        <br />
         <div class="fav-livepreview" id="livepreview" data-tootik="Start typing to see a preview of your favorite"
           data-tootik-conf="bottom no-arrow"></div>
         <br />
@@ -508,7 +508,7 @@
         <input type="text" style="width:100%;" id="image_url" placeholder="Enter or paste a URL" />
 
         <div class="buttons-container">
-          <p id="error-text-wallpaper"></p>
+          <p class="small_text description" id="error-text-wallpaper"></p>
           <button id="close-wallpaper" class="close-wallpaper">
             <i class="las la-times"></i> Close
           </button>
