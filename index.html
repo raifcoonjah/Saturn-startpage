@@ -7,6 +7,7 @@
 \____/ \__,_|\__|\__,_|_|  |_| |_| |___/\__\__,_|_|   \__| .__/ \__,_|\__, |\___|
                                                          | |           __/ |     
                                                          |_|          |___/ 
+(beta)
 -->
 
 <!DOCTYPE html>
@@ -32,7 +33,7 @@
   <script src="js/jquery.js"></script>
 </head>
 
-<body class="light" id="box">
+<body class="" id="box">
   <!-- =+=+= Good morning/afternoon/night and time text =+=+= -->
 
   <div class="sat-header">
@@ -136,11 +137,12 @@
         <label class="fav_title">Name</label>
         <input id="title" placeholder="Enter a name" required autocomplete="off" spellcheck="false" />
         <label class="fav_title">Favicon finder (Beta)</label>
-        <p class="small_text description" style="font-size:15px;">Provided by <a
+        <p class="small_text description" style="font-size:15px;">Powered by <a
             href="https://unavatar.io/">unavatar.io</a>
           </hp>
           <br />
-          <input type="text" style="width:50%;height:7%;" id="favicon-url" placeholder="Enter a website URL" />
+          <input type="text" style="width:50%;height:7%;" id="favicon-url"
+            placeholder="Enter a website URL (example: github.com)" />
           <button id="addImg" class="save-button"><i class="las la-search"></i> Find icon</button>
 
           <br />
@@ -518,7 +520,7 @@
         </div>
         <p class="line"></p>
         <details>
-          <summary>Background image url</summary>
+          <summary>Background URL</summary>
           <i class="las la-link"></i>:
           <code id="your_image_url"></code>
         </details>
