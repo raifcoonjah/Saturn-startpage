@@ -34,6 +34,8 @@ const theme = localStorage.getItem("theme");
 
 if (theme) {
   body.classList.add(theme);
+} else if (theme === null) {
+  body.classList.add("light");
 }
 
 // lightplusplus theme
