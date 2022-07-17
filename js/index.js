@@ -500,13 +500,10 @@ document
 
 //
 // ========
-// + *New* Display saved image_url +
+// + *New* display saved image_url inside your_image_url * +
 // ========
-//
-var image_url = localStorage.getItem("image_url");
-if (image_url) {
-  document.querySelector("#image_url").value = image_url;
-}
+document.querySelector("#your_image_url").innerHTML =
+  localStorage.getItem("image_url");
 
 //
 // ========
@@ -514,7 +511,6 @@ if (image_url) {
 // ========
 //
 document.getElementById("reset_button").addEventListener("click", reset_data);
-
 function reset_data() {
   document.getElementById("reset_button").innerHTML = "🚮";
   setTimeout(function () {
