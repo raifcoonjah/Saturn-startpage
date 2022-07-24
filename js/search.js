@@ -51,3 +51,4 @@ const cycleSearchEngines = (se) => {
     "Search with " + curData.placeholder + "..";
   document.getElementById("search_eng_form").action = curData.action;
 };
+

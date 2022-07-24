@@ -5,7 +5,6 @@
 // Heavily modified and improve various things
 // ========
 //
-
 $(document).ready(function () {
   var $ul = $("#fav-link");
   var $title = $("#title");
@@ -126,9 +125,17 @@ addImg.onclick = function () {
   const title = document.getElementById("title");
   const favicon_URL = document.getElementById("favicon-url");
   const img = document.createElement("img");
-  img.src = "https://unavatar.io/" + favicon_URL.value;
-  img.style.width = "20px";
-  img.style.height = "20px";
-  title.value = '<img src="' + img.src + '">';
-  favicon_URL.value = "";
+  if (favicon_URL.value === "") {
+    favicon_URL.style.border = "2px solid var(--delete-warning-bg)";
+  }
+  // check if input is empty
+  else {
+    // get favicon from URL
+    img.src = "https://unavatar.io/" + favicon_URL.value;
+    img.style.width = "20px";
+    img.style.height = "20px";
+    title.value = '<img src="' + img.src + '">';
+    title.value += " ";
+    favicon_URL.value = "";
+  }
 };

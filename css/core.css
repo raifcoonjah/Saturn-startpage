@@ -466,7 +466,6 @@ button {
 }
 
 body {
-  /* Center body in page */
   margin: 0 auto;
   max-width: 805px;
   border-radius: var(--sat-border-radius);
@@ -475,13 +474,9 @@ body {
   background: var(--sat-bg);
   margin-top: auto;
   padding-top: 100px;
-  /* Minor ajustments for better image background support */
-  /* This should fix all issues we had before */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-
-  /* Main body text */
   color: var(--sat-ids);
   font-size: 1.03rem;
   line-height: 1.5;
