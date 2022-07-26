@@ -463,12 +463,11 @@ document.querySelector("#save-image").addEventListener("click", function () {
   if (image_url == "") {
     document.querySelector("#image_url").style.border =
       "2px solid var(--delete-warning-bg)";
-    document.querySelector("#save-image").innerHTML = "😢 Error";
     document.querySelector("#error-text-wallpaper").innerHTML =
       "Image URL cannot be empty.";
   } else if (image_url.includes("https://")) {
     document.querySelector("#image_url").style.border = "2px solid #73d673";
-    document.querySelector("#save-image").innerHTML = "🥳 Saving...";
+    document.querySelector("#save-image").innerHTML = "🥳 Applying...";
     setTimeout(function () {
       location.reload();
     }, 5000);
