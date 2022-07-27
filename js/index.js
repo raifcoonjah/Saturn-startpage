@@ -511,9 +511,12 @@ document.querySelector("#your_image_url").innerHTML =
 //
 document.getElementById("reset_button").addEventListener("click", reset_data);
 function reset_data() {
-  document.getElementById("reset_button").innerHTML = "🚮";
-  setTimeout(function () {
-    location.reload();
-  }, 5000);
-  localStorage.clear();
+  //display alert with ok and cancel
+  if (confirm("Are you sure you want to reset all data?")) {
+    document.getElementById("reset_button").innerHTML = "🚮";
+    setTimeout(function () {
+      location.reload();
+    }, 5000);
+    localStorage.clear();
+  }
 }
