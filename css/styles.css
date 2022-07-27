@@ -317,7 +317,7 @@ ul.tabs li {
 
 .tab-content {
   display: none;
-  animation: slide-up-fade-in ease 0.2s;
+  animation: slide-up-fade-in ease 190ms;
 }
 
 .tab-content h4 i {

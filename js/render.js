@@ -202,8 +202,8 @@ const settingAbout = (z) => {
             <h2><i class="las la-meteor"></i> v5.2 (5.1.83)</h2>
             <p class="description">Stability, new features & bug fixes!</p>
 
-<code> * Switch to unavatar.io instead of google. <br/>
-* Various UI improvements.<br/>
+<code> * Added a prompt before deleting user data. <br/>
+* Added prompt before deleting wallpaper.<br/>
 * Some minor bug fixes & more features being rewritten to improve performance.  <br/>
 * Minor user experience improvements. </code>
             </div>

@@ -493,8 +493,12 @@ if (localStorage.getItem("image_url")) {
 document
   .querySelector("#delete_custom_image")
   .addEventListener("click", function () {
-    localStorage.removeItem("image_url");
-    location.reload();
+    if (
+      confirm("You're about to delete your custom background. Are you sure?")
+    ) {
+      localStorage.removeItem("image_url");
+      location.reload();
+    }
   });
 
 //
@@ -512,11 +516,11 @@ document.querySelector("#your_image_url").innerHTML =
 document.getElementById("reset_button").addEventListener("click", reset_data);
 function reset_data() {
   //display alert with ok and cancel
-  if (confirm("Are you sure you want to reset all data?")) {
+  if (confirm("Are you sure you want to reset all your data?")) {
     document.getElementById("reset_button").innerHTML = "🚮";
     setTimeout(function () {
       location.reload();
-    }, 5000);
+    }, 3000);
     localStorage.clear();
   }
 }
