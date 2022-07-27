@@ -153,7 +153,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.2.0"
                   target="_blank" 
-                  >v5.2.0 (BETA v5.1.84)<i class="las la-external-link-alt"></i
+                  >v5.2.0 (BETA v5.1.85)<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -199,12 +199,11 @@ const settingAbout = (z) => {
             <div class="settings-background"> 
             
 
-            <h2><i class="las la-meteor"></i> v5.2 (5.1.83)</h2>
+            <h2><i class="las la-meteor"></i> v5.2 (5.1.85)</h2>
             <p class="description">Stability, new features & bug fixes!</p>
 
 <code> * Added a prompt before deleting user data. <br/>
 * Added prompt before deleting wallpaper.<br/>
-* Some minor bug fixes & more features being rewritten to improve performance.  <br/>
 * Minor user experience improvements. </code>
             </div>
 
