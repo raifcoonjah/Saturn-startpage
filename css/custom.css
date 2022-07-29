@@ -4,3 +4,15 @@
 + Think this should be in Saturn? Make a pull request +
 ========
 */
+
+.favorite-input {
+  border: none;
+  font-size: 1.5em;
+}
+
+/* Favorites input title */
+.fav_title {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
