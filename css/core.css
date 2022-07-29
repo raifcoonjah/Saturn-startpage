@@ -892,7 +892,6 @@ color to fix some issues == */
 .app:hover {
   border: 3px solid transparent;
   background-color: var(--sat-accent-color1);
-  transform: translateY(-0.1rem);
 }
 
 .closebtn:hover {
