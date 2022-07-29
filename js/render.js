@@ -166,9 +166,15 @@ const settingAbout = (z) => {
               <div class="socials">
                 <div class="popup aboutwidgets">
                   <div id="apps">
+                     <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v5.2.80">
+                      <div class="app">
+                        <i class="las la-flask"></i>
+                        <span>Try out beta</span>
+                      </div></a
+                    >
                     <a href="https://github.com/mraif13/saturn-startpage">
                       <div class="app">
-                        <i class="las la-code"></i>
+                        <i class="lab la-github-alt"></i>
                         <span>Source code</span>
                       </div></a
                     >
