@@ -165,33 +165,33 @@
           </p>
 
           <!-- =+=+= Input ++ Favorite title =+=+=-->
-          <!-- <label class="fav_title">Name</label>
+          <h3 class="fav_title">Name</h3>
           <input
             id="title"
             placeholder="Enter a name"
             autocomplete="off"
             spellcheck="false"
             class="favorite-input"
+            type="text"
           />
-                    <label class="fav_title">Favicon finder</label>
-          <p class="small_text description" style="font-size: 15px">
+          <h3 class="fav_title">Favicon finder</h3>
+          <p class="small_text description" style="font-size: 14px">
             Powered by <a href="https://unavatar.io/">unavatar.io</a>
-          </p> -->
-          <!-- 
-
+          </p>
           <input
             type="text"
-            style="width: 50%; height: 7%"
+            style="width: 50%"
             id="favicon-url"
             placeholder="Enter a website URL (example: github.com)"
+            class="favorite-input"
           />
           <button id="addImg" class="save-button">
             <i class="las la-search"></i> Find icon
           </button>
 
           <br />
-          <label class="fav_title">Custom icons</label>
-          <div id="fav_icons"></div>
+          <!-- <label class="fav_title">Custom icons</label> -->
+          <!-- <div id="fav_icons"></div> -->
           <label class="fav_title"> Preview</label>
           <div
             class="fav-livepreview"
@@ -200,17 +200,18 @@
             data-tootik-conf="bottom no-arrow"
           ></div>
           <br />
-          <p class="line"></p> -->
+          <p class="line"></p>
           <!-- =+=+= Input ++ Favorite URL =+=+= -->
-          <!-- <label class="fav_title"> URL</label>
+          <label class="fav_title"> URL</label>
           <input
             id="url"
             placeholder="Enter or paste a URL"
             value="https://"
             autocomplete="off"
             spellcheck="false"
+            class="favorite-input"
           />
-          <div class="buttons-container">
+          <div class="button-container">
             <button id="cancel-fav-btn" class="cancel-fav-btn">
               <i class="las la-times-circle"></i> Cancel
             </button>
@@ -218,7 +219,8 @@
               <i class="lar la-save"></i> Save
             </button>
           </div>
-        </div> -->
+        </div>
+
         <!-- =+=+= Save message =+=+= -->
         <div id="saveMsgBar">
           <i class="las la-smile-wink"></i> Favorite saved successfully
