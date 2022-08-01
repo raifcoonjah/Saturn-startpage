@@ -11,7 +11,9 @@
   font-weight: bold;
   margin-bottom: 0.5em;
 }
-
 .button-container {
   padding-top: 10px;
+}
+.sat-header {
+  padding-top: 100px;
 }
