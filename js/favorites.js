@@ -50,48 +50,23 @@ $(document).ready(function () {
 
 //
 // ========
-// + FAVORITES Search v1.1-cheesecake +
+// + FAVORITES Search [BETA] v2.0-cheesecake +
+// Completely rewritten and improved, testing is still in progress.
 // ========
 //
-
-(function ($) {
-  jQuery.expr[":"].Contains = function (a, i, m) {
-    return (
-      (a.textContent || a.innerText || "")
-        .toUpperCase()
-        .indexOf(m[3].toUpperCase()) >= 0
-    );
-  };
-
-  function live_search(list) {
-    $(".searchfavorites")
-      .change(function () {
-        // Getting search value
-        var searchtext = $(this).val();
-        if (searchtext) {
-          // Finding If content matches with search keyword
-          $matches = $(list)
-            .find("a:Contains(" + searchtext + ")")
-            .parent();
-          // Hiding non matching lists
-          $("li", list).not($matches).fadeOut(20);
-          // Showing matching lists
-          $matches.fadeIn(20);
-        } else {
-          // If search keyword is empty then display all the lists
-          $(list).find("li").fadeIn(20);
-        }
-        return false;
-      })
-      .keyup(function () {
-        $(this).change();
-      });
+document.getElementById("searchfavorites").onkeyup = function () {
+  var search = document.getElementById("searchfavorites").value.toLowerCase();
+  var items = document.getElementById("content").getElementsByTagName("li");
+  for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    var title = item.getElementsByTagName("a")[0].innerHTML.toLowerCase();
+    if (title.indexOf(search) > -1) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
   }
-
-  $(function () {
-    live_search($("#content"));
-  });
-})(jQuery);
+};
 
 //
 // ========

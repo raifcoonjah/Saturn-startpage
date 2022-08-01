@@ -379,7 +379,7 @@ document.addEventListener("keyup", function (favModal) {
 // + Username feature v2 +
 // ========
 //
-// if save button is clicked in vanilla js
+//
 document.querySelector("#save").addEventListener("click", function () {
   var username = document.querySelector("#username_input").value;
   if (username == "") {
@@ -516,7 +516,7 @@ document.querySelector("#your_image_url").innerHTML =
 document.getElementById("reset_button").addEventListener("click", reset_data);
 function reset_data() {
   //display alert with ok and cancel
-  if (confirm("Are you sure you want to reset all your data?")) {
+  if (confirm("⚠ Are you sure you want to reset all your data?")) {
     document.getElementById("reset_button").innerHTML = "🚮";
     setTimeout(function () {
       location.reload();
