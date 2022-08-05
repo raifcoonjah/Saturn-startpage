@@ -71,7 +71,7 @@ const quotes = [
   },
   {
     quote:
-      "“Happiness is not something readymade. It comes from your own actions",
+      "“Happiness is not something ready made. It comes from your own actions",
     source: "Dalai Lama",
   },
   {

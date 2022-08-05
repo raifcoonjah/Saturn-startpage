@@ -73,7 +73,7 @@ document.getElementById("searchfavorites").onkeyup = function () {
 // + Show message when save button is pressed +
 // ========
 //
-
+const livepreview = document.getElementById("title");
 document.getElementById("add").onclick = function () {
   var x = document.getElementById("saveMsgBar");
   x.className = "show";
@@ -81,9 +81,6 @@ document.getElementById("add").onclick = function () {
     x.className = x.className.replace("show", "");
   }, 3000);
 };
-
-const livepreview = document.getElementById("title");
-
 livepreview.onkeyup = function () {
   document.getElementById("livepreview").innerHTML = livepreview.value;
 };
