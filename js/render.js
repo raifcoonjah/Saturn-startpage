@@ -151,9 +151,9 @@ const settingAbout = (z) => {
                   /> 
                <br/>
                 Saturn Desktop: <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v5.2.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.0.0"
                   target="_blank" 
-                  >v5.2.0 (BETA v5.1.85)<i class="las la-external-link-alt"></i
+                  >v6.0.0 (BETA v5.9.89)<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -205,12 +205,22 @@ const settingAbout = (z) => {
             <div class="settings-background"> 
             
 
-            <h2><i class="las la-meteor"></i> v5.2 (5.1.85)</h2>
+            <h2><i class="las la-meteor"></i> v6.0 (v5.9.89)</h2>
             <p class="description">Stability, new features & bug fixes!</p>
 
-<code> * Added a prompt before deleting user data. <br/>
-* Added prompt before deleting wallpaper.<br/>
-* Minor user experience improvements. </code>
+* Simplified favorites feature. <br/>
+* Add button to try out beta versions. <br/>
+* (breaking!) Completely rewrite favorites search.<br/>
+* (breaking!) Settings modal's css was improved, it should now scale depending on your screen size.<br/>
+* Fix tons of graphical issues </br>
+* Fixes for favorites UI elements. <br/>
+* Clean up index.html. <br/>
+* Fix several bugs. <br/>
+* More code was optimized & rewritten. <br/>
+* Change some icons inside about page </br>
+* Other minor fixes, UI/UX improvements. <br/>
+
+* Minor user experience improvements. 
             </div>
 
 
