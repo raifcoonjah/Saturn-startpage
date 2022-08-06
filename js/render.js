@@ -153,7 +153,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.0.0"
                   target="_blank" 
-                  >v6.0.0 (BETA v5.9.89)<i class="las la-external-link-alt"></i
+                  >v6.0.0 (BETA v5.9.90)<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -166,7 +166,7 @@ const settingAbout = (z) => {
               <div class="socials">
                 <div class="popup aboutwidgets">
                   <div id="apps">
-                     <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v5.2.80">
+                     <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.1.80">
                       <div class="app">
                         <i class="las la-flask"></i>
                         <span>Try out beta</span>
@@ -205,9 +205,10 @@ const settingAbout = (z) => {
             <div class="settings-background"> 
             
 
-            <h2><i class="las la-meteor"></i> v6.0 (v5.9.89)</h2>
+            <h2><i class="las la-meteor"></i> v6.0 (v5.9.90)</h2>
             <p class="description">Stability, new features & bug fixes!</p>
 
+(5.9.90 addition): * Added Saturn UI Tweaks. (Settings > Layout)<br />
 * Simplified favorites feature. <br/>
 * Add button to try out beta versions. <br/>
 * (breaking!) Completely rewrite favorites search.<br/>
