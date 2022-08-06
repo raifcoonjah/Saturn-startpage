@@ -5,7 +5,7 @@ Saturn Startpage is a fully open source, community build new-tab replacement. **
 
 ## Features:
 
-### Simple by design
+### Simple by design, but powerful when needed. 
 - Everything is straight forward and gets you where you need to go quickly.
 
 ### Fast & lightweight
