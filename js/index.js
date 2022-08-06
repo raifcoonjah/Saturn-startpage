@@ -524,3 +524,46 @@ function reset_data() {
     localStorage.clear();
   }
 }
+
+//
+// ========
+// + UI Tweaks  +
+// These features are not essential, but they make everything look better & feel better.
+// ========
+//
+
+// UI Tweaks: Force saturn header to use white color.
+document
+  .querySelector("#force_white_color_header")
+  .addEventListener("click", function () {
+    if (localStorage.getItem("force_white_color_header")) {
+      localStorage.removeItem("force_white_color_header");
+      document.querySelector(".sat-header").style.color = "var(--sat-ids)";
+      document.querySelector(".apps_list").style.color = "var(--sat-ids)";
+    } else {
+      localStorage.setItem("force_white_color_header", true);
+      document.querySelector(".sat-header").style.color = "#fff";
+      document.querySelector(".apps_list").style.color = "#fff";
+    }
+  });
+
+if (localStorage.getItem("force_white_color_header")) {
+  document.querySelector(".sat-header").style.color = "#fff";
+  document.querySelector(".apps_list").style.color = "#fff";
+}
+
+// UI Tweak: Make all text bold
+
+document.querySelector("#bold_text").addEventListener("click", function () {
+  if (localStorage.getItem("bold_text")) {
+    localStorage.removeItem("bold_text");
+    document.querySelector("body").style.fontWeight = "normal";
+  } else {
+    localStorage.setItem("bold_text", true);
+    document.querySelector("body").style.fontWeight = "bold";
+  }
+});
+
+if (localStorage.getItem("bold_text")) {
+  document.querySelector("body").style.fontWeight = "bold";
+}

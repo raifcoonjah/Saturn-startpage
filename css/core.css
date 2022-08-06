@@ -353,6 +353,12 @@ textarea {
   padding: 0; /* 2 */
 }
 
+[type="checkbox"] {
+  width: 18px;
+  height: 17px;
+  margin: 6px;
+}
+
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */

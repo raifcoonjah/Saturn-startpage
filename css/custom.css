@@ -17,3 +17,7 @@
 .sat-header {
   padding-top: 100px;
 }
+
+label span {
+  font-size: 16px;
+}
