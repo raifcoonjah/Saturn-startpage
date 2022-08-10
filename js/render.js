@@ -4,7 +4,7 @@
 // ========
 //
 const appsList = (x) => {
-  $(x).append(`<div id="app-1" class="app-content">
+  $(x).append(`<div id="app-1" class="app-content current">
           <div class="popup">
             <div id="apps">
               <a href="https://github.com">
@@ -153,7 +153,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.0.0"
                   target="_blank" 
-                  >v6.0.0 (BETA v5.9.90)<i class="las la-external-link-alt"></i
+                  >v6.0.0 (BETA v5.9.95-RC)<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -205,24 +205,87 @@ const settingAbout = (z) => {
             <div class="settings-background"> 
             
 
-            <h2><i class="las la-meteor"></i> v6.0 (v5.9.90)</h2>
+            <h2><i class="las la-meteor"></i> v6.0 (v5.9.95)-RC</h2>
             <p class="description">Stability, new features & bug fixes!</p>
+(v5.9.95-RC)
+<br/>
+* Fix settings modal on mobile devices. 
+<br/>
+* First RC Release. 
+<br/>
+--
+<br/>
+<h3>✨ Layout changes</h3>
+- Favorites is now integrated inside of apps lists making it much easier to access.
 
-(5.9.90 addition): * Added Saturn UI Tweaks. (Settings > Layout)<br />
-* Simplified favorites feature. <br/>
-* Add button to try out beta versions. <br/>
-* (breaking!) Completely rewrite favorites search.<br/>
-* (breaking!) Settings modal's css was improved, it should now scale depending on your screen size.<br/>
-* Fix tons of graphical issues </br>
-* Fixes for favorites UI elements. <br/>
-* Clean up index.html. <br/>
-* Fix several bugs. <br/>
-* More code was optimized & rewritten. <br/>
-* Change some icons inside about page </br>
-* Other minor fixes, UI/UX improvements. <br/>
+<h3>🎉 Optimized code base</h3>
+- Most parts of the code base was entirely rewritten from scratch and reimplemented 
+in vanilla javascript, this should make things much easier to maintain and fix tons of issues.
+<br/>
+<h3>🛠️ UI Tweaks (Beta)</h3>
+- UI tweaks are small additions to saturn that help in fixing some of the common issues 
+you may experience. 
+<br/>
+<h3>🗑️ Reset Feature</h3>
+- You can now completely reset Saturn to the default look and feel.
+<br/>
+<h3>🤘 Favorites improvements</h3>
+- Added a new favicon finder that allows the addition of favicon's inside of favorites.
+<br/>
+- Favorites search got a complete rewritten, fixing two issues along the way and also improving its performance.   
+<br/>
+- Brand new simplified design.
+<br/>
+<h3>👩‍🎨 Opacity opacity opacity… </h3>
+- Some elements on the home screen now have a slight opacity effect. 
+<br/>
 
-* Minor user experience improvements. 
-            </div>
+<h3>Bug fixes:</h3>
+<ul>
+<li>
+- Fix a rare issue that causes firefox to crash due to a reload loop.
+</li>
+<li>
+- Fix a very old bug that causes the light theme to appear first then your applied theme.
+</li>
+- Removed the ability to run <code>unsafe inline scripts</code>. (Security fixes)
+<li>
+<li>
+- Fix several issues caused by some UI elements inside of favorites modal.
+</li>
+<li>
+-  Several other minor bug fixes and stability improvements. 
+</li>
+
+
+</ul>
+<br/>
+<h3>TONS of Other small improvements</h3>
+<ul>
+
+<li>
+- Settings modal should now scale properly with different screen sizes. (Coming to more modals soon!)
+</li>
+<li>
+- Added a prompt when trying to reset or delete custom background.
+</li>
+<li>
+- Added a way to view currently set custom background URL. 
+</li>
+<li>
+- Rewrote most parts of apps shortcuts in vanilla JS.
+</li>
+<li>
+- Replace deprecated keyCode property with key property instead.
+</li>
+<li>
+- Tweaked saturn navigation. 
+</li>
+<li>
+- Several other minor UI/UX fixes.
+</li>
+</ul>
+</div>
 
 
           </div>`);
