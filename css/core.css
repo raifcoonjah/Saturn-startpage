@@ -979,10 +979,15 @@ use the correct border radius == */
 @media (max-width: 68.75em) {
   .wallpaper_modal_content,
   .favorites_modal_content,
-  .sounds-modal-content,
-  .settings-content {
+  .sounds-modal-content{
     max-width: 90%;
   }
+
+  .settings-content{
+width: 100% !important;
+height: 100% !important;
+  }
+
 
   ul.tabs li {
     font-size: 12px !important;
