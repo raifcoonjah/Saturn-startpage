@@ -413,6 +413,7 @@ ul.tabs li {
   margin: 10px;
   padding: 5px 10px 5px 10px;
   background: var(--sat-setting-bg-effect);
+  box-shadow: 0px 0px 3px var(--lighter-color);
 }
 
 .settings-background-warning {
