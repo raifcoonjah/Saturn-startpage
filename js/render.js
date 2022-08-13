@@ -267,6 +267,9 @@ you may experience.
 - Settings modal should now scale properly with different screen sizes. (Coming to more modals soon!)
 </li>
 <li>
+- The search bar will now display a "Search icon" by default. 
+</li>
+<li>
 - Added a prompt when trying to reset or delete custom background.
 </li>
 <li>
