@@ -153,7 +153,7 @@ const settingAbout = (z) => {
                 Saturn Desktop: <a
                   href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.0.0"
                   target="_blank" 
-                  >v6.0.0 (BETA v5.9.96-RC)<i class="las la-external-link-alt"></i
+                  >v6.0.0<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -205,16 +205,8 @@ const settingAbout = (z) => {
             <div class="settings-background"> 
             
 
-            <h2><i class="las la-meteor"></i> v6.0 (v5.9.96)-RC</h2>
-            <p class="description">Stability, new features & bug fixes!</p>
-(v5.9.96-RC)
-<br/>
-* Add box-shadow to settings background. 
-<br/>
-* Add new default search icon. 
-<br/>
---
-<br/>
+            <h2><i class="las la-meteor"></i> v6.0</h2>
+            <p class="description">New features, stability improvements and bug fixes.</p>
 <h3>✨ Layout changes</h3>
 - Favorites is now integrated inside of apps lists making it much easier to access.
 
