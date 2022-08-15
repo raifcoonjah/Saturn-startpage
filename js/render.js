@@ -204,6 +204,8 @@ const settingAbout = (z) => {
             <p class="settings-item-under-title description">Learn what's new in this release.</p>
             <div class="settings-background"> 
             
+            <h2><i class="las la-meteor"></i> v5.1.1</h2>
+            <p class="description">Urgent bug fix.</p>
 
             <h2><i class="las la-meteor"></i> v6.0</h2>
             <p class="description">New features, stability improvements and bug fixes.</p>
