@@ -22,87 +22,6 @@ determineGreet(new Date().getHours());
 
 //
 // ========
-// + Settings Modal trigger + close button +
-// ========
-//
-
-var modal = document.querySelector(".settings_modal");
-var trigger = document.querySelector(".setting-button");
-var closeButton = document.querySelector(".close-button");
-function toggleModal() {
-  modal.classList.toggle("show-modal");
-}
-function windowOnClick(event) {
-  if (event.target === modal) {
-    toggleModal();
-  }
-}
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
-//
-// ========
-// + Background sounds + close-button +
-//
-
-var soundsModal = document.querySelector(".sounds_modal");
-var SBtntrigger = document.querySelector(".sounds-button");
-var closeSoundsButton = document.querySelector(".close-sounds");
-
-function toggleSounds() {
-  soundsModal.classList.toggle("show-sounds-modal");
-}
-function windowOutclick(event) {
-  if (event.target === soundsModal) {
-    toggleSounds();
-  }
-}
-
-SBtntrigger.addEventListener("click", toggleSounds);
-closeSoundsButton.addEventListener("click", toggleSounds);
-window.addEventListener("click", windowOutclick);
-
-// Background wallpaper modal
-var wallpaperModal = document.querySelector(".wallpaper_modal");
-var wallpaperButton = document.getElementById("wallpaper-button");
-var closeWallpaperButton = document.querySelector(".close-wallpaper");
-
-function toggleWallpaper() {
-  wallpaperModal.classList.toggle("show-wallpaper-modal");
-}
-
-function windowOutclick3(event) {
-  if (event.target === wallpaperModal) {
-    toggleWallpaper();
-  }
-}
-
-wallpaperButton.addEventListener("click", toggleWallpaper);
-closeWallpaperButton.addEventListener("click", toggleWallpaper);
-window.addEventListener("click", windowOutclick3);
-
-// Favorites modal
-var favModal = document.querySelector(".fav_modal");
-var FavBtntrigger = document.querySelector(".favorite-button");
-var closeFavoritesButton = document.querySelector(".cancel-fav-btn");
-
-function toggleFavorites() {
-  favModal.classList.toggle("show-favorite-modal");
-}
-
-function windowOutclick2(event) {
-  if (event.target === favModal) {
-    toggleFavorites();
-  }
-}
-
-FavBtntrigger.addEventListener("click", toggleFavorites);
-closeFavoritesButton.addEventListener("click", toggleFavorites);
-window.addEventListener("click", windowOutclick2);
-
-//
-// ========
 // + Time and month text +
 // ========
 //
@@ -154,28 +73,95 @@ setInterval(() => {
 
 //
 // ========
-// + Hide Favorites feature +
+// + Settings Modal trigger + close button +
 // ========
 //
 
-$(function () {
-  var status = localStorage.getItem("favorites_hidden");
-  if (status == "true") {
-    $(".fav-container").css("display", "none");
-    $(".hide-favorite").attr("checked", true);
-  } else {
-    $(".fav-container").css("display", "block");
-    $(".hide-favorite").attr("checked", false);
+var modal = document.querySelector(".settings_modal");
+var trigger = document.querySelector(".setting-button");
+var closeButton = document.querySelector(".close-button");
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+}
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
   }
-  $(".hide-favorite").click(function () {
-    if (this.checked) {
-      $(".fav-container").hide();
-    } else {
-      $(".fav-container").show();
-    }
-    localStorage.setItem("favorites_hidden", this.checked);
-  });
-});
+}
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
+//
+// ========
+// + Soundboard Modal +
+// ========
+//
+
+var soundsModal = document.querySelector(".sounds_modal");
+var SBtntrigger = document.querySelector(".sounds-button");
+var closeSoundsButton = document.querySelector(".close-sounds");
+
+function toggleSounds() {
+  soundsModal.classList.toggle("show-sounds-modal");
+}
+function windowOutclick(event) {
+  if (event.target === soundsModal) {
+    toggleSounds();
+  }
+}
+
+SBtntrigger.addEventListener("click", toggleSounds);
+closeSoundsButton.addEventListener("click", toggleSounds);
+window.addEventListener("click", windowOutclick);
+
+//
+// ========
+// + Wallpaper Modal +
+// ========
+//
+
+var wallpaperModal = document.querySelector(".wallpaper_modal");
+var wallpaperButton = document.getElementById("wallpaper-button");
+var closeWallpaperButton = document.querySelector(".close-wallpaper");
+
+function toggleWallpaper() {
+  wallpaperModal.classList.toggle("show-wallpaper-modal");
+}
+
+function windowOutclick3(event) {
+  if (event.target === wallpaperModal) {
+    toggleWallpaper();
+  }
+}
+
+wallpaperButton.addEventListener("click", toggleWallpaper);
+closeWallpaperButton.addEventListener("click", toggleWallpaper);
+window.addEventListener("click", windowOutclick3);
+
+//
+// ========
+// + Favorites Modal +
+// ========
+//
+
+var favModal = document.querySelector(".fav_modal");
+var FavBtntrigger = document.querySelector(".favorite-button");
+var closeFavoritesButton = document.querySelector(".cancel-fav-btn");
+
+function toggleFavorites() {
+  favModal.classList.toggle("show-favorite-modal");
+}
+
+function windowOutclick2(event) {
+  if (event.target === favModal) {
+    toggleFavorites();
+  }
+}
+
+FavBtntrigger.addEventListener("click", toggleFavorites);
+closeFavoritesButton.addEventListener("click", toggleFavorites);
+window.addEventListener("click", windowOutclick2);
 
 //
 // ========
@@ -200,6 +186,7 @@ $(function () {
     localStorage.setItem("search_hidden", this.checked);
   });
 });
+
 //
 // ========
 // + Hide Calendar Button +
@@ -244,134 +231,6 @@ $(document).ready(function () {
 
 //
 // ========
-// + Keyboard Shortcuts +
-// ========
-//
-
-var opnSetting = document.querySelector(".close-button");
-document.body.addEventListener("keydown", function () {
-  if (event.keyCode == 83 && event.shiftKey) {
-    // Shift + S key
-    opnSetting.click();
-  }
-});
-
-// Esc to close modals
-$(document).keyup(function (e) {
-  if (e.keyCode == 27) {
-    $(".settings_modal").removeClass("show-modal");
-    // click on cancel-fav-btn
-    $(".fav_modal").removeClass("show-favorite-modal");
-    // unfocus search-bar
-    $(".search-bar").blur();
-    $(".sounds_modal").removeClass("show-sounds-modal");
-    $(".wallpaper_modal").removeClass("show-wallpaper-modal");
-  }
-});
-
-//
-// ========
-// + Apps Shortcut +
-// ========
-//
-
-// Ctrl + Alt + G to open github.com
-$(document).keyup(function (github) {
-  if (github.keyCode == 71 && github.altKey && github.ctrlKey) {
-    window.location.replace("https://github.com");
-  }
-});
-
-// Ctrl + Alt + Y to open youtube.com
-$(document).keyup(function (youtube) {
-  if (youtube.keyCode == 89 && youtube.altKey && youtube.ctrlKey) {
-    window.location.replace("https://youtube.com");
-  }
-});
-
-// Ctrl + Alt + R to open reddit.com
-$(document).keyup(function (reddit) {
-  if (reddit.keyCode == 82 && reddit.altKey && reddit.ctrlKey) {
-    window.location.replace("https://reddit.com");
-  }
-});
-
-// Ctrl + Alt + P to open protonmail.com
-$(document).keyup(function (protonmail) {
-  if (protonmail.keyCode == 80 && protonmail.altKey && protonmail.ctrlKey) {
-    window.location.replace("https://mail.protonmail.com");
-  }
-});
-
-// Ctrl + Alt + T to open twitter.com
-$(document).keyup(function (twitter) {
-  if (twitter.keyCode == 84 && twitter.altKey && twitter.ctrlKey) {
-    window.location.replace("https://twitter.com");
-  }
-});
-
-// Ctrl + Alt + T to open twitter.com
-$(document).keyup(function (google_calendar) {
-  if (
-    google_calendar.keyCode == 67 &&
-    google_calendar.altKey &&
-    google_calendar.ctrlKey
-  ) {
-    window.location.replace("https://calendar.google.com");
-  }
-});
-
-// Ctrl + Alt + M to open mail.google.com
-$(document).keyup(function (google_mail) {
-  if (google_mail.keyCode == 77 && google_mail.altKey && google_mail.ctrlKey) {
-    window.location.replace("https://mail.google.com");
-  }
-});
-
-// Ctrl + / to focus on searchbar
-$(document).keyup(function (search) {
-  if (search.keyCode == 191 && search.ctrlKey) {
-    $(".search-bar").focus();
-  }
-});
-
-// Ctrl + ArrowUp to click on se_icon
-$(document).keyup(function (se_icon) {
-  if (se_icon.keyCode == 38 && se_icon.ctrlKey) {
-    $(".se_icon").click();
-  }
-});
-
-// Ctrl + Alt + I to open instagram.com
-$(document).keyup(function (instagram) {
-  if (instagram.keyCode == 73 && instagram.altKey && instagram.ctrlKey) {
-    window.location.replace("https://instagram.com");
-  }
-});
-
-// Shift + B to open Soundboard_modal
-$(document).keyup(function (soundboard) {
-  if (soundboard.keyCode == 66 && soundboard.shiftKey) {
-    $(".sounds_modal").addClass("show-sounds-modal");
-  }
-});
-
-// Shift + Alt + C to open wallpaper_modal
-$(document).keyup(function (wallpaper) {
-  if (wallpaper.keyCode == 67 && wallpaper.shiftKey && wallpaper.altKey) {
-    $(".wallpaper_modal").addClass("show-wallpaper-modal");
-  }
-});
-
-// Shift + Z to open favModal
-$(document).keyup(function (favModal) {
-  if (favModal.keyCode == 90 && favModal.shiftKey) {
-    $(".fav_modal").addClass("show-favorite-modal");
-  }
-});
-
-//
-// ========
 // + App list category +
 // ========
 //
@@ -389,19 +248,147 @@ $(document).ready(function () {
 
 //
 // ========
+// + Keyboard Shortcuts +
+// ========
+//
+
+var opnSetting = document.querySelector(".close-button");
+document.body.addEventListener("keydown", function () {
+  if (event.keyCode == 83 && event.shiftKey) {
+    // Shift + S key
+    opnSetting.click();
+  }
+});
+
+// when ESC is pressed close the modal in vanilla js
+document.addEventListener("keyup", function (e) {
+  if (e.keyCode == 27) {
+    // remove settings_modal class in vanilla js
+    document.querySelector(".settings_modal").classList.remove("show-modal");
+    // remove fav_modal class in vanilla js
+    document
+      .querySelector(".fav_modal")
+      .classList.remove("show-favorite-modal");
+    // remove sounds_modal class in vanilla js
+    document
+      .querySelector(".sounds_modal")
+      .classList.remove("show-sounds-modal");
+    // remove wallpaper_modal class in vanilla js
+    document
+      .querySelector(".wallpaper_modal")
+      .classList.remove("show-wallpaper-modal");
+    // unfocus search-bar
+    document.querySelector(".search-bar").blur();
+  }
+});
+
+//
+// ========
+// + Apps Shortcut +
+// ========
+//
+
+// Ctrl + Alt + G to open github.com
+document.addEventListener("keyup", function (github) {
+  if (github.key == "g" && github.altKey && github.ctrlKey) {
+    window.location.replace("https://github.com");
+  }
+});
+
+// Ctrl + Alt + Y to open youtube.com
+document.addEventListener("keyup", function (youtube) {
+  if (youtube.key == "y" && youtube.altKey && youtube.ctrlKey) {
+    window.location.replace("https://youtube.com");
+  }
+});
+
+// Ctrl + Alt + R to open reddit.com
+document.addEventListener("keyup", function (reddit) {
+  if (reddit.key == "r" && reddit.altKey && reddit.ctrlKey) {
+    window.location.replace("https://reddit.com");
+  }
+});
+
+// Ctrl + Alt + P to open protonmail.com
+document.addEventListener("keyup", function (protonmail) {
+  if (protonmail.key == "p" && protonmail.altKey && protonmail.ctrlKey) {
+    window.location.replace("https://mail.proton.me");
+  }
+});
+
+// Ctrl + Alt + T to open twitter.com
+document.addEventListener("keyup", function (twitter) {
+  if (twitter.key == "t" && twitter.altKey && twitter.ctrlKey) {
+    window.location.replace("https://twitter.com");
+  }
+});
+
+// Ctrl + Alt + C to open google_calendar
+document.addEventListener("keyup", function (google_calendar) {
+  if (
+    google_calendar.key == "c" &&
+    google_calendar.altKey &&
+    google_calendar.ctrlKey
+  ) {
+    window.location.replace("https://calendar.google.com");
+  }
+});
+
+// Ctrl + Alt + M to open mail.google.com
+document.addEventListener("keyup", function (mail) {
+  if (mail.key == "m" && mail.altKey && mail.ctrlKey) {
+    window.location.replace("https://mail.google.com");
+  }
+});
+
+// Ctrl + Alt + I to open instagram.com
+document.addEventListener("keyup", function (instagram) {
+  if (instagram.key == "i" && instagram.altKey && instagram.ctrlKey) {
+    window.location.replace("https://instagram.com");
+  }
+});
+
+// Ctrl + / to focus on searchbar
+document.addEventListener("keyup", function (search) {
+  if (search.key == "/" && search.ctrlKey) {
+    document.querySelector(".search-bar").focus();
+  }
+});
+
+// Ctrl + ArrowUp to click on se_icon
+document.addEventListener("keyup", function (se_icon) {
+  if (se_icon.key == "ArrowUp" && se_icon.ctrlKey) {
+    document.querySelector(".se_icon").click();
+  }
+});
+
+document.addEventListener("keyup", function (soundboard) {
+  if (soundboard.keyCode == 66 && soundboard.shiftKey) {
+    document.querySelector(".sounds-button").click();
+  }
+});
+
+document.addEventListener("keyup", function (favModal) {
+  if (favModal.keyCode == 90 && favModal.shiftKey) {
+    document.querySelector(".favorite-button").click();
+  }
+});
+
+//
+// ========
 // + Username feature v2 +
 // ========
 //
-$(document).ready(function () {
-  $("#save").click(function () {
-    var username = $("#username_input").val();
-    if (username == "") {
-      $("#username_input").css("border", "2px solid var(--delete-warning-bg)");
-    } else {
-      localStorage.setItem("user", username);
-      location.reload();
-    }
-  });
+//
+document.querySelector("#save").addEventListener("click", function () {
+  var username = document.querySelector("#username_input").value;
+  if (username == "") {
+    document.querySelector("#username_input").style.border =
+      "2px solid var(--delete-warning-bg)";
+  } else {
+    localStorage.setItem("user", username);
+    location.reload();
+  }
 });
 
 // Saturn Soundboard
@@ -469,30 +456,114 @@ $("#volume-decrease").click(function () {
 //
 // ========
 // + *New* Wallpaper Feature +
-// Leaving the input bar empty will default to the theme's background color instead, this should prevent
-// weird issues.
 // ========
 //
-var save_image_btn = document.getElementById("save-image");
-$("#save-image").click(function () {
-  var image_url = $("#image_url").val();
-  $("#save-image").text("🥳 Saving..");
-  setTimeout(function () {
-    location.reload();
-  }, 5000);
-  localStorage.setItem("image_url", image_url);
-});
-
-// get input from image_url and set it as the body background and keep it everytime the page is refreshed
-$(document).ready(function () {
-  var image_url = localStorage.getItem("image_url");
-  if (image_url) {
-    $("body").css("background-image", "url(" + image_url + ")");
+document.querySelector("#save-image").addEventListener("click", function () {
+  var image_url = document.querySelector("#image_url").value;
+  if (image_url == "") {
+    document.querySelector("#image_url").style.border =
+      "2px solid var(--delete-warning-bg)";
+    document.querySelector("#error-text-wallpaper").innerHTML =
+      "Image URL cannot be empty.";
+  } else if (image_url.includes("https://")) {
+    document.querySelector("#image_url").style.border = "2px solid #73d673";
+    document.querySelector("#save-image").innerHTML = "🥳 Applying...";
+    setTimeout(function () {
+      location.reload();
+    }, 5000);
+    localStorage.setItem("image_url", image_url);
   }
 });
 
-// clicking on button with id "delete_custom_image" will delete the image_url localStorage
-$("#delete_custom_image").click(function () {
-  localStorage.removeItem("image_url");
-  location.reload();
+//
+// ========
+// + *New* Apply URL to body +
+// ========
+//
+if (localStorage.getItem("image_url")) {
+  document.querySelector("body").style.backgroundImage =
+    "url(" + localStorage.getItem("image_url") + ")";
+}
+
+//
+// ========
+// + *New* Delete and clear image_url +
+// ========
+//
+document
+  .querySelector("#delete_custom_image")
+  .addEventListener("click", function () {
+    if (
+      confirm("You're about to delete your custom background. Are you sure?")
+    ) {
+      localStorage.removeItem("image_url");
+      location.reload();
+    }
+  });
+
+//
+// ========
+// + *New* display saved image_url inside your_image_url * +
+// ========
+document.querySelector("#your_image_url").innerHTML =
+  localStorage.getItem("image_url");
+
+//
+// ========
+// + *New* Reset button  +
+// ========
+//
+document.getElementById("reset_button").addEventListener("click", reset_data);
+function reset_data() {
+  //display alert with ok and cancel
+  if (confirm("⚠ Are you sure you want to reset all your data?")) {
+    document.getElementById("reset_button").innerHTML = "🚮";
+    setTimeout(function () {
+      location.reload();
+    }, 3000);
+    localStorage.clear();
+  }
+}
+
+//
+// ========
+// + UI Tweaks  +
+// These features are not essential, but they make everything look better & feel better.
+// ========
+//
+
+// UI Tweaks: Force saturn header to use white color.
+document
+  .querySelector("#force_white_color_header")
+  .addEventListener("click", function () {
+    if (localStorage.getItem("force_white_color_header")) {
+      localStorage.removeItem("force_white_color_header");
+      document.querySelector(".sat-header").style.color = "var(--sat-ids)";
+      document.querySelector(".apps_list").style.color = "var(--sat-ids)";
+    } else {
+      localStorage.setItem("force_white_color_header", true);
+      document.querySelector(".sat-header").style.color = "#fff";
+      document.querySelector(".apps_list").style.color = "#fff";
+    }
+  });
+
+if (localStorage.getItem("force_white_color_header")) {
+  document.querySelector(".sat-header").style.color = "#fff";
+  document.querySelector(".apps_list").style.color = "#fff";
+}
+
+// UI Tweak: Make all text bold
+
+document.querySelector("#bold_text").addEventListener("click", function () {
+  if (localStorage.getItem("bold_text")) {
+    localStorage.removeItem("bold_text");
+    document.querySelector("body").style.fontWeight = "normal";
+  } else {
+    localStorage.setItem("bold_text", true);
+    document.querySelector("body").style.fontWeight = "bold";
+  }
 });
+
+if (localStorage.getItem("bold_text")) {
+  document.querySelector("body").style.fontWeight = "bold";
+}

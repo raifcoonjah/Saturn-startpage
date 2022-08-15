@@ -34,6 +34,9 @@ const theme = localStorage.getItem("theme");
 
 if (theme) {
   body.classList.add(theme);
+} else if (theme === null) {
+  // if no theme is set, Saturn will use the default light theme.
+  body.classList.add("light");
 }
 
 // lightplusplus theme
@@ -50,7 +53,7 @@ LightPlusPlusButton.onclick = () => {
   localStorage.setItem("theme", "lightplusplus");
 };
 
-// Amazingly Orange theme
+// Amazingly purple theme
 amazinglypurple.onclick = () => {
   body.classList.replace("dark", "amazinglypurple");
   body.classList.replace("light", "amazinglypurple");

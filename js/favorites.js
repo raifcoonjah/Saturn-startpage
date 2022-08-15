@@ -5,7 +5,6 @@
 // Heavily modified and improve various things
 // ========
 //
-
 $(document).ready(function () {
   var $ul = $("#fav-link");
   var $title = $("#title");
@@ -51,55 +50,30 @@ $(document).ready(function () {
 
 //
 // ========
-// + FAVORITES Search v1.1-cheesecake +
+// + FAVORITES Search [BETA] v2.0-cheesecake +
+// Completely rewritten and improved, testing is still in progress.
 // ========
 //
-
-(function ($) {
-  jQuery.expr[":"].Contains = function (a, i, m) {
-    return (
-      (a.textContent || a.innerText || "")
-        .toUpperCase()
-        .indexOf(m[3].toUpperCase()) >= 0
-    );
-  };
-
-  function live_search(list) {
-    $(".searchfavorites")
-      .change(function () {
-        // Getting search value
-        var searchtext = $(this).val();
-        if (searchtext) {
-          // Finding If content matches with search keyword
-          $matches = $(list)
-            .find("a:Contains(" + searchtext + ")")
-            .parent();
-          // Hiding non matching lists
-          $("li", list).not($matches).fadeOut(20);
-          // Showing matching lists
-          $matches.fadeIn(20);
-        } else {
-          // If search keyword is empty then display all the lists
-          $(list).find("li").fadeIn(20);
-        }
-        return false;
-      })
-      .keyup(function () {
-        $(this).change();
-      });
+document.getElementById("searchfavorites").onkeyup = function () {
+  var search = document.getElementById("searchfavorites").value.toLowerCase();
+  var items = document.getElementById("content").getElementsByTagName("li");
+  for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    var title = item.getElementsByTagName("a")[0].innerHTML.toLowerCase();
+    if (title.indexOf(search) > -1) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
   }
-
-  $(function () {
-    live_search($("#content"));
-  });
-})(jQuery);
+};
 
 //
 // ========
 // + Show message when save button is pressed +
 // ========
 //
-
+const livepreview = document.getElementById("title");
 document.getElementById("add").onclick = function () {
   var x = document.getElementById("saveMsgBar");
   x.className = "show";
@@ -107,9 +81,33 @@ document.getElementById("add").onclick = function () {
     x.className = x.className.replace("show", "");
   }, 3000);
 };
-
-const livepreview = document.getElementById("title");
-
 livepreview.onkeyup = function () {
   document.getElementById("livepreview").innerHTML = livepreview.value;
+};
+
+//
+// ========
+// + Favorites Icon finder +
+// ========
+//
+
+// Button that adds a <img> tag inside input bar with id title
+const addImg = document.getElementById("addImg");
+addImg.onclick = function () {
+  const title = document.getElementById("title");
+  const favicon_URL = document.getElementById("favicon-url");
+  const img = document.createElement("img");
+  if (favicon_URL.value === "") {
+    favicon_URL.style.border = "2px solid var(--delete-warning-bg)";
+  }
+  // check if input is empty
+  else {
+    // get favicon from URL
+    img.src = "https://unavatar.io/" + favicon_URL.value;
+    img.style.width = "20px";
+    img.style.height = "20px";
+    title.value = '<img src="' + img.src + '">';
+    title.value += " ";
+    favicon_URL.value = "";
+  }
 };

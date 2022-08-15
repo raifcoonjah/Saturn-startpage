@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Saturn Startpage",
   "short_name": "Saturn-start",
-  "version": "5.1.1",
+  "version": "6.0.0",
   "description": "Saturn Startpage is a free & open source new-tab replacement build with speed and user experience in mind.",
   "author": "mraif13",
 
@@ -21,5 +21,5 @@
   },
 
   "permissions": ["storage"],
-  "content_security_policy": "script-src 'unsafe-inline'; object-src 'self';"
+  "content_security_policy": "script-src; object-src 'self';"
 }

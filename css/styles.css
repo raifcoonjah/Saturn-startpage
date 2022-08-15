@@ -22,6 +22,21 @@ v3.1 CSS Main.Core
 
 /* 
 ========
++ Adding transparency to multiple UI elements. +
+========
+*/
+
+.favorite-button,
+.sounds-button,
+.setting-button,
+#apps,
+#content,
+.search_block form {
+  opacity: 0.95;
+}
+
+/* 
+========
 + The logo inside search engine logo +
 ========
 */
@@ -42,11 +57,13 @@ v3.1 CSS Main.Core
 .search-bar:hover {
   background-color: var(--new-search-bg-hover-effect);
   border: 3px solid var(--sat-accent-color1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.155);
 }
 
 .search-bar:focus {
   border: 3px solid var(--sat-accent-color1);
   background-color: var(--new-search-bg-hover-effect);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.155);
 }
 
 /* 
@@ -118,21 +135,30 @@ v3.1 CSS Main.Core
 .favorites_modal_content,
 .settings-content,
 .sounds-modal-content {
+  /* Modal */
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 10px 15px;
   transform: translate(-50%, -50%);
-  padding: 5px 15px;
-  padding-bottom: 20px;
   border-radius: 20px;
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
-  border: 1px solid var(--lighter-color);
+  border: 1px solid var(--settings-button-outline);
+}
+
+/* Make settings much more optimized for various screen sizes. 
+(Experimental feature needs tons of testing) */
+.settings-content {
+  width: calc(80% - 80px);
+  height: calc(100% - 150px);
+  max-width: calc(100% - 40px);
+  max-height: calc(100% - 40px);
 }
 
 .wallpaper_modal_content {
   width: 35rem;
-  height: 17rem;
+  height: 21em;
 }
 
 .sounds-modal-content {
@@ -140,14 +166,9 @@ v3.1 CSS Main.Core
   height: 21rem;
 }
 
-.settings-content {
-  width: 77rem;
-  height: 35rem;
-}
-
 .favorites_modal_content {
   width: 40rem;
-  height: 33rem;
+  height: 36rem;
 }
 
 .show-wallpaper-modal,
@@ -290,13 +311,19 @@ ul.tabs li.current {
   font-weight: 500;
 }
 
+ul.tabs li i {
+  background-color: var(--lighter-color);
+  padding: 3px 3px;
+  border-radius: 7px;
+}
+
 ul.tabs li {
   font-size: 17px;
 }
 
 .tab-content {
   display: none;
-  animation: slide-up-fade-in ease 0.2s;
+  animation: slide-up-fade-in ease 190ms;
 }
 
 .tab-content h4 i {
@@ -324,6 +351,7 @@ ul.tabs li {
   margin: 5px 2px;
   padding: 15px 45px;
   border-radius: 20px;
+  border: 3px solid transparent;
 }
 
 .app i {
@@ -335,7 +363,6 @@ ul.tabs li {
 + Apps list & apps text +
 ========
 */
-
 .app {
   position: relative;
   display: inline-block;
@@ -386,6 +413,7 @@ ul.tabs li {
   margin: 10px;
   padding: 5px 10px 5px 10px;
   background: var(--sat-setting-bg-effect);
+  box-shadow: 0px 0px 3px var(--lighter-color);
 }
 
 .settings-background-warning {
@@ -506,13 +534,11 @@ div.theme-container {
 
 .fav_modal input {
   width: 100%;
+  height: 9%;
   color: var(--sat-ids);
-  margin: 5px 0;
-  padding: 16px 15px;
   outline: none;
   border: 2px solid transparent;
-  font-size: 14px;
-  border-radius: var(--sat-border-radius);
+  font-size: 0.91em;
 }
 
 /* 
@@ -558,6 +584,7 @@ div.theme-container {
 */
 .apps-category {
   margin-top: 20px;
+  margin: 0px;
 }
 
 ul.apps-category {
@@ -569,7 +596,7 @@ ul.apps-category li {
   font-size: 16px;
   background: none;
   display: inline-block;
-  padding: 7px 9px;
+  padding: 7px 10px;
   cursor: pointer;
   border-radius: var(--sat-border-radius);
 }
@@ -667,7 +694,7 @@ ul.apps-category li.current {
 
 .fav-livepreview iframe,
 #fav-link iframe {
-  visibility: hidden;
+  border: 3px solid var(--delete-warning-bg);
 }
 
 #fav-link a {
@@ -784,12 +811,6 @@ ul li {
   font-weight: 500;
   text-align: center;
   padding: 20px;
-}
-
-/* Favorites input title */
-.fav_title {
-  font-weight: 450;
-  font-size: 14px;
 }
 
 /* Hiding the background color for cancel button */
@@ -1088,4 +1109,8 @@ appearing when the user hovers on the open in new tab button.
 
 .red_text:hover {
   border: 1px solid var(--delete-warning-bg);
+}
+
+.red_background {
+  background-color: var(--delete-warning-bg) !important;
 }
