@@ -626,7 +626,6 @@ input[type="button"][disabled] {
   cursor: not-allowed;
 }
 
-code,
 samp,
 kbd,
 pre {
@@ -637,7 +636,10 @@ pre {
 }
 
 code {
-  padding: 2px 2px;
+  background: var(--sat-search-bar-focus);
+  padding:3px 5px;
+  font-size: 0.9rem;
+  border-radius: 8px;
 }
 
 /* 
