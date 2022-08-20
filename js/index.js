@@ -508,6 +508,10 @@ document
 document.querySelector("#your_image_url").innerHTML =
   localStorage.getItem("image_url");
 
+  if (localStorage.getItem("image_url") == null)
+  {
+    document.querySelector("#your_image_url").innerHTML = "No URL found"
+  }
 //
 // ========
 // + *New* Reset button  +
