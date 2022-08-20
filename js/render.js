@@ -144,19 +144,19 @@ const settingAbout = (z) => {
               <p class="settings-item-under-title description">About Saturn startpage.</p>
             <div class="settings-background">
               <p class="new-about">
-              <img
+              <img 
                   src="/img/dynamic-icon-big.png"
                   title="Saturn Logo"
                   alt="Saturn-logo.png"
                   /> 
-               <br/>
-                Saturn Desktop: <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.0.0"
-                  target="_blank" 
-                  >v6.0.0<i class="las la-external-link-alt"></i
-                ></a>
-                <br />
-                Help make saturn better
+               <p style="text-align:center;"> 
+               Saturn Desktop: <a style="font-weight:600;"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.0.0"
+               target="_blank" 
+               >v6.1.0<i class="las la-external-link-alt"></i
+             ></a>
+             <br/>
+                Help make Saturn better
                 <a
                   href="https://github.com/mraif13/Saturn-startpage/projects/1"
                   target="_blank"
@@ -190,12 +190,6 @@ const settingAbout = (z) => {
                         <span>Privacy</span>
                       </div></a
                     >
-                    <a href="https://paypal.me/raifs">
-                      <div class="app">
-                        <i class="las la-donate"></i>
-                        <span>Donate</span>
-                      </div></a
-                    >
                   </div>
                 </div>
               </div>
@@ -203,10 +197,6 @@ const settingAbout = (z) => {
              <p class="settings-item-title">What's new</p>
             <p class="settings-item-under-title description">Learn what's new in this release.</p>
             <div class="settings-background"> 
-            
-            <h2><i class="las la-meteor"></i> v5.1.1</h2>
-            <p class="description">Urgent bug fix.</p>
-
             <h2><i class="las la-meteor"></i> v6.0</h2>
             <p class="description">New features, stability improvements and bug fixes.</p>
 <h3>✨ Layout changes</h3>
