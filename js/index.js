@@ -512,6 +512,8 @@ document.querySelector("#your_image_url").innerHTML =
   {
     document.querySelector("#your_image_url").innerHTML = "No URL found"
   }
+
+  
 //
 // ========
 // + *New* Reset button  +
