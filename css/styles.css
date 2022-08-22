@@ -1112,5 +1112,11 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .red_background {
-  background-color: var(--delete-warning-bg) !important;
+  background-color: #d752521e !important;
+  color:var(--delete-warning-bg) !important;
+}
+
+.green_background {
+  background-color: #39c6781e !important;
+  color: #39c678 !important;
 }

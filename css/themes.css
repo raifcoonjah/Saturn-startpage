@@ -33,8 +33,12 @@
     rgb(61, 174, 233) 0%,
     #6fbeec 100%
   );
+  /* Accent color */
   --sat-accent-color1: rgb(61, 174, 233);
   --sat-accent-color-lighter: #96c9e6;
+  --bg-accent-color-lr:rgba(61, 173, 233, 0.158);
+  --bg-accent-color-lr-hover:rgba(61, 173, 233, 0.284);
+
   --moreapps-hovering-clr: rgb(61, 174, 233);
   --favorites-hover: #dbdbdb;
   --switch-color-bg-new: #aaaaaa;
@@ -86,8 +90,12 @@
   --sat-tooltip-bg: #181b22;
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
+    /* Accent color */
   --sat-accent-color1: hsl(208, 67%, 56%);
   --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.63);
+  --bg-accent-color-lr:rgba(61, 173, 233, 0.158);
+  --bg-accent-color-lr-hover:rgba(61, 173, 233, 0.284);
+  
   --moreapps-hovering-clr: hsl(208, 67%, 56%);
   --favorites-hover: #232931;
   --for-white: #ffffff;
@@ -139,8 +147,12 @@
   --sat-tooltip-bg: #222222; /* Tooltip background */
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ff9f6d 0%, #e07b44 100%);
+    /* Accent color */
   --sat-accent-color1: #ff9f6d;
   --sat-accent-color-lighter: #f4b593aa;
+  --bg-accent-color-lr:#ffa06d20;
+  --bg-accent-color-lr-hover:#ffa06d3b;
+  
   --moreapps-hovering-clr: #ff9f6d;
   --favorites-hover: rgb(46, 46, 46);
   --for-white: #ffffff;
@@ -186,8 +198,12 @@
   --sat-tooltip-bg: #222;
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #e6dada, #274046);
+    /* Accent color */
   --sat-accent-color1: #99998f;
   --sat-accent-color-lighter: #b8b8aa;
+  --bg-accent-color-lr:#99998f20;
+  --bg-accent-color-lr-hover:#99998f41;
+  
   --moreapps-hovering-clr: #99998f;
   --favorites-hover: rgb(46, 46, 46);
   --for-white: #ffffff;
@@ -237,8 +253,12 @@
   --sat-tooltip-bg: #3e4349; /* Tooltip background */
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
+  /* Accent color */
   --sat-accent-color1: hsl(208, 67%, 56%);
   --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.658);
+  --bg-accent-color-lr:rgba(61, 173, 233, 0.158);
+  --bg-accent-color-lr-hover:rgba(61, 173, 233, 0.284);
+
   --moreapps-hovering-clr: hsl(208, 67%, 56%);
   --favorites-hover: #3e4349;
   --for-white: #ffffff;
@@ -288,8 +308,12 @@
   --sat-tooltip-bg: #3e4349; /* Tooltip background */
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ff79c6 0%, #bd93f9 100%);
+
   --sat-accent-color1: hsl(265 89% 78%);
   --sat-accent-color-lighter: rgba(191, 149, 249, 0.548);
+  --bg-accent-color-lr:rgba(191, 149, 249, 0.129);
+  --bg-accent-color-lr-hover:rgba(191, 149, 249, 0.293);
+
   --moreapps-hovering-clr: hsl(265 89% 78%);
   --favorites-hover: #5c6079;
   --for-white: #ffffff;
@@ -332,8 +356,12 @@
   --sat-search-bar-focus: #434c5f;
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #88c0d0 0%, #8fbcbb 100%);
+/* Accent color */
   --sat-accent-color1: #88c0d0;
   --sat-accent-color-lighter: #88c0d09f;
+  --bg-accent-color-lr:#88c0d031;
+  --bg-accent-color-lr-hover:#88c0d04f;
+
   --moreapps-hovering-clr: #88c0d0;
   --favorites-hover: #4c566a;
   --for-white: #ffffff;
@@ -373,8 +401,12 @@
   --sat-input-hover: #3a404d;
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #409eff 0%, #5baaf8 100%);
+
   --sat-accent-color1: #409eff;
   --sat-accent-color-lighter: #40a0ffb9;
+  --bg-accent-color-lr:#40a0ff1f;
+  --bg-accent-color-lr-hover:#40a0ff5a;
+
   --moreapps-hovering-clr: #409eff;
   --favorites-hover: #4c566a;
   --for-white: #ffffff;
@@ -414,8 +446,12 @@
 
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #966fd6 0%, #5d2ea9 100%);
+
   --sat-accent-color1: #966fd6;
   --sat-accent-color-lighter: #966fd694;
+  --bg-accent-color-lr:#966fd62f;
+  --bg-accent-color-lr-hover:#966fd658;
+
   --moreapps-hovering-clr: #409eff;
   --favorites-hover: #413e51;
   --for-white: #ffffff;
@@ -456,8 +492,12 @@
   --default-font: "Inter", sans-serif;
   --sat-border-radius: 15px;
   --gudmrning-txt: linear-gradient(to right, #0349b4 0%, #6fbeec 100%);
+
   --sat-accent-color1: #0349b4;
   --sat-accent-color-lighter: #0a4fb788;
+  --bg-accent-color-lr:#034ab428;
+  --bg-accent-color-lr-hover:#034ab44f;
+
   --moreapps-hovering-clr: #0349b4;
   --favorites-hover: #d6d6d6;
   --switch-color-bg-new: #aaaaaa;

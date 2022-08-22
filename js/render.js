@@ -145,23 +145,35 @@ const settingAbout = (z) => {
             <div class="settings-background">
               <p class="new-about">
               <img 
+              style="margin-left: auto;
+              padding-top:30px;
+              margin-right: auto;
+              display: block;"
                   src="/img/dynamic-icon-big.png"
                   title="Saturn Logo"
                   alt="Saturn-logo.png"
                   /> 
+            <p style="text-align:center;" class="settings-item-title">Saturn Desktop</p>
                <p style="text-align:center;"> 
-               Saturn Desktop: <a style="font-weight:600;"
-               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.0.0"
+               <a class="version-text"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
                target="_blank" 
-               >v6.1.0<i class="las la-external-link-alt"></i
+               >v6.1.0</i
              ></a>
-             <br/>
-                Help make Saturn better
-                <a
+                <a class="version-text"
                   href="https://github.com/mraif13/Saturn-startpage/projects/1"
-                  target="_blank"
-                  >Contribute<i class="las la-external-link-alt"></i
+                  target="_blank" 
+                  >Contribute</i
                 ></a>
+                <a class="version-text"
+                href="https://github.com/mraif13/Saturn-startpage/tree/master#data-whats-that"
+                target="_blank" 
+                >Privacy</i
+              ></a>  
+              <a class="version-text red_background"
+              href="#returning....."
+              ><i class="las la-code-branch"></i> redesign-about</i
+            ></a>  
                 </p>
               <div class="socials">
                 <div class="popup aboutwidgets">
@@ -182,12 +194,6 @@ const settingAbout = (z) => {
                       <div class="app">
                         <i class="lar la-star"></i>
                         <span>Star on Github</span>
-                      </div></a
-                    >
-                      <a href="https://github.com/mraif13/Saturn-startpage/tree/master#data-whats-that">
-                      <div class="app" id="tab-2" class="tab-content slide-up-fade-in">
-                        <i class="las la-user-secret"></i>
-                        <span>Privacy</span>
                       </div></a
                     >
                   </div>
