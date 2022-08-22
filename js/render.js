@@ -186,7 +186,7 @@ const settingAbout = (z) => {
                     >
                     <a href="https://github.com/mraif13/saturn-startpage">
                       <div class="app">
-                        <i class="lab la-github-alt"></i>
+                      <i class="las la-code"></i>
                         <span>Source code</span>
                       </div></a
                     >
