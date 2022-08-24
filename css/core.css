@@ -1030,4 +1030,11 @@ height: 100% !important;
   .settings-title {
     font-size: 1.2rem !important;
   }
-}
+  .version-text{
+    padding:5px 5px !important;
+    color:var(--sat-accent-color1);
+    font-weight: 600;
+    text-decoration: none !important;
+    font-size:13px !important;
+  }
+ }
