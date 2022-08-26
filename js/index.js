@@ -508,12 +508,10 @@ document
 document.querySelector("#your_image_url").innerHTML =
   localStorage.getItem("image_url");
 
-  if (localStorage.getItem("image_url") == null)
-  {
-    document.querySelector("#your_image_url").innerHTML = "No URL found"
-  }
+if (localStorage.getItem("image_url") == null) {
+  document.querySelector("#your_image_url").innerHTML = "No URL found";
+}
 
-  
 //
 // ========
 // + *New* Reset button  +
@@ -522,7 +520,8 @@ document.querySelector("#your_image_url").innerHTML =
 document.getElementById("reset_button").addEventListener("click", reset_data);
 function reset_data() {
   if (confirm("⚠ Beep boop!? Are you sure you want to reset all your data?")) {
-    document.getElementById("reset_button").innerHTML = "🚮 <span>Deleting...</span><span>Please wait!</span>";
+    document.getElementById("reset_button").innerHTML =
+      "🚮 <span>Deleting...</span><span>Please wait!</span>";
     localStorage.clear();
     setTimeout(function () {
       location.reload();
@@ -572,3 +571,21 @@ document.querySelector("#bold_text").addEventListener("click", function () {
 if (localStorage.getItem("bold_text")) {
   document.querySelector("body").style.fontWeight = "bold";
 }
+
+// UI Tweak: Use Sans Serif as default font
+document.querySelector("#browser_font").addEventListener("click", function () {
+  if (localStorage.getItem("browser_font")) {
+    localStorage.removeItem("browser_font");
+    document.querySelector("body").style.fontFamily = "var(--default-font)";
+  } else {
+    localStorage.setItem("browser_font", true);
+    document.querySelector("body").style.fontFamily = "sans-serif";
+  }
+});
+
+if (localStorage.getItem("browser_font")) {
+  document.querySelector("body").style.fontFamily = "sans-serif";
+}
+
+
+// UI Tweak: Use Sans Serif as default font
