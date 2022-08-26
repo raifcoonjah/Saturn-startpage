@@ -863,28 +863,25 @@ ul.fav_ptgi_category li {
 
 #default_layout,
 #compact_layout,
-#saveMsgBar,
-#save_username {
-  visibility: hidden;
+#saveMsgBar {
+  visibility: visible;
   min-width: 250px;
   margin-left: -125px;
-  background-color: var(--sat-setting-bg-color);
-  color: var(--sat-ids);
   text-align: center;
   border-radius: var(--sat-border-radius);
   padding: 10px;
   position: fixed;
   z-index: 1;
   left: 47%;
-  bottom: 30px;
   font-size: 15px;
   font-weight: 500;
+  border:1px solid var(--lighter-color);
 }
 
-/* Align save username snackbar to the center */
-#save_username {
-  left: 40%;
-  bottom: 30px;
+#saveMsgBar {
+  bottom:0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 #default_layout,
@@ -898,22 +895,11 @@ ul.fav_ptgi_category li {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-#save_username.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.9s 4.5s;
-  animation: fadein 0.5s, fadeout 0.9s 4.5s;
-}
-
 #default_layout.show,
 #compact_layout.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-/* Text on the bottom of favorites modal. */
-.side-text {
-  text-align: center;
 }
 
 /* 
