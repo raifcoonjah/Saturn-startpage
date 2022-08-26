@@ -128,6 +128,7 @@ v3.1 CSS Main.Core
   opacity: 0;
   visibility: hidden;
   transform: scale(0.9);
+  backdrop-filter: blur(1.5px);
   transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
 }
 
@@ -145,6 +146,7 @@ v3.1 CSS Main.Core
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
   border: 1px solid var(--settings-button-outline);
+
 }
 
 /* Make settings much more optimized for various screen sizes. 
@@ -861,28 +863,25 @@ ul.fav_ptgi_category li {
 
 #default_layout,
 #compact_layout,
-#saveMsgBar,
-#save_username {
-  visibility: hidden;
+#saveMsgBar {
+  visibility: visible;
   min-width: 250px;
   margin-left: -125px;
-  background-color: var(--sat-setting-bg-color);
-  color: var(--sat-ids);
   text-align: center;
   border-radius: var(--sat-border-radius);
   padding: 10px;
   position: fixed;
   z-index: 1;
   left: 47%;
-  bottom: 30px;
   font-size: 15px;
   font-weight: 500;
+  border:1px solid var(--lighter-color);
 }
 
-/* Align save username snackbar to the center */
-#save_username {
-  left: 40%;
-  bottom: 30px;
+#saveMsgBar {
+  bottom:0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 #default_layout,
@@ -896,22 +895,11 @@ ul.fav_ptgi_category li {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-#save_username.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.9s 4.5s;
-  animation: fadein 0.5s, fadeout 0.9s 4.5s;
-}
-
 #default_layout.show,
 #compact_layout.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-/* Text on the bottom of favorites modal. */
-.side-text {
-  text-align: center;
 }
 
 /* 
@@ -1112,5 +1100,11 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .red_background {
-  background-color: var(--delete-warning-bg) !important;
+  background-color: #d752521e !important;
+  color:var(--delete-warning-bg) !important;
+}
+
+.green_background {
+  background-color: #39c6781e !important;
+  color: #39c678 !important;
 }
