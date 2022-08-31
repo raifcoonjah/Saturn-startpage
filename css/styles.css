@@ -1,6 +1,10 @@
-/*
-Saturn Startpage: Open source & free.
-v3.1 CSS Main.Core
+/* 
+=/=/=/SATURN STARTPAGE=/=/=/=
++ styles.css +
++ This file contains every CSS needed to make Saturn look the way
+its supposed to. 
++ Version: 3.1 +
+=/=/=/=/=/=/=
 */
 
 /* 
@@ -34,7 +38,6 @@ v3.1 CSS Main.Core
 .search_block form {
   opacity: 0.95;
 }
-
 /* 
 ========
 + The logo inside search engine logo +
@@ -146,7 +149,6 @@ v3.1 CSS Main.Core
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
   border: 1px solid var(--settings-button-outline);
-
 }
 
 /* Make settings much more optimized for various screen sizes. 
@@ -651,8 +653,9 @@ ul.apps-category li.current {
   text-align: center;
 }
 
-.socials .app:hover {
-  transition: var(--transition-speed-default);
+.socials {
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .fav-container {
@@ -875,11 +878,11 @@ ul.fav_ptgi_category li {
   left: 47%;
   font-size: 15px;
   font-weight: 500;
-  border:1px solid var(--lighter-color);
+  border: 1px solid var(--lighter-color);
 }
 
 #saveMsgBar {
-  bottom:0px;
+  bottom: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -1101,7 +1104,7 @@ appearing when the user hovers on the open in new tab button.
 
 .red_background {
   background-color: #d752521e !important;
-  color:var(--delete-warning-bg) !important;
+  color: var(--delete-warning-bg) !important;
 }
 
 .green_background {
