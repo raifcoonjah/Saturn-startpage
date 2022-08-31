@@ -153,130 +153,51 @@ const settingAbout = (z) => {
                   title="Saturn Logo"
                   alt="Saturn-logo.png"
                   /> 
-            <p style="text-align:center;" class="settings-item-title">Saturn Desktop</p>
+            <p style="text-align:center;font-weight:900;font-size:23px;" class="settings-item-title">Saturn Desktop</p>
                <p style="text-align:center;"> 
                <a class="version-text"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
                target="_blank" 
-               >v6.1.0</i
+               >v6.1.0.cheesecake</i
              ></a>
-                <a class="version-text"
-                  href="https://github.com/mraif13/Saturn-startpage/projects/1"
-                  target="_blank" 
-                  >Contribute</i
-                ></a>
-                <a class="version-text"
-                href="https://github.com/mraif13/Saturn-startpage/tree/master#data-whats-that"
-                target="_blank" 
-                >Privacy</i
-              ></a>  
-              <a class="version-text red_background"
-              href="#returning....."
-              ><i class="las la-code-branch"></i> redesign-about</i
-            ></a>  
                 </p>
               <div class="socials">
-                <div class="popup aboutwidgets">
-                  <div id="apps">
-                     <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.1.80">
-                      <div class="app">
-                        <i class="las la-flask"></i>
-                        <span>Try out beta</span>
-                      </div></a
-                    >
-                    <a href="https://github.com/mraif13/saturn-startpage">
-                      <div class="app">
-                      <i class="las la-code"></i>
-                        <span>Source code</span>
-                      </div></a
-                    >
-                      <a href="https://github.com/mraif13/saturn-startpage/">
-                      <div class="app">
-                        <i class="lar la-star"></i>
-                        <span>Star on Github</span>
-                      </div></a
-                    >
-                  </div>
+                <div class="aboutwidgets">
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.1.80" class="aboutwidgets-container">
+                Try out beta
+                <i class="las la-external-link-alt"></i>
+                </a>
+
+
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/tree/master" class="aboutwidgets-container lk_container_top">
+                Source Code
+                <i class="las la-external-link-alt"></i>
+                </a>
+
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/" class="aboutwidgets-container lk_container_bottom">
+                Contribute
+                <i class="las la-external-link-alt"></i>
+                </a>
+
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/tree/master#data-whats-that" class="aboutwidgets-container">
+                Privacy
+                <i class="las la-external-link-alt"></i>
+                </a>
                 </div>
+
               </div>
             </div>
              <p class="settings-item-title">What's new</p>
             <p class="settings-item-under-title description">Learn what's new in this release.</p>
             <div class="settings-background"> 
-            <h2><i class="las la-meteor"></i> v6.0</h2>
+            <h2><i class="las la-meteor"></i> v6.1</h2>
             <p class="description">New features, stability improvements and bug fixes.</p>
-<h3>✨ Layout changes</h3>
-- Favorites is now integrated inside of apps lists making it much easier to access.
-
-<h3>🎉 Optimized code base</h3>
-- Most parts of the code base was entirely rewritten from scratch and reimplemented 
-in vanilla javascript, this should make things much easier to maintain and fix tons of issues.
-<br/>
-<h3>🛠️ UI Tweaks (Beta)</h3>
-- UI tweaks are small additions to saturn that help in fixing some of the common issues 
-you may experience. 
-<br/>
-<h3>🗑️ Reset Feature</h3>
-- You can now completely reset Saturn to the default look and feel.
-<br/>
-<h3>🤘 Favorites improvements</h3>
-- Added a new favicon finder that allows the addition of favicon's inside of favorites.
-<br/>
-- Favorites search got a complete rewritten, fixing two issues along the way and also improving its performance.   
-<br/>
-- Brand new simplified design.
-<br/>
-<h3>👩‍🎨 Opacity opacity opacity… </h3>
-- Some elements on the home screen now have a slight opacity effect. 
-<br/>
-
-<h3>Bug fixes:</h3>
+<h3>✨ First Beta</h3>
 <ul>
 <li>
-- Fix a rare issue that causes firefox to crash due to a reload loop.
-</li>
-<li>
-- Fix a very old bug that causes the light theme to appear first then your applied theme.
-</li>
-- Removed the ability to run <code>unsafe inline scripts</code>. (Security fixes)
-<li>
-<li>
-- Fix several issues caused by some UI elements inside of favorites modal.
-</li>
-<li>
--  Several other minor bug fixes and stability improvements. 
+- Redesign About page.
 </li>
 
-
-</ul>
-<br/>
-<h3>TONS of Other small improvements</h3>
-<ul>
-
-<li>
-- Settings modal should now scale properly with different screen sizes. (Coming to more modals soon!)
-</li>
-<li>
-- The search bar will now display a "Search icon" by default. 
-</li>
-<li>
-- Added a prompt when trying to reset or delete custom background.
-</li>
-<li>
-- Added a way to view currently set custom background URL. 
-</li>
-<li>
-- Rewrote most parts of apps shortcuts in vanilla JS.
-</li>
-<li>
-- Replace deprecated keyCode property with key property instead.
-</li>
-<li>
-- Tweaked saturn navigation. 
-</li>
-<li>
-- Several other minor UI/UX fixes.
-</li>
 </ul>
 </div>
 

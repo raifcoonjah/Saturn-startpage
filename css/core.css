@@ -1,9 +1,9 @@
 /* 
-========
-+ Saturn Startpage +
-+ var.css v2 (work in progress - renamed to core.css) +
-+ Build v31.12.2021 +
-========
+=/=/=/SATURN STARTPAGE=/=/=/=
++ core.css +
++ This file contains all the core css need to make Saturn work properly. 
++ Version: v31.12.2021 +
+=/=/=/=/=/=/=
 */
 
 /* 
@@ -14,6 +14,7 @@ amount of time saturn takes to load +
 + Last updated: 11.10.2021 +
 ========
 */
+
 /* inter-300 - latin */
 @font-face {
   font-family: "Inter";
@@ -633,11 +634,12 @@ pre {
   padding: 10px 8px;
   font-size: 0.9rem;
   border-radius: 8px;
+  box-shadow: var(--drop-shadow-color);
 }
 
 code {
   background: var(--sat-search-bar-focus);
-  padding:3px 5px;
+  padding: 3px 5px;
   font-size: 0.9rem;
   border-radius: 8px;
 }
@@ -981,15 +983,14 @@ use the correct border radius == */
 @media (max-width: 68.75em) {
   .wallpaper_modal_content,
   .favorites_modal_content,
-  .sounds-modal-content{
+  .sounds-modal-content {
     max-width: 90%;
   }
 
-  .settings-content{
-width: 100% !important;
-height: 100% !important;
+  .settings-content {
+    width: 100% !important;
+    height: 100% !important;
   }
-
 
   ul.tabs li {
     font-size: 12px !important;
@@ -1030,11 +1031,11 @@ height: 100% !important;
   .settings-title {
     font-size: 1.2rem !important;
   }
-  .version-text{
-    padding:5px 5px !important;
-    color:var(--sat-accent-color1);
+  .version-text {
+    padding: 5px 5px !important;
+    color: var(--sat-accent-color1);
     font-weight: 600;
     text-decoration: none !important;
-    font-size:13px !important;
+    font-size: 13px !important;
   }
- }
+}

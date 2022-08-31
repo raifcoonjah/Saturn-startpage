@@ -22,16 +22,54 @@ label span {
   font-size: 16px;
 }
 
-.version-text{
+.version-text {
   background-color: var(--bg-accent-color-lr);
-  border-radius:15px;
-  padding:5px 10px;
-  color:var(--sat-accent-color1);
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: var(--sat-accent-color1);
   font-weight: 600;
   text-decoration: none !important;
-  font-size:17px;
+  font-size: 17px;
 }
 
-.version-text:hover{
+.version-text:hover {
   background-color: var(--bg-accent-color-lr-hover);
+}
+
+.aboutwidgets-container {
+  padding: 13px 15px;
+  border-radius: var(--sat-border-radius);
+  background-color: var(--lighter-color);
+  margin: auto;
+  width: 60%;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: var(--drop-shadow-color);
+  margin-top: 15px;
+  text-decoration: none !important;
+}
+
+.aboutwidgets-container i {
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 3px;
+}
+
+.aboutwidgets-container:hover {
+  background-color: var(--favorites-hover);
+  transition: var(--transition-speed-default);
+  color: var(--sat-ids);
+}
+
+.lk_container_top {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.lk_container_bottom {
+  margin-top: 2px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
 }
