@@ -465,7 +465,7 @@ document.querySelector("#save-image").addEventListener("click", function () {
       "2px solid var(--delete-warning-bg)";
     document.querySelector("#error-text-wallpaper").innerHTML =
       "Image URL cannot be empty.";
-  } else if (image_url.includes("https://")) {
+  } else {
     document.querySelector("#image_url").style.border = "2px solid #73d673";
     document.querySelector("#save-image").innerHTML = "🥳 Applying...";
     setTimeout(function () {
@@ -586,6 +586,3 @@ document.querySelector("#browser_font").addEventListener("click", function () {
 if (localStorage.getItem("browser_font")) {
   document.querySelector("body").style.fontFamily = "sans-serif";
 }
-
-
-// UI Tweak: Use Sans Serif as default font
