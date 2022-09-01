@@ -865,26 +865,31 @@ ul.fav_ptgi_category li {
 */
 
 #default_layout,
-#compact_layout,
-#saveMsgBar {
-  visibility: visible;
-  min-width: 250px;
-  margin-left: -125px;
-  text-align: center;
-  border-radius: var(--sat-border-radius);
-  padding: 10px;
+#compact_layout {
+  background-color: var(--lighter-color);
+  visibility: hidden;
+  width: 100%;
   position: fixed;
-  z-index: 1;
-  left: 47%;
-  font-size: 15px;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
   font-weight: 500;
-  border: 1px solid var(--lighter-color);
+  color: (--sat-ids);
 }
 
 #saveMsgBar {
-  bottom: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  background-color: var(--lighter-color);
+  visibility: hidden;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--for-white);
+    color: (--sat-ids);
 }
 
 #default_layout,
@@ -896,6 +901,9 @@ ul.fav_ptgi_category li {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  bottom: 0 !important;
+  /* Hack to make Snackbar stay at the 
+  bottom of the page */
 }
 
 #default_layout.show,
@@ -903,6 +911,9 @@ ul.fav_ptgi_category li {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  bottom: 0 !important;
+  /* Hack to make Snackbar stay at the 
+  bottom of the page */
 }
 
 /* 
