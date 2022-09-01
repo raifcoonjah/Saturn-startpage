@@ -24,7 +24,7 @@ label span {
 
 .version-text {
   background-color: var(--bg-accent-color-lr);
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 5px 10px;
   color: var(--sat-accent-color1);
   font-weight: 600;
@@ -72,4 +72,18 @@ label span {
   margin-top: 2px;
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
+}
+
+.settings-header {
+  background-color: red;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
