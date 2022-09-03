@@ -119,10 +119,10 @@
           <li class="tab-link" data-tab="app-2">
             <i class="las la-graduation-cap"></i> Education
           </li>
-          <li class="tab-link" data-tab="app-3">
+          <li class="tab-link distracting_mode" data-tab="app-3">
             <i class="las la-share-alt"></i> Social media
           </li>
-          <li class="tab-link" data-tab="app-4">
+          <li class="tab-link distracting_mode" data-tab="app-4">
             <i class="las la-play-circle"></i> Multimedia
           </li>
         </ul>
@@ -196,7 +196,7 @@
             target="_blank"
           >
             <button
-              data-tootik="Learn more..."
+              data-tootik="How does this work?"
               data-tootik-conf="right"
               class="save-button"
             >
@@ -237,7 +237,7 @@
 
         <!-- =+=+= Save message =+=+= -->
         <div id="saveMsgBar">
-          <i class="las la-save"></i> Favorite saved successfully.
+          <i class="las la-save"></i> Favorite saved successfully
         </div>
       </div>
 
@@ -270,6 +270,13 @@
               >
                 <i class="las la-images"></i> Layout
               </li>
+              <li
+                class="tab-link"
+                data-tab="tab-7"
+                title="Saturn focus modes..."
+              >
+                <i class="las la-cloud-moon"></i> Focus
+              </li>
               <p class="line"></p>
               <li class="tab-link" data-tab="tab-5" title="Saturn shortcuts..">
                 <i class="las la-keyboard"></i> Shortcuts
@@ -278,6 +285,55 @@
                 <i class="las la-info-circle"></i> About
               </li>
             </ul>
+
+            <div id="tab-7" class="tab-content slide-up-now-opacity">
+              <p class="settings-item-title">Saturn focus (Beta)</p>
+              <p class="settings-item-under-title description">
+                Choose a Focus and let's get to work.
+              </p>
+              <div class="settings-background">
+                <p class="focus_mode_icons">
+                  <i class="las la-book-reader" style="color: #ffb347"></i>
+                  Focus for studying
+                </p>
+                <a href="#" class="focus_modes">
+                  Study Focus
+                  <i class="las la-angle-right"></i>
+                </a>
+                <br />
+                <p class="line"></p>
+                <p class="focus_mode_icons">
+                  <i class="las la-code" style="color: #f2a2e8"></i>
+                  Focus for programming
+                </p>
+                <a href="#" class="focus_modes">
+                  Programming Focus
+                  <i class="las la-angle-right"></i>
+                </a>
+                <br />
+                <p class="line"></p>
+                <p class="focus_mode_icons">
+                  <i class="las la-spa" style="color: #77dd77"></i>
+                  Focus for Mindfulness (Coming later)
+                </p>
+                <!-- <a href="#coming-later..." class="focus_modes">
+                  Mindfulness Focus
+                  <i class="las la-angle-right"></i>
+                </a> -->
+                <br />
+              </div>
+              <div class="settings-background">
+                <p class="settings-item-title">
+                  <i class="las la-hands-helping"></i> What's Saturn focus?
+                </p>
+                <p class="settings-item-under-title description">
+                  Saturn focus lets you stay in the moment when you need to
+                  concentrate. Using a set of pre-defined configurations, Saturn
+                  will disable some UI elements from the home screen helping you
+                  focus.
+                </p>
+              </div>
+            </div>
 
             <!-- =+=+= General Settings =+=+= -->
             <div id="tab-2" class="tab-content current slide-up-now-opacity">
@@ -545,7 +601,22 @@
             </p>
             <div class="settings-background">
               <!-- =+=+= HT: Options2 =+=+=-->
-              <h5><i class="las la-search"></i> Hide Search bar</h5>
+              <h4>
+                <i class="las la-search"></i> Enable Distraction mode/Focus mode
+                (BETA UI)
+              </h4>
+              <p class="description small_text">
+                This option will hide Multimedia and Social media tabs from the
+                <br />
+                home screen, helping you focus.
+              </p>
+
+              <label class="switch">
+                <input type="checkbox" class="hide-tabs" />
+                <span class="slider round"></span>
+              </label>
+              <!-- =+=+= HT: Options2 =+=+=-->
+              <h4><i class="las la-search"></i> Hide Search bar</h4>
               <p></p>
 
               <label class="switch">
@@ -554,9 +625,9 @@
               </label>
 
               <!-- =+=+= HT: Options3 =+=+=-->
-              <h5>
+              <h4>
                 <i class="las la-calendar"></i> Hide Google calendar button
-              </h5>
+              </h4>
               <p></p>
 
               <label class="switch">
