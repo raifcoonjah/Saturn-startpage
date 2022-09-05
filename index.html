@@ -119,10 +119,10 @@
           <li class="tab-link" data-tab="app-2">
             <i class="las la-graduation-cap"></i> Education
           </li>
-          <li class="tab-link distracting_mode" data-tab="app-3">
+          <li id="distracting_mode" class="tab-link" data-tab="app-3">
             <i class="las la-share-alt"></i> Social media
           </li>
-          <li class="tab-link distracting_mode" data-tab="app-4">
+          <li class="tab-link" data-tab="app-4">
             <i class="las la-play-circle"></i> Multimedia
           </li>
         </ul>
@@ -296,10 +296,10 @@
                   <i class="las la-book-reader" style="color: #ffb347"></i>
                   Focus for studying
                 </p>
-                <a href="#" class="focus_modes">
+                <button id="study_focus" class="focus_modes">
                   Study Focus
                   <i class="las la-angle-right"></i>
-                </a>
+                </button>
                 <br />
                 <p class="line"></p>
                 <p class="focus_mode_icons">
@@ -601,11 +601,11 @@
             </p>
             <div class="settings-background">
               <!-- =+=+= HT: Options2 =+=+=-->
-              <h4>
+              <!-- <h4>
                 <i class="las la-search"></i> Enable Distraction mode/Focus mode
                 (BETA UI)
-              </h4>
-              <p class="description small_text">
+              </h4> -->
+              <!-- <p class="description small_text">
                 This option will hide Multimedia and Social media tabs from the
                 <br />
                 home screen, helping you focus.
@@ -614,7 +614,7 @@
               <label class="switch">
                 <input type="checkbox" class="hide-tabs" />
                 <span class="slider round"></span>
-              </label>
+              </label> -->
               <!-- =+=+= HT: Options2 =+=+=-->
               <h4><i class="las la-search"></i> Hide Search bar</h4>
               <p></p>
@@ -815,6 +815,8 @@
       <script type="text/javascript" src="js/layout.js"></script>
       <!-- THEMES JS - File -->
       <script type="text/javascript" src="js/themes.js"></script>
+      <!-- FOCUS JS - File -->
+      <script type="text/javascript" src="js/focus.js"></script>
     </main>
   </body>
 </html>
