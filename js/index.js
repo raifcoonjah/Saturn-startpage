@@ -213,6 +213,29 @@ $(function () {
 
 //
 // ========
+// + Hide distracting tabs +
+// ========
+//
+$(function () {
+  var status = localStorage.getItem("hide-tabs");
+  if (status == "true") {
+    $(".distracting_mode").css("display", "none");
+    $(".hide-tabs").attr("checked", true);
+  } else {
+    $(".hide-tabs").attr("checked", false);
+  }
+  $(".study_focus").click(function () {
+    if (this.checked) {
+      $(".distracting_mode").hide();
+    } else {
+      $(".distracting_mode").show();
+    }
+    localStorage.setItem("hide-tabs", this.checked);
+  });
+});
+
+//
+// ========
 // + Settings navigation +
 // ========
 //
