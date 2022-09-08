@@ -203,7 +203,7 @@ const settingAbout = (z) => {
              <p class="settings-item-title">What's new</p>
             <p class="settings-item-under-title description">Learn what's new in this release.</p>
             <div class="settings-background">
-            <h2><i class="las la-meteor"></i> v6.1</h2>
+            <h2><i class="las la-meteor"></i> v6.0.1</h2>
             <h3>Minor release</h3>
             - Updated jQuery version to latest. 
             <br/>
