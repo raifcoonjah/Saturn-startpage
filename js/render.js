@@ -151,9 +151,9 @@ const settingAbout = (z) => {
                   /> 
                <br/>
                 Saturn Desktop: <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.0.0"
+                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.0.1"
                   target="_blank" 
-                  >v6.0.0<i class="las la-external-link-alt"></i
+                  >v6.0.1<i class="las la-external-link-alt"></i
                 ></a>
                 <br />
                 Help make saturn better
@@ -202,7 +202,11 @@ const settingAbout = (z) => {
             </div>
              <p class="settings-item-title">What's new</p>
             <p class="settings-item-under-title description">Learn what's new in this release.</p>
-            <div class="settings-background"> 
+            <div class="settings-background">
+            <h2><i class="las la-meteor"></i> v6.1</h2>
+            <h3>Minor release</h3>
+            - Updated jQuery version to latest. 
+            <br/>
             <h2><i class="las la-meteor"></i> v6.0</h2>
             <p class="description">New features, stability improvements and bug fixes.</p>
 <h3>✨ Layout changes</h3>
