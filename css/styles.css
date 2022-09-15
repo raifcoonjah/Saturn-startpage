@@ -889,7 +889,7 @@ ul.fav_ptgi_category li {
   font-size: 16px;
   font-weight: 500;
   color: var(--for-white);
-    color: (--sat-ids);
+  color: (--sat-ids);
 }
 
 #default_layout,
@@ -1121,4 +1121,137 @@ appearing when the user hovers on the open in new tab button.
 .green_background {
   background-color: #39c6781e !important;
   color: #39c678 !important;
+}
+
+/* 
+========
++ FOCUS UI v1.0 +
+========
+*/
+
+/* Main UI */
+
+.focus_ui {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* Focus Span (used to make checkbox look/feel like button) */
+.focus_ui span {
+  padding: 14px 25px;
+  border-radius: 30px;
+  background-color: var(--lighter-color);
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  cursor: pointer;
+}
+
+/* Focus UI <i> icons */
+.focus_ui i {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  padding: 5px;
+}
+
+/* Hack used to hide checkbox */
+.focus_ui label input {
+  position: absolute;
+  display: none;
+}
+
+.study input:checked + span {
+  background-color: #ffb347;
+}
+
+.programming input:checked + span {
+  background-color: #f2a2e8;
+}
+.relaxation input:checked + span {
+  background-color: #77dd77;
+}
+
+/* The animation when focus button is clicked */
+.focus_ui input:checked + span i {
+  margin-left: 55px;
+  transition: var(--transition-speed-default);
+}
+
+.focus_ui input + span i {
+  margin-left: 36px;
+  transition: var(--transition-speed-default);
+}
+
+/* Big icons */
+
+.focus_mode_icons i {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  padding: 10px;
+}
+
+.focus_mode_icons {
+  font-size: 16px;
+  text-align: center;
+}
+/* 
+========
++ New ABOUT Section UI +
+========
+*/
+
+.version-text {
+  background-color: var(--bg-accent-color-lr);
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: var(--sat-accent-color1);
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.version-text:hover {
+  background-color: var(--bg-accent-color-lr-hover);
+}
+
+.aboutwidgets-container {
+  padding: 13px 15px;
+  border-radius: var(--sat-border-radius);
+  background-color: var(--lighter-color);
+  margin: auto;
+  width: 60%;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: var(--drop-shadow-color);
+  margin-top: 15px;
+  text-decoration: none !important;
+}
+
+.aboutwidgets-container i {
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 3px;
+}
+
+.focus_ui span:hover,
+.aboutwidgets-container:hover {
+  background-color: var(--favorites-hover);
+  transition: var(--transition-speed-default);
+  color: var(--sat-ids);
+}
+
+.lk_container_top {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.lk_container_bottom {
+  margin-top: 2px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
 }
