@@ -1176,6 +1176,8 @@ appearing when the user hovers on the open in new tab button.
 }
 
 /* The animation when focus button is clicked */
+
+.focus_ui input:hover + span i,
 .focus_ui input:checked + span i {
   margin-left: 55px;
   transition: var(--transition-speed-default);
