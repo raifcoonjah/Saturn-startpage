@@ -8,29 +8,29 @@ const appsList = (x) => {
           <div class="popup">
             <div id="apps">
               <a href="https://github.com">
-                <div class="app">
+                <div class="app study_focus_mode relaxation_focus_mode">
                   <i class="lab la-github"></i>
                   <span>Github</span>
                 </div></a
               >
               <a href="https://youtube.com">
-                <div class="app">
+                <div class="app study_focus_mode">
                   <span>YouTube</span>
                   <i class="lab la-youtube"></i></div
               ></a>
               <a href="https://reddit.com">
-                <div class="app">
+                <div class="app study_focus_mode programming_focus_mode">
                   <span>Reddit</span>
                   <i class="lab la-reddit"></i></div
               ></a>
               <a href="https://mail.protonmail.com">
-                <div class="app">
+                <div class="app relaxation_focus_mode">
                   <span>Proton Mail </span>
                   <i class="las la-inbox"></i></div
               ></a>
 
               <a href="https://mail.google.com">
-                <div class="app">
+                <div class="app relaxation_focus_mode">
                   <span>Gmail</span>
                   <i class="las la-envelope"></i></div
               ></a>
@@ -108,13 +108,13 @@ const appsList = (x) => {
                     </div></a
                   >
                   <a href="https://netflix.com">
-                    <div class="app">
+                    <div class="app programming_focus_mode">
                       <i class="las la-film"></i>
                       <span>Netflix</span>
                     </div></a
                   >
                   <a href="https://twitch.tv">
-                    <div class="app">
+                    <div class="app programming_focus_mode">
                       <i class="lab la-twitch"></i>
                       <span>Twitch</span>
                     </div></a
@@ -153,12 +153,12 @@ const settingAbout = (z) => {
                   title="Saturn Logo"
                   alt="Saturn-logo.png"
                   /> 
-            <p style="text-align:center;font-weight:900;font-size:23px;" class="settings-item-title">Saturn Desktop</p>
+            <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Desktop</p>
                <p style="text-align:center;"> 
                <a class="version-text"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
                target="_blank" 
-               >v6.1.0.cheesecake</i
+               >v6.1.0 Beta (150922)</i
              ></a>
                 </p>
               <div class="socials">
@@ -167,8 +167,6 @@ const settingAbout = (z) => {
                 Try out beta
                 <i class="las la-external-link-alt"></i>
                 </a>
-
-
                 <a href="https://github.com/raifcoonjah/Saturn-startpage/tree/master" class="aboutwidgets-container lk_container_top">
                 Source Code
                 <i class="las la-external-link-alt"></i>
@@ -184,7 +182,6 @@ const settingAbout = (z) => {
                 <i class="las la-external-link-alt"></i>
                 </a>
                 </div>
-
               </div>
             </div>
              <p class="settings-item-title">What's new</p>

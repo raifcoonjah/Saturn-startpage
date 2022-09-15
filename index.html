@@ -116,13 +116,16 @@
           <li class="tab-link current" data-tab="app-1">
             <i class="lar la-grin-hearts"></i> Most used
           </li>
-          <li class="tab-link" data-tab="app-2">
+          <li class="tab-link relaxation_focus_mode" data-tab="app-2">
             <i class="las la-graduation-cap"></i> Education
           </li>
-          <li id="distracting_mode" class="tab-link" data-tab="app-3">
+          <li
+            class="tab-link study_focus_mode programming_focus_mode"
+            data-tab="app-3"
+          >
             <i class="las la-share-alt"></i> Social media
           </li>
-          <li class="tab-link" data-tab="app-4">
+          <li class="tab-link study_focus_mode" data-tab="app-4">
             <i class="las la-play-circle"></i> Multimedia
           </li>
         </ul>
@@ -294,32 +297,45 @@
               <div class="settings-background">
                 <p class="focus_mode_icons">
                   <i class="las la-book-reader" style="color: #ffb347"></i>
-                  Focus for studying
+                  Focus for studying.
                 </p>
-                <button id="study_focus" class="focus_modes">
-                  Study Focus
-                  <i class="las la-angle-right"></i>
-                </button>
+
+                <div class="focus_ui study">
+                  <label>
+                    <input class="study_focus" type="checkbox" /><span
+                      >Study Focus <i class="las la-angle-right"></i
+                    ></span>
+                  </label>
+                </div>
+
                 <br />
                 <p class="line"></p>
                 <p class="focus_mode_icons">
                   <i class="las la-code" style="color: #f2a2e8"></i>
-                  Focus for programming
+                  Focus for programming.
                 </p>
-                <a href="#" class="focus_modes">
-                  Programming Focus
-                  <i class="las la-angle-right"></i>
-                </a>
+
+                <div class="focus_ui programming">
+                  <label>
+                    <input class="programming_focus" type="checkbox" /><span
+                      >Programming Focus <i class="las la-angle-right"></i
+                    ></span>
+                  </label>
+                </div>
+
                 <br />
                 <p class="line"></p>
                 <p class="focus_mode_icons">
-                  <i class="las la-spa" style="color: #77dd77"></i>
-                  Focus for Mindfulness (Coming later)
+                  <i class="las la-couch" style="color: #77dd77"></i>
+                  Focus for Relaxation.
                 </p>
-                <!-- <a href="#coming-later..." class="focus_modes">
-                  Mindfulness Focus
-                  <i class="las la-angle-right"></i>
-                </a> -->
+                <div class="focus_ui relaxation">
+                  <label>
+                    <input class="relaxation_focus" type="checkbox" /><span
+                      >Relaxation Focus <i class="las la-angle-right"></i
+                    ></span>
+                  </label>
+                </div>
                 <br />
               </div>
               <div class="settings-background">
@@ -369,7 +385,6 @@
                 <div class="cbw_container">
                   <button class="sqaure_box" id="wallpaper-button">
                     <i class="las la-plus"></i>
-                    <span>Set background</span>
                   </button>
 
                   <button
@@ -600,21 +615,6 @@
               Hide things from view.
             </p>
             <div class="settings-background">
-              <!-- =+=+= HT: Options2 =+=+=-->
-              <!-- <h4>
-                <i class="las la-search"></i> Enable Distraction mode/Focus mode
-                (BETA UI)
-              </h4> -->
-              <!-- <p class="description small_text">
-                This option will hide Multimedia and Social media tabs from the
-                <br />
-                home screen, helping you focus.
-              </p>
-
-              <label class="switch">
-                <input type="checkbox" class="hide-tabs" />
-                <span class="slider round"></span>
-              </label> -->
               <!-- =+=+= HT: Options2 =+=+=-->
               <h4><i class="las la-search"></i> Hide Search bar</h4>
               <p></p>
