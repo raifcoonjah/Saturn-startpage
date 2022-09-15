@@ -788,6 +788,7 @@ ul li {
   padding: 10px 10px;
   margin: 10px;
   border-radius: 100px;
+  background-color: var(--lighter-color);
 }
 
 .close-sounds {
@@ -1198,6 +1199,25 @@ appearing when the user hovers on the open in new tab button.
   font-size: 16px;
   text-align: center;
 }
+
+.focus_status {
+  display: none;
+}
+
+.focus_status {
+  width: 5%;
+  background-color: var(--bg-accent-color-lr);
+  border: 2px dotted transparent;
+  color: var(--sat-accent-color1);
+  animation: fadeIn ease 190ms;
+}
+
+.focus_status:hover {
+  background-color: var(--bg-accent-color-lr-hover);
+  border: 2px dashed var(--sat-accent-color1);
+  color: var(--sat-accent-color1);
+}
+
 /* 
 ========
 + New ABOUT Section UI +

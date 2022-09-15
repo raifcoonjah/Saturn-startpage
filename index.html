@@ -248,6 +248,13 @@
       <div class="settings_modal">
         <div class="settings-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
+          <span
+            data-tootik="🔔 Focus mode is enabled "
+            data-tootik-conf="left multiline"
+            class="close-button focus_status"
+            id="focus_status_text"
+            ><i class="las la-cloud-moon"></i
+          ></span>
 
           <!-- =+=+= Settings Header/title =+=+= -->
           <h3 class="settings-title">Settings</h3>
@@ -302,7 +309,10 @@
 
                 <div class="focus_ui study">
                   <label>
-                    <input class="study_focus" type="checkbox" /><span
+                    <input
+                      class="study_focus focus_status"
+                      type="checkbox"
+                    /><span
                       >Study Focus <i class="las la-angle-right"></i
                     ></span>
                   </label>
