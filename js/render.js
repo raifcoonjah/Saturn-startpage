@@ -158,7 +158,7 @@ const settingAbout = (z) => {
                <a class="version-text"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.2.0"
                target="_blank" 
-               >v6.0.80 Beta (150922)</i
+               >v6.0.81 Beta (150922)</i
              ></a>
                 </p>
               <div class="socials">
@@ -189,10 +189,10 @@ const settingAbout = (z) => {
             <div class="settings-background"> 
             <h2><i class="las la-meteor"></i> v6.1</h2>
             <p class="description">New features, stability improvements and bug fixes.</p>
-<h3>✨ First Beta</h3>
+<h3>[nothing.]</h3>
 <ul>
 <li>
-- Redesign About page.
+- No change log. 
 </li>
 
 </ul>
