@@ -211,8 +211,6 @@ $(function () {
   });
 });
 
-
-
 //
 // ========
 // + Settings navigation +
@@ -511,7 +509,8 @@ document.querySelector("#your_image_url").innerHTML =
   localStorage.getItem("image_url");
 
 if (localStorage.getItem("image_url") == null) {
-  document.querySelector("#your_image_url").innerHTML = "No URL found";
+  document.querySelector("#your_image_url").innerHTML =
+    "No URL found, go away now!";
 }
 
 //
@@ -588,3 +587,15 @@ document.querySelector("#browser_font").addEventListener("click", function () {
 if (localStorage.getItem("browser_font")) {
   document.querySelector("body").style.fontFamily = "sans-serif";
 }
+
+// Check internet connection status
+window.addEventListener(
+  "load",
+  function (connection_ss) {
+    if (navigator.onLine) {
+    } else {
+      document.getElementById("connection_status").style.display = "block";
+    }
+  },
+  false
+);

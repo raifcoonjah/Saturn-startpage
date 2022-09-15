@@ -22,3 +22,6 @@ label span {
   font-size: 16px;
 }
 
+.connection_status {
+  display: none;
+}

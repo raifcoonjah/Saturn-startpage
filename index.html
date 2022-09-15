@@ -10,6 +10,9 @@
 
 
 (Stable)
+
+*Whisper* Stranger are you looking for easter eggs? I heard that you ..... might .... 
+need ......... to ................ scroll ............................................................!!!???
 -->
 
 <!DOCTYPE html>
@@ -248,12 +251,21 @@
       <div class="settings_modal">
         <div class="settings-content">
           <span class="close-button"><i class="las la-times-circle"></i></span>
+          <!-- =+=+= Dynamic Something =+=+= -->
+          <!-- =+=+= A new way to handle notification =+=+= -->
           <span
-            data-tootik="🔔 Focus mode is enabled."
+            data-tootik="🔔 Focus mode enabled. "
             data-tootik-conf="left multiline"
             class="close-button focus_status"
             id="focus_status_text"
             ><i class="las la-cloud-moon"></i
+          ></span>
+          <span
+            data-tootik="😞 Oh SNAP! Connection lost, some features may not be available.  "
+            data-tootik-conf="left multiline"
+            class="close-button connection_status red_background"
+            id="connection_status"
+            ><i class="las la-exclamation-triangle"></i
           ></span>
 
           <!-- =+=+= Settings Header/title =+=+= -->
@@ -303,8 +315,8 @@
               </p>
               <div class="settings-background">
                 <p class="focus_mode_icons">
-                  <i class="las la-book-reader" style="color: #ffb347"></i>
-                  Focus for studying.
+                  <i class="las la-book" style="color: #ffb347"></i>
+                  Focus for studying
                 </p>
 
                 <div class="focus_ui study">
@@ -322,7 +334,7 @@
                 <p class="line"></p>
                 <p class="focus_mode_icons">
                   <i class="las la-code" style="color: #f2a2e8"></i>
-                  Focus for programming.
+                  Focus for programming
                 </p>
 
                 <div class="focus_ui programming">
@@ -337,7 +349,7 @@
                 <p class="line"></p>
                 <p class="focus_mode_icons">
                   <i class="las la-couch" style="color: #77dd77"></i>
-                  Focus for Relaxation.
+                  Focus for Relaxation
                 </p>
                 <div class="focus_ui relaxation">
                   <label>
@@ -348,11 +360,11 @@
                 </div>
                 <br />
               </div>
+              <p class="settings-item-title">
+                <i class="las la-hands-helping"></i> What's Saturn focus?
+              </p>
               <div class="settings-background">
-                <p class="settings-item-title">
-                  <i class="las la-hands-helping"></i> What's Saturn focus?
-                </p>
-                <p class="settings-item-under-title description">
+                <p class="description">
                   Saturn focus lets you stay in the moment when you need to
                   concentrate. Using a set of pre-defined configurations, Saturn
                   will disable some UI elements from the home screen helping you
@@ -441,6 +453,12 @@
               <p class="line"></p>
 
               <p class="settings-item-title">Danger zone</p>
+              <p class="settings-item-under-title description">
+                Scary options you probably don't want to mess with.
+                <span class="small_text"
+                  >(I heard it's pretty scary down there)</span
+                >
+              </p>
 
               <div class="settings-background">
                 <h3><i class="las la-trash-alt"></i> Reset data</h3>
@@ -453,7 +471,7 @@
                     class="sqaure_box red_text"
                     id="reset_button"
                     data-tootik="⚠️ WARNING: This action is not reversible."
-                    data-tootik-conf="right"
+                    data-tootik-conf="right multiline"
                   >
                     <i class="las la-trash-alt"></i>
                     <span>Delete it all</span>
@@ -658,14 +676,12 @@
               <br />
               <input type="checkbox" id="bold_text" />
               <label for="bold_text">
-                <span>Make font bold</span>
+                <span>Bold font</span>
               </label>
               <br />
               <input type="checkbox" id="browser_font" />
               <label for="bold_text">
-                <span
-                  >Use Sans Serif font instead of Inter (Default font)
-                </span>
+                <span>Use Sans Serif font </span>
               </label>
             </div>
           </div>
@@ -829,4 +845,6 @@
       <script type="text/javascript" src="js/focus.js"></script>
     </main>
   </body>
+
+  <!-- I knew you would come to save me, QUICK HEAD TO THIS (totally not virus (source: trust me bro): https://pastebin.com/raw/7ymhBgy3)-->
 </html>

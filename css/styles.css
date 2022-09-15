@@ -1206,12 +1206,14 @@ appearing when the user hovers on the open in new tab button.
   display: none;
 }
 
+.connection_status,
 .focus_status {
   width: 5%;
   background-color: var(--bg-accent-color-lr);
   border: 2px dotted transparent;
   color: var(--sat-accent-color1);
   animation: fadeIn ease 190ms;
+  cursor: default;
 }
 
 .focus_status:hover {
