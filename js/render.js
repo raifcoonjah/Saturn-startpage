@@ -156,14 +156,14 @@ const settingAbout = (z) => {
             <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Desktop</p>
                <p style="text-align:center;"> 
                <a class="version-text"
-               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.2.0"
                target="_blank" 
-               >v6.1.0 Beta (150922)</i
+               >v6.0.80 Beta (150922)</i
              ></a>
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
-                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.1.80" class="aboutwidgets-container">
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.0.80" class="aboutwidgets-container">
                 Try out beta
                 <i class="las la-external-link-alt"></i>
                 </a>
