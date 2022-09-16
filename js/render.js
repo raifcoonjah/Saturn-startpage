@@ -156,14 +156,14 @@ const settingAbout = (z) => {
             <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Desktop</p>
                <p style="text-align:center;"> 
                <a class="version-text"
-               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.2.0"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
                target="_blank" 
-               >v6.0.81 Beta (150922)</i
+               >v6.0.82 Beta (170922)</i
              ></a>
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
-                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.0.80" class="aboutwidgets-container">
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.1.80" class="aboutwidgets-container">
                 Try out beta
                 <i class="las la-external-link-alt"></i>
                 </a>
@@ -192,10 +192,10 @@ const settingAbout = (z) => {
             <div class="settings-background"> 
             <h2><i class="las la-meteor"></i> v6.1</h2>
             <p class="description">New features, stability improvements and bug fixes.</p>
-<h3>[nothing.]</h3>
+<h3>Beta includes:</h3>
 <ul>
 <li>
-- No change log. 
+- Come back later :D
 </li>
 
 </ul>
