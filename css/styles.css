@@ -1148,6 +1148,7 @@ appearing when the user hovers on the open in new tab button.
   font-weight: 500;
   display: flex;
   cursor: pointer;
+  box-shadow: var(--drop-shadow-color);
 }
 
 /* Focus UI <i> icons */
@@ -1177,9 +1178,16 @@ appearing when the user hovers on the open in new tab button.
 
 /* The animation when focus button is clicked */
 
-.focus_ui input:hover + span i,
-.focus_ui input:checked + span i {
-  margin-left: 55px;
+.focus_ui input:checked + span i::before {
+  transition: var(--transition-speed-default);
+  content: "ON";
+  font-size: 12px;
+  font-family: var(--default-font);
+  margin: 2px;
+}
+
+.focus_ui input:hover + span i {
+  margin-left: 44px;
   transition: var(--transition-speed-default);
 }
 
