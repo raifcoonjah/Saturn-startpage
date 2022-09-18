@@ -130,9 +130,10 @@ its supposed to.
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transform: scale(0.9);
   backdrop-filter: blur(1.5px);
   transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
+  /*=== Effect 1 ===*/
+  transform: translateY(10%);
 }
 
 .wallpaper_modal_content,
@@ -181,8 +182,9 @@ its supposed to.
 .show-modal {
   opacity: 1;
   visibility: visible;
-  transform: scale(1);
   transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
+  /*=== Effect 1 ===*/
+  transform: translateY(0);
 }
 
 /* 
