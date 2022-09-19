@@ -303,7 +303,6 @@ ul.tabs li {
 }
 
 ul.tabs li:hover {
-  color: var(--sat-ids);
   background: var(--sat-setting-bg-effect);
   background: var(--sat-setting-bg-effect);
   border-left: 3px solid var(--sat-accent-color-lighter);
@@ -784,13 +783,17 @@ ul li {
 
 /* Every close button uses this */
 
+.close-button,
+.close-sounds {
+  background-color: var(--lighter-color);
+}
+
 .close-button {
   font-size: 25px;
   float: right;
   padding: 10px 10px;
   margin: 10px;
   border-radius: 100px;
-  background-color: var(--lighter-color);
 }
 
 .close-sounds {
