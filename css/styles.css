@@ -294,7 +294,7 @@ input:checked + .slider:before {
 
 ul.tabs li {
   color: var(--sat-ids);
-  padding: 10px 45px;
+  padding: 10px 50px 10px 35px;
   margin-left: 10px;
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
@@ -303,7 +303,6 @@ ul.tabs li {
 }
 
 ul.tabs li:hover {
-  background: var(--sat-setting-bg-effect);
   background: var(--sat-setting-bg-effect);
   border-left: 3px solid var(--sat-accent-color-lighter);
   color: var(--sat-accent-color1);
@@ -499,6 +498,8 @@ div.theme-container {
   padding: 14px 15px;
   outline: none;
   color: var(--sat-ids);
+  background-color: #d752521e !important;
+  color: var(--delete-warning-bg) !important;
 }
 
 /* 
@@ -1221,7 +1222,7 @@ appearing when the user hovers on the open in new tab button.
 
 .connection_status,
 .focus_status {
-  width: 5%;
+  width: 6%;
   background-color: var(--bg-accent-color-lr);
   border: 2px dotted transparent;
   color: var(--sat-accent-color1);
