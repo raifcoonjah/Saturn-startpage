@@ -922,7 +922,8 @@ color to fix some issues == */
 .close-wallpaper:hover,
 .cancel-fav-btn:hover {
   transition: var(--transition-speed-default);
-  background-color: var(--delete-warning-bg);
+  background-color: #d752524b !important;
+  color: var(--delete-warning-bg) !important;
 }
 
 /* == Make everything use the 
