@@ -105,7 +105,6 @@ addImg.onclick = function () {
     img.style.width = "20px";
     img.style.height = "20px";
     title.value = '<img src="' + img.src + '">';
-    title.value += " ";
     favicon_URL.value = "";
   }
 };
