@@ -463,8 +463,8 @@ document.querySelector("#save-image").addEventListener("click", function () {
   if (image_url == "") {
     document.querySelector("#image_url").style.border =
       "2px solid var(--delete-warning-bg)";
-    document.querySelector("#error-text-wallpaper").innerHTML =
-      "Image URL cannot be empty.";
+    // document.querySelector("#error-text-wallpaper").innerHTML =
+    //   "Image URL cannot be empty.";
   } else {
     document.querySelector("#image_url").style.border = "2px solid #73d673";
     document.querySelector("#save-image").innerHTML = "🥳 Applying...";
@@ -509,8 +509,7 @@ document.querySelector("#your_image_url").innerHTML =
   localStorage.getItem("image_url");
 
 if (localStorage.getItem("image_url") == null) {
-  document.querySelector("#your_image_url").innerHTML =
-    "No URL found, go away now!";
+  document.querySelector("#your_image_url").innerHTML = "No URL found";
 }
 
 //
@@ -522,7 +521,7 @@ document.getElementById("reset_button").addEventListener("click", reset_data);
 function reset_data() {
   if (confirm("⚠ Beep boop!? Are you sure you want to reset all your data?")) {
     document.getElementById("reset_button").innerHTML =
-      "🚮 <span>Deleting...</span><span>Please wait!</span>";
+      "🚮 <span>Resetting...</span><span>Please wait!</span>";
     localStorage.clear();
     setTimeout(function () {
       location.reload();
