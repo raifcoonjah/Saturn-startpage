@@ -33,11 +33,11 @@ need ......... to ................ scroll ......................................
     <link rel="stylesheet" href="icons/css/line-awesome.min.css" />
     <link rel="stylesheet" href="css/tootik.min.css" />
 
-    <!-- =+=+= jQuery [v3.6.0] =+=+= -->
+    <!-- =+=+= jQuery [v3.6.1] =+=+= -->
     <script src="js/jquery.js"></script>
   </head>
 
-  <body class="" id="box">
+  <body id="box">
     <!-- =+=+= Good morning/afternoon/night and time text =+=+= -->
     <div class="sat-header">
       <p class="time" id="time"></p>
@@ -143,7 +143,7 @@ need ......... to ................ scroll ......................................
             <div class="favorites-search">
               <input
                 type="text"
-                placeholder="Search favorites..."
+                placeholder="Find favorites..."
                 class="searchfavorites"
                 id="searchfavorites"
               />
@@ -183,15 +183,21 @@ need ......... to ................ scroll ......................................
             class="favorite-input"
             type="text"
           />
-          <h3 class="fav_title">Favicon finder</h3>
+          <h3 class="fav_title">Icon finder</h3>
           <p class="small_text description" style="font-size: 14px">
-            Powered by <a href="https://unavatar.io/">unavatar.io</a>
+            Powered by unavatar.io
+            <a
+              href="https://unavatar.io/"
+              data-tootik="Learn unavatar..."
+              data-tootik-conf="right"
+              ><i class="las la-info-circle"></i
+            ></a>
           </p>
           <input
             type="text"
             style="width: 50%"
             id="favicon-url"
-            placeholder="Enter a website URL (example: github.com)"
+            placeholder="Enter a website URL"
             class="favorite-input"
           />
           <button id="addImg" class="save-button">
@@ -202,7 +208,7 @@ need ......... to ................ scroll ......................................
             target="_blank"
           >
             <button
-              data-tootik="How does this work?"
+              data-tootik="Learn more..."
               data-tootik-conf="right"
               class="save-button"
             >
@@ -262,11 +268,11 @@ need ......... to ................ scroll ......................................
           ></span>
 
           <span
-            data-tootik="😞 Oh SNAP! Connection lost, some features may not be available.  "
+            data-tootik="Oh SNAP! Connection lost, some features may not be available.  "
             data-tootik-conf="left multiline"
             class="close-button connection_status red_background"
             id="connection_status"
-            ><i class="las la-exclamation-triangle"></i
+            ><i class="las la-unlink"></i
           ></span>
 
           <!-- =+=+= Settings Header/title =+=+= -->
@@ -369,16 +375,12 @@ need ......... to ................ scroll ......................................
                   </label>
                 </div>
                 <br />
-              </div>
-              <p class="settings-item-title">
-                <i class="las la-hands-helping"></i> What's Saturn focus?
-              </p>
-              <div class="settings-background">
+                <p class="line"></p>
                 <p class="description">
                   Saturn focus lets you stay in the moment when you need to
-                  concentrate. Using a set of pre-defined configurations, Saturn
-                  will disable some UI elements from the home screen helping you
-                  focus.
+                  concentrate. Using a set of pre-defined configurations, some
+                  UI elements from the home screen will be hidden helping you
+                  stay focus.
                 </p>
               </div>
             </div>
