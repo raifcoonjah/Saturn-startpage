@@ -184,7 +184,7 @@ const settingAbout = (z) => {
                 </div>
               </div>
              <p style="text-align: center; font-weight: 500; font-size: 13px">
-             Thanks for using Saturn Startpage. <br/> I love you all :)
+             Thanks for using Saturn Startpage.
               </p>
             </div>
              <p class="settings-item-title">What's new</p>
