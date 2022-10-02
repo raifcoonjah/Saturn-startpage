@@ -71,10 +71,10 @@ document.getElementById("searchfavorites").onkeyup = function () {
 // ========
 //
 document.getElementById("add").onclick = function () {
-  var x = document.getElementById("saveMsgBar");
-  x.className = "show";
+  var save_notification = document.getElementById("saveMsgBar");
+  save_notification.className = "show";
   setTimeout(function () {
-    x.className = x.className.replace("show", "");
+    save_notification.className = save_notification.className.replace("show", "");
   }, 3000);
 };
 
