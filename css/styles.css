@@ -870,21 +870,6 @@ ul.fav_ptgi_category li {
 + Snackbar +
 ========
 */
-
-#default_layout,
-#compact_layout {
-  background-color: var(--lighter-color);
-  visibility: hidden;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  padding: 5px;
-  font-size: 16px;
-  font-weight: 500;
-  color: (--sat-ids);
-}
-
 #saveMsgBar {
   background-color: var(--lighter-color);
   visibility: hidden;
@@ -899,11 +884,6 @@ ul.fav_ptgi_category li {
   color: (--sat-ids);
 }
 
-#default_layout,
-#compact_layout {
-  bottom: 10px !important;
-}
-
 #saveMsgBar.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -912,17 +892,6 @@ ul.fav_ptgi_category li {
   /* Hack to make Snackbar stay at the 
   bottom of the page */
 }
-
-#default_layout.show,
-#compact_layout.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  bottom: 0 !important;
-  /* Hack to make Snackbar stay at the 
-  bottom of the page */
-}
-
 /* 
 ========
 + This fixes a major hover issue related to favorites. +
