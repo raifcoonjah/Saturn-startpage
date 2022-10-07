@@ -341,7 +341,7 @@ need ......... to ................ scroll ......................................
                       class="study_focus focus_status"
                       type="checkbox"
                     /><span
-                      >Study Focus <i class="las la-angle-right"></i>
+                      >Studying <i class="las la-angle-right"></i>
                     </span>
                   </label>
                 </div>
@@ -356,7 +356,7 @@ need ......... to ................ scroll ......................................
                 <div class="focus_ui programming">
                   <label>
                     <input class="programming_focus" type="checkbox" /><span
-                      >Programming Focus <i class="las la-angle-right"></i
+                      >Programming <i class="las la-angle-right"></i
                     ></span>
                   </label>
                 </div>
@@ -370,7 +370,7 @@ need ......... to ................ scroll ......................................
                 <div class="focus_ui relaxation">
                   <label>
                     <input class="relaxation_focus" type="checkbox" /><span
-                      >Relaxation Focus <i class="las la-angle-right"></i
+                      >Relaxation <i class="las la-angle-right"></i
                     ></span>
                   </label>
                 </div>
@@ -432,6 +432,24 @@ need ......... to ................ scroll ......................................
                     <span>Remove</span>
                   </button>
                 </div>
+                <h3>Suggested websites</h3>
+                <p class="description">Websites to 
+                  find cool backgrounds.</p>
+                <div id="cool_backgrounds">
+                </div>
+              </div>
+              <div class="settings-background">
+                  <h4>Apply color</h4>
+                  <p class="description">Apply white color to some home screen components, 
+                    even while using light themes.
+                  </p>
+    
+                  <label class="switch">
+                    <input type="checkbox" id="force_white_color_header" />
+                    <span class="slider round"></span>
+                  </label>
+
+                </label>
               </div>
 
               <h3><i class="las la-info-circle"></i> Info</h3>
@@ -625,6 +643,28 @@ need ......... to ................ scroll ......................................
           </div>
 
           <div id="tab-6" class="tab-content">
+            <p class="settings-item-title">Customizations</p>
+            <p class="settings-item-under-title description">
+              Options to modify Saturn's user interface. Beware, some elements
+              don't support customizations.
+            </p>
+            <div class="settings-background">
+              <h4>Bold text</h4>
+              <p></p>
+              <label class="switch">
+                <input type="checkbox" id="bold_text" />
+                <span class="slider round"></span>
+              </label>
+              <br />
+              <h4>Use Sans Serif font</h4>
+              <p></p>
+
+              <label class="switch">
+                <input type="checkbox" id="browser_font" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+
             <p class="settings-item-title">Hide things</p>
             <p class="settings-item-under-title description">
               Hide things from view.
@@ -648,27 +688,6 @@ need ......... to ................ scroll ......................................
               <label class="switch">
                 <input type="checkbox" class="hide-calendar-btn" />
                 <span class="slider round"></span>
-              </label>
-            </div>
-            <p class="settings-item-title">Customizations</p>
-            <p class="settings-item-under-title description">
-              Options to modify Saturn's user interface. Beware, some elements
-              don't support customizations.
-            </p>
-            <div class="settings-background">
-              <input type="checkbox" id="force_white_color_header" />
-              <label for="force_white_color_header">
-                <span>Force white color for some elements </span>
-              </label>
-              <br />
-              <input type="checkbox" id="bold_text" />
-              <label for="bold_text">
-                <span>Bold font</span>
-              </label>
-              <br />
-              <input type="checkbox" id="browser_font" />
-              <label for="bold_text">
-                <span>Use Sans Serif font </span>
               </label>
             </div>
           </div>

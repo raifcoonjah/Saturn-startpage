@@ -523,8 +523,7 @@ div.theme-container {
 .username-section input {
   border: 2px solid transparent;
 }
-
-.fav_ptgi_btn:hover, /* added this to make the hover animation similar */
+ /* added this to make the hover animation similar */
 .favorites-search input:hover,
 .favorites-search input:focus,
 .fav_modal input:hover,
@@ -855,13 +854,20 @@ ul.fav_ptgi_category li {
   padding: 6px 9px;
   cursor: pointer;
   border-radius: var(--sat-border-radius);
-  border: 2px solid transparent;
+  border: 1px solid var(--lighter-color);
+}
+
+ul.fav_ptgi_category li img {
+  width:15px;
+  height:15px;
+  margin-bottom:-2px;
+  padding-right:5px;
 }
 
 .fav_ptgi_btn:hover {
-  background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 /* 

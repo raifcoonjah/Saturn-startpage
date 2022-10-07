@@ -153,7 +153,10 @@ const settingAbout = (z) => {
                   title="Saturn Logo"
                   alt="Saturn-logo.png"
                   /> 
-            <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Desktop</p>
+            <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Startpage</p>
+            <p style="text-align:center;font-weight:500;margin-top:-15px;">
+            <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
+            </p>
                <p style="text-align:center;"> 
                <a class="version-text"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
@@ -241,18 +244,57 @@ const kShortcuts = (ks) => {
                 </a>
               </p>
           </div>`);
+
 };
 
-const render_in_js = (x, z, ks, cu) => {
+const coolbg = (cbg) => {
+  $(cbg).append(`<div class="fav_ptgi">
+            <ul class="fav_ptgi_category">
+              <a
+                href="https://unsplash.com"
+                title="Go to unsplash..."
+                target="_blank"
+              >
+              <li class="fav_ptgi_btn"><img src="https://unavatar.io/unsplash.com"> Unsplash</li></a
+              >
+              <a
+                href="https://wallpaperaccess.com"
+                title="Go to wallpaperaccess..."
+                target="_blank"
+              >
+              <li class="fav_ptgi_btn"><img src="https://unavatar.io/wallpaperaccess.com"> Wallpaperaccess</li></a
+              >
+              <a
+              href="https://coolbackgrounds.io/"
+              title="Go to coolbackgrounds..."
+              target="_blank"
+            >
+            <li class="fav_ptgi_btn"><img src="https://unavatar.io/coolbackgrounds.io"> Coolbackgrounds</li></a
+            >
+            <a
+            href="https://coolbackgrounds.io/"
+            title="A website missing? Suggest it!"
+            target="_blank"
+          >
+          <li class="fav_ptgi_btn">Suggest website...</li></a
+          >
+            </ul>
+          </div>`);
+};
+
+
+const render_in_js = (x, z, ks, cbg) => {
   let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
   let kshortcuts = $("#k_shortcuts");
+  let cool_background = $("#cool_backgrounds");
 
   // pls dont break
   loader = setTimeout(function () {
     appsList(apps_list);
     settingAbout(setting_about);
     kShortcuts(kshortcuts);
+    coolbg(cool_background);
   });
 };
 
