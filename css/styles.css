@@ -130,7 +130,6 @@ its supposed to.
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  backdrop-filter: blur(1.5px);
   transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
   /*=== Effect 1 ===*/
   transform: translateY(10%);
