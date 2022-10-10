@@ -141,7 +141,7 @@ const quotes = [
     source: "Mae West",
   },
   {
-    quote: "It's not about how many bread units you can bake, and not about how many sesame seeds you can afford to use.",
+    quote: "It's about how many bread units you can bake, and not about how many sesame seeds you can afford to use.",
     source: "Luqmaan Ramoly",
   },
 
