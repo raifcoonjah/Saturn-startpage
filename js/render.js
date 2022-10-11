@@ -190,15 +190,96 @@ const settingAbout = (z) => {
              Thanks for using Saturn Startpage.
               </p>
             </div>
-             <p class="settings-item-title">What's new</p>
+
+            <!-- What's new section --> 
+
+          <p class="settings-item-title">What's new</p>
             <p class="settings-item-under-title description">Learn what's new in this release.</p>
-            <div class="settings-background"> 
-            <h2><i class="las la-meteor"></i> v6.1</h2>
-            <p class="description">New features, stability improvements and bug fixes.</p>
-<h3>Beta includes:</h3>
+          <div class="settings-background"> 
+          <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="https://img.icons8.com/emoji/100/000000/comet-emoji.png"/>
+          <p style="text-align:center;"> 
+            <a class="version-text green_background"
+            href="#"
+            >Saturn v6.1 (Latest)</i></a>
+          </p>
+        <p style="text-align:center;" class="description small_text">
+            New goodies for you to enjoy 🎁
+        </p>
+
 <ul>
+<h3>🌙 Saturn Focus</h3>
 <li>
-- Come back later :D
+<p>Apple did it first they said? Well idk if that's true but we don't care...</p>
+- Focus modes allow you to concentrate by hiding certain components from the '
+home screen. 
+- Test it our yourself, head to: <code>Settings > Focus</code> Select any of 
+the three focus modes and start being productive.
+</li>
+<h3>🧑‍🎨 About section redesigned</h3>
+<li>
+<p>You seriously thought we redesigned an about page? Well yeah we did or did we...!?</p>
+
+- The about page has been completely redesign from the ground up with a brand look and feel, yes this also
+includes the What's new section!
+</li>
+<h3>⚙️ Settings clean up</h3>
+<li>
+- Added a new Appearance menu. 
+</li>
+<li>
+- Improved consistency between different sections of settings. 
+</li>
+<li>
+- Added "Dynamic something" in simple terms its notifications coming back to Saturn after being removed a while back. For now its a very limited feature but I plan to expand it even more in future updates
+</li>
+<h3>🎃 New theme, who dis?</h3>
+<li>
+- And before you ask, yes this update contains 2 new themes. A brand new "Spicy Halloween" and "Too dark". 
+</li>
+<h3>Bug fixes</h3>
+<li>
+- Fix ugly padding around code tag. 
+</li>
+<li>
+- Fix a bug that caused some UI elements for smaller screen sizes. 
+</li>
+<li>
+- Fix code text not showing properly when using a light theme. 
+</li>
+<li>
+- Fix navigation color bug. 
+</li>
+<li>
+- Fix bottom of about page. 
+</li>
+<li>
+<li>
+- Other minor bug fixes.
+</li>
+<h3>😄 And tons of MORE CHANGES!</h3>
+<li>
+- Improve consistency between different section of Saturn, this includes icons, text and other stuff. (WIP)
+</li>
+<li>
+- Added a option to use Sans serif as default font. 
+</li>
+<li>
+- Saturn notifications have been tweaked, they should now work properly and look much nicer.
+</li>
+<li>
+- If no custom background is set, a text will now be showed inside of Background URL.
+</li>
+<li>
+Remove the requirements for https when settings a custom background. 
+</li>
+<li>
+- Massive clean up of the themes.css and added a demo for anyone wanting to add a custom theme.
+</li>
+<li>
+- New opening/closing modal animation. 
+</li>
+<li>
+- This release contains a ton of UI inconsistency fixes, and expect more of this in future updates. 
 </li>
 
 </ul>
@@ -272,7 +353,7 @@ const coolbg = (cbg) => {
             <li class="fav_ptgi_btn"><img src="https://unavatar.io/coolbackgrounds.io"> Coolbackgrounds</li></a
             >
             <a
-            href="https://coolbackgrounds.io/"
+            href="https://github.com/mraif13/Saturn-startpage/issues/new"
             title="A website missing? Suggest it!"
             target="_blank"
           >
@@ -283,7 +364,7 @@ const coolbg = (cbg) => {
 };
 
 
-const render_in_js = (x, z, ks, cbg) => {
+const render_in_js = (x, z, ks, cu, cbg) => {
   let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
   let kshortcuts = $("#k_shortcuts");
