@@ -1146,14 +1146,14 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .study input:checked + span {
-  background-color: #778f9b;
+  background-color: #f29849;
 }
 
 .programming input:checked + span {
-  background-color: #1f93ef;
+  background-color: #9e57e0;
 }
 .relaxation input:checked + span {
-  background-color: #2196f3;
+  background-color: #f2994a;
 }
 
 /* The animation when focus button is clicked */
@@ -1164,8 +1164,10 @@ appearing when the user hovers on the open in new tab button.
   font-size: 12px;
   font-family: var(--default-font);
   margin: 2px;
+
 }
 
+.focus_ui input:checked + span i::before,
 .focus_ui input:checked + span{
   color: var(--for-white);
 }
@@ -1195,7 +1197,7 @@ appearing when the user hovers on the open in new tab button.
   height:45px;
   margin-left: auto;
   margin-right: auto;
-  margin-top:10px;
+  margin-top:20px;
 }
 
 .focus_mode_icons {
