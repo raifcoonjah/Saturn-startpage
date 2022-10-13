@@ -1153,7 +1153,7 @@ appearing when the user hovers on the open in new tab button.
   background-color: #9e57e0;
 }
 .relaxation input:checked + span {
-  background-color: #f2994a;
+  background-color: #eb5757;
 }
 
 /* The animation when focus button is clicked */
