@@ -14,6 +14,7 @@ const lightButton = document.getElementById("light");
 
 // Darker themes
 const spaceButton = document.getElementById("space");
+const halloweenButton = document.getElementById("halloween");
 
 // Experimental themes
 const linkinParkButton = document.getElementById("linkin-park");

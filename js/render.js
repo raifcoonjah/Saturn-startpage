@@ -161,7 +161,7 @@ const settingAbout = (z) => {
                <a class="version-text"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
                target="_blank" 
-               >v6.0.84 Beta (071022)</i
+               >v6.0.84 Beta (181022)</i
              ></a>
                 </p>
               <div class="socials">
@@ -325,7 +325,6 @@ const kShortcuts = (ks) => {
                 </a>
               </p>
           </div>`);
-
 };
 
 const coolbg = (cbg) => {
@@ -362,7 +361,6 @@ const coolbg = (cbg) => {
             </ul>
           </div>`);
 };
-
 
 const render_in_js = (x, z, ks, cu, cbg) => {
   let apps_list = $("#apps_list");
