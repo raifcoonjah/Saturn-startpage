@@ -478,6 +478,17 @@ div.theme-container {
   padding: 14px 15px;
   background: var(--lighter-color);
   color: var(--sat-ids);
+  font-size: 15px;
+  border-radius: 13px;
+}
+
+.loading-svg {
+  width: 40px;
+  height: 35px;
+  display: inline;
+  position: relative;
+  top: 0.1em;
+  margin: -10px;
 }
 
 .save-button:hover {
@@ -490,8 +501,9 @@ div.theme-container {
   padding: 14px 15px;
   outline: none;
   color: var(--sat-ids);
-  background-color: #d752521e !important;
+  background-color: #d7525225 !important;
   color: var(--delete-warning-bg) !important;
+  font-size: 15px;
 }
 
 /* 

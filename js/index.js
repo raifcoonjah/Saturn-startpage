@@ -467,7 +467,8 @@ document.querySelector("#save-image").addEventListener("click", function () {
     //   "Image URL cannot be empty.";
   } else {
     document.querySelector("#image_url").style.border = "2px solid #73d673";
-    document.querySelector("#save-image").innerHTML = "🥳 Applying...";
+    document.querySelector("#save-image").innerHTML =
+      "<img class='loading-svg' src='/icons/loading.svg'>" + " Applying...";
     setTimeout(function () {
       location.reload();
     }, 5000);
