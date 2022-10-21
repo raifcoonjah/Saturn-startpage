@@ -158,7 +158,7 @@ const settingAbout = (z) => {
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
             </p>
                <p style="text-align:center;"> 
-               <a class="version-text red_background"
+               <a class="version-text"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
                target="_blank" 
                >v6.0.95 Beta (211022)</i
@@ -255,6 +255,9 @@ includes the What's new section!
 - Fix bottom of about page. 
 </li>
 <li>
+- Various theme fixes. 
+</li>
+<li>
 <li>
 - Other minor bug fixes.
 </li>
@@ -282,6 +285,12 @@ Remove the requirements for https when settings a custom background.
 </li>
 <li>
 - This release contains a ton of UI inconsistency fixes, and expect more of this in future updates. 
+</li>
+<li>
+- Increase deletion timer from 3 seconds to 5 seconds. 
+</li>
+<li>
+- Added a new "loading" icon. 
 </li>
 
 </ul>
