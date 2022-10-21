@@ -161,7 +161,7 @@ const settingAbout = (z) => {
                <a class="version-text"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
                target="_blank" 
-               >v6.0.84 Beta (181022)</i
+               >v6.0.95 Beta (211022)</i
              ></a>
                 </p>
               <div class="socials">
@@ -196,7 +196,7 @@ const settingAbout = (z) => {
           <p class="settings-item-title">What's new</p>
             <p class="settings-item-under-title description">Learn what's new in this release.</p>
           <div class="settings-background"> 
-          <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="https://img.icons8.com/emoji/100/000000/comet-emoji.png"/>
+          <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/img/version.png"/>
           <p style="text-align:center;"> 
             <a class="version-text green_background"
             href="#"
