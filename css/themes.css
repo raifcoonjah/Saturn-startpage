@@ -500,6 +500,53 @@ the end of the file :D +
 
 /* 
 =+=+=+=+
+= Spicy Halloween Theme = 
+= Category: Darker =
+=+=+=+=+
+*/
+
+.halloween {
+  --sat-heading: #ffffff;
+  --sat-ids: #ffffff;
+  --sat-lighter-ids: #ffffffe2;
+  --sat-bg: #130912;
+  --sat-bg-borders: #130912;
+  --sat-search-shortcuts: #3e1c34;
+  --sat-links: hsl(0, 0%, 95%);
+
+  --sat-setting-bg-color: #190c17;
+  --sat-setting-bg-effect: #271324;
+  --sat-input-hover: #271324;
+  --sat-search-bar-focus: #271324;
+  --sat-tooltip-bg: #271324;
+  --default-font: "Inter", sans-serif;
+  --sat-accent-color1: #f7921e;
+  --sat-accent-color-lighter: #f7921e4f;
+  --bg-accent-color-lr: #f7921e1e;
+  --bg-accent-color-lr-hover: #f7921e43;
+  --moreapps-hovering-clr: #ff9f6d;
+  --favorites-hover: #5e3a53;
+  --for-white: #ffffff;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --add-link-border: rgb(41, 41, 41);
+  --delete-warning-bg: #d75352;
+  --delete-warning-border: #d75252a2;
+  --switch-color-bg-new: #130912;
+  --switch-color-bg-after: #f7921e;
+  --switch-color-bg: #5e3a53;
+  --settings-button-outline: #f7921e38;
+  --new-search-bg-hover-effect: #5e3a53;
+  --sat-border-radius: 15px;
+  --lighter-color: #3b2539;
+  --close-button-color: rgb(0, 0, 0);
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
+  --svg-invert: invert(100%);
+}
+
+/* 
+=+=+=+=+
 = DEMO Theme = 
 = Category: None =
 = Use this as an example if you're planning 
