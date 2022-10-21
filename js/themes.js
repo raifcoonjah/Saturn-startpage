@@ -65,8 +65,8 @@ amazinglypurple.onclick = () => {
   body.classList.replace("dracula", "amazinglypurple");
   body.classList.replace("nord", "amazinglypurple");
   body.classList.replace("highcontrast", "amazinglypurple");
-  body.classList.replace("lightplusplus", "lightplusplus");
-  body.classList.replace("halloween", "lightplusplus");
+  body.classList.replace("lightplusplus", "amazinglypurple");
+  body.classList.replace("halloween", "amazinglypurple");
   localStorage.setItem("theme", "amazinglypurple");
 };
 
