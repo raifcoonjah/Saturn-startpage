@@ -158,7 +158,7 @@ const settingAbout = (z) => {
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
             </p>
                <p style="text-align:center;"> 
-               <a class="version-text"
+               <a class="version-text red_background"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
                target="_blank" 
                >v6.0.95 Beta (211022)</i
@@ -200,20 +200,22 @@ const settingAbout = (z) => {
           <p style="text-align:center;"> 
             <a class="version-text green_background"
             href="#"
-            >Saturn v6.1 (Latest)</i></a>
+            >Saturn v6.1</i></a>
           </p>
         <p style="text-align:center;" class="description small_text">
-            New goodies for you to enjoy 🎁
+            New goodies for you to enjoy! 🎁
         </p>
 
 <ul>
 <h3>🌙 Saturn Focus</h3>
 <li>
 <p>Apple did it first they said? Well idk if that's true but we don't care...</p>
-- Focus modes allow you to concentrate by hiding certain components from the '
+- Focus modes allow you to concentrate by hiding certain components from the
 home screen. 
+<p> 
 - Test it our yourself, head to: <code>Settings > Focus</code> Select any of 
 the three focus modes and start being productive.
+</p>
 </li>
 <h3>🧑‍🎨 About section redesigned</h3>
 <li>
