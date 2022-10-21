@@ -43,7 +43,7 @@ the end of the file :D +
 
   /* Light theme: Accent color */
   --sat-accent-color1: rgb(34, 142, 200);
-  --sat-accent-color-lighter: #96c9e6;
+  --sat-accent-color-lighter: rgba(34, 142, 200, 0.34);
   /* Light theme: Background Lighter Accent color */
   --bg-accent-color-lr: rgba(61, 173, 233, 0.158);
   --bg-accent-color-lr-hover: rgba(61, 173, 233, 0.284);
@@ -229,6 +229,7 @@ the end of the file :D +
 = Category: Dark themes =
 =+=+=+=+
 */
+
 .lighterdarktheme {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
@@ -277,6 +278,7 @@ the end of the file :D +
 = https://draculatheme.com/ = 
 =+=+=+=+
 */
+
 .dracula {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
@@ -298,7 +300,7 @@ the end of the file :D +
   --bg-accent-color-lr: rgba(191, 149, 249, 0.129);
   --bg-accent-color-lr-hover: rgba(191, 149, 249, 0.293);
   --moreapps-hovering-clr: hsl(265 89% 78%);
-  --favorites-hover: #5c6079;
+  --favorites-hover: #4a4d61;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #575b75;
@@ -335,7 +337,7 @@ the end of the file :D +
   --sat-setting-bg-color: #2e3440;
   --sat-setting-bg-effect: #3b4252;
   --sat-input-hover: #434c5e;
-  --sat-search-bar-focus: #434c5f;
+  --sat-search-bar-focus: #515b71;
   --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #88c0d0 0%, #8fbcbb 100%);
   --sat-accent-color1: #88c0d0;
@@ -386,7 +388,7 @@ the end of the file :D +
   --bg-accent-color-lr: #40a0ff1f;
   --bg-accent-color-lr-hover: #40a0ff5a;
   --moreapps-hovering-clr: #409eff;
-  --favorites-hover: #4c566a;
+  --favorites-hover: #4c566b;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --add-link-border: #4c566a;
@@ -410,6 +412,7 @@ the end of the file :D +
 = Category: Experimental themes =
 =+=+=+=+
 */
+
 .amazinglypurple {
   --sat-heading: #ffffff;
   --sat-ids: #ffffff;
@@ -430,7 +433,7 @@ the end of the file :D +
   --bg-accent-color-lr-hover: #966fd658;
 
   --moreapps-hovering-clr: #409eff;
-  --favorites-hover: #413e51;
+  --favorites-hover: #514e65;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(255, 255, 0, 0.075);
   --delete-warning-bg: #d75352;
@@ -454,6 +457,7 @@ the end of the file :D +
 = Modernized version of Default Light = 
 =+=+=+=+
 */
+
 .lightplusplus {
   --sat-heading: #1a1a1a;
   --sat-ids: #000000;
@@ -474,7 +478,7 @@ the end of the file :D +
   --bg-accent-color-lr-hover: #034ab44f;
 
   --moreapps-hovering-clr: #0349b4;
-  --favorites-hover: #d6d6d6;
+  --favorites-hover: #dcdcdc;
   --switch-color-bg-new: #aaaaaa;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
