@@ -42,14 +42,14 @@ the end of the file :D +
   --sat-border-radius: 15px;
 
   /* Light theme: Accent color */
-  --sat-accent-color1: rgb(61, 174, 233);
+  --sat-accent-color1: rgb(34, 142, 200);
   --sat-accent-color-lighter: #96c9e6;
   /* Light theme: Background Lighter Accent color */
   --bg-accent-color-lr: rgba(61, 173, 233, 0.158);
   --bg-accent-color-lr-hover: rgba(61, 173, 233, 0.284);
 
   --moreapps-hovering-clr: rgb(61, 174, 233);
-  --favorites-hover: #dbdbdb;
+  --favorites-hover: #cbcbcb;
   --switch-color-bg-new: #aaaaaa;
   --for-white: #ffffff;
   --settings-warning-bg: rgba(247, 247, 1, 0.322);
