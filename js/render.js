@@ -236,7 +236,7 @@ includes the What's new section!
 </li>
 <h3>🎃 New theme, who dis?</h3>
 <li>
-- And before you ask, yes this update contains 2 new themes. A brand new "Spicy Halloween" and "Too dark". 
+- And before you ask, yes this update contains 2 new themes. A brand new "🎃 Spicy Halloween" and "👻 Ghostly green". 
 </li>
 <h3>Bug fixes</h3>
 <li>
@@ -255,7 +255,10 @@ includes the What's new section!
 - Fix bottom of about page. 
 </li>
 <li>
-- Various theme fixes. 
+- Improve consistency between different themes.
+</li>
+<li>
+- Fix various theme UI bugs. 
 </li>
 <li>
 <li>
@@ -263,7 +266,7 @@ includes the What's new section!
 </li>
 <h3>😄 And tons of MORE CHANGES!</h3>
 <li>
-- Improve consistency between different section of Saturn, this includes icons, text and other stuff. (WIP)
+- Improve consistency between different sections of Saturn, this includes icons, text and other stuff. (WIP)
 </li>
 <li>
 - Added a option to use Sans serif as default font. 
@@ -275,7 +278,7 @@ includes the What's new section!
 - If no custom background is set, a text will now be showed inside of Background URL.
 </li>
 <li>
-Remove the requirements for https when settings a custom background. 
+- Remove the requirements for https when settings a custom background. 
 </li>
 <li>
 - Massive clean up of the themes.css and added a demo for anyone wanting to add a custom theme.
@@ -284,14 +287,17 @@ Remove the requirements for https when settings a custom background.
 - New opening/closing modal animation. 
 </li>
 <li>
-- This release contains a ton of UI inconsistency fixes, and expect more of this in future updates. 
+- This release contains tons of UI inconsistency fixes, and expect more of this in future updates. 
 </li>
 <li>
 - Increase deletion timer from 3 seconds to 5 seconds. 
 </li>
 <li>
-- Added a new "loading" icon. 
+- Added a new "loading" icon for certain actions. 
 </li>
+<li>
+- Light theme got a slight color tweak. 
+</lI>
 
 </ul>
 </div>
