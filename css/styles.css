@@ -1,6 +1,10 @@
-/*
-Saturn Startpage: Open source & free.
-v3.1 CSS Main.Core
+/* 
+=/=/=/SATURN STARTPAGE=/=/=/=
++ styles.css +
++ This file contains every CSS needed to make Saturn look the way
+its supposed to. 
++ Version: 3.1 +
+=/=/=/=/=/=/=
 */
 
 /* 
@@ -34,7 +38,6 @@ v3.1 CSS Main.Core
 .search_block form {
   opacity: 0.95;
 }
-
 /* 
 ========
 + The logo inside search engine logo +
@@ -127,8 +130,9 @@ v3.1 CSS Main.Core
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transform: scale(0.9);
   transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
+  /*=== Effect 1 ===*/
+  transform: translateY(10%);
 }
 
 .wallpaper_modal_content,
@@ -177,8 +181,9 @@ v3.1 CSS Main.Core
 .show-modal {
   opacity: 1;
   visibility: visible;
-  transform: scale(1);
   transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
+  /*=== Effect 1 ===*/
+  transform: translateY(0);
 }
 
 /* 
@@ -288,7 +293,7 @@ input:checked + .slider:before {
 
 ul.tabs li {
   color: var(--sat-ids);
-  padding: 10px 45px;
+  padding: 10px 50px 10px 35px;
   margin-left: 10px;
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
@@ -297,8 +302,6 @@ ul.tabs li {
 }
 
 ul.tabs li:hover {
-  color: var(--sat-ids);
-  background: var(--sat-setting-bg-effect);
   background: var(--sat-setting-bg-effect);
   border-left: 3px solid var(--sat-accent-color-lighter);
   color: var(--sat-accent-color1);
@@ -465,13 +468,6 @@ div.theme-container {
   margin: 5px;
 }
 
-.theme-title i {
-  background-color: var(--lighter-color);
-  padding: 4px;
-  border-radius: 10px;
-  color: var(--sat-accent-color1);
-}
-
 /* 
 ========
 + The save button for username feature +
@@ -482,6 +478,17 @@ div.theme-container {
   padding: 14px 15px;
   background: var(--lighter-color);
   color: var(--sat-ids);
+  font-size: 15px;
+  border-radius: 13px;
+}
+
+.loading-svg {
+  width: 40px;
+  height: 35px;
+  display: inline;
+  position: relative;
+  top: 0.1em;
+  margin: -10px;
 }
 
 .save-button:hover {
@@ -494,6 +501,9 @@ div.theme-container {
   padding: 14px 15px;
   outline: none;
   color: var(--sat-ids);
+  background-color: #d7525225 !important;
+  color: var(--delete-warning-bg) !important;
+  font-size: 15px;
 }
 
 /* 
@@ -518,8 +528,7 @@ div.theme-container {
 .username-section input {
   border: 2px solid transparent;
 }
-
-.fav_ptgi_btn:hover, /* added this to make the hover animation similar */
+/* added this to make the hover animation similar */
 .favorites-search input:hover,
 .favorites-search input:focus,
 .fav_modal input:hover,
@@ -621,7 +630,7 @@ ul.apps-category li.current {
 
 .tabs {
   margin: -10px;
-  margin-top: -5px;
+  margin-top: 15px;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -632,8 +641,8 @@ ul.apps-category li.current {
 }
 
 .tab-content {
-  margin-left: 180px; /* Same as the width of the sidebar */
-  margin-top: 31px;
+  margin-left: 190px; /* Same as the width of the sidebar */
+  margin-top: 30px;
   padding: 0px 10px;
 }
 
@@ -649,8 +658,9 @@ ul.apps-category li.current {
   text-align: center;
 }
 
-.socials .app:hover {
-  transition: var(--transition-speed-default);
+.socials {
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .fav-container {
@@ -777,10 +787,15 @@ ul li {
 
 /* Every close button uses this */
 
+.close-button,
+.close-sounds {
+  background-color: var(--lighter-color);
+}
+
 .close-button {
-  font-size: 25px;
+  font-size: 22px;
   float: right;
-  padding: 10px 10px;
+  padding: 7px 7px;
   margin: 10px;
   border-radius: 100px;
 }
@@ -844,13 +859,20 @@ ul.fav_ptgi_category li {
   padding: 6px 9px;
   cursor: pointer;
   border-radius: var(--sat-border-radius);
-  border: 2px solid transparent;
+  border: 1px solid var(--lighter-color);
+}
+
+ul.fav_ptgi_category li img {
+  width: 15px;
+  height: 15px;
+  margin-bottom: -2px;
+  padding-right: 5px;
 }
 
 .fav_ptgi_btn:hover {
-  background: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
+  border: 1px solid var(--sat-accent-color1);
 }
 
 /* 
@@ -858,62 +880,28 @@ ul.fav_ptgi_category li {
 + Snackbar +
 ========
 */
-
-#default_layout,
-#compact_layout,
-#saveMsgBar,
-#save_username {
+#saveMsgBar {
+  background-color: var(--lighter-color);
   visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: var(--sat-setting-bg-color);
-  color: var(--sat-ids);
-  text-align: center;
-  border-radius: var(--sat-border-radius);
-  padding: 10px;
+  width: 100%;
   position: fixed;
-  z-index: 1;
-  left: 47%;
-  bottom: 30px;
-  font-size: 15px;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
   font-weight: 500;
-}
-
-/* Align save username snackbar to the center */
-#save_username {
-  left: 40%;
-  bottom: 30px;
-}
-
-#default_layout,
-#compact_layout {
-  bottom: 10px !important;
+  color: var(--for-white);
+  color: (--sat-ids);
 }
 
 #saveMsgBar.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  bottom: 0 !important;
+  /* Hack to make Snackbar stay at the 
+  bottom of the page */
 }
-
-#save_username.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.9s 4.5s;
-  animation: fadein 0.5s, fadeout 0.9s 4.5s;
-}
-
-#default_layout.show,
-#compact_layout.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-/* Text on the bottom of favorites modal. */
-.side-text {
-  text-align: center;
-}
-
 /* 
 ========
 + This fixes a major hover issue related to favorites. +
@@ -1112,5 +1100,189 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .red_background {
-  background-color: var(--delete-warning-bg) !important;
+  background-color: #d752521e !important;
+  color: var(--delete-warning-bg) !important;
+}
+
+.green_background {
+  background-color: #39c6781e !important;
+  color: #39c678 !important;
+}
+
+/* 
+========
++ FOCUS UI v1.0 +
+========
+*/
+
+/* Main UI */
+
+.focus_ui {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* Focus Span (used to make checkbox look/feel like button) */
+.focus_ui span {
+  padding: 14px 25px;
+  border-radius: 30px;
+  background-color: var(--lighter-color);
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  cursor: pointer;
+  box-shadow: var(--drop-shadow-color);
+}
+
+/* Focus UI <i> icons */
+.focus_ui i {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  padding: 5px;
+}
+
+/* Hack used to hide checkbox */
+.focus_ui label input {
+  position: absolute;
+  display: none;
+}
+
+.study input:checked + span {
+  background-color: #f29849;
+}
+
+.programming input:checked + span {
+  background-color: #9e57e0;
+}
+.relaxation input:checked + span {
+  background-color: #eb5757;
+}
+
+/* The animation when focus button is clicked */
+
+.focus_ui input:checked + span i::before {
+  transition: var(--transition-speed-default);
+  content: "ON";
+  font-size: 12px;
+  font-family: var(--default-font);
+  margin: 2px;
+}
+
+.focus_ui input:checked + span i::before,
+.focus_ui input:checked + span {
+  color: var(--for-white);
+}
+
+.focus_ui input:hover + span i {
+  margin-left: 44px;
+  transition: var(--transition-speed-default);
+}
+
+.focus_ui input + span i {
+  margin-left: 36px;
+  transition: var(--transition-speed-default);
+}
+
+/* Big icons */
+
+.focus_mode_icons i {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  padding: 10px;
+}
+
+.focus_mode_icons img {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.focus_mode_icons {
+  font-size: 16px;
+  text-align: center;
+}
+
+.focus_status {
+  display: none;
+}
+
+.connection_status,
+.focus_status {
+  width: 6%;
+  background-color: var(--bg-accent-color-lr);
+  border: 2px dotted transparent;
+  color: var(--sat-accent-color1);
+  animation: fadeIn ease 190ms;
+  cursor: default;
+}
+
+.focus_status:hover {
+  background-color: var(--bg-accent-color-lr-hover);
+  border: 2px dashed var(--sat-accent-color1);
+  color: var(--sat-accent-color1);
+}
+
+/* 
+========
++ New ABOUT Section UI +
+========
+*/
+
+.version-text {
+  background-color: var(--bg-accent-color-lr);
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: var(--sat-accent-color1);
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.version-text:hover {
+  background-color: var(--bg-accent-color-lr-hover);
+}
+
+.aboutwidgets-container {
+  padding: 13px 15px;
+  border-radius: var(--sat-border-radius);
+  background-color: var(--lighter-color);
+  margin: auto;
+  width: 60%;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: var(--drop-shadow-color);
+  margin-top: 15px;
+  text-decoration: none !important;
+}
+
+.aboutwidgets-container i {
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 3px;
+}
+
+.focus_ui span:hover,
+.aboutwidgets-container:hover {
+  background-color: var(--favorites-hover);
+  transition: var(--transition-speed-default);
+  color: var(--sat-ids);
+}
+
+.lk_container_top {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.lk_container_bottom {
+  margin-top: 2px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
 }

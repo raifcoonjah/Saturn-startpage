@@ -47,11 +47,8 @@ $(document).ready(function () {
     localStorage.setItem("vk-links", $ul.html());
   });
 });
-
-//
 // ========
 // + FAVORITES Search [BETA] v2.0-cheesecake +
-// Completely rewritten and improved, testing is still in progress.
 // ========
 //
 document.getElementById("searchfavorites").onkeyup = function () {
@@ -73,14 +70,15 @@ document.getElementById("searchfavorites").onkeyup = function () {
 // + Show message when save button is pressed +
 // ========
 //
-const livepreview = document.getElementById("title");
 document.getElementById("add").onclick = function () {
-  var x = document.getElementById("saveMsgBar");
-  x.className = "show";
+  var save_notification = document.getElementById("saveMsgBar");
+  save_notification.className = "show";
   setTimeout(function () {
-    x.className = x.className.replace("show", "");
+    save_notification.className = save_notification.className.replace("show", "");
   }, 3000);
 };
+
+const livepreview = document.getElementById("title");
 livepreview.onkeyup = function () {
   document.getElementById("livepreview").innerHTML = livepreview.value;
 };
@@ -107,7 +105,6 @@ addImg.onclick = function () {
     img.style.width = "20px";
     img.style.height = "20px";
     title.value = '<img src="' + img.src + '">';
-    title.value += " ";
     favicon_URL.value = "";
   }
 };

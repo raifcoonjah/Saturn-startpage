@@ -8,29 +8,29 @@ const appsList = (x) => {
           <div class="popup">
             <div id="apps">
               <a href="https://github.com">
-                <div class="app">
+                <div class="app study_focus_mode relaxation_focus_mode">
                   <i class="lab la-github"></i>
                   <span>Github</span>
                 </div></a
               >
               <a href="https://youtube.com">
-                <div class="app">
+                <div class="app study_focus_mode">
                   <span>YouTube</span>
                   <i class="lab la-youtube"></i></div
               ></a>
               <a href="https://reddit.com">
-                <div class="app">
+                <div class="app study_focus_mode programming_focus_mode">
                   <span>Reddit</span>
                   <i class="lab la-reddit"></i></div
               ></a>
               <a href="https://mail.protonmail.com">
-                <div class="app">
+                <div class="app relaxation_focus_mode">
                   <span>Proton Mail </span>
                   <i class="las la-inbox"></i></div
               ></a>
 
               <a href="https://mail.google.com">
-                <div class="app">
+                <div class="app relaxation_focus_mode">
                   <span>Gmail</span>
                   <i class="las la-envelope"></i></div
               ></a>
@@ -108,13 +108,13 @@ const appsList = (x) => {
                     </div></a
                   >
                   <a href="https://netflix.com">
-                    <div class="app">
+                    <div class="app programming_focus_mode">
                       <i class="las la-film"></i>
                       <span>Netflix</span>
                     </div></a
                   >
                   <a href="https://twitch.tv">
-                    <div class="app">
+                    <div class="app programming_focus_mode">
                       <i class="lab la-twitch"></i>
                       <span>Twitch</span>
                     </div></a
@@ -144,139 +144,159 @@ const settingAbout = (z) => {
               <p class="settings-item-under-title description">About Saturn startpage.</p>
             <div class="settings-background">
               <p class="new-about">
-              <img
+              <img 
+              style="margin-left: auto;
+              padding-top:30px;
+              margin-right: auto;
+              display: block;"
                   src="/img/dynamic-icon-big.png"
                   title="Saturn Logo"
                   alt="Saturn-logo.png"
                   /> 
-               <br/>
-                Saturn Desktop: <a
-                  href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.0.0"
-                  target="_blank" 
-                  >v6.0.0<i class="las la-external-link-alt"></i
-                ></a>
-                <br />
-                Help make saturn better
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/projects/1"
-                  target="_blank"
-                  >Contribute<i class="las la-external-link-alt"></i
-                ></a>
+            <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Startpage</p>
+            <p style="text-align:center;font-weight:500;margin-top:-15px;">
+            <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
+            </p>
+               <p style="text-align:center;"> 
+               <a class="version-text"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
+               target="_blank" 
+               >v6.0.95 Beta (211022)</i
+             ></a>
                 </p>
               <div class="socials">
-                <div class="popup aboutwidgets">
-                  <div id="apps">
-                     <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.1.80">
-                      <div class="app">
-                        <i class="las la-flask"></i>
-                        <span>Try out beta</span>
-                      </div></a
-                    >
-                    <a href="https://github.com/mraif13/saturn-startpage">
-                      <div class="app">
-                        <i class="lab la-github-alt"></i>
-                        <span>Source code</span>
-                      </div></a
-                    >
-                      <a href="https://github.com/mraif13/saturn-startpage/">
-                      <div class="app">
-                        <i class="lar la-star"></i>
-                        <span>Star on Github</span>
-                      </div></a
-                    >
-                      <a href="https://github.com/mraif13/Saturn-startpage/tree/master#data-whats-that">
-                      <div class="app" id="tab-2" class="tab-content slide-up-fade-in">
-                        <i class="las la-user-secret"></i>
-                        <span>Privacy</span>
-                      </div></a
-                    >
-                    <a href="https://paypal.me/raifs">
-                      <div class="app">
-                        <i class="las la-donate"></i>
-                        <span>Donate</span>
-                      </div></a
-                    >
-                  </div>
+                <div class="aboutwidgets">
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.1.80" class="aboutwidgets-container">
+                Try out beta
+                <i class="las la-external-link-alt"></i>
+                </a>
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/tree/master" class="aboutwidgets-container lk_container_top">
+                Source Code
+                <i class="las la-external-link-alt"></i>
+                </a>
+
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/" class="aboutwidgets-container lk_container_bottom">
+                Contribute
+                <i class="las la-external-link-alt"></i>
+                </a>
+
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/tree/master#data-whats-that" class="aboutwidgets-container">
+                Privacy
+                <i class="las la-external-link-alt"></i>
+                </a>
                 </div>
               </div>
-            </div>
-             <p class="settings-item-title">What's new</p>
+             <p style="text-align: center; font-weight: 500; font-size: 13px">
+             Thanks for using Saturn Startpage.
+              </p>
+            </div
+            
+          <p class="settings-item-title">What's new</p>
             <p class="settings-item-under-title description">Learn what's new in this release.</p>
-            <div class="settings-background"> 
-            <h2><i class="las la-meteor"></i> v6.0</h2>
-            <p class="description">New features, stability improvements and bug fixes.</p>
-<h3>✨ Layout changes</h3>
-- Favorites is now integrated inside of apps lists making it much easier to access.
+          <div class="settings-background"> 
+          <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/img/version.png"/>
+          <p style="text-align:center;"> 
+            <a class="version-text green_background"
+            href="#"
+            >Saturn v6.1</i></a>
+          </p>
+        <p style="text-align:center;" class="description small_text">
+            New goodies for you to enjoy! 🎁
+        </p>
 
-<h3>🎉 Optimized code base</h3>
-- Most parts of the code base was entirely rewritten from scratch and reimplemented 
-in vanilla javascript, this should make things much easier to maintain and fix tons of issues.
-<br/>
-<h3>🛠️ UI Tweaks (Beta)</h3>
-- UI tweaks are small additions to saturn that help in fixing some of the common issues 
-you may experience. 
-<br/>
-<h3>🗑️ Reset Feature</h3>
-- You can now completely reset Saturn to the default look and feel.
-<br/>
-<h3>🤘 Favorites improvements</h3>
-- Added a new favicon finder that allows the addition of favicon's inside of favorites.
-<br/>
-- Favorites search got a complete rewritten, fixing two issues along the way and also improving its performance.   
-<br/>
-- Brand new simplified design.
-<br/>
-<h3>👩‍🎨 Opacity opacity opacity… </h3>
-- Some elements on the home screen now have a slight opacity effect. 
-<br/>
-
-<h3>Bug fixes:</h3>
 <ul>
+<h3>🌙 Saturn Focus</h3>
 <li>
-- Fix a rare issue that causes firefox to crash due to a reload loop.
+<p>Apple did it first they said? Well idk if that's true but we don't care...</p>
+- Focus modes allow you to concentrate by hiding certain components from the
+home screen. 
+<p> 
+- Test it our yourself, head to: <code>Settings > Focus</code> Select any of 
+the three focus modes and start being productive.
+</p>
 </li>
+<h3>🧑‍🎨 About section redesigned</h3>
 <li>
-- Fix a very old bug that causes the light theme to appear first then your applied theme.
-</li>
-- Removed the ability to run <code>unsafe inline scripts</code>. (Security fixes)
-<li>
-<li>
-- Fix several issues caused by some UI elements inside of favorites modal.
-</li>
-<li>
--  Several other minor bug fixes and stability improvements. 
-</li>
+<p>You seriously thought we redesigned an about page? Well yeah we did or did we...!?</p>
 
+- The about page has been completely redesign from the ground up with a brand look and feel, yes this also
+includes the What's new section!
+</li>
+<h3>⚙️ Settings clean up</h3>
+<li>
+- Added a new Appearance menu. 
+</li>
+<li>
+- Improved consistency between different sections of settings. 
+</li>
+<li>
+- Added "Dynamic something" in simple terms its notifications coming back to Saturn after being removed a while back. For now its a very limited feature but I plan to expand it even more in future updates
+</li>
+<h3>🎃 New theme, who dis?</h3>
+<li>
+- And before you ask, yes this update contains 2 new themes. A brand new "🎃 Spicy Halloween" and "👻 Ghostly green". 
+</li>
+<h3>Bug fixes</h3>
+<li>
+- Fix ugly padding around code tag. 
+</li>
+<li>
+- Fix a bug that caused some UI elements for smaller screen sizes. 
+</li>
+<li>
+- Fix code text not showing properly when using a light theme. 
+</li>
+<li>
+- Fix navigation color bug. 
+</li>
+<li>
+- Fix bottom of about page. 
+</li>
+<li>
+- Improve consistency between different themes.
+</li>
+<li>
+- Fix various theme UI bugs. 
+</li>
+<li>
+<li>
+- Other minor bug fixes.
+</li>
+<h3>😄 And tons of MORE CHANGES!</h3>
+<li>
+- Improve consistency between different sections of Saturn, this includes icons, text and other stuff. (WIP)
+</li>
+<li>
+- Added a option to use Sans serif as default font. 
+</li>
+<li>
+- Saturn notifications have been tweaked, they should now work properly and look much nicer.
+</li>
+<li>
+- If no custom background is set, a text will now be showed inside of Background URL.
+</li>
+<li>
+- Remove the requirements for https when settings a custom background. 
+</li>
+<li>
+- Massive clean up of the themes.css and added a demo for anyone wanting to add a custom theme.
+</li>
+<li>
+- New opening/closing modal animation. 
+</li>
+<li>
+- This release contains tons of UI inconsistency fixes, and expect more of this in future updates. 
+</li>
+<li>
+- Increase deletion timer from 3 seconds to 5 seconds. 
+</li>
+<li>
+- Added a new "loading" icon for certain actions. 
+</li>
+<li>
+- Light theme got a slight color tweak. 
+</lI>
 
-</ul>
-<br/>
-<h3>TONS of Other small improvements</h3>
-<ul>
-
-<li>
-- Settings modal should now scale properly with different screen sizes. (Coming to more modals soon!)
-</li>
-<li>
-- The search bar will now display a "Search icon" by default. 
-</li>
-<li>
-- Added a prompt when trying to reset or delete custom background.
-</li>
-<li>
-- Added a way to view currently set custom background URL. 
-</li>
-<li>
-- Rewrote most parts of apps shortcuts in vanilla JS.
-</li>
-<li>
-- Replace deprecated keyCode property with key property instead.
-</li>
-<li>
-- Tweaked saturn navigation. 
-</li>
-<li>
-- Several other minor UI/UX fixes.
-</li>
 </ul>
 </div>
 
@@ -322,57 +342,53 @@ const kShortcuts = (ks) => {
           </div>`);
 };
 
-const favIcons = (fav) => {
-  $(fav).append(`<div class="fav_ptgi">
+const coolbg = (cbg) => {
+  $(cbg).append(`<div class="fav_ptgi">
             <ul class="fav_ptgi_category">
               <a
-                href="https://simpleicons.org/"
-                title="Get Simple icons.."
+                href="https://unsplash.com"
+                title="Go to unsplash..."
                 target="_blank"
               >
-                <li class="fav_ptgi_btn">Simple Icons</li></a
+              <li class="fav_ptgi_btn"><img src="https://unavatar.io/unsplash.com"> Unsplash</li></a
               >
               <a
-                href="https://lineicons.com/icons"
-                title="Get line icons.."
+                href="https://wallpaperaccess.com"
+                title="Go to wallpaperaccess..."
                 target="_blank"
               >
-                <li class="fav_ptgi_btn">Line Icons</li></a
+              <li class="fav_ptgi_btn"><img src="https://unavatar.io/wallpaperaccess.com"> Wallpaperaccess</li></a
               >
               <a
-                href="https://icons8.com/line-awesome"
-                title="Get line-awesome icons.."
-                target="_blank"
-              >
-                <li class="fav_ptgi_btn">Line Awesome</li></a
-              >
-              <a
-                href="https://mraif13.notion.site/How-to-use-the-new-Get-custom-icons-80dc51dad7604dffb99d9ab9e6997df2"
-                target="_blank"
-              >
-                <li
-                  class="fav_ptgi_btn"
-                  data-tootik="Refer to the guide for more info."
-                  data-tootik-conf="right"
-                >
-                  <i class="lar la-question-circle"></i></li
-              ></a>
+              href="https://coolbackgrounds.io/"
+              title="Go to coolbackgrounds..."
+              target="_blank"
+            >
+            <li class="fav_ptgi_btn"><img src="https://unavatar.io/coolbackgrounds.io"> Coolbackgrounds</li></a
+            >
+            <a
+            href="https://github.com/mraif13/Saturn-startpage/issues/new"
+            title="A website missing? Suggest it!"
+            target="_blank"
+          >
+          <li class="fav_ptgi_btn">Suggest website...</li></a
+          >
             </ul>
           </div>`);
 };
 
-const render_in_js = (x, z, ks, cu) => {
+const render_in_js = (x, z, ks, cu, cbg) => {
   let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
   let kshortcuts = $("#k_shortcuts");
-  let fav_icons = $("#fav_icons");
+  let cool_background = $("#cool_backgrounds");
 
   // pls dont break
   loader = setTimeout(function () {
     appsList(apps_list);
     settingAbout(setting_about);
     kShortcuts(kshortcuts);
-    favIcons(fav_icons);
+    coolbg(cool_background);
   });
 };
 

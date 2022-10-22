@@ -463,11 +463,12 @@ document.querySelector("#save-image").addEventListener("click", function () {
   if (image_url == "") {
     document.querySelector("#image_url").style.border =
       "2px solid var(--delete-warning-bg)";
-    document.querySelector("#error-text-wallpaper").innerHTML =
-      "Image URL cannot be empty.";
-  } else if (image_url.includes("https://")) {
+    // document.querySelector("#error-text-wallpaper").innerHTML =
+    //   "Image URL cannot be empty.";
+  } else {
     document.querySelector("#image_url").style.border = "2px solid #73d673";
-    document.querySelector("#save-image").innerHTML = "🥳 Applying...";
+    document.querySelector("#save-image").innerHTML =
+      "<img class='loading-svg' src='/img/loading.svg'>" + " Applying...";
     setTimeout(function () {
       location.reload();
     }, 5000);
@@ -508,20 +509,25 @@ document
 document.querySelector("#your_image_url").innerHTML =
   localStorage.getItem("image_url");
 
+if (localStorage.getItem("image_url") == null) {
+  document.querySelector("#your_image_url").innerHTML = "No URL found";
+}
+
 //
 // ========
 // + *New* Reset button  +
 // ========
 //
+
 document.getElementById("reset_button").addEventListener("click", reset_data);
 function reset_data() {
-  //display alert with ok and cancel
-  if (confirm("⚠ Are you sure you want to reset all your data?")) {
-    document.getElementById("reset_button").innerHTML = "🚮";
+  if (confirm("⚠ Beep boop!? Are you sure you want to reset all your data?")) {
+    document.getElementById("reset_button").innerHTML =
+      "<img style='padding-bottom:10px;' class='loading-svg' src='/img/loading-red.svg'> <span>Resetting...</span><span>Please wait!</span>";
+    localStorage.clear();
     setTimeout(function () {
       location.reload();
-    }, 3000);
-    localStorage.clear();
+    }, 5000);
   }
 }
 
@@ -567,3 +573,30 @@ document.querySelector("#bold_text").addEventListener("click", function () {
 if (localStorage.getItem("bold_text")) {
   document.querySelector("body").style.fontWeight = "bold";
 }
+
+// UI Tweak: Use Sans Serif as default font
+document.querySelector("#browser_font").addEventListener("click", function () {
+  if (localStorage.getItem("browser_font")) {
+    localStorage.removeItem("browser_font");
+    document.querySelector("body").style.fontFamily = "var(--default-font)";
+  } else {
+    localStorage.setItem("browser_font", true);
+    document.querySelector("body").style.fontFamily = "sans-serif";
+  }
+});
+
+if (localStorage.getItem("browser_font")) {
+  document.querySelector("body").style.fontFamily = "sans-serif";
+}
+
+// Check internet connection status
+window.addEventListener(
+  "load",
+  function (connection_ss) {
+    if (navigator.onLine) {
+    } else {
+      document.getElementById("connection_status").style.display = "block";
+    }
+  },
+  false
+);

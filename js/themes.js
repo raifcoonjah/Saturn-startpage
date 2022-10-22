@@ -14,6 +14,8 @@ const lightButton = document.getElementById("light");
 
 // Darker themes
 const spaceButton = document.getElementById("space");
+const halloweenButton = document.getElementById("halloween");
+const amazinglypurple = document.getElementById("amazinglypurple");
 
 // Experimental themes
 const linkinParkButton = document.getElementById("linkin-park");
@@ -22,7 +24,7 @@ const linkinParkButton = document.getElementById("linkin-park");
 const lighterdark_theme_button = document.getElementById("lighterdarktheme");
 const draculaButton = document.getElementById("dracula");
 const nordButton = document.getElementById("nord");
-const amazinglypurple = document.getElementById("amazinglypurple");
+const ghostlygreenButton = document.getElementById("ghostlygreen");
 
 // High contrast theme
 const highcontrastButton = document.getElementById("highcontrast");
@@ -50,6 +52,8 @@ LightPlusPlusButton.onclick = () => {
   body.classList.replace("nord", "lightplusplus");
   body.classList.replace("highcontrast", "lightplusplus");
   body.classList.replace("amazinglypurple", "lightplusplus");
+  body.classList.replace("halloween", "lightplusplus");
+  body.classList.replace("ghostlygreen", "lightplusplus");
   localStorage.setItem("theme", "lightplusplus");
 };
 
@@ -64,6 +68,8 @@ amazinglypurple.onclick = () => {
   body.classList.replace("nord", "amazinglypurple");
   body.classList.replace("highcontrast", "amazinglypurple");
   body.classList.replace("lightplusplus", "amazinglypurple");
+  body.classList.replace("halloween", "amazinglypurple");
+  body.classList.replace("ghostlygreen", "amazinglypurple");
   localStorage.setItem("theme", "amazinglypurple");
 };
 
@@ -78,6 +84,8 @@ darkButton.onclick = () => {
   body.classList.replace("highcontrast", "dark");
   body.classList.replace("amazinglypurple", "dark");
   body.classList.replace("lightplusplus", "dark");
+  body.classList.replace("halloween", "dark");
+  body.classList.replace("ghostlygreen", "dark");
   // Adding new theme? Use this sample code:
   // body.classList.replace("yourthemeID", "name of the current theme");
   localStorage.setItem("theme", "dark");
@@ -94,6 +102,8 @@ lightButton.onclick = () => {
   body.classList.replace("highcontrast", "light");
   body.classList.replace("amazinglypurple", "light");
   body.classList.replace("lightplusplus", "light");
+  body.classList.replace("halloween", "light");
+  body.classList.replace("ghostlygreen", "light");
   localStorage.setItem("theme", "light");
 };
 
@@ -108,6 +118,8 @@ spaceButton.onclick = () => {
   body.classList.replace("highcontrast", "space");
   body.classList.replace("amazinglypurple", "space");
   body.classList.replace("lightplusplus", "space");
+  body.classList.replace("halloween", "space");
+  body.classList.replace("ghostlygreen", "space");
   localStorage.setItem("theme", "space");
 };
 
@@ -122,6 +134,8 @@ linkinParkButton.onclick = () => {
   body.classList.replace("highcontrast", "linkin-park");
   body.classList.replace("amazinglypurple", "linkin-park");
   body.classList.replace("lightplusplus", "linkin-park");
+  body.classList.replace("halloween", "linkin-park");
+  body.classList.replace("ghostlygreen", "linkin-park");
   localStorage.setItem("theme", "linkin-park");
 };
 
@@ -136,6 +150,8 @@ lighterdark_theme_button.onclick = () => {
   body.classList.replace("highcontrast", "lighterdarktheme");
   body.classList.replace("amazinglypurple", "lighterdarktheme");
   body.classList.replace("lightplusplus", "lighterdarktheme");
+  body.classList.replace("halloween", "lighterdarktheme");
+  body.classList.replace("ghostlygreen", "lighterdarktheme");
   localStorage.setItem("theme", "lighterdarktheme");
 };
 
@@ -150,6 +166,8 @@ draculaButton.onclick = () => {
   body.classList.replace("highcontrast", "dracula");
   body.classList.replace("amazinglypurple", "dracula");
   body.classList.replace("lightplusplus", "dracula");
+  body.classList.replace("halloween", "dracula");
+  body.classList.replace("ghostlygreen", "dracula");
   localStorage.setItem("theme", "dracula");
 };
 
@@ -164,6 +182,8 @@ nordButton.onclick = () => {
   body.classList.replace("highcontrast", "nord");
   body.classList.replace("amazinglypurple", "nord");
   body.classList.replace("lightplusplus", "nord");
+  body.classList.replace("halloween", "nord");
+  body.classList.replace("ghostlygreen", "nord");
   localStorage.setItem("theme", "nord");
 };
 
@@ -177,5 +197,37 @@ highcontrast.onclick = () => {
   body.classList.replace("nord", "highcontrast");
   body.classList.replace("amazinglypurple", "highcontrast");
   body.classList.replace("lightplusplus", "highcontrast");
+  body.classList.replace("halloween", "highcontrast");
+  body.classList.replace("ghostlygreen", "highcontrast");
   localStorage.setItem("theme", "highcontrast");
+};
+
+halloweenButton.onclick = () => {
+  body.classList.replace("light", "halloween");
+  body.classList.replace("dark", "halloween");
+  body.classList.replace("space", "halloween");
+  body.classList.replace("linkin-park", "halloween");
+  body.classList.replace("lighterdarktheme", "halloween");
+  body.classList.replace("dracula", "halloween");
+  body.classList.replace("nord", "halloween");
+  body.classList.replace("amazinglypurple", "halloween");
+  body.classList.replace("lightplusplus", "halloween");
+  body.classList.replace("highcontrast", "halloween");
+  body.classList.replace("ghostlygreen", "halloween");
+  localStorage.setItem("theme", "halloween");
+};
+
+ghostlygreenButton.onclick = () => {
+  body.classList.replace("light", "ghostlygreen");
+  body.classList.replace("dark", "ghostlygreen");
+  body.classList.replace("space", "ghostlygreen");
+  body.classList.replace("linkin-park", "ghostlygreen");
+  body.classList.replace("lighterdarktheme", "ghostlygreen");
+  body.classList.replace("dracula", "ghostlygreen");
+  body.classList.replace("nord", "ghostlygreen");
+  body.classList.replace("amazinglypurple", "ghostlygreen");
+  body.classList.replace("lightplusplus", "ghostlygreen");
+  body.classList.replace("highcontrast", "ghostlygreen");
+  body.classList.replace("halloween", "ghostlygreen");
+  localStorage.setItem("theme", "ghostlygreen");
 };
