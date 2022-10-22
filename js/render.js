@@ -189,10 +189,8 @@ const settingAbout = (z) => {
              <p style="text-align: center; font-weight: 500; font-size: 13px">
              Thanks for using Saturn Startpage.
               </p>
-            </div>
-
-            <!-- What's new section --> 
-
+            </div
+            
           <p class="settings-item-title">What's new</p>
             <p class="settings-item-under-title description">Learn what's new in this release.</p>
           <div class="settings-background"> 

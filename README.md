@@ -26,3 +26,6 @@ Saturn Startpage is a fully open source, community build new-tab replacement. **
 
 ### Tech used
 - HTML, CSS & Javascript. [Plans to move to react are on **hold** atm]
+------
+###### Demo Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/90679166-d81f-4831-b8f8-82ada4af6e1f/deploy-status)](https://app.netlify.com/sites/demo-saturnstartpage/deploys)
