@@ -161,7 +161,7 @@ const settingAbout = (z) => {
                <a class="version-text"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
                target="_blank" 
-               >v6.1.0</i
+               >v6.1.1</i
              ></a>
                 </p>
               <div class="socials">
