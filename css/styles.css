@@ -716,6 +716,7 @@ ul.apps-category li.current {
 }
 
 #fav-link a {
+  border-radius: 50px;
   text-decoration: none;
   padding: 10px 10px;
   margin: -10px;
