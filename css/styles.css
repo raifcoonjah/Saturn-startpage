@@ -15,13 +15,13 @@ its supposed to.
 .search-bar {
   width: 100%;
   font-size: 1.3em;
-  padding: 20px 48px;
+  padding: 20px 49px;
   text-align: left;
   font-weight: 500;
   box-sizing: border-box;
   outline: none;
-  border: 3px solid transparent;
-  border-radius: 20px;
+  border: 2px solid var(--lighter-color);
+  border-radius: 50px;
 }
 
 /* 
@@ -51,6 +51,7 @@ its supposed to.
   width: 55px;
   height: 55px;
   margin-top: 4px;
+  margin-left: 2px;
 }
 
 .search-engine-logo:hover {
@@ -59,12 +60,12 @@ its supposed to.
 
 .search-bar:hover {
   background-color: var(--new-search-bg-hover-effect);
-  border: 3px solid var(--sat-accent-color1);
+  border: 2px solid var(--sat-accent-color-lighter);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.155);
 }
 
 .search-bar:focus {
-  border: 3px solid var(--sat-accent-color1);
+  border: 2px solid var(--sat-accent-color1);
   background-color: var(--new-search-bg-hover-effect);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.155);
 }
@@ -265,11 +266,18 @@ input:checked + .slider:before {
 .sounds-button,
 .setting-button {
   outline: none;
-  padding: 12px 12px;
-  margin: 4px;
-  border-radius: 13px !important;
+  padding: 11px 13px;
+  margin: 3px;
+  margin-top: 1px;
+  border-radius: 50px !important;
   float: right;
   outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+}
+
+.setting-button span {
+  position: relative;
+  bottom: 0.05em;
+  font-weight: 500;
 }
 
 .sounds-button i,
@@ -353,7 +361,7 @@ ul.tabs li {
 .app {
   margin: 5px 2px;
   padding: 15px 45px;
-  border-radius: 20px;
+  border-radius: 25px;
   border: 3px solid transparent;
 }
 
@@ -583,7 +591,7 @@ div.theme-container {
   padding: 13px 13px;
   font-weight: 400;
   font-size: 14px;
-  border-radius: 13px;
+  border-radius: 50px;
 }
 
 /* 
@@ -607,7 +615,7 @@ ul.apps-category li {
   display: inline-block;
   padding: 7px 10px;
   cursor: pointer;
-  border-radius: var(--sat-border-radius);
+  border-radius: 50px;
 }
 
 ul.apps-category li:hover {
@@ -761,6 +769,7 @@ ul li {
 #content {
   padding: 10px;
   overflow: hidden;
+  border-radius: 30px;
 }
 
 #fav-link li {
@@ -777,6 +786,7 @@ ul li {
   font-weight: 500;
   color: var(--sat-ids);
   background: var(--sat-search-shortcuts);
+  border-radius: 50px;
 }
 
 .favorite-button:hover {
@@ -885,20 +895,20 @@ ul.fav_ptgi_category li img {
   visibility: hidden;
   width: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   text-align: center;
-  padding: 5px;
+  padding: 7px;
   font-size: 16px;
   font-weight: 500;
-  color: var(--for-white);
   color: (--sat-ids);
+  border-radius: 50px;
 }
 
 #saveMsgBar.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  bottom: 0 !important;
+  top: 0 !important;
   /* Hack to make Snackbar stay at the 
   bottom of the page */
 }
@@ -908,6 +918,7 @@ ul.fav_ptgi_category li img {
 + This code just prevents a small bar from 
 appearing when the user hovers on the open in new tab button.
 + This is a "hack" and will need to be completely fix in the future. +
++ TODO +
 ========
 */
 

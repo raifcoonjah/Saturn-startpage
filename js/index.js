@@ -189,30 +189,6 @@ $(function () {
 
 //
 // ========
-// + Hide Calendar Button +
-// ========
-//
-$(function () {
-  var status = localStorage.getItem("hide-calendar-btn");
-  if (status == "true") {
-    $(".calendar-btn").css("display", "none");
-    $(".hide-apps-list").attr("checked", true);
-  } else {
-    $(".calendar-btn").css("display", "block");
-    $(".hide-calendar-btn").attr("checked", false);
-  }
-  $(".hide-calendar-btn").click(function () {
-    if (this.checked) {
-      $(".calendar-btn").hide();
-    } else {
-      $(".calendar-btn").show();
-    }
-    localStorage.setItem("hide-calendar-btn", this.checked);
-  });
-});
-
-//
-// ========
 // + Settings navigation +
 // ========
 //

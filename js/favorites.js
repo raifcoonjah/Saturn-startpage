@@ -74,7 +74,10 @@ document.getElementById("add").onclick = function () {
   var save_notification = document.getElementById("saveMsgBar");
   save_notification.className = "show";
   setTimeout(function () {
-    save_notification.className = save_notification.className.replace("show", "");
+    save_notification.className = save_notification.className.replace(
+      "show",
+      ""
+    );
   }, 3000);
 };
 

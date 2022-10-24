@@ -25,3 +25,15 @@ label span {
 .connection_status {
   display: none;
 }
+
+.no-favorites {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+}
+
+.no-favorites i {
+  font-size: 60px;
+  padding: 10px;
+}

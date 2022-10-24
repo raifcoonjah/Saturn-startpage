@@ -474,7 +474,7 @@ button {
 
 body {
   margin: 0 auto;
-  max-width: 805px;
+  max-width: 815px;
   border-radius: var(--sat-border-radius);
   overflow-x: hidden;
   display: block;
