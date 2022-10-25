@@ -293,29 +293,26 @@ input:checked + .slider:before {
 
 ul.tabs li {
   color: var(--sat-ids);
-  padding: 10px 50px 10px 35px;
-  margin-left: 10px;
+  padding: 10px 50px 10px 20px;
+  margin-left: 20px;
+  margin-top: -3px;
   border-radius: var(--sat-border-radius);
-  border-top-left-radius: 1px;
-  border-bottom-left-radius: 1px;
   border-left: 3px solid transparent;
+  border-radius: 18px;
 }
 
 ul.tabs li:hover {
   background: var(--sat-setting-bg-effect);
-  border-left: 3px solid var(--sat-accent-color-lighter);
   color: var(--sat-accent-color1);
 }
 
 ul.tabs li.current {
   background: var(--sat-setting-bg-effect);
-  border-left: 3px solid var(--sat-accent-color1);
   color: var(--sat-accent-color1);
   font-weight: 500;
 }
 
 ul.tabs li i {
-  background-color: var(--lighter-color);
   padding: 3px 3px;
   border-radius: 7px;
 }
