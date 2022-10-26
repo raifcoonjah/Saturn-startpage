@@ -891,28 +891,31 @@ ul.fav_ptgi_category li img {
 + Snackbar +
 ========
 */
+
 #saveMsgBar {
-  background-color: var(--lighter-color);
+  background-color: #fff;
   visibility: hidden;
-  width: 100%;
   position: fixed;
-  top: 0;
-  text-align: center;
-  padding: 7px;
-  font-size: 16px;
+  bottom: 0;
+  right: 0;
+  text-align: left;
+  margin: 20px;
+  padding: 10px;
+  font-size: 14.5px;
+  border-radius: 15px;
   font-weight: 500;
-  color: (--sat-ids);
-  border-radius: 50px;
+  color: #000;
 }
 
 #saveMsgBar.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  top: 0 !important;
+  -webkit-animation: slide-up-fade-in 0.5s, fadeout 0.5s 2.5s;
+  animation: slide-up-fade-in 0.5s, fadeout 0.5s 2.5s;
+  bottom: 0 !important;
   /* Hack to make Snackbar stay at the 
   bottom of the page */
 }
+
 /* 
 ========
 + This fixes a major hover issue related to favorites. +
@@ -1023,12 +1026,57 @@ appearing when the user hovers on the open in new tab button.
 + Soundboard +
 ========
 */
+
 .pause {
-  color: var(--sat-accent-color1);
+  color: #fff;
+  background: linear-gradient(
+    210deg,
+    var(--sat-accent-color1),
+    var(--bg-accent-color-lr-hover),
+    var(--sat-accent-color-lighter),
+    var(--bg-accent-color-lr)
+  );
+  background-size: 800% 800%;
+
+  -webkit-animation: moving-gradient 20s ease infinite;
+  -moz-animation: moving-gradient 20s ease infinite;
+  animation: moving-gradient 20s ease infinite;
 }
 
-.pause i {
-  animation: blinker 2.5s linear infinite;
+/* Moving gradient ;) */
+
+@-webkit-keyframes moving-gradient {
+  0% {
+    background-position: 0% 77%;
+  }
+  50% {
+    background-position: 100% 24%;
+  }
+  100% {
+    background-position: 0% 77%;
+  }
+}
+@-moz-keyframes moving-gradient {
+  0% {
+    background-position: 0% 77%;
+  }
+  50% {
+    background-position: 100% 24%;
+  }
+  100% {
+    background-position: 0% 77%;
+  }
+}
+@keyframes moving-gradient {
+  0% {
+    background-position: 0% 77%;
+  }
+  50% {
+    background-position: 100% 24%;
+  }
+  100% {
+    background-position: 0% 77%;
+  }
 }
 
 .control-button {

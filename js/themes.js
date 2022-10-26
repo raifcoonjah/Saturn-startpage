@@ -231,3 +231,4 @@ ghostlygreenButton.onclick = () => {
   body.classList.replace("halloween", "ghostlygreen");
   localStorage.setItem("theme", "ghostlygreen");
 };
+

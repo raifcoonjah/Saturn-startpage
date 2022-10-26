@@ -24,7 +24,7 @@ $(document).ready(function () {
         '">' +
         $title.val() +
         "</a>" +
-        '<button class="removebtn" title="Delete favorite.."><i class="las la-trash-alt"></i></button>' +
+        '<button class="removebtn" id="remoy" title="Delete favorite.."><i class="las la-trash-alt"></i></button>' +
         '<a class="hide_fav_bar" target="_blank" href="' +
         $url.val() +
         '">' +
