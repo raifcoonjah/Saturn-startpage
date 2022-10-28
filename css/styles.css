@@ -291,6 +291,7 @@ input:checked + .slider:before {
 .setting-button:hover {
   transition: var(--transition-speed-fast);
   outline: 4px solid var(--settings-button-outline);
+  color: var(--sat-ids);
 }
 
 /* 
