@@ -750,6 +750,13 @@ ul li {
   padding: 10px;
   border-radius: 13px;
   border: 1px solid transparent;
+  font-size: 17px;
+}
+
+.removebtn:hover {
+  background-color: #d752521e !important;
+  color: var(--delete-warning-bg) !important;
+  transition: var(--transition-speed-default);
 }
 
 .newtabbtn {
@@ -759,13 +766,14 @@ ul li {
   border-radius: 13px;
   visibility: visible; /* Force visibility to fix issues */
   border: 1px solid transparent;
+  font-size: 17px;
 }
 
 .newtabbtn:hover {
-  border: 1px solid var(--sat-accent-color1);
-  background-color: var(--sat-accent-color-lighter);
-  transition: var(--transition-speed-default);
-  color: var(--for-white);
+  background-color: var(--bg-accent-color-lr);
+  color: var(--sat-accent-color1);
+  text-decoration: underline;
+  transition: var(--transition-speed-fast);
 }
 
 #content {

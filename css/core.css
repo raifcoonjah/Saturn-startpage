@@ -913,12 +913,6 @@ color to fix some issues == */
   transition: var(--transition-speed-default);
 }
 
-.removebtn:hover {
-  background-color: var(--delete-warning-border);
-  border: 1px solid var(--delete-warning-bg);
-  transition: var(--transition-speed-default);
-}
-
 .close-wallpaper:hover,
 .cancel-fav-btn:hover {
   transition: var(--transition-speed-default);
