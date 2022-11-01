@@ -189,21 +189,50 @@ const settingAbout = (z) => {
              <p style="text-align: center; font-weight: 500; font-size: 13px">
              Thank you for using Saturn startpage.
               </p>
-            </div
+            </div>
             
           <p class="settings-item-title">What's new</p>
-            <p class="settings-item-under-title description">Learn what's new in this release.</p>
+          <p class="settings-item-under-title description">Learn what's new in this release.</p>
           <div class="settings-background"> 
           <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/img/version.png"/>
           <p style="text-align:center;"> 
             <a class="version-text green_background"
             href="#"
-            >Saturn v6.1</i></a>
+            >Saturn v6.2.1</i></a>
           </p>
         <p style="text-align:center;" class="description small_text">
-            New goodies for you to enjoy! 🎁
+            Bug fixes
         </p>
 
+<ul>
+<h3>Bug fixes & Small improvements</h3>
+<li>
+- Fix a weird text color issue with the new notification design.
+</li>
+<li>
+- Attempt to fix focus "ON" black color issue. 
+</li>
+<li>
+- If a focus mode is toggled off, Saturn will now delete it from the localstorage to keep
+things clean.
+</li>
+<li>
+- Fix missing ">", this should fix What's new text. 
+</li>
+
+<br/>
+</ul>
+
+<p class="line"></p>
+<details>
+<summary>Read previous release notes</summary>
+
+<p style="text-align:center;"> 
+<a class="version-text green_background" href="#">Saturn v6.1</i></a>
+</p>
+<p style="text-align:center;" class="description small_text">
+New goodies for you to enjoy! 🎁
+</p>
 <ul>
 <h3>🌙 Saturn Focus</h3>
 <li>
@@ -298,6 +327,8 @@ includes the What's new section!
 </lI>
 
 </ul>
+
+</details>
 </div>
 
 
