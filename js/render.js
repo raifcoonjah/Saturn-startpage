@@ -159,9 +159,9 @@ const settingAbout = (z) => {
             </p>
                <p style="text-align:center;"> 
                <a class="version-text"
-               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.0"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.2"
                target="_blank" 
-               >v6.0.95 Beta (211022)</i
+               >v6.1.2</i
              ></a>
                 </p>
               <div class="socials">
@@ -187,7 +187,7 @@ const settingAbout = (z) => {
                 </div>
               </div>
              <p style="text-align: center; font-weight: 500; font-size: 13px">
-             Thanks for using Saturn Startpage.
+             Thank you for using Saturn startpage.
               </p>
             </div
             
