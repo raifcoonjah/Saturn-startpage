@@ -312,6 +312,13 @@ ul.tabs li.current {
   font-weight: 500;
 }
 
+/* image icon support */
+
+ul.tabs li img {
+  width: 22px;
+  margin-bottom: -5px;
+}
+
 ul.tabs li i {
   padding: 3px 3px;
   border-radius: 7px;
