@@ -219,6 +219,9 @@ things clean.
 <li>
 - Fix missing ">", this should fix What's new text. 
 </li>
+<li>
+- Saturn will now change the title depending on which focus you're using. (Beta)
+</li>
 
 <br/>
 </ul>
