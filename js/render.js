@@ -198,7 +198,7 @@ const settingAbout = (z) => {
           <p style="text-align:center;"> 
             <a class="version-text green_background"
             href="#"
-            >Saturn v6.2.1</i></a>
+            >Saturn v6.1.2</i></a>
           </p>
         <p style="text-align:center;" class="description small_text">
             Bug fixes
