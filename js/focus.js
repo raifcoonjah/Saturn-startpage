@@ -18,6 +18,7 @@ $(function () {
     $(".study_focus").attr("checked", true);
   } else {
     $(".study_focus").attr("checked", false);
+    localStorage.removeItem("study_focus");
   }
   $(".study_focus").click(function () {
     if (this.checked) {
@@ -44,6 +45,7 @@ $(function () {
     $(".programming_focus").attr("checked", true);
   } else {
     $(".programming_focus").attr("checked", false);
+    localStorage.removeItem("programming_focus");
   }
   $(".programming_focus").click(function () {
     if (this.checked) {
@@ -71,6 +73,7 @@ $(function () {
     $(".relaxation_focus").attr("checked", true);
   } else {
     $(".relaxation_focus").attr("checked", false);
+    localStorage.removeItem("relaxation_focus");
   }
   $(".relaxation_focus").click(function () {
     if (this.checked) {
