@@ -16,6 +16,7 @@ $(function () {
     $(".study_focus_mode").css("display", "none");
     $("#focus_status_text").css("display", "block");
     $(".study_focus").attr("checked", true);
+    document.title = "New Tab - Studying focus";
   } else {
     $(".study_focus").attr("checked", false);
     localStorage.removeItem("study_focus");
@@ -24,9 +25,11 @@ $(function () {
     if (this.checked) {
       $(".study_focus_mode").hide();
       $("#focus_status_text").show();
+      document.title = "New Tab - Studying focus";
     } else {
       $(".study_focus_mode").show();
       $("#focus_status_text").hide();
+      document.title = "New Tab";
     }
     localStorage.setItem("study_focus", this.checked);
   });
@@ -43,6 +46,7 @@ $(function () {
     $(".programming_focus_mode").css("display", "none");
     $("#focus_status_text").css("display", "block");
     $(".programming_focus").attr("checked", true);
+    document.title = "New tab - Programming focus";
   } else {
     $(".programming_focus").attr("checked", false);
     localStorage.removeItem("programming_focus");
@@ -51,9 +55,11 @@ $(function () {
     if (this.checked) {
       $(".programming_focus_mode").hide();
       $("#focus_status_text").show();
+      document.title = "New Tab - Programming focus";
     } else {
       $(".programming_focus_mode").show();
       $("#focus_status_text").hide();
+      document.title = "New Tab";
     }
     localStorage.setItem("programming_focus", this.checked);
   });
@@ -69,6 +75,7 @@ $(function () {
   if (status == "true") {
     $(".relaxation_focus_mode").css("display", "none");
     $("#focus_status_text").css("display", "block");
+    document.title = "New Tab - Relaxation focus";
 
     $(".relaxation_focus").attr("checked", true);
   } else {
@@ -79,9 +86,11 @@ $(function () {
     if (this.checked) {
       $(".relaxation_focus_mode").hide();
       $("#focus_status_text").show();
+      document.title = "New Tab - Relaxation focus";
     } else {
       $(".relaxation_focus_mode").show();
       $("#focus_status_text").hide();
+      document.title = "New Tab";
     }
     localStorage.setItem("relaxation_focus", this.checked);
   });
