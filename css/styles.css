@@ -1164,6 +1164,7 @@ appearing when the user hovers on the open in new tab button.
 
 .focus_ui input:checked + span i::before {
   transition: var(--transition-speed-default);
+  animation: fadeIn ease 200ms;
   content: "ON";
   font-size: 12px;
   font-family: var(--default-font);
