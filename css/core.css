@@ -275,6 +275,8 @@ input[type="button"] {
 
 /* Press effect that happens when you press on buttons.. */
 
+.focus_ui span:active,
+.aboutwidgets-container:active,
 ul.fav_ptgi_category li:active,
 .app:active,
 .theme-container:active,
