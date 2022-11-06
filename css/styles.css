@@ -902,7 +902,7 @@ ul.fav_ptgi_category li img {
 */
 
 #saveMsgBar {
-  background-color: #fff;
+  background-color: rgb(232, 232, 232);
   visibility: hidden;
   position: fixed;
   bottom: 0;
