@@ -594,6 +594,25 @@ the end of the file :D +
 
 /* 
 =+=+=+=+
+= Tells the browser these dark/darker 
+themes are using a dark color scheme =
+=+=+=+=+
+*/
+
+.amazinglypurple,
+.dark,
+.space,
+.dracula,
+.nord,
+.highcontrast,
+.ghostlygreen,
+.lighterdarktheme,
+.halloween {
+  color-scheme: dark;
+}
+
+/* 
+=+=+=+=+
 = DEMO Theme = 
 = Category: None =
 = Use this as an example if you're planning 
