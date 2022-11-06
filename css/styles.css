@@ -1175,6 +1175,7 @@ appearing when the user hovers on the open in new tab button.
   transition: var(--transition-speed-default);
   animation: fadeIn ease 200ms;
   content: "ON";
+  font-weight: 700 !important;
   font-size: 12px;
   font-family: var(--default-font);
   margin: 2px;
