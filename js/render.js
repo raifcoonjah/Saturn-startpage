@@ -159,9 +159,9 @@ const settingAbout = (z) => {
             </p>
                <p style="text-align:center;"> 
                <a class="version-text"
-               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.2"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.3"
                target="_blank" 
-               >v6.1.2</i
+               >v6.1.3</i
              ></a>
                 </p>
               <div class="socials">
@@ -198,7 +198,7 @@ const settingAbout = (z) => {
           <p style="text-align:center;"> 
             <a class="version-text green_background"
             href="#"
-            >Saturn v6.1.2</i></a>
+            >Saturn v6.1.3</i></a>
           </p>
         <p style="text-align:center;" class="description small_text">
             Bug fixes
@@ -206,23 +206,18 @@ const settingAbout = (z) => {
 
 <ul>
 <h3>Bug fixes & Small improvements</h3>
-<li>
-- Fix a weird text color issue with the new notification design.
+<li> 
+- Breaking! Removed normalized css from Saturn's codebase.
+</li>
+<li> 
+- Fix settings scrollbar bug. 
 </li>
 <li>
-- Attempt to fix focus "ON" black color issue. 
+- The browser will now use dark UI components when using dark/darker themes.
 </li>
 <li>
-- If a focus mode is toggled off, Saturn will now delete it from the localstorage to keep
-things clean.
+- Minor UI consistency fixes.
 </li>
-<li>
-- Fix missing ">", this should fix What's new text. 
-</li>
-<li>
-- Saturn will now change the title depending on which focus you're using. (Beta)
-</li>
-
 <br/>
 </ul>
 
@@ -355,6 +350,7 @@ const kShortcuts = (ks) => {
               <p> Press <kbd>Shift</kbd> + <kbd>B</kbd> to open soundboard. </p>
               <p> Press on <kbd>Esc</kbd> to close any modal.</p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. (Provided by Firefox) </p>
+              <p class="line"></p>
               <h4>Apps</h4>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span></p>
