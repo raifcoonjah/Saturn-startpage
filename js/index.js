@@ -79,7 +79,6 @@ setInterval(() => {
 
 var modal = document.querySelector(".settings_modal");
 var trigger = document.querySelector(".dropdown-settings");
-var triggerAlt = document.querySelector(".dropbtn");
 var closeButton = document.querySelector(".close-button");
 function toggleModal() {
   modal.classList.toggle("show-modal");
@@ -89,7 +88,6 @@ function windowOnClick(event) {
     toggleModal();
   }
 }
-triggerAlt.addEventListener("click", toggleModal);
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
