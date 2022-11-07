@@ -276,13 +276,17 @@ input:checked + .slider:before {
 
 .setting-button span {
   position: relative;
-  bottom: 0.05em;
+  bottom: 0.23em;
   font-weight: 500;
 }
 
 .sounds-button i,
 .setting-button i {
   font-size: 1.2rem;
+}
+.sounds-button svg,
+.setting-button svg {
+  width: 19px;
 }
 
 .control-button:hover,
@@ -617,6 +621,11 @@ ul.apps-category li {
   padding: 7px 10px;
   cursor: pointer;
   border-radius: 50px;
+}
+
+ul.apps-category li svg {
+  width: 17px;
+  margin-bottom: -3px;
 }
 
 ul.apps-category li:hover {
