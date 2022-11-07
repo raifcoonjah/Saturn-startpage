@@ -215,8 +215,12 @@ const settingAbout = (z) => {
 <li>
 - The browser will now use dark UI components when using dark/darker themes.
 </li>
+<h3>User Interface Improvements</h3>
 <li>
-- Minor UI consistency fixes.
+- Add "press effect" to more elements.
+</li>
+<li>
+- Tweak "ON" text bold effect.
 </li>
 <br/>
 </ul>
