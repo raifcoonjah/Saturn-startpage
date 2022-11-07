@@ -996,6 +996,7 @@ use the correct border radius == */
   .tabs {
     position: static !important;
     margin: -10px;
+    margin-left: -30px !important;
     margin-top: -105px !important;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 1px !important;
