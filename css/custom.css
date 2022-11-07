@@ -93,7 +93,7 @@ label span {
 }
 
 .dropdown-title {
-  margin: 10px;
+  margin: 1px;
   font-size: 14px;
   border-bottom: 1px solid var(--settings-button-outline);
   background-color: var(--lighter-color);
