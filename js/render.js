@@ -159,9 +159,9 @@ const settingAbout = (z) => {
             </p>
                <p style="text-align:center;"> 
                <a class="version-text"
-               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.3"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.2.0"
                target="_blank" 
-               >v6.1.3</i
+               >v6.2.0</i
              ></a>
                 </p>
               <div class="socials">
@@ -198,10 +198,10 @@ const settingAbout = (z) => {
           <p style="text-align:center;"> 
             <a class="version-text green_background"
             href="#"
-            >Saturn v6.1.3</i></a>
+            >Saturn v6.2.0</i></a>
           </p>
         <p style="text-align:center;" class="description small_text">
-            Bug fixes
+            Home screen changes, bug fixes & stability improvement
         </p>
 
 <ul>
