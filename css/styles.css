@@ -132,6 +132,7 @@ its supposed to.
   transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
   /*=== Effect 1 ===*/
   transform: translateY(10%);
+  z-index: 2;
 }
 
 .wallpaper_modal_content,
