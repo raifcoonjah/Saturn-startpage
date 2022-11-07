@@ -366,7 +366,7 @@ document.addEventListener("keyup", function (se_icon) {
 
 document.addEventListener("keyup", function (soundboard) {
   if (soundboard.keyCode == 66 && soundboard.shiftKey) {
-    document.querySelector(".sounds-button").click();
+    document.querySelector(".dropdown-soundboard").click();
   }
 });
 
