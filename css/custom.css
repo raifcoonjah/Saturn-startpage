@@ -29,7 +29,7 @@ label span {
 .dropbtn {
   outline: none;
   padding: 11px 13px;
-  border-radius: 50px !important;
+  border-radius: var(--sat-border-radius);
   outline: 4px solid transparent; /* This should be remove for a much more optimized version */
 }
 
@@ -42,19 +42,19 @@ label span {
   display: none;
   position: absolute;
   right: 0;
-  background-color: var(--lighter-color);
+  background-color: var(--sat-setting-bg-color);
   min-width: 215px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-size: 15px;
   border: 1px solid var(--settings-button-outline);
-  border-radius: 20px;
+  border-radius: var(--sat-border-radius);
 }
 
 .dropdown-content a {
   color: var(--sat-ids);
-  border-radius: 14px;
-  padding: 6px 6px;
+  border-radius: 10px;
+  padding: 5px 5px;
   margin: 5px;
   text-decoration: none;
   display: block;
@@ -64,9 +64,15 @@ label span {
   font-size: 14px;
 }
 
+
 .dropdown-content kbd {
   background-color: var(--settings-button-outline);
   font-size: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-content i {
+  font-size: 1.2em;
 }
 
 .dropdown-content svg {
@@ -77,14 +83,17 @@ label span {
 
 .dropdown-content a:hover {
   background-color: var(--sat-accent-color1);
+  color: var(--for-white);
 }
 
 .dropdown-content a:active .dropdown-content {
   display: none;
+  animation: slide-up-fade-in ease 100ms;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  animation: slide-up-fade-in ease 100ms;
 }
 .dropdown:hover .dropbtn {
   transition: var(--transition-speed-fast);
@@ -93,9 +102,7 @@ label span {
 }
 
 .dropdown-title {
-  margin: 10px;
+  margin: 1px;
   font-size: 14px;
   border-bottom: 1px solid var(--settings-button-outline);
-  background-color: var(--lighter-color);
-  font-weight: 500;
 }
