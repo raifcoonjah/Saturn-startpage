@@ -26,14 +26,76 @@ label span {
   display: none;
 }
 
-.no-favorites {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  display: block;
+.dropbtn {
+  outline: none;
+  padding: 11px 13px;
+  border-radius: 50px !important;
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
 }
 
-.no-favorites i {
-  font-size: 60px;
-  padding: 10px;
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--lighter-color);
+  min-width: 215px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 15px;
+  border: 1px solid var(--settings-button-outline);
+  border-radius: 20px;
+}
+
+.dropdown-content a {
+  color: var(--sat-ids);
+  border-radius: 14px;
+  padding: 6px 6px;
+  margin: 5px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.dropdown-content kbd {
+  background-color: var(--settings-button-outline);
+  font-size: 10px;
+}
+
+.dropdown-content svg {
+  width: 19px;
+  position: relative;
+  top: 0.3em;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--sat-accent-color1);
+}
+
+.dropdown-content a:active .dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  transition: var(--transition-speed-fast);
+  outline: 4px solid var(--settings-button-outline);
+  color: var(--sat-ids);
+}
+
+.dropdown-title {
+  margin: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--settings-button-outline);
+  background-color: var(--lighter-color);
+  font-weight: 500;
 }

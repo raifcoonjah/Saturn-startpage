@@ -78,7 +78,7 @@ setInterval(() => {
 //
 
 var modal = document.querySelector(".settings_modal");
-var trigger = document.querySelector(".setting-button");
+var trigger = document.querySelector(".dropdown-settings");
 var closeButton = document.querySelector(".close-button");
 function toggleModal() {
   modal.classList.toggle("show-modal");
@@ -99,7 +99,7 @@ window.addEventListener("click", windowOnClick);
 //
 
 var soundsModal = document.querySelector(".sounds_modal");
-var SBtntrigger = document.querySelector(".sounds-button");
+var SBtntrigger = document.querySelector(".dropdown-soundboard");
 var closeSoundsButton = document.querySelector(".close-sounds");
 
 function toggleSounds() {
