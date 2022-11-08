@@ -48,7 +48,7 @@ label span {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-size: 15px;
-  border: 1px solid var(--settings-button-outline);
+  border: 1px solid var(--lighter-color);
   border-radius: var(--sat-border-radius);
 }
 
@@ -78,6 +78,8 @@ label span {
 
 .dropdown-content i {
   font-size: 1.2em;
+  position: relative;
+  top: 0.1em;
 }
 
 .dropdown-content svg {
