@@ -80,7 +80,7 @@ label span {
 .dropdown-content i {
   font-size: 1.2em;
   position: relative;
-  top: 0.1em;
+  top: 0.08em;
 }
 
 .dropdown-content svg {
@@ -110,7 +110,7 @@ label span {
   text-align: left;
   line-height: 0.1em;
   margin: 12px 0 12px;
-  border-bottom: 2px solid var(--settings-button-outline);
+  border-bottom: 1px solid var(--settings-button-outline);
 }
 
 .dropdown-seperator span {
