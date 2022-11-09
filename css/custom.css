@@ -68,6 +68,7 @@ label span {
 .dropdown_redaccent:hover {
   background-color: #d752521e !important;
   color: var(--delete-warning-bg) !important;
+  border: 1px solid #d752522c !important;
 }
 
 .dropdown-content kbd {
@@ -85,16 +86,17 @@ label span {
 .dropdown-content svg {
   width: 19px;
   position: relative;
-  top: 0.3em;
+  top: 0.2em;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--bg-accent-color-lr-hover);
+  background-color: var(--bg-accent-color-lr);
+  border: 1px solid var(--bg-accent-color-lr-hover);
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  animation: slide-up-fade-in ease 110ms;
+  animation: slide-up-fade-in ease 150ms;
 }
 
 .dropdown:hover .dropbtn {
