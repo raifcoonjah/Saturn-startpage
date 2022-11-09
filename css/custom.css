@@ -55,14 +55,14 @@ label span {
 .dropdown-content a {
   color: var(--sat-ids);
   border-radius: 10px;
-  padding: 5px 5px;
+  padding: 4px 4px;
   text-decoration: none;
   display: block;
   border: 1px solid transparent;
   cursor: pointer;
   font-weight: 500;
   font-size: 15px;
-  margin: 4px;
+  margin: 3.5px;
 }
 
 .dropdown_redaccent:hover {
@@ -96,7 +96,7 @@ label span {
 
 .dropdown:hover .dropdown-content {
   display: block;
-  animation: slide-up-fade-in ease 150ms;
+  animation: slide-up-fade-in ease 190ms;
 }
 
 .dropdown:hover .dropbtn {
