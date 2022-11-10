@@ -478,7 +478,7 @@ input {
   border-radius: var(--sat-border-radius);
   box-shadow: none;
   box-sizing: border-box;
-  outline: none;
+  outline: 3px solid transparent;
 }
 
 .username-section input:hover,
@@ -493,6 +493,7 @@ textarea:focus,
 select:focus,
 input:focus {
   border: 2px solid var(--sat-accent-color1);
+  outline: 4px solid var(--settings-button-outline) !important;
 }
 
 img {
