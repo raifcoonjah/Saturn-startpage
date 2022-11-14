@@ -181,8 +181,8 @@ its supposed to.
 }
 
 .favorites_modal_content {
-  width: 40rem;
-  height: 38rem;
+  width: 35rem;
+  height: 37.7rem;
 }
 
 .show-wallpaper-modal,
@@ -973,7 +973,7 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .small_text {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 
