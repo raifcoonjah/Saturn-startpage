@@ -600,3 +600,20 @@ window.addEventListener(
   },
   false
 );
+
+// View preview
+
+const box = document.getElementById("livepreview");
+
+const preview_button = document.getElementById("button-view-preview");
+
+preview_button.addEventListener("click", function handleClick() {
+  if (box.style.display == "none") {
+    box.style.display = "block";
+    preview_button.innerHTML =
+      '<i class="las la-eye-slash"></i>' + " Hide preview";
+  } else {
+    box.style.display = "none";
+    preview_button.innerHTML = '<i class="las la-eye"></i>' + " Show preview";
+  }
+});
