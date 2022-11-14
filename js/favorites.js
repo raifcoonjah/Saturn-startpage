@@ -24,11 +24,11 @@ $(document).ready(function () {
         '">' +
         $title.val() +
         "</a>" +
-        '<button class="removebtn" title="Delete favorite.."><i class="las la-trash-alt"></i></button>' +
+        '<button class="removebtn" title="Delete favorite..."><i class="las la-trash-alt"></i></button>' +
         '<a class="hide_fav_bar" target="_blank" href="' +
         $url.val() +
         '">' +
-        '<button class="newtabbtn" data-tootik="Open in a new tab" data-tootik-conf="left"><i class="las la-external-link-alt"></i></button>' +
+        '<button class="newtabbtn" title="Open in new tab..."><i class="las la-external-link-alt"></i></button>' +
         "</a></li>"
     );
 
@@ -74,7 +74,10 @@ document.getElementById("add").onclick = function () {
   var save_notification = document.getElementById("saveMsgBar");
   save_notification.className = "show";
   setTimeout(function () {
-    save_notification.className = save_notification.className.replace("show", "");
+    save_notification.className = save_notification.className.replace(
+      "show",
+      ""
+    );
   }, 3000);
 };
 
