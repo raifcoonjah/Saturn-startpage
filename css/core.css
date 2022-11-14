@@ -715,3 +715,10 @@ use the correct border radius == */
     font-size: 13px !important;
   }
 }
+
+/* Align button-container to the left to follow standard UI guidelines */
+
+.button-container {
+  text-align: right;
+  padding: 10px;
+}
