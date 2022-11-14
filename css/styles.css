@@ -762,10 +762,10 @@ ul li {
 }
 
 .newtabbtn:hover {
+  background-color: var(--bg-accent-color-lr-hover);
   border: 1px solid var(--sat-accent-color1);
-  background-color: var(--sat-accent-color-lighter);
+  color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  color: var(--for-white);
 }
 
 #content {
