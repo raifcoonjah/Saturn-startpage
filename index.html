@@ -216,7 +216,7 @@ need ......... to ................ scroll ......................................
           </p>
 
           <!-- =+=+= Input ++ Favorite title =+=+=-->
-          <h3 class="fav_title">Name</h3>
+          <label class="fav_title"> Name</label>
           <input
             id="title"
             placeholder="Enter a name"
@@ -238,7 +238,7 @@ need ......... to ................ scroll ......................................
           </p>
           <br />
           <!-- =+=+= Input ++ Favorite URL =+=+= -->
-          <label class="fav_title"> URL</label>
+          <label class="fav_title">URL</label>
           <input
             id="url"
             placeholder="Enter or paste a URL"
@@ -342,6 +342,10 @@ need ......... to ................ scroll ......................................
                   <img src="/icons/focus/study.svg" />
                   Focus for studying
                 </p>
+                <p class="focus_description">
+                  When you're immersed in your studies, <br />
+                  stay focused by hiding distracting apps.
+                </p>
 
                 <div class="focus_ui study">
                   <label>
@@ -359,6 +363,11 @@ need ......... to ................ scroll ......................................
                   Focus for programming
                 </p>
 
+                <p class="focus_description">
+                  When you're doing a programming session, <br />
+                  get things done by hiding distracting apps.
+                </p>
+
                 <div class="focus_ui programming">
                   <label>
                     <input class="programming_focus" type="checkbox" /><span
@@ -373,6 +382,10 @@ need ......... to ................ scroll ......................................
                   <img src="/icons/focus/relax.svg" />
                   Focus for Relaxation
                 </p>
+                <p class="focus_description">
+                  When you're in a relaxation session, <br />
+                  stay present by hiding distracting apps.
+                </p>
                 <div class="focus_ui relaxation">
                   <label>
                     <input class="relaxation_focus" type="checkbox" /><span
@@ -381,10 +394,9 @@ need ......... to ................ scroll ......................................
                   </label>
                 </div>
                 <br />
-                <p class="line"></p>
-                <h3 style="padding-bottom: 10px">
-                  <i class="las la-cloud-moon"></i> What's Saturn Focus?
-                </h3>
+                <p class="dropdown-seperator settings-seperator">
+                  <span>What's Saturn focus?</span>
+                </p>
                 <p class="description">
                   Saturn focus lets you stay in the moment when you need to
                   concentrate. Using a set of pre-defined configurations, some
@@ -658,7 +670,9 @@ need ......... to ................ scroll ......................................
               don't support customizations.
             </p>
             <div class="settings-background">
-              <h4>Fonts</h4>
+              <p class="dropdown-seperator settings-seperator">
+                <span>Fonts</span>
+              </p>
               <p></p>
               <label>
                 <input type="checkbox" id="bold_text" />
@@ -671,9 +685,10 @@ need ......... to ................ scroll ......................................
               </label>
               <br />
               <br />
-              <p class="line"></p>
 
-              <h4>Custom background</h4>
+              <p class="dropdown-seperator settings-seperator">
+                <span>Custom background</span>
+              </p>
               <p></p>
               <label>
                 <input type="checkbox" id="force_white_color_header" />
