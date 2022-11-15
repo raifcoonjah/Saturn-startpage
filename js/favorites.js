@@ -107,7 +107,7 @@ addImg.onclick = function () {
     img.src = "https://unavatar.io/" + favicon_URL.value;
     img.style.width = "20px";
     img.style.height = "20px";
-    title.value = '<img src="' + img.src + '">';
+    title.value = '<img loading="lazy" src="' + img.src + '">';
     favicon_URL.value = "";
   }
 };
