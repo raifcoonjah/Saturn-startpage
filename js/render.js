@@ -344,7 +344,9 @@ const kShortcuts = (ks) => {
             <p class="settings-item-under-title description">Shortcuts allow you to do things without ever needing to touch your 
             <i class="las la-mouse"></i> mouse again.</p>
             <div class="settings-background">
-              <h4>General</h4>
+              <p class="dropdown-seperator settings-seperator">
+                <span>General</span>
+              </p>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.</p>
               <p> Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.</p>
@@ -354,8 +356,9 @@ const kShortcuts = (ks) => {
               <p> Press <kbd>Shift</kbd> + <kbd>B</kbd> to open soundboard. </p>
               <p> Press on <kbd>Esc</kbd> to close any modal.</p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. (Provided by Firefox) </p>
-              <p class="line"></p>
-              <h4>Apps</h4>
+              <p class="dropdown-seperator settings-seperator">
+                <span>Applications</span>
+              </p>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open <span style="font-weight: 700;">Youtube.</span></p>
