@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Saturn Startpage",
   "short_name": "Saturn-start",
-  "version": "6.1.81",
+  "version": "6.1.81.1",
   "description": "Saturn Startpage is a free & open source new-tab replacement build with speed and user experience in mind.",
   "author": "mraif13",
 
@@ -11,6 +11,10 @@
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
+  },
+
+  "chrome_settings_overrides": {
+    "homepage": "index.html"
   },
 
   "browser_specific_settings": {
