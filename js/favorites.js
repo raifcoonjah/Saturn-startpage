@@ -25,6 +25,7 @@ $(document).ready(function () {
         '<img loading="lazy" src="' +
         "https://unavatar.io/" +
         $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") +
+        "?fallback=https://source.boringavatars.com/pixel/120/1337_user?colors=242424,2D2D2D,4A4E4A,242424,02060A" +
         '"/>' +
         " " +
         $title.val() +
