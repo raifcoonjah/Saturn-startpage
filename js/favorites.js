@@ -22,6 +22,11 @@ $(document).ready(function () {
       '<li class="fav-link"><a href="' +
         $url.val() +
         '">' +
+        '<img loading="lazy" src="' +
+        "https://unavatar.io/" +
+        $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") +
+        '"/>' +
+        " " +
         $title.val() +
         "</a>" +
         '<button class="removebtn" title="Delete favorite..."><i class="las la-trash-alt"></i></button>' +
@@ -37,7 +42,7 @@ $(document).ready(function () {
 
     // Reset form
     $title.val("");
-    $url.val("");
+    $url.val("https://");
   });
 
   // Remove item
@@ -79,35 +84,4 @@ document.getElementById("add").onclick = function () {
       ""
     );
   }, 3000);
-};
-
-const livepreview = document.getElementById("title");
-livepreview.onkeyup = function () {
-  document.getElementById("livepreview").innerHTML = livepreview.value;
-};
-
-//
-// ========
-// + Favorites Icon finder +
-// ========
-//
-
-// Button that adds a <img> tag inside input bar with id title
-const addImg = document.getElementById("addImg");
-addImg.onclick = function () {
-  const title = document.getElementById("title");
-  const favicon_URL = document.getElementById("favicon-url");
-  const img = document.createElement("img");
-  if (favicon_URL.value === "") {
-    favicon_URL.style.border = "2px solid var(--delete-warning-bg)";
-  }
-  // check if input is empty
-  else {
-    // get favicon from URL
-    img.src = "https://unavatar.io/" + favicon_URL.value;
-    img.style.width = "20px";
-    img.style.height = "20px";
-    title.value = '<img loading="lazy" src="' + img.src + '">';
-    favicon_URL.value = "";
-  }
 };
