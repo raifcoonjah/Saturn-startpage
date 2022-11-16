@@ -129,3 +129,14 @@ label span {
   font-size: 14px;
   text-align: center;
 }
+
+.search-results {
+  text-align: center;
+  line-height: 2em;
+  margin: 12px 0 12px;
+  border-bottom: 1px solid var(--settings-button-outline);
+}
+
+.search-results span {
+  background-color: var(--sat-search-shortcuts) !important;
+}

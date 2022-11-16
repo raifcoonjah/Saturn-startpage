@@ -195,7 +195,15 @@ need ......... to ................ scroll ......................................
             </div>
 
             <div id="content">
+              <p
+                style="display: none"
+                id="search-results"
+                class="search-results"
+              >
+                <span id="search-results-text"></span>
+              </p>
               <ul id="fav-link"></ul>
+              <p class="no-favorites" id="no-favorites"></p>
             </div>
           </div>
         </div>
@@ -529,7 +537,7 @@ need ......... to ................ scroll ......................................
               <!-- =+=+= Light/Day theme =+=+=-->
               <p class="theme-title"><i class="las la-sun"></i> Light themes</p>
 
-              <div class="theme-container" id="light">
+              <div class="theme-container light-theme" id="light">
                 <img
                   class="theme-icon"
                   src="/img/themes/light.png"

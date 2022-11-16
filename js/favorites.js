@@ -24,7 +24,7 @@ $(document).ready(function () {
         '">' +
         '<img loading="lazy" src="' +
         "https://unavatar.io/" +
-        $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") +
+        $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") + // Removes https,http from URL.
         "?fallback=https://source.boringavatars.com/pixel/120/1337_user?colors=242424,2D2D2D,4A4E4A,242424,02060A" +
         '"/>' +
         " " +
@@ -53,6 +53,7 @@ $(document).ready(function () {
     localStorage.setItem("vk-links", $ul.html());
   });
 });
+
 // ========
 // + FAVORITES Search [BETA] v2.0-cheesecake +
 // ========
@@ -65,8 +66,18 @@ document.getElementById("searchfavorites").onkeyup = function () {
     var title = item.getElementsByTagName("a")[0].innerHTML.toLowerCase();
     if (title.indexOf(search) > -1) {
       item.style.display = "";
+      document.querySelector("#search-results").style.display = "none";
+      document.querySelector("#searchfavorites").style.border = ""; // return to original state using hack.
     } else {
       item.style.display = "none";
+      // Display name of current theme
+      document.querySelector("#search-results").style.display = "";
+      document.getElementById("search-results-text").innerHTML =
+        '<i class="las la-search"></i> ' +
+        "Possible result for " +
+        '"' +
+        document.getElementById("searchfavorites").value +
+        '"';
     }
   }
 };
