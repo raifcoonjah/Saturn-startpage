@@ -67,14 +67,13 @@ document.getElementById("searchfavorites").onkeyup = function () {
     if (title.indexOf(search) > -1) {
       item.style.display = "";
       document.querySelector("#search-results").style.display = "none";
-      document.querySelector("#searchfavorites").style.border = ""; // return to original state using hack.
     } else {
       item.style.display = "none";
-      // Display name of current theme
+      // Display the following for each search.
       document.querySelector("#search-results").style.display = "";
       document.getElementById("search-results-text").innerHTML =
         '<i class="las la-search"></i> ' +
-        "Search result for " +
+        "Possible results for " +
         '"' +
         document.getElementById("searchfavorites").value +
         '"';
