@@ -74,7 +74,7 @@ document.getElementById("searchfavorites").onkeyup = function () {
       document.querySelector("#search-results").style.display = "";
       document.getElementById("search-results-text").innerHTML =
         '<i class="las la-search"></i> ' +
-        "Possible result for " +
+        "Search result for " +
         '"' +
         document.getElementById("searchfavorites").value +
         '"';
