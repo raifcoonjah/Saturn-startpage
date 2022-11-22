@@ -117,3 +117,26 @@ label span {
   background-color: var(--sat-setting-bg-color);
   padding: 0 10px;
 }
+
+.settings-seperator span {
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: -10px;
+  background-color: var(--sat-setting-bg-effect) !important;
+}
+
+.focus_description {
+  font-size: 14px;
+  text-align: center;
+}
+
+.search-results {
+  text-align: center;
+  line-height: 2em;
+  margin: 12px 0 12px;
+  border-bottom: 1px solid var(--settings-button-outline);
+}
+
+.search-results span {
+  background-color: var(--sat-search-shortcuts) !important;
+}

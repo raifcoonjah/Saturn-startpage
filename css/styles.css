@@ -182,7 +182,7 @@ its supposed to.
 
 .favorites_modal_content {
   width: 35rem;
-  height: 37.7rem;
+  height: 22.5rem;
 }
 
 .show-wallpaper-modal,
@@ -553,11 +553,12 @@ div.theme-container {
 
 .fav_modal input {
   width: 100%;
-  height: 9%;
+  padding: 15px;
   color: var(--sat-ids);
   outline: none;
   border: 2px solid transparent;
   font-size: 0.91em;
+  margin-top: 7px;
 }
 
 /* 
@@ -686,25 +687,20 @@ ul.apps-category li.current {
 */
 /* Improved image support so now they act as icons */
 
-.fav-livepreview img,
-.fav-livepreview svg,
 #fav-link img,
 #fav-link svg {
-  width: 23px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   outline: none;
   vertical-align: middle;
   margin: 0px;
-  border-radius: 0px !important;
 }
 
 /* Improving SVG support */
-.fav-livepreview svg,
 #fav-link svg {
   filter: var(--svg-invert);
 }
 
-.fav-livepreview img,
 #fav-link img {
   background: transparent; /* This should fix some backgrounds having a white background instead of being transparent. */
   padding: 3px;
@@ -712,7 +708,6 @@ ul.apps-category li.current {
 
 /* Iframes will be hidden by default because they don't work on firefox. */
 
-.fav-livepreview iframe,
 #fav-link iframe {
   border: 3px solid var(--delete-warning-bg);
 }
@@ -832,10 +827,8 @@ ul li {
 }
 
 /* Header inside Favorites */
-.fav-title {
-  font-weight: 500;
-  text-align: center;
-  padding: 20px;
+.fav_title {
+  font-weight: 500 !important;
 }
 
 /* Hiding the background color for cancel button */
@@ -949,27 +942,6 @@ appearing when the user hovers on the open in new tab button.
   text-align: center;
   font-weight: 500;
   margin-top: -10px;
-}
-
-/* 
-========
-+ Favorites live preview +
-========
-*/
-.fav-livepreview {
-  border: 3px solid var(--sat-search-shortcuts);
-  color: var(--sat-ids);
-  padding: 20px 10px;
-  border-radius: 15px;
-}
-
-.fav-livepreview svg {
-  width: 23px;
-  height: 22px;
-  outline: none;
-  vertical-align: middle;
-  margin: 0px;
-  border-radius: 0px !important;
 }
 
 .small_text {
@@ -1216,8 +1188,9 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .focus_mode_icons {
-  font-size: 16px;
+  font-size: 17px;
   text-align: center;
+  font-weight: 700;
 }
 
 .focus_status {

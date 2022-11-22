@@ -195,6 +195,13 @@ need ......... to ................ scroll ......................................
             </div>
 
             <div id="content">
+              <p
+                style="display: none"
+                id="search-results"
+                class="search-results"
+              >
+                <span id="search-results-text"></span>
+              </p>
               <ul id="fav-link"></ul>
             </div>
           </div>
@@ -216,7 +223,7 @@ need ......... to ................ scroll ......................................
           </p>
 
           <!-- =+=+= Input ++ Favorite title =+=+=-->
-          <h3 class="fav_title">Name</h3>
+          <label class="fav_title"> Name</label>
           <input
             id="title"
             placeholder="Enter a name"
@@ -225,38 +232,6 @@ need ......... to ................ scroll ......................................
             class="favorite-input"
             type="text"
           />
-          <h3 class="fav_title">Icon finder</h3>
-          <p class="small_text description" style="font-size: 14px">
-            Powered by unavatar.io
-            <a
-              href="https://unavatar.io/"
-              data-tootik="Learn unavatar..."
-              data-tootik-conf="right"
-              ><i class="las la-external-link-alt"></i
-            ></a>
-          </p>
-          <input
-            type="text"
-            style="width: 55%"
-            id="favicon-url"
-            placeholder="Enter a website URL (example: lol.com..)"
-            class="favorite-input"
-          />
-          <button id="addImg" class="save-button">
-            <i class="las la-search"></i> Find icon
-          </button>
-          <a
-            href="https://mraif13.notion.site/How-to-use-the-new-Icons-80dc51dad7604dffb99d9ab9e6997df2"
-            target="_blank"
-          >
-            <button
-              data-tootik="Learn more"
-              data-tootik-conf="right no-arrow"
-              class="save-button"
-            >
-              <i class="las la-question-circle"></i>
-            </button>
-          </a>
           <p
             class="small_text"
             style="
@@ -269,35 +244,8 @@ need ......... to ................ scroll ......................................
             seconds to show up.
           </p>
           <br />
-          <!-- <label class="fav_title">Custom icons</label> -->
-          <!-- <div id="fav_icons"></div> -->
-          <div>
-            <label class="fav_title"> Preview</label>
-            <div
-              class="fav-livepreview"
-              style="display: none"
-              id="livepreview"
-              data-tootik="Start typing to see a preview of your favorite"
-              data-tootik-conf="top no-arrow"
-            ></div>
-          </div>
-          <!-- TODO: MOVE CSS INTO styles.css -->
-          <button
-            id="button-view-preview"
-            class="save-button"
-            style="
-              width: 100%;
-              padding: 10px 5px;
-              margin-top: 10px;
-              border-radius: 13px;
-            "
-          >
-            <i class="las la-eye"></i> View preview
-          </button>
-          <br />
-          <br />
           <!-- =+=+= Input ++ Favorite URL =+=+= -->
-          <label class="fav_title"> URL</label>
+          <label class="fav_title">URL</label>
           <input
             id="url"
             placeholder="Enter or paste a URL"
@@ -401,6 +349,10 @@ need ......... to ................ scroll ......................................
                   <img src="/icons/focus/study.svg" />
                   Focus for studying
                 </p>
+                <p class="focus_description">
+                  When you're immersed in your studies, <br />
+                  stay focused by hiding distracting apps.
+                </p>
 
                 <div class="focus_ui study">
                   <label>
@@ -418,6 +370,11 @@ need ......... to ................ scroll ......................................
                   Focus for programming
                 </p>
 
+                <p class="focus_description">
+                  When you're doing a programming session, <br />
+                  get things done by hiding distracting apps.
+                </p>
+
                 <div class="focus_ui programming">
                   <label>
                     <input class="programming_focus" type="checkbox" /><span
@@ -432,6 +389,10 @@ need ......... to ................ scroll ......................................
                   <img src="/icons/focus/relax.svg" />
                   Focus for Relaxation
                 </p>
+                <p class="focus_description">
+                  When you're in a relaxation session, <br />
+                  stay present by hiding distracting apps.
+                </p>
                 <div class="focus_ui relaxation">
                   <label>
                     <input class="relaxation_focus" type="checkbox" /><span
@@ -440,10 +401,9 @@ need ......... to ................ scroll ......................................
                   </label>
                 </div>
                 <br />
-                <p class="line"></p>
-                <h3 style="padding-bottom: 10px">
-                  <i class="las la-cloud-moon"></i> What's Saturn Focus?
-                </h3>
+                <p class="dropdown-seperator settings-seperator">
+                  <span>What's Saturn focus?</span>
+                </p>
                 <p class="description">
                   Saturn focus lets you stay in the moment when you need to
                   concentrate. Using a set of pre-defined configurations, some
@@ -576,7 +536,7 @@ need ......... to ................ scroll ......................................
               <!-- =+=+= Light/Day theme =+=+=-->
               <p class="theme-title"><i class="las la-sun"></i> Light themes</p>
 
-              <div class="theme-container" id="light">
+              <div class="theme-container light-theme" id="light">
                 <img
                   class="theme-icon"
                   src="/img/themes/light.png"
@@ -717,7 +677,9 @@ need ......... to ................ scroll ......................................
               don't support customizations.
             </p>
             <div class="settings-background">
-              <h4>Fonts</h4>
+              <p class="dropdown-seperator settings-seperator">
+                <span>Fonts</span>
+              </p>
               <p></p>
               <label>
                 <input type="checkbox" id="bold_text" />
@@ -730,9 +692,10 @@ need ......... to ................ scroll ......................................
               </label>
               <br />
               <br />
-              <p class="line"></p>
 
-              <h4>Custom background</h4>
+              <p class="dropdown-seperator settings-seperator">
+                <span>Custom background</span>
+              </p>
               <p></p>
               <label>
                 <input type="checkbox" id="force_white_color_header" />
