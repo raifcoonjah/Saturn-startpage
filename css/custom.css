@@ -26,12 +26,21 @@ label span {
   display: none;
 }
 
+/* 
+========
++ Dropdown MENU +
++ STABLE 0.8S +
+========
+*/
+
+/* Button used to open dropdown menu */
 .dropbtn {
   outline: none;
   padding: 11px 13px;
   border-radius: var(--sat-border-radius);
   outline: 4px solid transparent; /* This should be remove for a much more optimized version */
   font-weight: 500;
+  background-color: var(--sat-search-shortcuts);
 }
 
 .dropdown {
@@ -124,11 +133,6 @@ label span {
   font-size: 16px;
   margin-left: -10px;
   background-color: var(--sat-setting-bg-effect) !important;
-}
-
-.focus_description {
-  font-size: 14px;
-  text-align: center;
 }
 
 .search-results {
