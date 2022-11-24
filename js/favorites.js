@@ -72,7 +72,6 @@ document.getElementById("searchfavorites").onkeyup = function () {
       // Display the following for each search.
       document.querySelector("#search-results").style.display = "";
       document.getElementById("search-results-text").innerHTML =
-        '<i class="las la-search"></i> ' +
         "Possible results for " +
         '"' +
         document.getElementById("searchfavorites").value +
