@@ -182,7 +182,7 @@ its supposed to.
 
 .favorites_modal_content {
   width: 35rem;
-  height: 22.5rem;
+  height: 23rem;
 }
 
 .show-wallpaper-modal,
@@ -891,15 +891,13 @@ ul.fav_ptgi_category li img {
   bottom: 0;
   text-align: center;
   padding: 5px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   color: (--sat-ids);
 }
 
 #saveMsgBar.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
   bottom: 0 !important;
   /* Hack to make Snackbar stay at the 
   bottom of the page */
