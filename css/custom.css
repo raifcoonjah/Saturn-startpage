@@ -44,7 +44,7 @@ label span {
   position: absolute;
   right: 0;
   background-color: var(--sat-setting-bg-color);
-  min-width: 215px;
+  min-width: 210px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-size: 15px;
@@ -65,6 +65,7 @@ label span {
   margin: 3.5px;
 }
 
+/* Give report bug a red accent */
 .dropdown_redaccent:hover {
   background-color: #d752521e !important;
   color: var(--delete-warning-bg) !important;
@@ -96,7 +97,7 @@ label span {
 
 .dropdown:hover .dropdown-content {
   display: block;
-  animation: slide-up-fade-in ease 190ms;
+  animation: slide-up-fade-in ease 200ms;
 }
 
 .dropdown:hover .dropbtn {
