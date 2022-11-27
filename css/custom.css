@@ -145,3 +145,8 @@ label span {
 .search-results span {
   background-color: var(--sat-search-shortcuts) !important;
 }
+
+.search-results i {
+  font-size: 1.5em;
+  color: var(--sat-accent-color1);
+}
