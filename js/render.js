@@ -199,137 +199,61 @@ const settingAbout = (z) => {
             href="#"
             >Saturn v6.2.0</i></a>
           </p>
-        <p style="text-align:center;" class="description small_text">
-            Home screen changes, bug fixes & stability improvement
-        </p>
-
-<ul>
-<h3>Bug fixes & Small improvements</h3>
-<li> 
-- Breaking! Removed normalized css from Saturn's codebase.
-</li>
-<li> 
-- Fix settings scrollbar bug. 
-</li>
-<li>
-- The browser will now use dark UI components when using dark/darker themes.
-</li>
-<h3>User Interface Improvements</h3>
-<li>
-- Add "press effect" to more elements.
-</li>
-<li>
-- Tweak "ON" text bold effect.
-</li>
-<br/>
-</ul>
-
-<p class="line"></p>
-<details>
-<summary>Read previous release notes</summary>
-
-<p style="text-align:center;"> 
-<a class="version-text green_background" href="#">Saturn v6.1</i></a>
-</p>
 <p style="text-align:center;" class="description small_text">
-New goodies for you to enjoy! 🎁
+Significant changes, bug fixes & awesomeness 🎁
 </p>
-<ul>
-<h3>🌙 Saturn Focus</h3>
-<li>
-<p>Apple did it first they said? Well idk if that's true but we don't care...</p>
-- Focus modes allow you to concentrate by hiding certain components from the
-home screen. 
-<p> 
-- Test it our yourself, head to: <code>Settings > Focus</code> Select any of 
-the three focus modes and start being productive.
-</p>
-</li>
-<h3>🧑‍🎨 About section redesigned</h3>
-<li>
-<p>You seriously thought we redesigned an about page? Well yeah we did or did we...!?</p>
 
-- The about page has been completely redesign from the ground up with a brand look and feel, yes this also
-includes the What's new section!
+
+<ul>
+
+<h3>✈️  Wait, where did the settings button go? </h3>
+<li>
+- All buttons have been moved inside a brand new Dropdown menu that appears on hover! This change now makes it possible 
+to add more “Quick actions” in the future while keeping the interface clutter free.
 </li>
-<h3>⚙️ Settings clean up</h3>
+<h3>🧰  Favorites upgrades! </h3>
 <li>
-- Added a new Appearance menu. 
+- Favorites will now automatically read the URL you entered and search its appropriate icon. This change sadly means, 
+no custom icons are now natively supported. <br/>
+- All favorites icons now support lazy loading by default, applies only to new favorites. <br/>
+- Favorites search will now show possible results from 
+the keyword you entered, this will vary depending on your search specifications. (Beta) 
 </li>
+<h3>🐦 Your home screen? GONE just like Twitter. </h3>
 <li>
-- Improved consistency between different sections of settings. 
+- Saturn will now open instead of Firefox Home or others. <br/>
+- PS: If you get a popup saying that your home screen was change, press on the "Keep changes" button!
 </li>
+<h3>🐞🔫  Annoying bugs, well we fix em'</h3>
 <li>
-- Added "Dynamic something" in simple terms its notifications coming back to Saturn after being removed a while back. For now its a very limited feature but I plan to expand it even more in future updates
+
+With this release a ton of effort was put towards making Saturn much more stable, the most notable bug fixes are:
+<br/>
+- Fixed settings scrollbar going outside of the modal. <br/>
+- Apply color-scheme to browser when using dark/darker themes to fix several browser/OS related issues.<br/>
+- Fixed tons of UI inconsistency issues.<br/>
+- Fix Favorites buggy hover effect.<br/>
+- Fix multiple issues with favorites.<br/>
+- Fix several favorites search bugs. <br/>
+- Fix buggy "ON" text effect. (focus) <br/>
+- Fix buggy notifications animation, a redesign is coming in the next update. <br/>
 </li>
-<h3>🎃 New theme, who dis?</h3>
+
+<h3>And MORE..</h3>
 <li>
-- And before you ask, yes this update contains 2 new themes. A brand new "🎃 Spicy Halloween" and "👻 Ghostly green". 
+- All input now include a very noticeable outline making them easier to see. <br/>
+- Settings now includes a new section separator. <br/>
+- All buttons inside modals have been aligned to the right to follow general UI guidelines rules. <br/>
+- The default Dark/Light theme have been renamed to "Cancri". <br/>
+- Focus UI improvements. <br/>
+- Removed Normalized css from codebase. <br/>
+- More element should now support the "Press" effect. <br/>
+- Updated all small headers with new design. <br/>
+- Removed Favorites preview.
 </li>
-<h3>Bug fixes</h3>
-<li>
-- Fix ugly padding around code tag. 
-</li>
-<li>
-- Fix a bug that caused some UI elements for smaller screen sizes. 
-</li>
-<li>
-- Fix code text not showing properly when using a light theme. 
-</li>
-<li>
-- Fix navigation color bug. 
-</li>
-<li>
-- Fix bottom of about page. 
-</li>
-<li>
-- Improve consistency between different themes.
-</li>
-<li>
-- Fix various theme UI bugs. 
-</li>
-<li>
-<li>
-- Other minor bug fixes.
-</li>
-<h3>😄 And tons of MORE CHANGES!</h3>
-<li>
-- Improve consistency between different sections of Saturn, this includes icons, text and other stuff. (WIP)
-</li>
-<li>
-- Added a option to use Sans serif as default font. 
-</li>
-<li>
-- Saturn notifications have been tweaked, they should now work properly and look much nicer.
-</li>
-<li>
-- If no custom background is set, a text will now be showed inside of Background URL.
-</li>
-<li>
-- Remove the requirements for https when settings a custom background. 
-</li>
-<li>
-- Massive clean up of the themes.css and added a demo for anyone wanting to add a custom theme.
-</li>
-<li>
-- New opening/closing modal animation. 
-</li>
-<li>
-- This release contains tons of UI inconsistency fixes, and expect more of this in future updates. 
-</li>
-<li>
-- Increase deletion timer from 3 seconds to 5 seconds. 
-</li>
-<li>
-- Added a new "loading" icon for certain actions. 
-</li>
-<li>
-- Light theme got a slight color tweak. 
-</lI>
 
 </ul>
 
-</details>
 </div>
 
 
