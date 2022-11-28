@@ -883,21 +883,26 @@ ul.fav_ptgi_category li img {
 + Snackbar +
 ========
 */
+
 #saveMsgBar {
-  background-color: var(--lighter-color);
+  background-color: rgb(232, 232, 232);
   visibility: hidden;
-  width: 100%;
   position: fixed;
   bottom: 0;
-  text-align: center;
-  padding: 5px;
-  font-size: 17px;
+  right: 0;
+  text-align: left;
+  margin: 20px;
+  padding: 10px;
+  font-size: 14.5px;
+  border-radius: 15px;
   font-weight: 500;
-  color: (--sat-ids);
+  color: #000;
 }
 
 #saveMsgBar.show {
   visibility: visible;
+  -webkit-animation: slide-up-fade-in 0.5s, fadeout 0.5s 2.5s;
+  animation: slide-up-fade-in 0.5s, fadeout 0.5s 2.5s;
   bottom: 0 !important;
   /* Hack to make Snackbar stay at the 
   bottom of the page */
