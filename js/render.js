@@ -224,6 +224,12 @@ the keyword you entered, this will vary depending on your search specifications.
 - Saturn will now open instead of Firefox Home or others. <br/>
 - PS: If you get a popup saying that your home screen was change, press on the "Keep changes" button!
 </li>
+
+<h3>🔔  Notifications, redesigned for the better (BETA)</h3>
+<li>
+- Snackbar/notifications got a complete redesign, it should now be much more stable and look korgeous. 
+</li>
+
 <h3>🐞🔫  Annoying bugs, well we fix em'</h3>
 <li>
 
