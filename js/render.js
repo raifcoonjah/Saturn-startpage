@@ -243,9 +243,7 @@ With this release a ton of effort was put towards making Saturn much more stable
 - Fix several favorites search bugs. <br/>
 - Fix buggy "ON" text effect. (focus) <br/>
 - Fix buggy notifications animation, a redesign is coming in the next update. <br/>
-- If you're on a small screen or mobile phone, apps category will now switch to a icon-only mode to save screen space. <br/>
-- Fonts are now loaded together with all themes at once. <br/>
-- Moved all css, fonts, icons, images, soundboard inside a single assets folder for a cleaner file structure. 
+- Fix a strange bug that caused the font inside of set wallpaper input to be very small. <br/>
 </li>
 
 <h3>And MORE..</h3>
@@ -258,7 +256,12 @@ With this release a ton of effort was put towards making Saturn much more stable
 - Removed Normalized css from codebase. <br/>
 - More element should now support the "Press" effect. <br/>
 - Updated all small headers with new design. <br/>
-- Removed Favorites preview.
+- Removed Favorites preview. <br/>
+- If you're on a small screen or mobile phone, apps category will now switch to a icon-only mode to save screen space. <br/>
+- Suggested website buttons now use a new design when you're on a small screen or mobile phone. <br/>
+- Fonts are now loaded together with all themes at once. <br/>
+- Moved all css, fonts, icons, images, soundboard inside a single assets folder for a cleaner file structure. <br/>
+- Tweak suggested website buttons design. 
 </li>
 
 </ul>
