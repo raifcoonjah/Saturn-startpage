@@ -468,7 +468,8 @@ document.querySelector("#save-image").addEventListener("click", function () {
   } else {
     document.querySelector("#image_url").style.border = "2px solid #73d673";
     document.querySelector("#save-image").innerHTML =
-      "<img class='loading-svg' src='/assets/img/loading.svg'>" + " Applying...";
+      "<img class='loading-svg' src='/assets/img/loading.svg'>" +
+      " Applying...";
     setTimeout(function () {
       location.reload();
     }, 5000);
@@ -523,7 +524,7 @@ document.getElementById("reset_button").addEventListener("click", reset_data);
 function reset_data() {
   if (confirm("⚠ Beep boop!? Are you sure you want to reset all your data?")) {
     document.getElementById("reset_button").innerHTML =
-      "<img style='padding-bottom:10px;' class='loading-svg' src='/img/loading-red.svg'> <span>Resetting...</span><span>Please wait!</span>";
+      "<img style='padding-bottom:10px;' class='loading-svg' src='/assets/img/loading-red.svg'> <span>Resetting...</span><span>Please wait!</span>";
     localStorage.clear();
     setTimeout(function () {
       location.reload();
