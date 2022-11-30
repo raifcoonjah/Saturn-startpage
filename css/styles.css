@@ -875,7 +875,8 @@ ul.fav_ptgi_category li img {
 .fav_ptgi_btn:hover {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
-  border: 1px solid var(--sat-accent-color1);
+  background-color: var(--bg-accent-color-lr);
+  border: 1px solid var(--bg-accent-color-lr-hover);
 }
 
 /* 
