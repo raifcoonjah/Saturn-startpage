@@ -99,7 +99,6 @@ label span {
   top: 0.2em;
 }
 
-
 .dropdown-content a:hover {
   background-color: var(--bg-accent-color-lr);
   border: 1px solid var(--bg-accent-color-lr-hover);
@@ -134,6 +133,10 @@ label span {
   font-size: 16px;
   margin-left: -10px;
   background-color: var(--sat-setting-bg-effect) !important;
+}
+
+.soundboard-seperator span {
+  background-color: var(--sat-setting-bg-color) !important;
 }
 
 .search-results {
