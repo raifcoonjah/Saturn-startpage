@@ -38,7 +38,6 @@ the end of the file :D +
   /* Tooltip background */
   --sat-tooltip-bg: #c0c0c0;
   /* Default Font */
-  --default-font: "Inter", sans-serif;
   --sat-border-radius: 15px;
 
   /* Light theme: Accent color */
@@ -99,7 +98,6 @@ the end of the file :D +
   --sat-input-hover: #2b323d;
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #181b22;
-  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
   --sat-accent-color1: hsl(208, 67%, 56%);
   --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.63);
@@ -148,7 +146,6 @@ the end of the file :D +
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222222;
-  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ff9f6d 0%, #e07b44 100%);
   --sat-accent-color1: #ff9f6d;
   --sat-accent-color-lighter: #f4b593aa;
@@ -196,7 +193,6 @@ the end of the file :D +
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222;
-  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #e6dada, #274046);
   --sat-accent-color1: #99998f;
   --sat-accent-color-lighter: #b8b8aa;
@@ -244,7 +240,6 @@ the end of the file :D +
   --sat-input-hover: #3e4349;
   --sat-search-bar-focus: #3e4349;
   --sat-tooltip-bg: #3e4349;
-  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #4facfe 0%, #1783e2 100%);
   --sat-accent-color1: hsl(208, 67%, 56%);
   --sat-accent-color-lighter: hsla(208, 67%, 56%, 0.658);
@@ -293,7 +288,6 @@ the end of the file :D +
   --sat-input-hover: #606581;
   --sat-search-bar-focus: #44485c;
   --sat-tooltip-bg: #3e4349;
-  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #ff79c6 0%, #bd93f9 100%);
   --sat-accent-color1: hsl(265 89% 78%);
   --sat-accent-color-lighter: rgba(191, 149, 249, 0.548);
@@ -338,7 +332,6 @@ the end of the file :D +
   --sat-setting-bg-effect: #3b4252;
   --sat-input-hover: #434c5e;
   --sat-search-bar-focus: #515b71;
-  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #88c0d0 0%, #8fbcbb 100%);
   --sat-accent-color1: #88c0d0;
   --sat-accent-color-lighter: #88c0d09f;
@@ -381,7 +374,6 @@ the end of the file :D +
   --sat-setting-bg-color: #11141b;
   --sat-setting-bg-effect: #272b33;
   --sat-input-hover: #3a404d;
-  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #409eff 0%, #5baaf8 100%);
   --sat-accent-color1: #409eff;
   --sat-accent-color-lighter: #40a0ffb9;
@@ -424,7 +416,6 @@ the end of the file :D +
   --sat-setting-bg-color: #211f2a;
   --sat-setting-bg-effect: #2f2c3b;
 
-  --default-font: "Inter", sans-serif;
   --gudmrning-txt: linear-gradient(to right, #966fd6 0%, #5d2ea9 100%);
 
   --sat-accent-color1: #966fd6;
@@ -468,7 +459,6 @@ the end of the file :D +
   --sat-links: #1a1a1a;
   --sat-setting-bg-color: #ffffff;
   --sat-setting-bg-effect: #e7ecf0;
-  --default-font: "Inter", sans-serif;
   --sat-border-radius: 15px;
   --gudmrning-txt: linear-gradient(to right, #0349b4 0%, #6fbeec 100%);
 
@@ -519,7 +509,6 @@ the end of the file :D +
   --sat-input-hover: #271324;
   --sat-search-bar-focus: #271324;
   --sat-tooltip-bg: #271324;
-  --default-font: "Inter", sans-serif;
   --sat-accent-color1: #f7921e;
   --sat-accent-color-lighter: #f7921e4f;
   --bg-accent-color-lr: #f7921e1e;
@@ -566,7 +555,6 @@ the end of the file :D +
   --sat-input-hover: #051d21;
   --sat-search-bar-focus: #051d21;
   --sat-tooltip-bg: #051d21;
-  --default-font: "Inter", sans-serif;
   --sat-accent-color1: #23c6b7;
   --sat-accent-color-lighter: #23c6b64f;
   --bg-accent-color-lr: #0f454f;
@@ -613,6 +601,28 @@ themes are using a dark color scheme =
 
 /* 
 =+=+=+=+
+= Makes all theme used the default font =
+=+=+=+=+
+*/
+
+.light,
+.lighterdarktheme,
+.lightplusplus,
+.amazinglypurple,
+.linkin-park,
+.dark,
+.space,
+.dracula,
+.nord,
+.highcontrast,
+.ghostlygreen,
+.lighterdarktheme,
+.halloween {
+    --default-font: "Inter", sans-serif;
+}
+
+/* 
+=+=+=+=+
 = DEMO Theme = 
 = Category: None =
 = Use this as an example if you're planning 
@@ -655,8 +665,7 @@ to add your own themes =
 /* --sat-tooltip-bg: #c0c0c0; */
 
 /* -> Default Font */
-/* --default-font: "Inter", sans-serif;
-  --sat-border-radius: 15px; */
+/*  --sat-border-radius: 15px; */
 
 /* -> Light theme: Accent color */
 /* --sat-accent-color1: rgb(61, 174, 233);

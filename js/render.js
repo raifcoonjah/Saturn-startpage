@@ -149,7 +149,7 @@ const settingAbout = (z) => {
               padding-top:30px;
               margin-right: auto;
               display: block;"
-                  src="/img/dynamic-icon-big.png"
+                  src="/assets/img/dynamic-icon-big.png"
                   title="Saturn Logo"
                   alt="Saturn-logo.png"
                   /> 
@@ -193,7 +193,7 @@ const settingAbout = (z) => {
           <p class="settings-item-title">What's new</p>
           <p class="settings-item-under-title description">Learn what's new in this release.</p>
           <div class="settings-background"> 
-          <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/img/version.png"/>
+          <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png"/>
           <p style="text-align:center;"> 
             <a class="version-text green_background"
             href="#"
@@ -243,6 +243,9 @@ With this release a ton of effort was put towards making Saturn much more stable
 - Fix several favorites search bugs. <br/>
 - Fix buggy "ON" text effect. (focus) <br/>
 - Fix buggy notifications animation, a redesign is coming in the next update. <br/>
+- If you're on a small screen or mobile phone, apps category will now switch to a icon-only mode to save screen space. <br/>
+- Fonts are now loaded together with all themes at once. <br/>
+- Moved all css, fonts, icons, images, soundboard inside a single assets folder for a cleaner file structure. 
 </li>
 
 <h3>And MORE..</h3>

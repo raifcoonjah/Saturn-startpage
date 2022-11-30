@@ -20,7 +20,7 @@ amount of time saturn takes to load +
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  src: local(""), url("../fonts/inter-v7-latin-300.woff2") format("woff2"),
+  src: local(""), url("../assets/fonts/inter-v7-latin-300.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/inter-v7-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -30,7 +30,7 @@ amount of time saturn takes to load +
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/inter-v7-latin-regular.woff2") format("woff2"),
+  src: local(""), url("../assets/fonts/inter-v7-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/inter-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -40,7 +40,7 @@ amount of time saturn takes to load +
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  src: local(""), url("../fonts/inter-v7-latin-500.woff2") format("woff2"),
+  src: local(""), url("../assets/fonts/inter-v7-latin-500.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/inter-v7-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -50,7 +50,7 @@ amount of time saturn takes to load +
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: local(""), url("../fonts/inter-v7-latin-600.woff2") format("woff2"),
+  src: local(""), url("../assets/fonts/inter-v7-latin-600.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/inter-v7-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -60,7 +60,7 @@ amount of time saturn takes to load +
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/inter-v7-latin-700.woff2") format("woff2"),
+  src: local(""), url("../assets/fonts/inter-v7-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/inter-v7-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -70,7 +70,7 @@ amount of time saturn takes to load +
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
-  src: local(""), url("../fonts/inter-v7-latin-800.woff2") format("woff2"),
+  src: local(""), url("../assets/fonts/inter-v7-latin-800.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/inter-v7-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -80,10 +80,11 @@ amount of time saturn takes to load +
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("../fonts/inter-v7-latin-900.woff2") format("woff2"),
+  src: local(""), url("../assets/fonts/inter-v7-latin-900.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/inter-v7-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 
 /* 
 ========
@@ -516,6 +517,7 @@ img {
 .search-bar:hover {
   background: var(--sat-input-hover);
 }
+
 .search-bar:focus {
   background: var(--sat-search-bar-focus);
 }
@@ -657,7 +659,7 @@ use the correct border radius == */
 ========
 */
 
-@media (max-width: 68.75em) {
+@media (max-width: 60.75em) {
   .wallpaper_modal_content,
   .favorites_modal_content,
   .sounds-modal-content {
@@ -714,6 +716,16 @@ use the correct border radius == */
     font-weight: 600;
     text-decoration: none !important;
     font-size: 13px !important;
+  }
+    .apps-category li span {
+    display: none;
+    font-size: 1.5em !important; 
+    
+  }
+    .apps-category li i {
+    font-size: 1.20em !important; 
+         animation: fadein ease 190ms;
+
   }
 }
 

@@ -99,6 +99,7 @@ label span {
   top: 0.2em;
 }
 
+
 .dropdown-content a:hover {
   background-color: var(--bg-accent-color-lr);
   border: 1px solid var(--bg-accent-color-lr-hover);

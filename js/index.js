@@ -468,7 +468,7 @@ document.querySelector("#save-image").addEventListener("click", function () {
   } else {
     document.querySelector("#image_url").style.border = "2px solid #73d673";
     document.querySelector("#save-image").innerHTML =
-      "<img class='loading-svg' src='/img/loading.svg'>" + " Applying...";
+      "<img class='loading-svg' src='/assets/img/loading.svg'>" + " Applying...";
     setTimeout(function () {
       location.reload();
     }, 5000);
