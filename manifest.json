@@ -7,7 +7,7 @@
   "author": "mraif13",
 
   "icons": {
-    "64": "img/icon64.png"
+    "64": "/assets/img/icon64.png"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
