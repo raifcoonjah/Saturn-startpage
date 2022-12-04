@@ -244,7 +244,7 @@ With this release a ton of effort was put towards making Saturn much more stable
 - Fix buggy "ON" text effect. (focus) <br/>
 - Fix buggy notifications animation, a redesign is coming in the next update. <br/>
 - Fix a strange bug that caused the font inside of set wallpaper input to be very small. <br/>
-- Various other bug fixes & Stability improvements. 
+- Various other bug fixes & Stability improvements.
 </li>
 
 <h3>And MORE..</h3>
