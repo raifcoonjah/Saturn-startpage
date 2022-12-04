@@ -1,18 +1,18 @@
 ![Saturn-startpage](https://i.imgur.com/JkdwZMW.png)
 
 ## What's Saturn Startpage?
-Saturn Startpage is a fully open source, community build new-tab replacement. **Build with speed and user experience in mind**. Saturn was original build for myself but later on I decided to open source it.
+Saturn Startpage is a fully open source, community build new-tab replacement. **Build with speed and user experience in mind**. Saturn was original build for myself but later on I decided to open source it. This is project is more of a "Learning" process for me, so if you see any messy code or unoptimized code feel free to make a PR, as I said I originally made this for myself. 
 
 ## Features:
 
 ### Simple by design, but powerful when needed. 
 - Everything is straight forward and gets you where you need to go quickly.
 
-### Fast & lightweight
+### Fast & lightweight & SPEEEEEEEEEEEEEEEEEEDDDDDD.......
 - Saturn was made with speed in mind, no useless animations or bulky code. Everything loads in a matter of seconds.
 
 ### Data? What's that
-- Saturn Startpage **DOES NOT** collect any data about you.
+- Saturn Startpage **DOES NOT** & **never will** collect any data about you.
 
 ## Installation on Firefox
 - Installation is super easy on **firefox**, just head over to the [release page](https://github.com/mraif13/Saturn-startpage/releases)
@@ -25,7 +25,7 @@ Saturn Startpage is a fully open source, community build new-tab replacement. **
 - Please head over to: [Chromium installation](https://github.com/mraif13/Saturn-startpage/blob/Chromium/info.md)
 
 ### Tech used
-- HTML, CSS & Javascript. [Plans to move to react are on **hold** atm]
+- HTML, CSS & Javascript. (Plans to move to react are on **hold** atm)
 ------
 ###### Demo Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/90679166-d81f-4831-b8f8-82ada4af6e1f/deploy-status)](https://app.netlify.com/sites/demo-saturnstartpage/deploys)
