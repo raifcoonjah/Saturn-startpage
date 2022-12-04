@@ -210,10 +210,6 @@ Significant changes, bug fixes & awesomeness 🎁
 <li>
 - All buttons have been moved inside a brand new Dropdown menu that appears on hover! This change now makes it possible 
 to add more “Quick actions” in the future while keeping the interface clutter free.
-- Added support for notifications dot, this will let users of certain notifications type: <br/>
-<span class="notification-dot"></span> > Recent update major update.  <br/>
-<span class="notification-dot" style="background-color:var(--delete-warning-bg);"></span> > Running a developer branch of Saturn or critial error.
-</li>
 <h3>🧰  Favorites upgrades! </h3>
 <li>
 - Favorites will now automatically read the URL you entered and search its appropriate icon. This change sadly means, 
@@ -228,9 +224,21 @@ the keyword you entered, this will vary depending on your search specifications.
 - PS: If you get a popup saying that your home screen was change, press on the "Keep changes" button!
 </li>
 
-<h3>🔔  Notifications, redesigned for the better (BETA)</h3>
+<h3>🔔  Notifications, redesigned & improvements for the better (BETA)</h3>
 <li>
 - Snackbar/notifications got a complete redesign, it should now be much more stable and look korgeous. 
+</li>
+- Added support for notifications dot, this will let users of certain notifications type: <br/>
+<span class="notification-dot"></span> > Recent update major update.  <br/>
+<span class="notification-dot" style="background-color:var(--delete-warning-bg);"></span> > Running a developer branch of Saturn or critial error.
+</li>
+
+<h3>📱  Mobile optimizations </h3>
+<li>
+- If you're on a small screen or mobile phone, apps category will now switch to a icon-only mode to save screen space. <br/>
+</li>
+<li>
+- "Suggested website" buttons now use a new design when you're on a small screen or mobile phone. <br/>
 </li>
 
 <h3>🐞🔫  Annoying bugs, well we fix em'</h3>
@@ -261,8 +269,6 @@ With this release a ton of effort was put towards making Saturn much more stable
 - More element should now support the "Press" effect. <br/>
 - Updated all small headers with new design. <br/>
 - Removed Favorites preview. <br/>
-- If you're on a small screen or mobile phone, apps category will now switch to a icon-only mode to save screen space. <br/>
-- Suggested website buttons now use a new design when you're on a small screen or mobile phone. <br/>
 - Fonts are now loaded together with all themes at once. <br/>
 - Moved all css, fonts, icons, images, soundboard inside a single assets folder for a cleaner file structure. <br/>
 - Tweak suggested website buttons design. 
