@@ -78,7 +78,7 @@ setInterval(() => {
 //
 
 var modal = document.querySelector(".settings_modal");
-var trigger = document.querySelector(".setting-button");
+var trigger = document.querySelector(".dropdown-settings");
 var closeButton = document.querySelector(".close-button");
 function toggleModal() {
   modal.classList.toggle("show-modal");
@@ -99,7 +99,7 @@ window.addEventListener("click", windowOnClick);
 //
 
 var soundsModal = document.querySelector(".sounds_modal");
-var SBtntrigger = document.querySelector(".sounds-button");
+var SBtntrigger = document.querySelector(".dropdown-soundboard");
 var closeSoundsButton = document.querySelector(".close-sounds");
 
 function toggleSounds() {
@@ -364,7 +364,7 @@ document.addEventListener("keyup", function (se_icon) {
 
 document.addEventListener("keyup", function (soundboard) {
   if (soundboard.keyCode == 66 && soundboard.shiftKey) {
-    document.querySelector(".sounds-button").click();
+    document.querySelector(".dropdown-soundboard").click();
   }
 });
 
@@ -468,7 +468,8 @@ document.querySelector("#save-image").addEventListener("click", function () {
   } else {
     document.querySelector("#image_url").style.border = "2px solid #73d673";
     document.querySelector("#save-image").innerHTML =
-      "<img class='loading-svg' src='/img/loading.svg'>" + " Applying...";
+      "<img class='loading-svg' src='/assets/img/loading.svg'>" +
+      " Applying...";
     setTimeout(function () {
       location.reload();
     }, 5000);
@@ -523,7 +524,7 @@ document.getElementById("reset_button").addEventListener("click", reset_data);
 function reset_data() {
   if (confirm("⚠ Beep boop!? Are you sure you want to reset all your data?")) {
     document.getElementById("reset_button").innerHTML =
-      "<img style='padding-bottom:10px;' class='loading-svg' src='/img/loading-red.svg'> <span>Resetting...</span><span>Please wait!</span>";
+      "<img style='padding-bottom:10px;' class='loading-svg' src='/assets/img/loading-red.svg'> <span>Resetting...</span><span>Please wait!</span>";
     localStorage.clear();
     setTimeout(function () {
       location.reload();

@@ -149,7 +149,7 @@ const settingAbout = (z) => {
               padding-top:30px;
               margin-right: auto;
               display: block;"
-                  src="/img/dynamic-icon-big.png"
+                  src="/assets/img/dynamic-icon-big.png"
                   title="Saturn Logo"
                   alt="Saturn-logo.png"
                   /> 
@@ -159,10 +159,9 @@ const settingAbout = (z) => {
             </p>
                <p style="text-align:center;"> 
                <a class="version-text"
-               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.1.2"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.2.0"
                target="_blank" 
-               >v6.1.2</i
-             ></a>
+               >v6.2.0</i></a>
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
@@ -194,144 +193,89 @@ const settingAbout = (z) => {
           <p class="settings-item-title">What's new</p>
           <p class="settings-item-under-title description">Learn what's new in this release.</p>
           <div class="settings-background"> 
-          <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/img/version.png"/>
+          <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png"/>
           <p style="text-align:center;"> 
             <a class="version-text green_background"
             href="#"
-            >Saturn v6.1.2</i></a>
+            >Saturn v6.2.0</i></a>
           </p>
-        <p style="text-align:center;" class="description small_text">
-            Bug fixes
-        </p>
-
-<ul>
-<h3>Bug fixes & Small improvements</h3>
-<li>
-- Fix a weird text color issue with the new notification design.
-</li>
-<li>
-- Attempt to fix focus "ON" black color issue. 
-</li>
-<li>
-- If a focus mode is toggled off, Saturn will now delete it from the localstorage to keep
-things clean.
-</li>
-<li>
-- Fix missing ">", this should fix What's new text. 
-</li>
-<li>
-- Saturn will now change the title depending on which focus you're using. (Beta)
-</li>
-
-<br/>
-</ul>
-
-<p class="line"></p>
-<details>
-<summary>Read previous release notes</summary>
-
-<p style="text-align:center;"> 
-<a class="version-text green_background" href="#">Saturn v6.1</i></a>
-</p>
 <p style="text-align:center;" class="description small_text">
-New goodies for you to enjoy! 🎁
+Significant changes, bug fixes & awesomeness 🎁
 </p>
-<ul>
-<h3>🌙 Saturn Focus</h3>
-<li>
-<p>Apple did it first they said? Well idk if that's true but we don't care...</p>
-- Focus modes allow you to concentrate by hiding certain components from the
-home screen. 
-<p> 
-- Test it our yourself, head to: <code>Settings > Focus</code> Select any of 
-the three focus modes and start being productive.
-</p>
-</li>
-<h3>🧑‍🎨 About section redesigned</h3>
-<li>
-<p>You seriously thought we redesigned an about page? Well yeah we did or did we...!?</p>
 
-- The about page has been completely redesign from the ground up with a brand look and feel, yes this also
-includes the What's new section!
-</li>
-<h3>⚙️ Settings clean up</h3>
+
+<ul>
+
+<h3>✈️  Wait, where did the settings button go? </h3>
 <li>
-- Added a new Appearance menu. 
-</li>
+- All buttons have been moved inside a brand new Dropdown menu that appears on hover! This change now makes it possible 
+to add more “Quick actions” in the future while keeping the interface clutter free.
+<h3>🧰  Favorites upgrades! </h3>
 <li>
-- Improved consistency between different sections of settings. 
+- Favorites will now automatically read the URL you entered and search its appropriate icon. This change sadly means, 
+no custom icons are now natively supported. <br/>
+- All favorites icons now support lazy loading by default, applies only to new favorites. <br/>
+- Favorites search will now show possible results from 
+the keyword you entered, this will vary depending on your search specifications. (Beta) 
 </li>
+<h3>🐦 Your home screen? GONE just like Twitter. </h3>
 <li>
-- Added "Dynamic something" in simple terms its notifications coming back to Saturn after being removed a while back. For now its a very limited feature but I plan to expand it even more in future updates
+- Saturn will now open instead of Firefox Home or others. <br/>
+- PS: If you get a popup saying that your home screen was change, press on the "Keep changes" button!
 </li>
-<h3>🎃 New theme, who dis?</h3>
+
+<h3>🔔  Notifications, redesigned & improvements for the better (BETA)</h3>
 <li>
-- And before you ask, yes this update contains 2 new themes. A brand new "🎃 Spicy Halloween" and "👻 Ghostly green". 
+- Snackbar/notifications got a complete redesign, it should now be much more stable and look korgeous. 
 </li>
-<h3>Bug fixes</h3>
-<li>
-- Fix ugly padding around code tag. 
+- Added support for notifications dot, this will let users of certain notifications type: <br/>
+<span class="notification-dot"></span> > Recent update major update.  <br/>
+<span class="notification-dot" style="background-color:var(--delete-warning-bg);"></span> > Running a developer branch of Saturn or critial error.
 </li>
+
+<h3>📱  Mobile optimizations </h3>
 <li>
-- Fix a bug that caused some UI elements for smaller screen sizes. 
-</li>
-<li>
-- Fix code text not showing properly when using a light theme. 
-</li>
-<li>
-- Fix navigation color bug. 
-</li>
-<li>
-- Fix bottom of about page. 
-</li>
-<li>
-- Improve consistency between different themes.
+- If you're on a small screen or mobile phone, apps category will now switch to a icon-only mode to save screen space. <br/>
 </li>
 <li>
-- Fix various theme UI bugs. 
+- "Suggested website" buttons now use a new design when you're on a small screen or mobile phone. <br/>
 </li>
+
+<h3>🐞🔫  Annoying bugs, well we fix em'</h3>
 <li>
-<li>
-- Other minor bug fixes.
+
+With this release a ton of effort was put towards making Saturn much more stable, the most notable bug fixes are:
+<br/>
+- Fixed settings scrollbar going outside of the modal. <br/>
+- Apply color-scheme to browser when using dark/darker themes to fix several browser/OS related issues.<br/>
+- Fixed tons of UI inconsistency issues.<br/>
+- Fix Favorites buggy hover effect.<br/>
+- Fix multiple issues with favorites.<br/>
+- Fix several favorites search bugs. <br/>
+- Fix buggy "ON" text effect. (focus) <br/>
+- Fix buggy notifications animation, a redesign is coming in the next update. <br/>
+- Fix a strange bug that caused the font inside of set wallpaper input to be very small. <br/>
+- Various other bug fixes & Stability improvements.
 </li>
-<h3>😄 And tons of MORE CHANGES!</h3>
+
+<h3>And MORE..</h3>
 <li>
-- Improve consistency between different sections of Saturn, this includes icons, text and other stuff. (WIP)
+- All input now include a very noticeable outline making them easier to see. <br/>
+- Settings now includes a new section separator. <br/>
+- All buttons inside modals have been aligned to the right to follow general UI guidelines rules. <br/>
+- The default Dark/Light theme have been renamed to "Cancri". <br/>
+- Focus UI improvements. <br/>
+- Removed Normalized css from codebase. <br/>
+- More element should now support the "Press" effect. <br/>
+- Updated all small headers with new design. <br/>
+- Removed Favorites preview. <br/>
+- Fonts are now loaded together with all themes at once. <br/>
+- Moved all css, fonts, icons, images, soundboard inside a single assets folder for a cleaner file structure. <br/>
+- Tweak suggested website buttons design. 
 </li>
-<li>
-- Added a option to use Sans serif as default font. 
-</li>
-<li>
-- Saturn notifications have been tweaked, they should now work properly and look much nicer.
-</li>
-<li>
-- If no custom background is set, a text will now be showed inside of Background URL.
-</li>
-<li>
-- Remove the requirements for https when settings a custom background. 
-</li>
-<li>
-- Massive clean up of the themes.css and added a demo for anyone wanting to add a custom theme.
-</li>
-<li>
-- New opening/closing modal animation. 
-</li>
-<li>
-- This release contains tons of UI inconsistency fixes, and expect more of this in future updates. 
-</li>
-<li>
-- Increase deletion timer from 3 seconds to 5 seconds. 
-</li>
-<li>
-- Added a new "loading" icon for certain actions. 
-</li>
-<li>
-- Light theme got a slight color tweak. 
-</lI>
 
 </ul>
 
-</details>
 </div>
 
 
@@ -345,7 +289,9 @@ const kShortcuts = (ks) => {
             <p class="settings-item-under-title description">Shortcuts allow you to do things without ever needing to touch your 
             <i class="las la-mouse"></i> mouse again.</p>
             <div class="settings-background">
-              <h4>General</h4>
+              <p class="dropdown-seperator settings-seperator">
+                <span>General</span>
+              </p>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.</p>
               <p> Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.</p>
@@ -355,7 +301,9 @@ const kShortcuts = (ks) => {
               <p> Press <kbd>Shift</kbd> + <kbd>B</kbd> to open soundboard. </p>
               <p> Press on <kbd>Esc</kbd> to close any modal.</p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. (Provided by Firefox) </p>
-              <h4>Apps</h4>
+              <p class="dropdown-seperator settings-seperator">
+                <span>Applications</span>
+              </p>
               <p></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span></p>
               <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open <span style="font-weight: 700;">Youtube.</span></p>

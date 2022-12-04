@@ -46,7 +46,7 @@ const search_engines = [
 const cycleSearchEngines = (se) => {
   const curData = search_engines[(se + 1) % search_engines.length];
 
-  document.getElementById("se_icon").src = "icons/" + curData.src;
+  document.getElementById("se_icon").src = "assets/icons/" + curData.src;
   document.getElementById("search").placeholder =
     "Search with " + curData.placeholder + "..";
   document.getElementById("search_eng_form").action = curData.action;

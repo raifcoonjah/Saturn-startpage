@@ -5,23 +5,4 @@
 ========
 */
 
-/* Favorites input title */
-.fav_title {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-.button-container {
-  padding-top: 10px;
-}
-.sat-header {
-  padding-top: 100px;
-}
 
-label span {
-  font-size: 16px;
-}
-
-.connection_status {
-  display: none;
-}

@@ -22,13 +22,19 @@ $(document).ready(function () {
       '<li class="fav-link"><a href="' +
         $url.val() +
         '">' +
+        '<img loading="lazy" src="' +
+        "https://unavatar.io/" +
+        $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") + // Removes https, http from URL.
+        "?fallback=https://source.boringavatars.com/pixel/120/1337_user?colors=242424,2D2D2D,4A4E4A,242424,02060A" +
+        '"/>' +
+        " " +
         $title.val() +
         "</a>" +
-        '<button class="removebtn" title="Delete favorite.."><i class="las la-trash-alt"></i></button>' +
+        '<button class="removebtn" title="Delete favorite..."><i class="las la-trash-alt"></i></button>' +
         '<a class="hide_fav_bar" target="_blank" href="' +
         $url.val() +
         '">' +
-        '<button class="newtabbtn" data-tootik="Open in a new tab" data-tootik-conf="left"><i class="las la-external-link-alt"></i></button>' +
+        '<button class="newtabbtn" title="Open in new tab..."><i class="las la-external-link-alt"></i></button>' +
         "</a></li>"
     );
 
@@ -37,7 +43,7 @@ $(document).ready(function () {
 
     // Reset form
     $title.val("");
-    $url.val("");
+    $url.val("https://");
   });
 
   // Remove item
@@ -47,6 +53,7 @@ $(document).ready(function () {
     localStorage.setItem("vk-links", $ul.html());
   });
 });
+
 // ========
 // + FAVORITES Search [BETA] v2.0-cheesecake +
 // ========
@@ -59,8 +66,18 @@ document.getElementById("searchfavorites").onkeyup = function () {
     var title = item.getElementsByTagName("a")[0].innerHTML.toLowerCase();
     if (title.indexOf(search) > -1) {
       item.style.display = "";
+      document.querySelector("#search-results").style.display = "none";
     } else {
       item.style.display = "none";
+      // Display the following for each search.
+      document.querySelector("#search-results").style.display = "";
+      document.getElementById("search-results-text").innerHTML =
+        '<i class="las la-search"></i>' +
+        "<br/>" +
+        "Results for " +
+        '"' +
+        document.getElementById("searchfavorites").value +
+        '"';
     }
   }
 };
@@ -74,37 +91,9 @@ document.getElementById("add").onclick = function () {
   var save_notification = document.getElementById("saveMsgBar");
   save_notification.className = "show";
   setTimeout(function () {
-    save_notification.className = save_notification.className.replace("show", "");
+    save_notification.className = save_notification.className.replace(
+      "show",
+      ""
+    );
   }, 3000);
-};
-
-const livepreview = document.getElementById("title");
-livepreview.onkeyup = function () {
-  document.getElementById("livepreview").innerHTML = livepreview.value;
-};
-
-//
-// ========
-// + Favorites Icon finder +
-// ========
-//
-
-// Button that adds a <img> tag inside input bar with id title
-const addImg = document.getElementById("addImg");
-addImg.onclick = function () {
-  const title = document.getElementById("title");
-  const favicon_URL = document.getElementById("favicon-url");
-  const img = document.createElement("img");
-  if (favicon_URL.value === "") {
-    favicon_URL.style.border = "2px solid var(--delete-warning-bg)";
-  }
-  // check if input is empty
-  else {
-    // get favicon from URL
-    img.src = "https://unavatar.io/" + favicon_URL.value;
-    img.style.width = "20px";
-    img.style.height = "20px";
-    title.value = '<img src="' + img.src + '">';
-    favicon_URL.value = "";
-  }
 };

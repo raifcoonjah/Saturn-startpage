@@ -118,7 +118,6 @@ its supposed to.
 + The modal itself +
 ========
 */
-
 .wallpaper_modal,
 .fav_modal,
 .settings_modal,
@@ -133,6 +132,7 @@ its supposed to.
   transition: visibility 0s linear 150ms, opacity 150ms 0s, transform 150ms;
   /*=== Effect 1 ===*/
   transform: translateY(10%);
+  z-index: 2;
 }
 
 .wallpaper_modal_content,
@@ -145,10 +145,18 @@ its supposed to.
   left: 50%;
   padding: 10px 15px;
   transform: translate(-50%, -50%);
-  border-radius: 20px;
+
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
   border: 1px solid var(--settings-button-outline);
+}
+
+/* Modal border radius */
+
+.wallpaper_modal_content,
+.favorites_modal_content,
+.sounds-modal-content {
+  border-radius: 20px;
 }
 
 /* Make settings much more optimized for various screen sizes. 
@@ -158,6 +166,8 @@ its supposed to.
   height: calc(100% - 150px);
   max-width: calc(100% - 40px);
   max-height: calc(100% - 40px);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .wallpaper_modal_content {
@@ -171,8 +181,8 @@ its supposed to.
 }
 
 .favorites_modal_content {
-  width: 40rem;
-  height: 36rem;
+  width: 35rem;
+  height: 23rem;
 }
 
 .show-wallpaper-modal,
@@ -543,11 +553,12 @@ div.theme-container {
 
 .fav_modal input {
   width: 100%;
-  height: 9%;
+  padding: 15px;
   color: var(--sat-ids);
   outline: none;
   border: 2px solid transparent;
   font-size: 0.91em;
+  margin-top: 7px;
 }
 
 /* 
@@ -676,25 +687,20 @@ ul.apps-category li.current {
 */
 /* Improved image support so now they act as icons */
 
-.fav-livepreview img,
-.fav-livepreview svg,
 #fav-link img,
 #fav-link svg {
-  width: 23px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   outline: none;
   vertical-align: middle;
   margin: 0px;
-  border-radius: 0px !important;
 }
 
 /* Improving SVG support */
-.fav-livepreview svg,
 #fav-link svg {
   filter: var(--svg-invert);
 }
 
-.fav-livepreview img,
 #fav-link img {
   background: transparent; /* This should fix some backgrounds having a white background instead of being transparent. */
   padding: 3px;
@@ -702,7 +708,6 @@ ul.apps-category li.current {
 
 /* Iframes will be hidden by default because they don't work on firefox. */
 
-.fav-livepreview iframe,
 #fav-link iframe {
   border: 3px solid var(--delete-warning-bg);
 }
@@ -752,10 +757,10 @@ ul li {
 }
 
 .newtabbtn:hover {
+  background-color: var(--bg-accent-color-lr-hover);
   border: 1px solid var(--sat-accent-color1);
-  background-color: var(--sat-accent-color-lighter);
+  color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
-  color: var(--for-white);
 }
 
 #content {
@@ -822,10 +827,8 @@ ul li {
 }
 
 /* Header inside Favorites */
-.fav-title {
-  font-weight: 500;
-  text-align: center;
-  padding: 20px;
+.fav_title {
+  font-weight: 500 !important;
 }
 
 /* Hiding the background color for cancel button */
@@ -872,7 +875,8 @@ ul.fav_ptgi_category li img {
 .fav_ptgi_btn:hover {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-fast);
-  border: 1px solid var(--sat-accent-color1);
+  background-color: var(--bg-accent-color-lr);
+  border: 1px solid var(--bg-accent-color-lr-hover);
 }
 
 /* 
@@ -880,23 +884,25 @@ ul.fav_ptgi_category li img {
 + Snackbar +
 ========
 */
+
 #saveMsgBar {
-  background-color: var(--lighter-color);
+  background-color: rgb(232, 232, 232);
   visibility: hidden;
-  width: 100%;
   position: fixed;
   bottom: 0;
-  text-align: center;
-  padding: 5px;
-  font-size: 16px;
-  font-weight: 500;
-  color: (--sat-ids);
+  right: 0;
+  text-align: left;
+  margin: 20px;
+  padding: 10px;
+  font-size: 14.5px;
+  border-radius: 15px;
+  color: #000;
 }
 
 #saveMsgBar.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  -webkit-animation: slide-up-fade-in 0.5s, fadeout 0.5s 2.5s;
+  animation: slide-up-fade-in 0.5s, fadeout 0.5s 2.5s;
   bottom: 0 !important;
   /* Hack to make Snackbar stay at the 
   bottom of the page */
@@ -941,29 +947,8 @@ appearing when the user hovers on the open in new tab button.
   margin-top: -10px;
 }
 
-/* 
-========
-+ Favorites live preview +
-========
-*/
-.fav-livepreview {
-  border: 3px solid var(--sat-search-shortcuts);
-  color: var(--sat-ids);
-  padding: 20px 10px;
-  border-radius: 15px;
-}
-
-.fav-livepreview svg {
-  width: 23px;
-  height: 22px;
-  outline: none;
-  vertical-align: middle;
-  margin: 0px;
-  border-radius: 0px !important;
-}
-
 .small_text {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -1166,6 +1151,7 @@ appearing when the user hovers on the open in new tab button.
   transition: var(--transition-speed-default);
   animation: fadeIn ease 200ms;
   content: "ON";
+  font-weight: 700 !important;
   font-size: 12px;
   font-family: var(--default-font);
   margin: 2px;
@@ -1205,8 +1191,9 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .focus_mode_icons {
-  font-size: 16px;
+  font-size: 17px;
   text-align: center;
+  font-weight: 700;
 }
 
 .focus_status {
@@ -1285,4 +1272,162 @@ appearing when the user hovers on the open in new tab button.
   margin-top: 2px;
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
+}
+
+/* 
+========
++ Dropdown MENU +
++ STABLE 0.8S +
+========
+*/
+
+/* Button used to open dropdown menu */
+.dropbtn {
+  outline: none;
+  padding: 11px 13px;
+  border-radius: var(--sat-border-radius);
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+  font-weight: 500;
+  background-color: var(--sat-search-shortcuts);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--sat-setting-bg-color);
+  min-width: 210px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 15px;
+  border: 1px solid var(--lighter-color);
+  border-radius: var(--sat-border-radius);
+}
+
+.dropdown-content a {
+  color: var(--sat-ids);
+  border-radius: 10px;
+  padding: 4px 4px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 3.5px;
+}
+
+/* Give report bug a red accent */
+.dropdown_redaccent:hover {
+  background-color: #d752521e !important;
+  color: var(--delete-warning-bg) !important;
+  border: 1px solid #d752523a !important;
+}
+
+.dropdown-content kbd {
+  background-color: var(--lighter-color);
+  font-size: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-content i {
+  font-size: 1.2em;
+  position: relative;
+  top: 0.08em;
+}
+
+.dropdown-content svg {
+  width: 19px;
+  position: relative;
+  top: 0.2em;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--bg-accent-color-lr);
+  border: 1px solid var(--bg-accent-color-lr-hover);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: slide-up-fade-in ease 200ms;
+}
+
+.dropdown:hover .dropbtn {
+  transition: var(--transition-speed-fast);
+  outline: 4px solid var(--settings-button-outline);
+  color: var(--sat-ids);
+}
+
+.dropdown-seperator {
+  width: 100%;
+  text-align: left;
+  line-height: 0.1em;
+  margin: 12px 0 12px;
+  border-bottom: 1px solid var(--settings-button-outline);
+}
+
+.dropdown-seperator span {
+  background-color: var(--sat-setting-bg-color);
+  padding: 0 10px;
+}
+
+.notification-dot {
+  height: 10px;
+  margin-left: 35px;
+  width: 10px;
+  background-color: #39c678;
+  border-radius: 50%;
+  display: inline-block;
+}
+.settings-seperator span {
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: -10px;
+  background-color: var(--sat-setting-bg-effect) !important;
+}
+
+.soundboard-seperator span {
+  background-color: var(--sat-setting-bg-color) !important;
+}
+
+.search-results {
+  text-align: center;
+  line-height: 2em;
+  margin: 12px 0 12px;
+  border-bottom: 1px solid var(--settings-button-outline);
+}
+
+.search-results span {
+  background-color: var(--sat-search-shortcuts) !important;
+}
+
+.search-results i {
+  font-size: 1.5em;
+  color: var(--sat-accent-color1);
+}
+
+/* Favorites input title */
+.fav_title {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.button-container {
+  padding-top: 10px;
+}
+.sat-header {
+  padding-top: 100px;
+}
+
+label span {
+  font-size: 16px;
+}
+
+.connection_status {
+  display: none;
 }
