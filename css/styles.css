@@ -1273,3 +1273,161 @@ appearing when the user hovers on the open in new tab button.
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
 }
+
+/* 
+========
++ Dropdown MENU +
++ STABLE 0.8S +
+========
+*/
+
+/* Button used to open dropdown menu */
+.dropbtn {
+  outline: none;
+  padding: 11px 13px;
+  border-radius: var(--sat-border-radius);
+  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
+  font-weight: 500;
+  background-color: var(--sat-search-shortcuts);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--sat-setting-bg-color);
+  min-width: 210px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 15px;
+  border: 1px solid var(--lighter-color);
+  border-radius: var(--sat-border-radius);
+}
+
+.dropdown-content a {
+  color: var(--sat-ids);
+  border-radius: 10px;
+  padding: 4px 4px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 3.5px;
+}
+
+/* Give report bug a red accent */
+.dropdown_redaccent:hover {
+  background-color: #d752521e !important;
+  color: var(--delete-warning-bg) !important;
+  border: 1px solid #d752523a !important;
+}
+
+.dropdown-content kbd {
+  background-color: var(--lighter-color);
+  font-size: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-content i {
+  font-size: 1.2em;
+  position: relative;
+  top: 0.08em;
+}
+
+.dropdown-content svg {
+  width: 19px;
+  position: relative;
+  top: 0.2em;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--bg-accent-color-lr);
+  border: 1px solid var(--bg-accent-color-lr-hover);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: slide-up-fade-in ease 200ms;
+}
+
+.dropdown:hover .dropbtn {
+  transition: var(--transition-speed-fast);
+  outline: 4px solid var(--settings-button-outline);
+  color: var(--sat-ids);
+}
+
+.dropdown-seperator {
+  width: 100%;
+  text-align: left;
+  line-height: 0.1em;
+  margin: 12px 0 12px;
+  border-bottom: 1px solid var(--settings-button-outline);
+}
+
+.dropdown-seperator span {
+  background-color: var(--sat-setting-bg-color);
+  padding: 0 10px;
+}
+
+.notification-dot {
+  height: 10px;
+  margin-left: 35px;
+  width: 10px;
+  background-color: #39c678;
+  border-radius: 50%;
+  display: inline-block;
+}
+.settings-seperator span {
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: -10px;
+  background-color: var(--sat-setting-bg-effect) !important;
+}
+
+.soundboard-seperator span {
+  background-color: var(--sat-setting-bg-color) !important;
+}
+
+.search-results {
+  text-align: center;
+  line-height: 2em;
+  margin: 12px 0 12px;
+  border-bottom: 1px solid var(--settings-button-outline);
+}
+
+.search-results span {
+  background-color: var(--sat-search-shortcuts) !important;
+}
+
+.search-results i {
+  font-size: 1.5em;
+  color: var(--sat-accent-color1);
+}
+
+/* Favorites input title */
+.fav_title {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.button-container {
+  padding-top: 10px;
+}
+.sat-header {
+  padding-top: 100px;
+}
+
+label span {
+  font-size: 16px;
+}
+
+.connection_status {
+  display: none;
+}

@@ -210,6 +210,9 @@ Significant changes, bug fixes & awesomeness 🎁
 <li>
 - All buttons have been moved inside a brand new Dropdown menu that appears on hover! This change now makes it possible 
 to add more “Quick actions” in the future while keeping the interface clutter free.
+- Added support for notifications dot, this will let users of certain notifications type: <br/>
+<span class="notification-dot"></span> > Recent update major update.  <br/>
+<span class="notification-dot" style="background-color:var(--delete-warning-bg);"></span> > Running a developer branch of Saturn or critial error.
 </li>
 <h3>🧰  Favorites upgrades! </h3>
 <li>
