@@ -591,7 +591,6 @@ color to fix some issues == */
 #fav-link a:hover {
   background-color: var(--favorites-hover);
   transition: var(--transition-speed-default);
-  padding: 11px 10px;
 }
 
 .removebtn:hover {
