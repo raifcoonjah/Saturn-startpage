@@ -214,9 +214,9 @@ to add more “Quick actions” in the future while keeping the interface clutte
 <li>
 - Favorites will now automatically read the URL you entered and search its appropriate icon. This change sadly means, 
 no custom icons are now natively supported. <br/>
-- All favorites icons now support lazy loading by default, applies only to new favorites. <br/>
+- All favorites icons now support lazy loading by default, this change applies only to new favorites. <br/>
 - Favorites search will now show possible results from 
-the keyword you entered, this will vary depending on your search specifications. (Beta) 
+the keyword you entered, this will vary depending on your search specifications.
 </li>
 <h3>🐦 Your home screen? GONE just like Twitter. </h3>
 <li>
@@ -224,13 +224,13 @@ the keyword you entered, this will vary depending on your search specifications.
 - PS: If you get a popup saying that your home screen was change, press on the "Keep changes" button!
 </li>
 
-<h3>🔔  Notifications, redesigned & improvements for the better (BETA)</h3>
+<h3>🔔  Notifications, redesigned & improved for the better (BETA)</h3>
 <li>
 - Snackbar/notifications got a complete redesign, it should now be much more stable and look korgeous. 
 </li>
-- Added support for notifications dot, this will let users of certain notifications type: <br/>
-<span class="notification-dot"></span> > Recent update major update.  <br/>
-<span class="notification-dot" style="background-color:var(--delete-warning-bg);"></span> > Running a developer branch of Saturn or critial error.
+- Added support for notifications dot, this will let users know of certain notifications type (Beta): <br/>
+<span class="notification-dot"></span> > Recent major update.  <br/>
+<span class="notification-dot" style="background-color:var(--delete-warning-bg);"></span> > Running a beta build.
 </li>
 
 <h3>📱  Mobile optimizations </h3>
@@ -238,39 +238,38 @@ the keyword you entered, this will vary depending on your search specifications.
 - If you're on a small screen or mobile phone, apps category will now switch to a icon-only mode to save screen space. <br/>
 </li>
 <li>
-- "Suggested website" buttons now use a new design when you're on a small screen or mobile phone. <br/>
+- "Suggested website" buttons now uses a new design when you're on a small screen or mobile phone. <br/>
 </li>
 
-<h3>🐞🔫  Annoying bugs, well we fix em'</h3>
+<h3>🐞🔫  Bugs were killed during this process :(</h3>
 <li>
 
 With this release a ton of effort was put towards making Saturn much more stable, the most notable bug fixes are:
 <br/>
-- Fixed settings scrollbar going outside of the modal. <br/>
+- Fixed settings scrollbar going outside of modals. <br/>
 - Apply color-scheme to browser when using dark/darker themes to fix several browser/OS related issues.<br/>
 - Fixed tons of UI inconsistency issues.<br/>
 - Fix Favorites buggy hover effect.<br/>
 - Fix multiple issues with favorites.<br/>
 - Fix several favorites search bugs. <br/>
-- Fix buggy "ON" text effect. (focus) <br/>
-- Fix buggy notifications animation, a redesign is coming in the next update. <br/>
+- Fix buggy "ON" text effect. <br/>
 - Fix a strange bug that caused the font inside of set wallpaper input to be very small. <br/>
 - Various other bug fixes & Stability improvements.
 </li>
 
 <h3>And MORE..</h3>
 <li>
-- All input now include a very noticeable outline making them easier to see. <br/>
-- Settings now includes a new section separator. <br/>
-- All buttons inside modals have been aligned to the right to follow general UI guidelines rules. <br/>
-- The default Dark/Light theme have been renamed to "Cancri". <br/>
+- All inputs now include a very noticeable outline when in focus, making them easier to see. <br/>
+- Settings now includes a redesigned section separator. <br/>
+- All buttons inside modals have been aligned to the right to follow general UI guidelines. <br/>
+- The default Dark/Light theme has been renamed to "Cancri". <br/>
 - Focus UI improvements. <br/>
 - Removed Normalized css from codebase. <br/>
 - More element should now support the "Press" effect. <br/>
 - Updated all small headers with new design. <br/>
 - Removed Favorites preview. <br/>
-- Fonts are now loaded together with all themes at once. <br/>
-- Moved all css, fonts, icons, images, soundboard inside a single assets folder for a cleaner file structure. <br/>
+- Fonts are now loaded together with all themes at once, this should make things load a little bit faster. <br/>
+- Moved all css, fonts, icons, images and soundboard inside a single assets folder for a cleaner file structure. <br/>
 - Tweak suggested website buttons design. 
 </li>
 
