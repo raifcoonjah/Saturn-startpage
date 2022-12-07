@@ -1318,8 +1318,8 @@ appearing when the user hovers on the open in new tab button.
   border: 1px solid transparent;
   cursor: pointer;
   font-weight: 500;
-  font-size: 15px;
-  margin: 3.5px;
+  font-size: 14px;
+  margin: 3px;
 }
 
 /* Give report bug a red accent */
@@ -1342,9 +1342,12 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .dropdown-content svg {
-  width: 19px;
+  width: 12px;
   position: relative;
-  top: 0.2em;
+  top: 0.1em;
+  margin-right: 2px;
+  margin-left: 3px;
+  filter: var(--svg-invert);
 }
 
 .dropdown-content a:hover {
