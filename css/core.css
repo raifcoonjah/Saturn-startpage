@@ -737,6 +737,9 @@ use the correct border radius == */
     padding: 10px 10px !important;
     margin-bottom: 5px !important;
   }
+  .notification-dot {
+    visibility: hidden;
+  }
 }
 
 /* Align button-container to the left to follow standard UI guidelines */
