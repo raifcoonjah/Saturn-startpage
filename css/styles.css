@@ -987,6 +987,7 @@ appearing when the user hovers on the open in new tab button.
 
 .description {
   color: var(--sat-lighter-ids) !important;
+  opacity: 0.9;
   font-size: 16px;
 }
 

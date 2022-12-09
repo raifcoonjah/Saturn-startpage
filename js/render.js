@@ -197,13 +197,30 @@ const settingAbout = (z) => {
           <p style="text-align:center;"> 
             <a class="version-text green_background"
             href="#"
-            >Saturn v6.2.0</i></a>
+            >Saturn v6.2.1</i></a>
           </p>
 <p style="text-align:center;" class="description small_text">
-Significant changes, bug fixes & awesomeness 🎁
+Bug fixes
 </p>
 
+<h3> Bug fixes & New features! </h3>
+<ul>
+<li>
+- Added new "Open window" option inside of Quick actions. <br/>
+- Fix notification dot on small screens. <br/>
+- Fix ugly fav-link hover effect. <br/>
+- Dropdown menu font-size reduced to 14px instead of 15px as it looked too big before. <br/>
+- Reduce dropdown menu margin. <br/>
+- Saturn search now supports Protondb!
+- Added a new "Supported providers" list to show what Saturn search supports. 
+</li>
 
+</ul>
+<br/>
+
+
+<details>
+<summary>Read previous release notes</summary>
 <ul>
 
 <h3>✈️  Wait, where did the settings button go? </h3>
@@ -275,6 +292,7 @@ With this release a ton of effort was put towards making Saturn much more stable
 </li>
 
 </ul>
+</details>
 
 </div>
 

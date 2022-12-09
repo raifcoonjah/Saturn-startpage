@@ -39,6 +39,11 @@ const search_engines = [
     placeholder: "YouTube",
     action: "https://www.youtube.com/results?q=",
   },
+  {
+    src: "protondb.svg",
+    placeholder: "Protondb",
+    action: "https://www.protondb.com/search?q=",
+  },
 ];
 
 // This happens when the user presses on the se button.
@@ -51,4 +56,3 @@ const cycleSearchEngines = (se) => {
     "Search with " + curData.placeholder + "..";
   document.getElementById("search_eng_form").action = curData.action;
 };
-
