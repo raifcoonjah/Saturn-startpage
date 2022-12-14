@@ -1,3 +1,7 @@
+Development update: 
+- Saturn is currently being entirely rewritten in **react**, this may take a while so expect less feature updates and more bug fixes for now. After the release of the new version, this version will be renamed to Saturn startpage legacy and will still receive bug fixes from time to time. 
+
+
 ![Saturn-startpage](https://i.imgur.com/JkdwZMW.png)
 
 ## What's Saturn Startpage?
@@ -25,7 +29,7 @@ Saturn Startpage is a fully open source, community build new-tab replacement. **
 - Please head over to: [Chromium installation](https://github.com/mraif13/Saturn-startpage/blob/Chromium/info.md)
 
 ### Tech used
-- HTML, CSS & Javascript. (Plans to move to react are on **hold** atm)
+- HTML, CSS & Javascript. > We're currently in the process of migrating to reactjs. 
 ------
 ###### Demo Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/90679166-d81f-4831-b8f8-82ada4af6e1f/deploy-status)](https://app.netlify.com/sites/demo-saturnstartpage/deploys)
