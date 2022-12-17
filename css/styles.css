@@ -18,7 +18,6 @@ its supposed to.
   padding: 20px 48px;
   text-align: left;
   font-weight: 500;
-  box-sizing: border-box;
   outline: none;
   border: 3px solid transparent;
   border-radius: 20px;
@@ -60,13 +59,11 @@ its supposed to.
 .search-bar:hover {
   background-color: var(--new-search-bg-hover-effect);
   border: 3px solid var(--sat-accent-color1);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.155);
 }
 
 .search-bar:focus {
   border: 3px solid var(--sat-accent-color1);
   background-color: var(--new-search-bg-hover-effect);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.155);
 }
 
 /* 
@@ -118,6 +115,7 @@ its supposed to.
 + The modal itself +
 ========
 */
+
 .wallpaper_modal,
 .fav_modal,
 .settings_modal,
@@ -145,7 +143,6 @@ its supposed to.
   left: 50%;
   padding: 10px 15px;
   transform: translate(-50%, -50%);
-
   overflow-y: auto;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.37);
   border: 1px solid var(--settings-button-outline);
@@ -265,32 +262,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.section-title {
-  text-align: left;
-  font-weight: 500;
-  font-size: 16px;
-  color: var(--sat-ids);
-}
-
-.sounds-button,
-.setting-button {
-  outline: none;
-  padding: 12px 12px;
-  margin: 4px;
-  border-radius: 13px !important;
-  float: right;
-  outline: 4px solid transparent; /* This should be remove for a much more optimized version */
-}
-
-.sounds-button i,
-.setting-button i {
-  font-size: 1.2rem;
-}
-
 .control-button:hover,
-.audio-button:hover,
-.sounds-button:hover,
-.setting-button:hover {
+.audio-button:hover {
   transition: var(--transition-speed-fast);
   outline: 4px solid var(--settings-button-outline);
 }
@@ -524,8 +497,6 @@ div.theme-container {
 .username-section input {
   background-color: var(--lighter-color);
   padding: 15px;
-  font-size: 15px;
-  border: 1px solid transparent;
 }
 
 /* 
@@ -538,6 +509,7 @@ div.theme-container {
 .username-section input {
   border: 2px solid transparent;
 }
+
 /* added this to make the hover animation similar */
 .favorites-search input:hover,
 .favorites-search input:focus,
@@ -559,27 +531,6 @@ div.theme-container {
   border: 2px solid transparent;
   font-size: 0.91em;
   margin-top: 7px;
-}
-
-/* 
-========
-+ Icons in Setting's about section +
-========
-*/
-
-.small-icons {
-  font-size: 20px;
-  padding: 10px !important;
-  width: 20px;
-  cursor: pointer;
-}
-
-.settings-icon {
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-  top: 12px !important;
-  position: relative;
 }
 
 /* 
@@ -826,21 +777,9 @@ ul li {
   transition: var(--transition-speed-default);
 }
 
-/* Header inside Favorites */
-.fav_title {
-  font-weight: 500 !important;
-}
-
-/* Hiding the background color for cancel button */
-
-.close-wallpaper,
-.cancel-fav-btn {
-  background-color: transparent;
-}
-
 /* 
 ========
-+ "Get Icon feature" [Part of Favorites]+
++ "Get wallpaper websites.." +
 ========
 */
 
@@ -897,6 +836,7 @@ ul.fav_ptgi_category li img {
   font-size: 14.5px;
   border-radius: 15px;
   color: #000;
+  font-weight: 600;
 }
 
 #saveMsgBar.show {
@@ -907,6 +847,7 @@ ul.fav_ptgi_category li img {
   /* Hack to make Snackbar stay at the 
   bottom of the page */
 }
+
 /* 
 ========
 + This fixes a major hover issue related to favorites. +
@@ -956,17 +897,6 @@ appearing when the user hovers on the open in new tab button.
   color: var(--sat-accent-color1) !important;
 }
 
-/* 
-========
-+ Used for spacing +
-========
-*/
-
-.buttons-container {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 /*
 ========
 + New settings layout & design improvements +
@@ -988,7 +918,7 @@ appearing when the user hovers on the open in new tab button.
 .description {
   color: var(--sat-lighter-ids) !important;
   opacity: 0.9;
-  font-size: 16px;
+  font-size: 15.5px;
 }
 
 /* 
@@ -1044,20 +974,18 @@ appearing when the user hovers on the open in new tab button.
   width: 110px;
   height: 110px;
   background-color: var(--lighter-color);
-  padding: 5px;
   margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 15px;
+  border-radius: var(--sat-border-radius);
   font-size: 1.7rem;
-  cursor: pointer;
   flex-direction: column;
   border: 1px solid transparent;
 }
 
 .sqaure_box:hover {
-  transition: ease-in var(--transition-speed-default);
+  transition: var(--transition-speed-default);
   background-color: var(--favorites-hover);
   color: var(--sat-accent-color1);
   border: 1px solid var(--sat-accent-color-lighter);
@@ -1237,11 +1165,11 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .aboutwidgets-container {
-  padding: 13px 15px;
+  padding: 15px 15px;
   border-radius: var(--sat-border-radius);
   background-color: var(--lighter-color);
   margin: auto;
-  width: 60%;
+  width: 50%;
   text-align: left;
   font-size: 16px;
   display: flex;
@@ -1373,6 +1301,7 @@ appearing when the user hovers on the open in new tab button.
   line-height: 0.1em;
   margin: 12px 0 12px;
   border-bottom: 1px solid var(--settings-button-outline);
+  font-size: 14px;
 }
 
 .dropdown-seperator span {
