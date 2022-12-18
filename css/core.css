@@ -739,6 +739,9 @@ use the correct border radius == */
   .notification-dot {
     visibility: hidden;
   }
+  .settings-nav-separator {
+    visibility: hidden;
+  }
 }
 
 /* Align button-container to the left to follow standard UI guidelines */

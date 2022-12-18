@@ -276,7 +276,7 @@ input:checked + .slider:before {
 
 ul.tabs li {
   color: var(--sat-ids);
-  padding: 10px 50px 10px 35px;
+  padding: 10px 40px 13px 15px;
   margin-left: 10px;
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
@@ -304,12 +304,12 @@ ul.tabs li i {
 }
 
 ul.tabs li {
-  font-size: 17px;
+  font-size: 16.5px;
 }
 
 .tab-content {
   display: none;
-  animation: slide-up-fade-in ease 190ms;
+  animation: slide-up-fade-in ease 200ms;
 }
 
 .tab-content h4 i {
@@ -1322,6 +1322,14 @@ appearing when the user hovers on the open in new tab button.
   font-size: 16px;
   margin-left: -10px;
   background-color: var(--sat-setting-bg-effect) !important;
+}
+
+.settings-nav-separator span {
+  font-weight: 600;
+  font-size: 12.5px;
+  color: var(--sat-lighter-ids);
+  margin-left: 5px;
+  background: var(--sat-setting-bg-color) !important;
 }
 
 .soundboard-seperator span {
