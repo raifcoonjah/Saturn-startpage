@@ -150,6 +150,7 @@ const settingAbout = (z) => {
               margin-right: auto;
               display: block;"
                   src="/assets/img/dynamic-icon-big.png"
+                  loading="lazy"
                   title="Saturn Logo"
                   alt="Saturn-logo.png"
                   /> 
@@ -159,13 +160,13 @@ const settingAbout = (z) => {
             </p>
                <p style="text-align:center;"> 
                <a class="version-text"
-               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.2.0"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.2.1"
                target="_blank" 
-               >v6.2.0</i></a>
+               >v6.2.1</i></a>
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
-                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.1.80" class="aboutwidgets-container">
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.2.80" class="aboutwidgets-container">
                 Try out beta
                 <i class="las la-external-link-alt"></i>
                 </a>
@@ -193,7 +194,7 @@ const settingAbout = (z) => {
           <p class="settings-item-title">What's new</p>
           <p class="settings-item-under-title description">Learn what's new in this release.</p>
           <div class="settings-background"> 
-          <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png"/>
+          <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png" loading="lazy" />
           <p style="text-align:center;"> 
             <a class="version-text green_background"
             href="#"
@@ -203,17 +204,29 @@ const settingAbout = (z) => {
 Bug fixes
 </p>
 
-<h3> Bug fixes & New features! </h3>
+<h3> Bug fixes: </h3>
 <ul>
 <li>
-- Added new "Open window" option inside of Quick actions. <br/>
+
 - Fix notification dot on small screens. <br/>
 - Fix ugly fav-link hover effect. <br/>
+- All images inside of settings now uses lazy loading to increase performance and fix weird lag issues. <br/>
+- Styles.css cleanup, we'll like all performance. <br/>
 - Dropdown menu font-size reduced to 14px instead of 15px as it looked too big before. <br/>
 - Reduce dropdown menu margin. <br/>
-- Saturn search now supports Protondb!
-- Added a new "Supported providers" list to show what Saturn search supports. 
+
 </li>
+
+<h3> New features </h3>
+<li>
+!! - Settings navigation's design got some upgrades including: Settings category to easily find options and tweaked font size and design. 
+If you're on a mobile phone, instead of text you should see spaces between the items. <br/>
+- Added new "Open window" option inside of Quick actions. <br/>
+- Saturn search now supports Protondb! <br/>
+- Added a new "Supported providers" list to show what Saturn search supports. <br/>
+
+</li>
+
 
 </ul>
 <br/>
@@ -350,21 +363,21 @@ const coolbg = (cbg) => {
                 title="Go to unsplash..."
                 target="_blank"
               >
-              <li class="fav_ptgi_btn"><img src="https://unavatar.io/unsplash.com"> Unsplash</li></a
+              <li class="fav_ptgi_btn"><img src="https://unavatar.io/unsplash.com" loading="lazy"> Unsplash</li></a
               >
               <a
                 href="https://wallpaperaccess.com"
                 title="Go to wallpaperaccess..."
                 target="_blank"
               >
-              <li class="fav_ptgi_btn"><img src="https://unavatar.io/wallpaperaccess.com"> Wallpaperaccess</li></a
+              <li class="fav_ptgi_btn"><img src="https://unavatar.io/wallpaperaccess.com" loading="lazy"> Wallpaperaccess</li></a
               >
               <a
               href="https://coolbackgrounds.io/"
               title="Go to coolbackgrounds..."
               target="_blank"
             >
-            <li class="fav_ptgi_btn"><img src="https://unavatar.io/coolbackgrounds.io"> Coolbackgrounds</li></a
+            <li class="fav_ptgi_btn"><img src="https://unavatar.io/coolbackgrounds.io" loading="lazy"> Coolbackgrounds</li></a
             >
             <a
             href="https://github.com/mraif13/Saturn-startpage/issues/new"
