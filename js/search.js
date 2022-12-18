@@ -7,7 +7,7 @@
 // ALlow user to press 3 time, increasing this number without adding
 // more search_engines will cause some serious bugs to occur.
 
-let se = 3;
+let se = 4;
 
 // Listens for click event in se_button, once clicked,
 // se increments by one and cycleSearchEngines() is called to update the icon, placeholder, and form action
