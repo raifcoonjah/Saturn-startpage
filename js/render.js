@@ -214,6 +214,7 @@ Bug fixes
 - Styles.css cleanup, we'll like all performance. <br/>
 - Dropdown menu font-size reduced to 14px instead of 15px as it looked too big before. <br/>
 - Reduce dropdown menu margin. <br/>
+- About page widgets are now smaller making them look less "stretch".
 
 </li>
 
@@ -224,10 +225,11 @@ If you're on a mobile phone, instead of text you should see spaces between the i
 - Added new "Open window" option inside of Quick actions. <br/>
 - Saturn search now supports Protondb! <br/>
 - Added a new "Supported providers" list to show what Saturn search supports. <br/>
-
 </li>
 
-
+<h3> Soundboard will be missed </h3>
+- With this update, the soundboard feature has been completely 
+removed and replaced by a service called "mynoise.net" which does a ton more compared to soundboard. 
 </ul>
 <br/>
 
