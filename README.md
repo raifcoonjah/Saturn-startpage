@@ -1,5 +1,6 @@
 Development update: 
 - Saturn's codebase and some core parts are currently being completely rewritten, this may take a while so expect less big updates and more bug fixes and smaller changes. A lot of files will be moved around and completely reorganised. 
+- **Saturn 7** is expected to have some big design changes to everything including a completely revamp settings experience. 
 
 
 ![Saturn-startpage](https://i.imgur.com/JkdwZMW.png)
