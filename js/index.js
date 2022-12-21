@@ -94,29 +94,6 @@ window.addEventListener("click", windowOnClick);
 
 //
 // ========
-// + Soundboard Modal +
-// ========
-//
-
-var soundsModal = document.querySelector(".sounds_modal");
-var SBtntrigger = document.querySelector(".dropdown-soundboard");
-var closeSoundsButton = document.querySelector(".close-sounds");
-
-function toggleSounds() {
-  soundsModal.classList.toggle("show-sounds-modal");
-}
-function windowOutclick(event) {
-  if (event.target === soundsModal) {
-    toggleSounds();
-  }
-}
-
-SBtntrigger.addEventListener("click", toggleSounds);
-closeSoundsButton.addEventListener("click", toggleSounds);
-window.addEventListener("click", windowOutclick);
-
-//
-// ========
 // + Wallpaper Modal +
 // ========
 //
@@ -361,13 +338,6 @@ document.addEventListener("keyup", function (se_icon) {
     document.querySelector(".se_icon").click();
   }
 });
-
-document.addEventListener("keyup", function (soundboard) {
-  if (soundboard.keyCode == 66 && soundboard.shiftKey) {
-    document.querySelector(".dropdown-soundboard").click();
-  }
-});
-
 document.addEventListener("keyup", function (favModal) {
   if (favModal.keyCode == 90 && favModal.shiftKey) {
     document.querySelector(".favorite-button").click();
@@ -390,69 +360,6 @@ document.querySelector("#save").addEventListener("click", function () {
     location.reload();
   }
 });
-
-// Saturn Soundboard
-// v1.0
-
-var rainefffect = document.getElementById("raineffect");
-var fireplace = document.getElementById("fireplace");
-var waves = document.getElementById("waves");
-rainefffect.loop = true;
-fireplace.loop = true;
-waves.loop = true;
-
-// rain effect
-
-$("#play").click(function () {
-  if (rainefffect.paused) {
-    rainefffect.volume = 0.1;
-    rainefffect.play();
-    $("#play").addClass("pause");
-  } else {
-    rainefffect.pause();
-    $("#play").removeClass("pause");
-  }
-});
-
-// fireplace effect
-
-$("#play-fireplace").click(function () {
-  if (fireplace.paused) {
-    fireplace.volume = 0.1;
-    fireplace.play();
-    $("#play-fireplace").addClass("pause");
-  } else {
-    fireplace.pause();
-    $("#play-fireplace").removeClass("pause");
-  }
-});
-
-// waves effect
-$("#play-waves").click(function () {
-  if (waves.paused) {
-    waves.volume = 0.1;
-    waves.play();
-    $("#play-waves").addClass("pause");
-  } else {
-    waves.pause();
-    $("#play-waves").removeClass("pause");
-  }
-});
-
-// button-increase volume
-$("#volume-increase").click(function () {
-  rainefffect.volume += 0.1;
-  fireplace.volume += 0.1;
-  waves.volume += 0.1;
-});
-
-// button-decrease to decrease volume
-$("#volume-decrease").click(function () {
-  rainefffect.volume -= 0.1;
-  fireplace.volume -= 0.1;
-  waves.volume -= 0.1;
-});
-
 //
 // ========
 // + *New* Wallpaper Feature +
