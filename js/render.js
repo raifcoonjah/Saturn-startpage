@@ -141,7 +141,7 @@ const appsList = (x) => {
 const settingAbout = (z) => {
   $(z).append(`<div id="tab-3" class="tab-content">
               <p class="settings-item-title">About</p>
-              <p class="settings-item-under-title description">About Saturn startpage.</p>
+              <p class="settings-item-under-title description">About Saturn Startpage & What's new.</p>
             <div class="settings-background">
               <p class="new-about">
               <img 
@@ -160,13 +160,13 @@ const settingAbout = (z) => {
             </p>
                <p style="text-align:center;"> 
                <a class="version-text"
-               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.2.1"
+               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.3.0"
                target="_blank" 
-               >v6.2.1</i></a>
+               >v6.3.0</i></a>
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
-                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.2.80" class="aboutwidgets-container">
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.3.80" class="aboutwidgets-container">
                 Try out beta
                 <i class="las la-external-link-alt"></i>
                 </a>
@@ -197,118 +197,45 @@ const settingAbout = (z) => {
           <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png" loading="lazy" />
           <p style="text-align:center;"> 
             <a class="version-text green_background"
-            href="#"
-            >Saturn v6.2.1</i></a>
+            >Saturn v6.3.0</i></a>
           </p>
 <p style="text-align:center;" class="description small_text">
-Bug fixes
+Upload images, optimization & better UI.
 </p>
-
-<h3> Bug fixes: </h3>
 <ul>
-<li>
+<h3> ⚙️ Settings upgrades </h3>
+- Settings navigation now has categories making it easier to find things on quick glance. <br/>
+- Theme icons got a slight design tweak. <br/>
+- Hide things got a slight design and UX tweak. <br/>
+- Saturn Search now has a list of all the provides it supports. <br/>
+- Various other tweaks to make things more consistent. <br/>
 
-- Fix notification dot on small screens. <br/>
-- Fix ugly fav-link hover effect. <br/>
-- All images inside of settings now uses lazy loading to increase performance and fix weird lag issues. <br/>
-- Styles.css cleanup, we'll like all performance. <br/>
-- Dropdown menu font-size reduced to 14px instead of 15px as it looked too big before. <br/>
-- Reduce dropdown menu margin. <br/>
-- About page widgets are now smaller making them look less "stretch".
+<h3> 🏠 Home design tweaks </h3>
+- Favorites is now aligned to the right, this should make it easier to use and more consistent with the rest of the interface. <br/>
 
-</li>
+<h3> 😎 WHY DID THIS TAKE SOO LONG? Upload your own god DAMN backgrounds! </h3>
+- You can now upload your own images to set as your custom background! All images are loaded and stored locally, this means no internet connection is required at all! <br/>
+- Please note: Currently GIFs are not supported. <br/>
 
-<h3> New features </h3>
-<li>
-!! - Settings navigation's design got some upgrades including: Settings category to easily find options and tweaked font size and design. 
-If you're on a mobile phone, instead of text you should see spaces between the items. <br/>
-- Added new "Open window" option inside of Quick actions. <br/>
-- Saturn search now supports Protondb! <br/>
-- Added a new "Supported providers" list to show what Saturn search supports. <br/>
-</li>
-
-<h3> Soundboard will be missed </h3>
-- With this update, the soundboard feature has been completely 
-removed and replaced by a service called "mynoise.net" which does a ton more compared to soundboard. 
+<h3> 🐞 Warning: Bugs were killed! </h3>
+- Fix notification dot on mobile/smaller screens. <br/>
+- Fix broken fav-link hover effect. <br/>
+- About page widgets are now smaller making them look less "stretch".<br/>
+- Fix SVG icons inside dropdown menu.<br/>
+- Fix a very old bug that caused the browser to display a "This page is zoom" error. <br/>
+- Fix lag when opening settings. <br/>
+- Various bug fixes and other performance improvements! <br/>
 </ul>
-<br/>
 
+<h3> 🚄 SPEEDZZZZZZ........ </h3>
+- All images inside of settings are now compressed and use lazy loading by default.<br/>
+- Compress all gifs to save space and make things load quicker. <br/>
+- Style.css code cleanup. <br/>
 
-<details>
-<summary>Read previous release notes</summary>
-<ul>
-
-<h3>✈️  Wait, where did the settings button go? </h3>
-<li>
-- All buttons have been moved inside a brand new Dropdown menu that appears on hover! This change now makes it possible 
-to add more “Quick actions” in the future while keeping the interface clutter free.
-<h3>🧰  Favorites upgrades! </h3>
-<li>
-- Favorites will now automatically read the URL you entered and search its appropriate icon. This change sadly means, 
-no custom icons are now natively supported. <br/>
-- All favorites icons now support lazy loading by default, applies only to new favorites. <br/>
-- Favorites search will now show possible results from 
-the keyword you entered, this will vary depending on your search specifications. (Beta) 
-</li>
-<h3>🐦 Your home screen? GONE just like Twitter. </h3>
-<li>
-- Saturn will now open instead of Firefox Home or others. <br/>
-- PS: If you get a popup saying that your home screen was change, press on the "Keep changes" button!
-</li>
-
-<h3>🔔  Notifications, redesigned & improvements for the better (BETA)</h3>
-<li>
-- Snackbar/notifications got a complete redesign, it should now be much more stable and look korgeous. 
-</li>
-- Added support for notifications dot, this will let users of certain notifications type: <br/>
-<span class="notification-dot"></span> > Recent update major update.  <br/>
-<span class="notification-dot" style="background-color:var(--delete-warning-bg);"></span> > Running a developer branch of Saturn or critial error.
-</li>
-
-<h3>📱  Mobile optimizations </h3>
-<li>
-- If you're on a small screen or mobile phone, apps category will now switch to a icon-only mode to save screen space. <br/>
-</li>
-<li>
-- "Suggested website" buttons now use a new design when you're on a small screen or mobile phone. <br/>
-</li>
-
-<h3>🐞🔫  Annoying bugs, well we fix em'</h3>
-<li>
-
-With this release a ton of effort was put towards making Saturn much more stable, the most notable bug fixes are:
-<br/>
-- Fixed settings scrollbar going outside of the modal. <br/>
-- Apply color-scheme to browser when using dark/darker themes to fix several browser/OS related issues.<br/>
-- Fixed tons of UI inconsistency issues.<br/>
-- Fix Favorites buggy hover effect.<br/>
-- Fix multiple issues with favorites.<br/>
-- Fix several favorites search bugs. <br/>
-- Fix buggy "ON" text effect. (focus) <br/>
-- Fix buggy notifications animation, a redesign is coming in the next update. <br/>
-- Fix a strange bug that caused the font inside of set wallpaper input to be very small. <br/>
-- Various other bug fixes & Stability improvements.
-</li>
-
-<h3>And MORE..</h3>
-<li>
-- All input now include a very noticeable outline making them easier to see. <br/>
-- Settings now includes a new section separator. <br/>
-- All buttons inside modals have been aligned to the right to follow general UI guidelines rules. <br/>
-- The default Dark/Light theme have been renamed to "Cancri". <br/>
-- Focus UI improvements. <br/>
-- Removed Normalized css from codebase. <br/>
-- More element should now support the "Press" effect. <br/>
-- Updated all small headers with new design. <br/>
-- Removed Favorites preview. <br/>
-- Fonts are now loaded together with all themes at once. <br/>
-- Moved all css, fonts, icons, images, soundboard inside a single assets folder for a cleaner file structure. <br/>
-- Tweak suggested website buttons design. 
-</li>
-
-</ul>
-</details>
-
+<h3> 2 other things </h3>
+- The bold effect applied with the "Bold font" option is now less "bold" is that makes any sense. <br/>
+- The favorite-button got a new hover effect. <br/>
+- And oh, I might have forgotten some stuff, this update was in the works since the 6.0 release but features got delayed due to time constraints. 
 </div>
 
 
