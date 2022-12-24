@@ -29,6 +29,7 @@ its supposed to.
 ========
 */
 
+.dropbtn,
 .favorite-button,
 .setting-button,
 #apps,
@@ -165,8 +166,8 @@ its supposed to.
 }
 
 .wallpaper_modal_content {
-  width: 35rem;
-  height: 21em;
+  width: 38rem;
+  height: 25em;
 }
 
 .favorites_modal_content {
@@ -196,6 +197,11 @@ its supposed to.
   display: inline-block;
   width: 60px;
   height: 34px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: -25px;
 }
 
 /* Hide default HTML checkbox */
@@ -533,13 +539,47 @@ div.theme-container {
 */
 
 .favorites-search input {
-  margin-top: 15px;
   background: var(--sat-search-shortcuts);
   padding: 13px 13px;
   font-weight: 400;
   font-size: 14px;
   border-radius: 13px;
+  margin-right: 10px;
 }
+
+.favorites-search {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 0;
+}
+
+.favorite-button {
+  padding: 13px 13px;
+  font-weight: 500;
+  color: var(--sat-ids);
+  background: var(--sat-search-shortcuts);
+  margin-bottom: 10px;
+}
+
+.favorite-button:hover {
+  background-color: var(--lighter-color);
+  color: var(--sat-accent-color1);
+  transition: var(--transition-speed-default);
+}
+/* Large add favorite button */
+
+/* .favorite-button {
+  padding: 13px 12px;
+  font-weight: 500;
+  color: var(--sat-ids);
+  background: var(--sat-search-shortcuts);
+}
+
+.favorite-button:hover {
+  background-color: var(--sat-accent-color1);
+  transition: var(--transition-speed-default);
+  color: var(--for-white);
+} */
 
 /* 
 ========
@@ -717,21 +757,6 @@ ul li {
 }
 #fav-link li:last-child {
   border: none;
-}
-
-/* Large add favorite button */
-
-.favorite-button {
-  padding: 13px 12px;
-  font-weight: 500;
-  color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
-}
-
-.favorite-button:hover {
-  background-color: var(--sat-accent-color1);
-  transition: var(--transition-speed-default);
-  color: var(--for-white);
 }
 
 /* Every close button uses this */
