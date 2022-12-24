@@ -384,6 +384,38 @@ document.querySelector("#save-image").addEventListener("click", function () {
   }
 });
 
+// up-load image
+const input = document.getElementById("imageupload");
+
+input.addEventListener("change", (event) => {
+  document.querySelector("#save-image").innerHTML =
+    "<img class='loading-svg' src='/assets/img/loading.svg'>" +
+    " Doing magic...";
+
+  const image = event.target.files[0];
+
+  const reader = new FileReader();
+
+  reader.readAsDataURL(image);
+
+  // remove image_url
+  localStorage.removeItem("image_url");
+
+  setTimeout(() => {
+    location.reload();
+  }, 2000);
+
+  reader.addEventListener("load", () => {
+    localStorage.setItem("imageupload", reader.result);
+  });
+});
+
+// grab and set as background ;)
+if (localStorage.getItem("imageupload")) {
+  document.querySelector("body").style.backgroundImage =
+    "url(" + localStorage.getItem("imageupload") + ")";
+}
+
 //
 // ========
 // + *New* Apply URL to body +
@@ -406,6 +438,7 @@ document
       confirm("You're about to delete your custom background. Are you sure?")
     ) {
       localStorage.removeItem("image_url");
+      localStorage.removeItem("imageupload");
       location.reload();
     }
   });
@@ -474,12 +507,12 @@ document.querySelector("#bold_text").addEventListener("click", function () {
     document.querySelector("body").style.fontWeight = "normal";
   } else {
     localStorage.setItem("bold_text", true);
-    document.querySelector("body").style.fontWeight = "bold";
+    document.querySelector("body").style.fontWeight = "600";
   }
 });
 
 if (localStorage.getItem("bold_text")) {
-  document.querySelector("body").style.fontWeight = "bold";
+  document.querySelector("body").style.fontWeight = "600";
 }
 
 // UI Tweak: Use Sans Serif as default font
