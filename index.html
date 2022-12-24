@@ -521,11 +521,6 @@ need ......... to ................ scroll ......................................
             </p>
             <div class="settings-background">
               <!-- =+=+= Themes =+=+=-->
-
-              <p class="dropdown-seperator settings-seperator">
-                <span id="currentTheme"></span>
-              </p>
-
               <!-- =+=+= Light/Day theme =+=+=-->
               <p class="theme-title"><i class="las la-sun"></i> Light themes</p>
 
@@ -685,7 +680,7 @@ need ......... to ................ scroll ......................................
               <p class="dropdown-seperator settings-seperator">
                 <span>Fonts</span>
               </p>
-              <p></p>
+
               <label>
                 <input type="checkbox" id="bold_text" />
                 <span>Bold Text</span>
@@ -701,11 +696,27 @@ need ......... to ................ scroll ......................................
               <p class="dropdown-seperator settings-seperator">
                 <span>Custom background</span>
               </p>
-              <p></p>
+
               <label>
                 <input type="checkbox" id="force_white_color_header" />
-                <span>Apply white color to some home screen elements</span>
+                <span>Apply white color to header</span>
               </label>
+              <br />
+              <br />
+
+              <p class="dropdown-seperator settings-seperator">
+                <span>Blurrr...</span>
+              </p>
+
+              <label>
+                <input type="checkbox" id="force_white_color_header" />
+                <span>Apply blur effect (May have performance impact)</span>
+              </label>
+              <p>
+                This option replaces the opacity applied to some home screen
+                elements with a blur effect, this option may cause some
+                performance issues.
+              </p>
             </div>
 
             <p class="settings-item-title">Hide things</p>
@@ -714,19 +725,18 @@ need ......... to ................ scroll ......................................
             </p>
             <div class="settings-background">
               <!-- =+=+= HT: Options2 =+=+=-->
-              <h4><i class="las la-search"></i> Hide Search bar</h4>
-              <p></p>
+              <h3><i class="las la-search"></i> Hide Search bar</h3>
 
               <label class="switch">
                 <input type="checkbox" class="hide-search" />
                 <span class="slider round"></span>
               </label>
-
+            </div>
+            <div class="settings-background">
               <!-- =+=+= HT: Options3 =+=+=-->
               <h4>
                 <i class="las la-calendar"></i> Hide Google calendar button
               </h4>
-              <p></p>
 
               <label class="switch">
                 <input type="checkbox" class="hide-calendar-btn" />
@@ -762,7 +772,6 @@ need ......... to ................ scroll ......................................
             id="image_url"
             placeholder="Enter or paste a URL"
           />
-
           <div class="button-container">
             <button id="close-wallpaper" class="close-wallpaper">
               <i class="las la-times"></i> Close
@@ -771,11 +780,17 @@ need ......... to ................ scroll ......................................
               <i class="lar la-save"></i> Apply
             </button>
           </div>
-          <p class="line"></p>
           <details>
             <summary>Background URL</summary>
             <code id="your_image_url"></code>
           </details>
+          <p
+            class="dropdown-seperator"
+            style="font-weight: 500; font-size: 15px"
+          >
+            <span class="image-uploading">Upload image</span>
+          </p>
+          <input type="file" id="imageupload" accept="image/*" />
         </div>
       </div>
 
