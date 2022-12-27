@@ -28,3 +28,8 @@ input[type="file"]::file-selector-button {
 input[type="file"]::file-selector-button:hover {
   background: var(--sat-accent-color-lighter);
 }
+
+/* Fix favorites header bug by applying margin */
+.fix-favorites-header {
+  margin-top: 20px !important;
+}
