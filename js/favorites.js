@@ -77,7 +77,8 @@ document.getElementById("searchfavorites").onkeyup = function () {
         "Results for " +
         '"' +
         document.getElementById("searchfavorites").value +
-        '"';
+        '"' +
+        '<p class="description" style="font-size:11.5px">Something missing? Try a different keyword.</p>';
     }
   }
 };

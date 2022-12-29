@@ -1303,6 +1303,12 @@ appearing when the user hovers on the open in new tab button.
   line-height: 2em;
   margin: 12px 0 12px;
   border-bottom: 1px solid var(--settings-button-outline);
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.search-results p {
+  margin-top: -5px;
 }
 
 .search-results span {
