@@ -27,7 +27,13 @@ Saturn Startpage is a fully open source, community build new-tab replacement. **
 <sub>Side note: Saturn Startpage isn't dependant on Mozilla's addons store for distribution and updates making the installations process harder, this **will** change in the future.</sub>
 
 ## Installation on Chromium base browsers (currently not natively supported)
-- Please head over to: [Chromium installation](https://github.com/mraif13/Saturn-startpage/blob/Chromium/info.md)
+- Starting with the v6.1.1 release, Saturn now ships a .zip version for Chromium based users. All you're required to do is: 
+1. Download the latest version <br/>
+2. Under Assests > saturn-startpage_chromium.zip
+3. Once done, unzip the file and inside of Chromium head to extentions > Developer mode toggle > Load unpack and you're good to go!
+
+Side note: Chromium version currently do not support Auto Updates but this will be addressed in an upcoming update. 
+
 
 ### Tech used
 - HTML, CSS & Javascript. 
