@@ -1210,7 +1210,6 @@ appearing when the user hovers on the open in new tab button.
   padding: 4px 4px;
   text-decoration: none;
   display: block;
-  border: 1px solid transparent;
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
@@ -1221,7 +1220,6 @@ appearing when the user hovers on the open in new tab button.
 .dropdown_redaccent:hover {
   background-color: #d752521e !important;
   color: var(--delete-warning-bg) !important;
-  border: 1px solid #d752523a !important;
 }
 
 .dropdown-content kbd {
@@ -1246,8 +1244,7 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .dropdown-content a:hover {
-  background-color: var(--bg-accent-color-lr);
-  border: 1px solid var(--bg-accent-color-lr-hover);
+  background-color: var(--lighter-color);
 }
 
 .dropdown:hover .dropdown-content {
@@ -1313,6 +1310,7 @@ appearing when the user hovers on the open in new tab button.
 
 .search-results span {
   background-color: var(--sat-search-shortcuts) !important;
+  color: var(--sat-ids);
 }
 
 .search-results i {

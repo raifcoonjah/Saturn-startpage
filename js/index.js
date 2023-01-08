@@ -240,17 +240,10 @@ document.body.addEventListener("keydown", function () {
 // when ESC is pressed close the modal in vanilla js
 document.addEventListener("keyup", function (e) {
   if (e.keyCode == 27) {
-    // remove settings_modal class in vanilla js
     document.querySelector(".settings_modal").classList.remove("show-modal");
-    // remove fav_modal class in vanilla js
     document
       .querySelector(".fav_modal")
       .classList.remove("show-favorite-modal");
-    // remove sounds_modal class in vanilla js
-    document
-      .querySelector(".sounds_modal")
-      .classList.remove("show-sounds-modal");
-    // remove wallpaper_modal class in vanilla js
     document
       .querySelector(".wallpaper_modal")
       .classList.remove("show-wallpaper-modal");
@@ -381,6 +374,9 @@ document.querySelector("#save-image").addEventListener("click", function () {
       location.reload();
     }, 5000);
     localStorage.setItem("image_url", image_url);
+
+    // Remove previously used images
+    localStorage.removeItem("imageupload");
   }
 });
 
@@ -388,9 +384,15 @@ document.querySelector("#save-image").addEventListener("click", function () {
 const input = document.getElementById("imageupload");
 
 input.addEventListener("change", (event) => {
-  document.querySelector("#save-image").innerHTML =
-    "<img class='loading-svg' src='/assets/img/loading.svg'>" +
-    " Doing magic...";
+  document.getElementById("processing-image").innerHTML =
+    "<img class='loading-svg' style='width:30px;height:30px;margin-right:2px;' src='/assets/img/loading.svg'>" +
+    "Processing image, please wait...";
+
+  // Remove previous uploaded images
+
+  localStorage.removeItem("imageupload");
+  // Remove any other background set before doing anything
+  localStorage.removeItem("image_url");
 
   const image = event.target.files[0];
 
@@ -398,12 +400,9 @@ input.addEventListener("change", (event) => {
 
   reader.readAsDataURL(image);
 
-  // remove image_url
-  localStorage.removeItem("image_url");
-
   setTimeout(() => {
     location.reload();
-  }, 2000);
+  }, 3000);
 
   reader.addEventListener("load", () => {
     localStorage.setItem("imageupload", reader.result);

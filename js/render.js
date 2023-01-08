@@ -212,8 +212,9 @@ Upload images, optimization & better UI.
 
 <h3> 🏠 Home design tweaks </h3>
 - Favorites is now aligned to the right, this should make it easier to use and more consistent with the rest of the interface. <br/>
+- Added "New window" option inside of the dropdown menu. <br/>
 
-<h3> 😎 WHY DID THIS TAKE SOO LONG? Upload your own god DAMN backgrounds! </h3>
+<h3> 😎 Upload your own god DAMN backgrounds! </h3>
 - You can now upload your own images to set as your custom background! All images are loaded and stored locally, this means no internet connection is required at all! <br/>
 - Please note: Currently GIFs are not supported. <br/>
 
@@ -224,18 +225,22 @@ Upload images, optimization & better UI.
 - Fix SVG icons inside dropdown menu.<br/>
 - Fix a very old bug that caused the browser to display a "This page is zoom" error. <br/>
 - Fix lag when opening settings. <br/>
+- Fix search results text not properly showing when using a Light theme. <br/>
 - Various bug fixes and other performance improvements! <br/>
 </ul>
 
 <h3> 🚄 SPEEDZZZZZZ........ </h3>
 - All images inside of settings are now compressed and use lazy loading by default.<br/>
-- Compress all gifs to save space and make things load quicker. <br/>
+- Compress all GIFs to save space and make things load quicker. <br/>
 - Style.css code cleanup. <br/>
 
-<h3> 2 other things </h3>
-- The bold effect applied with the "Bold font" option is now less "bold" is that makes any sense. <br/>
+<h3> And TONS of OTHER Improvements!</h3>
+- The bold effect applied with the "Bold font" option is now less "bold" if that makes any sense. <br/>
 - The favorite-button got a new hover effect. <br/>
-- And oh, I might have forgotten some stuff, this update was in the works since the 6.0 release but features got delayed due to time constraints. 
+- Slightly tweaked user experience of Favorite search. <br/>
+- Dropdown menu hover effect is now simpler and much cleaner. <br/>
+- Moved apply white color to home elements under Custom background category for easier access. <br/> 
+- And oh, I might have forgotten some stuff, this update was in the works since the 6.0 release but features got delayed due to time constraints. <br/>
 </div>
 
 

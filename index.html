@@ -434,6 +434,14 @@ need ......... to ................ scroll ......................................
                     <span>Remove</span>
                   </button>
                 </div>
+                <p class="dropdown-seperator settings-seperator">
+                  <span>Home options</span>
+                </p>
+
+                <label>
+                  <input type="checkbox" id="force_white_color_header" />
+                  <span>Apply white color to home elements</span>
+                </label>
                 <h3>Suggested websites</h3>
                 <p class="description">Websites to find cool backgrounds.</p>
                 <div id="cool_backgrounds"></div>
@@ -464,7 +472,7 @@ need ......... to ................ scroll ......................................
                   <span>Supported providers</span>
                 </p>
                 <ul>
-                  <li>Google (Default)</li>
+                  <li style="font-weight: 700">Google (Default)</li>
                   <li>DuckDuckGo</li>
                   <li>YouTube</li>
                   <li>Reddit</li>
@@ -690,17 +698,6 @@ need ......... to ................ scroll ......................................
                 <input type="checkbox" id="browser_font" />
                 <span>Use Sans Serif font</span>
               </label>
-              <br />
-              <br />
-
-              <p class="dropdown-seperator settings-seperator">
-                <span>Custom background</span>
-              </p>
-
-              <label>
-                <input type="checkbox" id="force_white_color_header" />
-                <span>Apply white color to header</span>
-              </label>
             </div>
 
             <p class="settings-item-title">Hide things</p>
@@ -770,7 +767,7 @@ need ......... to ................ scroll ......................................
             class="dropdown-seperator"
             style="font-weight: 500; font-size: 15px"
           >
-            <span class="image-uploading">Upload image (Beta)</span>
+            <span id="processing-image">Upload image (Beta)</span>
           </p>
           <p
             class="small_text description"
@@ -779,6 +776,7 @@ need ......... to ................ scroll ......................................
             Uploaded images are stored locally, no internet connection is ever
             required.
           </p>
+
           <input type="file" id="imageupload" accept="image/*" />
         </div>
       </div>
