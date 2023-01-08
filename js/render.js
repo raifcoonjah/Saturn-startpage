@@ -199,16 +199,20 @@ const settingAbout = (z) => {
             <a class="version-text green_background"
             >Saturn v6.3.0</i></a>
           </p>
+            <p style="text-align:center;"> 
+            <a class="version-text"
+            >Updated on: 08/01/2023</i></a>
+          </p>
 <p style="text-align:center;" class="description small_text">
-Upload images, optimization & better UI.
+Upload custom backgrounds, optimization & better UI/UX.
 </p>
 <ul>
 <h3> ⚙️ Settings upgrades </h3>
 - Settings navigation now has categories making it easier to find things on quick glance. <br/>
-- Theme icons got a slight design tweak. <br/>
-- Hide things got a slight design and UX tweak. <br/>
-- Saturn Search now has a list of all the provides it supports. <br/>
-- Various other tweaks to make things more consistent. <br/>
+- Theme icons got a slight design change. <br/>
+- Hide things got a slight design and UX change. <br/>
+- Saturn Search now shows a list of all the providers it supports. <br/>
+- Various other changes to make things more consistent. <br/>
 
 <h3> 🏠 Home design tweaks </h3>
 - Favorites is now aligned to the right, this should make it easier to use and more consistent with the rest of the interface. <br/>
@@ -216,7 +220,10 @@ Upload images, optimization & better UI.
 
 <h3> 😎 Upload your own god DAMN backgrounds! </h3>
 - You can now upload your own images to set as your custom background! All images are loaded and stored locally, this means no internet connection is required at all! <br/>
-- Please note: Currently GIFs are not supported. <br/>
+- Please note: GIFs are not supported. <br/>
+
+<h3> ⚙️ Saturn Search now supports ProtonDB! </h3>
+- Saturn search now supports protondb as a search provider. <br/>
 
 <h3> 🐞 Warning: Bugs were killed! </h3>
 - Fix notification dot on mobile/smaller screens. <br/>
@@ -227,10 +234,11 @@ Upload images, optimization & better UI.
 - Fix lag when opening settings. <br/>
 - Fix search results text not properly showing when using a Light theme. <br/>
 - Various bug fixes and other performance improvements! <br/>
+- Fix a small UI issue with the new Favorites search interface. <br/>
 </ul>
 
-<h3> 🚄 SPEEDZZZZZZ........ </h3>
-- All images inside of settings are now compressed and use lazy loading by default.<br/>
+<h3> 🚄 Fast "vroom vroom" </h3>
+- All images inside of settings are now compressed and use lazy loading by default, this will decrease the time Saturn takes to load. <br/>
 - Compress all GIFs to save space and make things load quicker. <br/>
 - Style.css code cleanup. <br/>
 
@@ -240,7 +248,10 @@ Upload images, optimization & better UI.
 - Slightly tweaked user experience of Favorite search. <br/>
 - Dropdown menu hover effect is now simpler and much cleaner. <br/>
 - Moved apply white color to home elements under Custom background category for easier access. <br/> 
-- And oh, I might have forgotten some stuff, this update was in the works since the 6.0 release but features got delayed due to time constraints. <br/>
+- I might have forgotten some stuff, this update was in the works since the 6.0 release but features got delayed due to time constraints. <br/>
+
+
+<h6> I enjoyed making this one :D </h6>
 </div>
 
 
