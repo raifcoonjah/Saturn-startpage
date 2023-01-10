@@ -94,20 +94,30 @@ need ......... to ................ scroll ......................................
               title="Saturn was recently updated."
             ></span
           ></a>
-          <a class="dropdown-soundboard" id="SBtntrigger"
-            ><i class="las la-sliders-h"></i> Soundboard <kbd>Shift + B</kbd></a
+          <a
+            href="https://mynoise.net/"
+            target="_blank"
+            class="dropdown-settings"
           >
+            <i class="las la-sliders-h"></i>
+            myNoise® <i class="las la-external-link-alt"></i
+          ></a>
+
           <a href="https://calendar.google.com" class="dropdown-settings"
             ><i class="las la-calendar"></i> G. Calendar
             <kbd>Ctrl + Alt + C</kbd></a
           >
           <p class="dropdown-seperator"><span>Quick actions</span></p>
+          <a href="#" target="_blank" class="dropdown-settings">
+            <i class="las la-plus-square"></i>
+            New window</a
+          >
           <a
             class="dropdown_redaccent"
             href="https://github.com/mraif13/Saturn-startpage/issues/new"
             target="_blank"
             ><i class="las la-bug"></i>
-            Report a bug
+            Report bug...
           </a>
         </div>
       </div>
@@ -140,7 +150,7 @@ need ......... to ................ scroll ......................................
         <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
         <!-- End of app list -->
 
-        <div id="app-9" class="tab-link">
+        <div id="app-9" class="tab-link fix-favorites-header">
           <!-- =+=+= Favorite v3.2 =+=+= -->
           <div id="fav-container" class="fav-container">
             <div class="favorites-search">
@@ -264,13 +274,18 @@ need ......... to ................ scroll ......................................
               >
                 <i class="las la-cog"></i> General
               </li>
+              <p
+                class="dropdown-seperator settings-seperator settings-nav-separator"
+              >
+                <span>Personalization</span>
+              </p>
               <li
                 class="tab-link"
                 id="tab-link"
                 data-tab="tab-6"
                 title="Hide things and Customizations..."
               >
-                <i class="las la-paint-roller"></i> Appearance
+                <i class="las la-paint-roller"></i> Customizations
               </li>
               <li
                 class="tab-link"
@@ -280,10 +295,19 @@ need ......... to ................ scroll ......................................
               >
                 <i class="las la-palette"></i> Themes
               </li>
+              <p
+                class="dropdown-seperator settings-seperator settings-nav-separator"
+              >
+                <span>Productivity</span>
+              </p>
               <li class="tab-link" data-tab="tab-7" title="Saturn Focus...">
                 <i class="las la-cloud-moon"></i> Focus
               </li>
-              <p class="line"></p>
+              <p
+                class="dropdown-seperator settings-seperator settings-nav-separator"
+              >
+                <span>More options</span>
+              </p>
               <li
                 class="tab-link"
                 data-tab="tab-5"
@@ -397,7 +421,7 @@ need ......... to ................ scroll ......................................
                 <div class="cbw_container">
                   <button class="sqaure_box" id="wallpaper-button">
                     <i class="las la-plus"></i>
-                    <span>Set background</span>
+                    <span>Set background...</span>
                   </button>
 
                   <button
@@ -410,6 +434,14 @@ need ......... to ................ scroll ......................................
                     <span>Remove</span>
                   </button>
                 </div>
+                <p class="dropdown-seperator settings-seperator">
+                  <span>Home options</span>
+                </p>
+
+                <label>
+                  <input type="checkbox" id="force_white_color_header" />
+                  <span>Apply white color to home elements</span>
+                </label>
                 <h3>Suggested websites</h3>
                 <p class="description">Websites to find cool backgrounds.</p>
                 <div id="cool_backgrounds"></div>
@@ -427,6 +459,7 @@ need ......... to ................ scroll ......................................
                   <summary>Change Search</summary>
                   <img
                     src="/assets/img/change-search.gif"
+                    loading="lazy"
                     alt="change-search"
                   />
 
@@ -435,6 +468,16 @@ need ......... to ................ scroll ......................................
                     <kbd><i class="las la-caret-square-up"></i> (Arrow Up)</kbd>
                   </p>
                 </details>
+                <p class="dropdown-seperator settings-seperator">
+                  <span>Supported providers</span>
+                </p>
+                <ul>
+                  <li style="font-weight: 700">Google (Default)</li>
+                  <li>DuckDuckGo</li>
+                  <li>YouTube</li>
+                  <li>Reddit</li>
+                  <li>Protondb</li>
+                </ul>
               </div>
               <p
                 class="description"
@@ -486,7 +529,6 @@ need ......... to ................ scroll ......................................
             </p>
             <div class="settings-background">
               <!-- =+=+= Themes =+=+=-->
-
               <!-- =+=+= Light/Day theme =+=+=-->
               <p class="theme-title"><i class="las la-sun"></i> Light themes</p>
 
@@ -494,6 +536,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/light.png"
+                  loading="lazy"
                   alt="light-icon.png"
                 />
                 <span class="theme-name">Cancri</span>
@@ -506,6 +549,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/lightdark.png"
+                  loading="lazy"
                   alt="lighterdark-icon.png"
                 />
                 <span class="theme-name">Light grey</span>
@@ -514,6 +558,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/dracula.png"
+                  loading="lazy"
                   title="Dracula theme"
                   alt="dracula-icon.png"
                 />
@@ -523,6 +568,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/nord.png"
+                  loading="lazy"
                   title="Nord theme"
                   alt="nord-icon.png"
                 />
@@ -532,6 +578,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/amazinglypurple.png"
+                  loading="lazy"
                   title="Experimental theme"
                   alt="experimental-icon.png"
                 />
@@ -541,6 +588,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/ghostlygreen.png"
+                  loading="lazy"
                   title="Ghostly green theme"
                   alt="ghostlygreen-icon.png"
                 />
@@ -556,6 +604,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/dark.png"
+                  loading="lazy"
                   title="Dark theme"
                   alt="darktheme-icon.png"
                 />
@@ -566,6 +615,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/highcontrast.png"
+                  loading="lazy"
                   title="Dark theme"
                   alt="highconstrast-icon.png"
                 />
@@ -576,6 +626,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/space.png"
+                  loading="lazy"
                   title="Space dark theme"
                   alt="spacedark-icon.png"
                 />
@@ -585,6 +636,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/halloween.png"
+                  loading="lazy"
                   title="Halloween theme"
                   alt="halloween-icon.png"
                 />
@@ -598,6 +650,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/rock-legend.png"
+                  loading="lazy"
                   title="Experimental theme"
                   alt="experimental-icon.png"
                 />
@@ -617,6 +670,7 @@ need ......... to ................ scroll ......................................
                 <img
                   class="theme-icon"
                   src="/assets/img/themes/light.png"
+                  loading="lazy"
                   alt="light-icon.png"
                 />
                 <span class="theme-name">Modern (Beta)</span>
@@ -634,7 +688,7 @@ need ......... to ................ scroll ......................................
               <p class="dropdown-seperator settings-seperator">
                 <span>Fonts</span>
               </p>
-              <p></p>
+
               <label>
                 <input type="checkbox" id="bold_text" />
                 <span>Bold Text</span>
@@ -644,17 +698,6 @@ need ......... to ................ scroll ......................................
                 <input type="checkbox" id="browser_font" />
                 <span>Use Sans Serif font</span>
               </label>
-              <br />
-              <br />
-
-              <p class="dropdown-seperator settings-seperator">
-                <span>Custom background</span>
-              </p>
-              <p></p>
-              <label>
-                <input type="checkbox" id="force_white_color_header" />
-                <span>Apply white color to some home screen elements</span>
-              </label>
             </div>
 
             <p class="settings-item-title">Hide things</p>
@@ -663,123 +706,27 @@ need ......... to ................ scroll ......................................
             </p>
             <div class="settings-background">
               <!-- =+=+= HT: Options2 =+=+=-->
-              <h4><i class="las la-search"></i> Hide Search bar</h4>
-              <p></p>
+              <h3>Hide Search bar</h3>
 
               <label class="switch">
                 <input type="checkbox" class="hide-search" />
                 <span class="slider round"></span>
               </label>
+            </div>
+            <!-- <div class="settings-background">
 
-              <!-- =+=+= HT: Options3 =+=+=-->
-              <h4>
-                <i class="las la-calendar"></i> Hide Google calendar button
-              </h4>
-              <p></p>
+              <h4>Hide Google calendar button</h4>
 
               <label class="switch">
                 <input type="checkbox" class="hide-calendar-btn" />
                 <span class="slider round"></span>
               </label>
-            </div>
+            </div> -->
           </div>
           <!-- K shortcuts -->
           <div id="k_shortcuts"></div>
         </div>
       </div>
-
-      <div class="sounds_modal">
-        <div class="sounds-modal-content">
-          <span class="close-sounds"><i class="las la-times"></i></span>
-          <br />
-          <div class="soundboard">
-            <p class="settings-item-title">Soundboard</p>
-            <p
-              class="settings-item-under-title description"
-              style="font-size: 14px"
-            >
-              Choose a sound to play in the background while you work.
-            </p>
-            <div class="soundboard-container">
-              <!-- Audio src [Rain] -->
-              <audio id="raineffect">
-                <source src="/assets/soundboard/rain.mp3" type="audio/mpeg" />
-              </audio>
-
-              <!-- The button itself [Rain] -->
-              <button
-                id="play"
-                class="audio-button"
-                data-tootik="Rain"
-                data-tootik-conf="bottom no-arrow"
-                type="button"
-              >
-                <i class="las la-cloud-rain"></i>
-              </button>
-            </div>
-            <div class="soundboard-container">
-              <!-- Audio src [fireplace] -->
-              <audio id="fireplace">
-                <source
-                  src="/assets/soundboard/fireplace.mp3"
-                  type="audio/mpeg"
-                />
-              </audio>
-
-              <!-- The button itself [fireplace] -->
-              <button
-                id="play-fireplace"
-                class="audio-button"
-                data-tootik="Fireplace "
-                data-tootik-conf="bottom no-arrow"
-                type="button"
-              >
-                <i class="las la-fire"></i>
-              </button>
-
-              <!-- Audio src [waves] -->
-              <audio id="waves">
-                <source src="/assets/soundboard/waves.mp3" type="audio/mpeg" />
-              </audio>
-
-              <!-- The button itself [fireplace] -->
-              <button
-                id="play-waves"
-                class="audio-button"
-                data-tootik="Waves "
-                data-tootik-conf="bottom no-arrow"
-                type="button"
-              >
-                <i class="las la-water"></i>
-              </button>
-            </div>
-            <br />
-            <br />
-            <p
-              class="dropdown-seperator settings-seperator soundboard-seperator"
-            >
-              <span>Audio control</span>
-            </p>
-            <button
-              id="volume-decrease"
-              title="Decrease volume.."
-              class="control-button"
-              type="button"
-            >
-              <i class="las la-minus"></i>
-            </button>
-            <button
-              id="volume-increase"
-              title="Increase volume.."
-              class="control-button"
-              type="button"
-            >
-              <i class="las la-plus"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
       <div id="wallpaper_modal" class="wallpaper_modal">
         <div class="wallpaper_modal_content">
           <br />
@@ -789,7 +736,7 @@ need ......... to ................ scroll ......................................
             style="font-size: 14px"
           >
             Set an Image or GIF as your background. This process may take up to
-            5 seconds.
+            5 seconds and requires an active internet connection.
             <a
               href="https://mraif13.notion.site/How-to-use-Custom-background-0ad28bcc78b54aab89739e9c34e94b5a"
               target="_blank"
@@ -804,7 +751,6 @@ need ......... to ................ scroll ......................................
             id="image_url"
             placeholder="Enter or paste a URL"
           />
-
           <div class="button-container">
             <button id="close-wallpaper" class="close-wallpaper">
               <i class="las la-times"></i> Close
@@ -813,11 +759,25 @@ need ......... to ................ scroll ......................................
               <i class="lar la-save"></i> Apply
             </button>
           </div>
-          <p class="line"></p>
           <details>
             <summary>Background URL</summary>
             <code id="your_image_url"></code>
           </details>
+          <p
+            class="dropdown-seperator"
+            style="font-weight: 500; font-size: 15px"
+          >
+            <span id="processing-image">Upload image (Beta)</span>
+          </p>
+          <p
+            class="small_text description"
+            style="font-size: 12px; margin-bottom: 0px; margin-left: 10px"
+          >
+            Uploaded images are stored locally, no internet connection is ever
+            required.
+          </p>
+
+          <input type="file" id="imageupload" accept="image/*" />
         </div>
       </div>
 

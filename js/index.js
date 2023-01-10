@@ -94,29 +94,6 @@ window.addEventListener("click", windowOnClick);
 
 //
 // ========
-// + Soundboard Modal +
-// ========
-//
-
-var soundsModal = document.querySelector(".sounds_modal");
-var SBtntrigger = document.querySelector(".dropdown-soundboard");
-var closeSoundsButton = document.querySelector(".close-sounds");
-
-function toggleSounds() {
-  soundsModal.classList.toggle("show-sounds-modal");
-}
-function windowOutclick(event) {
-  if (event.target === soundsModal) {
-    toggleSounds();
-  }
-}
-
-SBtntrigger.addEventListener("click", toggleSounds);
-closeSoundsButton.addEventListener("click", toggleSounds);
-window.addEventListener("click", windowOutclick);
-
-//
-// ========
 // + Wallpaper Modal +
 // ========
 //
@@ -263,17 +240,10 @@ document.body.addEventListener("keydown", function () {
 // when ESC is pressed close the modal in vanilla js
 document.addEventListener("keyup", function (e) {
   if (e.keyCode == 27) {
-    // remove settings_modal class in vanilla js
     document.querySelector(".settings_modal").classList.remove("show-modal");
-    // remove fav_modal class in vanilla js
     document
       .querySelector(".fav_modal")
       .classList.remove("show-favorite-modal");
-    // remove sounds_modal class in vanilla js
-    document
-      .querySelector(".sounds_modal")
-      .classList.remove("show-sounds-modal");
-    // remove wallpaper_modal class in vanilla js
     document
       .querySelector(".wallpaper_modal")
       .classList.remove("show-wallpaper-modal");
@@ -361,13 +331,6 @@ document.addEventListener("keyup", function (se_icon) {
     document.querySelector(".se_icon").click();
   }
 });
-
-document.addEventListener("keyup", function (soundboard) {
-  if (soundboard.keyCode == 66 && soundboard.shiftKey) {
-    document.querySelector(".dropdown-soundboard").click();
-  }
-});
-
 document.addEventListener("keyup", function (favModal) {
   if (favModal.keyCode == 90 && favModal.shiftKey) {
     document.querySelector(".favorite-button").click();
@@ -390,69 +353,6 @@ document.querySelector("#save").addEventListener("click", function () {
     location.reload();
   }
 });
-
-// Saturn Soundboard
-// v1.0
-
-var rainefffect = document.getElementById("raineffect");
-var fireplace = document.getElementById("fireplace");
-var waves = document.getElementById("waves");
-rainefffect.loop = true;
-fireplace.loop = true;
-waves.loop = true;
-
-// rain effect
-
-$("#play").click(function () {
-  if (rainefffect.paused) {
-    rainefffect.volume = 0.1;
-    rainefffect.play();
-    $("#play").addClass("pause");
-  } else {
-    rainefffect.pause();
-    $("#play").removeClass("pause");
-  }
-});
-
-// fireplace effect
-
-$("#play-fireplace").click(function () {
-  if (fireplace.paused) {
-    fireplace.volume = 0.1;
-    fireplace.play();
-    $("#play-fireplace").addClass("pause");
-  } else {
-    fireplace.pause();
-    $("#play-fireplace").removeClass("pause");
-  }
-});
-
-// waves effect
-$("#play-waves").click(function () {
-  if (waves.paused) {
-    waves.volume = 0.1;
-    waves.play();
-    $("#play-waves").addClass("pause");
-  } else {
-    waves.pause();
-    $("#play-waves").removeClass("pause");
-  }
-});
-
-// button-increase volume
-$("#volume-increase").click(function () {
-  rainefffect.volume += 0.1;
-  fireplace.volume += 0.1;
-  waves.volume += 0.1;
-});
-
-// button-decrease to decrease volume
-$("#volume-decrease").click(function () {
-  rainefffect.volume -= 0.1;
-  fireplace.volume -= 0.1;
-  waves.volume -= 0.1;
-});
-
 //
 // ========
 // + *New* Wallpaper Feature +
@@ -474,8 +374,46 @@ document.querySelector("#save-image").addEventListener("click", function () {
       location.reload();
     }, 5000);
     localStorage.setItem("image_url", image_url);
+
+    // Remove previously used images
+    localStorage.removeItem("imageupload");
   }
 });
+
+// up-load image
+const input = document.getElementById("imageupload");
+
+input.addEventListener("change", (event) => {
+  document.getElementById("processing-image").innerHTML =
+    "<img class='loading-svg' style='width:30px;height:30px;margin-right:2px;' src='/assets/img/loading.svg'>" +
+    "Processing image, please wait...";
+
+  // Remove previous uploaded images
+
+  localStorage.removeItem("imageupload");
+  // Remove any other background set before doing anything
+  localStorage.removeItem("image_url");
+
+  const image = event.target.files[0];
+
+  const reader = new FileReader();
+
+  reader.readAsDataURL(image);
+
+  setTimeout(() => {
+    location.reload();
+  }, 3000);
+
+  reader.addEventListener("load", () => {
+    localStorage.setItem("imageupload", reader.result);
+  });
+});
+
+// grab and set as background ;)
+if (localStorage.getItem("imageupload")) {
+  document.querySelector("body").style.backgroundImage =
+    "url(" + localStorage.getItem("imageupload") + ")";
+}
 
 //
 // ========
@@ -499,6 +437,7 @@ document
       confirm("You're about to delete your custom background. Are you sure?")
     ) {
       localStorage.removeItem("image_url");
+      localStorage.removeItem("imageupload");
       location.reload();
     }
   });
@@ -567,12 +506,12 @@ document.querySelector("#bold_text").addEventListener("click", function () {
     document.querySelector("body").style.fontWeight = "normal";
   } else {
     localStorage.setItem("bold_text", true);
-    document.querySelector("body").style.fontWeight = "bold";
+    document.querySelector("body").style.fontWeight = "600";
   }
 });
 
 if (localStorage.getItem("bold_text")) {
-  document.querySelector("body").style.fontWeight = "bold";
+  document.querySelector("body").style.fontWeight = "600";
 }
 
 // UI Tweak: Use Sans Serif as default font

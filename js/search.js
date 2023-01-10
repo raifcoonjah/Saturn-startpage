@@ -7,7 +7,7 @@
 // ALlow user to press 3 time, increasing this number without adding
 // more search_engines will cause some serious bugs to occur.
 
-let se = 3;
+let se = 4;
 
 // Listens for click event in se_button, once clicked,
 // se increments by one and cycleSearchEngines() is called to update the icon, placeholder, and form action
@@ -39,6 +39,11 @@ const search_engines = [
     placeholder: "YouTube",
     action: "https://www.youtube.com/results?q=",
   },
+  {
+    src: "protondb.svg",
+    placeholder: "Protondb",
+    action: "https://www.protondb.com/search?q=",
+  },
 ];
 
 // This happens when the user presses on the se button.
@@ -51,4 +56,3 @@ const cycleSearchEngines = (se) => {
     "Search with " + curData.placeholder + "..";
   document.getElementById("search_eng_form").action = curData.action;
 };
-

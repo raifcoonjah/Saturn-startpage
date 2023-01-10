@@ -618,7 +618,7 @@ themes are using a dark color scheme =
 .ghostlygreen,
 .lighterdarktheme,
 .halloween {
-    --default-font: "Inter", sans-serif;
+  --default-font: "Inter", sans-serif;
 }
 
 /* 

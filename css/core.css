@@ -591,7 +591,6 @@ color to fix some issues == */
 #fav-link a:hover {
   background-color: var(--favorites-hover);
   transition: var(--transition-speed-default);
-  padding: 11px 10px;
 }
 
 .removebtn:hover {
@@ -736,6 +735,12 @@ use the correct border radius == */
     display: block !important;
     padding: 10px 10px !important;
     margin-bottom: 5px !important;
+  }
+  .notification-dot {
+    visibility: hidden;
+  }
+  .settings-nav-separator {
+    visibility: hidden;
   }
 }
 
