@@ -162,7 +162,7 @@ const settingAbout = (z) => {
                <a class="version-text"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.3.0"
                target="_blank" 
-               >v6.3.0</i></a>
+               >v6.3.1</i></a>
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
@@ -250,6 +250,8 @@ Upload custom backgrounds, optimization & better UI/UX.
 - Moved apply white color to home elements under Custom background category for easier access. <br/> 
 - I might have forgotten some stuff, this update was in the works since the 6.0 release but features got delayed due to time constraints. <br/>
 
+<h3> .1 release </h3>
+- This small .1 was released to fix various updating issues. 
 
 <h6> I enjoyed making this one :D </h6>
 </div>
