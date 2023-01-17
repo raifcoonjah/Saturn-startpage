@@ -75,17 +75,20 @@ amazinglypurple.onclick = () => {
 
 // Dark theme
 darkButton.onclick = () => {
-  body.classList.replace("light", "dark");
-  body.classList.replace("space", "dark");
-  body.classList.replace("linkin-park", "dark");
-  body.classList.replace("lighterdarktheme", "dark");
-  body.classList.replace("dracula", "dark");
-  body.classList.replace("nord", "dark");
-  body.classList.replace("highcontrast", "dark");
-  body.classList.replace("amazinglypurple", "dark");
-  body.classList.replace("lightplusplus", "dark");
-  body.classList.replace("halloween", "dark");
-  body.classList.replace("ghostlygreen", "dark");
+  body.classList.remove(
+    "light",
+    "space",
+    "linkin-park",
+    "lighterdarktheme",
+    "lightplusplus",
+    "dracula",
+    "nord",
+    "highcontrast",
+    "amazinglypurple",
+    "halloween",
+    "ghostlygreen"
+  );
+  body.classList.add("dark");
   // Adding new theme? Use this sample code:
   // body.classList.replace("yourthemeID", "name of the current theme");
   localStorage.setItem("theme", "dark");
