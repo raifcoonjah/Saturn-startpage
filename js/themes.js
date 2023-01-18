@@ -37,8 +37,7 @@ const ghostlygreenButton = document.getElementById("ghostlygreen");
 const highcontrastButton = document.getElementById("highcontrast");
 const body = document.body;
 
-
-// Applied theme from cache 
+// Applied theme from cache
 const theme = localStorage.getItem("theme");
 
 if (theme) {
@@ -108,7 +107,7 @@ nordButton.onclick = () => {
   localStorage.setItem("theme", "nord");
 };
 
-highcontrast.onclick = () => {
+highcontrastButton.onclick = () => {
   body.setAttribute("class", "");
   body.classList.add("highcontrast");
   localStorage.setItem("theme", "highcontrast");
