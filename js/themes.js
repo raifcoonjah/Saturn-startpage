@@ -53,7 +53,7 @@ theme_selector.forEach((theme_options) => {
 
 // lightplusplus theme
 LightPlusPlusButton.onclick = () => {
-  body.classList.add("lighterdarktheme");
+  body.classList.add("lightplusplus");
   localStorage.setItem("theme", "lightplusplus"); // Store dem in da localstorage
 };
 
