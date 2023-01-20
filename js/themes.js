@@ -42,14 +42,18 @@ const theme = localStorage.getItem("theme");
 
 if (theme) {
   body.classList.add(theme);
-} else if (theme === null) {
+} else if (theme == null) {
   body.classList.add("light");
 }
 
+let theme_selector = document.querySelectorAll(".theme-container");
+theme_selector.forEach((theme_options) => {
+  theme_options.addEventListener("click", () => body.setAttribute("class", ""));
+});
+
 // lightplusplus theme
 LightPlusPlusButton.onclick = () => {
-  body.setAttribute("class", ""); // Clear any previous class
-  body.classList.add("lightplusplus"); // Add theme class to body
+  body.classList.add("lighterdarktheme");
   localStorage.setItem("theme", "lightplusplus"); // Store dem in da localstorage
 };
 
@@ -67,60 +71,51 @@ darkButton.onclick = () => {
 
 // Default light theme
 lightButton.onclick = () => {
-  body.setAttribute("class", "");
   body.classList.add("light");
   localStorage.setItem("theme", "light");
 };
 
 // Material-ish dark theme
 spaceButton.onclick = () => {
-  body.setAttribute("class", "");
   body.classList.add("space");
   localStorage.setItem("theme", "space");
 };
 
 // LinkinPark theme
 linkinParkButton.onclick = () => {
-  body.setAttribute("class", "");
   body.classList.add("linkin-park");
   localStorage.setItem("theme", "linkin-park");
 };
 
 // Lighter Grey ish theme theme
 lighterdark_theme_button.onclick = () => {
-  body.setAttribute("class", "");
   body.classList.add("lighterdarktheme");
   localStorage.setItem("theme", "lighterdarktheme");
 };
 
 // Dracula theme (beta)
 draculaButton.onclick = () => {
-  body.setAttribute("class", "");
   body.classList.add("dracula");
   localStorage.setItem("theme", "dracula");
 };
 
 // Nord theme (beta)
 nordButton.onclick = () => {
-  body.setAttribute("class", "");
   body.classList.add("nord");
   localStorage.setItem("theme", "nord");
 };
 
 highcontrastButton.onclick = () => {
-  body.setAttribute("class", "");
   body.classList.add("highcontrast");
   localStorage.setItem("theme", "highcontrast");
 };
 
 halloweenButton.onclick = () => {
-  body.setAttribute("class", "");
   body.classList.add("halloween");
   localStorage.setItem("theme", "halloween");
 };
 
 ghostlygreenButton.onclick = () => {
-  body.setAttribute("class", "");
   body.classList.add("ghostlygreen");
   localStorage.setItem("theme", "ghostlygreen");
 };
