@@ -1,4 +1,4 @@
-// Quotes provided by https://type.fit/api/quotes, to keep Saturn offline, the fonts were copied instead.
+// Quotes provided by https://type.fit/api/quotes, to keep Saturn offline, the quotes were copied instead.
 // Full credits to them :D
 
 const quotes = [
