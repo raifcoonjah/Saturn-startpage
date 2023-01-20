@@ -402,7 +402,7 @@ input.addEventListener("change", (event) => {
 
   setTimeout(() => {
     location.reload();
-  }, 3000);
+  }, 1000);
 
   reader.addEventListener("load", () => {
     localStorage.setItem("imageupload", reader.result);
