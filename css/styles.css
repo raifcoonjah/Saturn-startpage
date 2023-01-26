@@ -431,7 +431,7 @@ div.theme-container {
   background-color: var(--lighter-color);
 }
 
-.theme-container:hover {
+.theme-container:hover  {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
   background-color: var(--bg-accent-color-lr-hover);
@@ -895,6 +895,13 @@ appearing when the user hovers on the open in new tab button.
   margin-top: -10px;
 }
 
+.quotes_bg {
+  padding: 9px;
+  margin-top: 2px;
+  border-radius: var(--sat-border-radius);
+  display: inline-block;
+  border: 1px solid var(--lighter-color);
+}
 .small_text {
   font-size: 13px;
   font-weight: 500;
