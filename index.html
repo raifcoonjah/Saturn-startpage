@@ -42,8 +42,9 @@ need ......... to ................ scroll ......................................
     <div class="sat-header">
       <p class="time" id="time"></p>
       <p class="good_morning" id="good_morning"></p>
-      <p class="quote" id="quotation"></p>
-      <p class="quote source" id="source"></p>
+      <div class="quote">
+        <p class="quote quotes_bg" id="quotation"></p>
+      </div>
     </div>
 
     <main>
@@ -751,6 +752,10 @@ need ......... to ................ scroll ......................................
             id="image_url"
             placeholder="Enter or paste a URL"
           />
+          <p
+            class="processing_bg"
+            style="color: var(--sat-lighter-ids); font-size: 13px"
+          ></p>
           <div class="button-container">
             <button id="close-wallpaper" class="close-wallpaper">
               <i class="las la-times"></i> Close
@@ -762,6 +767,12 @@ need ......... to ................ scroll ......................................
           <details>
             <summary>Background URL</summary>
             <code id="your_image_url"></code>
+
+            <p class="line"></p>
+
+            <button style="padding: 8px" id="copy-backgroundurl">
+              Copy URL
+            </button>
           </details>
           <p
             class="dropdown-seperator"

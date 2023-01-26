@@ -367,9 +367,9 @@ document.querySelector("#save-image").addEventListener("click", function () {
     //   "Image URL cannot be empty.";
   } else {
     document.querySelector("#image_url").style.border = "2px solid #73d673";
-    document.querySelector("#save-image").innerHTML =
+    document.querySelector(".processing_bg").innerHTML =
       "<img class='loading-svg' src='/assets/img/loading.svg'>" +
-      " Applying...";
+      " Loading background...";
     setTimeout(function () {
       location.reload();
     }, 5000);
@@ -384,31 +384,24 @@ document.querySelector("#save-image").addEventListener("click", function () {
 const input = document.getElementById("imageupload");
 
 input.addEventListener("change", (event) => {
-  document.getElementById("processing-image").innerHTML =
-    "<img class='loading-svg' style='width:30px;height:30px;margin-right:2px;' src='/assets/img/loading.svg'>" +
-    "Processing image, please wait...";
-
-  // Remove previous uploaded images
-
+  document.querySelector(".processing_bg").innerHTML =
+    "<img class='loading-svg' src='/assets/img/loading.svg'>" +
+    " Processing image... ";
+  //
+  // == First we remove any previously stored backgrounds. ==
+  //
   localStorage.removeItem("imageupload");
-  // Remove any other background set before doing anything
   localStorage.removeItem("image_url");
-
   const image = event.target.files[0];
-
   const reader = new FileReader();
-
   reader.readAsDataURL(image);
-
-  setTimeout(() => {
-    location.reload();
-  }, 1000);
-
   reader.addEventListener("load", () => {
     localStorage.setItem("imageupload", reader.result);
   });
+  setTimeout(() => {
+    location.reload();
+  }, 2000);
 });
-
 // grab and set as background ;)
 if (localStorage.getItem("imageupload")) {
   document.querySelector("body").style.backgroundImage =
@@ -425,6 +418,20 @@ if (localStorage.getItem("image_url")) {
     "url(" + localStorage.getItem("image_url") + ")";
 }
 
+// copy to clipboard
+
+let copy_image_url = document.getElementById("copy-backgroundurl");
+
+if (localStorage.getItem("image_url") == null) {
+  document.querySelector("#copy-backgroundurl").style.display = "none";
+} else {
+  copy_image_url.addEventListener("click", () => {
+    navigator.clipboard.writeText(localStorage.getItem("image_url"));
+    document.querySelector("#copy-backgroundurl").innerHTML =
+      "🥳 Copied to clipboard";
+  });
+}
+
 //
 // ========
 // + *New* Delete and clear image_url +
@@ -438,7 +445,8 @@ document
     ) {
       localStorage.removeItem("image_url");
       localStorage.removeItem("imageupload");
-      location.reload();
+      document.querySelector("body").style.backgroundImage = "";
+      document.querySelector("#copy-backgroundurl").style.display = "none";
     }
   });
 
@@ -446,11 +454,12 @@ document
 // ========
 // + *New* display saved image_url inside your_image_url * +
 // ========
-document.querySelector("#your_image_url").innerHTML =
-  localStorage.getItem("image_url");
 
 if (localStorage.getItem("image_url") == null) {
   document.querySelector("#your_image_url").innerHTML = "No URL found";
+} else {
+  document.querySelector("#your_image_url").innerHTML =
+    localStorage.getItem("image_url");
 }
 
 //
@@ -540,3 +549,17 @@ window.addEventListener(
   },
   false
 );
+
+// $(".settings-content").on("scroll", function () {
+//   var threshold = 1;
+
+//   if ($(".settings-content").scrollTop() > threshold) {
+//     $(".modal-title").addClass("default-font");
+//   } else {
+//     $(".modal-title").removeClass("default-font");
+//   }
+// });
+
+// $(".settings-content").on("hide.bs.modal", function (e) {
+//   $(".modal-title").removeClass("increase-font");
+// });
