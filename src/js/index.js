@@ -41,34 +41,45 @@ function getTime() {
 function getDate() {
   let date = new Date(),
     months = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
+      "January",
+      "February",
+      "March",
+      "April",
       "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
     ],
     cmonth = months[date.getMonth()],
-    days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"],
+    days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ],
     cday = days[date.getDay()],
     cnum = date.getDate();
   if (cnum < 10) {
     cnum = "0" + cnum;
   }
-  return " " + cday + " " + cnum + " " + cmonth;
+  return " " + cday + ", " + cnum + " " + cmonth;
 }
-// Set up the clock and date
-document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
+// Set up the date only
+document.getElementById("date").innerHTML = getDate();
+
+// Set up the clock only
+document.getElementById("time").innerHTML = getTime();
 
 // Reload time after a certain amount of time [BETA, testing tbh]
 setInterval(() => {
-  document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
+  document.getElementById("time").innerHTML = getTime();
 }, 60 * 1000);
 
 //

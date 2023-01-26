@@ -75,13 +75,21 @@ its supposed to.
 .good_morning {
   font-weight: 500;
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
+}
+
+.date {
+  font-weight: 700;
+  text-align: center;
+  font-size: 55px;
 }
 
 .time {
   font-weight: 700;
   text-align: center;
-  font-size: 62px;
+  font-size: 85px;
+  margin-bottom: -10px;
+  margin-top: -30px;
 }
 
 .time span {
@@ -431,7 +439,7 @@ div.theme-container {
   background-color: var(--lighter-color);
 }
 
-.theme-container:hover  {
+.theme-container:hover {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
   background-color: var(--bg-accent-color-lr-hover);
