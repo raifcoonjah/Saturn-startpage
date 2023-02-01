@@ -749,10 +749,17 @@ need ......... to ................ scroll ......................................
 
           <input
             type="text"
-            style="width: 100%; font-size: 15px"
+            style="width: 90%; font-size: 15px"
             id="image_url"
             placeholder="Enter or paste a URL"
           />
+          <button
+            title="Copy URL to clipboard"
+            style="padding: 13px"
+            id="copy-backgroundurl"
+          >
+            <i class="las la-clipboard"></i>
+          </button>
           <p
             class="processing_bg"
             style="color: var(--sat-lighter-ids); font-size: 13px"
@@ -765,16 +772,6 @@ need ......... to ................ scroll ......................................
               <i class="lar la-save"></i> Apply
             </button>
           </div>
-          <details>
-            <summary>Background URL</summary>
-            <code id="your_image_url"></code>
-
-            <p class="line"></p>
-
-            <button style="padding: 8px" id="copy-backgroundurl">
-              Copy URL
-            </button>
-          </details>
           <p
             class="dropdown-seperator"
             style="font-weight: 500; font-size: 15px"

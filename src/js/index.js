@@ -28,7 +28,6 @@ determineGreet(new Date().getHours());
 function getTime() {
   let date = new Date(),
     min = date.getMinutes(),
-    //sec = date.getSeconds(),
     hour = date.getHours();
   return (
     "" +
@@ -77,7 +76,7 @@ document.getElementById("date").innerHTML = getDate();
 // Set up the clock only
 document.getElementById("time").innerHTML = getTime();
 
-// Reload time after a certain amount of time [BETA, testing tbh]
+// Reload time after a certain amount of time.
 setInterval(() => {
   document.getElementById("time").innerHTML = getTime();
 }, 60 * 1000);
@@ -172,30 +171,6 @@ $(function () {
       $(".search_block").show();
     }
     localStorage.setItem("search_hidden", this.checked);
-  });
-});
-
-//
-// ========
-// + Hide Calendar Button +
-// ========
-//
-$(function () {
-  var status = localStorage.getItem("hide-calendar-btn");
-  if (status == "true") {
-    $(".calendar-btn").css("display", "none");
-    $(".hide-apps-list").attr("checked", true);
-  } else {
-    $(".calendar-btn").css("display", "block");
-    $(".hide-calendar-btn").attr("checked", false);
-  }
-  $(".hide-calendar-btn").click(function () {
-    if (this.checked) {
-      $(".calendar-btn").hide();
-    } else {
-      $(".calendar-btn").show();
-    }
-    localStorage.setItem("hide-calendar-btn", this.checked);
   });
 });
 
@@ -429,20 +404,6 @@ if (localStorage.getItem("image_url")) {
     "url(" + localStorage.getItem("image_url") + ")";
 }
 
-// copy to clipboard
-
-let copy_image_url = document.getElementById("copy-backgroundurl");
-
-if (localStorage.getItem("image_url") == null) {
-  document.querySelector("#copy-backgroundurl").style.display = "none";
-} else {
-  copy_image_url.addEventListener("click", () => {
-    navigator.clipboard.writeText(localStorage.getItem("image_url"));
-    document.querySelector("#copy-backgroundurl").innerHTML =
-      "🥳 Copied to clipboard";
-  });
-}
-
 //
 // ========
 // + *New* Delete and clear image_url +
@@ -457,21 +418,29 @@ document
       localStorage.removeItem("image_url");
       localStorage.removeItem("imageupload");
       document.querySelector("body").style.backgroundImage = "";
+      document.querySelector("#image_url").style.width = "100%";
       document.querySelector("#copy-backgroundurl").style.display = "none";
     }
   });
 
 //
 // ========
-// + *New* display saved image_url inside your_image_url * +
+// + *New* Copy to clipboard * +
 // ========
 
+let copy_image_url = document.getElementById("copy-backgroundurl");
+
 if (localStorage.getItem("image_url") == null) {
-  document.querySelector("#your_image_url").innerHTML = "No URL found";
+  document.querySelector("#copy-backgroundurl").style.display = "none";
+  document.querySelector("#image_url").style.width = "100%";
 } else {
-  document.querySelector("#your_image_url").innerHTML =
-    localStorage.getItem("image_url");
+  copy_image_url.addEventListener("click", () => {
+    navigator.clipboard.writeText(localStorage.getItem("image_url"));
+    document.querySelector("#copy-backgroundurl").innerHTML =
+      '<i class="las la-clipboard-check"></i>';
+  });
 }
+//
 
 //
 // ========
@@ -560,17 +529,3 @@ window.addEventListener(
   },
   false
 );
-
-// $(".settings-content").on("scroll", function () {
-//   var threshold = 1;
-
-//   if ($(".settings-content").scrollTop() > threshold) {
-//     $(".modal-title").addClass("default-font");
-//   } else {
-//     $(".modal-title").removeClass("default-font");
-//   }
-// });
-
-// $(".settings-content").on("hide.bs.modal", function (e) {
-//   $(".modal-title").removeClass("increase-font");
-// });
