@@ -166,8 +166,12 @@ const settingAbout = (z) => {
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
-                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.3.80" class="aboutwidgets-container">
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.3.80" class="aboutwidgets-container lk_container_top">
                 Try out beta
+                <i class="las la-external-link-alt"></i>
+                </a>
+                <a href="https://saturnstartpage.netlify.app/" class="aboutwidgets-container lk_container_bottom">
+                Get chromium version
                 <i class="las la-external-link-alt"></i>
                 </a>
                 <a href="https://github.com/raifcoonjah/Saturn-startpage/tree/master" class="aboutwidgets-container lk_container_top">
