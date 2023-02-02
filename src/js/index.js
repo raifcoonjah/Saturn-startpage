@@ -346,49 +346,40 @@ document.querySelector("#save").addEventListener("click", function () {
 // + *New* Wallpaper Feature +
 // ========
 //
+
 document.querySelector("#save-image").addEventListener("click", function () {
-  var image_url = document.querySelector("#image_url").value;
-  if (image_url == "") {
-    document.querySelector("#image_url").style.border =
-      "2px solid var(--delete-warning-bg)";
-    // document.querySelector("#error-text-wallpaper").innerHTML =
-    //   "Image URL cannot be empty.";
+  var imageUrl = document.querySelector("#image_url");
+  var processingBg = (document.querySelector(".processing_bg").innerHTML =
+    '<i class="las la-check-circle"></i>' + " Background applied ");
+  var imageUrlValue = imageUrl.value;
+  if (imageUrlValue == "") {
+    processingBg.innerHTML =
+      '<i class="las la-exclamation-triangle"></i>' + " URL cannot be empty";
   } else {
-    document.querySelector("#image_url").style.border = "2px solid #73d673";
-    document.querySelector(".processing_bg").innerHTML =
+    processingBg.innerHTML =
       "<img class='loading-svg' src='/assets/img/loading.svg'>" +
       " Loading background...";
-    setTimeout(function () {
-      location.reload();
-    }, 5000);
-    localStorage.setItem("image_url", image_url);
-
-    // Remove previously used images
+    localStorage.setItem("image_url", imageUrlValue);
     localStorage.removeItem("imageupload");
+    body.style.backgroundImage = "url(" + imageUrlValue + ")";
   }
 });
 
 // up-load image
 const input = document.getElementById("imageupload");
+const processingBg = document.querySelector(".processing_bg");
 
 input.addEventListener("change", (event) => {
-  document.querySelector(".processing_bg").innerHTML =
-    "<img class='loading-svg' src='/assets/img/loading.svg'>" +
-    " Processing image... ";
-  //
-  // == First we remove any previously stored backgrounds. ==
-  //
+  processingBg;
   localStorage.removeItem("imageupload");
   localStorage.removeItem("image_url");
   const image = event.target.files[0];
   const reader = new FileReader();
   reader.readAsDataURL(image);
-  reader.addEventListener("load", () => {
+  reader.onload = () => {
     localStorage.setItem("imageupload", reader.result);
-  });
-  setTimeout(() => {
-    location.reload();
-  }, 2000);
+    body.style.backgroundImage = "url(" + reader.result + ")";
+  };
 });
 // grab and set as background ;)
 if (localStorage.getItem("imageupload")) {
