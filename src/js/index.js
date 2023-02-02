@@ -329,8 +329,10 @@ document.addEventListener("keyup", function (favModal) {
 // ========
 //
 //
+
 document.querySelector("#save").addEventListener("click", function () {
-  var username = document.querySelector("#username_input").value;
+  var usernameInput = document.querySelector("#username_input");
+  var username = usernameInput.value;
   if (username == "") {
     document.querySelector("#username_input").style.border =
       "2px solid var(--delete-warning-bg)";
