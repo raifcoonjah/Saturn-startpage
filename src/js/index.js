@@ -349,16 +349,14 @@ document.querySelector("#save").addEventListener("click", function () {
 
 document.querySelector("#save-image").addEventListener("click", function () {
   var imageUrl = document.querySelector("#image_url");
-  var processingBg = (document.querySelector(".processing_bg").innerHTML =
-    '<i class="las la-check-circle"></i>' + " Background applied ");
+  var processingBg = document.querySelector(".processing_bg");
   var imageUrlValue = imageUrl.value;
   if (imageUrlValue == "") {
     processingBg.innerHTML =
       '<i class="las la-exclamation-triangle"></i>' + " URL cannot be empty";
   } else {
     processingBg.innerHTML =
-      "<img class='loading-svg' src='/assets/img/loading.svg'>" +
-      " Loading background...";
+      '<i class="las la-check-circle"></i>' + " Background applied ";
     localStorage.setItem("image_url", imageUrlValue);
     localStorage.removeItem("imageupload");
     body.style.backgroundImage = "url(" + imageUrlValue + ")";
@@ -370,7 +368,8 @@ const input = document.getElementById("imageupload");
 const processingBg = document.querySelector(".processing_bg");
 
 input.addEventListener("change", (event) => {
-  processingBg;
+  processingBg.innerHTML =
+    '<i class="las la-check-circle"></i>' + " Background applied ";
   localStorage.removeItem("imageupload");
   localStorage.removeItem("image_url");
   const image = event.target.files[0];
