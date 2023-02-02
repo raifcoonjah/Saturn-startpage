@@ -36,7 +36,6 @@ const setTheme = (theme) => {
   theme_choice.forEach((button) => (button.style.outline = ""));
   document.getElementById(theme).style.outline =
     "4px solid var(--bg-accent-color-lr-hover)";
-  document.body.style.transition = "0.2s ease-in";
 };
 
 const themeApplied = localStorage.getItem("theme");
