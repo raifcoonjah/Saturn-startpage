@@ -1,4 +1,8 @@
 ![Saturn-startpage](https://i.imgur.com/JkdwZMW.png)
+#### Regarding next update 
+- The next update will take longer than expected, Instead of adding new features a ton of work is being done in the backend side of things. Still I do plan to ship some goodies as well :D I expect this one to be ready by the 20th of February (Expected, but this might change)
+
+
 
 ## What's Saturn Startpage?
 Saturn Startpage is a fully open source, community build new-tab replacement. **Build with speed and user experience in mind**. Saturn was original build for myself but later on I decided to open source it.
