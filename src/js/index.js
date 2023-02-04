@@ -401,19 +401,26 @@ if (localStorage.getItem("image_url")) {
 // + *New* Delete and clear image_url +
 // ========
 //
-document
-  .querySelector("#delete_custom_image")
-  .addEventListener("click", function () {
-    if (
-      confirm("You're about to delete your custom background. Are you sure?")
-    ) {
-      localStorage.removeItem("image_url");
-      localStorage.removeItem("imageupload");
-      document.querySelector("body").style.backgroundImage = "";
-      document.querySelector("#image_url").style.width = "100%";
-      document.querySelector("#copy-backgroundurl").style.display = "none";
-    }
-  });
+document.querySelector("#delete_custom_image").addEventListener("click", () => {
+  const imageUrl = localStorage.getItem("image_url");
+  const imageUpload = localStorage.getItem("imageupload");
+
+  if (!imageUrl && !imageUpload) {
+    document.querySelector("#delete_custom_image").innerHTML =
+      '<i class="las la-exclamation-circle"></i> <span>No background <br/> found </span>';
+    return;
+  }
+
+  if (confirm("Delete custom background?")) {
+    localStorage.removeItem("image_url");
+    localStorage.removeItem("imageupload");
+    document.querySelector("body").style.backgroundImage = "";
+    document.querySelector("#image_url").style.width = "100%";
+    document.querySelector("#copy-backgroundurl").style.display = "none";
+    document.querySelector("#delete_custom_image").innerHTML =
+      '<i class="las la-check-circle"></i> <span>Background <br/> removed </span>';
+  }
+});
 
 //
 // ========
