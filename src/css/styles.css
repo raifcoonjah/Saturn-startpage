@@ -908,7 +908,6 @@ appearing when the user hovers on the open in new tab button.
   margin-top: 2px;
   border-radius: var(--sat-border-radius);
   display: inline-block;
-  border: 1px solid var(--lighter-color);
 }
 .small_text {
   font-size: 13px;
