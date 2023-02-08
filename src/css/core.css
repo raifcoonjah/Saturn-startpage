@@ -590,7 +590,6 @@ color to fix some issues == */
 .removebtn:hover {
   background-color: #d752521e;
   color: var(--delete-warning-bg);
-  border: 1px solid var(--delete-warning-bg);
   transition: var(--transition-speed-default);
   color: var(--delete-warning-bg);
 }
