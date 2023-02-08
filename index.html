@@ -301,6 +301,14 @@ need ......... to ................ scroll ......................................
               >
                 <i class="las la-palette"></i> Themes
               </li>
+              <li
+                class="tab-link"
+                id="tab-link"
+                data-tab="tab-10"
+                title="Saturn background options..."
+              >
+                <i class="las la-palette"></i> Background
+              </li>
               <p
                 class="dropdown-seperator settings-seperator settings-nav-separator"
               >
@@ -312,7 +320,7 @@ need ......... to ................ scroll ......................................
               <p
                 class="dropdown-seperator settings-seperator settings-nav-separator"
               >
-                <span>More options</span>
+                <span>Info</span>
               </p>
               <li
                 class="tab-link"
@@ -333,6 +341,47 @@ need ......... to ................ scroll ......................................
                 ></span>
               </li>
             </ul>
+
+            <div id="tab-10" class="tab-content slide-up-now-opacity">
+              <p class="settings-item-title">Background</p>
+              <p class="settings-item-under-title description">
+                Set Saturn's background to anything you desire.
+              </p>
+              <div class="settings-background">
+                <h3><i class="las la-image"></i> Custom background</h3>
+                <p class="description">
+                  Set Saturn's background to anything you want.
+                </p>
+
+                <div class="cbw_container">
+                  <button class="sqaure_box" id="wallpaper-button">
+                    <i class="las la-plus"></i>
+                    <span>Set background...</span>
+                  </button>
+
+                  <button class="sqaure_box red_text" id="delete_custom_image">
+                    <i class="las la-trash-alt"></i>
+                    <span>Remove</span>
+                  </button>
+                </div>
+                <p class="dropdown-seperator settings-seperator">
+                  <span>Home options</span>
+                </p>
+
+                <label>
+                  <input type="checkbox" id="force_white_color_header" />
+                  <span>Apply white color to home elements</span>
+                </label>
+              </div>
+              <p class="settings-item-title">Suggestions</p>
+              <p class="settings-item-under-title description">
+                Places to find cool looking backgrounds.
+              </p>
+
+              <div class="settings-background">
+                <div id="cool_backgrounds"></div>
+              </div>
+            </div>
 
             <div id="tab-7" class="tab-content slide-up-now-opacity">
               <p class="settings-item-title">Saturn focus</p>
@@ -414,40 +463,6 @@ need ......... to ................ scroll ......................................
                   </button>
                 </div>
               </div>
-
-              <!-- Custom background feature -->
-              <p class="settings-item-title">Background</p>
-
-              <div class="settings-background">
-                <h3><i class="las la-image"></i> Custom background</h3>
-                <p class="description">
-                  Set Saturn's background to anything you want.
-                </p>
-
-                <div class="cbw_container">
-                  <button class="sqaure_box" id="wallpaper-button">
-                    <i class="las la-plus"></i>
-                    <span>Set background...</span>
-                  </button>
-
-                  <button class="sqaure_box red_text" id="delete_custom_image">
-                    <i class="las la-trash-alt"></i>
-                    <span>Remove</span>
-                  </button>
-                </div>
-                <p class="dropdown-seperator settings-seperator">
-                  <span>Home options</span>
-                </p>
-
-                <label>
-                  <input type="checkbox" id="force_white_color_header" />
-                  <span>Apply white color to home elements</span>
-                </label>
-                <h3>Suggested websites</h3>
-                <p class="description">Websites to find cool backgrounds.</p>
-                <div id="cool_backgrounds"></div>
-              </div>
-
               <p class="settings-item-title">Info</p>
 
               <!-- =+=+= Change Search  =+=+= -->
