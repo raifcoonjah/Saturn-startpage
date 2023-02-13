@@ -538,12 +538,12 @@ minimalisticButton.addEventListener("click", () => {
     minimalisticUi.style.display = "none";
     localStorage.setItem("minimalisticUiDisplay", "none");
     satHeader.style.paddingTop = "30vh";
-    satHeader.style.fontSize = "20px";
+    satHeader.style.fontSize = "23px";
   } else {
     minimalisticUi.style.display = "block";
     localStorage.removeItem("minimalisticUiDisplay");
-    // Applying a paddingTop of 100px to make things "appear" right. 
-    satHeader.style.paddingTop = "100px"; 
+    // Applying a paddingTop of 100px to make things "appear" right.
+    satHeader.style.paddingTop = "100px";
     satHeader.style.fontSize = "0";
     satHeader.style.marginTop = "0";
   }
@@ -556,6 +556,6 @@ if (savedDisplay) {
 
   if (minimalisticUi.style.display === "none") {
     satHeader.style.paddingTop = "30vh";
-    satHeader.style.fontSize = "20px";
+    satHeader.style.fontSize = "23px";
   }
 }
