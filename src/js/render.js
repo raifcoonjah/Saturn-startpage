@@ -162,11 +162,11 @@ const settingAbout = (z) => {
                <a class="version-text red_background"
                href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.3.0"
                target="_blank" 
-               >v6.3.80-BETA</i></a>
+               >v6.3.85-BETA</i></a>
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
-                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.3.80" class="aboutwidgets-container lk_container_top">
+                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.4.85" class="aboutwidgets-container lk_container_top">
                 Try out beta
                 <i class="las la-external-link-alt"></i>
                 </a>
@@ -201,11 +201,11 @@ const settingAbout = (z) => {
           <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png" loading="lazy" />
           <p style="text-align:center;"> 
             <a class="version-text red_background"
-            >Saturn v6.3.80-BETA</i></a>
+            >Saturn v6.4.0</i></a>
           </p>
             <p style="text-align:center;"> 
             <a class="version-text"
-            >Updated on: ??/??/2023</i></a>
+            >Updated on: 20/02/2023</i></a>
           </p>
 <p style="text-align:center;" class="description small_text">
 No update description here...
