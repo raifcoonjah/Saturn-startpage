@@ -529,6 +529,8 @@ window.addEventListener(
   false
 );
 
+// Minimalistic UI
+
 const minimalisticButton = document.querySelector("#toggle_minimalistic_mode");
 const minimalisticUi = document.querySelector(".minimalistic-ui");
 const satHeader = document.querySelector(".sat-header");
@@ -536,23 +538,23 @@ const satHeader = document.querySelector(".sat-header");
 minimalisticButton.addEventListener("click", () => {
   if (minimalisticButton.checked) {
     minimalisticUi.style.display = "none";
-    localStorage.setItem("minimalisticUiDisplay", "none");
     satHeader.style.paddingTop = "30vh";
     satHeader.style.fontSize = "23px";
+    localStorage.setItem("minimalisticUiDisplay", "none");
   } else {
     minimalisticUi.style.display = "block";
-    localStorage.removeItem("minimalisticUiDisplay");
     // Applying a paddingTop of 100px to make things "appear" right.
     satHeader.style.paddingTop = "100px";
     satHeader.style.fontSize = "0";
     satHeader.style.marginTop = "0";
+    localStorage.removeItem("minimalisticUiDisplay");
   }
 });
 
-const savedDisplay = localStorage.getItem("minimalisticUiDisplay");
-if (savedDisplay) {
-  minimalisticUi.style.display = savedDisplay;
-  minimalisticButton.checked = savedDisplay === "none";
+const minimalisticCheck = localStorage.getItem("minimalisticUiDisplay");
+if (minimalisticCheck) {
+  minimalisticUi.style.display = minimalisticCheck;
+  minimalisticButton.checked = minimalisticCheck === "none";
 
   if (minimalisticUi.style.display === "none") {
     satHeader.style.paddingTop = "30vh";
