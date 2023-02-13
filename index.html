@@ -50,128 +50,133 @@ need ......... to ................ scroll ......................................
 
     <main>
       <!-- =+=+= Saturn Search =+=+= -->
-      <div class="full">
-        <div class="search_block">
-          <form
-            id="search_eng_form"
-            method="get"
-            action="https://www.google.com/search"
-          >
-            <a
-              href="javascript:void(0)"
-              class="search-engine-logo"
-              id="se_button"
+      <div class="minimalistic-ui">
+        <div class="full">
+          <div class="search_block">
+            <form
+              id="search_eng_form"
+              method="get"
+              action="https://www.google.com/search"
             >
-              <img
-                id="se_icon"
-                src="/assets/icons/search.svg"
-                alt="Search engine logo"
-                class="se_icon"
-                title="Change search engine.. (Ctrl + Arrow Up)"
-              />
-            </a>
-
-            <input
-              class="search-bar"
-              type="search"
-              id="search"
-              placeholder="Search with Google.."
-              autocomplete="off"
-              name="q"
-              title="Click to search (Ctrl + /)"
-            />
-          </form>
-        </div>
-      </div>
-
-      <div class="dropdown" style="float: right">
-        <button id="dropdown-menu trigger" class="dropbtn">
-          More <i class="las la-angle-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a class="dropdown-settings" id="trigger"
-            ><i class="las la-cog"></i> Settings <kbd>Shift + S</kbd>
-          </a>
-          <a
-            href="https://mynoise.net/"
-            target="_blank"
-            class="dropdown-settings"
-          >
-            <i class="las la-sliders-h"></i>
-            myNoise® <i class="las la-external-link-alt"></i
-          ></a>
-
-          <a href="https://calendar.google.com" class="dropdown-settings"
-            ><i class="las la-calendar"></i> G. Calendar
-            <kbd>Ctrl + Alt + C</kbd></a
-          >
-          <p class="dropdown-seperator"><span>Quick actions</span></p>
-          <a href="#" target="_blank" class="dropdown-settings">
-            <i class="las la-plus-square"></i>
-            New window</a
-          >
-          <a
-            class="dropdown_redaccent"
-            href="https://github.com/mraif13/Saturn-startpage/issues/new"
-            target="_blank"
-            ><i class="las la-bug"></i>
-            Report bug...
-          </a>
-        </div>
-      </div>
-
-      <!-- =+=+= App lists + App category =+=+= -->
-      <div class="apps_list">
-        <ul class="apps-category">
-          <li class="tab-link" data-tab="app-9">
-            <i class="lab la-gratipay"></i> <span>Favorites</span>
-          </li>
-          <span class="description" style="opacity: 0.4">|</span>
-          <li class="tab-link current" data-tab="app-1">
-            <i class="lar la-grin-hearts"></i> <span>Most used</span>
-          </li>
-          <li class="tab-link relaxation_focus_mode" data-tab="app-2">
-            <i class="las la-graduation-cap"></i> <span>Education</span>
-          </li>
-          <li
-            class="tab-link study_focus_mode programming_focus_mode"
-            data-tab="app-3"
-          >
-            <i class="las la-share-alt"></i> <span>Social media</span>
-          </li>
-          <li class="tab-link study_focus_mode" data-tab="app-4">
-            <i class="las la-play-circle"></i> <span>Multimedia</span>
-          </li>
-        </ul>
-
-        <div id="apps_list"></div>
-        <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
-        <!-- End of app list -->
-
-        <div id="app-9" class="tab-link fix-favorites-header">
-          <!-- =+=+= Favorite v3.2 =+=+= -->
-          <div id="fav-container" class="fav-container">
-            <div class="favorites-search">
-              <input
-                type="text"
-                placeholder="Find favorites..."
-                class="searchfavorites"
-                id="searchfavorites"
-              />
-              <button class="favorite-button" title="Add favorites (Shift + Z)">
-                <i class="las la-plus"></i> Add
-              </button>
-            </div>
-
-            <div id="content">
-              <p
-                style="display: none"
-                id="search-results"
-                class="search-results"
+              <a
+                href="javascript:void(0)"
+                class="search-engine-logo"
+                id="se_button"
               >
-                <span id="search-results-text"></span>
-              </p>
-              <ul id="fav-link"></ul>
+                <img
+                  id="se_icon"
+                  src="/assets/icons/search.svg"
+                  alt="Search engine logo"
+                  class="se_icon"
+                  title="Change search engine.. (Ctrl + Arrow Up)"
+                />
+              </a>
+
+              <input
+                class="search-bar"
+                type="search"
+                id="search"
+                placeholder="Search with Google.."
+                autocomplete="off"
+                name="q"
+                title="Click to search (Ctrl + /)"
+              />
+            </form>
+          </div>
+        </div>
+
+        <div class="dropdown" style="float: right">
+          <button id="dropdown-menu trigger" class="dropbtn">
+            <i class="las la-bars"></i>
+          </button>
+          <div class="dropdown-content">
+            <a class="dropdown-settings" id="trigger"
+              ><i class="las la-cog"></i> Settings <kbd>Shift + S</kbd>
+            </a>
+            <a
+              href="https://mynoise.net/"
+              target="_blank"
+              class="dropdown-settings"
+            >
+              <i class="las la-sliders-h"></i>
+              myNoise® <i class="las la-external-link-alt"></i
+            ></a>
+
+            <a href="https://calendar.google.com" class="dropdown-settings"
+              ><i class="las la-calendar"></i> G. Calendar
+              <kbd>Ctrl + Alt + C</kbd></a
+            >
+            <p class="dropdown-seperator"><span>Quick actions</span></p>
+            <a href="#" target="_blank" class="dropdown-settings">
+              <i class="las la-plus-square"></i>
+              New window</a
+            >
+            <a
+              class="dropdown_redaccent"
+              href="https://github.com/mraif13/Saturn-startpage/issues/new"
+              target="_blank"
+              ><i class="las la-bug"></i>
+              Report bug...
+            </a>
+          </div>
+        </div>
+
+        <!-- =+=+= App lists + App category =+=+= -->
+        <div class="apps_list">
+          <ul class="apps-category">
+            <li class="tab-link" data-tab="app-9">
+              <i class="lab la-gratipay"></i> <span>Favorites</span>
+            </li>
+            <span class="description" style="opacity: 0.4">|</span>
+            <li class="tab-link current" data-tab="app-1">
+              <i class="lar la-grin-hearts"></i> <span>Most used</span>
+            </li>
+            <li class="tab-link relaxation_focus_mode" data-tab="app-2">
+              <i class="las la-graduation-cap"></i> <span>Education</span>
+            </li>
+            <li
+              class="tab-link study_focus_mode programming_focus_mode"
+              data-tab="app-3"
+            >
+              <i class="las la-share-alt"></i> <span>Social media</span>
+            </li>
+            <li class="tab-link study_focus_mode" data-tab="app-4">
+              <i class="las la-play-circle"></i> <span>Multimedia</span>
+            </li>
+          </ul>
+
+          <div id="apps_list"></div>
+          <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
+          <!-- End of app list -->
+
+          <div id="app-9" class="tab-link fix-favorites-header">
+            <!-- =+=+= Favorite v3.2 =+=+= -->
+            <div id="fav-container" class="fav-container">
+              <div class="favorites-search">
+                <input
+                  type="text"
+                  placeholder="Find favorites..."
+                  class="searchfavorites"
+                  id="searchfavorites"
+                />
+                <button
+                  class="favorite-button"
+                  title="Add favorites (Shift + Z)"
+                >
+                  <i class="las la-plus"></i> Add
+                </button>
+              </div>
+
+              <div id="content">
+                <p
+                  style="display: none"
+                  id="search-results"
+                  class="search-results"
+                >
+                  <span id="search-results-text"></span>
+                </p>
+                <ul id="fav-link"></ul>
+              </div>
             </div>
           </div>
         </div>
@@ -348,11 +353,6 @@ need ......... to ................ scroll ......................................
                 Set Saturn's background to anything you desire.
               </p>
               <div class="settings-background">
-                <h3><i class="las la-image"></i> Custom background</h3>
-                <p class="description">
-                  Set Saturn's background to anything you want.
-                </p>
-
                 <div class="cbw_container">
                   <button class="sqaure_box" id="wallpaper-button">
                     <i class="las la-plus"></i>
@@ -729,15 +729,22 @@ need ......... to ................ scroll ......................................
                 <span class="slider round"></span>
               </label>
             </div>
-            <!-- <div class="settings-background">
 
-              <h4>Hide Google calendar button</h4>
-
-              <label class="switch">
-                <input type="checkbox" class="hide-calendar-btn" />
-                <span class="slider round"></span>
-              </label>
-            </div> -->
+            <p class="dropdown-seperator">
+              <span>Experimental Features</span>
+            </p>
+            <p class="settings-item-title">Minimalistic Interface (Beta)</p>
+            <p class="settings-item-under-title description">
+              Enabling Minimalistic interface will hide most elements from the
+              home screen. To view your favorites <br />
+              and use apps either turn this feature off or use shortcuts.
+            </p>
+            <div class="settings-background">
+              <input type="checkbox" id="toggle_minimalistic_mode" />
+              <label for="toggle_minimalistic_mode"
+                >Toggle Minimalistc-UI</label
+              >
+            </div>
           </div>
           <!-- K shortcuts -->
           <div id="k_shortcuts"></div>
