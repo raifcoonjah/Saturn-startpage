@@ -356,7 +356,7 @@ document.querySelector("#save-image").addEventListener("click", function () {
       '<i class="las la-exclamation-triangle"></i>' + " URL cannot be empty";
   } else {
     processingBg.innerHTML =
-      '<i class="las la-check-circle"></i>' + " Background applied ";
+      '<i class="las la-check-circle"></i>' + " Background applied... ";
     localStorage.setItem("image_url", imageUrlValue);
     localStorage.removeItem("imageupload");
     body.style.backgroundImage = "url(" + imageUrlValue + ")";
@@ -368,11 +368,21 @@ const input = document.getElementById("imageupload");
 const processingBg = document.querySelector(".processing_bg");
 
 input.addEventListener("change", (event) => {
+  const image = event.target.files[0];
+  const imageSize = image.size / 1024 / 1024;
+  if (imageSize >= 5) {
+    processingBg.innerHTML =
+      '<span style="color:var(--delete-warning-bg)"> <i class="las la-exclamation-circle"></i>' +
+      " Error, this image exceeds the limit of 5MB.";
+    +"</span>";
+    return;
+  }
+
   processingBg.innerHTML =
-    '<i class="las la-check-circle"></i>' + " Background applied ";
+    '<i class="las la-check-circle"></i>' + " Background applied... ";
   localStorage.removeItem("imageupload");
   localStorage.removeItem("image_url");
-  const image = event.target.files[0];
+
   const reader = new FileReader();
   reader.readAsDataURL(image);
   reader.onload = () => {
