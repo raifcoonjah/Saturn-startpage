@@ -272,7 +272,7 @@ need ......... to ................ scroll ......................................
               class="version-text red_background"
               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.3.0"
               target="_blank"
-              >Saturn beta - 6.3.85 RC1</a
+              >Saturn beta - 6.3.86 RC1</a
             >
           </p>
           <!-- =+=+= Settings Navigation =+=+=-->
@@ -322,6 +322,13 @@ need ......... to ................ scroll ......................................
               <li class="tab-link" data-tab="tab-7" title="Saturn Focus...">
                 <i class="las la-cloud-moon"></i> Focus
               </li>
+              <li
+                class="tab-link"
+                data-tab="tab-11"
+                title="Minimalistic Interface & Kpress..."
+              >
+                <i class="las la-window-minimize"></i> Minimalistic
+              </li>
               <p
                 class="dropdown-seperator settings-seperator settings-nav-separator"
               >
@@ -346,6 +353,40 @@ need ......... to ................ scroll ......................................
                 ></span>
               </li>
             </ul>
+
+            <div id="tab-11" class="tab-content slide-up-now-opacity">
+              <p class="settings-item-title">Minimalistic Interface (Beta)</p>
+              <p class="settings-item-under-title description">
+                Enabling Minimalistic interface will hide most elements from the
+                home screen. To view your favorites <br />
+                and use apps either turn this feature off or use shortcuts.
+              </p>
+              <div class="settings-background">
+                <!-- =+=+= HT: Options2 =+=+=-->
+                <h3>Minimalistc Interface</h3>
+
+                <label class="switch">
+                  <input type="checkbox" id="toggle_minimalistic_mode" />
+                  <span class="slider round"></span>
+                </label>
+                <span class="description"
+                  >Reminder: Use Shift + S to open settings again.</span
+                >
+              </div>
+              <p class="settings-item-title">Kpress (Beta)</p>
+              <p class="settings-item-under-title description">
+                When enabled, Saturn will display a popup when two or more keys
+                are pressed together. This <br />
+                may help some users better visualize and remember shortcuts.
+              </p>
+              <div class="settings-background">
+                <h3>Kpress</h3>
+                <label class="switch">
+                  <input type="checkbox" id="kpresstoggle" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
 
             <div id="tab-10" class="tab-content slide-up-now-opacity">
               <p class="settings-item-title">Background</p>
@@ -729,28 +770,6 @@ need ......... to ................ scroll ......................................
                 <span class="slider round"></span>
               </label>
             </div>
-
-            <p class="dropdown-seperator">
-              <span>Experimental Features</span>
-            </p>
-            <p class="settings-item-title">Minimalistic Interface (Beta)</p>
-            <p class="settings-item-under-title description">
-              Enabling Minimalistic interface will hide most elements from the
-              home screen. To view your favorites <br />
-              and use apps either turn this feature off or use shortcuts.
-            </p>
-            <div class="settings-background">
-              <!-- =+=+= HT: Options2 =+=+=-->
-              <h3>Minimalistc Interface</h3>
-
-              <label class="switch">
-                <input type="checkbox" id="toggle_minimalistic_mode" />
-                <span class="slider round"></span>
-              </label>
-              <span class="description"
-                >Reminder: Use Shift + S to open settings again.</span
-              >
-            </div>
           </div>
           <!-- K shortcuts -->
           <div id="k_shortcuts"></div>
@@ -789,7 +808,7 @@ need ......... to ................ scroll ......................................
           </button>
           <p
             class="processing_bg"
-            style="color: var(--sat-lighter-ids); font-size: 13px"
+            style="color: var(--sat-lighter-ids); font-size: 13.5px"
           ></p>
           <div class="button-container">
             <button id="close-wallpaper" class="close-wallpaper">
@@ -817,6 +836,12 @@ need ......... to ................ scroll ......................................
         </div>
       </div>
 
+      <!-- popup -->
+
+      <div id="kpress_popup" class="hidden"></div>
+
+      <!-- Rest of your HTML code goes here -->
+
       <!-- All the javascript needed to make saturn's core features work  -->
       <script type="text/javascript" src="./src/js/index.js"></script>
       <!-- Main JS - File -->
@@ -831,6 +856,7 @@ need ......... to ................ scroll ......................................
       <script type="text/javascript" src="./src/js/themes.js"></script>
       <!-- FOCUS JS - File -->
       <script type="text/javascript" src="./src/js/focus.js"></script>
+      <script type="text/javascript" src="./src/js/keyboard.js"></script>
     </main>
   </body>
 
