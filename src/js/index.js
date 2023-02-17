@@ -373,7 +373,7 @@ input.addEventListener("change", (event) => {
   if (imageSize >= 5) {
     processingBg.innerHTML =
       '<span style="color:var(--delete-warning-bg)"> <i class="las la-exclamation-circle"></i>' +
-      " Error, this image exceeds the limit of 5MB.";
+      " Error, this image is above 5MB in size. ";
     +"</span>";
     return;
   }
@@ -395,6 +395,12 @@ if (localStorage.getItem("imageupload")) {
   document.querySelector("body").style.backgroundImage =
     "url(" + localStorage.getItem("imageupload") + ")";
 }
+
+// Display image resolution
+var img = document.getElementById("imageupload");
+img.onload = function () {
+  alert(this.width + "x" + this.height);
+};
 
 //
 // ========
