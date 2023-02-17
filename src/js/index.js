@@ -28,7 +28,6 @@ determineGreet(new Date().getHours());
 function getTime() {
   let date = new Date(),
     min = date.getMinutes(),
-    //sec = date.getSeconds(),
     hour = date.getHours();
   return (
     "" +
@@ -41,34 +40,45 @@ function getTime() {
 function getDate() {
   let date = new Date(),
     months = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
+      "January",
+      "February",
+      "March",
+      "April",
       "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
     ],
     cmonth = months[date.getMonth()],
-    days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"],
+    days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ],
     cday = days[date.getDay()],
     cnum = date.getDate();
   if (cnum < 10) {
     cnum = "0" + cnum;
   }
-  return " " + cday + " " + cnum + " " + cmonth;
+  return " " + cday + ", " + cnum + " " + cmonth;
 }
-// Set up the clock and date
-document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
+// Set up the date only
+document.getElementById("date").innerHTML = getDate();
 
-// Reload time after a certain amount of time [BETA, testing tbh]
+// Set up the clock only
+document.getElementById("time").innerHTML = getTime();
+
+// Reload time after a certain amount of time.
 setInterval(() => {
-  document.getElementById("time").innerHTML = getDate() + `, ` + getTime();
+  document.getElementById("time").innerHTML = getTime();
 }, 60 * 1000);
 
 //
@@ -161,30 +171,6 @@ $(function () {
       $(".search_block").show();
     }
     localStorage.setItem("search_hidden", this.checked);
-  });
-});
-
-//
-// ========
-// + Hide Calendar Button +
-// ========
-//
-$(function () {
-  var status = localStorage.getItem("hide-calendar-btn");
-  if (status == "true") {
-    $(".calendar-btn").css("display", "none");
-    $(".hide-apps-list").attr("checked", true);
-  } else {
-    $(".calendar-btn").css("display", "block");
-    $(".hide-calendar-btn").attr("checked", false);
-  }
-  $(".hide-calendar-btn").click(function () {
-    if (this.checked) {
-      $(".calendar-btn").hide();
-    } else {
-      $(".calendar-btn").show();
-    }
-    localStorage.setItem("hide-calendar-btn", this.checked);
   });
 });
 
@@ -343,8 +329,10 @@ document.addEventListener("keyup", function (favModal) {
 // ========
 //
 //
+
 document.querySelector("#save").addEventListener("click", function () {
-  var username = document.querySelector("#username_input").value;
+  var usernameInput = document.querySelector("#username_input");
+  var username = usernameInput.value;
   if (username == "") {
     document.querySelector("#username_input").style.border =
       "2px solid var(--delete-warning-bg)";
@@ -358,62 +346,61 @@ document.querySelector("#save").addEventListener("click", function () {
 // + *New* Wallpaper Feature +
 // ========
 //
-document.querySelector("#save-image").addEventListener("click", function () {
-  var image_url = document.querySelector("#image_url").value;
-  if (image_url == "") {
-    document.querySelector("#image_url").style.border =
-      "2px solid var(--delete-warning-bg)";
-    // document.querySelector("#error-text-wallpaper").innerHTML =
-    //   "Image URL cannot be empty.";
-  } else {
-    document.querySelector("#image_url").style.border = "2px solid #73d673";
-    document.querySelector("#save-image").innerHTML =
-      "<img class='loading-svg' src='/assets/img/loading.svg'>" +
-      " Applying...";
-    setTimeout(function () {
-      location.reload();
-    }, 5000);
-    localStorage.setItem("image_url", image_url);
 
-    // Remove previously used images
+document.querySelector("#save-image").addEventListener("click", function () {
+  var imageUrl = document.querySelector("#image_url");
+  var processingBg = document.querySelector(".processing_bg");
+  var imageUrlValue = imageUrl.value;
+  if (imageUrlValue == "") {
+    processingBg.innerHTML =
+      '<i class="las la-exclamation-triangle"></i>' + " URL cannot be empty";
+  } else {
+    processingBg.innerHTML =
+      '<i class="las la-check-circle"></i>' + " Background applied... ";
+    localStorage.setItem("image_url", imageUrlValue);
     localStorage.removeItem("imageupload");
+    body.style.backgroundImage = "url(" + imageUrlValue + ")";
   }
 });
 
 // up-load image
 const input = document.getElementById("imageupload");
+const processingBg = document.querySelector(".processing_bg");
 
 input.addEventListener("change", (event) => {
-  document.getElementById("processing-image").innerHTML =
-    "<img class='loading-svg' style='width:30px;height:30px;margin-right:2px;' src='/assets/img/loading.svg'>" +
-    "Processing image, please wait...";
+  const image = event.target.files[0];
+  const imageSize = image.size / 1024 / 1024;
+  if (imageSize >= 5) {
+    processingBg.innerHTML =
+      '<span style="color:var(--delete-warning-bg)"> <i class="las la-exclamation-circle"></i>' +
+      " Error, this image is above 5MB in size. ";
+    +"</span>";
+    return;
+  }
 
-  // Remove previous uploaded images
-
+  processingBg.innerHTML =
+    '<i class="las la-check-circle"></i>' + " Background applied... ";
   localStorage.removeItem("imageupload");
-  // Remove any other background set before doing anything
   localStorage.removeItem("image_url");
 
-  const image = event.target.files[0];
-
   const reader = new FileReader();
-
   reader.readAsDataURL(image);
-
-  setTimeout(() => {
-    location.reload();
-  }, 3000);
-
-  reader.addEventListener("load", () => {
+  reader.onload = () => {
     localStorage.setItem("imageupload", reader.result);
-  });
+    body.style.backgroundImage = "url(" + reader.result + ")";
+  };
 });
-
 // grab and set as background ;)
 if (localStorage.getItem("imageupload")) {
   document.querySelector("body").style.backgroundImage =
     "url(" + localStorage.getItem("imageupload") + ")";
 }
+
+// Display image resolution
+var img = document.getElementById("imageupload");
+img.onload = function () {
+  alert(this.width + "x" + this.height);
+};
 
 //
 // ========
@@ -430,28 +417,45 @@ if (localStorage.getItem("image_url")) {
 // + *New* Delete and clear image_url +
 // ========
 //
-document
-  .querySelector("#delete_custom_image")
-  .addEventListener("click", function () {
-    if (
-      confirm("You're about to delete your custom background. Are you sure?")
-    ) {
-      localStorage.removeItem("image_url");
-      localStorage.removeItem("imageupload");
-      location.reload();
-    }
-  });
+document.querySelector("#delete_custom_image").addEventListener("click", () => {
+  const imageUrl = localStorage.getItem("image_url");
+  const imageUpload = localStorage.getItem("imageupload");
+
+  if (!imageUrl && !imageUpload) {
+    document.querySelector("#delete_custom_image").innerHTML =
+      '<i class="las la-exclamation-circle"></i> <span>No background <br/> found </span>';
+    return;
+  }
+
+  if (confirm("Delete custom background?")) {
+    localStorage.removeItem("image_url");
+    localStorage.removeItem("imageupload");
+    document.querySelector("body").style.backgroundImage = "";
+    document.querySelector("#image_url").style.width = "100%";
+    document.querySelector("#copy-backgroundurl").style.display = "none";
+    document.querySelector("#delete_custom_image").innerHTML =
+      '<i class="las la-check-circle"></i> <span>Background <br/> removed </span>';
+  }
+});
 
 //
 // ========
-// + *New* display saved image_url inside your_image_url * +
+// + *New* Copy to clipboard * +
 // ========
-document.querySelector("#your_image_url").innerHTML =
-  localStorage.getItem("image_url");
+
+let copy_image_url = document.getElementById("copy-backgroundurl");
 
 if (localStorage.getItem("image_url") == null) {
-  document.querySelector("#your_image_url").innerHTML = "No URL found";
+  document.querySelector("#copy-backgroundurl").style.display = "none";
+  document.querySelector("#image_url").style.width = "100%";
+} else {
+  copy_image_url.addEventListener("click", () => {
+    navigator.clipboard.writeText(localStorage.getItem("image_url"));
+    document.querySelector("#copy-backgroundurl").innerHTML =
+      '<i class="las la-clipboard-check"></i>';
+  });
 }
+//
 
 //
 // ========
@@ -540,3 +544,36 @@ window.addEventListener(
   },
   false
 );
+
+// Minimalistic UI
+
+const minimalisticButton = document.querySelector("#toggle_minimalistic_mode");
+const minimalisticUi = document.querySelector(".minimalistic-ui");
+const satHeader = document.querySelector(".sat-header");
+
+minimalisticButton.addEventListener("click", () => {
+  if (minimalisticButton.checked) {
+    minimalisticUi.style.display = "none";
+    satHeader.style.paddingTop = "30vh";
+    satHeader.style.fontSize = "23px";
+    localStorage.setItem("minimalisticUiDisplay", "none");
+  } else {
+    minimalisticUi.style.display = "block";
+    // Applying a paddingTop of 100px to make things "appear" right.
+    satHeader.style.paddingTop = "100px";
+    satHeader.style.fontSize = "0.9em";
+    satHeader.style.marginTop = "0";
+    localStorage.removeItem("minimalisticUiDisplay");
+  }
+});
+
+const minimalisticCheck = localStorage.getItem("minimalisticUiDisplay");
+if (minimalisticCheck) {
+  minimalisticUi.style.display = minimalisticCheck;
+  minimalisticButton.checked = minimalisticCheck === "none";
+
+  if (minimalisticUi.style.display === "none") {
+    satHeader.style.paddingTop = "30vh";
+    satHeader.style.fontSize = "23px";
+  }
+}

@@ -75,13 +75,21 @@ its supposed to.
 .good_morning {
   font-weight: 500;
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
+}
+
+.date {
+  font-weight: 700;
+  text-align: center;
+  font-size: 55px;
 }
 
 .time {
   font-weight: 700;
   text-align: center;
-  font-size: 62px;
+  font-size: 85px;
+  margin-bottom: -10px;
+  margin-top: -30px;
 }
 
 .time span {
@@ -167,7 +175,7 @@ its supposed to.
 
 .wallpaper_modal_content {
   width: 38rem;
-  height: 25.5em;
+  height: 23.5em;
 }
 
 .favorites_modal_content {
@@ -273,7 +281,7 @@ input:checked + .slider:before {
 
 ul.tabs li {
   color: var(--sat-ids);
-  padding: 10px 40px 13px 15px;
+  padding: 8px 40px 8px 13px;
   margin-left: 10px;
   border-radius: var(--sat-border-radius);
   border-top-left-radius: 1px;
@@ -737,12 +745,10 @@ ul li {
   padding: 10px;
   border-radius: 13px;
   visibility: visible; /* Force visibility to fix issues */
-  border: 1px solid transparent;
 }
 
 .newtabbtn:hover {
   background-color: var(--bg-accent-color-lr-hover);
-  border: 1px solid var(--sat-accent-color1);
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
 }
@@ -895,6 +901,12 @@ appearing when the user hovers on the open in new tab button.
   margin-top: -10px;
 }
 
+.quotes_bg {
+  padding: 9px;
+  margin-top: 2px;
+  border-radius: var(--sat-border-radius);
+  display: inline-block;
+}
 .small_text {
   font-size: 13px;
   font-weight: 500;
@@ -1196,7 +1208,7 @@ appearing when the user hovers on the open in new tab button.
   position: absolute;
   right: 0;
   background-color: var(--sat-setting-bg-color);
-  min-width: 210px;
+  min-width: 195px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-size: 15px;

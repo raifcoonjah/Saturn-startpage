@@ -159,15 +159,15 @@ const settingAbout = (z) => {
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
             </p>
                <p style="text-align:center;"> 
-               <a class="version-text"
-               href="https://github.com/mraif13/Saturn-startpage/releases/tag/v6.3.0"
+               <a class="version-text red_background"
+               href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.4.0"
                target="_blank" 
-               >v6.3.1</i></a>
+               >v6.4.0</i></a>
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
-                <a href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.3.80" class="aboutwidgets-container">
-                Try out beta
+                <a href="https://saturnstartpage.netlify.app/" class="aboutwidgets-container">
+                Get chromium version (Beta)
                 <i class="las la-external-link-alt"></i>
                 </a>
                 <a href="https://github.com/raifcoonjah/Saturn-startpage/tree/master" class="aboutwidgets-container lk_container_top">
@@ -197,63 +197,66 @@ const settingAbout = (z) => {
           <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png" loading="lazy" />
           <p style="text-align:center;"> 
             <a class="version-text green_background"
-            >Saturn v6.3.0</i></a>
+            >Saturn v6.4.0</i></a>
           </p>
             <p style="text-align:center;"> 
             <a class="version-text"
-            >Updated on: 08/01/2023</i></a>
+            >Updated on: 17/02/2023</i></a>
           </p>
 <p style="text-align:center;" class="description small_text">
-Upload custom backgrounds, optimization & better UI/UX.
+Optimization updates, BEGUN!
 </p>
 <ul>
-<h3> ⚙️ Settings upgrades </h3>
-- Settings navigation now has categories making it easier to find things on quick glance. <br/>
-- Theme icons got a slight design change. <br/>
-- Hide things got a slight design and UX change. <br/>
-- Saturn Search now shows a list of all the providers it supports. <br/>
-- Various other changes to make things more consistent. <br/>
 
-<h3> 🏠 Home design tweaks </h3>
-- Favorites is now aligned to the right, this should make it easier to use and more consistent with the rest of the interface. <br/>
-- Added "New window" option inside of the dropdown menu. <br/>
 
-<h3> 😎 Upload your own god DAMN backgrounds! </h3>
-- You can now upload your own images to set as your custom background! All images are loaded and stored locally, this means no internet connection is required at all! <br/>
-- Please note: GIFs are not supported. <br/>
+<li>
+<h3> 😎 New Time/date look! </h3>
+> The new look puts more focus on making things easier to view at a quick glance.
+</li>
+<li>
+<h3> Minimalist Interface (Beta) [This name will be changed in the future] </h3>
+> Like shortcuts? so do I, minimalist interface pretty much hides everything expect Saturn-headers making home cleaner and less distracting.
+</li>
+<li> 
+<h3> ⏩ Kpress (Yes, that name was inspired by KDE) </h3> 
+> When Kpress is enabled, Saturn will display a small popup on the right of screen displaying the current key combination being pressed.
+</li>
+<li> 
+<h3> Other smaller changes </h3>
+> Added a lot of new quotes thanks to https://type.fit/api/quotes <br/>
+> Added the ability to copy Background URL using a new "Copy URL" button. <br/>
+> Background option has been moved inside a new settings option. <br/>
+</li>
+<li> 
+<h3> Minor bugs fixes </h3> 
+> Fix linkin-park not showing any background. </br/>
+> Tons of fixes for both Saturn themes and background. </br/>
+> Notification dot is no longer shown inside the dropdown. </br/>
+</li>
 
-<h3> ⚙️ Saturn Search now supports ProtonDB! </h3>
-- Saturn search now supports protondb as a search provider. <br/>
+<h2>Optimizations</h2>
+<p class="description">
+New category thats going to cover more of the underlying things going on to make things faster and more optimized. 
+This updates I started with Themes and custom background
+</p> 
+<h3>File structure</h3> 
+Saturn now uses the default src folder to store all of its code.
+<h3> Theme.js </h3>
+Saturn theme engine has been completely rewritten from scratch using maintainable and optimized code. This change also includes two new features: <br/>
+> When a theme is being used, an outline is now shown on the selected theme. </br/>
+> Smooth theme transition. <br/>
+<p class="line"> </p>
+> Better experience when adding new themes. <br/>
+> Improved loading and stability a lot! <br/>
+<h3> Background </h3> 
+The custom background backend received some significant fixes and design optimization: <br/>
+> No reload is now require for your background to be shown. (this applies to deleting as well)<br/> 
+> Completely redesigned notifications, which are now cleaner, use less code and much more user friendly. (Refinements coming in the next major update)<br/>
+> When uploading a background, if its size is over 5MB an error message will now be displayed and the image will not be uploaded, this should prevent some crashes from happening.<br/>
+> With this release, backgrounds also got a big boost in stability and had tons of bugs fixed.<br/>
 
-<h3> 🐞 Warning: Bugs were killed! </h3>
-- Fix notification dot on mobile/smaller screens. <br/>
-- Fix broken fav-link hover effect. <br/>
-- About page widgets are now smaller making them look less "stretch".<br/>
-- Fix SVG icons inside dropdown menu.<br/>
-- Fix a very old bug that caused the browser to display a "This page is zoom" error. <br/>
-- Fix lag when opening settings. <br/>
-- Fix search results text not properly showing when using a Light theme. <br/>
-- Various bug fixes and other performance improvements! <br/>
-- Fix a small UI issue with the new Favorites search interface. <br/>
+
 </ul>
-
-<h3> 🚄 Fast "vroom vroom" </h3>
-- All images inside of settings are now compressed and use lazy loading by default, this will decrease the time Saturn takes to load. <br/>
-- Compress all GIFs to save space and make things load quicker. <br/>
-- Style.css code cleanup. <br/>
-
-<h3> And TONS of OTHER Improvements!</h3>
-- The bold effect applied with the "Bold font" option is now less "bold" if that makes any sense. <br/>
-- The favorite-button got a new hover effect. <br/>
-- Slightly tweaked user experience of Favorite search. <br/>
-- Dropdown menu hover effect is now simpler and much cleaner. <br/>
-- Moved apply white color to home elements under Custom background category for easier access. <br/> 
-- I might have forgotten some stuff, this update was in the works since the 6.0 release but features got delayed due to time constraints. <br/>
-
-<h3> .1 release </h3>
-- This small .1 was released to fix various updating issues. 
-
-<h6> I enjoyed making this one :D </h6>
 </div>
 
 

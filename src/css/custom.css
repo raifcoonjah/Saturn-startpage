@@ -33,3 +33,22 @@ input[type="file"]::file-selector-button:hover {
 .fix-favorites-header {
   margin-top: 20px !important;
 }
+
+/* Define the styles for the popup */
+#kpress_popup {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translate(-20%, -30%);
+  padding: 10px;
+  border: 1px solid var(--lighter-color);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  background-color: var(--sat-setting-bg-color);
+  z-index: 9999;
+}
+
+/* Define a "hidden" class to hide the popup */
+.hidden {
+  display: none;
+}
