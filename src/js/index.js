@@ -555,7 +555,7 @@ minimalisticButton.addEventListener("click", () => {
     minimalisticUi.style.display = "block";
     // Applying a paddingTop of 100px to make things "appear" right.
     satHeader.style.paddingTop = "100px";
-    satHeader.style.fontSize = "0";
+    satHeader.style.fontSize = "0.9em";
     satHeader.style.marginTop = "0";
     localStorage.removeItem("minimalisticUiDisplay");
   }
