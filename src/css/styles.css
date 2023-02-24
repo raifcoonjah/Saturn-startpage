@@ -1191,7 +1191,7 @@ appearing when the user hovers on the open in new tab button.
 /* Button used to open dropdown menu */
 .dropbtn {
   outline: none;
-  padding: 11px 11px;
+  padding: 11px 13px;
   border-radius: var(--sat-border-radius);
   outline: 4px solid transparent; /* This should be remove for a much more optimized version */
   font-weight: 500;
@@ -1208,7 +1208,7 @@ appearing when the user hovers on the open in new tab button.
   position: absolute;
   right: 0;
   background-color: var(--sat-setting-bg-color);
-  min-width: 200px;
+  min-width: 210px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-size: 15px;
@@ -1219,13 +1219,13 @@ appearing when the user hovers on the open in new tab button.
 .dropdown-content a {
   color: var(--sat-ids);
   border-radius: 10px;
-  padding: 5px 5px;
+  padding: 4px 4px;
   text-decoration: none;
   display: block;
   cursor: pointer;
   font-weight: 500;
-  font-size: 14px;
-  margin: 3px;
+  font-size: 15px;
+  margin: 3.5px;
 }
 
 /* Give report bug a red accent */
@@ -1247,12 +1247,9 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .dropdown-content svg {
-  width: 12px;
+  width: 19px;
   position: relative;
-  top: 0.1em;
-  margin-right: 2px;
-  margin-left: 3px;
-  filter: var(--svg-invert);
+  top: 0.2em;
 }
 
 .dropdown-content a:hover {
@@ -1261,7 +1258,7 @@ appearing when the user hovers on the open in new tab button.
 
 .dropdown:hover .dropdown-content {
   display: block;
-  animation: slide-up-fade-in ease 220ms;
+  animation: slide-up-fade-in ease 200ms;
 }
 
 .dropdown:hover .dropbtn {
