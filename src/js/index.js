@@ -558,11 +558,7 @@ minimalisticButton.addEventListener("click", () => {
     satHeader.style.fontSize = "23px";
     localStorage.setItem("minimalisticUiDisplay", "none");
   } else {
-    minimalisticUi.style.display = "block";
-    // Applying a paddingTop of 100px to make things "appear" right.
-    satHeader.style.paddingTop = "100px";
-    satHeader.style.fontSize = "0.9em";
-    satHeader.style.marginTop = "0";
+    location.reload();
     localStorage.removeItem("minimalisticUiDisplay");
   }
 });
