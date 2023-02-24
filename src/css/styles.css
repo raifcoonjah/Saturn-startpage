@@ -1191,7 +1191,7 @@ appearing when the user hovers on the open in new tab button.
 /* Button used to open dropdown menu */
 .dropbtn {
   outline: none;
-  padding: 11px 13px;
+  padding: 11px 11px;
   border-radius: var(--sat-border-radius);
   outline: 4px solid transparent; /* This should be remove for a much more optimized version */
   font-weight: 500;
@@ -1208,7 +1208,7 @@ appearing when the user hovers on the open in new tab button.
   position: absolute;
   right: 0;
   background-color: var(--sat-setting-bg-color);
-  min-width: 195px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-size: 15px;
@@ -1219,7 +1219,7 @@ appearing when the user hovers on the open in new tab button.
 .dropdown-content a {
   color: var(--sat-ids);
   border-radius: 10px;
-  padding: 4px 4px;
+  padding: 5px 5px;
   text-decoration: none;
   display: block;
   cursor: pointer;
@@ -1261,7 +1261,7 @@ appearing when the user hovers on the open in new tab button.
 
 .dropdown:hover .dropdown-content {
   display: block;
-  animation: slide-up-fade-in ease 200ms;
+  animation: slide-up-fade-in ease 220ms;
 }
 
 .dropdown:hover .dropbtn {
