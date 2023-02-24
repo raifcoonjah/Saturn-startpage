@@ -356,7 +356,7 @@ document.querySelector("#save-image").addEventListener("click", function () {
       '<i class="las la-exclamation-triangle"></i>' + " URL cannot be empty";
   } else {
     processingBg.innerHTML =
-      '<i class="las la-check-circle"></i>' + " Background applied... ";
+      '<i class="las la-check-circle"></i>' + " Background applied ";
     localStorage.setItem("image_url", imageUrlValue);
     localStorage.removeItem("imageupload");
     body.style.backgroundImage = "url(" + imageUrlValue + ")";
@@ -370,16 +370,16 @@ const processingBg = document.querySelector(".processing_bg");
 input.addEventListener("change", (event) => {
   const image = event.target.files[0];
   const imageSize = image.size / 1024 / 1024;
-  if (imageSize >= 5) {
+  if (imageSize >= 4) {
     processingBg.innerHTML =
       '<span style="color:var(--delete-warning-bg)"> <i class="las la-exclamation-circle"></i>' +
-      " Error, this image is above 5MB in size. ";
+      " Error, this image is above 4MB in size. ";
     +"</span>";
     return;
   }
 
   processingBg.innerHTML =
-    '<i class="las la-check-circle"></i>' + " Background applied... ";
+    '<i class="las la-check-circle"></i>' + " Background applied ";
   localStorage.removeItem("imageupload");
   localStorage.removeItem("image_url");
 
@@ -427,7 +427,7 @@ document.querySelector("#delete_custom_image").addEventListener("click", () => {
     return;
   }
 
-  if (confirm("Delete custom background?")) {
+  if (confirm("Delete background?")) {
     localStorage.removeItem("image_url");
     localStorage.removeItem("imageupload");
     document.querySelector("body").style.backgroundImage = "";
