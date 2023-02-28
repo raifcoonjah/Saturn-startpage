@@ -1222,7 +1222,7 @@ appearing when the user hovers on the open in new tab button.
   padding: 4px 4px;
   text-decoration: none;
   display: block;
-  cursor: pointer;
+  cursor: default !important;
   font-weight: 500;
   font-size: 14px;
   margin: 3px;
