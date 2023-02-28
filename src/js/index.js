@@ -88,7 +88,7 @@ setInterval(() => {
 //
 
 var modal = document.querySelector(".settings_modal");
-var trigger = document.querySelector(".dropdown-settings");
+var trigger = document.querySelector(".settings-trigger");
 var closeButton = document.querySelector(".close-button");
 function toggleModal() {
   modal.classList.toggle("show-modal");
