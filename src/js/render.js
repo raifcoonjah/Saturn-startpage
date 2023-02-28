@@ -159,10 +159,10 @@ const settingAbout = (z) => {
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
             </p>
                <p style="text-align:center;"> 
-               <a class="version-text red_background"
-               href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.4.0"
+               <a class="version-text green_background"
+               href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.4.1"
                target="_blank" 
-               >v6.4.0</i></a>
+               >v6.4.1</i></a>
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
@@ -197,12 +197,26 @@ const settingAbout = (z) => {
           <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png" loading="lazy" />
           <p style="text-align:center;"> 
             <a class="version-text green_background"
-            >Saturn v6.4.0</i></a>
+            >Saturn v6.4.1</i></a>
           </p>
             <p style="text-align:center;"> 
             <a class="version-text"
-            >Updated on: 17/02/2023</i></a>
+            >Updated on: 25/02/2023</i></a>
           </p>
+
+          <ul>
+          v6.4.1 
+          <li>
+          - Attempt to fix a bug that caused drop down buttons to become blocked. <br/>
+          - Reduce upload image size from 5MB to 4MB. <br/>
+          - Minimalistic UI now reloads the page, this alone should fix tons of small bugs and improve the experience. <br/>
+          - Clean up processing_bg text. <br/>
+          - Improve UX when deleting a background <br/>
+          - 
+          </li>
+          </ul>
+
+<p class="line"></p>
 <p style="text-align:center;" class="description small_text">
 Optimization updates, BEGUN!
 </p>
