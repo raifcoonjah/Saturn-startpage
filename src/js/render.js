@@ -209,9 +209,11 @@ const settingAbout = (z) => {
           <li>
           - Attempt to fix a bug that caused drop down buttons to become blocked. <br/>
           - Reduce upload image size from 5MB to 4MB. <br/>
-          - Minimalistic UI now reloads the page, this alone should fix tons of small bugs and improve the experience. <br/>
+          - Minimalistic UI now reloads the page, this alone should fix tons of small bugs and improve the experience. (Will change this back to no-reload in the next major release)<br/>
           - Clean up processing_bg text. <br/>
-          - Improve UX when deleting a background <br/>
+          - Improve UX when deleting a background. <br/>
+          - Remove "Google calendar" option from drop down menu. <br/>
+          - Dropdown menu now always uses the default cursor instead of the pointer one. <br/>
           - 
           </li>
           </ul>

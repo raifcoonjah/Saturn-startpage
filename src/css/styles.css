@@ -1190,6 +1190,7 @@ appearing when the user hovers on the open in new tab button.
 
 /* Button used to open dropdown menu */
 .dropbtn {
+  cursor: default !important; /* Force the use of the default pointer */
   outline: none;
   padding: 11px 13px;
   border-radius: var(--sat-border-radius);
