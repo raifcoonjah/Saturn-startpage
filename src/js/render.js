@@ -214,6 +214,7 @@ const settingAbout = (z) => {
           - Improve UX when deleting a background. <br/>
           - Remove "Google calendar" option from drop down menu. <br/>
           - Dropdown menu now always uses the default cursor instead of the pointer one. <br/>
+          - Fix wrong background icon. <br/>
           - 
           </li>
           </ul>
