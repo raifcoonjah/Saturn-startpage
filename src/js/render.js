@@ -205,7 +205,7 @@ const settingAbout = (z) => {
           </p>
 
           <ul>
-          v6.4.1 
+          v6.4.1 Mobile improvements
           <li>
           - Attempt to fix a bug that caused drop down buttons to become blocked. <br/>
           - Reduce upload image size from 5MB to 4MB. <br/>
@@ -213,9 +213,9 @@ const settingAbout = (z) => {
           - Clean up processing_bg text. <br/>
           - Improve UX when deleting a background. <br/>
           - Remove "Google calendar" option from drop down menu. <br/>
-          - Dropdown menu now always uses the default cursor instead of the pointer one. <br/>
           - Fix wrong background icon. <br/>
-          - 
+          - Added dropshadow behind settings content background & made some other small improvements too. 
+          - Drastically improved the experience for mobile users including several ios specific fixes. 
           </li>
           </ul>
 
