@@ -253,7 +253,6 @@ header > *:last-child {
   margin-bottom: 0;
 }
 
-a button,
 button,
 input[type="submit"],
 input[type="reset"],
@@ -261,17 +260,24 @@ input[type="button"] {
   font-size: 1rem;
   display: inline-block;
   outline: none;
-  padding: 10px 10px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
+  background-color: var(--sat-search-shortcuts);
   border: 1px solid transparent;
   border-radius: var(--sat-border-radius);
   box-sizing: border-box;
   cursor: pointer;
-  color: var(--sat-ids);
+  transition: background-color 0.1s ease-in-out;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: var(--lighter-color);
 }
 
 /* Press effect that happens when you press on buttons.. */
