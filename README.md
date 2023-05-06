@@ -1,6 +1,6 @@
 ![Saturn-startpage](https://i.imgur.com/JkdwZMW.png)
 #### Regarding next update 
-- The next update will take longer than expected, Instead of adding new features a ton of work is being done in the backend side of things. Still I do plan to ship some goodies as well :D I expect this one to be ready by the 20th of February (Expected, but this might change)
+- The next update is taking longer than expected due to some of the core source code being entirely rewritten, thus the next major update will be directly upgraded from v6 to v7.
 
 
 
