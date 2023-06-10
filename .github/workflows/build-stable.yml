@@ -26,7 +26,7 @@ jobs:
         run: minify -o index.html index.html
       - name: Minify css files
         run: |
-          cd css
+          cd src/css
           minify -o anim.css anim.css
           minify -o core.css core.css
           minify -o custom.css custom.css
@@ -35,7 +35,7 @@ jobs:
           cd ..
       - name: Minify JS files
         run: |
-          cd js 
+          cd src/js
           minify -o favorites.js favorites.js
           minify -o focus.js focus.js
           minify -o index.js index.js 
