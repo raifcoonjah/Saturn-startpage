@@ -21,7 +21,7 @@ jobs:
       - name: Install web-ext using npm
         run: npm -g install web-ext
       - name: Install minify dependencies
-        run: apt install composer -y
+        run: sudo apt install composer -y
       - name: Clone minify
         run: git clone https://github.com/mrclay/minify.git min && cd min
       - name: Composer install
