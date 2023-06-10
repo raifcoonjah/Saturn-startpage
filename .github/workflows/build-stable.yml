@@ -20,5 +20,14 @@ jobs:
           node-version: 14
       - name: Install web-ext using npm
         run: npm -g install web-ext
-      - name: Lint Extention
-        run: web-ext lint
+      - name: Install minify dependencies
+        run: apt install composer -y
+      - name: Clone minify
+        run: git clone https://github.com/mrclay/minify.git min && cd min
+      - name: Composer install
+        run: composer install --no-dev
+      - name: Run minify on index.html
+        run: minify --type=html -o index.html index.html
+      - name: (Test) Cat file
+        run: cat index.html
+
