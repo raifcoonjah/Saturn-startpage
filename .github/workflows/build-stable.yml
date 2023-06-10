@@ -22,7 +22,26 @@ jobs:
         run: npm -g install web-ext
       - name: Install minify
         run: sudo apt install minify
-      - name: Run minify on index.html
-        run: minify --type=html -o index.html index.html
-      - name: (Test) Cat file
-        run: cat index.html
+      - name: Minify index.html
+        run: minify -o index.html index.html
+      - name: Minify css files
+        run: |
+          cd css
+          minify -o anim.css anim.css
+          minify -o core.css core.css
+          minify -o custom.css custom.css
+          minify -o styles.css styles.css
+          minify -o themes.css themes.css
+          cd ..
+      - name: Minify JS files
+        run: |
+          cd js 
+          minify -o favorites.js favorites.js
+          minify -o focus.js focus.js
+          minify -o index.js index.js 
+          minify -o keyboard.js keyboard.js 
+          minify -o quote.js quote.js 
+          minify -o render.js render.js 
+          minify -o search.js search.js
+          minify -o themes.js themes.js
+          cd ..
