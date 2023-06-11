@@ -107,16 +107,16 @@ its supposed to.
 
 /* 
 ========
-+ Setting title +
-
++ Setting title + 
 ========
 */
 
 .settings-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.5em;
   text-align: left;
   padding: 20px;
+  margin-top: 15px;
 }
 
 /* 
@@ -126,8 +126,7 @@ its supposed to.
 */
 
 .wallpaper_modal,
-.fav_modal,
-.settings_modal {
+.fav_modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -142,8 +141,7 @@ its supposed to.
 }
 
 .wallpaper_modal_content,
-.favorites_modal_content,
-.settings-content {
+.favorites_modal_content {
   /* Modal */
   position: absolute;
   top: 50%;
@@ -162,17 +160,6 @@ its supposed to.
   border-radius: 20px;
 }
 
-/* Make settings much more optimized for various screen sizes. 
-(Experimental feature needs tons of testing) */
-.settings-content {
-  width: calc(80% - 80px);
-  height: calc(100% - 150px);
-  max-width: calc(100% - 40px);
-  max-height: calc(100% - 40px);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
 .wallpaper_modal_content {
   width: 38rem;
   height: 23.5em;
@@ -184,8 +171,7 @@ its supposed to.
 }
 
 .show-wallpaper-modal,
-.show-favorite-modal,
-.show-modal {
+.show-favorite-modal {
   opacity: 1;
   visibility: visible;
   transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
@@ -267,62 +253,9 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.control-button:hover,
-.audio-button:hover {
+.control-button:hover {
   transition: var(--transition-speed-fast);
   outline: 4px solid var(--settings-button-outline);
-}
-
-/* 
-========
-+ Settings navigation +
-========
-*/
-
-ul.tabs li {
-  color: var(--sat-ids);
-  padding: 8px 40px 8px 13px;
-  margin-left: 10px;
-  border-radius: var(--sat-border-radius);
-  border-top-left-radius: 1px;
-  border-bottom-left-radius: 1px;
-  border-left: 3px solid transparent;
-}
-
-ul.tabs li:hover {
-  background: var(--sat-setting-bg-effect);
-  border-left: 3px solid var(--sat-accent-color-lighter);
-  color: var(--sat-accent-color1);
-}
-
-ul.tabs li.current {
-  background: var(--sat-setting-bg-effect);
-  border-left: 3px solid var(--sat-accent-color1);
-  color: var(--sat-accent-color1);
-  font-weight: 500;
-}
-
-ul.tabs li i {
-  background-color: var(--lighter-color);
-  padding: 3px 3px;
-  border-radius: 7px;
-}
-
-ul.tabs li {
-  font-size: 16.5px;
-}
-
-.tab-content {
-  display: none;
-  animation: slide-up-fade-in ease 200ms;
-}
-
-.tab-content h4 i {
-  color: var(--sat-accent-color1);
-}
-
-.tab-content.current {
-  display: inherit;
 }
 
 /* 
@@ -401,11 +334,10 @@ ul.tabs li {
 */
 
 .settings-background {
-  margin: 10px;
   padding: 10px;
   background: var(--sat-setting-bg-effect);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .settings-background-warning {
@@ -423,9 +355,9 @@ ul.tabs li {
 */
 
 .theme-icon {
-  margin: -2.5px;
+  margin: -1.5px;
   border-radius: 13px;
-  height: 4.5rem;
+  height: 4.3rem;
   margin-bottom: 0.1px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -469,7 +401,7 @@ div.theme-container {
 */
 
 .save-button {
-  padding: 14px 15px;
+  padding: 10px 15px;
   background: var(--lighter-color);
   color: var(--sat-ids);
   font-size: 15px;
@@ -507,7 +439,8 @@ div.theme-container {
 */
 .username-section input {
   background-color: var(--lighter-color);
-  padding: 15px;
+  padding: 12px;
+  width: 100%;
 }
 
 /* 
@@ -951,10 +884,8 @@ appearing when the user hovers on the open in new tab button.
 }
 
 /* Set wallpaper button */
-
+.sqaure_box_redaccent,
 .sqaure_box {
-  width: 110px;
-  height: 110px;
   background-color: var(--lighter-color);
   margin: 10px;
   display: flex;
@@ -962,7 +893,7 @@ appearing when the user hovers on the open in new tab button.
   justify-content: center;
   border-radius: var(--sat-border-radius);
   font-size: 1.7rem;
-  flex-direction: column;
+
   border: 1px solid transparent;
 }
 
@@ -997,6 +928,10 @@ appearing when the user hovers on the open in new tab button.
 .red_background {
   background-color: #d752521e !important;
   color: var(--delete-warning-bg) !important;
+}
+
+.red_background:hover {
+  border: 1px solid #e0454569 !important;
 }
 
 .green_background {
@@ -1136,7 +1071,7 @@ appearing when the user hovers on the open in new tab button.
 .version-text {
   background-color: var(--bg-accent-color-lr);
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 5px 20px;
   color: var(--sat-accent-color1);
   font-weight: 600;
   text-decoration: none !important;
@@ -1147,13 +1082,13 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .aboutwidgets-container {
-  padding: 15px 15px;
+  padding: 15px 11px;
   border-radius: var(--sat-border-radius);
   background-color: var(--lighter-color);
   margin: auto;
-  width: 45%;
+  width: 80%;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   justify-content: space-around;
   box-shadow: var(--drop-shadow-color);

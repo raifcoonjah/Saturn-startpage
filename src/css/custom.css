@@ -42,7 +42,7 @@ input[type="file"]::file-selector-button:hover {
   transform: translate(-20%, -30%);
   padding: 10px;
   border: 1px solid var(--lighter-color);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   background-color: var(--sat-setting-bg-color);
   z-index: 9999;
@@ -51,4 +51,93 @@ input[type="file"]::file-selector-button:hover {
 /* Define a "hidden" class to hide the popup */
 .hidden {
   display: none;
+}
+
+.sidebar {
+  width: 550px;
+  height: 100vh;
+  background-color: var(--sat-blurry-background); /* Adjust the opacity here */
+  position: fixed;
+  right: -550px;
+  top: 0;
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(17, 17, 17, 0.822);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 10px;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  right: 0;
+  backdrop-filter: blur(10px); /* Apply blur when open */
+}
+
+.sidebar-trigger {
+  background: none;
+  color: var(--sat-ids);
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Adjust the desired position from the right */
+  z-index: 1000;
+  border-radius: 17px;
+}
+
+.settings-tab-item {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-tab-item {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--sat-setting-bg-effect);
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.settings-tab-item.active {
+  background-color: var(--sat-accent-color1);
+  transition: 0.2s ease-in-out;
+  color: var(--for-white);
+  border: 1px solid var(--sat-accent-color1);
+}
+
+.settings-tab-item:hover {
+  background-color: var(--sat-accent-color1);
+  transition: background-color 0.2s ease-in-out;
+  color: var(--for-white);
+}
+
+.setting-content {
+  padding: 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+@keyframes slideRightFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-right-fade-in {
+  animation-name: slideRightFadeIn;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
 }
