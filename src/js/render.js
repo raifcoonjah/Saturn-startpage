@@ -319,53 +319,17 @@ const kShortcuts = (ks) => {
           </div>`);
 };
 
-const coolbg = (cbg) => {
-  $(cbg).append(`<div class="fav_ptgi">
-            <ul class="fav_ptgi_category">
-              <a
-                href="https://unsplash.com"
-                title="Go to unsplash..."
-                target="_blank"
-              >
-              <li class="fav_ptgi_btn"><img src="https://unavatar.io/unsplash.com" loading="lazy"> Unsplash</li></a
-              >
-              <a
-                href="https://wallpaperaccess.com"
-                title="Go to wallpaperaccess..."
-                target="_blank"
-              >
-              <li class="fav_ptgi_btn"><img src="https://unavatar.io/wallpaperaccess.com" loading="lazy"> Wallpaperaccess</li></a
-              >
-              <a
-              href="https://coolbackgrounds.io/"
-              title="Go to coolbackgrounds..."
-              target="_blank"
-            >
-            <li class="fav_ptgi_btn"><img src="https://unavatar.io/coolbackgrounds.io" loading="lazy"> Coolbackgrounds</li></a
-            >
-            <a
-            href="https://github.com/mraif13/Saturn-startpage/issues/new"
-            title="A website missing? Suggest it!"
-            target="_blank"
-          >
-          <li class="fav_ptgi_btn">Suggest website...</li></a
-          >
-            </ul>
-          </div>`);
-};
 
-const render_in_js = (x, z, ks, cu, cbg) => {
+const render_in_js = (x, z, ks, cu) => {
   let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
   let kshortcuts = $("#k_shortcuts");
-  let cool_background = $("#cool_backgrounds");
 
   // pls dont break
   loader = setTimeout(function () {
     appsList(apps_list);
     settingAbout(setting_about);
     kShortcuts(kshortcuts);
-    coolbg(cool_background);
   });
 };
 

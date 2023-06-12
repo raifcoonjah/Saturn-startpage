@@ -281,7 +281,7 @@ need ......... to ................ scroll ......................................
           <div id="tab1" class="tab-pane active slide-right-fade-in">
             <div class="settings-background">
               <!-- =+=+= Username =+=+= -->
-              <h3><i class="las la-user-edit"></i> Default username</h3>
+              <h3><i class="las la-user-edit"></i> Username</h3>
               <p class="description">
                 Set a username that will be displayed on the home screen.
               </p>
@@ -296,6 +296,18 @@ need ......... to ................ scroll ......................................
                   <i class="las la-save"></i> Save
                 </button>
               </div>
+            </div>
+            <div class="settings-background">
+              <h3><i class="las la-keyboard"></i> Kpress (Beta)</h3>
+              <p class="description">
+                Saturn will display a popup when two or more keys are pressed
+                together.
+              </p>
+              <h3>Kpress</h3>
+              <label class="switch">
+                <input type="checkbox" id="kpresstoggle" />
+                <span class="slider round"></span>
+              </label>
             </div>
             <p class="settings-item-title">Info</p>
 
@@ -352,19 +364,6 @@ need ......... to ................ scroll ......................................
                 </button>
               </div>
             </div>
-            <p class="settings-item-title">Kpress (Beta)</p>
-            <p class="settings-item-under-title description">
-              When enabled, Saturn will display a popup when two or more keys
-              are pressed together. This <br />
-              may help some users better visualize and remember shortcuts.
-            </p>
-            <div class="settings-background">
-              <h3>Kpress</h3>
-              <label class="switch">
-                <input type="checkbox" id="kpresstoggle" />
-                <span class="slider round"></span>
-              </label>
-            </div>
           </div>
           <div id="tab2" class="tab-pane slide-right-fade-in">
             <p class="settings-item-title">Background</p>
@@ -391,14 +390,6 @@ need ......... to ................ scroll ......................................
                 <input type="checkbox" id="force_white_color_header" />
                 <span>Apply white color to home elements</span>
               </label>
-            </div>
-            <p class="settings-item-title">Suggestions</p>
-            <p class="settings-item-under-title description">
-              Places to find cool looking backgrounds.
-            </p>
-
-            <div class="settings-background">
-              <div id="cool_backgrounds"></div>
             </div>
             <p class="settings-item-title">Customizations (Beta)</p>
             <p class="settings-item-under-title description">

@@ -87,23 +87,23 @@ setInterval(() => {
 // ========
 //
 
-var wallpaperModal = document.querySelector(".wallpaper_modal");
-var wallpaperButton = document.getElementById("wallpaper-button");
-var closeWallpaperButton = document.querySelector(".close-wallpaper");
+// var wallpaperModal = document.querySelector(".wallpaper_modal");
+// var wallpaperButton = document.getElementById("wallpaper-button");
+// var closeWallpaperButton = document.querySelector(".close-wallpaper");
 
-function toggleWallpaper() {
-  wallpaperModal.classList.toggle("show-wallpaper-modal");
-}
+// function toggleWallpaper() {
+//   wallpaperModal.classList.toggle("show-wallpaper-modal");
+// }
 
-function windowOutclick3(event) {
-  if (event.target === wallpaperModal) {
-    toggleWallpaper();
-  }
-}
+// function windowOutclick3(event) {
+//   if (event.target === wallpaperModal) {
+//     toggleWallpaper();
+//   }
+// }
 
-wallpaperButton.addEventListener("click", toggleWallpaper);
-closeWallpaperButton.addEventListener("click", toggleWallpaper);
-window.addEventListener("click", windowOutclick3);
+// wallpaperButton.addEventListener("click", toggleWallpaper);
+// closeWallpaperButton.addEventListener("click", toggleWallpaper);
+// window.addEventListener("click", windowOutclick3);
 
 //
 // ========

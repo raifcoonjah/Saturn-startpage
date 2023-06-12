@@ -368,7 +368,7 @@ code pre {
 
 details {
   display: block;
-  padding: 0.7rem 1rem;
+  padding: 0.6rem 0.9rem;
   background-color: var(--lighter-color);
   border-radius: var(--sat-border-radius);
 }
@@ -390,7 +390,6 @@ summary:hover {
 
 details[open] {
   padding-bottom: 0.75rem;
-  transition: var(--transition-speed-fast);
 }
 
 details[open] summary {

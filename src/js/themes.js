@@ -52,3 +52,4 @@ if (themeApplied) {
 theme_choice.forEach((button) =>
   button.addEventListener("click", () => setTheme(button.id))
 );
+
