@@ -139,7 +139,7 @@ const appsList = (x) => {
 };
 
 const settingAbout = (z) => {
-  $(z).append(`<div id="tab-3" class="tab-content">
+  $(z).append(`
               <p class="settings-item-title">About</p>
               <p class="settings-item-under-title description">About Saturn Startpage & What's new.</p>
             <div class="settings-background">
@@ -274,10 +274,7 @@ The custom background backend received some significant fixes and design optimiz
 
 
 </ul>
-</div>
-
-
-          </div>`);
+</div>`);
 };
 
 const kShortcuts = (ks) => {

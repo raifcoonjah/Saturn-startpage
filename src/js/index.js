@@ -83,27 +83,6 @@ setInterval(() => {
 
 //
 // ========
-// + Settings Modal trigger + close button +
-// ========
-//
-
-var modal = document.querySelector(".settings_modal");
-var trigger = document.querySelector(".settings-trigger");
-var closeButton = document.querySelector(".close-button");
-function toggleModal() {
-  modal.classList.toggle("show-modal");
-}
-function windowOnClick(event) {
-  if (event.target === modal) {
-    toggleModal();
-  }
-}
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
-//
-// ========
 // + Wallpaper Modal +
 // ========
 //
@@ -171,24 +150,6 @@ $(function () {
       $(".search_block").show();
     }
     localStorage.setItem("search_hidden", this.checked);
-  });
-});
-
-//
-// ========
-// + Settings navigation +
-// ========
-//
-
-$(document).ready(function () {
-  $("ul.tabs li").click(function () {
-    var tab_id = $(this).attr("data-tab");
-
-    $("ul.tabs li").removeClass("current");
-    $(".tab-content").removeClass("current");
-
-    $(this).addClass("current");
-    $("#" + tab_id).addClass("current");
   });
 });
 
@@ -573,3 +534,54 @@ if (minimalisticCheck) {
     satHeader.style.fontSize = "23px";
   }
 }
+
+document.getElementById("trigger2").addEventListener("click", function () {
+  document.querySelector(".sidebar").classList.toggle("open");
+});
+
+document.addEventListener("click", function (event) {
+  const sidebar = document.querySelector(".sidebar");
+  const trigger = document.getElementById("trigger2");
+
+  if (!sidebar.contains(event.target) && event.target !== trigger) {
+    sidebar.classList.remove("open");
+  }
+});
+
+// Get all tab items
+const tabItems = document.querySelectorAll(".settings-tab-item");
+
+// Get all tab content panes
+const tabPanes = document.querySelectorAll(".tab-pane");
+
+// Function to switch tabs
+function switchTab(event) {
+  // Remove 'active' class from all tab items and panes
+  tabItems.forEach((item) => item.classList.remove("active"));
+  tabPanes.forEach((pane) => pane.classList.remove("active"));
+
+  // Add 'active' class to the clicked tab item
+  this.classList.add("active");
+
+  // Get the target tab pane based on data-tab attribute
+  const targetPaneId = this.getAttribute("data-tab");
+  const targetPane = document.getElementById(targetPaneId);
+
+  // Add 'active' class to the target tab pane
+  targetPane.classList.add("active");
+}
+
+// Add click event listener to each tab item
+tabItems.forEach((item) => item.addEventListener("click", switchTab));
+
+var sidebar = document.querySelector(".sidebar");
+var settingsHeader = document.querySelector(".settings-header");
+
+sidebar.addEventListener("scroll", function () {
+  var scrollTop = sidebar.scrollTop;
+  if (scrollTop > 0) {
+    settingsHeader.classList.add("scrolled");
+  } else {
+    settingsHeader.classList.remove("scrolled");
+  }
+});
