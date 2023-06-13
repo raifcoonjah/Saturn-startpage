@@ -54,12 +54,12 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .sidebar {
-  width: 100%; /* Adjust the width to fit the mobile screen */
-  max-width: 550px; /* Set a maximum width for larger screens */
+  width: 100%;
+  max-width: 550px;
   height: 100vh;
-  background-color: var(--sat-blurry-background); /* Adjust the opacity here */
+  background-color: var(--sat-blurry-background);
   position: fixed;
-  right: -100%; /* Initially hide the sidebar off-screen */
+  right: -100%;
   top: 0;
   transition: right 0.3s ease-in-out;
   z-index: 999;
