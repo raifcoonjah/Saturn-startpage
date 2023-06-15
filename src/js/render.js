@@ -279,7 +279,7 @@ The custom background backend received some significant fixes and design optimiz
 
 const kShortcuts = (ks) => {
   $(ks).append(`<!-- + Keyboard Shortcuts section + -->
-          <div id="tab-5" class="tab-content">
+          <div class="settings-background">
             <p class="settings-item-title">Keyboard Shortcuts</p>
             <p class="settings-item-under-title description">Shortcuts allow you to do things without ever needing to touch your 
             <i class="las la-mouse"></i> mouse again.</p>
@@ -318,7 +318,6 @@ const kShortcuts = (ks) => {
               </p>
           </div>`);
 };
-
 
 const render_in_js = (x, z, ks, cu) => {
   let apps_list = $("#apps_list");
