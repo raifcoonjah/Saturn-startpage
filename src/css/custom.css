@@ -104,14 +104,12 @@ input[type="file"]::file-selector-button:hover {
 .settings-tab-item.active {
   background-color: var(--bg-accent-color-lr);
   transition: 0.2s ease-in-out;
-  color: var(--for-white);
   border: 1px solid var(--sat-accent-color1);
 }
 
 .settings-tab-item:hover {
   background-color: var(--bg-accent-color-lr-hover);
   transition: background-color 0.2s ease-in-out;
-  color: var(--for-white);
 }
 
 .setting-content {
