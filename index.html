@@ -366,31 +366,61 @@ need ......... to ................ scroll ......................................
             </div>
           </div>
           <div id="tab2" class="tab-pane slide-right-fade-in">
-            <p class="settings-item-title">Background</p>
-            <p class="settings-item-under-title description">
-              Set Saturn's background to anything you desire.
-            </p>
             <div class="settings-background">
-              <div class="cbw_container">
-                <button class="sqaure_box" id="wallpaper-button">
-                  <i class="las la-plus"></i>
-                  <span>Set background...</span>
-                </button>
+              <h3><i class="las la-image"></i> Background</h3>
+              <p class="description">
+                Set the background to anything you desire. Backgrounds set using
+                URLs require an active internet connection to work.
+              </p>
 
-                <button class="sqaure_box red_text" id="delete_custom_image">
-                  <i class="las la-trash-alt"></i>
-                  <span>Remove</span>
+              <input
+                type="text"
+                style="width: 90%; font-size: 15px"
+                id="image_url"
+                placeholder="Enter or paste a URL"
+              />
+              <button
+                title="Copy URL to clipboard"
+                style="padding: 13px"
+                id="copy-backgroundurl"
+              >
+                <i class="las la-clipboard"></i>
+              </button>
+              <p
+                class="processing_bg"
+                style="color: var(--sat-lighter-ids); font-size: 13.5px"
+              ></p>
+              <div class="button-container">
+                <button id="delete_custom_image" class="close-wallpaper">
+                  <i class="las la-times"></i> Delete
+                </button>
+                <button id="save-image" class="save-button">
+                  <i class="lar la-save"></i> Apply
                 </button>
               </div>
+              <p
+                class="dropdown-seperator"
+                style="font-weight: 500; font-size: 15px"
+              >
+                <span id="processing-image">Upload image</span>
+              </p>
+              <p
+                class="small_text description"
+                style="font-size: 12px; margin-bottom: 0px; margin-left: 10px"
+              >
+                Uploaded images are stored locally, no internet connection is
+                ever required.
+              </p>
+              <input type="file" id="imageupload" accept="image/*" />
               <p class="dropdown-seperator settings-seperator">
                 <span>Home options</span>
               </p>
-
               <label>
                 <input type="checkbox" id="force_white_color_header" />
                 <span>Apply white color to home elements</span>
               </label>
             </div>
+
             <p class="settings-item-title">Customizations (Beta)</p>
             <p class="settings-item-under-title description">
               Options to modify Saturn's user interface. Beware, some elements
@@ -675,68 +705,6 @@ need ......... to ................ scroll ......................................
           </a>
         </p>
       </div>
-
-      <div id="wallpaper_modal" class="wallpaper_modal">
-        <div class="wallpaper_modal_content">
-          <br />
-          <p class="settings-item-title">Custom Background</p>
-          <p
-            class="settings-item-under-title description"
-            style="font-size: 14px"
-          >
-            Set an Image or GIF as your background. Depending on the image
-            resolution, this process may take a few seconds.
-            <a
-              href="https://mraif13.notion.site/How-to-use-Custom-background-0ad28bcc78b54aab89739e9c34e94b5a"
-              target="_blank"
-              style="color: var(--sat-accent-color1)"
-              >Learn more...</a
-            >
-          </p>
-
-          <input
-            type="text"
-            style="width: 90%; font-size: 15px"
-            id="image_url"
-            placeholder="Enter or paste a URL"
-          />
-          <button
-            title="Copy URL to clipboard"
-            style="padding: 13px"
-            id="copy-backgroundurl"
-          >
-            <i class="las la-clipboard"></i>
-          </button>
-          <p
-            class="processing_bg"
-            style="color: var(--sat-lighter-ids); font-size: 13.5px"
-          ></p>
-          <div class="button-container">
-            <button id="close-wallpaper" class="close-wallpaper">
-              <i class="las la-times"></i> Close
-            </button>
-            <button id="save-image" class="save-button">
-              <i class="lar la-save"></i> Apply
-            </button>
-          </div>
-          <p
-            class="dropdown-seperator"
-            style="font-weight: 500; font-size: 15px"
-          >
-            <span id="processing-image">Upload image</span>
-          </p>
-          <p
-            class="small_text description"
-            style="font-size: 12px; margin-bottom: 0px; margin-left: 10px"
-          >
-            Uploaded images are stored locally, no internet connection is ever
-            required.
-          </p>
-          <input type="file" id="imageupload" accept="image/*" />
-        </div>
-      </div>
-
-      <!-- popup -->
 
       <div id="kpress_popup" class="hidden"></div>
 
