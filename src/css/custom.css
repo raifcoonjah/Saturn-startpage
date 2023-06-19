@@ -124,19 +124,18 @@ input[type="file"]::file-selector-button:hover {
   display: block;
 }
 
-@keyframes slideRightFadeIn {
+@keyframes fadeSlideIn {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(100px);
   }
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-
 .slide-right-fade-in {
-  animation-name: slideRightFadeIn;
-  animation-duration: 0.3s;
-  animation-timing-function: ease;
+  opacity: 0;
+  transform: translateX(100px);
+  animation: fadeSlideIn 0.3s forwards;
 }
