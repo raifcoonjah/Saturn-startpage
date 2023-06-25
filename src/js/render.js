@@ -160,9 +160,9 @@ const settingAbout = (z) => {
             </p>
                <p style="text-align:center;"> 
                <a class="version-text green_background"
-               href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.4.1"
+               href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.5.0"
                target="_blank" 
-               >v6.4.1</i></a>
+               >v6.4.1 -> 6.5.0</i></a>
                 </p>
               <div class="socials">
                 <div class="aboutwidgets">
@@ -196,16 +196,32 @@ const settingAbout = (z) => {
           <div class="settings-background"> 
           <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png" loading="lazy" />
           <p style="text-align:center;"> 
-            <a class="version-text green_background"
-            >Saturn v6.4.1</i></a>
+            <a class="version-text red_background"
+            >Saturn v6.5.0 - Beta 1</i></a>
           </p>
             <p style="text-align:center;"> 
             <a class="version-text"
-            >Updated on: 25/02/2023</i></a>
+            >Updated on: 25/06/2023</i></a>
           </p>
 
           <ul>
-          v6.4.1 Mobile improvements
+          v6.4.80 - Settings Redesign
+          <li>
+          - Settings has been entirely rewritten and redesigned. This redesign includes several new UI changes such as Blur, a new menu design and several user experience
+          enhancements. <br/>
+          - Settings is now a sidebar instead of a modal, which makes thing much easier to maintain and improve in the long run. <br/>
+          - This beta includes a very early version of the new Settings sidebar. <br/>
+          ---- <br/>
+          What works and what doesn't
+          ---- <br/>
+          - Keyboard shortcut to open settings is not working.  <br/>
+          - The button is not appearing on smaller screens. <br/>
+          - When pressing "Delete it all" button, the sidebar closes instantly. <br/>
+          - Every old settings tab was migrated over to the new settings page. <br/>
+
+          </ul>
+          <ul>
+          v6.4.1 - Mobile improvements
           <li>
           - Attempt to fix a bug that caused drop down buttons to become blocked. <br/>
           - Reduce upload image size from 5MB to 4MB. <br/>
@@ -218,62 +234,6 @@ const settingAbout = (z) => {
           - Drastically improved the experience for mobile users including several ios specific fixes. 
           </li>
           </ul>
-
-<p class="line"></p>
-<p style="text-align:center;" class="description small_text">
-Optimization updates, BEGUN!
-</p>
-<ul>
-
-
-<li>
-<h3> 😎 New Time/date look! </h3>
-> The new look puts more focus on making things easier to view at a quick glance.
-</li>
-<li>
-<h3> Minimalist Interface (Beta) [This name will be changed in the future] </h3>
-> Like shortcuts? so do I, minimalist interface pretty much hides everything expect Saturn-headers making home cleaner and less distracting.
-</li>
-<li> 
-<h3> ⏩ Kpress (Yes, that name was inspired by KDE) </h3> 
-> When Kpress is enabled, Saturn will display a small popup on the right of screen displaying the current key combination being pressed.
-</li>
-<li> 
-<h3> Other smaller changes </h3>
-> Added a lot of new quotes thanks to https://type.fit/api/quotes <br/>
-> Added the ability to copy Background URL using a new "Copy URL" button. <br/>
-> Background option has been moved inside a new settings option. <br/>
-</li>
-<li> 
-<h3> Minor bugs fixes </h3> 
-> Fix linkin-park not showing any background. </br/>
-> Tons of fixes for both Saturn themes and background. </br/>
-> Notification dot is no longer shown inside the dropdown. </br/>
-</li>
-
-<h2>Optimizations</h2>
-<p class="description">
-New category thats going to cover more of the underlying things going on to make things faster and more optimized. 
-This updates I started with Themes and custom background
-</p> 
-<h3>File structure</h3> 
-Saturn now uses the default src folder to store all of its code.
-<h3> Theme.js </h3>
-Saturn theme engine has been completely rewritten from scratch using maintainable and optimized code. This change also includes two new features: <br/>
-> When a theme is being used, an outline is now shown on the selected theme. </br/>
-> Smooth theme transition. <br/>
-<p class="line"> </p>
-> Better experience when adding new themes. <br/>
-> Improved loading and stability a lot! <br/>
-<h3> Background </h3> 
-The custom background backend received some significant fixes and design optimization: <br/>
-> No reload is now require for your background to be shown. (this applies to deleting as well)<br/> 
-> Completely redesigned notifications, which are now cleaner, use less code and much more user friendly. (Refinements coming in the next major update)<br/>
-> When uploading a background, if its size is over 5MB an error message will now be displayed and the image will not be uploaded, this should prevent some crashes from happening.<br/>
-> With this release, backgrounds also got a big boost in stability and had tons of bugs fixed.<br/>
-
-
-</ul>
 </div>`);
 };
 
