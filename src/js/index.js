@@ -573,15 +573,3 @@ function switchTab(event) {
 
 // Add click event listener to each tab item
 tabItems.forEach((item) => item.addEventListener("click", switchTab));
-
-var sidebar = document.querySelector(".sidebar");
-var settingsHeader = document.querySelector(".settings-header");
-
-sidebar.addEventListener("scroll", function () {
-  var scrollTop = sidebar.scrollTop;
-  if (scrollTop > 0) {
-    settingsHeader.classList.add("scrolled");
-  } else {
-    settingsHeader.classList.remove("scrolled");
-  }
-});
