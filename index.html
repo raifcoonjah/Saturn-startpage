@@ -230,24 +230,6 @@ need ......... to ................ scroll ......................................
 
       <!-- Sidebar -->
       <div class="sidebar">
-        <!-- =+=+= Dynamic Something =+=+= -->
-        <!-- =+=+= A new way to handle notification =+=+= -->
-        <span
-          data-tootik="🔔 Focus mode enabled. "
-          data-tootik-conf="left multiline"
-          class="close-button focus_status"
-          id="focus_status_text"
-          ><i class="las la-cloud-moon"></i
-        ></span>
-
-        <span
-          data-tootik="Connection lost, some features may not be available..."
-          data-tootik-conf="left multiline"
-          class="close-button connection_status red_background"
-          id="connection_status"
-          ><i class="las la-unlink"></i
-        ></span>
-
         <div class="settings-header">
           <h3 class="settings-title">Settings</h3>
         </div>
@@ -399,7 +381,7 @@ need ......... to ................ scroll ......................................
                 </button>
               </div>
               <p
-                class="dropdown-seperator"
+                class="dropdown-seperator settings-seperator"
                 style="font-weight: 500; font-size: 15px"
               >
                 <span id="processing-image">Upload image</span>
@@ -457,11 +439,11 @@ need ......... to ................ scroll ......................................
             </div>
           </div>
           <div id="tab3" class="tab-pane slide-right-fade-in">
-            <p class="settings-item-title">Themes</p>
-            <p class="settings-item-under-title description">
-              Choose a theme to match your mood and style.
-            </p>
             <div class="settings-background">
+              <h3><i class="las la-palette"></i> Themes</h3>
+              <p class="description">
+                Choose a theme to match your mood and style.
+              </p>
               <p class="theme-title"><i class="las la-sun"></i> Light themes</p>
 
               <div class="theme-container light-theme" id="light">
@@ -611,11 +593,9 @@ need ......... to ................ scroll ......................................
           </div>
           <!-- ==== Focus tab ==== -->
           <div id="tab4" class="tab-pane slide-right-fade-in">
-            <p class="settings-item-title">Saturn focus</p>
-            <p class="settings-item-under-title description">
-              Choose a Focus and let's get to work.
-            </p>
             <div class="settings-background">
+              <h3><i class="las la-cloud-moon"></i> Saturn focus</h3>
+              <p class="description">Choose a Focus and let's get to work.</p>
               <p class="focus_mode_icons">
                 <img src="/assets/icons/focus/study.svg" />
                 Focus for studying
