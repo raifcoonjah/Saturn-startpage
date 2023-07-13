@@ -214,10 +214,10 @@ const settingAbout = (z) => {
           ---- <br/>
           What works and what doesn't
           ---- <br/>
-          - Keyboard shortcut to open settings is not working.  <br/>
-          - The button is not appearing on smaller screens. <br/>
-          - When pressing "Delete it all" button, the sidebar closes instantly. <br/>
-          - Every old settings tab was migrated over to the new settings page. <br/>
+          - Keyboard shortcut to open settings is not working. [ ]  <br/>
+          - The button is not appearing on smaller screens. [ ] <br/>
+          - When pressing "Delete it all" button, the sidebar closes instantly. [ ] <br/>
+          - Every old settings tab was migrated over to the new settings page. [ ] <br/>
 
           </ul>
           <ul>
