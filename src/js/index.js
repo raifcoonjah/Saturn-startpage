@@ -83,30 +83,6 @@ setInterval(() => {
 
 //
 // ========
-// + Wallpaper Modal +
-// ========
-//
-
-// var wallpaperModal = document.querySelector(".wallpaper_modal");
-// var wallpaperButton = document.getElementById("wallpaper-button");
-// var closeWallpaperButton = document.querySelector(".close-wallpaper");
-
-// function toggleWallpaper() {
-//   wallpaperModal.classList.toggle("show-wallpaper-modal");
-// }
-
-// function windowOutclick3(event) {
-//   if (event.target === wallpaperModal) {
-//     toggleWallpaper();
-//   }
-// }
-
-// wallpaperButton.addEventListener("click", toggleWallpaper);
-// closeWallpaperButton.addEventListener("click", toggleWallpaper);
-// window.addEventListener("click", windowOutclick3);
-
-//
-// ========
 // + Favorites Modal +
 // ========
 //
@@ -176,7 +152,7 @@ $(document).ready(function () {
 // ========
 //
 
-var opnSetting = document.querySelector(".close-button");
+var opnSetting = document.getElementById("opensettings");
 document.body.addEventListener("keydown", function () {
   if (event.keyCode == 83 && event.shiftKey) {
     // Shift + S key
@@ -535,13 +511,13 @@ if (minimalisticCheck) {
   }
 }
 
-document.getElementById("trigger2").addEventListener("click", function () {
+document.getElementById("opensettings").addEventListener("click", function () {
   document.querySelector(".sidebar").classList.toggle("open");
 });
 
 document.addEventListener("click", function (event) {
   const sidebar = document.querySelector(".sidebar");
-  const trigger = document.getElementById("trigger2");
+  const trigger = document.getElementById("opensettings");
 
   if (!sidebar.contains(event.target) && event.target !== trigger) {
     sidebar.classList.remove("open");
