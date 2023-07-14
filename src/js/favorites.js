@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     // Reset form
     $title.val("");
-    $url.val("https://");
+    $url.val("");
   });
 
   // Remove item
