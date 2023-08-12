@@ -783,9 +783,9 @@ ul.fav_ptgi_category li img {
   right: 0;
   text-align: left;
   margin: 20px;
-  padding: 10px 25px;
+  padding: 10px;
   font-size: 14.5px;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #000;
   font-weight: 600;
 }
