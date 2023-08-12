@@ -253,12 +253,17 @@ const render_in_js = (x, z, ks, cu) => {
   let setting_about = $("#setting_about");
   let kshortcuts = $("#k_shortcuts");
 
-  // pls dont break
-  loader = setTimeout(function () {
+  // Load immediately onload
+  loader_immediately = setTimeout(function () {
     appsList(apps_list);
+  });
+
+  // Load after 1.5 since the user won't see this page until they open settings.
+  // Currently the time is set according to my tests but can adjusted in the future if needed.
+  loader_with_delay = setTimeout(function () {
     settingAbout(setting_about);
     kShortcuts(kshortcuts);
-  });
+  }, 1500);
 };
 
 window.onload = render_in_js();
