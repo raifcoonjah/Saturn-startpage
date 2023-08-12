@@ -55,17 +55,14 @@ document.body.addEventListener("keydown", function () {
   }
 });
 
-// when ESC is pressed close the modal in vanilla js
+// When pressing on ESC do certain expected actions
 document.addEventListener("keyup", function (e) {
   if (e.keyCode == 27) {
-    document.querySelector(".settings_modal").classList.remove("show-modal");
+    document.querySelector(".sidebar").classList.remove("open");
     document
       .querySelector(".fav_modal")
       .classList.remove("show-favorite-modal");
-    document
-      .querySelector(".wallpaper_modal")
-      .classList.remove("show-wallpaper-modal");
-    // unfocus search-bar
+    // UnFocus Search Bar
     document.querySelector(".search-bar").blur();
   }
 });
