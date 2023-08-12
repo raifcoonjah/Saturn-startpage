@@ -220,12 +220,6 @@ if (localStorage.getItem("imageupload")) {
     "url(" + localStorage.getItem("imageupload") + ")";
 }
 
-// Display image resolution
-var img = document.getElementById("imageupload");
-img.onload = function () {
-  alert(this.width + "x" + this.height);
-};
-
 //
 // ========
 // + *New* Apply URL to body +
@@ -356,18 +350,6 @@ document.querySelector("#browser_font").addEventListener("click", function () {
 if (localStorage.getItem("browser_font")) {
   document.querySelector("body").style.fontFamily = "sans-serif";
 }
-
-// Check internet connection status
-window.addEventListener(
-  "load",
-  function (connection_ss) {
-    if (navigator.onLine) {
-    } else {
-      document.getElementById("connection_status").style.display = "block";
-    }
-  },
-  false
-);
 
 // Minimalistic UI
 
