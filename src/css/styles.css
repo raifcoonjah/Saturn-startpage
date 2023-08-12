@@ -125,7 +125,6 @@ its supposed to.
 ========
 */
 
-.wallpaper_modal,
 .fav_modal {
   position: fixed;
   left: 0;
@@ -140,7 +139,6 @@ its supposed to.
   z-index: 2;
 }
 
-.wallpaper_modal_content,
 .favorites_modal_content {
   /* Modal */
   position: absolute;
@@ -154,23 +152,12 @@ its supposed to.
 }
 
 /* Modal border radius */
-
-.wallpaper_modal_content,
-.favorites_modal_content {
-  border-radius: 20px;
-}
-
-.wallpaper_modal_content {
-  width: 38rem;
-  height: 23.5em;
-}
-
 .favorites_modal_content {
   width: 35rem;
   height: 23rem;
+  border-radius: 20px;
 }
 
-.show-wallpaper-modal,
 .show-favorite-modal {
   opacity: 1;
   visibility: visible;
@@ -460,8 +447,6 @@ div.theme-container {
 .favorites-search input:focus,
 .fav_modal input:hover,
 .fav_modal input:focus,
-.wallpaper-input input:hover,
-.wallpaper-input input:focus,
 .username-section input:focus,
 .username-section input:hover {
   border: 2px solid var(--sat-accent-color1);

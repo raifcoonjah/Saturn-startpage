@@ -529,10 +529,7 @@ img {
 
 /* == Settings background color == */
 
-.wallpaper_modal_content,
-.favorites_modal_content,
-.sounds-modal-content,
-.settings-content {
+.favorites_modal_content{
   background: var(--sat-setting-bg-color);
 }
 
@@ -599,7 +596,6 @@ color to fix some issues == */
   color: var(--delete-warning-bg);
 }
 
-.close-wallpaper:hover,
 .cancel-fav-btn:hover {
   transition: var(--transition-speed-default);
   background-color: #d752524b !important;
@@ -663,7 +659,7 @@ use the correct border radius == */
 */
 
 @media (max-width: 600px) {
-  .wallpaper_modal_content,
+
   .favorites_modal_content,
   .sounds-modal-content {
     max-width: 90%;
