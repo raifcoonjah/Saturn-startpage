@@ -260,7 +260,7 @@ const render_in_js = (x, z, ks, cu) => {
 
   // Load after 1.5 since the user won't see this page until they open settings.
   // Currently the time is set according to my tests but can adjusted in the future if needed.
-  loader_with_delay = setTimeout(function () {
+  loader_delay = setTimeout(function () {
     settingAbout(setting_about);
     kShortcuts(kshortcuts);
   }, 1500);
