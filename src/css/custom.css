@@ -138,5 +138,5 @@ input[type="file"]::file-selector-button:hover {
 .slide-right-fade-in {
   opacity: 0;
   transform: translateX(100px);
-  animation: fadeSlideIn 0.3s forwards;
+  animation: fadeSlideIn 0.25s forwards;
 }
