@@ -139,35 +139,20 @@ const appsList = (x) => {
 };
 
 const settingAbout = (z) => {
-  $(z).append(`
-              <p class="settings-item-title">About</p>
-              <p class="settings-item-under-title description">About Saturn Startpage & What's new.</p>
+  $(z)
+    .append(`<p class="settings-item-title">About</p><p class="settings-item-under-title description">About Saturn Startpage, what's new and Keyboard shortcuts.</p>
             <div class="settings-background">
               <p class="new-about">
-              <img 
-              style="margin-left: auto;
-              padding-top:30px;
-              margin-right: auto;
-              display: block;"
-                  src="/assets/img/dynamic-icon-big.png"
-                  loading="lazy"
-                  title="Saturn Logo"
-                  alt="Saturn-logo.png"
-                  /> 
-            <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Startpage</p>
-            <p style="text-align:center;font-weight:500;margin-top:-15px;">
+              <img style="padding-top:30px;" src="/assets/img/dynamic-icon-big.png" loading="lazy" title="Saturn Logo" alt="Saturn-logo.png" />
+              <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Startpage</p>
+            <p style="text-align:center;margin-top:-15px;">
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
             </p>
-               <p style="text-align:center;"> 
-               <a class="version-text green_background"
-               href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.5.0"
-               target="_blank" 
-               >v6.4.1 -> 6.5.0</i></a>
-                </p>
+               <a class="version-text green_background" href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/#" target="_blank"> v6.9.86</i></a>
               <div class="socials">
                 <div class="aboutwidgets">
                 <a href="https://saturnstartpage.netlify.app/" class="aboutwidgets-container">
-                Get chromium version (Beta)
+                Get other versions
                 <i class="las la-external-link-alt"></i>
                 </a>
                 <a href="https://github.com/raifcoonjah/Saturn-startpage/tree/master" class="aboutwidgets-container lk_container_top">
@@ -197,49 +182,17 @@ const settingAbout = (z) => {
           <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png" loading="lazy" />
           <p style="text-align:center;"> 
             <a class="version-text red_background"
-            >Saturn v6.5.0 - Beta 1</i></a>
-          </p>
-            <p style="text-align:center;"> 
-            <a class="version-text"
-            >Updated on: 25/06/2023</i></a>
+            >Saturn v6.9.86 - Beta 2</i></a>
           </p>
 
           <ul>
-          v6.4.80 - Settings Redesign
-          <li>
-          - Settings has been entirely rewritten and redesigned. This redesign includes several new UI changes such as Blur, a new menu design and several user experience
-          enhancements. <br/>
-          - Settings is now a sidebar instead of a modal, which makes thing much easier to maintain and improve in the long run. <br/>
-          - This beta includes a very early version of the new Settings sidebar. <br/>
-          ---- <br/>
-          What works and what doesn't
-          ---- <br/>
-          - Keyboard shortcut to open settings is not working. [ ]  <br/>
-          - The button is not appearing on smaller screens. [ ] <br/>
-          - When pressing "Delete it all" button, the sidebar closes instantly. [ ] <br/>
-          - Every old settings tab was migrated over to the new settings page. [ ] <br/>
-
-          </ul>
-          <ul>
-          v6.4.1 - Mobile improvements
-          <li>
-          - Attempt to fix a bug that caused drop down buttons to become blocked. <br/>
-          - Reduce upload image size from 5MB to 4MB. <br/>
-          - Minimalistic UI now reloads the page, this alone should fix tons of small bugs and improve the experience. (Will change this back to no-reload in the next major release)<br/>
-          - Clean up processing_bg text. <br/>
-          - Improve UX when deleting a background. <br/>
-          - Remove "Google calendar" option from drop down menu. <br/>
-          - Fix wrong background icon. <br/>
-          - Added dropshadow behind settings content background & made some other small improvements too. 
-          - Drastically improved the experience for mobile users including several ios specific fixes. 
-          </li>
+          <h5> Maybe check back later :P </h5>
           </ul>
 </div>`);
 };
 
 const kShortcuts = (ks) => {
-  $(ks).append(`<!-- + Keyboard Shortcuts section + -->
-          <div class="settings-background">
+  $(ks).append(`<div class="settings-background">
             <p class="settings-item-title">Keyboard Shortcuts</p>
             <p class="settings-item-under-title description">Shortcuts allow you to do things without ever needing to touch your 
             <i class="las la-mouse"></i> mouse again.</p>
@@ -247,35 +200,51 @@ const kShortcuts = (ks) => {
               <p class="dropdown-seperator settings-seperator">
                 <span>General</span>
               </p>
-              <p></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.</p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.</p>
-              <p> Press <kbd>Shift</kbd> + <kbd>S</kbd> to open & close settings menu. </p>
-              <p></p>
-              <p> Press <kbd>Shift</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
-              <p> Press <kbd>Shift</kbd> + <kbd>B</kbd> to open soundboard. </p>
-              <p> Press on <kbd>Esc</kbd> to close any modal.</p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. (Provided by Firefox) </p>
+              <ul>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.
+              </li>
+              <li> 
+              Press <kbd>Shift</kbd> + <kbd>S</kbd> to open & close settings.
+              </li>
+              <li> 
+              Press <kbd>Shift</kbd> + <kbd>Z</kbd> to open add favorites menu.
+              </li>
+              <li> 
+              Press on <kbd>Esc</kbd> to close any modal.
+              </li>
               <p class="dropdown-seperator settings-seperator">
                 <span>Applications</span>
               </p>
-              <p></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open <span style="font-weight: 700;">Youtube.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> to open <span style="font-weight: 700;">Reddit.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> to open <span style="font-weight: 700;">ProtonMail.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> to open <span style="font-weight: 700;">Twitter.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> to open <span style="font-weight: 700;">Google Calendar.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd> to open <span style="font-weight: 700;">Gmail.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd> to open <span style="font-weight: 700;">Instagram.</span></p>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span>
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open <span style="font-weight: 700;">Youtube.</span>
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> to open <span style="font-weight: 700;">Reddit.</span>
+              </li>  
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> to open <span style="font-weight: 700;">ProtonMail.</span>
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> to open <span style="font-weight: 700;">Twitter.</span>
+              </li>
+              <li> 
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> to open <span style="font-weight: 700;">Google Calendar.</span>
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd> to open <span style="font-weight: 700;">Gmail.</span>
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd> to open <span style="font-weight: 700;">Instagram.</span>
+              </li>
+              </ul>
             </div>
-             <p style="text-align: center; font-weight: 500; font-size: 13px">
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/issues/new"
-                  target="_blank"
-                  ><i class="las la-keyboard"></i> Request a shortcut
-                </a>
-              </p>
           </div>`);
 };
 
