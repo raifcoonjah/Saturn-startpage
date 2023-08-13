@@ -280,21 +280,6 @@ input[type="button"]:hover {
   background-color: var(--lighter-color);
 }
 
-/* Press effect that happens when you press on buttons.. */
-
-.focus_ui span:active,
-.aboutwidgets-container:active,
-ul.fav_ptgi_category li:active,
-.app:active,
-.theme-container:active,
-.close-button:active,
-button:active {
-  transform: scale(0.98);
-  /* Scaling button to 0.98 to its original size */
-  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-  /* Lowering the shadow */
-}
-
 a button[disabled],
 button[disabled],
 input[type="submit"][disabled],
@@ -529,7 +514,7 @@ img {
 
 /* == Settings background color == */
 
-.favorites_modal_content{
+.favorites_modal_content {
   background: var(--sat-setting-bg-color);
 }
 
@@ -659,7 +644,6 @@ use the correct border radius == */
 */
 
 @media (max-width: 600px) {
-
   .favorites_modal_content,
   .sounds-modal-content {
     max-width: 90%;

@@ -410,7 +410,6 @@ div.theme-container {
   transition: var(--transition-speed-default);
 }
 
-.close-wallpaper,
 .cancel-fav-btn {
   padding: 14px 15px;
   outline: none;
@@ -497,20 +496,6 @@ div.theme-container {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
 }
-/* Large add favorite button */
-
-/* .favorite-button {
-  padding: 13px 12px;
-  font-weight: 500;
-  color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
-}
-
-.favorite-button:hover {
-  background-color: var(--sat-accent-color1);
-  transition: var(--transition-speed-default);
-  color: var(--for-white);
-} */
 
 /* 
 ========
