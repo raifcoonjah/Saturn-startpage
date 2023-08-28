@@ -125,7 +125,6 @@ its supposed to.
 ========
 */
 
-.wallpaper_modal,
 .fav_modal {
   position: fixed;
   left: 0;
@@ -140,7 +139,6 @@ its supposed to.
   z-index: 2;
 }
 
-.wallpaper_modal_content,
 .favorites_modal_content {
   /* Modal */
   position: absolute;
@@ -154,23 +152,12 @@ its supposed to.
 }
 
 /* Modal border radius */
-
-.wallpaper_modal_content,
-.favorites_modal_content {
-  border-radius: 20px;
-}
-
-.wallpaper_modal_content {
-  width: 38rem;
-  height: 23.5em;
-}
-
 .favorites_modal_content {
   width: 35rem;
   height: 23rem;
+  border-radius: 20px;
 }
 
-.show-wallpaper-modal,
 .show-favorite-modal {
   opacity: 1;
   visibility: visible;
@@ -423,7 +410,6 @@ div.theme-container {
   transition: var(--transition-speed-default);
 }
 
-.close-wallpaper,
 .cancel-fav-btn {
   padding: 14px 15px;
   outline: none;
@@ -460,8 +446,6 @@ div.theme-container {
 .favorites-search input:focus,
 .fav_modal input:hover,
 .fav_modal input:focus,
-.wallpaper-input input:hover,
-.wallpaper-input input:focus,
 .username-section input:focus,
 .username-section input:hover {
   border: 2px solid var(--sat-accent-color1);
@@ -512,20 +496,6 @@ div.theme-container {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
 }
-/* Large add favorite button */
-
-/* .favorite-button {
-  padding: 13px 12px;
-  font-weight: 500;
-  color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
-}
-
-.favorite-button:hover {
-  background-color: var(--sat-accent-color1);
-  transition: var(--transition-speed-default);
-  color: var(--for-white);
-} */
 
 /* 
 ========
@@ -826,6 +796,9 @@ appearing when the user hovers on the open in new tab button.
 .se_icon {
   filter: var(--svg-invert);
 }
+
+
+
 
 /* 
 ========
@@ -1290,5 +1263,66 @@ label span {
 }
 
 .connection_status {
+  display: none;
+}
+
+/* 
+========
++ Favorites UPLOAD +
+========
+*/
+
+input[type="file"] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  background: var(--lighter-color);
+  border-radius: var(--sat-border-radius);
+  border: 1px solid var(--favorites-hover);
+  outline: 0px !important;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: var(--sat-accent-color1);
+  padding: 10px 20px;
+  color: var(--for-white);
+  border-radius: var(--sat-border-radius);
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: var(--sat-accent-color-lighter);
+}
+
+/* Fix favorites header bug by applying margin */
+.fix-favorites-header {
+  margin-top: 20px !important;
+}
+
+/* 
+========
++ Kpress +
++ CSS that styles kpress feature. +
+========
+*/
+
+/* Define the styles for the popup */
+#kpress_popup {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translate(-20%, -30%);
+  padding: 10px;
+  border: 1px solid var(--lighter-color);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  background-color: var(--sat-setting-bg-color);
+  z-index: 9999;
+}
+
+/* Define a "hidden" class to hide the popup */
+.hidden {
   display: none;
 }

@@ -81,29 +81,6 @@ setInterval(() => {
   document.getElementById("time").innerHTML = getTime();
 }, 60 * 1000);
 
-//
-// ========
-// + Wallpaper Modal +
-// ========
-//
-
-// var wallpaperModal = document.querySelector(".wallpaper_modal");
-// var wallpaperButton = document.getElementById("wallpaper-button");
-// var closeWallpaperButton = document.querySelector(".close-wallpaper");
-
-// function toggleWallpaper() {
-//   wallpaperModal.classList.toggle("show-wallpaper-modal");
-// }
-
-// function windowOutclick3(event) {
-//   if (event.target === wallpaperModal) {
-//     toggleWallpaper();
-//   }
-// }
-
-// wallpaperButton.addEventListener("click", toggleWallpaper);
-// closeWallpaperButton.addEventListener("click", toggleWallpaper);
-// window.addEventListener("click", windowOutclick3);
 
 //
 // ========
@@ -243,12 +220,6 @@ if (localStorage.getItem("imageupload")) {
     "url(" + localStorage.getItem("imageupload") + ")";
 }
 
-// Display image resolution
-var img = document.getElementById("imageupload");
-img.onload = function () {
-  alert(this.width + "x" + this.height);
-};
-
 //
 // ========
 // + *New* Apply URL to body +
@@ -380,18 +351,6 @@ if (localStorage.getItem("browser_font")) {
   document.querySelector("body").style.fontFamily = "sans-serif";
 }
 
-// Check internet connection status
-window.addEventListener(
-  "load",
-  function (connection_ss) {
-    if (navigator.onLine) {
-    } else {
-      document.getElementById("connection_status").style.display = "block";
-    }
-  },
-  false
-);
-
 // Minimalistic UI
 
 const minimalisticButton = document.querySelector("#toggle_minimalistic_mode");
@@ -459,3 +418,26 @@ function switchTab(event) {
 
 // Add click event listener to each tab item
 tabItems.forEach((item) => item.addEventListener("click", switchTab));
+
+
+/// TEMPORARY CODE TO NOTIFY USERS:
+// Function to check if the browser is Chromium-based
+function isChromiumBrowser() {
+  // Check for the presence of the 'chrome' object in the global window scope
+  return !!window.chrome;
+}
+
+// Function to show or hide the notification section
+function toggleNotificationSection(show) {
+  const notificationSection = document.getElementById('chromium-browser-support');
+  if (notificationSection) {
+    notificationSection.style.display = show ? 'block' : 'none';
+  }
+}
+
+// Check if the browser is Chromium-based and toggle the notification section accordingly
+if (isChromiumBrowser()) {
+  toggleNotificationSection(true);
+} else {
+  toggleNotificationSection(false);
+}

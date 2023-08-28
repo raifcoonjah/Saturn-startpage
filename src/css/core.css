@@ -280,21 +280,6 @@ input[type="button"]:hover {
   background-color: var(--lighter-color);
 }
 
-/* Press effect that happens when you press on buttons.. */
-
-.focus_ui span:active,
-.aboutwidgets-container:active,
-ul.fav_ptgi_category li:active,
-.app:active,
-.theme-container:active,
-.close-button:active,
-button:active {
-  transform: scale(0.98);
-  /* Scaling button to 0.98 to its original size */
-  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-  /* Lowering the shadow */
-}
-
 a button[disabled],
 button[disabled],
 input[type="submit"][disabled],
@@ -529,10 +514,7 @@ img {
 
 /* == Settings background color == */
 
-.wallpaper_modal_content,
-.favorites_modal_content,
-.sounds-modal-content,
-.settings-content {
+.favorites_modal_content {
   background: var(--sat-setting-bg-color);
 }
 
@@ -599,7 +581,6 @@ color to fix some issues == */
   color: var(--delete-warning-bg);
 }
 
-.close-wallpaper:hover,
 .cancel-fav-btn:hover {
   transition: var(--transition-speed-default);
   background-color: #d752524b !important;
@@ -663,7 +644,6 @@ use the correct border radius == */
 */
 
 @media (max-width: 600px) {
-  .wallpaper_modal_content,
   .favorites_modal_content,
   .sounds-modal-content {
     max-width: 90%;
@@ -727,4 +707,84 @@ use the correct border radius == */
 .button-container {
   text-align: right;
   padding: 10px;
+}
+
+/* 
+========
++ Saturn core components +
++ Settings sidebar +
+========
+*/
+
+
+.sidebar {
+  width: 100%;
+  max-width: 570px;
+  height: 100vh;
+  background-color: var(--sat-blurry-background);
+  position: fixed;
+  right: -100%;
+  top: 0;
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(17, 17, 17, 0.822);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 10px;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  right: 0;
+  backdrop-filter: blur(10px); /* Apply blur when open */
+  animation: 0.3 ease-in-out;
+}
+
+.sidebar-trigger {
+  background: none;
+  color: var(--sat-ids);
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Adjust the desired position from the right */
+  z-index: 1000;
+  border-radius: 17px;
+}
+
+.settings-tab-item {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-tab-item {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--sat-setting-bg-effect);
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.settings-tab-item.active {
+  background-color: var(--bg-accent-color-lr);
+  transition: 0.2s ease-in-out;
+  border: 1px solid var(--sat-accent-color1);
+}
+
+.settings-tab-item:hover {
+  background-color: var(--bg-accent-color-lr-hover);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.setting-content {
+  padding: 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
 }

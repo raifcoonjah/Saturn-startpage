@@ -1,0 +1,30 @@
+          <ul>
+          v6.4.80 - Settings Redesign
+          <li>
+          - Settings has been entirely rewritten and redesigned. This redesign includes several new UI changes such as Blur, a new menu design and several user experience
+          enhancements. <br/>
+          - Settings is now a sidebar instead of a modal, which makes thing much easier to maintain and improve in the long run. <br/>
+          - This beta includes a very early version of the new Settings sidebar. <br/>
+          ---- <br/>
+          What works and what doesn't
+          ---- <br/>
+          - Keyboard shortcut to open settings is not working. [RESOLVED]  <br/>
+          - The button is not appearing on smaller screens. [ ] <br/>
+          - When pressing "Delete it all" button, the sidebar closes instantly. [ ] <br/>
+          - Every old settings tab was migrated over to the new settings page. [MIGRATION COMPLETE] <br/>
+
+          </ul>
+          <ul>
+          v6.4.1 - Mobile improvements
+          <li>
+          - Attempt to fix a bug that caused drop down buttons to become blocked. <br/>
+          - Reduce upload image size from 5MB to 4MB. <br/>
+          - Minimalistic UI now reloads the page, this alone should fix tons of small bugs and improve the experience. (Will change this back to no-reload in the next major release)<br/>
+          - Clean up processing_bg text. <br/>
+          - Improve UX when deleting a background. <br/>
+          - Remove "Google calendar" option from drop down menu. <br/>
+          - Fix wrong background icon. <br/>
+          - Added dropshadow behind settings content background & made some other small improvements too.
+          - Drastically improved the experience for mobile users including several ios specific fixes.
+          </li>
+          </ul>
