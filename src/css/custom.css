@@ -2,141 +2,14 @@
 ========
 + Add your custom css code here. +
 + Think this should be in Saturn? Make a pull request +
++ All code here will eventually make its way over to its
+proper css file. 
 ========
 */
 
-input[type="file"] {
-  width: 100%;
-  padding: 5px;
-  margin-top: 10px;
-  background: var(--lighter-color);
-  border-radius: var(--sat-border-radius);
-  border: 1px solid var(--favorites-hover);
-  outline: 0px !important;
-}
-
-input[type="file"]::file-selector-button {
-  margin-right: 20px;
-  border: none;
-  background: var(--sat-accent-color1);
-  padding: 10px 20px;
-  color: var(--for-white);
-  border-radius: var(--sat-border-radius);
-  cursor: pointer;
-}
-
-input[type="file"]::file-selector-button:hover {
-  background: var(--sat-accent-color-lighter);
-}
-
-/* Fix favorites header bug by applying margin */
-.fix-favorites-header {
-  margin-top: 20px !important;
-}
-
-/* Define the styles for the popup */
-#kpress_popup {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  transform: translate(-20%, -30%);
+#chromium-browser-support {
+  display: none;
+  background-color: rgba(247, 243, 1, 0.164);
   padding: 10px;
-  border: 1px solid var(--lighter-color);
-  backdrop-filter: blur(10px);
   border-radius: 10px;
-  background-color: var(--sat-setting-bg-color);
-  z-index: 9999;
-}
-
-/* Define a "hidden" class to hide the popup */
-.hidden {
-  display: none;
-}
-
-.sidebar {
-  width: 100%;
-  max-width: 570px;
-  height: 100vh;
-  background-color: var(--sat-blurry-background);
-  position: fixed;
-  right: -100%;
-  top: 0;
-  transition: right 0.3s ease-in-out;
-  z-index: 999;
-  box-shadow: 0 2px 10px rgba(17, 17, 17, 0.822);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 10px;
-  overflow-y: auto;
-}
-
-.sidebar.open {
-  right: 0;
-  backdrop-filter: blur(10px); /* Apply blur when open */
-  animation: 0.3 ease-in-out;
-}
-
-.sidebar-trigger {
-  background: none;
-  color: var(--sat-ids);
-  font-size: 1.7rem;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  right: 20px; /* Adjust the desired position from the right */
-  z-index: 1000;
-  border-radius: 17px;
-}
-
-.settings-tab-item {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.settings-tab-item {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--sat-setting-bg-effect);
-  cursor: pointer;
-  font-size: 15px;
-  border-radius: 8px;
-}
-
-.settings-tab-item.active {
-  background-color: var(--bg-accent-color-lr);
-  transition: 0.2s ease-in-out;
-  border: 1px solid var(--sat-accent-color1);
-}
-
-.settings-tab-item:hover {
-  background-color: var(--bg-accent-color-lr-hover);
-  transition: background-color 0.2s ease-in-out;
-}
-
-.setting-content {
-  padding: 20px;
-}
-
-.tab-pane {
-  display: none;
-}
-
-.tab-pane.active {
-  display: block;
-}
-
-@keyframes fadeSlideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.slide-right-fade-in {
-  opacity: 0;
-  transform: translateX(100px);
-  animation: fadeSlideIn 0.25s forwards;
 }

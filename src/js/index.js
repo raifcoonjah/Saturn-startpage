@@ -418,3 +418,26 @@ function switchTab(event) {
 
 // Add click event listener to each tab item
 tabItems.forEach((item) => item.addEventListener("click", switchTab));
+
+
+/// TEMPORARY CODE TO NOTIFY USERS:
+// Function to check if the browser is Chromium-based
+function isChromiumBrowser() {
+  // Check for the presence of the 'chrome' object in the global window scope
+  return !!window.chrome;
+}
+
+// Function to show or hide the notification section
+function toggleNotificationSection(show) {
+  const notificationSection = document.getElementById('chromium-browser-support');
+  if (notificationSection) {
+    notificationSection.style.display = show ? 'block' : 'none';
+  }
+}
+
+// Check if the browser is Chromium-based and toggle the notification section accordingly
+if (isChromiumBrowser()) {
+  toggleNotificationSection(true);
+} else {
+  toggleNotificationSection(false);
+}
