@@ -81,50 +81,6 @@ setInterval(() => {
   document.getElementById("time").innerHTML = getTime();
 }, 60 * 1000);
 
-//
-// ========
-// + Settings Modal trigger + close button +
-// ========
-//
-
-var modal = document.querySelector(".settings_modal");
-var trigger = document.querySelector(".dropdown-settings");
-var closeButton = document.querySelector(".close-button");
-function toggleModal() {
-  modal.classList.toggle("show-modal");
-}
-function windowOnClick(event) {
-  if (event.target === modal) {
-    toggleModal();
-  }
-}
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
-//
-// ========
-// + Wallpaper Modal +
-// ========
-//
-
-var wallpaperModal = document.querySelector(".wallpaper_modal");
-var wallpaperButton = document.getElementById("wallpaper-button");
-var closeWallpaperButton = document.querySelector(".close-wallpaper");
-
-function toggleWallpaper() {
-  wallpaperModal.classList.toggle("show-wallpaper-modal");
-}
-
-function windowOutclick3(event) {
-  if (event.target === wallpaperModal) {
-    toggleWallpaper();
-  }
-}
-
-wallpaperButton.addEventListener("click", toggleWallpaper);
-closeWallpaperButton.addEventListener("click", toggleWallpaper);
-window.addEventListener("click", windowOutclick3);
 
 //
 // ========
@@ -176,24 +132,6 @@ $(function () {
 
 //
 // ========
-// + Settings navigation +
-// ========
-//
-
-$(document).ready(function () {
-  $("ul.tabs li").click(function () {
-    var tab_id = $(this).attr("data-tab");
-
-    $("ul.tabs li").removeClass("current");
-    $(".tab-content").removeClass("current");
-
-    $(this).addClass("current");
-    $("#" + tab_id).addClass("current");
-  });
-});
-
-//
-// ========
 // + App list category +
 // ========
 //
@@ -207,120 +145,6 @@ $(document).ready(function () {
     $(this).addClass("current");
     $("#" + tab_id).addClass("current");
   });
-});
-
-//
-// ========
-// + Keyboard Shortcuts +
-// ========
-//
-
-var opnSetting = document.querySelector(".close-button");
-document.body.addEventListener("keydown", function () {
-  if (event.keyCode == 83 && event.shiftKey) {
-    // Shift + S key
-    opnSetting.click();
-  }
-});
-
-// when ESC is pressed close the modal in vanilla js
-document.addEventListener("keyup", function (e) {
-  if (e.keyCode == 27) {
-    document.querySelector(".settings_modal").classList.remove("show-modal");
-    document
-      .querySelector(".fav_modal")
-      .classList.remove("show-favorite-modal");
-    document
-      .querySelector(".wallpaper_modal")
-      .classList.remove("show-wallpaper-modal");
-    // unfocus search-bar
-    document.querySelector(".search-bar").blur();
-  }
-});
-
-//
-// ========
-// + Apps Shortcut +
-// ========
-//
-
-// Ctrl + Alt + G to open github.com
-document.addEventListener("keyup", function (github) {
-  if (github.key == "g" && github.altKey && github.ctrlKey) {
-    window.location.replace("https://github.com");
-  }
-});
-
-// Ctrl + Alt + Y to open youtube.com
-document.addEventListener("keyup", function (youtube) {
-  if (youtube.key == "y" && youtube.altKey && youtube.ctrlKey) {
-    window.location.replace("https://youtube.com");
-  }
-});
-
-// Ctrl + Alt + R to open reddit.com
-document.addEventListener("keyup", function (reddit) {
-  if (reddit.key == "r" && reddit.altKey && reddit.ctrlKey) {
-    window.location.replace("https://reddit.com");
-  }
-});
-
-// Ctrl + Alt + P to open protonmail.com
-document.addEventListener("keyup", function (protonmail) {
-  if (protonmail.key == "p" && protonmail.altKey && protonmail.ctrlKey) {
-    window.location.replace("https://mail.proton.me");
-  }
-});
-
-// Ctrl + Alt + T to open twitter.com
-document.addEventListener("keyup", function (twitter) {
-  if (twitter.key == "t" && twitter.altKey && twitter.ctrlKey) {
-    window.location.replace("https://twitter.com");
-  }
-});
-
-// Ctrl + Alt + C to open google_calendar
-document.addEventListener("keyup", function (google_calendar) {
-  if (
-    google_calendar.key == "c" &&
-    google_calendar.altKey &&
-    google_calendar.ctrlKey
-  ) {
-    window.location.replace("https://calendar.google.com");
-  }
-});
-
-// Ctrl + Alt + M to open mail.google.com
-document.addEventListener("keyup", function (mail) {
-  if (mail.key == "m" && mail.altKey && mail.ctrlKey) {
-    window.location.replace("https://mail.google.com");
-  }
-});
-
-// Ctrl + Alt + I to open instagram.com
-document.addEventListener("keyup", function (instagram) {
-  if (instagram.key == "i" && instagram.altKey && instagram.ctrlKey) {
-    window.location.replace("https://instagram.com");
-  }
-});
-
-// Ctrl + / to focus on searchbar
-document.addEventListener("keyup", function (search) {
-  if (search.key == "/" && search.ctrlKey) {
-    document.querySelector(".search-bar").focus();
-  }
-});
-
-// Ctrl + ArrowUp to click on se_icon
-document.addEventListener("keyup", function (se_icon) {
-  if (se_icon.key == "ArrowUp" && se_icon.ctrlKey) {
-    document.querySelector(".se_icon").click();
-  }
-});
-document.addEventListener("keyup", function (favModal) {
-  if (favModal.keyCode == 90 && favModal.shiftKey) {
-    document.querySelector(".favorite-button").click();
-  }
 });
 
 //
@@ -356,7 +180,7 @@ document.querySelector("#save-image").addEventListener("click", function () {
       '<i class="las la-exclamation-triangle"></i>' + " URL cannot be empty";
   } else {
     processingBg.innerHTML =
-      '<i class="las la-check-circle"></i>' + " Background applied... ";
+      '<i class="las la-check-circle"></i>' + " Background applied ";
     localStorage.setItem("image_url", imageUrlValue);
     localStorage.removeItem("imageupload");
     body.style.backgroundImage = "url(" + imageUrlValue + ")";
@@ -370,16 +194,16 @@ const processingBg = document.querySelector(".processing_bg");
 input.addEventListener("change", (event) => {
   const image = event.target.files[0];
   const imageSize = image.size / 1024 / 1024;
-  if (imageSize >= 5) {
+  if (imageSize >= 4) {
     processingBg.innerHTML =
       '<span style="color:var(--delete-warning-bg)"> <i class="las la-exclamation-circle"></i>' +
-      " Error, this image is above 5MB in size. ";
+      " Error, this image is above 4MB in size. ";
     +"</span>";
     return;
   }
 
   processingBg.innerHTML =
-    '<i class="las la-check-circle"></i>' + " Background applied... ";
+    '<i class="las la-check-circle"></i>' + " Background applied ";
   localStorage.removeItem("imageupload");
   localStorage.removeItem("image_url");
 
@@ -395,12 +219,6 @@ if (localStorage.getItem("imageupload")) {
   document.querySelector("body").style.backgroundImage =
     "url(" + localStorage.getItem("imageupload") + ")";
 }
-
-// Display image resolution
-var img = document.getElementById("imageupload");
-img.onload = function () {
-  alert(this.width + "x" + this.height);
-};
 
 //
 // ========
@@ -427,7 +245,7 @@ document.querySelector("#delete_custom_image").addEventListener("click", () => {
     return;
   }
 
-  if (confirm("Delete custom background?")) {
+  if (confirm("Delete background?")) {
     localStorage.removeItem("image_url");
     localStorage.removeItem("imageupload");
     document.querySelector("body").style.backgroundImage = "";
@@ -533,18 +351,6 @@ if (localStorage.getItem("browser_font")) {
   document.querySelector("body").style.fontFamily = "sans-serif";
 }
 
-// Check internet connection status
-window.addEventListener(
-  "load",
-  function (connection_ss) {
-    if (navigator.onLine) {
-    } else {
-      document.getElementById("connection_status").style.display = "block";
-    }
-  },
-  false
-);
-
 // Minimalistic UI
 
 const minimalisticButton = document.querySelector("#toggle_minimalistic_mode");
@@ -558,11 +364,7 @@ minimalisticButton.addEventListener("click", () => {
     satHeader.style.fontSize = "23px";
     localStorage.setItem("minimalisticUiDisplay", "none");
   } else {
-    minimalisticUi.style.display = "block";
-    // Applying a paddingTop of 100px to make things "appear" right.
-    satHeader.style.paddingTop = "100px";
-    satHeader.style.fontSize = "0.9em";
-    satHeader.style.marginTop = "0";
+    location.reload();
     localStorage.removeItem("minimalisticUiDisplay");
   }
 });
@@ -576,4 +378,66 @@ if (minimalisticCheck) {
     satHeader.style.paddingTop = "30vh";
     satHeader.style.fontSize = "23px";
   }
+}
+
+document.getElementById("open_settings").addEventListener("click", function () {
+  document.querySelector(".sidebar").classList.toggle("open");
+});
+
+document.addEventListener("click", function (event) {
+  const sidebar = document.querySelector(".sidebar");
+  const trigger = document.getElementById("open_settings");
+
+  if (!sidebar.contains(event.target) && event.target !== trigger) {
+    sidebar.classList.remove("open");
+  }
+});
+
+// Get all tab items
+const tabItems = document.querySelectorAll(".settings-tab-item");
+
+// Get all tab content panes
+const tabPanes = document.querySelectorAll(".tab-pane");
+
+// Function to switch tabs
+function switchTab(event) {
+  // Remove 'active' class from all tab items and panes
+  tabItems.forEach((item) => item.classList.remove("active"));
+  tabPanes.forEach((pane) => pane.classList.remove("active"));
+
+  // Add 'active' class to the clicked tab item
+  this.classList.add("active");
+
+  // Get the target tab pane based on data-tab attribute
+  const targetPaneId = this.getAttribute("data-tab");
+  const targetPane = document.getElementById(targetPaneId);
+
+  // Add 'active' class to the target tab pane
+  targetPane.classList.add("active");
+}
+
+// Add click event listener to each tab item
+tabItems.forEach((item) => item.addEventListener("click", switchTab));
+
+
+/// TEMPORARY CODE TO NOTIFY USERS:
+// Function to check if the browser is Chromium-based
+function isChromiumBrowser() {
+  // Check for the presence of the 'chrome' object in the global window scope
+  return !!window.chrome;
+}
+
+// Function to show or hide the notification section
+function toggleNotificationSection(show) {
+  const notificationSection = document.getElementById('chromium-browser-support');
+  if (notificationSection) {
+    notificationSection.style.display = show ? 'block' : 'none';
+  }
+}
+
+// Check if the browser is Chromium-based and toggle the notification section accordingly
+if (isChromiumBrowser()) {
+  toggleNotificationSection(true);
+} else {
+  toggleNotificationSection(false);
 }

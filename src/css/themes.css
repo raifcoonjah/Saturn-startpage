@@ -33,6 +33,10 @@ the end of the file :D +
   --sat-setting-bg-color: rgb(239, 240, 241);
   /* Settings options background color */
   --sat-setting-bg-effect: rgb(228, 228, 228);
+
+  /* **New** background color x blurry background */
+  --sat-blurry-background: rgba(239, 240, 241, 0.856);
+
   --sat-input-hover: #b1b1b1;
   --sat-search-bar-focus: #999999;
   /* Tooltip background */
@@ -94,6 +98,8 @@ the end of the file :D +
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: #262a36;
   --sat-setting-bg-color: #0c0d11;
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #0c0d11d0;
   --sat-setting-bg-effect: #12161d;
   --sat-input-hover: #2b323d;
   --sat-search-bar-focus: #1e232c;
@@ -142,6 +148,9 @@ the end of the file :D +
   --sat-txt-selector-clr: #ffb07d;
 
   --sat-setting-bg-color: #0e0e0e;
+
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #0e0e0ed7;
   --sat-setting-bg-effect: rgba(24, 24, 24, 0.904);
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
@@ -189,6 +198,8 @@ the end of the file :D +
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: #686868;
   --sat-setting-bg-color: #0e0e0e;
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #0e0e0ed5;
   --sat-setting-bg-effect: rgb(24, 24, 24);
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
@@ -236,6 +247,8 @@ the end of the file :D +
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: hsl(208, 67%, 56%);
   --sat-setting-bg-color: #212427;
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #212427d3;
   --sat-setting-bg-effect: #262a2e;
   --sat-input-hover: #3e4349;
   --sat-search-bar-focus: #3e4349;
@@ -284,6 +297,8 @@ the end of the file :D +
   --sat-links: hsl(0, 0%, 95%);
   --sat-txt-selector-clr: hsl(208, 67%, 56%);
   --sat-setting-bg-color: #282a36;
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #282a36d5;
   --sat-setting-bg-effect: #323442;
   --sat-input-hover: #606581;
   --sat-search-bar-focus: #44485c;
@@ -329,6 +344,8 @@ the end of the file :D +
   --sat-search-shortcuts: #3b4252;
   --sat-links: hsl(0, 0%, 95%);
   --sat-setting-bg-color: #2e3440;
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #2e3440d7;
   --sat-setting-bg-effect: #3b4252;
   --sat-input-hover: #434c5e;
   --sat-search-bar-focus: #515b71;
@@ -372,6 +389,8 @@ the end of the file :D +
   --sat-search-shortcuts: #272b33;
   --sat-links: hsl(0, 0%, 95%);
   --sat-setting-bg-color: #11141b;
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #11141bd8;
   --sat-setting-bg-effect: #272b33;
   --sat-input-hover: #3a404d;
   --gudmrning-txt: linear-gradient(to right, #409eff 0%, #5baaf8 100%);
@@ -414,6 +433,8 @@ the end of the file :D +
   --sat-search-shortcuts: #2a2833;
   --sat-links: hsl(0, 0%, 95%);
   --sat-setting-bg-color: #211f2a;
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #211f2ad8;
   --sat-setting-bg-effect: #2f2c3b;
 
   --gudmrning-txt: linear-gradient(to right, #966fd6 0%, #5d2ea9 100%);
@@ -458,6 +479,8 @@ the end of the file :D +
   --sat-search-shortcuts: #e7ecf0;
   --sat-links: #1a1a1a;
   --sat-setting-bg-color: #ffffff;
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #ffffffd8;
   --sat-setting-bg-effect: #e7ecf0;
   --sat-border-radius: 15px;
   --gudmrning-txt: linear-gradient(to right, #0349b4 0%, #6fbeec 100%);
@@ -505,6 +528,8 @@ the end of the file :D +
   --sat-links: hsl(0, 0%, 95%);
 
   --sat-setting-bg-color: #190c17;
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #190c17d8;
   --sat-setting-bg-effect: #271324;
   --sat-input-hover: #271324;
   --sat-search-bar-focus: #271324;
@@ -551,6 +576,8 @@ the end of the file :D +
   --sat-links: hsl(0, 0%, 95%);
 
   --sat-setting-bg-color: #051d21;
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #051d21d5;
   --sat-setting-bg-effect: #07292f;
   --sat-input-hover: #051d21;
   --sat-search-bar-focus: #051d21;

@@ -1,5 +1,9 @@
-// Keyboard presses:
-
+//
+// ========
+// + Keyboard related features +
+// Includes Kpress and shortcuts.
+// ========
+//
 let kpress = false;
 if (localStorage.getItem("kpressEnabled") === "true") {
   kpress = true;

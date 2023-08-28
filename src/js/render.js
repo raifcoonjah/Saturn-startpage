@@ -139,35 +139,20 @@ const appsList = (x) => {
 };
 
 const settingAbout = (z) => {
-  $(z).append(`<div id="tab-3" class="tab-content">
-              <p class="settings-item-title">About</p>
-              <p class="settings-item-under-title description">About Saturn Startpage & What's new.</p>
+  $(z)
+    .append(`<p class="settings-item-title">About</p><p class="settings-item-under-title description">About Saturn Startpage, what's new and Keyboard shortcuts.</p>
             <div class="settings-background">
               <p class="new-about">
-              <img 
-              style="margin-left: auto;
-              padding-top:30px;
-              margin-right: auto;
-              display: block;"
-                  src="/assets/img/dynamic-icon-big.png"
-                  loading="lazy"
-                  title="Saturn Logo"
-                  alt="Saturn-logo.png"
-                  /> 
-            <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Startpage</p>
-            <p style="text-align:center;font-weight:500;margin-top:-15px;">
+              <img style="padding-top:30px;" src="/assets/img/dynamic-icon-big.png" loading="lazy" title="Saturn Logo" alt="Saturn-logo.png" />
+              <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Startpage</p>
+            <p style="text-align:center;margin-top:-15px;">
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
             </p>
-               <p style="text-align:center;"> 
-               <a class="version-text red_background"
-               href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/v6.4.0"
-               target="_blank" 
-               >v6.4.0</i></a>
-                </p>
+               <a class="version-text green_background" href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/#" target="_blank"> v6.9.86</i></a>
               <div class="socials">
                 <div class="aboutwidgets">
                 <a href="https://saturnstartpage.netlify.app/" class="aboutwidgets-container">
-                Get chromium version (Beta)
+                Get other versions
                 <i class="las la-external-link-alt"></i>
                 </a>
                 <a href="https://github.com/raifcoonjah/Saturn-startpage/tree/master" class="aboutwidgets-container lk_container_top">
@@ -197,75 +182,61 @@ const settingAbout = (z) => {
           <img style="margin-left: auto; padding-top:30px; margin-right: auto; display: block;" src="/assets/img/version.png" loading="lazy" />
           <p style="text-align:center;"> 
             <a class="version-text green_background"
-            >Saturn v6.4.0</i></a>
+            >Release notes</i></a>
           </p>
-            <p style="text-align:center;"> 
-            <a class="version-text"
-            >Updated on: 17/02/2023</i></a>
-          </p>
-<p style="text-align:center;" class="description small_text">
-Optimization updates, BEGUN!
-</p>
-<ul>
 
+          <ul>
+          <h2> New features </h2>
 
-<li>
-<h3> 😎 New Time/date look! </h3>
-> The new look puts more focus on making things easier to view at a quick glance.
-</li>
-<li>
-<h3> Minimalist Interface (Beta) [This name will be changed in the future] </h3>
-> Like shortcuts? so do I, minimalist interface pretty much hides everything expect Saturn-headers making home cleaner and less distracting.
-</li>
-<li> 
-<h3> ⏩ Kpress (Yes, that name was inspired by KDE) </h3> 
-> When Kpress is enabled, Saturn will display a small popup on the right of screen displaying the current key combination being pressed.
-</li>
-<li> 
-<h3> Other smaller changes </h3>
-> Added a lot of new quotes thanks to https://type.fit/api/quotes <br/>
-> Added the ability to copy Background URL using a new "Copy URL" button. <br/>
-> Background option has been moved inside a new settings option. <br/>
-</li>
-<li> 
-<h3> Minor bugs fixes </h3> 
-> Fix linkin-park not showing any background. </br/>
-> Tons of fixes for both Saturn themes and background. </br/>
-> Notification dot is no longer shown inside the dropdown. </br/>
-</li>
-
-<h2>Optimizations</h2>
-<p class="description">
-New category thats going to cover more of the underlying things going on to make things faster and more optimized. 
-This updates I started with Themes and custom background
-</p> 
-<h3>File structure</h3> 
-Saturn now uses the default src folder to store all of its code.
-<h3> Theme.js </h3>
-Saturn theme engine has been completely rewritten from scratch using maintainable and optimized code. This change also includes two new features: <br/>
-> When a theme is being used, an outline is now shown on the selected theme. </br/>
-> Smooth theme transition. <br/>
-<p class="line"> </p>
-> Better experience when adding new themes. <br/>
-> Improved loading and stability a lot! <br/>
-<h3> Background </h3> 
-The custom background backend received some significant fixes and design optimization: <br/>
-> No reload is now require for your background to be shown. (this applies to deleting as well)<br/> 
-> Completely redesigned notifications, which are now cleaner, use less code and much more user friendly. (Refinements coming in the next major update)<br/>
-> When uploading a background, if its size is over 5MB an error message will now be displayed and the image will not be uploaded, this should prevent some crashes from happening.<br/>
-> With this release, backgrounds also got a big boost in stability and had tons of bugs fixed.<br/>
-
-
-</ul>
-</div>
-
-
-          </div>`);
+          <h3> Settings redesign </h3>
+          <li>
+          - The settings page has been completely redesigned from the ground up. This new settings page is much more compact, faster, more stable and more maintainable. <br/>
+          - Various UI elements were optimized and reworked to improve their stability and performance. <br/>
+          - Currently this menu does not support mobile phone, but an issue will be opened soon to resolve this issue. <br/>
+          - The sidebar also implements several new components including: Blurred background, new switching animation and a brand new button design. <br/>
+          </li>
+          <li>
+          - Improve design consistentcy accross several UI components. 
+          </li>
+          <h3> Delayed loading & Peformance improvements </h3>
+          <li>
+          - Currently Saturn loads all pages inside render.js onload, with the new
+          loader_deplay, the about section and keyboard shortcuts
+          will be loaded after 1.5 seconds.
+          This should allow Saturn to load a little bit faster while having little
+          to no impact on the user experience
+          </li>
+          <li> 
+          - The about section now uses less code and got a big clean up.  <br/>
+          - The Wallpaper modal has been replaced with a section under the the new style option in settings, this should significantly reduce the amount of code Saturn uses. <br/>
+          - Improve 
+          </li>
+          <h3> Several small redesigns </h3>
+          <li>
+          - The kpress option section has been redesigned. <br/>
+          - Keyboard shortcuts section now uses less code and is now more compact. <br/>
+          </li>
+          <h3> Other several improvements </h3>
+          <li>
+          - Removal of the favorites tab <a href="https://gitlab.com/raifcoonjah/Saturn-startpage/-/issues/84">#84</a> <br/>
+          - Remove https from favorites input. <br/>
+          - Updated jQuery v3.6.3 -> v3.7.1 <br/>
+          - Clean up all .css files and removes a lot of duplicate code. <br/>
+          - Modernized button code and add a proper hover effect. (WIP, bug fix should be included in the .1 release) <br/>
+          - Remove a lot of usless codes that were causing performance issues <br/> 
+          - Clean up custom.css. <br/>
+          - Reduce upload image size from 5MB to 4MB. <br/> 
+          - Minimalistic UI now reloads the page, this alone should fix tons of small bugs and improve the experience. 
+          (Will change this back to no-reload in the next major release) <br/>
+          - Drastically improved the experience for mobile users including several ios specific fixes. <br/> 
+          - Improve UX when deleting a background and clean up processing_bg text. 
+          </li>
+          </ul>
+</div>`);
 };
 
 const kShortcuts = (ks) => {
-  $(ks).append(`<!-- + Keyboard Shortcuts section + -->
-          <div id="tab-5" class="tab-content">
+  $(ks).append(`<div class="settings-background">
             <p class="settings-item-title">Keyboard Shortcuts</p>
             <p class="settings-item-under-title description">Shortcuts allow you to do things without ever needing to touch your 
             <i class="las la-mouse"></i> mouse again.</p>
@@ -273,86 +244,70 @@ const kShortcuts = (ks) => {
               <p class="dropdown-seperator settings-seperator">
                 <span>General</span>
               </p>
-              <p></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.</p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.</p>
-              <p> Press <kbd>Shift</kbd> + <kbd>S</kbd> to open & close settings menu. </p>
-              <p></p>
-              <p> Press <kbd>Shift</kbd> + <kbd>Z</kbd> to open add favorites menu. </p>
-              <p> Press <kbd>Shift</kbd> + <kbd>B</kbd> to open soundboard. </p>
-              <p> Press on <kbd>Esc</kbd> to close any modal.</p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>M</kbd> to mute audio. (Provided by Firefox) </p>
+              <ul>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd><i class="las la-caret-square-up"></i></kbd> (Arrow Up) to switch between search engines.
+              </li>
+              <li> 
+              Press <kbd>Shift</kbd> + <kbd>S</kbd> to open & close settings.
+              </li>
+              <li> 
+              Press <kbd>Shift</kbd> + <kbd>Z</kbd> to open add favorites menu.
+              </li>
+              <li> 
+              Press on <kbd>Esc</kbd> to close any modal.
+              </li>
               <p class="dropdown-seperator settings-seperator">
                 <span>Applications</span>
               </p>
-              <p></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open <span style="font-weight: 700;">Youtube.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> to open <span style="font-weight: 700;">Reddit.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> to open <span style="font-weight: 700;">ProtonMail.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> to open <span style="font-weight: 700;">Twitter.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> to open <span style="font-weight: 700;">Google Calendar.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd> to open <span style="font-weight: 700;">Gmail.</span></p>
-              <p> Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd> to open <span style="font-weight: 700;">Instagram.</span></p>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> to open <span style="font-weight: 700;">Github.</span>
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> to open <span style="font-weight: 700;">Youtube.</span>
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> to open <span style="font-weight: 700;">Reddit.</span>
+              </li>  
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> to open <span style="font-weight: 700;">ProtonMail.</span>
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> to open <span style="font-weight: 700;">Twitter.</span>
+              </li>
+              <li> 
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> to open <span style="font-weight: 700;">Google Calendar.</span>
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd> to open <span style="font-weight: 700;">Gmail.</span>
+              </li>
+              <li>
+              Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd> to open <span style="font-weight: 700;">Instagram.</span>
+              </li>
+              </ul>
             </div>
-             <p style="text-align: center; font-weight: 500; font-size: 13px">
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/issues/new"
-                  target="_blank"
-                  ><i class="las la-keyboard"></i> Request a shortcut
-                </a>
-              </p>
           </div>`);
 };
 
-const coolbg = (cbg) => {
-  $(cbg).append(`<div class="fav_ptgi">
-            <ul class="fav_ptgi_category">
-              <a
-                href="https://unsplash.com"
-                title="Go to unsplash..."
-                target="_blank"
-              >
-              <li class="fav_ptgi_btn"><img src="https://unavatar.io/unsplash.com" loading="lazy"> Unsplash</li></a
-              >
-              <a
-                href="https://wallpaperaccess.com"
-                title="Go to wallpaperaccess..."
-                target="_blank"
-              >
-              <li class="fav_ptgi_btn"><img src="https://unavatar.io/wallpaperaccess.com" loading="lazy"> Wallpaperaccess</li></a
-              >
-              <a
-              href="https://coolbackgrounds.io/"
-              title="Go to coolbackgrounds..."
-              target="_blank"
-            >
-            <li class="fav_ptgi_btn"><img src="https://unavatar.io/coolbackgrounds.io" loading="lazy"> Coolbackgrounds</li></a
-            >
-            <a
-            href="https://github.com/mraif13/Saturn-startpage/issues/new"
-            title="A website missing? Suggest it!"
-            target="_blank"
-          >
-          <li class="fav_ptgi_btn">Suggest website...</li></a
-          >
-            </ul>
-          </div>`);
-};
-
-const render_in_js = (x, z, ks, cu, cbg) => {
+const render_in_js = (x, z, ks, cu) => {
   let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
   let kshortcuts = $("#k_shortcuts");
-  let cool_background = $("#cool_backgrounds");
 
-  // pls dont break
-  loader = setTimeout(function () {
+  // Load immediately onload
+  loader_immediately = setTimeout(function () {
     appsList(apps_list);
+  });
+
+  // Load after 1.5 since the user won't see this page until they open settings.
+  // Currently the time is set according to my tests but can adjusted in the future if needed.
+  loader_delay = setTimeout(function () {
     settingAbout(setting_about);
     kShortcuts(kshortcuts);
-    coolbg(cool_background);
-  });
+  }, 1500);
 };
 
 window.onload = render_in_js();
