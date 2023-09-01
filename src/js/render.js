@@ -231,6 +231,7 @@ const settingAbout = (z) => {
           - Drastically improved the experience for mobile users including several ios specific fixes. <br/> 
           - Improve UX when deleting a background and clean up processing_bg text. 
           </li>
+          <p> Warning: This update may contain some bugs, this should be ironed out in the next few updates.
           </ul>
 </div>`);
 };
