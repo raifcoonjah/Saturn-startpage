@@ -1,12 +1,11 @@
-![Saturn-startpage](https://i.imgur.com/JkdwZMW.png)
-#### Migration (!IMPORTANT)
+# Migration (!IMPORTANT)
 - Development has been moved over to Gitlab since I want to learn how to use it. Before each release I have a script that will merge all work done there to here.
 - Releases will happen on both Gitlab and Github. However, the update URL will stay on Github for now.
 
 #### Contributor?
-- Please make a PR there else you can do it here I will manage :) 
-
-
+- Please make a PR there else you can do it here I will manage :)
+ 
+![Saturn-startpage](https://i.imgur.com/JkdwZMW.png)
 
 ## What's Saturn Startpage?
 Saturn Startpage is a fully open source, community build new-tab replacement. **Build with speed and user experience in mind**. Saturn was original build for myself but later on I decided to open source it.
