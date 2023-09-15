@@ -1,7 +1,10 @@
 ![Saturn-startpage](https://i.imgur.com/JkdwZMW.png)
-#### Regarding next update 
-- The next update is taking longer than expected due to some of the core source code being entirely rewritten, thus the next major update will be directly upgraded from v6 to v7.
-- I expect a small 6.5.0 release next week (16th June) that should include some minor fixes and minor new additions. 
+#### Migration (!IMPORTANT)
+- Development has been moved over to Gitlab since I want to learn how to use it. Before each release I have a script that will merge all work done there to here.
+- Releases will happen on both Gitlab and Github. However, the update URL will stay on Github for now.
+
+#### Contributor?
+- Please make a PR there else you can do it here I will manage :) 
 
 
 
