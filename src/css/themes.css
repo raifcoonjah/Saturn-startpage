@@ -607,6 +607,51 @@ the end of the file :D +
   --svg-invert: invert(100%);
 }
 
+.terminal {
+  --sat-heading: #00FF00; /* Green text color */
+  --sat-ids: #00FF00; /* Green text color */
+  --sat-lighter-ids: #00FF00e2; /* Green text color with some opacity */
+  --sat-bg: #000; /* Black background */
+  --sat-bg-borders: #000; /* Black background for borders */
+  --sat-search-shortcuts: #181818;
+  --sat-links: hsl(0, 0%, 95%);
+  --sat-txt-selector-clr: #ffb07d; /* Orange text color for special elements */
+
+  --sat-setting-bg-color: #0e0e0e; /* Dark gray background */
+
+  /* **New** background color x blurry background */
+  --sat-blurry-background: #0e0e0ed7; /* Dark gray background with opacity */
+  --sat-setting-bg-effect: rgba(24, 24, 24, 0.904);
+  --sat-input-hover: #2b2b2b;
+  --sat-search-bar-focus: #1f1f1f;
+  --sat-tooltip-bg: #222222;
+  --gudmrning-txt: linear-gradient(to right, #ff9f6d 0%, #e07b44 100%);
+  --sat-accent-color1: #00FF00; /* Green accent color */
+  --sat-accent-color-lighter: #f4b593aa;
+  --bg-accent-color-lr: #ffa06d20;
+  --bg-accent-color-lr-hover: #ffa06d3b;
+  --moreapps-hovering-clr: #00FF00; /* Green accent color */
+  --favorites-hover: rgb(46, 46, 46);
+  --for-white: #ffffff;
+  --settings-warning-bg: rgba(255, 255, 0, 0.075);
+  --add-link-border: rgb(41, 41, 41);
+  --delete-warning-bg: #d75352;
+  --delete-warning-border: #d75252a2;
+  --switch-color-bg-new: #303030;
+  --switch-color-bg-after: #ffb07d; /* Orange accent color */
+  --switch-color-bg: rgba(48, 48, 48, 0.904);
+  --settings-button-outline: #252525;
+  --new-search-bg-hover-effect: #353535;
+  --sat-border-radius: 15px;
+  --lighter-color: #1f1f1f;
+  --close-button-color: rgb(0, 0, 0);
+  --transition-speed-fast: 0.1s;
+  --transition-speed-default: 0.2s;
+  --transition-speed-slow: 0.3s;
+  --svg-invert: invert(100%);
+}
+
+
 /* 
 =+=+=+=+
 = Tells the browser these dark/darker 
@@ -622,7 +667,8 @@ themes are using a dark color scheme =
 .highcontrast,
 .ghostlygreen,
 .lighterdarktheme,
-.halloween {
+.halloween,
+.terminal {
   color-scheme: dark;
 }
 
@@ -644,7 +690,8 @@ themes are using a dark color scheme =
 .highcontrast,
 .ghostlygreen,
 .lighterdarktheme,
-.halloween {
+.halloween,
+.terminal {
   --default-font: "Inter", sans-serif;
 }
 

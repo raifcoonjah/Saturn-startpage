@@ -24,6 +24,7 @@ const ThemeButtonIDS = [
   "nord",
   "ghostlygreen",
   "highcontrast",
+  "terminal",
 ];
 
 const theme_choice = ThemeButtonIDS.map((id) => document.getElementById(id));
