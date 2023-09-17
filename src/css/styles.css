@@ -410,6 +410,7 @@ div.theme-container {
   transition: var(--transition-speed-default);
 }
 
+.close-wallpaper,
 .cancel-fav-btn {
   padding: 10px;
   outline: none;
