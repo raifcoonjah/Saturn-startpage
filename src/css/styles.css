@@ -411,7 +411,7 @@ div.theme-container {
 }
 
 .cancel-fav-btn {
-  padding: 14px 15px;
+  padding: 10px;
   outline: none;
   color: var(--sat-ids);
   background-color: #d7525225 !important;
