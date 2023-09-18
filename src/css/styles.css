@@ -410,15 +410,7 @@ div.theme-container {
   transition: var(--transition-speed-default);
 }
 
-.close-wallpaper,
-.cancel-fav-btn {
-  padding: 10px;
-  outline: none;
-  color: var(--sat-ids);
-  background-color: #d7525225 !important;
-  color: var(--delete-warning-bg) !important;
-  font-size: 15px;
-}
+
 
 /* 
 ========
@@ -900,13 +892,15 @@ appearing when the user hovers on the open in new tab button.
   border: 1px solid var(--delete-warning-bg);
 }
 
-.red_background {
+.danger_red {
   background-color: #d752521e !important;
   color: var(--delete-warning-bg) !important;
 }
 
-.red_background:hover {
-  border: 1px solid #e0454569 !important;
+.danger_red:hover {
+  transition: var(--transition-speed-default);
+  background-color: #d752524b !important;
+  color: var(--delete-warning-bg) !important;
 }
 
 .green_background {
