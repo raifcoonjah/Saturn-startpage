@@ -348,7 +348,7 @@ Remember to be yourself.
               
               <h3><i class="las la-image"></i> Background</h3>
               <p class="description">
-                Set the background to anything you desire. Backgrounds set using
+                Set the background to anything. Backgrounds set using
                 URLs require an active internet connection to work.
               </p>
 
@@ -358,6 +358,11 @@ Remember to be yourself.
                 id="image_url"
                 placeholder="Enter or paste a URL"
               />
+              <label>
+                <input type="checkbox" id="force_white_color_header" />
+                <span data-tootik="Toggle to apply a white color scheme to homepage elements, overriding the light theme.""
+                data-tootik-conf="right multiline">White font</span>
+              </label>
               <button
                 title="Copy URL to clipboard"
                 style="padding: 13px"
@@ -379,25 +384,10 @@ Remember to be yourself.
               </div>
               <p
                 class="dropdown-seperator settings-seperator"
-                style="font-weight: 500; font-size: 15px"
               >
-                <span id="processing-image">Upload image</span>
+                <span>Upload background</span>
               </p>
-              <p
-                class="small_text description"
-                style="font-size: 12px; margin-bottom: 0px; margin-left: 10px"
-              >
-                Uploaded images are stored locally, no internet connection is
-                ever required.
-              </p>
-              <input type="file" id="imageupload" accept="image/*" />
-              <p class="dropdown-seperator settings-seperator">
-                <span>Home options</span>
-              </p>
-              <label>
-                <input type="checkbox" id="force_white_color_header" />
-                <span>Apply white color to home elements</span>
-              </label>
+              <input type="file" id="imageupload" accept="image/*">
             </div>
 
             <p class="settings-item-title">Customizations (Beta)</p>
