@@ -5,7 +5,6 @@
 //
 const appsList = (x) => {
   $(x).append(`<div id="app-1" class="app-content current">
-          <div class="popup">
             <div id="apps">
               <a href="https://github.com">
                 <div class="app study_focus_mode relaxation_focus_mode">
@@ -35,11 +34,9 @@ const appsList = (x) => {
                   <i class="las la-envelope"></i></div
               ></a>
             </div>
-          </div>
         </div>
         
         <div id="app-2" class="app-content">
-          <div class="popup">
             <div id="apps">
               <a href="http://moodle.rbs.ac.mu/moodle/">
                 <div class="app">
@@ -73,11 +70,9 @@ const appsList = (x) => {
               >
             </div>
           </div>
-        </div>
 
         <div id="app-3" class="app-content">
-          <div class="popup">
-            <div class="popup">
+
               <div id="apps">
                 <a href="https://instagram.com">
                   <div class="app">
@@ -91,15 +86,10 @@ const appsList = (x) => {
                     <span>Twitter</span>
                   </div></a
                 >
-              </div>
-            </div>
           </div>
         </div>
         
                 <div id="app-4" class="app-content">
-          <div class="popup">
-            <div class="popup">
-              <div class="popup">
                 <div id="apps">
                   <a href="https://youtube.com">
                     <div class="app">
@@ -131,9 +121,6 @@ const appsList = (x) => {
                       <span>Lofi Cafe</span>
                     </div>
                   </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>`);
 };
