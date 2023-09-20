@@ -1267,34 +1267,40 @@ label span {
 ========
 */
 
+/* Modernized and Redesigned File Input */
 input[type="file"] {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   margin-top: 10px;
   background: var(--lighter-color);
   border-radius: var(--sat-border-radius);
   border: 1px solid var(--favorites-hover);
   outline: 0px !important;
+  position: relative;
+  overflow: hidden;
 }
 
 input[type="file"]::file-selector-button {
-  margin-right: 20px;
   border: none;
   background: var(--sat-accent-color1);
   padding: 10px 20px;
   color: var(--for-white);
   border-radius: var(--sat-border-radius);
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 input[type="file"]::file-selector-button:hover {
   background: var(--sat-accent-color-lighter);
 }
 
+
 /* Fix favorites header bug by applying margin */
 .fix-favorites-header {
   margin-top: 20px !important;
 }
+
 
 /* 
 ========
@@ -1321,3 +1327,17 @@ input[type="file"]::file-selector-button:hover {
 .hidden {
   display: none;
 }
+
+/* define element and set value to 35 until set item is not set properly. 
+
+Writing this type of documentation should be done relatively soon now. 
+
+As development is ending soon. 
+
+writing this type of css should not an issue lolz. 
+
+*./hbhgghfghfbbhhhkjfsdioifei  feudhria fofi 
+
+this is no reAL TEDTBNIT. 
+
+*/ 

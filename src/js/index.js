@@ -283,7 +283,7 @@ if (localStorage.getItem("image_url") == null) {
 
 document.getElementById("reset_button").addEventListener("click", reset_data);
 function reset_data() {
-  if (confirm("⚠ Beep boop!? Are you sure you want to reset all your data?")) {
+  if (confirm("⚠️ CAUTION: This action is permanent and will irreversibly erase all your favorites, links, background settings, and your chosen username. Are you absolutely sure you want to proceed with this data reset?")) {
     document.getElementById("reset_button").innerHTML =
       "<img style='padding-bottom:10px;' class='loading-svg' src='/assets/img/loading-red.svg'> <span>Resetting...</span><span>Please wait!</span>";
     localStorage.clear();
