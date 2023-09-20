@@ -1,24 +1,12 @@
 stages:
-  - setup
   - lint
-
-setup:
-  stage: setup
-  script:
-    - apt-get update -qy
-    - apt-get install -y nodejs npm
-    - npm install -g npm  # Update npm to the latest version
-  only:
-    - changes:
-        - '/src/js/*'
 
 lint_js:
   stage: lint
+  image: node:14  # Use the Node.js Docker image with a specific version (e.g., Node.js 14)
   script:
     - npm install -g eslint  # Install ESLint globally (if not already installed)
     - eslint /src/js/*.js   # Use ESLint to check JavaScript files in /src/js/
   only:
-    - changes:
-        - '/src/js/*'
-  except:
-    - schedules
+    changes:
+      - '/src/js/*'
