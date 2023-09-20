@@ -127,7 +127,7 @@ const appsList = (x) => {
 
 const settingAbout = (z) => {
   $(z)
-    .append(`<p class="settings-item-title">About</p><p class="settings-item-under-title description">About Saturn Startpage, what's new and Keyboard shortcuts.</p>
+    .append(`<p class="settings-item-title">About</p><p class="settings-item-under-title description">About Saturn Startpage: New Features and Keyboard Shortcuts.</p>
             <div class="settings-background">
               <p class="new-about">
               <img style="padding-top:30px;" src="/assets/img/dynamic-icon-big.png" loading="lazy" title="Saturn Logo" alt="Saturn-logo.png" />
@@ -225,8 +225,7 @@ const settingAbout = (z) => {
 const kShortcuts = (ks) => {
   $(ks).append(`<div class="settings-background">
             <p class="settings-item-title">Keyboard Shortcuts</p>
-            <p class="settings-item-under-title description">Shortcuts allow you to do things without ever needing to touch your 
-            <i class="las la-mouse"></i> mouse again.</p>
+            <p class="settings-item-under-title description">Empower your workflow with keyboard shortcuts.</p>
             <div class="settings-background">
               <p class="dropdown-seperator settings-seperator">
                 <span>General</span>
