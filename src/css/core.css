@@ -776,3 +776,35 @@ use the correct border radius == */
 .tab-pane.active {
   display: block;
 }
+
+/* ========= 
+Optimize sidebar for mobile (Beta)
+========*/
+
+/* Media queries for mobile optimization */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    max-width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 13px;
+  }
+  
+  .sidebar-trigger {
+    right: 10px;
+  }
+  
+  .settings-tab-item {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .settings-tab-item i {
+    font-size: 0px;
+  }
+  
+  
+  .setting-content {
+    padding: 10px;
+  }
+}
