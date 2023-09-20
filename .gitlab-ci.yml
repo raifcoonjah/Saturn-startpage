@@ -1,5 +1,16 @@
 stages:
+  - setup
   - lint
+
+setup:
+  stage: setup
+  script:
+    - apt-get update -qy
+    - apt-get install -y nodejs npm
+    - npm install -g npm  # Update npm to the latest version
+  only:
+    - changes:
+        - '/src/js/*'
 
 lint_js:
   stage: lint
@@ -7,7 +18,7 @@ lint_js:
     - npm install -g eslint  # Install ESLint globally (if not already installed)
     - eslint /src/js/*.js   # Use ESLint to check JavaScript files in /src/js/
   only:
-    changes:
-      - '/src/js/*'         # Trigger the job when JavaScript files in /src/js/ change
+    - changes:
+        - '/src/js/*'
   except:
-    - schedules             # Exclude this job from scheduled pipelines
+    - schedules
