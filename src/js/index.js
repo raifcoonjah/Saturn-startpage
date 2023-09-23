@@ -308,16 +308,19 @@ document
       localStorage.removeItem("force_white_color_header");
       document.querySelector(".sat-header").style.color = "var(--sat-ids)";
       document.querySelector(".apps_list").style.color = "var(--sat-ids)";
+      document.querySelector(".sidebar-trigger").style.color = "var(--sat-ids)";
     } else {
       localStorage.setItem("force_white_color_header", true);
       document.querySelector(".sat-header").style.color = "#fff";
       document.querySelector(".apps_list").style.color = "#fff";
+      document.querySelector(".sidebar-trigger").style.color = "#fff";
     }
   });
 
 if (localStorage.getItem("force_white_color_header")) {
   document.querySelector(".sat-header").style.color = "#fff";
   document.querySelector(".apps_list").style.color = "#fff";
+  document.querySelector(".sidebar-trigger").style.color = "#fff";
 }
 
 // UI Tweak: Make all text bold
