@@ -9,7 +9,7 @@ let se = 0;
 // List Search providers
 const search_engines = [
   {
-    src: "google.svg",
+    src: "search.svg",
     placeholder: "Google",
     action: "https://www.google.com/search?q=",
   },
