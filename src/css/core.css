@@ -555,16 +555,6 @@ color to fix some issues == */
   color: var(--for-white);
 }
 
-.app {
-  border: 3px solid transparent;
-  background: var(--sat-search-shortcuts);
-}
-
-.app:hover {
-  border: 3px solid transparent;
-  background-color: var(--sat-accent-color1);
-}
-
 .closebtn:hover {
   border-color: var(--moreapps-hovering-clr);
 }

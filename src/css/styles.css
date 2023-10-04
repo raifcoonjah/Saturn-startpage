@@ -254,21 +254,35 @@ input:checked + .slider:before {
 #apps {
   margin-bottom: 15px;
   margin-top: 20px;
-  width: 104%;
-  align-items: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .app {
-  margin: 5px 2px;
+  margin: 4px;
   padding: 15px 45px;
   border-radius: 20px;
   border: 3px solid transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  right: 5%;
+}
+
+.app:hover {
+  background-color: var(--sat-accent-color1);
+
 }
 
 .app i {
   font-size: 2.3rem;
   right: 100%;
 }
+
 /* 
 ========
 + Apps list & apps text +
