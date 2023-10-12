@@ -135,7 +135,7 @@ const settingAbout = (z) => {
             <p style="text-align:center;margin-top:-15px;">
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
             </p>
-               <a class="version-text green_background" href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/#" target="_blank"> v6.9.86</i></a>
+               <a class="version-text green_background" style="display: flex;justify-content: center;align-items: center;" href="https://github.com/raifcoonjah/Saturn-startpage/releases/" target="_blank"> v7.1</i></a>
               <div class="socials">
                 <div class="aboutwidgets">
                 <a href="https://saturnstartpage.netlify.app/" class="aboutwidgets-container">
@@ -175,48 +175,51 @@ const settingAbout = (z) => {
           <ul>
           <h2> New features </h2>
 
-          <h3> Settings redesign </h3>
+          <h3> Saturn search upgrade!?</h3>
           <li>
-          - The settings page has been completely redesigned from the ground up. This new settings page is much more compact, faster, more stable and more maintainable. <br/>
-          - Various UI elements were optimized and reworked to improve their stability and performance. <br/>
-          - Currently this menu does not support mobile phone, but an issue will be opened soon to resolve this issue. <br/>
-          - The sidebar also implements several new components including: Blurred background, new switching animation and a brand new button design. <br/>
+          - Saturn search now supports a new dropdown menu allowing 
+          the user to set any of the search engines as their default option. <br/>
+          - Practically rewrote search.js completely this should resolve a 
+          bunch of old bugs. </br>
           </li>
           <li>
-          - Improve design consistentcy accross several UI components. 
           </li>
-          <h3> Delayed loading & Peformance improvements </h3>
+          <h3> Saturn themes rewrite && Updates (Beta)</h3>
           <li>
-          - Currently Saturn loads all pages inside render.js onload, with the new
-          loader_deplay, the about section and keyboard shortcuts
-          will be loaded after 1.5 seconds.
-          This should allow Saturn to load a little bit faster while having little
-          to no impact on the user experience
+          - This update took a lot of time to arrive, Saturn themes now loads 100% in javascript
+          using a json file format. A lot of experience improvements has been done to make
+          adding new themes a breeEEEeeeze! <br/>
+          - Learn more and check the commit out! <a href="https://gitlab.com/raifcoonjah/Saturn-startpage/-/commit/60320ffb0178a4bcf05832fc4b6a89100aff8985">60320ffb</a>
+          - Saturn themes now uses a brand new cleaner and simpler design. <br/>
+          - A brand new "Terminal" theme was added.
           </li>
+          <h3> Saturn themes rewrite && Updates (Beta)</h3>
           <li> 
           - The about section now uses less code and got a big clean up.  <br/>
           - The Wallpaper modal has been replaced with a section under the the new style option in settings, this should significantly reduce the amount of code Saturn uses. <br/>
           - Improve 
           </li>
-          <h3> Several small redesigns </h3>
+          <h3> Several small redesigns && UX </h3>
           <li>
-          - The kpress option section has been redesigned. <br/>
-          - Keyboard shortcuts section now uses less code and is now more compact. <br/>
+          - Improved UX for a lot of descriptions and titles in settings, making them
+          clearer and easier to understand. <br/>
+          - All dangerous button now use a standard css, contributing to #91 <br/>
+          - Remove all border-radius from fav-link images. <br/>
+          - Use standard button design.<br>
+          - Removed favorites tab from apps category <br/> 
+          - Favorites search and favorites add button now uses the standard new design
+          and are now part of the favorites section in the home screen. <br/>
+          - Background section in settings has been cleaned up, it is now cleaner and easier 
+          to use. <br/>
+          - Other several UX and UI improvements.
           </li>
-          <h3> Other several improvements </h3>
+          <h3> Bug fixes </h3>
           <li>
-          - Removal of the favorites tab <a href="https://gitlab.com/raifcoonjah/Saturn-startpage/-/issues/84">#84</a> <br/>
-          - Remove https from favorites input. <br/>
-          - Updated jQuery v3.6.3 -> v3.7.1 <br/>
-          - Clean up all .css files and removes a lot of duplicate code. <br/>
-          - Modernized button code and add a proper hover effect. (WIP, bug fix should be included in the .1 release) <br/>
-          - Remove a lot of usless codes that were causing performance issues <br/> 
-          - Clean up custom.css. <br/>
-          - Reduce upload image size from 5MB to 4MB. <br/> 
-          - Minimalistic UI now reloads the page, this alone should fix tons of small bugs and improve the experience. 
-          (Will change this back to no-reload in the next major release) <br/>
-          - Drastically improved the experience for mobile users including several ios specific fixes. <br/> 
-          - Improve UX when deleting a background and clean up processing_bg text. 
+          - Fix favorites input value (https://) still appearing. <br/>
+          - Fix button design inconsistency resolving several bugs caused by the last update. <br/>
+          - Fix delete buttons not using proper styling. <br/>
+          - Fix copy to clipboard button from overlapping with new toggle. <br/>
+          - Fix settings-trigger not applying white color when light theme is used. <br/>
           </li>
           </ul>
 </div>`);
