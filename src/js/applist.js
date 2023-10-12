@@ -5,7 +5,7 @@
 //|____/ \__,_|\__|\__,_|_|  |_| |_|         /_/   \_\ .__/| .__/|_|_|___/\__|
 //                                                  |_|   |_|                
 
-const jsonData = {
+const apps_list = {
 
     "applist": [
       {
@@ -173,7 +173,7 @@ const jsonData = {
 
   const appListDiv = document.getElementById("apps_list");
 
-  jsonData.applist.forEach(function(appContent) {
+  apps_list.applist.forEach(function(appContent) {
     const appContentDiv = document.createElement("div");
     appContentDiv.id = appContent.id;
     appContentDiv.className = appContent.class;
