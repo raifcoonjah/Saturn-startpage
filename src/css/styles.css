@@ -107,16 +107,16 @@ its supposed to.
 
 /* 
 ========
-+ Setting title +
-
++ Setting title + 
 ========
 */
 
 .settings-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.5em;
   text-align: left;
   padding: 20px;
+  margin-top: 15px;
 }
 
 /* 
@@ -125,9 +125,7 @@ its supposed to.
 ========
 */
 
-.wallpaper_modal,
-.fav_modal,
-.settings_modal {
+.fav_modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -141,9 +139,7 @@ its supposed to.
   z-index: 2;
 }
 
-.wallpaper_modal_content,
-.favorites_modal_content,
-.settings-content {
+.favorites_modal_content {
   /* Modal */
   position: absolute;
   top: 50%;
@@ -156,36 +152,13 @@ its supposed to.
 }
 
 /* Modal border radius */
-
-.wallpaper_modal_content,
-.favorites_modal_content {
-  border-radius: 20px;
-}
-
-/* Make settings much more optimized for various screen sizes. 
-(Experimental feature needs tons of testing) */
-.settings-content {
-  width: calc(80% - 80px);
-  height: calc(100% - 150px);
-  max-width: calc(100% - 40px);
-  max-height: calc(100% - 40px);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.wallpaper_modal_content {
-  width: 38rem;
-  height: 23.5em;
-}
-
 .favorites_modal_content {
   width: 35rem;
   height: 23rem;
+  border-radius: 20px;
 }
 
-.show-wallpaper-modal,
-.show-favorite-modal,
-.show-modal {
+.show-favorite-modal {
   opacity: 1;
   visibility: visible;
   transition: visibility 0s linear 0s, opacity 150ms 0s, transform 150ms;
@@ -267,62 +240,9 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.control-button:hover,
-.audio-button:hover {
+.control-button:hover {
   transition: var(--transition-speed-fast);
   outline: 4px solid var(--settings-button-outline);
-}
-
-/* 
-========
-+ Settings navigation +
-========
-*/
-
-ul.tabs li {
-  color: var(--sat-ids);
-  padding: 8px 40px 8px 13px;
-  margin-left: 10px;
-  border-radius: var(--sat-border-radius);
-  border-top-left-radius: 1px;
-  border-bottom-left-radius: 1px;
-  border-left: 3px solid transparent;
-}
-
-ul.tabs li:hover {
-  background: var(--sat-setting-bg-effect);
-  border-left: 3px solid var(--sat-accent-color-lighter);
-  color: var(--sat-accent-color1);
-}
-
-ul.tabs li.current {
-  background: var(--sat-setting-bg-effect);
-  border-left: 3px solid var(--sat-accent-color1);
-  color: var(--sat-accent-color1);
-  font-weight: 500;
-}
-
-ul.tabs li i {
-  background-color: var(--lighter-color);
-  padding: 3px 3px;
-  border-radius: 7px;
-}
-
-ul.tabs li {
-  font-size: 16.5px;
-}
-
-.tab-content {
-  display: none;
-  animation: slide-up-fade-in ease 200ms;
-}
-
-.tab-content h4 i {
-  color: var(--sat-accent-color1);
-}
-
-.tab-content.current {
-  display: inherit;
 }
 
 /* 
@@ -401,15 +321,19 @@ ul.tabs li {
 */
 
 .settings-background {
-  margin: 10px;
-  padding: 5px 10px 5px 10px;
+  padding: 10px;
+  margin: 5px;
   background: var(--sat-setting-bg-effect);
-  box-shadow: 0px 0px 3px var(--lighter-color);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }
 
 .settings-background-warning {
   padding: 10px;
-  background: var(--settings-warning-bg);
+  background: #ffcc00;
+  color: #333333;
+  border-radius: 12px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 /* 
@@ -419,9 +343,9 @@ ul.tabs li {
 */
 
 .theme-icon {
-  margin: -2.5px;
+  margin: -1.5px;
   border-radius: 13px;
-  height: 4.5rem;
+  height: 4.3rem;
   margin-bottom: 0.1px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -465,10 +389,9 @@ div.theme-container {
 */
 
 .save-button {
-  padding: 14px 15px;
+  padding: 10px 15px;
   background: var(--lighter-color);
   color: var(--sat-ids);
-  font-size: 15px;
   border-radius: 13px;
 }
 
@@ -486,15 +409,7 @@ div.theme-container {
   transition: var(--transition-speed-default);
 }
 
-.close-wallpaper,
-.cancel-fav-btn {
-  padding: 14px 15px;
-  outline: none;
-  color: var(--sat-ids);
-  background-color: #d7525225 !important;
-  color: var(--delete-warning-bg) !important;
-  font-size: 15px;
-}
+
 
 /* 
 ========
@@ -503,7 +418,8 @@ div.theme-container {
 */
 .username-section input {
   background-color: var(--lighter-color);
-  padding: 15px;
+  padding: 12px;
+  width: 100%;
 }
 
 /* 
@@ -522,8 +438,6 @@ div.theme-container {
 .favorites-search input:focus,
 .fav_modal input:hover,
 .fav_modal input:focus,
-.wallpaper-input input:hover,
-.wallpaper-input input:focus,
 .username-section input:focus,
 .username-section input:hover {
   border: 2px solid var(--sat-accent-color1);
@@ -547,12 +461,13 @@ div.theme-container {
 */
 
 .favorites-search input {
-  background: var(--sat-search-shortcuts);
+  background: var(--lighter-color);
   padding: 13px 13px;
   font-weight: 400;
   font-size: 14px;
   border-radius: 13px;
   margin-right: 10px;
+  width: 35%;
 }
 
 .favorites-search {
@@ -562,10 +477,9 @@ div.theme-container {
 }
 
 .favorite-button {
-  padding: 13px 13px;
-  font-weight: 500;
+  padding: 10px 15px;
   color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
+  background: var(--lighter-color);
   margin-bottom: 10px;
 }
 
@@ -574,20 +488,6 @@ div.theme-container {
   color: var(--sat-accent-color1);
   transition: var(--transition-speed-default);
 }
-/* Large add favorite button */
-
-/* .favorite-button {
-  padding: 13px 12px;
-  font-weight: 500;
-  color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
-}
-
-.favorite-button:hover {
-  background-color: var(--sat-accent-color1);
-  transition: var(--transition-speed-default);
-  color: var(--for-white);
-} */
 
 /* 
 ========
@@ -666,10 +566,6 @@ ul.apps-category li.current {
   margin-top: 30px;
 }
 
-.fav-container {
-  margin-bottom: 10px;
-}
-
 /* 
 ========
 + Optimizations for favorites features.
@@ -731,6 +627,7 @@ ul li {
   list-style: none;
 }
 
+.pinbtn,
 .removebtn {
   float: right;
   margin-top: -5px;
@@ -738,7 +635,6 @@ ul li {
   border-radius: 13px;
   border: 1px solid transparent;
 }
-
 .newtabbtn {
   float: right;
   margin-top: -5px;
@@ -746,7 +642,7 @@ ul li {
   border-radius: 13px;
   visibility: visible; /* Force visibility to fix issues */
 }
-
+.pinbtn:hover,
 .newtabbtn:hover {
   background-color: var(--bg-accent-color-lr-hover);
   color: var(--sat-accent-color1);
@@ -889,6 +785,9 @@ appearing when the user hovers on the open in new tab button.
   filter: var(--svg-invert);
 }
 
+
+
+
 /* 
 ========
 + Quote +
@@ -947,10 +846,8 @@ appearing when the user hovers on the open in new tab button.
 }
 
 /* Set wallpaper button */
-
+.sqaure_box_redaccent,
 .sqaure_box {
-  width: 110px;
-  height: 110px;
   background-color: var(--lighter-color);
   margin: 10px;
   display: flex;
@@ -958,7 +855,7 @@ appearing when the user hovers on the open in new tab button.
   justify-content: center;
   border-radius: var(--sat-border-radius);
   font-size: 1.7rem;
-  flex-direction: column;
+
   border: 1px solid transparent;
 }
 
@@ -990,8 +887,14 @@ appearing when the user hovers on the open in new tab button.
   border: 1px solid var(--delete-warning-bg);
 }
 
-.red_background {
+.danger_red {
   background-color: #d752521e !important;
+  color: var(--delete-warning-bg) !important;
+}
+
+.danger_red:hover {
+  transition: var(--transition-speed-default);
+  background-color: #d752524b !important;
   color: var(--delete-warning-bg) !important;
 }
 
@@ -1132,7 +1035,7 @@ appearing when the user hovers on the open in new tab button.
 .version-text {
   background-color: var(--bg-accent-color-lr);
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 5px 20px;
   color: var(--sat-accent-color1);
   font-weight: 600;
   text-decoration: none !important;
@@ -1143,13 +1046,13 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .aboutwidgets-container {
-  padding: 15px 15px;
+  padding: 15px 11px;
   border-radius: var(--sat-border-radius);
   background-color: var(--lighter-color);
   margin: auto;
-  width: 45%;
+  width: 80%;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   justify-content: space-around;
   box-shadow: var(--drop-shadow-color);
@@ -1190,6 +1093,7 @@ appearing when the user hovers on the open in new tab button.
 
 /* Button used to open dropdown menu */
 .dropbtn {
+  cursor: pointer !important;
   outline: none;
   padding: 11px 13px;
   border-radius: var(--sat-border-radius);
@@ -1219,13 +1123,14 @@ appearing when the user hovers on the open in new tab button.
 .dropdown-content a {
   color: var(--sat-ids);
   border-radius: 10px;
-  padding: 4px 4px;
+  padding: 6px 6px;
   text-decoration: none;
   display: block;
-  cursor: pointer;
+  cursor: default !important;
   font-weight: 500;
   font-size: 14px;
   margin: 3px;
+  cursor: pointer !important;
 }
 
 /* Give report bug a red accent */
@@ -1312,8 +1217,8 @@ appearing when the user hovers on the open in new tab button.
   line-height: 2em;
   margin: 12px 0 12px;
   border-bottom: 1px solid var(--settings-button-outline);
-  margin-bottom: 10px;
-  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-top: 25px;
 }
 
 .search-results p {
@@ -1326,7 +1231,7 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .search-results i {
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: var(--sat-accent-color1);
 }
 
@@ -1348,5 +1253,66 @@ label span {
 }
 
 .connection_status {
+  display: none;
+}
+
+/* 
+========
++ Favorites UPLOAD +
+========
+*/
+
+input[type="file"] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  background: var(--lighter-color);
+  border-radius: var(--sat-border-radius);
+  border: 1px solid var(--favorites-hover);
+  outline: 0px !important;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: var(--sat-accent-color1);
+  padding: 10px 20px;
+  color: var(--for-white);
+  border-radius: var(--sat-border-radius);
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: var(--sat-accent-color-lighter);
+}
+
+/* Fix favorites header bug by applying margin */
+.fix-favorites-header {
+  margin-top: 20px !important;
+}
+
+/* 
+========
++ Kpress +
++ CSS that styles kpress feature. +
+========
+*/
+
+/* Define the styles for the popup */
+#kpress_popup {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translate(-20%, -30%);
+  padding: 10px;
+  border: 1px solid var(--lighter-color);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  background-color: var(--sat-setting-bg-color);
+  z-index: 9999;
+}
+
+/* Define a "hidden" class to hide the popup */
+.hidden {
   display: none;
 }

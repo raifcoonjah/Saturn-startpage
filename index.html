@@ -7,12 +7,7 @@
 \____/ \__,_|\__|\__,_|_|  |_| |_| |___/\__\__,_|_|   \__| .__/ \__,_|\__, |\___|
                                                          | |           __/ |     
                                                          |_|          |___/ 
-
-
-(Stable)
-
-*Whisper* Stranger are you looking for easter eggs? I heard that you ..... might .... 
-need ......... to ................ scroll ............................................................!!!??
+Remember to be yourself.                                                      
 -->
 
 <!DOCTYPE html>
@@ -33,7 +28,7 @@ need ......... to ................ scroll ......................................
     <link rel="stylesheet" href="assets/icons/css/line-awesome.min.css" />
     <link rel="stylesheet" href="./src/css/tootik.min.css" />
 
-    <!-- =+=+= jQuery [v3.6.1] =+=+= -->
+    <!-- =+=+= jQuery [v3.7.0] =+=+= -->
     <script src="./src/js/jquery.js"></script>
   </head>
 
@@ -86,28 +81,14 @@ need ......... to ................ scroll ......................................
         </div>
 
         <div class="dropdown" style="float: right">
-          <button id="dropdown-menu trigger" class="dropbtn">
-            <i class="las la-bars"></i>
-          </button>
+          <button class="dropbtn"><i class="las la-bars"></i> more</button>
           <div class="dropdown-content">
-            <a class="dropdown-settings" id="trigger"
-              ><i class="las la-cog"></i> Settings <kbd>Shift + S</kbd>
-            </a>
-            <a
-              href="https://mynoise.net/"
-              target="_blank"
-              class="dropdown-settings"
-            >
+            <a href="https://mynoise.net/" target="_blank">
               <i class="las la-sliders-h"></i>
               myNoise® <i class="las la-external-link-alt"></i
             ></a>
-
-            <a href="https://calendar.google.com" class="dropdown-settings"
-              ><i class="las la-calendar"></i> G. Calendar
-              <kbd>Ctrl + Alt + C</kbd></a
-            >
             <p class="dropdown-seperator"><span>Quick actions</span></p>
-            <a href="#" target="_blank" class="dropdown-settings">
+            <a href="#" target="_blank">
               <i class="las la-plus-square"></i>
               New window</a
             >
@@ -124,10 +105,6 @@ need ......... to ................ scroll ......................................
         <!-- =+=+= App lists + App category =+=+= -->
         <div class="apps_list">
           <ul class="apps-category">
-            <li class="tab-link" data-tab="app-9">
-              <i class="lab la-gratipay"></i> <span>Favorites</span>
-            </li>
-            <span class="description" style="opacity: 0.4">|</span>
             <li class="tab-link current" data-tab="app-1">
               <i class="lar la-grin-hearts"></i> <span>Most used</span>
             </li>
@@ -149,25 +126,23 @@ need ......... to ................ scroll ......................................
           <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
           <!-- End of app list -->
 
-          <div id="app-9" class="tab-link fix-favorites-header">
+          <div class="tab-link fix-favorites-header">
             <!-- =+=+= Favorite v3.2 =+=+= -->
             <div id="fav-container" class="fav-container">
-              <div class="favorites-search">
-                <input
-                  type="text"
-                  placeholder="Find favorites..."
-                  class="searchfavorites"
-                  id="searchfavorites"
-                />
-                <button
-                  class="favorite-button"
-                  title="Add favorites (Shift + Z)"
-                >
-                  <i class="las la-plus"></i> Add
-                </button>
-              </div>
-
               <div id="content">
+                <div class="favorites-search">
+                  <input
+                    type="text"
+                    placeholder="Find favorites.."
+                    id="searchfavorites"
+                  />
+                  <button
+                    class="favorite-button"
+                    title="Add favorites (Shift + Z)"
+                  >
+                    <i class="las la-plus"></i> Add
+                  </button>
+                </div>
                 <p
                   style="display: none"
                   id="search-results"
@@ -223,13 +198,12 @@ need ......... to ................ scroll ......................................
           <input
             id="url"
             placeholder="Enter or paste a URL"
-            value="https://"
             autocomplete="off"
             spellcheck="false"
             class="favorite-input"
           />
           <div class="button-container">
-            <button id="cancel-fav-btn" class="cancel-fav-btn">
+            <button id="cancel-fav-btn" class="cancel-fav-btn danger_red">
               <i class="las la-times"></i> Cancel
             </button>
             <button id="add" class="save-button">
@@ -242,496 +216,182 @@ need ......... to ................ scroll ......................................
         <div id="saveMsgBar">Favorites added</div>
       </div>
 
-      <!-- =+=+= Saturn Settings =+=+= -->
-      <div class="settings_modal">
-        <div class="settings-content">
-          <span class="close-button"><i class="las la-times"></i></span>
-          <!-- =+=+= Dynamic Something =+=+= -->
-          <!-- =+=+= A new way to handle notification =+=+= -->
-          <span
-            data-tootik="🔔 Focus mode enabled. "
-            data-tootik-conf="left multiline"
-            class="close-button focus_status"
-            id="focus_status_text"
-            ><i class="las la-cloud-moon"></i
-          ></span>
-
-          <span
-            data-tootik="Connection lost, some features may not be available..."
-            data-tootik-conf="left multiline"
-            class="close-button connection_status red_background"
-            id="connection_status"
-            ><i class="las la-unlink"></i
-          ></span>
-
-          <!-- =+=+= Settings Header/title =+=+= -->
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="settings-header">
           <h3 class="settings-title">Settings</h3>
-          <!-- =+=+= Settings Navigation =+=+=-->
-          <div class="container">
-            <ul class="tabs" id="tabs">
-              <li
-                class="tab-link current"
-                data-tab="tab-2"
-                title="Username, Custom background, Info and Danger zone..."
-              >
-                <i class="las la-cog"></i> General
-              </li>
-              <p
-                class="dropdown-seperator settings-seperator settings-nav-separator"
-              >
-                <span>Personalization</span>
-              </p>
-              <li
-                class="tab-link"
-                id="tab-link"
-                data-tab="tab-6"
-                title="Hide things and Customizations..."
-              >
-                <i class="las la-paint-roller"></i> Customizations
-              </li>
-              <li
-                class="tab-link"
-                id="tab-link"
-                data-tab="tab-4"
-                title="Saturn themes..."
-              >
-                <i class="las la-palette"></i> Themes
-              </li>
-              <li
-                class="tab-link"
-                id="tab-link"
-                data-tab="tab-10"
-                title="Saturn background options and other background related things..."
-              >
-                <i class="las la-palette"></i> Background
-              </li>
-              <p
-                class="dropdown-seperator settings-seperator settings-nav-separator"
-              >
-                <span>Productivity</span>
-              </p>
-              <li class="tab-link" data-tab="tab-7" title="Saturn Focus...">
-                <i class="las la-cloud-moon"></i> Focus
-              </li>
-              <li
-                class="tab-link"
-                data-tab="tab-11"
-                title="Minimalistic Interface & Kpress..."
-              >
-                <i class="las la-window-minimize"></i> Minimalistic
-              </li>
-              <p
-                class="dropdown-seperator settings-seperator settings-nav-separator"
-              >
-                <span>Info</span>
-              </p>
-              <li
-                class="tab-link"
-                data-tab="tab-5"
-                title="Saturn keyboard shortcuts..."
-              >
-                <i class="las la-keyboard"></i> Shortcuts
-              </li>
-              <li
-                class="tab-link"
-                data-tab="tab-3"
-                title="About Saturn, links and Change logs..."
-              >
-                <i class="las la-info-circle"></i> About
-                <span
-                  class="notification-dot"
-                  title="Saturn was recently updated."
-                ></span>
-              </li>
-            </ul>
+        </div>
+        <button id="open_settings" class="sidebar-trigger">
+          <i class="las la-cog"></i>
+        </button>
 
-            <div id="tab-11" class="tab-content slide-up-now-opacity">
-              <p class="settings-item-title">Minimalistic Interface (Beta)</p>
-              <p class="settings-item-under-title description">
-                Enabling Minimalistic interface will hide most elements from the
-                home screen. To view your favorites <br />
-                or use apps shortcuts either turn this feature off or use
-                shortcuts.
-              </p>
-              <div class="settings-background">
-                <!-- =+=+= HT: Options2 =+=+=-->
-                <h3>Minimalistc Interface</h3>
-
-                <label class="switch">
-                  <input type="checkbox" id="toggle_minimalistic_mode" />
-                  <span class="slider round"></span>
-                </label>
-                <span class="description"
-                  >Reminder: Use Shift + S to open settings again.</span
-                >
-              </div>
-              <p class="settings-item-title">Kpress (Beta)</p>
-              <p class="settings-item-under-title description">
-                When enabled, Saturn will display a popup when two or more keys
-                are pressed together. This <br />
-                may help some users better visualize and remember shortcuts.
-              </p>
-              <div class="settings-background">
-                <h3>Kpress</h3>
-                <label class="switch">
-                  <input type="checkbox" id="kpresstoggle" />
-                  <span class="slider round"></span>
-                </label>
-              </div>
-            </div>
-
-            <div id="tab-10" class="tab-content slide-up-now-opacity">
-              <p class="settings-item-title">Background</p>
-              <p class="settings-item-under-title description">
-                Set Saturn's background to anything you desire.
-              </p>
-              <div class="settings-background">
-                <div class="cbw_container">
-                  <button class="sqaure_box" id="wallpaper-button">
-                    <i class="las la-plus"></i>
-                    <span>Set background...</span>
-                  </button>
-
-                  <button class="sqaure_box red_text" id="delete_custom_image">
-                    <i class="las la-trash-alt"></i>
-                    <span>Remove</span>
-                  </button>
-                </div>
-                <p class="dropdown-seperator settings-seperator">
-                  <span>Home options</span>
-                </p>
-
-                <label>
-                  <input type="checkbox" id="force_white_color_header" />
-                  <span>Apply white color to home elements</span>
-                </label>
-              </div>
-              <p class="settings-item-title">Suggestions</p>
-              <p class="settings-item-under-title description">
-                Places to find cool looking backgrounds.
-              </p>
-
-              <div class="settings-background">
-                <div id="cool_backgrounds"></div>
-              </div>
-            </div>
-
-            <div id="tab-7" class="tab-content slide-up-now-opacity">
-              <p class="settings-item-title">Saturn focus</p>
-              <p class="settings-item-under-title description">
-                Choose a Focus and let's get to work.
-              </p>
-              <div class="settings-background">
-                <p class="focus_mode_icons">
-                  <img src="/assets/icons/focus/study.svg" />
-                  Focus for studying
-                </p>
-                <div class="focus_ui study">
-                  <label>
-                    <input
-                      class="study_focus focus_status"
-                      type="checkbox"
-                    /><span>Studying <i class="las la-angle-right"></i> </span>
-                  </label>
-                </div>
-
-                <br />
-                <p class="line"></p>
-                <p class="focus_mode_icons">
-                  <img src="/assets/icons/focus/programming.svg" />
-                  Focus for programming
-                </p>
-
-                <div class="focus_ui programming">
-                  <label>
-                    <input class="programming_focus" type="checkbox" /><span
-                      >Programming <i class="las la-angle-right"></i
-                    ></span>
-                  </label>
-                </div>
-
-                <br />
-                <p class="line"></p>
-                <p class="focus_mode_icons">
-                  <img src="/assets/icons/focus/relax.svg" />
-                  Focus for relaxation
-                </p>
-                <div class="focus_ui relaxation">
-                  <label>
-                    <input class="relaxation_focus" type="checkbox" /><span
-                      >Relaxation <i class="las la-angle-right"></i
-                    ></span>
-                  </label>
-                </div>
-                <br />
-                <p class="dropdown-seperator settings-seperator">
-                  <span>What's Saturn focus?</span>
-                </p>
-                <p class="description">
-                  Saturn focus lets you stay in the moment when you need to
-                  concentrate. Using a set of pre-defined configurations, some
-                  home screen components will be hidden helping you stay focus.
-                </p>
-              </div>
-            </div>
-
-            <!-- =+=+= General Settings =+=+= -->
-            <div id="tab-2" class="tab-content current slide-up-now-opacity">
-              <p class="settings-item-title">Username</p>
-              <div class="settings-background">
-                <!-- =+=+= Username =+=+= -->
-                <h3><i class="las la-user-edit"></i> Default username</h3>
-                <p class="description">
-                  Set a username that will be displayed on the home screen.
-                </p>
-                <div id="popUp" class="username-section">
-                  <input
-                    type="text"
-                    name="setusername"
-                    id="username_input"
-                    placeholder="Jolyne Kujo..."
-                  />
-                  <button id="save" class="save-button">
-                    <i class="las la-save"></i> Save
-                  </button>
-                </div>
-              </div>
-              <p class="settings-item-title">Info</p>
-
-              <!-- =+=+= Change Search  =+=+= -->
-              <div class="settings-background">
-                <h3><i class="las la-search"></i> Saturn search</h3>
-                <p class="description">
-                  Easily switch between different search providers.
-                </p>
-                <details>
-                  <summary>Change Search</summary>
-                  <img
-                    src="/assets/img/change-search.gif"
-                    loading="lazy"
-                    alt="change-search"
-                  />
-
-                  <p>
-                    Or press <kbd>Ctrl</kbd> +
-                    <kbd><i class="las la-caret-square-up"></i> (Arrow Up)</kbd>
-                  </p>
-                </details>
-                <p class="dropdown-seperator settings-seperator">
-                  <span>Supported providers</span>
-                </p>
-                <ul>
-                  <li style="font-weight: 700">Google (Default)</li>
-                  <li>DuckDuckGo</li>
-                  <li>YouTube</li>
-                  <li>Reddit</li>
-                  <li>Protondb</li>
-                </ul>
-              </div>
-              <p
-                class="description"
-                style="text-align: center; font-weight: 500; font-size: 13px"
-              >
-                <a
-                  href="https://github.com/mraif13/Saturn-startpage/issues/new"
-                  target="_blank"
-                  ><i class="las la-bug"></i>
-                  Report a bug
-                </a>
-              </p>
-              <p class="line"></p>
-
-              <p class="settings-item-title">Danger zone</p>
-              <p class="settings-item-under-title description">
-                Scary options you probably don't want to mess with.
-              </p>
-
-              <div class="settings-background">
-                <h3><i class="las la-trash-alt"></i> Reset data</h3>
-                <p class="description">
-                  Reset Saturn to its default settings, all saved data will be
-                  erased in the process.
-                </p>
-                <div class="cbw_container">
-                  <button
-                    class="sqaure_box red_text"
-                    id="reset_button"
-                    data-tootik="⚠️ WARNING: This action is not reversible."
-                    data-tootik-conf="right multiline"
-                  >
-                    <i class="las la-trash-alt"></i>
-                    <span>Delete it all</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- RenderJS stuff -->
-          <div id="setting_about"></div>
-
-          <!-- =+=+= Theme section =+=+=-->
-          <div id="tab-4" class="tab-content">
-            <p class="settings-item-title">Themes</p>
-            <p class="settings-item-under-title description">
-              Choose a theme to match your mood and style.
-            </p>
+        <!-- Sidebar tab -->
+        <ul class="tab-menu">
+          <li
+            class="settings-tab-item active"
+            data-tab="tab1"
+            data-tooltip="Additional Info 1"
+          >
+            <i class="las la-cog"></i> General
+          </li>
+          <li class="settings-tab-item" data-tab="tab2">
+            <i class="las la-brush"></i> Style
+          </li>
+          <li class="settings-tab-item" data-tab="tab3">
+            <i class="las la-palette"></i> Themes
+          </li>
+          <li class="settings-tab-item" data-tab="tab4">
+            <i class="las la-cloud-moon"></i> Focus
+          </li>
+          <li class="settings-tab-item" data-tab="tab5">
+            <i class="las la-info-circle"></i> About
+          </li>
+        </ul>
+        <div class="setting-content">
+          <div id="tab1" class="tab-pane active slide-right-fade-in">
             <div class="settings-background">
-              <!-- =+=+= Themes =+=+=-->
-              <!-- =+=+= Light/Day theme =+=+=-->
-              <p class="theme-title"><i class="las la-sun"></i> Light themes</p>
-
-              <div class="theme-container light-theme" id="light">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/light.png"
-                  loading="lazy"
-                  alt="light-icon.png"
-                />
-                <span class="theme-name">Cancri</span>
-              </div>
-
-              <!-- =+=+= Dark/Night themes =+=+=-->
-              <p class="theme-title"><i class="las la-moon"></i> Dark themes</p>
-              <!-- =+=+= Grey-ish theme =+=+=-->
-              <div class="theme-container" id="lighterdarktheme">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/lightdark.png"
-                  loading="lazy"
-                  alt="lighterdark-icon.png"
-                />
-                <span class="theme-name">Light grey</span>
-              </div>
-              <div class="theme-container" id="dracula">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/dracula.png"
-                  loading="lazy"
-                  title="Dracula theme"
-                  alt="dracula-icon.png"
-                />
-                <span class="theme-name">Dracula</span>
-              </div>
-              <div class="theme-container" id="nord">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/nord.png"
-                  loading="lazy"
-                  title="Nord theme"
-                  alt="nord-icon.png"
-                />
-                <span class="theme-name">Nord</span>
-              </div>
-              <div class="theme-container" id="amazinglypurple">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/amazinglypurple.png"
-                  loading="lazy"
-                  title="Experimental theme"
-                  alt="experimental-icon.png"
-                />
-                <span class="theme-name">Simply purple</span>
-              </div>
-              <div class="theme-container" id="ghostlygreen">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/ghostlygreen.png"
-                  loading="lazy"
-                  title="Ghostly green theme"
-                  alt="ghostlygreen-icon.png"
-                />
-                <span class="theme-name">👻 Ghostly green</span>
-              </div>
-
-              <!-- + Darker/Mid-night theme section + -->
-              <p class="theme-title">
-                <i class="las la-cloud-moon"></i> Darker themes
+              <!-- =+=+= Username =+=+= -->
+              <h3><i class="las la-user-edit"></i> Username</h3>
+              <p class="description">
+                Set a unique username that will be prominently shown.
               </p>
-
-              <div class="theme-container" id="dark">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/dark.png"
-                  loading="lazy"
-                  title="Dark theme"
-                  alt="darktheme-icon.png"
+              <div class="username-section">
+                <input
+                  type="text"
+                  name="setusername"
+                  id="username_input"
+                  placeholder="Jolyne Kujo..."
                 />
-                <span class="theme-name">Cancri Dark</span>
+                <button id="save" class="save-button">
+                  <i class="las la-save"></i> Save
+                </button>
               </div>
-              <!-- =+=+= Default Dark theme =+=+=-->
-              <div class="theme-container" id="highcontrast">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/highcontrast.png"
-                  loading="lazy"
-                  title="Dark theme"
-                  alt="highconstrast-icon.png"
-                />
-                <span class="theme-name">High contrast</span>
-              </div>
-              <!-- =+=+= Space Dark theme =+=+=-->
-              <div class="theme-container" id="space">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/space.png"
-                  loading="lazy"
-                  title="Space dark theme"
-                  alt="spacedark-icon.png"
-                />
-                <span class="theme-name">Space dark</span>
-              </div>
-              <div class="theme-container" id="halloween">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/halloween.png"
-                  loading="lazy"
-                  title="Halloween theme"
-                  alt="halloween-icon.png"
-                />
-                <span class="theme-name">🎃 Spicy Halloween</span>
-              </div>
-              <p class="theme-title">
-                <i class="lar la-star"></i> Special themes
+            </div>
+            <div class="settings-background">
+              <h3><i class="las la-keyboard"></i> Kpress (Beta)</h3>
+              <p class="description">
+                Saturn displays a pop-up when two or more keys are pressed simultaneously.
               </p>
+              <h3>Kpress</h3>
+              <label class="switch">
+                <input type="checkbox" id="kpresstoggle" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <p class="settings-item-title">Info</p>
 
-              <div class="theme-container" id="linkin-park">
+            <!-- =+=+= Change Search  =+=+= -->
+            <div class="settings-background">
+              <h3><i class="las la-search"></i> Saturn search</h3>
+              <p class="description">
+                Effortlessly toggle between various search providers, learn more:
+              </p>
+              <details>
+                <summary>Change Search</summary>
                 <img
-                  class="theme-icon"
-                  src="/assets/img/themes/rock-legend.png"
+                  src="/assets/img/change-search.gif"
                   loading="lazy"
-                  title="Experimental theme"
-                  alt="experimental-icon.png"
+                  alt="change-search"
                 />
-                <span class="theme-name">Linkin Park</span>
-              </div>
 
-              <!-- + Experimental theme section + -->
-              <p class="theme-title">
-                <i class="las la-flask"></i>
-                Experimental themes
+                <p>
+                  Or press <kbd>Ctrl</kbd> +
+                  <kbd><i class="las la-caret-square-up"></i> (Arrow Up)</kbd>
+                </p>
+              </details>
+              <h3> Default Search</h3>
+              <p class="description">Change Saturn Search Engine to other providers.</p>
+              <div class="search-engine-select">
+                <select id="searchEngine">
+                  <option value="0">Google (Default)</option>
+                  <option value="1">DuckDuckGo</option>
+                  <option value="2">Reddit</option>
+                  <option value="3">YouTube</option>
+                  <option value="4">Protondb</option>
+                </select>
+              </div>             
+            </div>
+            <p class="settings-item-title">Danger zone</p>
+            <p class="settings-item-under-title description">
+              Caution: These options are potentially risky and best left untouched.
+            </p>
+
+            <div class="settings-background">
+              <h3><i class="las la-trash-alt"></i> Reset data</h3>
+              <p class="description">
+                Perform a full reset of Saturn to its default settings, all saved data will be permanently erased in the process.
               </p>
-              <p class="small_text description" style="font-size: 14px">
-                Try out themes coming to Saturn in the future. Use at your own
-                risk.
-              </p>
-              <div class="theme-container" id="lightplusplus">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/light.png"
-                  loading="lazy"
-                  alt="light-icon.png"
-                />
-                <span class="theme-name">Modern (Beta)</span>
+              <div class="cbw_container">
+                <button
+                  class="danger_red"
+                  id="reset_button"
+                  data-tootik="⚠️ WARNING: This action is irreversible!"
+                  data-tootik-conf="right multiline"
+                >
+                  <i class="las la-trash-alt"></i>
+                  <span>Erase everything</span>
+                </button>
               </div>
             </div>
           </div>
+          <div id="tab2" class="tab-pane slide-right-fade-in">
+            <div class="settings-background">
+              <div id="chromium-browser-support">
+                <p><i class="las la-exclamation-circle"></i> The background feature may cause issues in Chromium-based browsers. 
+                  It's advised to avoid this feature for now. <a href="https://gitlab.com/raifcoonjah/Saturn-startpage/-/issues/88#note_1511161825"><i class="lab la-gitlab"></i> #88</a></p>
 
-          <div id="tab-6" class="tab-content">
-            <p class="settings-item-title">Customizations (Beta)</p>
+              </div>
+              
+              <h3><i class="las la-image"></i> Background</h3>
+              <p class="description">
+                Choose custom images for your background, but note that URL-based backgrounds require an 
+                internet connection.
+              </p>
+
+              <input
+                type="text"
+                style="width: 90%; font-size: 15px"
+                id="image_url"
+                placeholder="Enter or paste a URL"
+              />
+              <button
+              title="Copy URL to clipboard"
+              data-tootik="Copy URL to clipboard"
+              data-tootik-conf="left"
+              style="padding: 13px"
+              id="copy-backgroundurl"
+            >
+              <i class="las la-clipboard"></i>
+            </button>
+              <label>
+                <input type="checkbox" id="force_white_color_header" />
+                <span data-tootik="Toggle to apply a white color scheme to homepage elements, overriding the light theme.""
+                data-tootik-conf="right multiline">White font</span>
+              </label>
+
+              <p
+                class="processing_bg"
+                style="color: var(--sat-lighter-ids); font-size: 13.5px"
+              ></p>
+              <div class="button-container">
+                <button id="delete_custom_image" class="close-wallpaper danger_red">
+                  <i class="las la-times"></i> Delete
+                </button>
+                <button id="save-image" class="save-button">
+                  <i class="lar la-save"></i> Apply
+                </button>
+              </div>
+              <p
+                class="dropdown-seperator settings-seperator"
+              >
+                <span>Upload background</span>
+              </p>
+              <input type="file" id="imageupload" accept="image/*">
+            </div>
+
+            <p class="settings-item-title">Customizations</p>
             <p class="settings-item-under-title description">
-              Options to modify Saturn's user interface. Beware, some elements
-              don't support customizations.
+              Customize Saturn's User Interface: Please be cautious as not all elements support modifications.
             </p>
             <div class="settings-background">
               <p class="dropdown-seperator settings-seperator">
@@ -763,71 +423,108 @@ need ......... to ................ scroll ......................................
               </label>
             </div>
           </div>
-          <!-- K shortcuts -->
-          <div id="k_shortcuts"></div>
-        </div>
-      </div>
-      <div id="wallpaper_modal" class="wallpaper_modal">
-        <div class="wallpaper_modal_content">
-          <br />
-          <p class="settings-item-title">Custom Background</p>
-          <p
-            class="settings-item-under-title description"
-            style="font-size: 14px"
-          >
-            Set an Image or GIF as your background. Depending on the image
-            resolution, this process may take a few seconds.
-            <a
-              href="https://mraif13.notion.site/How-to-use-Custom-background-0ad28bcc78b54aab89739e9c34e94b5a"
-              target="_blank"
-              style="color: var(--sat-accent-color1)"
-              >Learn more...</a
-            >
-          </p>
+          <div id="tab3" class="tab-pane slide-right-fade-in">
+            <div class="settings-background">
+              <h3><i class="las la-palette"></i> Themes</h3>
+              <p class="description">
+                Choose a theme to match your mood and style.
+              </p>
+              <div id="themes-container">
+                <!-- Themes will be dynamically generated here -->
+              </div>
+             </div>
+            </div>
+          <!-- ==== Focus tab ==== -->
+          <div id="tab4" class="tab-pane slide-right-fade-in">
+            <div class="settings-background">
+              <h3><i class="las la-cloud-moon"></i> Saturn focus</h3>
+              <p class="description">Pick Your Focus and Let's Get Started.</p>
+              <p class="focus_mode_icons">
+                <img src="/assets/icons/focus/study.svg" />
+                Focus for studying
+              </p>
+              <div class="focus_ui study">
+                <label>
+                  <input
+                    class="study_focus focus_status"
+                    type="checkbox"
+                  /><span>Studying <i class="las la-angle-right"></i> </span>
+                </label>
+              </div>
 
-          <input
-            type="text"
-            style="width: 90%; font-size: 15px"
-            id="image_url"
-            placeholder="Enter or paste a URL"
-          />
-          <button
-            title="Copy URL to clipboard"
-            style="padding: 13px"
-            id="copy-backgroundurl"
-          >
-            <i class="las la-clipboard"></i>
-          </button>
-          <p
-            class="processing_bg"
-            style="color: var(--sat-lighter-ids); font-size: 13.5px"
-          ></p>
-          <div class="button-container">
-            <button id="close-wallpaper" class="close-wallpaper">
-              <i class="las la-times"></i> Close
-            </button>
-            <button id="save-image" class="save-button">
-              <i class="lar la-save"></i> Apply
-            </button>
+              <br />
+              <p class="line"></p>
+              <p class="focus_mode_icons">
+                <img src="/assets/icons/focus/programming.svg" />
+                Focus for programming
+              </p>
+
+              <div class="focus_ui programming">
+                <label>
+                  <input class="programming_focus" type="checkbox" /><span
+                    >Programming <i class="las la-angle-right"></i
+                  ></span>
+                </label>
+              </div>
+
+              <br />
+              <p class="line"></p>
+              <p class="focus_mode_icons">
+                <img src="/assets/icons/focus/relax.svg" />
+                Focus for relaxation
+              </p>
+              <div class="focus_ui relaxation">
+                <label>
+                  <input class="relaxation_focus" type="checkbox" /><span
+                    >Relaxation <i class="las la-angle-right"></i
+                  ></span>
+                </label>
+              </div>
+              <br />
+              <p class="dropdown-seperator settings-seperator">
+                <span>What's Saturn focus?</span>
+              </p>
+              <p class="description">
+                Saturn Focus keeps you in the moment when concentration is essential. 
+                Through predefined settings, it hides certain home screen elements to enhance your focus.
+              </p>
+            </div>
+            <p class="settings-item-title">Minimalistic Interface (Beta)</p>
+            <p class="settings-item-under-title description">
+              Enabling the Minimalistic Interface will conceal most home screen elements. 
+              To access your favorites or use app shortcuts, simply disable this feature or utilize shortcuts.
+            </p>
+            <div class="settings-background">
+              <!-- =+=+= HT: Options2 =+=+=-->
+              <h3>Minimalistc Interface</h3>
+
+              <label class="switch">
+                <input type="checkbox" id="toggle_minimalistic_mode" />
+                <span class="slider round"></span>
+              </label>
+              <span class="description"
+                >Tip: Press Shift + S to reopen settings.</span
+              >
+            </div>
           </div>
-          <p
-            class="dropdown-seperator"
-            style="font-weight: 500; font-size: 15px"
-          >
-            <span id="processing-image">Upload image</span>
-          </p>
-          <p
-            class="small_text description"
-            style="font-size: 12px; margin-bottom: 0px; margin-left: 10px"
-          >
-            Uploaded images are stored locally, no internet connection is ever
-            required.
-          </p>
-          <input type="file" id="imageupload" accept="image/*" />
+          <div id="tab5" class="tab-pane slide-right-fade-in">
+            <div id="setting_about"></div>
+            <div id="k_shortcuts"></div>
+          </div>
         </div>
+        <p class="line"></p>
+        <p
+          class="description"
+          style="text-align: center; font-weight: 500; font-size: 13px"
+        >
+          <a
+            href="https://github.com/mraif13/Saturn-startpage/issues/new"
+            target="_blank"
+            ><i class="las la-bug"></i>
+            Report a bug
+          </a>
+        </p>
       </div>
-
-      <!-- popup -->
 
       <div id="kpress_popup" class="hidden"></div>
 

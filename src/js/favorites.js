@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     // Reset form
     $title.val("");
-    $url.val("https://");
+    $url.val("");
   });
 
   // Remove item
@@ -78,7 +78,7 @@ document.getElementById("searchfavorites").onkeyup = function () {
         '"' +
         document.getElementById("searchfavorites").value +
         '"' +
-        '<p class="description" style="font-size:11.5px">Something missing? Try a different keyword.</p>';
+        '<p class="description" style="font-size:11.5px">Check the spelling or try a different keyword.</p>';
     }
   }
 };

@@ -253,7 +253,6 @@ header > *:last-child {
   margin-bottom: 0;
 }
 
-a button,
 button,
 input[type="submit"],
 input[type="reset"],
@@ -261,32 +260,24 @@ input[type="button"] {
   font-size: 1rem;
   display: inline-block;
   outline: none;
-  padding: 10px 10px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
+  background-color: var(--sat-search-shortcuts);
   border: 1px solid transparent;
   border-radius: var(--sat-border-radius);
   box-sizing: border-box;
   cursor: pointer;
-  color: var(--sat-ids);
+  transition: background-color 0.1s ease-in-out;
 }
 
-/* Press effect that happens when you press on buttons.. */
-
-.focus_ui span:active,
-.aboutwidgets-container:active,
-ul.fav_ptgi_category li:active,
-.app:active,
-.theme-container:active,
-.close-button:active,
-button:active {
-  transform: scale(0.98);
-  /* Scaling button to 0.98 to its original size */
-  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-  /* Lowering the shadow */
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: var(--lighter-color);
 }
 
 a button[disabled],
@@ -362,7 +353,7 @@ code pre {
 
 details {
   display: block;
-  padding: 0.7rem 1rem;
+  padding: 0.6rem 0.9rem;
   background-color: var(--lighter-color);
   border-radius: var(--sat-border-radius);
 }
@@ -384,7 +375,6 @@ summary:hover {
 
 details[open] {
   padding-bottom: 0.75rem;
-  transition: var(--transition-speed-fast);
 }
 
 details[open] summary {
@@ -524,10 +514,7 @@ img {
 
 /* == Settings background color == */
 
-.wallpaper_modal_content,
-.favorites_modal_content,
-.sounds-modal-content,
-.settings-content {
+.favorites_modal_content {
   background: var(--sat-setting-bg-color);
 }
 
@@ -587,19 +574,6 @@ color to fix some issues == */
   transition: var(--transition-speed-default);
 }
 
-.removebtn:hover {
-  background-color: #d752521e;
-  color: var(--delete-warning-bg);
-  transition: var(--transition-speed-default);
-  color: var(--delete-warning-bg);
-}
-
-.close-wallpaper:hover,
-.cancel-fav-btn:hover {
-  transition: var(--transition-speed-default);
-  background-color: #d752524b !important;
-  color: var(--delete-warning-bg) !important;
-}
 
 /* == Make everything use the 
 current color var == */
@@ -634,7 +608,6 @@ use the correct border radius == */
 .tooltiptext,
 #content,
 #fav-link li,
-#fav-link img,
 #fav-link a,
 #add-link-form,
 #add-link-form input,
@@ -657,43 +630,15 @@ use the correct border radius == */
 ========
 */
 
-@media (max-width: 60.75em) {
-  .wallpaper_modal_content,
+@media (max-width: 600px) {
   .favorites_modal_content,
   .sounds-modal-content {
     max-width: 90%;
   }
-
   .settings-content {
     width: 100% !important;
     height: 100% !important;
   }
-
-  ul.tabs li {
-    font-size: 12px !important;
-  }
-  ul.tabs li,
-  ul.tabs li.current {
-    background: transparent !important;
-    width: 40px;
-    padding: 10px 20px 1px 5px !important;
-    font-size: 0px !important;
-  }
-  .mobile-warning {
-    visibility: visible;
-  }
-  ul.tabs li i:hover {
-    background: var(--sat-search-shortcuts);
-    color: var(--sat-accent-color1);
-    transition: var(--transition-speed-default);
-    box-shadow: 0px 12px 23px -16px var(--drop-shadow-color);
-  }
-  ul.tabs li i {
-    padding: 20px 20px !important;
-    font-size: 20px !important;
-    border-radius: 10px;
-  }
-
   .tab-content {
     width: 86%;
     margin-left: 45px !important;
@@ -735,6 +680,13 @@ use the correct border radius == */
   .settings-nav-separator {
     visibility: hidden;
   }
+  /* Settings button */
+  .sidebar-trigger {
+    font-size: 1.2rem;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+  }
 }
 
 /* Align button-container to the left to follow standard UI guidelines */
@@ -742,4 +694,116 @@ use the correct border radius == */
 .button-container {
   text-align: right;
   padding: 10px;
+}
+
+/* 
+========
++ Saturn core components +
++ Settings sidebar +
+========
+*/
+
+
+.sidebar {
+  width: 100%;
+  max-width: 570px;
+  height: 100vh;
+  background-color: var(--sat-blurry-background);
+  position: fixed;
+  right: -100%;
+  top: 0;
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(17, 17, 17, 0.822);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 10px;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  right: 0;
+  backdrop-filter: blur(10px); /* Apply blur when open */
+  animation: 0.3 ease-in-out;
+}
+
+.sidebar-trigger {
+  background: none;
+  color: var(--sat-ids);
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Adjust the desired position from the right */
+  z-index: 1000;
+  border-radius: 17px;
+}
+
+.settings-tab-item {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-tab-item {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--sat-setting-bg-effect);
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.settings-tab-item.active {
+  background-color: var(--bg-accent-color-lr);
+  transition: 0.2s ease-in-out;
+  border: 1px solid var(--sat-accent-color1);
+}
+
+.settings-tab-item:hover {
+  background-color: var(--bg-accent-color-lr-hover);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.setting-content {
+  padding: 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* ========= 
+Optimize sidebar for mobile (Beta)
+========*/
+
+/* Media queries for mobile optimization */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    max-width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 13px;
+  }
+  
+  .sidebar-trigger {
+    right: 10px;
+  }
+  
+  .settings-tab-item {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .settings-tab-item i {
+    font-size: 0px;
+  }
+  
+  
+  .setting-content {
+    padding: 10px;
+  }
 }
