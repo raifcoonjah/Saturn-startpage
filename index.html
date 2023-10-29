@@ -105,10 +105,6 @@ Remember to be yourself.
         <!-- =+=+= App lists + App category =+=+= -->
         <div class="apps_list">
           <ul class="apps-category">
-            <li class="tab-link" data-tab="app-9">
-              <i class="lab la-gratipay"></i> <span>Favorites</span>
-            </li>
-            <span class="description" style="opacity: 0.4">|</span>
             <li class="tab-link current" data-tab="app-1">
               <i class="lar la-grin-hearts"></i> <span>Most used</span>
             </li>
@@ -130,25 +126,23 @@ Remember to be yourself.
           <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
           <!-- End of app list -->
 
-          <div id="app-9" class="tab-link fix-favorites-header">
+          <div class="tab-link fix-favorites-header">
             <!-- =+=+= Favorite v3.2 =+=+= -->
             <div id="fav-container" class="fav-container">
-              <div class="favorites-search">
-                <input
-                  type="text"
-                  placeholder="Find favorites..."
-                  class="searchfavorites"
-                  id="searchfavorites"
-                />
-                <button
-                  class="favorite-button"
-                  title="Add favorites (Shift + Z)"
-                >
-                  <i class="las la-plus"></i> Add
-                </button>
-              </div>
-
               <div id="content">
+                <div class="favorites-search">
+                  <input
+                    type="text"
+                    placeholder="Find favorites.."
+                    id="searchfavorites"
+                  />
+                  <button
+                    class="favorite-button"
+                    title="Add favorites (Shift + Z)"
+                  >
+                    <i class="las la-plus"></i> Add
+                  </button>
+                </div>
                 <p
                   style="display: none"
                   id="search-results"
@@ -204,13 +198,12 @@ Remember to be yourself.
           <input
             id="url"
             placeholder="Enter or paste a URL"
-            value="https://"
             autocomplete="off"
             spellcheck="false"
             class="favorite-input"
           />
           <div class="button-container">
-            <button id="cancel-fav-btn" class="cancel-fav-btn">
+            <button id="cancel-fav-btn" class="cancel-fav-btn danger_red">
               <i class="las la-times"></i> Cancel
             </button>
             <button id="add" class="save-button">
@@ -260,9 +253,9 @@ Remember to be yourself.
               <!-- =+=+= Username =+=+= -->
               <h3><i class="las la-user-edit"></i> Username</h3>
               <p class="description">
-                Set a username that will be displayed on the home screen.
+                Set a unique username that will be prominently shown.
               </p>
-              <div id="popUp" class="username-section">
+              <div class="username-section">
                 <input
                   type="text"
                   name="setusername"
@@ -277,8 +270,7 @@ Remember to be yourself.
             <div class="settings-background">
               <h3><i class="las la-keyboard"></i> Kpress (Beta)</h3>
               <p class="description">
-                Saturn will display a popup when two or more keys are pressed
-                together.
+                Saturn displays a pop-up when two or more keys are pressed simultaneously.
               </p>
               <h3>Kpress</h3>
               <label class="switch">
@@ -292,7 +284,7 @@ Remember to be yourself.
             <div class="settings-background">
               <h3><i class="las la-search"></i> Saturn search</h3>
               <p class="description">
-                Easily switch between different search providers.
+                Effortlessly toggle between various search providers, learn more:
               </p>
               <details>
                 <summary>Change Search</summary>
@@ -307,37 +299,37 @@ Remember to be yourself.
                   <kbd><i class="las la-caret-square-up"></i> (Arrow Up)</kbd>
                 </p>
               </details>
-              <p class="dropdown-seperator settings-seperator">
-                <span>Supported providers</span>
-              </p>
-              <ul>
-                <li style="font-weight: 700">Google (Default)</li>
-                <li>DuckDuckGo</li>
-                <li>YouTube</li>
-                <li>Reddit</li>
-                <li>Protondb</li>
-              </ul>
+              <h3> Default Search</h3>
+              <p class="description">Change Saturn Search Engine to other providers.</p>
+              <div class="search-engine-select">
+                <select id="searchEngine">
+                  <option value="0">Google (Default)</option>
+                  <option value="1">DuckDuckGo</option>
+                  <option value="2">Reddit</option>
+                  <option value="3">YouTube</option>
+                  <option value="4">Protondb</option>
+                </select>
+              </div>             
             </div>
             <p class="settings-item-title">Danger zone</p>
             <p class="settings-item-under-title description">
-              Scary options you probably don't want to mess with.
+              Caution: These options are potentially risky and best left untouched.
             </p>
 
             <div class="settings-background">
               <h3><i class="las la-trash-alt"></i> Reset data</h3>
               <p class="description">
-                Reset Saturn to its default settings, all saved data will be
-                erased in the process.
+                Perform a full reset of Saturn to its default settings, all saved data will be permanently erased in the process.
               </p>
               <div class="cbw_container">
                 <button
-                  class="sqaure_box red_background"
+                  class="danger_red"
                   id="reset_button"
-                  data-tootik="⚠️ WARNING: This action is not reversible."
+                  data-tootik="⚠️ WARNING: This action is irreversible!"
                   data-tootik-conf="right multiline"
                 >
                   <i class="las la-trash-alt"></i>
-                  <span>Delete it all</span>
+                  <span>Erase everything</span>
                 </button>
               </div>
             </div>
@@ -352,8 +344,8 @@ Remember to be yourself.
               
               <h3><i class="las la-image"></i> Background</h3>
               <p class="description">
-                Set the background to anything you desire. Backgrounds set using
-                URLs require an active internet connection to work.
+                Choose custom images for your background, but note that URL-based backgrounds require an 
+                internet connection.
               </p>
 
               <input
@@ -363,18 +355,26 @@ Remember to be yourself.
                 placeholder="Enter or paste a URL"
               />
               <button
-                title="Copy URL to clipboard"
-                style="padding: 13px"
-                id="copy-backgroundurl"
-              >
-                <i class="las la-clipboard"></i>
-              </button>
+              title="Copy URL to clipboard"
+              data-tootik="Copy URL to clipboard"
+              data-tootik-conf="left"
+              style="padding: 13px"
+              id="copy-backgroundurl"
+            >
+              <i class="las la-clipboard"></i>
+            </button>
+              <label>
+                <input type="checkbox" id="force_white_color_header" />
+                <span data-tootik="Toggle to apply a white color scheme to homepage elements, overriding the light theme.""
+                data-tootik-conf="right multiline">White font</span>
+              </label>
+
               <p
                 class="processing_bg"
                 style="color: var(--sat-lighter-ids); font-size: 13.5px"
               ></p>
               <div class="button-container">
-                <button id="delete_custom_image" class="close-wallpaper">
+                <button id="delete_custom_image" class="close-wallpaper danger_red">
                   <i class="las la-times"></i> Delete
                 </button>
                 <button id="save-image" class="save-button">
@@ -383,31 +383,15 @@ Remember to be yourself.
               </div>
               <p
                 class="dropdown-seperator settings-seperator"
-                style="font-weight: 500; font-size: 15px"
               >
-                <span id="processing-image">Upload image</span>
+                <span>Upload background</span>
               </p>
-              <p
-                class="small_text description"
-                style="font-size: 12px; margin-bottom: 0px; margin-left: 10px"
-              >
-                Uploaded images are stored locally, no internet connection is
-                ever required.
-              </p>
-              <input type="file" id="imageupload" accept="image/*" />
-              <p class="dropdown-seperator settings-seperator">
-                <span>Home options</span>
-              </p>
-              <label>
-                <input type="checkbox" id="force_white_color_header" />
-                <span>Apply white color to home elements</span>
-              </label>
+              <input type="file" id="imageupload" accept="image/*">
             </div>
 
-            <p class="settings-item-title">Customizations (Beta)</p>
+            <p class="settings-item-title">Customizations</p>
             <p class="settings-item-under-title description">
-              Options to modify Saturn's user interface. Beware, some elements
-              don't support customizations.
+              Customize Saturn's User Interface: Please be cautious as not all elements support modifications.
             </p>
             <div class="settings-background">
               <p class="dropdown-seperator settings-seperator">
@@ -445,158 +429,16 @@ Remember to be yourself.
               <p class="description">
                 Choose a theme to match your mood and style.
               </p>
-              <p class="theme-title"><i class="las la-sun"></i> Light themes</p>
-
-              <div class="theme-container light-theme" id="light">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/light.png"
-                  loading="lazy"
-                  alt="light-icon.png"
-                />
-                <span class="theme-name">Cancri</span>
+              <div id="themes-container">
+                <!-- Themes will be dynamically generated here -->
               </div>
-
-              <!-- =+=+= Dark/Night themes =+=+=-->
-              <p class="theme-title"><i class="las la-moon"></i> Dark themes</p>
-              <!-- =+=+= Grey-ish theme =+=+=-->
-              <div class="theme-container" id="lighterdarktheme">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/lightdark.png"
-                  loading="lazy"
-                  alt="lighterdark-icon.png"
-                />
-                <span class="theme-name">Light grey</span>
-              </div>
-              <div class="theme-container" id="dracula">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/dracula.png"
-                  loading="lazy"
-                  title="Dracula theme"
-                  alt="dracula-icon.png"
-                />
-                <span class="theme-name">Dracula</span>
-              </div>
-              <div class="theme-container" id="nord">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/nord.png"
-                  loading="lazy"
-                  title="Nord theme"
-                  alt="nord-icon.png"
-                />
-                <span class="theme-name">Nord</span>
-              </div>
-              <div class="theme-container" id="amazinglypurple">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/amazinglypurple.png"
-                  loading="lazy"
-                  title="Experimental theme"
-                  alt="experimental-icon.png"
-                />
-                <span class="theme-name">Simply purple</span>
-              </div>
-              <div class="theme-container" id="ghostlygreen">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/ghostlygreen.png"
-                  loading="lazy"
-                  title="Ghostly green theme"
-                  alt="ghostlygreen-icon.png"
-                />
-                <span class="theme-name">👻 Ghostly green</span>
-              </div>
-
-              <!-- + Darker/Mid-night theme section + -->
-              <p class="theme-title">
-                <i class="las la-cloud-moon"></i> Darker themes
-              </p>
-
-              <div class="theme-container" id="dark">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/dark.png"
-                  loading="lazy"
-                  title="Dark theme"
-                  alt="darktheme-icon.png"
-                />
-                <span class="theme-name">Cancri Dark</span>
-              </div>
-              <!-- =+=+= Default Dark theme =+=+=-->
-              <div class="theme-container" id="highcontrast">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/highcontrast.png"
-                  loading="lazy"
-                  title="Dark theme"
-                  alt="highconstrast-icon.png"
-                />
-                <span class="theme-name">High contrast</span>
-              </div>
-              <!-- =+=+= Space Dark theme =+=+=-->
-              <div class="theme-container" id="space">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/space.png"
-                  loading="lazy"
-                  title="Space dark theme"
-                  alt="spacedark-icon.png"
-                />
-                <span class="theme-name">Space dark</span>
-              </div>
-              <div class="theme-container" id="halloween">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/halloween.png"
-                  loading="lazy"
-                  title="Halloween theme"
-                  alt="halloween-icon.png"
-                />
-                <span class="theme-name">🎃 Spicy Halloween</span>
-              </div>
-              <p class="theme-title">
-                <i class="lar la-star"></i> Special themes
-              </p>
-
-              <div class="theme-container" id="linkin-park">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/rock-legend.png"
-                  loading="lazy"
-                  title="Experimental theme"
-                  alt="experimental-icon.png"
-                />
-                <span class="theme-name">Linkin Park</span>
-              </div>
-
-              <!-- + Experimental theme section + -->
-              <p class="theme-title">
-                <i class="las la-flask"></i>
-                Experimental themes
-              </p>
-              <p class="small_text description" style="font-size: 14px">
-                Try out themes coming to Saturn in the future. Use at your own
-                risk.
-              </p>
-              <div class="theme-container" id="lightplusplus">
-                <img
-                  class="theme-icon"
-                  src="/assets/img/themes/light.png"
-                  loading="lazy"
-                  alt="light-icon.png"
-                />
-                <span class="theme-name">Modern (Beta)</span>
-              </div>
+             </div>
             </div>
-          </div>
           <!-- ==== Focus tab ==== -->
           <div id="tab4" class="tab-pane slide-right-fade-in">
             <div class="settings-background">
               <h3><i class="las la-cloud-moon"></i> Saturn focus</h3>
-              <p class="description">Choose a Focus and let's get to work.</p>
+              <p class="description">Pick Your Focus and Let's Get Started.</p>
               <p class="focus_mode_icons">
                 <img src="/assets/icons/focus/study.svg" />
                 Focus for studying
@@ -643,17 +485,14 @@ Remember to be yourself.
                 <span>What's Saturn focus?</span>
               </p>
               <p class="description">
-                Saturn focus lets you stay in the moment when you need to
-                concentrate. Using a set of pre-defined configurations, some
-                home screen components will be hidden helping you stay focus.
+                Saturn Focus keeps you in the moment when concentration is essential. 
+                Through predefined settings, it hides certain home screen elements to enhance your focus.
               </p>
             </div>
             <p class="settings-item-title">Minimalistic Interface (Beta)</p>
             <p class="settings-item-under-title description">
-              Enabling Minimalistic interface will hide most elements from the
-              home screen. To view your favorites <br />
-              or use apps shortcuts either turn this feature off or use
-              shortcuts.
+              Enabling the Minimalistic Interface will conceal most home screen elements. 
+              To access your favorites or use app shortcuts, simply disable this feature or utilize shortcuts.
             </p>
             <div class="settings-background">
               <!-- =+=+= HT: Options2 =+=+=-->
@@ -664,7 +503,7 @@ Remember to be yourself.
                 <span class="slider round"></span>
               </label>
               <span class="description"
-                >Reminder: Use Shift + S to open settings again.</span
+                >Tip: Press Shift + S to reopen settings.</span
               >
             </div>
           </div>

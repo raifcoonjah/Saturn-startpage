@@ -240,8 +240,8 @@ document.querySelector("#delete_custom_image").addEventListener("click", () => {
   const imageUpload = localStorage.getItem("imageupload");
 
   if (!imageUrl && !imageUpload) {
-    document.querySelector("#delete_custom_image").innerHTML =
-      '<i class="las la-exclamation-circle"></i> <span>No background <br/> found </span>';
+    document.querySelector(".processing_bg").innerHTML =
+      '<i class="las la-exclamation-circle"></i> No background found ';
     return;
   }
 
@@ -251,8 +251,8 @@ document.querySelector("#delete_custom_image").addEventListener("click", () => {
     document.querySelector("body").style.backgroundImage = "";
     document.querySelector("#image_url").style.width = "100%";
     document.querySelector("#copy-backgroundurl").style.display = "none";
-    document.querySelector("#delete_custom_image").innerHTML =
-      '<i class="las la-check-circle"></i> <span>Background <br/> removed </span>';
+    document.querySelector(".processing_bg").innerHTML =
+      '<i class="las la-check-circle"></i> Background removed ';
   }
 });
 
@@ -308,16 +308,19 @@ document
       localStorage.removeItem("force_white_color_header");
       document.querySelector(".sat-header").style.color = "var(--sat-ids)";
       document.querySelector(".apps_list").style.color = "var(--sat-ids)";
+      document.querySelector(".sidebar-trigger").style.color = "var(--sat-ids)";
     } else {
       localStorage.setItem("force_white_color_header", true);
       document.querySelector(".sat-header").style.color = "#fff";
       document.querySelector(".apps_list").style.color = "#fff";
+      document.querySelector(".sidebar-trigger").style.color = "#fff";
     }
   });
 
 if (localStorage.getItem("force_white_color_header")) {
   document.querySelector(".sat-header").style.color = "#fff";
   document.querySelector(".apps_list").style.color = "#fff";
+  document.querySelector(".sidebar-trigger").style.color = "#fff";
 }
 
 // UI Tweak: Make all text bold

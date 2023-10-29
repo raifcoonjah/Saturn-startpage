@@ -392,7 +392,6 @@ div.theme-container {
   padding: 10px 15px;
   background: var(--lighter-color);
   color: var(--sat-ids);
-  font-size: 15px;
   border-radius: 13px;
 }
 
@@ -410,14 +409,7 @@ div.theme-container {
   transition: var(--transition-speed-default);
 }
 
-.cancel-fav-btn {
-  padding: 14px 15px;
-  outline: none;
-  color: var(--sat-ids);
-  background-color: #d7525225 !important;
-  color: var(--delete-warning-bg) !important;
-  font-size: 15px;
-}
+
 
 /* 
 ========
@@ -469,12 +461,13 @@ div.theme-container {
 */
 
 .favorites-search input {
-  background: var(--sat-search-shortcuts);
+  background: var(--lighter-color);
   padding: 13px 13px;
   font-weight: 400;
   font-size: 14px;
   border-radius: 13px;
   margin-right: 10px;
+  width: 35%;
 }
 
 .favorites-search {
@@ -484,10 +477,9 @@ div.theme-container {
 }
 
 .favorite-button {
-  padding: 13px 13px;
-  font-weight: 500;
+  padding: 10px 15px;
   color: var(--sat-ids);
-  background: var(--sat-search-shortcuts);
+  background: var(--lighter-color);
   margin-bottom: 10px;
 }
 
@@ -572,10 +564,6 @@ ul.apps-category li.current {
 .socials {
   margin-bottom: 20px;
   margin-top: 30px;
-}
-
-.fav-container {
-  margin-bottom: 10px;
 }
 
 /* 
@@ -899,13 +887,15 @@ appearing when the user hovers on the open in new tab button.
   border: 1px solid var(--delete-warning-bg);
 }
 
-.red_background {
+.danger_red {
   background-color: #d752521e !important;
   color: var(--delete-warning-bg) !important;
 }
 
-.red_background:hover {
-  border: 1px solid #e0454569 !important;
+.danger_red:hover {
+  transition: var(--transition-speed-default);
+  background-color: #d752524b !important;
+  color: var(--delete-warning-bg) !important;
 }
 
 .green_background {
@@ -1227,8 +1217,8 @@ appearing when the user hovers on the open in new tab button.
   line-height: 2em;
   margin: 12px 0 12px;
   border-bottom: 1px solid var(--settings-button-outline);
-  margin-bottom: 10px;
-  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-top: 25px;
 }
 
 .search-results p {
@@ -1241,7 +1231,7 @@ appearing when the user hovers on the open in new tab button.
 }
 
 .search-results i {
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: var(--sat-accent-color1);
 }
 

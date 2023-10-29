@@ -2,9 +2,9 @@
   "manifest_version": 2,
   "name": "Saturn Startpage",
   "short_name": "saturnstartpage",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "description": "Saturn Startpage: Free, open-source new tab replacement designed for speed and UX.",
-  "author": "mraif13",
+  "author": "raifcoonjah",
 
   "icons": {
     "64": "/assets/img/icon64.png"

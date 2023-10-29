@@ -574,18 +574,6 @@ color to fix some issues == */
   transition: var(--transition-speed-default);
 }
 
-.removebtn:hover {
-  background-color: #d752521e;
-  color: var(--delete-warning-bg);
-  transition: var(--transition-speed-default);
-  color: var(--delete-warning-bg);
-}
-
-.cancel-fav-btn:hover {
-  transition: var(--transition-speed-default);
-  background-color: #d752524b !important;
-  color: var(--delete-warning-bg) !important;
-}
 
 /* == Make everything use the 
 current color var == */
@@ -620,7 +608,6 @@ use the correct border radius == */
 .tooltiptext,
 #content,
 #fav-link li,
-#fav-link img,
 #fav-link a,
 #add-link-form,
 #add-link-form input,
@@ -787,4 +774,36 @@ use the correct border radius == */
 
 .tab-pane.active {
   display: block;
+}
+
+/* ========= 
+Optimize sidebar for mobile (Beta)
+========*/
+
+/* Media queries for mobile optimization */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    max-width: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 13px;
+  }
+  
+  .sidebar-trigger {
+    right: 10px;
+  }
+  
+  .settings-tab-item {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .settings-tab-item i {
+    font-size: 0px;
+  }
+  
+  
+  .setting-content {
+    padding: 10px;
+  }
 }

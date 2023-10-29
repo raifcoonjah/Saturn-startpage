@@ -5,7 +5,6 @@
 //
 const appsList = (x) => {
   $(x).append(`<div id="app-1" class="app-content current">
-          <div class="popup">
             <div id="apps">
               <a href="https://github.com">
                 <div class="app study_focus_mode relaxation_focus_mode">
@@ -35,11 +34,9 @@ const appsList = (x) => {
                   <i class="las la-envelope"></i></div
               ></a>
             </div>
-          </div>
         </div>
         
         <div id="app-2" class="app-content">
-          <div class="popup">
             <div id="apps">
               <a href="http://moodle.rbs.ac.mu/moodle/">
                 <div class="app">
@@ -73,11 +70,9 @@ const appsList = (x) => {
               >
             </div>
           </div>
-        </div>
 
         <div id="app-3" class="app-content">
-          <div class="popup">
-            <div class="popup">
+
               <div id="apps">
                 <a href="https://instagram.com">
                   <div class="app">
@@ -91,15 +86,10 @@ const appsList = (x) => {
                     <span>Twitter</span>
                   </div></a
                 >
-              </div>
-            </div>
           </div>
         </div>
         
                 <div id="app-4" class="app-content">
-          <div class="popup">
-            <div class="popup">
-              <div class="popup">
                 <div id="apps">
                   <a href="https://youtube.com">
                     <div class="app">
@@ -131,16 +121,13 @@ const appsList = (x) => {
                       <span>Lofi Cafe</span>
                     </div>
                   </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>`);
 };
 
 const settingAbout = (z) => {
   $(z)
-    .append(`<p class="settings-item-title">About</p><p class="settings-item-under-title description">About Saturn Startpage, what's new and Keyboard shortcuts.</p>
+    .append(`<p class="settings-item-title">About</p><p class="settings-item-under-title description">About Saturn Startpage: New Features and Keyboard Shortcuts.</p>
             <div class="settings-background">
               <p class="new-about">
               <img style="padding-top:30px;" src="/assets/img/dynamic-icon-big.png" loading="lazy" title="Saturn Logo" alt="Saturn-logo.png" />
@@ -148,7 +135,7 @@ const settingAbout = (z) => {
             <p style="text-align:center;margin-top:-15px;">
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
             </p>
-               <a class="version-text green_background" style="display: flex;justify-content: center;align-items: center;" href="https://github.com/raifcoonjah/Saturn-startpage/releases/tag/7.0.0" target="_blank"> v7.0.0</i></a>
+               <a class="version-text green_background" style="display: flex;justify-content: center;align-items: center;" href="https://github.com/raifcoonjah/Saturn-startpage/releases/" target="_blank"> v7.1</i></a>
               <div class="socials">
                 <div class="aboutwidgets">
                 <a href="https://saturnstartpage.netlify.app/" class="aboutwidgets-container">
@@ -188,50 +175,46 @@ const settingAbout = (z) => {
           <ul>
           <h2> New features </h2>
 
-          <h3> Settings redesign </h3>
+          <h3> Saturn search upgrade!?</h3>
           <li>
-          - The settings page has been completely redesigned from the ground up. This new settings page is much more compact, faster, more stable and more maintainable. <br/>
-          - Various UI elements were optimized and reworked to improve their stability and performance. <br/>
-          - Currently this menu does not support mobile phone, but an issue will be opened soon to resolve this issue. <br/>
-          - The sidebar also implements several new components including: Blurred background, new switching animation and a brand new button design. <br/>
+          - Saturn Search now features a new dropdown menu, allowing users
+           to set any search engine as their default option. <br/>
+          - The search.js file was completely rewritten, resolving numerous old bugs. </br>
           </li>
           <li>
-          - Improve design consistentcy accross several UI components. 
           </li>
-          <h3> Delayed loading & Peformance improvements </h3>
+          <h3> Saturn themes & Updates</h3>
           <li>
-          - Currently Saturn loads all pages inside render.js onload, with the new
-          loader_deplay, the about section and keyboard shortcuts
-          will be loaded after 1.5 seconds.
-          This should allow Saturn to load a little bit faster while having little
-          to no impact on the user experience
+          - This update introduces a significant overhaul. Saturn Themes now load entirely in JavaScript using a 
+          JSON file format, enhancing user experience and making adding new themes a breeze! <br/>
+          - Check out the commit <a href="https://gitlab.com/raifcoonjah/Saturn-startpage/-/commit/60320ffb0178a4bcf05832fc4b6a89100aff8985">60320ffb</a>
+          - Saturn Themes now boast a cleaner and simpler design. <br/>
+          - Introducing a new "Terminal" theme. <br/>
+          - The about section now uses less code and underwent a thorough cleanup. <br/>
+          - The Wallpaper modal has been replaced with a section under the 
+          new style option in settings, reducing Saturn's code significantly. <br/>
           </li>
-          <li> 
-          - The about section now uses less code and got a big clean up.  <br/>
-          - The Wallpaper modal has been replaced with a section under the the new style option in settings, this should significantly reduce the amount of code Saturn uses. <br/>
-          - Improve 
-          </li>
-          <h3> Several small redesigns </h3>
+          <h3> Several small redesigns && UX </h3>
           <li>
-          - The kpress option section has been redesigned. <br/>
-          - Keyboard shortcuts section now uses less code and is now more compact. <br/>
+          - Enhanced UX for descriptions and titles in settings, making them clearer and easier to understand. <br/>
+          - All dangerous buttons now adhere to a standard CSS, addressing issue #91. <br/>
+          - Removed border-radius from fav-link images. <br/>
+          - Use standard button design.<br>
+          - Favorites tab has been removed from the apps category. <br/> 
+          - Favorites search and add buttons now follow the new design 
+            and are integrated into the favorites section on the home screen. <br/>
+          - The Background section in settings has been streamlined, 
+            providing a cleaner and user-friendly experience. <br/>
+          - Various UX and UI enhancements were implemented.
           </li>
-          <h3> Other several improvements </h3>
+          <h3> Bug fixes </h3>
           <li>
-          - Removal of the favorites tab <a href="https://gitlab.com/raifcoonjah/Saturn-startpage/-/issues/84">#84</a> <br/>
-          - Remove https from favorites input. <br/>
-          - Updated jQuery v3.6.3 -> v3.7.1 <br/>
-          - Clean up all .css files and removes a lot of duplicate code. <br/>
-          - Modernized button code and add a proper hover effect. (WIP, bug fix should be included in the .1 release) <br/>
-          - Remove a lot of usless codes that were causing performance issues <br/> 
-          - Clean up custom.css. <br/>
-          - Reduce upload image size from 5MB to 4MB. <br/> 
-          - Minimalistic UI now reloads the page, this alone should fix tons of small bugs and improve the experience. 
-          (Will change this back to no-reload in the next major release) <br/>
-          - Drastically improved the experience for mobile users including several ios specific fixes. <br/> 
-          - Improve UX when deleting a background and clean up processing_bg text. 
+          - Resolved the issue of the favorites input value (https://) still appearing. <br/>
+          - Fixed button design inconsistencies, resolving bugs caused by the last update. <br/>
+          - Corrected styling issues with delete buttons. <br/>
+          - Adjusted the copy to clipboard button to prevent overlap with the new toggle. <br/>
+          - Fixed the settings-trigger not applying white color when the light theme is used. <br/>
           </li>
-          <p> Warning: This update may contain some bugs, this should be ironed out in the next few updates.
           </ul>
 </div>`);
 };
@@ -239,8 +222,7 @@ const settingAbout = (z) => {
 const kShortcuts = (ks) => {
   $(ks).append(`<div class="settings-background">
             <p class="settings-item-title">Keyboard Shortcuts</p>
-            <p class="settings-item-under-title description">Shortcuts allow you to do things without ever needing to touch your 
-            <i class="las la-mouse"></i> mouse again.</p>
+            <p class="settings-item-under-title description">Empower your workflow with keyboard shortcuts.</p>
             <div class="settings-background">
               <p class="dropdown-seperator settings-seperator">
                 <span>General</span>
