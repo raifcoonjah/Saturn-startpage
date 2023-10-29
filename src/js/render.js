@@ -177,49 +177,43 @@ const settingAbout = (z) => {
 
           <h3> Saturn search upgrade!?</h3>
           <li>
-          - Saturn search now supports a new dropdown menu allowing 
-          the user to set any of the search engines as their default option. <br/>
-          - Practically rewrote search.js completely this should resolve a 
-          bunch of old bugs. </br>
+          - Saturn Search now features a new dropdown menu, allowing users
+           to set any search engine as their default option. <br/>
+          - The search.js file was completely rewritten, resolving numerous old bugs. </br>
           </li>
           <li>
           </li>
-          <h3> Saturn themes rewrite && Updates (Beta)</h3>
+          <h3> Saturn themes & Updates</h3>
           <li>
-          - This update took a lot of time to arrive, Saturn themes now loads 100% in javascript
-          using a json file format. A lot of experience improvements has been done to make
-          adding new themes a breeEEEeeeze! <br/>
-          - Learn more and check the commit out! <a href="https://gitlab.com/raifcoonjah/Saturn-startpage/-/commit/60320ffb0178a4bcf05832fc4b6a89100aff8985">60320ffb</a>
-          - Saturn themes now uses a brand new cleaner and simpler design. <br/>
-          - A brand new "Terminal" theme was added.
-          </li>
-          <h3> Saturn themes rewrite && Updates (Beta)</h3>
-          <li> 
-          - The about section now uses less code and got a big clean up.  <br/>
-          - The Wallpaper modal has been replaced with a section under the the new style option in settings, this should significantly reduce the amount of code Saturn uses. <br/>
-          - Improve 
+          - This update introduces a significant overhaul. Saturn Themes now load entirely in JavaScript using a 
+          JSON file format, enhancing user experience and making adding new themes a breeze! <br/>
+          - Check out the commit <a href="https://gitlab.com/raifcoonjah/Saturn-startpage/-/commit/60320ffb0178a4bcf05832fc4b6a89100aff8985">60320ffb</a>
+          - Saturn Themes now boast a cleaner and simpler design. <br/>
+          - Introducing a new "Terminal" theme. <br/>
+          - The about section now uses less code and underwent a thorough cleanup. <br/>
+          - The Wallpaper modal has been replaced with a section under the 
+          new style option in settings, reducing Saturn's code significantly. <br/>
           </li>
           <h3> Several small redesigns && UX </h3>
           <li>
-          - Improved UX for a lot of descriptions and titles in settings, making them
-          clearer and easier to understand. <br/>
-          - All dangerous button now use a standard css, contributing to #91 <br/>
-          - Remove all border-radius from fav-link images. <br/>
+          - Enhanced UX for descriptions and titles in settings, making them clearer and easier to understand. <br/>
+          - All dangerous buttons now adhere to a standard CSS, addressing issue #91. <br/>
+          - Removed border-radius from fav-link images. <br/>
           - Use standard button design.<br>
-          - Removed favorites tab from apps category <br/> 
-          - Favorites search and favorites add button now uses the standard new design
-          and are now part of the favorites section in the home screen. <br/>
-          - Background section in settings has been cleaned up, it is now cleaner and easier 
-          to use. <br/>
-          - Other several UX and UI improvements.
+          - Favorites tab has been removed from the apps category. <br/> 
+          - Favorites search and add buttons now follow the new design 
+            and are integrated into the favorites section on the home screen. <br/>
+          - The Background section in settings has been streamlined, 
+            providing a cleaner and user-friendly experience. <br/>
+          - Various UX and UI enhancements were implemented.
           </li>
           <h3> Bug fixes </h3>
           <li>
-          - Fix favorites input value (https://) still appearing. <br/>
-          - Fix button design inconsistency resolving several bugs caused by the last update. <br/>
-          - Fix delete buttons not using proper styling. <br/>
-          - Fix copy to clipboard button from overlapping with new toggle. <br/>
-          - Fix settings-trigger not applying white color when light theme is used. <br/>
+          - Resolved the issue of the favorites input value (https://) still appearing. <br/>
+          - Fixed button design inconsistencies, resolving bugs caused by the last update. <br/>
+          - Corrected styling issues with delete buttons. <br/>
+          - Adjusted the copy to clipboard button to prevent overlap with the new toggle. <br/>
+          - Fixed the settings-trigger not applying white color when the light theme is used. <br/>
           </li>
           </ul>
 </div>`);
