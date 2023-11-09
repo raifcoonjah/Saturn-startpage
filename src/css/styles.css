@@ -347,6 +347,7 @@ input:checked + .slider:before {
   margin: -1.5px;
   border-radius: 13px;
   height: 4.3rem;
+  width: 8.3rem;
   margin-bottom: 0.1px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
