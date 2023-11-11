@@ -18,7 +18,7 @@ $(document).ready(function () {
   // Add new link
   $("#add").click(function () {
     // Limit title to 15 characters
-    var truncatedTitle = $title.val().substring(0, 15);
+    var truncatedTitle = $title.val().substring(0, 25);
 
     // Add new item
     $("#fav-link").append(
