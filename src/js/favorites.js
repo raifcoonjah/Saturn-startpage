@@ -27,7 +27,7 @@ $(document).ready(function () {
         '">' +
         '<img loading="lazy" src="' +
         "https://unavatar.io/" +
-        $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") + // Removes https, http from URL.
+        $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") + "?ttl=28d" + // Icon refresh date to 28days to refresh contant requests.
         "?fallback=https://source.boringavatars.com/pixel/120/1337_user?colors=242424,2D2D2D,4A4E4A,242424,02060A" +
         '"/>' +
         " " +
