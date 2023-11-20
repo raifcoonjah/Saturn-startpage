@@ -500,10 +500,6 @@ div.theme-container {
 + Apps List Category +
 ========
 */
-.apps-category {
-  margin-top: 20px;
-  margin: 0px;
-}
 
 ul.apps-category {
   padding: 0px;
@@ -511,12 +507,13 @@ ul.apps-category {
 }
 
 ul.apps-category li {
-  font-size: 16px;
+  font-size: 15.5px;
   background: none;
   display: inline-block;
   padding: 7px 10px;
-  cursor: pointer;
+  cursor: default;
   border-radius: var(--sat-border-radius);
+  transition: all 0.3s ease;
 }
 
 ul.apps-category li:hover {
