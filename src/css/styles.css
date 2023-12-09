@@ -252,7 +252,7 @@ input:checked + .slider:before {
 */
 .app {
   margin: 4px;
-  padding: 15px 45px;
+  padding: 14px 43px;
   border-radius: 20px;
   border: 3px solid transparent;
   position: relative;
@@ -287,7 +287,7 @@ input:checked + .slider:before {
 }
 
 .app span {
-  font-size: 16px;
+  font-size: 15.3px;
   font-weight: 600;
   margin: 0;
   position: absolute;
