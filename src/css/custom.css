@@ -13,3 +13,7 @@ proper css file.
   padding: 10px;
   border-radius: 10px;
 }
+
+.theme-container:hover {
+  box-shadow: 0 0 10px var( --sat-accent-color1);
+}
