@@ -134,8 +134,12 @@ const settingAbout = (z) => {
               <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Startpage</p>
             <p style="text-align:center;margin-top:-15px;">
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
+            <p style="color:red">
             </p>
-               <a class="version-text green_background" style="display: flex;justify-content: center;align-items: center;" href="https://github.com/raifcoonjah/Saturn-startpage/releases/" target="_blank"> v7.1</i></a>
+            <p style="text-align:center;"> 
+            <a class="version-text green_background" href="https://github.com/raifcoonjah/Saturn-startpage/releases/" target="_blank"
+            >7.2</i></a>
+             </p>
               <div class="socials">
                 <div class="aboutwidgets">
                 <a href="https://saturnstartpage.netlify.app/" class="aboutwidgets-container">
@@ -173,47 +177,17 @@ const settingAbout = (z) => {
           </p>
 
           <ul>
-          <h2> New features </h2>
+          <h2>## title </h2>
 
-          <h3> Saturn search upgrade!?</h3>
+          <h3>## title</h3>
           <li>
-          - Saturn Search now features a new dropdown menu, allowing users
-           to set any search engine as their default option. <br/>
-          - The search.js file was completely rewritten, resolving numerous old bugs. </br>
+content
           </li>
           <li>
           </li>
-          <h3> Saturn themes & Updates</h3>
+          <h3> ## title</h3>
           <li>
-          - This update introduces a significant overhaul. Saturn Themes now load entirely in JavaScript using a 
-          JSON file format, enhancing user experience and making adding new themes a breeze! <br/>
-          - Check out the commit <a href="https://gitlab.com/raifcoonjah/Saturn-startpage/-/commit/60320ffb0178a4bcf05832fc4b6a89100aff8985">60320ffb</a>
-          - Saturn Themes now boast a cleaner and simpler design. <br/>
-          - Introducing a new "Terminal" theme. <br/>
-          - The about section now uses less code and underwent a thorough cleanup. <br/>
-          - The Wallpaper modal has been replaced with a section under the 
-          new style option in settings, reducing Saturn's code significantly. <br/>
-          </li>
-          <h3> Several small redesigns && UX </h3>
-          <li>
-          - Enhanced UX for descriptions and titles in settings, making them clearer and easier to understand. <br/>
-          - All dangerous buttons now adhere to a standard CSS, addressing issue #91. <br/>
-          - Removed border-radius from fav-link images. <br/>
-          - Use standard button design.<br>
-          - Favorites tab has been removed from the apps category. <br/> 
-          - Favorites search and add buttons now follow the new design 
-            and are integrated into the favorites section on the home screen. <br/>
-          - The Background section in settings has been streamlined, 
-            providing a cleaner and user-friendly experience. <br/>
-          - Various UX and UI enhancements were implemented.
-          </li>
-          <h3> Bug fixes </h3>
-          <li>
-          - Resolved the issue of the favorites input value (https://) still appearing. <br/>
-          - Fixed button design inconsistencies, resolving bugs caused by the last update. <br/>
-          - Corrected styling issues with delete buttons. <br/>
-          - Adjusted the copy to clipboard button to prevent overlap with the new toggle. <br/>
-          - Fixed the settings-trigger not applying white color when the light theme is used. <br/>
+          content
           </li>
           </ul>
 </div>`);
