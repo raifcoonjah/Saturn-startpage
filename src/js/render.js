@@ -13,11 +13,12 @@ const settingAbout = (z) => {
               <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Startpage</p>
             <p style="text-align:center;margin-top:-15px;">
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
-            <p style="color:red">
+            <p style="color:red;text-align:center;">
+            You are running a beta build of Saturn Startpage. If you experience any bugs please report them :D
             </p>
             <p style="text-align:center;"> 
             <a class="version-text green_background" href="https://github.com/raifcoonjah/Saturn-startpage/releases/" target="_blank"
-            >7.2</i></a>
+            >7.1.0.14012024</i></a>
              </p>
               <div class="socials">
                 <div class="aboutwidgets">
