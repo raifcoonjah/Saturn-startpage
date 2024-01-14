@@ -500,7 +500,6 @@ img {
 }
 
 .setting-button,
-.app,
 .cuteapps,
 .removebtn {
   background: var(--sat-search-shortcuts);
@@ -534,16 +533,6 @@ color to fix some issues == */
 .setting-button:hover,
 .app:hover {
   color: var(--for-white);
-}
-
-.app {
-  border: 3px solid transparent;
-  background: var(--sat-search-shortcuts);
-}
-
-.app:hover {
-  border: 3px solid transparent;
-  background-color: var(--sat-accent-color1);
 }
 
 .closebtn:hover {
@@ -784,8 +773,19 @@ Optimize sidebar for mobile (Beta)
     font-size: 0px;
   }
   
-  
   .setting-content {
     padding: 10px;
+  }
+  .app {
+    padding: 10px 20px !important; 
+    margin-bottom: -10px !important;
+  }
+
+  .app i {
+    font-size: 2rem !important;
+    right: -0px !important;
+  }
+  .app span {
+    visibility: hidden !important;
   }
 }

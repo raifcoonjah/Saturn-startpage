@@ -3,127 +3,6 @@
 // + RENDER.js +
 // ========
 //
-const appsList = (x) => {
-  $(x).append(`<div id="app-1" class="app-content current">
-            <div id="apps">
-              <a href="https://github.com">
-                <div class="app study_focus_mode relaxation_focus_mode">
-                  <i class="lab la-github"></i>
-                  <span>Github</span>
-                </div></a
-              >
-              <a href="https://youtube.com">
-                <div class="app study_focus_mode">
-                  <span>YouTube</span>
-                  <i class="lab la-youtube"></i></div
-              ></a>
-              <a href="https://reddit.com">
-                <div class="app study_focus_mode programming_focus_mode">
-                  <span>Reddit</span>
-                  <i class="lab la-reddit"></i></div
-              ></a>
-              <a href="https://mail.protonmail.com">
-                <div class="app relaxation_focus_mode">
-                  <span>Proton Mail </span>
-                  <i class="las la-inbox"></i></div
-              ></a>
-
-              <a href="https://mail.google.com">
-                <div class="app relaxation_focus_mode">
-                  <span>Gmail</span>
-                  <i class="las la-envelope"></i></div
-              ></a>
-            </div>
-        </div>
-        
-        <div id="app-2" class="app-content">
-            <div id="apps">
-              <a href="http://moodle.rbs.ac.mu/moodle/">
-                <div class="app">
-                  <i class="las la-school"></i>
-                  <span>Rushm.. Moodle</span>
-                </div></a>
-              
-                 <a href="https://docs.google.com">
-                <div class="app">
-                  <i class="las la-file-alt"></i>
-                  <span>Google Docs</span>
-                </div></a
-              >
-
-              <a href="https://udemy.com">
-                <div class="app">
-                  <i class="las la-chalkboard-teacher"></i>
-                  <span>Udemy</span>
-                </div></a>
-              <a href="https://learn-anything.xyz/">
-                <div class="app">
-                  <i class="lar la-map"></i>
-                  <span>Learn Anything</span>
-                </div></a
-              >
-              <a href="https://www.litcharts.com/">
-                <div class="app">
-                  <i class="las la-book"></i>
-                  <span>Litcharts</span>
-                </div></a
-              >
-            </div>
-          </div>
-
-        <div id="app-3" class="app-content">
-
-              <div id="apps">
-                <a href="https://instagram.com">
-                  <div class="app">
-                    <i class="lab la-instagram"></i>
-                    <span>Instagr..</span>
-                  </div></a
-                >
-                <a href="https://twitter.com">
-                  <div class="app">
-                    <i class="lab la-twitter"></i>
-                    <span>Twitter</span>
-                  </div></a
-                >
-          </div>
-        </div>
-        
-                <div id="app-4" class="app-content">
-                <div id="apps">
-                  <a href="https://youtube.com">
-                    <div class="app">
-                      <i class="lab la-youtube"></i>
-                      <span>YouTube</span>
-                    </div></a
-                  >
-                  <a href="https://netflix.com">
-                    <div class="app programming_focus_mode">
-                      <i class="las la-film"></i>
-                      <span>Netflix</span>
-                    </div></a
-                  >
-                  <a href="https://twitch.tv">
-                    <div class="app programming_focus_mode">
-                      <i class="lab la-twitch"></i>
-                      <span>Twitch</span>
-                    </div></a
-                  >
-                <a href="https://lifeat.io/app">
-                <div class="app">
-                  <i class="las la-ticket-alt"></i>
-                  <span>LifeAt</span>
-                </div></a
-              >
-                  <a href="https://www.lofi.cafe/">
-                    <div class="app">
-                      <i class="las la-record-vinyl"></i>
-                      <span>Lofi Cafe</span>
-                    </div>
-                  </a>
-          </div>
-        </div>`);
-};
 
 const settingAbout = (z) => {
   $(z)
@@ -250,14 +129,13 @@ const kShortcuts = (ks) => {
 };
 
 const render_in_js = (x, z, ks, cu) => {
-  let apps_list = $("#apps_list");
   let setting_about = $("#setting_about");
   let kshortcuts = $("#k_shortcuts");
 
   // Load immediately onload
-  loader_immediately = setTimeout(function () {
-    appsList(apps_list);
-  });
+  // loader_immediately = setTimeout(function () {
+  //   appsList(apps_list);
+  // });
 
   // Load after 1.5 since the user won't see this page until they open settings.
   // Currently the time is set according to my tests but can adjusted in the future if needed.
