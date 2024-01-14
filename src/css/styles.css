@@ -282,7 +282,8 @@ input:checked + .slider:before {
 .app {
   position: relative;
   display: inline-block;
-  background-color: var(--sat-blurry-background);
+  border:3px solid transparent;
+  background:var(--apps-blurry-backgroud);
   backdrop-filter: blur(5px); /* Apply blur when open */
 }
 

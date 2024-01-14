@@ -36,6 +36,7 @@ the end of the file :D +
 
   /* **New** background color x blurry background */
   --sat-blurry-background: rgba(239, 240, 241, 0.856);
+  --apps-blurry-backgroud: rgba(209, 209, 209, 0.815);
 
   --sat-input-hover: #b1b1b1;
   --sat-search-bar-focus: #999999;
@@ -100,7 +101,8 @@ the end of the file :D +
   --sat-setting-bg-color: #0c0d11;
   /* **New** background color x blurry background */
   --sat-blurry-background: #0c0d11d0;
-  --sat-setting-bg-effect: #12161d;
+  --apps-blurry-backgroud: #181c24cc;
+  --sat-setting-bg-effect: #0f1218;
   --sat-input-hover: #2b323d;
   --sat-search-bar-focus: #1e232c;
   --sat-tooltip-bg: #181b22;
@@ -151,6 +153,7 @@ the end of the file :D +
 
   /* **New** background color x blurry background */
   --sat-blurry-background: #0e0e0ed7;
+  --apps-blurry-backgroud: #181818cc;
   --sat-setting-bg-effect: rgba(24, 24, 24, 0.904);
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
@@ -249,6 +252,7 @@ the end of the file :D +
   --sat-setting-bg-color: #212427;
   /* **New** background color x blurry background */
   --sat-blurry-background: #212427d3;
+  --apps-blurry-backgroud: #282c31d7;
   --sat-setting-bg-effect: #262a2e;
   --sat-input-hover: #3e4349;
   --sat-search-bar-focus: #3e4349;
@@ -299,6 +303,7 @@ the end of the file :D +
   --sat-setting-bg-color: #282a36;
   /* **New** background color x blurry background */
   --sat-blurry-background: #282a36d5;
+  --apps-blurry-backgroud: #343644d5;
   --sat-setting-bg-effect: #323442;
   --sat-input-hover: #606581;
   --sat-search-bar-focus: #44485c;
@@ -346,6 +351,7 @@ the end of the file :D +
   --sat-setting-bg-color: #2e3440;
   /* **New** background color x blurry background */
   --sat-blurry-background: #2e3440d7;
+  --apps-blurry-backgroud: #3b4252d0;
   --sat-setting-bg-effect: #3b4252;
   --sat-input-hover: #434c5e;
   --sat-search-bar-focus: #515b71;
@@ -391,6 +397,7 @@ the end of the file :D +
   --sat-setting-bg-color: #11141b;
   /* **New** background color x blurry background */
   --sat-blurry-background: #11141bd8;
+  --apps-blurry-backgroud: #272b33d0;
   --sat-setting-bg-effect: #272b33;
   --sat-input-hover: #3a404d;
   --gudmrning-txt: linear-gradient(to right, #409eff 0%, #5baaf8 100%);
@@ -435,6 +442,7 @@ the end of the file :D +
   --sat-setting-bg-color: #211f2a;
   /* **New** background color x blurry background */
   --sat-blurry-background: #211f2ad8;
+  --apps-blurry-backgroud: #2a2833d8;
   --sat-setting-bg-effect: #2f2c3b;
 
   --gudmrning-txt: linear-gradient(to right, #966fd6 0%, #5d2ea9 100%);
@@ -481,6 +489,7 @@ the end of the file :D +
   --sat-setting-bg-color: #ffffff;
   /* **New** background color x blurry background */
   --sat-blurry-background: #ffffffd8;
+  --apps-blurry-backgroud: #e7ecf0de;
   --sat-setting-bg-effect: #e7ecf0;
   --sat-border-radius: 15px;
   --gudmrning-txt: linear-gradient(to right, #0349b4 0%, #6fbeec 100%);
@@ -530,6 +539,7 @@ the end of the file :D +
   --sat-setting-bg-color: #190c17;
   /* **New** background color x blurry background */
   --sat-blurry-background: #190c17d8;
+  --apps-blurry-backgroud: #3e1c34d5;
   --sat-setting-bg-effect: #271324;
   --sat-input-hover: #271324;
   --sat-search-bar-focus: #271324;
@@ -578,6 +588,7 @@ the end of the file :D +
   --sat-setting-bg-color: #051d21;
   /* **New** background color x blurry background */
   --sat-blurry-background: #051d21d5;
+  --apps-blurry-backgroud: #0c3941d8;
   --sat-setting-bg-effect: #07292f;
   --sat-input-hover: #051d21;
   --sat-search-bar-focus: #051d21;
@@ -621,12 +632,13 @@ the end of the file :D +
 
   /* **New** background color x blurry background */
   --sat-blurry-background: #0e0e0ed7; /* Dark gray background with opacity */
+  --apps-blurry-backgroud: #181818d7;
   --sat-setting-bg-effect: rgba(24, 24, 24, 0.904);
   --sat-input-hover: #2b2b2b;
   --sat-search-bar-focus: #1f1f1f;
   --sat-tooltip-bg: #222222;
   --gudmrning-txt: linear-gradient(to right, #ff9f6d 0%, #e07b44 100%);
-  --sat-accent-color1: #00FF00; /* Green accent color */
+  --sat-accent-color1: #0bbe0b; /* Green accent color */
   --sat-accent-color-lighter: #f4b593aa;
   --bg-accent-color-lr: #ffa06d20;
   --bg-accent-color-lr-hover: #ffa06d3b;
