@@ -15,7 +15,7 @@ its supposed to.
 .search-bar {
   width: 100%;
   font-size: 1.3em;
-  padding: 20px 48px;
+  padding: 18px 48px;
   text-align: left;
   font-weight: 500;
   outline: none;
@@ -49,7 +49,7 @@ its supposed to.
   box-sizing: border-box;
   width: 55px;
   height: 55px;
-  margin-top: 4px;
+  margin-top: 2.5px;
 }
 
 .search-engine-logo:hover {
