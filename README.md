@@ -1,4 +1,9 @@
 ![Saturn-startpage](https://i.imgur.com/JkdwZMW.png)
+#### Regarding next update 
+- The next update is taking longer than expected due to some of the core source code being entirely rewritten, thus the next major update will be directly upgraded from v6 to v7.
+- I expect a small 6.5.0 release next week (16th June) that should include some minor fixes and minor new additions. 
+
+
 
 ## What's Saturn Startpage?
 Saturn Startpage is a fully open source, community build new-tab replacement. **Build with speed and user experience in mind**. Saturn was original build for myself but later on I decided to open source it.
