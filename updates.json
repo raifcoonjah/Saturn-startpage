@@ -3,6 +3,22 @@
     "{aa7b057d-721f-4ed8-ae73-563f767006ee}": {
       "updates": [
         {
+          "version": "7.2.0",
+          "update_link": "https://github.com/raifcoonjah/Saturn-startpage/releases/download/v7.2.0/saturn_startpage-7.2.0-an+fx.xpi"
+        },
+       {
+          "version": "7.1.0",
+          "update_link": "https://github.com/raifcoonjah/Saturn-startpage/releases/download/v7.1.0/saturn_startpage-7.1.0-an+fx.xpi"
+        },
+        {
+          "version": "7.0.0",
+          "update_link": "https://github.com/raifcoonjah/Saturn-startpage/releases/download/v7.0.0/saturn_startpage-7.0.0-an+fx.xpi"
+        },
+        {
+          "version": "6.4.0",
+          "update_link": "https://github.com/raifcoonjah/Saturn-startpage/releases/download/v6.4.0/saturn_startpage-6.4.0-an+fx.xpi"
+        },
+        {
           "version": "6.3.1",
           "update_link": "https://github.com/mraif13/Saturn-startpage/releases/download/v6.3.1/saturn_startpage-6.3.1-an+fx.xpi"
         },
