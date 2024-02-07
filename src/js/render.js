@@ -13,12 +13,12 @@ const settingAbout = (z) => {
               <p style="text-align:center;font-size:23px;" class="settings-item-title">Saturn Startpage</p>
             <p style="text-align:center;margin-top:-15px;">
             <a  href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
-            <p style="color:red;text-align:center;">
+<!--            <p style="color:red;text-align:center;">
             You are running a beta build of Saturn Startpage. If you experience any bugs please report them :D
-            </p>
+            </p> -->
             <p style="text-align:center;"> 
             <a class="version-text green_background" href="https://github.com/raifcoonjah/Saturn-startpage/releases/" target="_blank"
-            >7.1.0.14012024</i></a>
+            >7.2.0</i></a>
              </p>
               <div class="socials">
                 <div class="aboutwidgets">
@@ -56,20 +56,47 @@ const settingAbout = (z) => {
             >Release notes</i></a>
           </p>
 
-          <ul>
-          <h2>## title </h2>
+          <h2>7.2</h2>
 
-          <h3>## title</h3>
-          <li>
-content
-          </li>
-          <li>
-          </li>
-          <h3> ## title</h3>
-          <li>
-          content
-          </li>
+          <h3>Rewritten apps list</h3>
+          <ul>
+            <li>The apps list/apps shortcut has been completely rewritten from scratch with a completely new modernized backend that is now 100% JavaScript-based. We are no longer rendering HTML code from JavaScript.</li>
+            <li>The design has also been tweaked slightly with some brand new animations, better scalability on smaller screens, and other minor changes.</li>
+            <li>Most of the CSS code has been updated to modern standards.</li>
+            <li>A future update will add blur.</li>
           </ul>
+          
+          <h3>New default font</h3>
+          <ul>
+            <li>Updated default font to Kanit for a contemporary and polished appearance.</li>
+            <li>This change removed tons of unused font files, reducing overall size of the extension.</li>
+            <li>Bumped font version from v7 -> v15.</li>
+          </ul>
+          
+          <h3>Bug fixes:</h3>
+          <ul>
+            <li>Fix theme size inconsistency.</li>
+            <li>Compress theme-icon to fix lag. (Decrease extension size by 500KB)</li>
+            <li>Fix favorites long title bug, it is now limited to 25 characters.</li>
+            <li>Fix removebtn hover effect not showing.</li>
+            <li>Fix version number snippet.</li>
+            <li>Fix processing_bg incorrect position creating user confusion.</li>
+            <li>Fix default search icon not being used.</li>
+            <li>Fix apps list on small screen.</li>
+            <li>Other various bug fixes and stability improvements.</li>
+          </ul>
+          
+          <h3>Performance and others</h3>
+          
+          <ul>
+            <li>Added "ttl" parameter to favorites icon (unavatar.io): This parameter sets after how much time the icon should be refreshed and recached. The default is 24h, this commit increases this value to 28 days instead, reducing the amount of time the icons should be fetched from some unavatar.io servers.</li>
+            <li>Note: This change will only apply to new favorites icons only.</li>
+            <li>Focus icons now use lazy loading.</li>
+            <li>Reduce username input bar size.</li>
+            <li>All switches now use a smaller, more compact design.</li>
+            <li>Several performance improvements.</li>
+          </ul>
+          
 </div>`);
 };
 

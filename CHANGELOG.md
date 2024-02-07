@@ -20,6 +20,7 @@ Bug fixes:
 - Fix processing_bg incorrect position creating user confusion. 
 - Fix default search icon not being used.
 - Fix apps list on small screen. 
+- Other various bug fixes and stability improvements.
 
 Performance and others
 - Added "ttl" parameter to favorites icon (unavatar.io): 
@@ -31,3 +32,4 @@ Note: This change will only apply to new favorites icons only.
 - Focus icons now use lazy loading.
 - Reduce username input bar size. 
 - All switches now use a smaller more compact design
+- Several performance improvements. 
