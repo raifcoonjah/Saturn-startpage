@@ -17,6 +17,9 @@ $(document).ready(function () {
 
   // Add new link
   $("#add").click(function () {
+    // Limit title to 15 characters
+    var truncatedTitle = $title.val().substring(0, 25);
+
     // Add new item
     $("#fav-link").append(
       '<li class="fav-link"><a href="' +
@@ -24,11 +27,11 @@ $(document).ready(function () {
         '">' +
         '<img loading="lazy" src="' +
         "https://unavatar.io/" +
-        $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") + // Removes https, http from URL.
+        $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") + "?ttl=28d" + // Icon refresh date to 28days to refresh contant requests.
         "?fallback=https://source.boringavatars.com/pixel/120/1337_user?colors=242424,2D2D2D,4A4E4A,242424,02060A" +
         '"/>' +
         " " +
-        $title.val() +
+        truncatedTitle +
         "</a>" +
         '<button class="removebtn" title="Delete favorite..."><i class="las la-trash-alt"></i></button>' +
         '<a class="hide_fav_bar" target="_blank" href="' +
@@ -53,6 +56,7 @@ $(document).ready(function () {
     localStorage.setItem("vk-links", $ul.html());
   });
 });
+
 
 // ========
 // + FAVORITES Search [BETA] v2.0-cheesecake +
