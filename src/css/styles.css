@@ -15,7 +15,7 @@ its supposed to.
 .search-bar {
   width: 100%;
   font-size: 1.3em;
-  padding: 20px 48px;
+  padding: 18px 48px;
   text-align: left;
   font-weight: 500;
   outline: none;
@@ -49,7 +49,7 @@ its supposed to.
   box-sizing: border-box;
   width: 55px;
   height: 55px;
-  margin-top: 4px;
+  margin-top: 2.5px;
 }
 
 .search-engine-logo:hover {
@@ -176,8 +176,8 @@ its supposed to.
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 25px;
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
@@ -208,13 +208,14 @@ its supposed to.
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  right: 3px;
+  bottom: 3px;
   background-color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 input:checked + .slider {
@@ -250,25 +251,30 @@ input:checked + .slider:before {
 + App list v2.5 +
 ========
 */
-
-#apps {
-  margin-bottom: 15px;
-  margin-top: 20px;
-  width: 104%;
-  align-items: left;
-}
-
 .app {
-  margin: 5px 2px;
-  padding: 15px 45px;
+  margin: 4px;
+  padding: 14px 43px;
   border-radius: 20px;
   border: 3px solid transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  right: 1%;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.app:hover {
+  background-color: var(--sat-accent-color1);
+
 }
 
 .app i {
   font-size: 2.3rem;
   right: 100%;
 }
+
 /* 
 ========
 + Apps list & apps text +
@@ -277,10 +283,13 @@ input:checked + .slider:before {
 .app {
   position: relative;
   display: inline-block;
+  border:3px solid transparent;
+  background:var(--apps-blurry-backgroud);
+  backdrop-filter: blur(5px); /* Apply blur when open */
 }
 
 .app span {
-  font-size: 16px;
+  font-size: 15.3px;
   font-weight: 600;
   margin: 0;
   position: absolute;
@@ -346,6 +355,7 @@ input:checked + .slider:before {
   margin: -1.5px;
   border-radius: 13px;
   height: 4.3rem;
+  width: 8.3rem;
   margin-bottom: 0.1px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -419,7 +429,7 @@ div.theme-container {
 .username-section input {
   background-color: var(--lighter-color);
   padding: 12px;
-  width: 100%;
+
 }
 
 /* 
@@ -494,10 +504,6 @@ div.theme-container {
 + Apps List Category +
 ========
 */
-.apps-category {
-  margin-top: 20px;
-  margin: 0px;
-}
 
 ul.apps-category {
   padding: 0px;
@@ -505,12 +511,13 @@ ul.apps-category {
 }
 
 ul.apps-category li {
-  font-size: 16px;
+  font-size: 15.5px;
   background: none;
   display: inline-block;
   padding: 7px 10px;
-  cursor: pointer;
+  cursor: default;
   border-radius: var(--sat-border-radius);
+  transition: all 0.3s ease;
 }
 
 ul.apps-category li:hover {
@@ -1134,6 +1141,8 @@ appearing when the user hovers on the open in new tab button.
 }
 
 /* Give report bug a red accent */
+
+.removebtn:hover,
 .dropdown_redaccent:hover {
   background-color: #d752521e !important;
   color: var(--delete-warning-bg) !important;

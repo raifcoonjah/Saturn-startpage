@@ -9,81 +9,62 @@
 /* 
 ========
 + Fonts +
-+ We're loading all fonts locally to reduce the 
-amount of time saturn takes to load +
-+ Last updated: 11.10.2021 +
++ Loading fonts locally to enable offline support + reduce speed +
++ Last updated: 14.01.2024 +
 ========
 */
-
-/* inter-300 - latin */
+/* kanit-regular - latin */
 @font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  src: local(""), url("/assets/fonts/inter-v7-latin-300.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/fonts/inter-v7-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* inter-regular - latin */
-@font-face {
-  font-family: "Inter";
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 400;
-  src: local(""),
-    url("/assets/fonts/inter-v7-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/fonts/inter-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/kanit-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-500 - latin */
+/* kanit-500 - latin */
 @font-face {
-  font-family: "Inter";
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 500;
-  src: local(""), url("/assets/fonts/inter-v7-latin-500.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/fonts/inter-v7-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/kanit-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-600 - latin */
+/* kanit-600 - latin */
 @font-face {
-  font-family: "Inter";
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 600;
-  src: local(""), url("/assets/fonts/inter-v7-latin-600.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/fonts/inter-v7-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/kanit-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-700 - latin */
+/* kanit-700 - latin */
 @font-face {
-  font-family: "Inter";
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("/assets/fonts/inter-v7-latin-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/fonts/inter-v7-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/kanit-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-800 - latin */
+/* kanit-800 - latin */
 @font-face {
-  font-family: "Inter";
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 800;
-  src: local(""), url("/assets/fonts/inter-v7-latin-800.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/fonts/inter-v7-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/kanit-v15-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-900 - latin */
+/* kanit-900 - latin */
 @font-face {
-  font-family: "Inter";
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("/assets/fonts/inter-v7-latin-900.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/fonts/inter-v7-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/kanit-v15-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* 
@@ -519,7 +500,6 @@ img {
 }
 
 .setting-button,
-.app,
 .cuteapps,
 .removebtn {
   background: var(--sat-search-shortcuts);
@@ -553,16 +533,6 @@ color to fix some issues == */
 .setting-button:hover,
 .app:hover {
   color: var(--for-white);
-}
-
-.app {
-  border: 3px solid transparent;
-  background: var(--sat-search-shortcuts);
-}
-
-.app:hover {
-  border: 3px solid transparent;
-  background-color: var(--sat-accent-color1);
 }
 
 .closebtn:hover {
@@ -711,7 +681,7 @@ use the correct border radius == */
   background-color: var(--sat-blurry-background);
   position: fixed;
   right: -100%;
-  top: 0;
+  top: 0;  box-shadow: 0 0 10px var( --sat-accent-color1);
   transition: right 0.3s ease-in-out;
   z-index: 999;
   box-shadow: 0 2px 10px rgba(17, 17, 17, 0.822);
@@ -757,6 +727,7 @@ use the correct border radius == */
   background-color: var(--bg-accent-color-lr);
   transition: 0.2s ease-in-out;
   border: 1px solid var(--sat-accent-color1);
+  box-shadow: 0 0 8px var( --bg-accent-color-lr-hover);
 }
 
 .settings-tab-item:hover {
@@ -802,8 +773,19 @@ Optimize sidebar for mobile (Beta)
     font-size: 0px;
   }
   
-  
   .setting-content {
     padding: 10px;
+  }
+  .app {
+    padding: 10px 20px !important; 
+    margin-bottom: -10px !important;
+  }
+
+  .app i {
+    font-size: 2rem !important;
+    right: -0px !important;
+  }
+  .app span {
+    visibility: hidden !important;
   }
 }
