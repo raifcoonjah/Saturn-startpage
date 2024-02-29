@@ -165,12 +165,12 @@ const render_in_js = (x, z, ks, cu) => {
   //   appsList(apps_list);
   // });
 
-  // Load after 1.5 since the user won't see this page until they open settings.
+  // Load after 1.9 since the user won't see this page until they open settings.
   // Currently the time is set according to my tests but can adjusted in the future if needed.
   loader_delay = setTimeout(function () {
     settingAbout(setting_about);
     kShortcuts(kshortcuts);
-  }, 1500);
+  }, 1900);
 };
 
 window.onload = render_in_js();
