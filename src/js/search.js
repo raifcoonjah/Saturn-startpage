@@ -16,7 +16,7 @@ const search_engines = [
   {
     src: "duckduckgo.svg",
     placeholder: "DuckDuckGo",
-    action: "https://www.duckduckgo.com/",
+    action: "https://duckduckgo.com/?q=",
   },
   {
     src: "reddit.svg",
