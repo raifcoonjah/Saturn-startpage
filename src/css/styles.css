@@ -49,11 +49,11 @@ its supposed to.
   box-sizing: border-box;
   width: 55px;
   height: 55px;
-  margin-top: 2.5px;
+  margin-top: 7px;
 }
 
 .search-engine-logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .search-bar:hover {
