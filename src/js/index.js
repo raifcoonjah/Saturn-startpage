@@ -119,6 +119,7 @@ $(function () {
   } else {
     $(".search_block").css("display", "block");
     $(".hide-search").attr("checked", false);
+    localStorage.removeItem("search_hidden"); // Remove the entry from localStorage
   }
   $(".hide-search").click(function () {
     if (this.checked) {
