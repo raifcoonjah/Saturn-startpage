@@ -73,7 +73,7 @@ const kShortcuts = (ks) => {
   $(ks).append(`<div class="settings-background">
             <p class="settings-item-title">Keyboard Shortcuts</p>
             <p class="settings-item-under-title description">Empower your workflow with keyboard shortcuts.</p>
-            <div class="settings-background">
+            <div class="settings-background keyboard_shortcuts">
               <p class="dropdown-seperator settings-seperator">
                 <span>General</span>
               </p>
