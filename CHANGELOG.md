@@ -1,3 +1,10 @@
+## 7.2.1</h2>
+
+- Fix default fonts not loading and the browser defaulting to sans-serif.
+ - Fix search icon position
+ - Fix duckduckgo search URI
+ - If no favorites are stored instead of keeping the "vk-link" variable in localstorage, on the next reload it will be removed.
+
 ### 7.2
 
 # Rewritten apps list 
