@@ -9,25 +9,21 @@
                                                          |_|          |___/                                                    
 -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>New Tab</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
 
     <!-- =+=+= All the CSS needed to make Saturn Work =+=+= -->
     <link rel="stylesheet" href="./src/css/core.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
-    <link rel="stylesheet" href="./src/css/anim.css" />
-    <link rel="stylesheet" href="./src/css/custom.css" />
     <link rel="stylesheet" href="./src/css/themes.css" />
-    <link rel="stylesheet" href="assets/icons/css/line-awesome.min.css" />
-    <link rel="stylesheet" href="./src/css/tootik.min.css" />
-
-    <!-- =+=+= jQuery [v3.7.0] =+=+= -->
+    <!-- Import Bulma.css -->
+    <link rel="stylesheet" href="./src/bulma/bulma.min.css" />
     <script src="./src/js/jquery.js"></script>
   </head>
 
@@ -44,40 +40,31 @@
 
     <main>
       <!-- =+=+= Saturn Search =+=+= -->
-
-        <div class="full">
-          <div class="search_block">
-            <form
-              id="search_eng_form"
-              method="get"
-              action="https://www.google.com/search"
-            >
-              <a
-                href="javascript:void(0)"
-                class="search-engine-logo"
-                id="se_button"
-              >
-                <img
-                  id="se_icon"
-                  src="/assets/icons/search.svg"
-                  alt="Search engine logo"
-                  class="se_icon"
-                  title="Change search engine.. (Ctrl + Arrow Up)"
-                />
-              </a>
-
-              <input
-                class="search-bar"
-                type="search"
-                id="search"
-                placeholder="Search with Google.."
-                autocomplete="off"
-                name="q"
-                title="Click to search (Ctrl + /)"
+      <div class="full">
+        <div class="search_block">
+          <form id="search_eng_form" method="get" action="https://www.google.com/search">
+            <a href="javascript:void(0)" class="search-engine-logo" id="se_button">
+              <img
+                id="se_icon"
+                src="/assets/icons/search.svg"
+                alt="Search engine logo"
+                class="se_icon"
+                title="Change search engine.. (Ctrl + Arrow Up)"
               />
-            </form>
-          </div>
+            </a>
+            <input
+              class="search-bar"
+              type="search"
+              id="search"
+              placeholder="Search with Google.."
+              autocomplete="off"
+              name="q"
+              title="Click to search (Ctrl + /)"
+            />
+          </form>
         </div>
+      </div>
+      
       <div class="minimalistic-ui">
         <div class="dropdown" style="float: right">
           <button class="dropbtn"><i class="las la-ellipsis-h"></i></button>
@@ -416,17 +403,6 @@
                 <input type="checkbox" class="hide-search" />
                 <span class="slider round"></span>
               </label>
-            </div>
-            <!-- =+=+= HT: Options2 =+=+=-->
-            <h3>Minimalistc Interface</h3>
-
-            <label class="switch">
-              <input type="checkbox" id="toggle_minimalistic_mode" />
-              <span class="slider round"></span>
-            </label>
-            <span class="description"
-              >Tip: Press Shift + S to reopen settings.</span
-            >
             </div>
           </div>
           <div id="tab3" class="tab-pane slide-right-fade-in">
