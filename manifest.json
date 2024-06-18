@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Saturn Startpage",
   "short_name": "saturnstartpage",
   "version": "7.2.1",
@@ -9,12 +9,17 @@
   "icons": {
     "64": "/assets/img/icon64.png"
   },
-  "chrome_url_overrides": {
-    "newtab": "index.html"
+
+  "action": {
+    "default_popup": "index.html"
   },
 
   "chrome_settings_overrides": {
     "homepage": "index.html"
+  },
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
   },
 
   "browser_specific_settings": {
@@ -25,5 +30,7 @@
   },
 
   "permissions": ["storage"],
-  "content_security_policy": "script-src; object-src 'self';"
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
 }
