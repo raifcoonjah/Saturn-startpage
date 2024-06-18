@@ -354,35 +354,6 @@ if (localStorage.getItem("browser_font")) {
   document.querySelector("body").style.fontFamily = "sans-serif";
 }
 
-// Minimalistic UI
-
-const minimalisticButton = document.querySelector("#toggle_minimalistic_mode");
-const minimalisticUi = document.querySelector(".minimalistic-ui");
-const satHeader = document.querySelector(".sat-header");
-
-minimalisticButton.addEventListener("click", () => {
-  if (minimalisticButton.checked) {
-    minimalisticUi.style.display = "none";
-    satHeader.style.paddingTop = "30vh";
-    satHeader.style.fontSize = "23px";
-    localStorage.setItem("minimalisticUiDisplay", "none");
-  } else {
-    location.reload();
-    localStorage.removeItem("minimalisticUiDisplay");
-  }
-});
-
-const minimalisticCheck = localStorage.getItem("minimalisticUiDisplay");
-if (minimalisticCheck) {
-  minimalisticUi.style.display = minimalisticCheck;
-  minimalisticButton.checked = minimalisticCheck === "none";
-
-  if (minimalisticUi.style.display === "none") {
-    satHeader.style.paddingTop = "30vh";
-    satHeader.style.fontSize = "23px";
-  }
-}
-
 document.getElementById("open_settings").addEventListener("click", function () {
   document.querySelector(".sidebar").classList.toggle("open");
 });
