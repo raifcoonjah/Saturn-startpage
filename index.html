@@ -9,25 +9,21 @@
                                                          |_|          |___/                                                    
 -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>New Tab</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
 
     <!-- =+=+= All the CSS needed to make Saturn Work =+=+= -->
     <link rel="stylesheet" href="./src/css/core.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
-    <link rel="stylesheet" href="./src/css/anim.css" />
-    <link rel="stylesheet" href="./src/css/custom.css" />
     <link rel="stylesheet" href="./src/css/themes.css" />
-    <link rel="stylesheet" href="assets/icons/css/line-awesome.min.css" />
-    <link rel="stylesheet" href="./src/css/tootik.min.css" />
-
-    <!-- =+=+= jQuery [v3.7.0] =+=+= -->
+    <!-- Import Bulma.css -->
+    <link rel="stylesheet" href="./src/bulma/bulma.min.css" />
     <script src="./src/js/jquery.js"></script>
   </head>
 
@@ -44,40 +40,31 @@
 
     <main>
       <!-- =+=+= Saturn Search =+=+= -->
-
-        <div class="full">
-          <div class="search_block">
-            <form
-              id="search_eng_form"
-              method="get"
-              action="https://www.google.com/search"
-            >
-              <a
-                href="javascript:void(0)"
-                class="search-engine-logo"
-                id="se_button"
-              >
-                <img
-                  id="se_icon"
-                  src="/assets/icons/search.svg"
-                  alt="Search engine logo"
-                  class="se_icon"
-                  title="Change search engine.. (Ctrl + Arrow Up)"
-                />
-              </a>
-
-              <input
-                class="search-bar"
-                type="search"
-                id="search"
-                placeholder="Search with Google.."
-                autocomplete="off"
-                name="q"
-                title="Click to search (Ctrl + /)"
+      <div class="full">
+        <div class="search_block">
+          <form id="search_eng_form" method="get" action="https://www.google.com/search">
+            <a href="javascript:void(0)" class="search-engine-logo" id="se_button">
+              <img
+                id="se_icon"
+                src="/assets/icons/search.svg"
+                alt="Search engine logo"
+                class="se_icon"
+                title="Change search engine.. (Ctrl + Arrow Up)"
               />
-            </form>
-          </div>
+            </a>
+            <input
+              class="search-bar"
+              type="search"
+              id="search"
+              placeholder="Search with Google.."
+              autocomplete="off"
+              name="q"
+              title="Click to search (Ctrl + /)"
+            />
+          </form>
         </div>
+      </div>
+      
       <div class="minimalistic-ui">
         <div class="dropdown" style="float: right">
           <button class="dropbtn"><i class="las la-ellipsis-h"></i></button>
@@ -107,16 +94,16 @@
             <li class="tab-link current" data-tab="app-1">
               <i class="lar la-grin-hearts"></i> <span>Most used</span>
             </li>
-            <li class="tab-link relaxation_focus_mode" data-tab="app-2">
+            <li class="tab-link" data-tab="app-2">
               <i class="las la-graduation-cap"></i> <span>Education</span>
             </li>
             <li
-              class="tab-link study_focus_mode programming_focus_mode"
+              class="tab-link"
               data-tab="app-3"
             >
               <i class="las la-share-alt"></i> <span>Social media</span>
             </li>
-            <li class="tab-link study_focus_mode" data-tab="app-4">
+            <li class="tab-link" data-tab="app-4">
               <i class="las la-play-circle"></i> <span>Multimedia</span>
             </li>
           </ul>
@@ -238,9 +225,6 @@
           </li>
           <li class="settings-tab-item" data-tab="tab3">
             <i class="las la-palette"></i> Themes
-          </li>
-          <li class="settings-tab-item" data-tab="tab4">
-            <i class="las la-cloud-moon"></i> Focus
           </li>
           <li class="settings-tab-item" data-tab="tab5">
             <i class="las la-info-circle"></i> About
@@ -432,79 +416,6 @@
               </div>
              </div>
             </div>
-          <!-- ==== Focus tab ==== -->
-          <div id="tab4" class="tab-pane slide-right-fade-in">
-            <div class="settings-background">
-              <h3><i class="las la-cloud-moon"></i> Saturn focus</h3>
-              <p class="description">Pick Your Focus and Let's Get Started.</p>
-              <p class="focus_mode_icons">
-                <img loading="lazy" src="/assets/icons/focus/study.svg" />
-                Focus for studying
-              </p>
-              <div class="focus_ui study">
-                <label>
-                  <input
-                    class="study_focus focus_status"
-                    type="checkbox"
-                  /><span>Studying <i class="las la-angle-right"></i> </span>
-                </label>
-              </div>
-
-              <br />
-              <p class="line"></p>
-              <p class="focus_mode_icons">
-                <img loading="lazy" src="/assets/icons/focus/programming.svg" />
-                Focus for programming
-              </p>
-
-              <div class="focus_ui programming">
-                <label>
-                  <input class="programming_focus" type="checkbox" /><span
-                    >Programming <i class="las la-angle-right"></i
-                  ></span>
-                </label>
-              </div>
-
-              <br />
-              <p class="line"></p>
-              <p class="focus_mode_icons">
-                <img loading="lazy" src="/assets/icons/focus/relax.svg" />
-                Focus for relaxation
-              </p>
-              <div class="focus_ui relaxation">
-                <label>
-                  <input class="relaxation_focus" type="checkbox" /><span
-                    >Relaxation <i class="las la-angle-right"></i
-                  ></span>
-                </label>
-              </div>
-              <br />
-              <p class="dropdown-seperator settings-seperator">
-                <span>What's Saturn focus?</span>
-              </p>
-              <p class="description">
-                Saturn Focus keeps you in the moment when concentration is essential. 
-                Through predefined settings, it hides certain home screen elements to enhance your focus.
-              </p>
-            </div>
-            <p class="settings-item-title">Minimalistic Interface (Beta)</p>
-            <p class="settings-item-under-title description">
-              Enabling the Minimalistic Interface will conceal most home screen elements. 
-              To access your favorites or use app shortcuts, simply disable this feature or utilize shortcuts.
-            </p>
-            <div class="settings-background">
-              <!-- =+=+= HT: Options2 =+=+=-->
-              <h3>Minimalistc Interface</h3>
-
-              <label class="switch">
-                <input type="checkbox" id="toggle_minimalistic_mode" />
-                <span class="slider round"></span>
-              </label>
-              <span class="description"
-                >Tip: Press Shift + S to reopen settings.</span
-              >
-            </div>
-          </div>
           <div id="tab5" class="tab-pane slide-right-fade-in">
             <div id="setting_about"></div>
             <div id="k_shortcuts"></div>
@@ -537,8 +448,6 @@
       <script type="text/javascript" src="./src/js/quote.js"></script>
       <!-- THEMES JS - File -->
       <script type="text/javascript" src="./src/js/themes.js"></script>
-      <!-- FOCUS JS - File -->
-      <script type="text/javascript" src="./src/js/focus.js"></script>
       <script type="text/javascript" src="./src/js/keyboard.js"></script>
       <script type="text/javascript" src="./src/js/applist.js"></script>
     </main>
