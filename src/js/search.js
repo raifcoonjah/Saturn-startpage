@@ -16,7 +16,7 @@ const search_engines = [
   {
     src: "duckduckgo.svg",
     placeholder: "DuckDuckGo",
-    action: "https://www.duckduckgo.com/",
+    action: "https://duckduckgo.com/?q=", // Update URI to fix looping bug.
   },
   {
     src: "reddit.svg",
