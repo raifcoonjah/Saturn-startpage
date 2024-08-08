@@ -168,91 +168,76 @@ document.querySelector("#save").addEventListener("click", function () {
 //
 // ========
 // + *New* Wallpaper Feature +
+// + v2 +
 // ========
 //
+const imageUrlInput = document.querySelector("#image_url");
+const processingBg = document.querySelector(".processing_bg");
+const background_body = document.querySelector("body");
+const inputFile = document.getElementById("imageupload");
 
-document.querySelector("#save-image").addEventListener("click", function () {
-  var imageUrl = document.querySelector("#image_url");
-  var processingBg = document.querySelector(".processing_bg");
-  var imageUrlValue = imageUrl.value;
-  if (imageUrlValue == "") {
+document.querySelector("#save-image").addEventListener("click", () => {
+  const imageUrlValue = imageUrlInput.value.trim();
+  if (!imageUrlValue) {
     processingBg.innerHTML =
-      '<i class="las la-exclamation-triangle"></i>' + " URL cannot be empty";
-  } else {
-    processingBg.innerHTML =
-      '<i class="las la-check-circle"></i>' + " Background applied ";
-    localStorage.setItem("image_url", imageUrlValue);
-    localStorage.removeItem("imageupload");
-    body.style.backgroundImage = "url(" + imageUrlValue + ")";
+      '<i class="las la-exclamation-triangle"></i> Please enter a valid URL.';
+    return;
   }
+  processingBg.innerHTML =
+    '<i class="las la-check-circle"></i> Background image has been successfully applied!';
+  localStorage.setItem("image_url", imageUrlValue);
+  localStorage.removeItem("imageupload");
+  body.style.backgroundImage = `url(${imageUrlValue})`;
 });
 
-// up-load image
-const input = document.getElementById("imageupload");
-const processingBg = document.querySelector(".processing_bg");
-
-input.addEventListener("change", (event) => {
+// Upload Image and Set as Background
+inputFile.addEventListener("change", (event) => {
   const image = event.target.files[0];
-  const imageSize = image.size / 1024 / 1024;
-  if (imageSize >= 4) {
+
+  if (image.size / 1024 / 1024 >= 4) {
     processingBg.innerHTML =
-      '<span style="color:var(--delete-warning-bg)"> <i class="las la-exclamation-circle"></i>' +
-      " Error, this image is above 4MB in size. ";
-    +"</span>";
+      '<span style="color:var(--delete-warning-bg)"><i class="las la-exclamation-circle"></i> The selected image exceeds 4MB. Please choose a smaller file.</span>';
     return;
   }
 
   processingBg.innerHTML =
-    '<i class="las la-check-circle"></i>' + " Background applied ";
-  localStorage.removeItem("imageupload");
+    '<i class="las la-check-circle"></i> Image uploaded and set as background successfully!';
   localStorage.removeItem("image_url");
 
   const reader = new FileReader();
-  reader.readAsDataURL(image);
   reader.onload = () => {
     localStorage.setItem("imageupload", reader.result);
-    body.style.backgroundImage = "url(" + reader.result + ")";
+    body.style.backgroundImage = `url(${reader.result})`;
   };
+  reader.readAsDataURL(image);
 });
-// grab and set as background ;)
-if (localStorage.getItem("imageupload")) {
-  document.querySelector("body").style.backgroundImage =
-    "url(" + localStorage.getItem("imageupload") + ")";
+
+// Set Background from LocalStorage
+const savedImageUpload = localStorage.getItem("imageupload");
+const savedImageUrl = localStorage.getItem("image_url");
+
+if (savedImageUpload) {
+  background_body.style.backgroundImage = `url(${savedImageUpload})`;
+} else if (savedImageUrl) {
+  background_body.style.backgroundImage = `url(${savedImageUrl})`;
 }
 
-//
-// ========
-// + *New* Apply URL to body +
-// ========
-//
-if (localStorage.getItem("image_url")) {
-  document.querySelector("body").style.backgroundImage =
-    "url(" + localStorage.getItem("image_url") + ")";
-}
-
-//
-// ========
-// + *New* Delete and clear image_url +
-// ========
-//
+// Delete Background
 document.querySelector("#delete_custom_image").addEventListener("click", () => {
-  const imageUrl = localStorage.getItem("image_url");
-  const imageUpload = localStorage.getItem("imageupload");
-
-  if (!imageUrl && !imageUpload) {
-    document.querySelector(".processing_bg").innerHTML =
-      '<i class="las la-exclamation-circle"></i> No background found ';
+  if (!savedImageUpload && !savedImageUrl) {
+    processingBg.innerHTML =
+      '<i class="las la-exclamation-circle"></i> No custom background found to delete.';
     return;
   }
 
-  if (confirm("Delete background?")) {
+  if (confirm("Are you sure you want to remove the current background image?")) {
     localStorage.removeItem("image_url");
     localStorage.removeItem("imageupload");
-    document.querySelector("body").style.backgroundImage = "";
-    document.querySelector("#image_url").style.width = "100%";
+    body.style.backgroundImage = "";
+    imageUrlInput.style.width = "100%";
     document.querySelector("#copy-backgroundurl").style.display = "none";
-    document.querySelector(".processing_bg").innerHTML =
-      '<i class="las la-check-circle"></i> Background removed ';
+    processingBg.innerHTML =
+      '<i class="las la-check-circle"></i> Background image has been removed.';
   }
 });
 
