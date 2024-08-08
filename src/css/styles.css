@@ -477,7 +477,6 @@ div.theme-container {
   font-size: 14px;
   border-radius: 13px;
   margin-right: 10px;
-  width: 35%;
 }
 
 .favorites-search {
@@ -1119,7 +1118,7 @@ appearing when the user hovers on the open in new tab button.
   position: absolute;
   right: 0;
   background-color: var(--sat-setting-bg-color);
-  min-width: 195px;
+  min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-size: 15px;
@@ -1130,7 +1129,7 @@ appearing when the user hovers on the open in new tab button.
 .dropdown-content a {
   color: var(--sat-ids);
   border-radius: 10px;
-  padding: 6px 6px;
+  padding: 9px 9px;
   text-decoration: none;
   display: block;
   cursor: default !important;
@@ -1138,14 +1137,6 @@ appearing when the user hovers on the open in new tab button.
   font-size: 14px;
   margin: 3px;
   cursor: pointer !important;
-}
-
-/* Give report bug a red accent */
-
-.removebtn:hover,
-.dropdown_redaccent:hover {
-  background-color: #d752521e !important;
-  color: var(--delete-warning-bg) !important;
 }
 
 .dropdown-content kbd {
@@ -1244,25 +1235,8 @@ appearing when the user hovers on the open in new tab button.
   color: var(--sat-accent-color1);
 }
 
-/* Favorites input title */
-.fav_title {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-.button-container {
-  padding-top: 10px;
-}
 .sat-header {
   padding-top: 100px;
-}
-
-label span {
-  font-size: 16px;
-}
-
-.connection_status {
-  display: none;
 }
 
 /* 
@@ -1295,10 +1269,6 @@ input[type="file"]::file-selector-button:hover {
   background: var(--sat-accent-color-lighter);
 }
 
-/* Fix favorites header bug by applying margin */
-.fix-favorites-header {
-  margin-top: 20px !important;
-}
 
 /* 
 ========
@@ -1318,7 +1288,7 @@ input[type="file"]::file-selector-button:hover {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   background-color: var(--sat-setting-bg-color);
-  z-index: 9999;
+  z-index: 9999; /* Appear always on top */
 }
 
 /* Define a "hidden" class to hide the popup */
