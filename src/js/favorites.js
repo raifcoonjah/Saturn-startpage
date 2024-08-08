@@ -1,6 +1,6 @@
 //
 // ========
-// + FAVORITES v1.79.0 +
+// + FAVORITES v1.80.0 +
 // Original Source: https://codepen.io/4gray/pen/glGun
 // Heavily modified and improve various things
 // ========
@@ -10,10 +10,13 @@ $(document).ready(function () {
   var $title = $("#title");
   var $url = $("#url");
 
-  // Get links from local storage
-  if (localStorage.getItem("vk-links")) {
-    $ul.html(localStorage.getItem("vk-links"));
-  }
+    // Get links from local storage
+    var storedLinks = localStorage.getItem("vk-links");
+    if (storedLinks) {
+      $ul.html(storedLinks);
+    } else {
+      localStorage.removeItem("vk-links"); // Remove the entry from localStorage
+    }
 
   // Add new link
   $("#add").click(function () {
@@ -102,3 +105,4 @@ document.getElementById("add").onclick = function () {
     );
   }, 3000);
 };
+
