@@ -10,13 +10,12 @@ $(document).ready(function () {
   var $title = $("#title");
   var $url = $("#url");
 
-    // Get links from local storage
-    var storedLinks = localStorage.getItem("vk-links");
-    if (storedLinks) {
-      $ul.html(storedLinks);
-    } else {
-      localStorage.removeItem("vk-links"); // Remove the entry from localStorage
-    }
+  var storedLinks = localStorage.getItem("vk-links");
+  if (storedLinks) {
+    $ul.html(storedLinks);
+  } else {
+    localStorage.removeItem("vk-links");
+  }
 
   // Add new link
   $("#add").click(function () {
@@ -30,7 +29,7 @@ $(document).ready(function () {
         '">' +
         '<img loading="lazy" src="' +
         "https://unavatar.io/" +
-        $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") + "?ttl=28d" + // Icon refresh date to 28days to refresh contant requests.
+        $url.val().replace(/^\/\/|^.*?:(\/\/)?/, "") + "?ttl=28d" + // increase refresh value to 28 days
         "?fallback=https://source.boringavatars.com/pixel/120/1337_user?colors=242424,2D2D2D,4A4E4A,242424,02060A" +
         '"/>' +
         " " +
