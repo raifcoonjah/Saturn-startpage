@@ -45,12 +45,13 @@ const settingAbout = (z) => {
         <li> - Remove "myNoise" from dropdown menu </li>
         <li> - If no <code>vk-links</code> are stored in session, the value will be cleared on next reload </li>
         <li> - <b>BREAKING</b>: Remove focus mode due to unstable code base. </li>
+        <li> - <b>BREAKING</b>: Deprecated css elements <a href="https://github.com/raifcoonjah/Saturn-startpage/commit/6cc91a48ef2777d4fbbb16d173d57de953efbf96">6cc91a4</a>
         <li> - Clean up and tweaked dropdown menu style. </li>
         <li> - Improve several aspects of the <code>Background</code> feature. Both the UI and backend received several bug fixes.</li>
         <li> - Settings received a much needed clean up and a big boost in performance. Things should feel super smooth and fast. </li>
         <li> - Improve the user experience for several descriptions in settings. </li>
-        <li> - Replace buggy settings <code>slide-right-fade-in</code> animation with Fade-In. </li>
         <li> - Simplified transition animation when switching between different settings tab, this should result in a less buggy settings page.</li>
+        <li> - Completely switch all headers and descriptions in settings about page from old deprecated settings-item-* to what is used everywhere else </li>
       </ul>
     </div>
   `);
