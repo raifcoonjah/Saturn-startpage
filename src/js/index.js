@@ -266,17 +266,23 @@ if (localStorage.getItem("image_url") == null) {
 // ========
 //
 
-document.getElementById("reset_button").addEventListener("click", reset_data);
-function reset_data() {
-  if (confirm("⚠ Beep boop!? Are you sure you want to reset all your data?")) {
-    document.getElementById("reset_button").innerHTML =
-      "<img style='padding-bottom:10px;' class='loading-svg' src='/assets/img/loading-red.svg'> <span>Resetting...</span><span>Please wait!</span>";
+document.getElementById("reset_button").addEventListener("click", resetData);
+
+function resetData() {
+  const confirmationMessage = "⚠ Are you sure you want to reset all your data? This action cannot be undone.";
+  const isConfirmed = confirm(confirmationMessage);
+
+  if (isConfirmed) {
+    const resetButton = document.getElementById("reset_button");
+    resetButton.innerHTML = `
+      <img class="loading-svg" src="/assets/img/loading-red.svg" alt="Loading">
+      <span>Data erased. Reloading in 3 seconds...</span>
+    `;
     localStorage.clear();
-    setTimeout(function () {
-      location.reload();
-    }, 5000);
+    setTimeout(() => location.reload(), 3000);
   }
 }
+
 
 //
 // ========
@@ -406,26 +412,3 @@ function switchTab(event) {
 
 // Add click event listener to each tab item
 tabItems.forEach((item) => item.addEventListener("click", switchTab));
-
-
-/// TEMPORARY CODE TO NOTIFY USERS:
-// Function to check if the browser is Chromium-based
-function isChromiumBrowser() {
-  // Check for the presence of the 'chrome' object in the global window scope
-  return !!window.chrome;
-}
-
-// Function to show or hide the notification section
-function toggleNotificationSection(show) {
-  const notificationSection = document.getElementById('chromium-browser-support');
-  if (notificationSection) {
-    notificationSection.style.display = show ? 'block' : 'none';
-  }
-}
-
-// Check if the browser is Chromium-based and toggle the notification section accordingly
-if (isChromiumBrowser()) {
-  toggleNotificationSection(true);
-} else {
-  toggleNotificationSection(false);
-}
