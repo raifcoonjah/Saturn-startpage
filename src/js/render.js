@@ -6,11 +6,11 @@
 
 const settingAbout = (z) => {
   $(z).append(`
-    <p class="settings-item-title">About</p>
-    <p class="settings-item-under-title description">
-      About Saturn Startpage: New Features and Keyboard Shortcuts.
-    </p>
     <div class="settings-background">
+      <h3>About</h3>
+       <p class="description">
+        About Saturn Startpage: New Features and Keyboard Shortcuts.
+       </p>
       <img src="/assets/img/dynamic-icon-big.png" loading="lazy" title="Saturn Logo" alt="Saturn Logo" style="padding-top:30px; display:block; margin:auto;" />
       <p class="settings-item-title" style="text-align:center; font-size:23px;">Saturn Startpage</p>
       <p style="text-align:center;">
@@ -27,9 +27,11 @@ const settingAbout = (z) => {
       </div>
       <p style="text-align:center; font-weight:500; font-size:13px;">Thank you for using Saturn Startpage.</p>
     </div>
-    <p class="settings-item-title">What's New</p>
-    <p class="settings-item-under-title description">Learn about the latest updates.</p>
     <div class="settings-background">
+      <h3>What's New</h3>
+        <p class="description">
+         Learn about the latest updates.
+        </p>
       <img src="/assets/img/version.png" loading="lazy" style="display:block; margin:auto; padding-top:30px;" />
       <p style="text-align:center;">
         <a class="version-text green_background">Release Notes</a>
@@ -48,6 +50,7 @@ const settingAbout = (z) => {
         <li> - Settings received a much needed clean up and a big boost in performance. Things should feel super smooth and fast. </li>
         <li> - Improve the user experience for several descriptions in settings. </li>
         <li> - Replace buggy settings <code>slide-right-fade-in</code> animation with Fade-In. </li>
+        <li> - Simplified transition animation when switching between different settings tab, this should result in a less buggy settings page.</li>
       </ul>
     </div>
   `);
@@ -56,8 +59,10 @@ const settingAbout = (z) => {
 const kShortcuts = (ks) => {
   $(ks).append(`
     <div class="settings-background">
-      <p class="settings-item-title">Keyboard Shortcuts</p>
-      <p class="settings-item-under-title description">Enhance your workflow with these shortcuts.</p>
+      <h3>Keyboard Shortcuts</h3>
+       <p class="description">
+        Enhance your workflow with these shortcuts.
+       </p>
       <p class="dropdown-seperator settings-seperator"><span>General</span></p>
       <ul>
         <li>Press <kbd>Ctrl</kbd> + <kbd>/</kbd> to focus the search bar.</li>
