@@ -16,14 +16,14 @@ const search_engines = [
   {
     src: "duckduckgo.svg",
     placeholder: "DuckDuckGo",
-    action: "https://www.duckduckgo.com/",
+    action: "https://duckduckgo.com/?q=", // Fix URI to fix looping bug.
   },
   {
     src: "reddit.svg",
     placeholder: "Reddit",
     action: "https://www.reddit.com/search?q=",
   },
-  {
+  { 
     src: "youtube.svg",
     placeholder: "YouTube",
     action: "https://www.youtube.com/results?q=",

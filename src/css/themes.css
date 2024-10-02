@@ -704,7 +704,7 @@ themes are using a dark color scheme =
 .lighterdarktheme,
 .halloween,
 .terminal {
-  --default-font: "Kanit", sans-serif;
+  --default-font: "Roboto";
 }
 
 /* 

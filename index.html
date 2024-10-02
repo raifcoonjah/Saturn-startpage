@@ -45,48 +45,43 @@
     <main>
       <!-- =+=+= Saturn Search =+=+= -->
 
-        <div class="full">
-          <div class="search_block">
-            <form
-              id="search_eng_form"
-              method="get"
-              action="https://www.google.com/search"
+      <div class="full">
+        <div class="search_block">
+          <form
+            id="search_eng_form"
+            method="get"
+            action="https://www.google.com/search"
+          >
+            <a
+              href="javascript:void(0)"
+              class="search-engine-logo"
+              id="se_button"
             >
-              <a
-                href="javascript:void(0)"
-                class="search-engine-logo"
-                id="se_button"
-              >
-                <img
-                  id="se_icon"
-                  src="/assets/icons/search.svg"
-                  alt="Search engine logo"
-                  class="se_icon"
-                  title="Change search engine.. (Ctrl + Arrow Up)"
-                />
-              </a>
-
-              <input
-                class="search-bar"
-                type="search"
-                id="search"
-                placeholder="Search with Google.."
-                autocomplete="off"
-                name="q"
-                title="Click to search (Ctrl + /)"
+              <img
+                id="se_icon"
+                src="/assets/icons/search.svg"
+                alt="Search engine logo"
+                class="se_icon"
+                title="Change search engine.. (Ctrl + Arrow Up)"
               />
-            </form>
-          </div>
+            </a>
+
+            <input
+              class="search-bar"
+              type="search"
+              id="search"
+              placeholder="Search with Google.."
+              autocomplete="off"
+              name="q"
+              title="Click to search (Ctrl + /)"
+            />
+          </form>
         </div>
+      </div>
       <div class="minimalistic-ui">
         <div class="dropdown" style="float: right">
           <button class="dropbtn"><i class="las la-ellipsis-h"></i></button>
           <div class="dropdown-content">
-            <a href="https://mynoise.net/" target="_blank">
-              <i class="las la-sliders-h"></i>
-              myNoise® <i class="las la-external-link-alt"></i
-            ></a>
-            <p class="dropdown-seperator"><span>Quick actions</span></p>
             <a href="#" target="_blank">
               <i class="las la-plus-square"></i>
               New window</a
@@ -107,20 +102,17 @@
             <li class="tab-link current" data-tab="app-1">
               <i class="lar la-grin-hearts"></i> <span>Most used</span>
             </li>
-            <li class="tab-link relaxation_focus_mode" data-tab="app-2">
+            <li class="tab-link" data-tab="app-2">
               <i class="las la-graduation-cap"></i> <span>Education</span>
             </li>
-            <li
-              class="tab-link study_focus_mode programming_focus_mode"
-              data-tab="app-3"
-            >
+            <li class="tab-link" data-tab="app-3">
               <i class="las la-share-alt"></i> <span>Social media</span>
             </li>
-            <li class="tab-link study_focus_mode" data-tab="app-4">
+            <li class="tab-link" data-tab="app-4">
               <i class="las la-play-circle"></i> <span>Multimedia</span>
             </li>
           </ul>
-          
+
           <div id="apps_list"></div>
           <!-- =+=+= All apps are loaded inside [render.js] =+=+= -->
           <!-- End of app list -->
@@ -224,178 +216,169 @@
           <i class="las la-cog"></i>
         </button>
 
-        <!-- Sidebar tab -->
+        <!-- Sidebar Tab Menu -->
         <ul class="tab-menu">
           <li
             class="settings-tab-item active"
             data-tab="tab1"
-            data-tooltip="Additional Info 1"
           >
             <i class="las la-cog"></i> General
           </li>
-          <li class="settings-tab-item" data-tab="tab2">
+          <li
+            class="settings-tab-item"
+            data-tab="tab2"
+          >
             <i class="las la-brush"></i> Style
           </li>
-          <li class="settings-tab-item" data-tab="tab3">
+          <li
+            class="settings-tab-item"
+            data-tab="tab3"
+          >
             <i class="las la-palette"></i> Themes
           </li>
-          <li class="settings-tab-item" data-tab="tab4">
-            <i class="las la-cloud-moon"></i> Focus
-          </li>
-          <li class="settings-tab-item" data-tab="tab5">
+          <li
+            class="settings-tab-item"
+            data-tab="tab5"
+          >
             <i class="las la-info-circle"></i> About
           </li>
         </ul>
+
         <div class="setting-content">
-          <div id="tab1" class="tab-pane active slide-right-fade-in">
+          <!-- Tab 1: General Settings -->
+          <div id="tab1" class="tab-pane active fade-in">
             <div class="settings-background">
-              <!-- =+=+= Username =+=+= -->
               <h3><i class="las la-user-edit"></i> Username</h3>
               <p class="description">
-                Set a unique username that will be prominently shown.
+               Replace the default "null" username with your own.
               </p>
               <div class="username-section">
                 <input
                   type="text"
-                  name="setusername"
                   id="username_input"
-                  placeholder="Jolyne Kujo..."
+                  placeholder="Username..."
                 />
                 <button id="save" class="save-button">
-                  <i class="las la-save"></i> Save
+                  <i class="las la-save"></i> Apply
                 </button>
               </div>
             </div>
+
             <div class="settings-background">
               <h3><i class="las la-keyboard"></i> Kpress (Beta)</h3>
               <p class="description">
-                Saturn displays a pop-up when two or more keys are pressed simultaneously.
+                Display a pop-up on the bottom right of the screen, when two or more keys are pressed
+                simultaneously.
               </p>
-              <h3>Kpress</h3>
               <label class="switch">
                 <input type="checkbox" id="kpresstoggle" />
                 <span class="slider round"></span>
               </label>
             </div>
-            <p class="settings-item-title">Info</p>
 
-            <!-- =+=+= Change Search  =+=+= -->
             <div class="settings-background">
-              <h3><i class="las la-search"></i> Saturn search</h3>
+              <h3><i class="las la-search"></i> Saturn Search</h3>
               <p class="description">
-                Effortlessly toggle between various search providers, learn more:
+                Tip: Click the search icon to effortlessly toggle between various search providers.
               </p>
-              <details>
-                <summary>Change Search</summary>
-                <img
-                  src="/assets/img/change-search.gif"
-                  loading="lazy"
-                  alt="change-search"
-                />
 
-                <p>
-                  Or press <kbd>Ctrl</kbd> +
-                  <kbd><i class="las la-caret-square-up"></i> (Arrow Up)</kbd>
-                </p>
-              </details>
-              <h3> Default Search</h3>
-              <p class="description">Change Saturn Search Engine to other providers.</p>
+              <h3>Search provider</h3>
+              <p class="description">
+                Select your preferred search provider. 
+                Your choice will be saved and applied across all future searches.
+              </p>
               <div class="search-engine-select">
                 <select id="searchEngine">
                   <option value="0">Google (Default)</option>
                   <option value="1">DuckDuckGo</option>
                   <option value="2">Reddit</option>
                   <option value="3">YouTube</option>
-                  <option value="4">Protondb</option>
+                  <option value="4">ProtonDB</option>
                 </select>
-              </div>             
+              </div>
             </div>
-            <p class="settings-item-title">Danger zone</p>
-            <p class="settings-item-under-title description">
-              Caution: These options are potentially risky and best left untouched.
-            </p>
 
             <div class="settings-background">
-              <h3><i class="las la-trash-alt"></i> Reset data</h3>
+              <h3><i class="las la-compress-arrows-alt"></i> Minimalistic Interface</h3>
               <p class="description">
-                Perform a full reset of Saturn to its default settings, all saved data will be permanently erased in the process.
+                Toggle to simplify the interface by hiding non-essential elements. In this mode, 
+                you'll rely on keyboard shortcuts for quick navigation to different websites.
               </p>
-              <div class="cbw_container">
-                <button
-                  class="danger_red"
-                  id="reset_button"
-                  data-tootik="⚠️ WARNING: This action is irreversible!"
-                  data-tootik-conf="right multiline"
-                >
-                  <i class="las la-trash-alt"></i>
-                  <span>Erase everything</span>
-                </button>
-              </div>
+              <label class="switch">
+                <input type="checkbox" id="toggle_minimalistic_mode" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+
+            <div class="settings-background danger-zone">
+              <h3><i class="las la-trash-alt"></i> Reset Data</h3>
+              <p class="description">
+                Performing this action will reset Saturn to its default settings and 
+                permanently erase all saved data. 
+                This action cannot be undone.
+              </p>
+              <button
+                id="reset_button"
+                class="danger_red"
+                aria-label="Erase everything"
+              >
+                <i class="las la-trash-alt"></i> Erase everything
+              </button>
             </div>
           </div>
-          <div id="tab2" class="tab-pane slide-right-fade-in">
-            <div class="settings-background">
-              <div id="chromium-browser-support">
-                <p><i class="las la-exclamation-circle"></i> The background feature may cause issues in Chromium-based browsers. 
-                  It's advised to avoid this feature for now. <a href="https://gitlab.com/raifcoonjah/Saturn-startpage/-/issues/88#note_1511161825"><i class="lab la-gitlab"></i> #88</a></p>
 
-              </div>
-              
+          <!-- Tab 2: Style Settings -->
+          <div id="tab2" class="tab-pane fade-in">
+            <div class="settings-background">
               <h3><i class="las la-image"></i> Background</h3>
               <p class="description">
-                Choose custom images for your background, but note that URL-based backgrounds require an 
-                internet connection.
+                You can set a custom image as your background. Please note that 
+                using a URL-based background requires an active internet connection to load the image.
               </p>
 
               <input
                 type="text"
-                style="width: 90%; font-size: 15px"
                 id="image_url"
                 placeholder="Enter or paste a URL"
               />
               <button
-              title="Copy URL to clipboard"
-              data-tootik="Copy URL to clipboard"
-              data-tootik-conf="left"
-              style="padding: 13px"
-              id="copy-backgroundurl"
-            >
-              <i class="las la-clipboard"></i>
-            </button>
-            <p
-            class="processing_bg"
-            style="color: var(--sat-lighter-ids); font-size: 13.5px"
-            ></p>
+                id="copy-backgroundurl"
+                class="copy-url-button"
+                aria-label="Copy URL to clipboard"
+              >
+                <i class="las la-clipboard"></i>
+              </button>
+
+              <p class="processing_bg"></p>
+
               <label>
                 <input type="checkbox" id="force_white_color_header" />
-                <span data-tootik="Toggle to apply a white color scheme to homepage elements, overriding the light theme.""
-                data-tootik-conf="right multiline">White font</span>
+                <span>White font</span>
               </label>
+
               <div class="button-container">
-                <button id="delete_custom_image" class="close-wallpaper danger_red">
+                <button id="delete_custom_image" class="danger_red">
                   <i class="las la-times"></i> Delete
                 </button>
                 <button id="save-image" class="save-button">
                   <i class="lar la-save"></i> Apply
                 </button>
               </div>
-              <p
-                class="dropdown-seperator settings-seperator"
-              >
-                <span>Upload background</span>
-              </p>
-              <input type="file" id="imageupload" accept="image/*">
+
+              <div class="settings-separator">
+                <h3>Upload Background</h3>
+                <p class="description">
+                  Uploaded images will be converted to <code>base64</code> format and stored locally.
+                </p>
+              </div>
+              <input type="file" id="imageupload" accept="image/*" />
             </div>
 
-            <p class="settings-item-title">Customizations</p>
-            <p class="settings-item-under-title description">
-              Customize Saturn's User Interface: Please be cautious as not all elements support modifications.
-            </p>
             <div class="settings-background">
-              <p class="dropdown-seperator settings-seperator">
-                <span>Fonts</span>
+              <h3>Fonts</h3>
+              <p class="description">
+                Apply different fonts options.
               </p>
-
               <label>
                 <input type="checkbox" id="bold_text" />
                 <span>Bold Text</span>
@@ -407,21 +390,21 @@
               </label>
             </div>
 
-            <p class="settings-item-title">Hide things</p>
-            <p class="settings-item-under-title description">
-              Hide things from view.
-            </p>
             <div class="settings-background">
-              <!-- =+=+= HT: Options2 =+=+=-->
-              <h3>Hide Search bar</h3>
-
+              <h3>Hide Search Bar</h3>
+              <p class="description">
+                Hide the search bar to help prevent UI clutter. Please note that, Saturn search
+                does not work when its hidden.
+              </p>
               <label class="switch">
                 <input type="checkbox" class="hide-search" />
                 <span class="slider round"></span>
               </label>
             </div>
           </div>
-          <div id="tab3" class="tab-pane slide-right-fade-in">
+
+          <!-- Tab 3: Themes -->
+          <div id="tab3" class="tab-pane fade-in">
             <div class="settings-background">
               <h3><i class="las la-palette"></i> Themes</h3>
               <p class="description">
@@ -430,86 +413,16 @@
               <div id="themes-container">
                 <!-- Themes will be dynamically generated here -->
               </div>
-             </div>
-            </div>
-          <!-- ==== Focus tab ==== -->
-          <div id="tab4" class="tab-pane slide-right-fade-in">
-            <div class="settings-background">
-              <h3><i class="las la-cloud-moon"></i> Saturn focus</h3>
-              <p class="description">Pick Your Focus and Let's Get Started.</p>
-              <p class="focus_mode_icons">
-                <img loading="lazy" src="/assets/icons/focus/study.svg" />
-                Focus for studying
-              </p>
-              <div class="focus_ui study">
-                <label>
-                  <input
-                    class="study_focus focus_status"
-                    type="checkbox"
-                  /><span>Studying <i class="las la-angle-right"></i> </span>
-                </label>
-              </div>
-
-              <br />
-              <p class="line"></p>
-              <p class="focus_mode_icons">
-                <img loading="lazy" src="/assets/icons/focus/programming.svg" />
-                Focus for programming
-              </p>
-
-              <div class="focus_ui programming">
-                <label>
-                  <input class="programming_focus" type="checkbox" /><span
-                    >Programming <i class="las la-angle-right"></i
-                  ></span>
-                </label>
-              </div>
-
-              <br />
-              <p class="line"></p>
-              <p class="focus_mode_icons">
-                <img loading="lazy" src="/assets/icons/focus/relax.svg" />
-                Focus for relaxation
-              </p>
-              <div class="focus_ui relaxation">
-                <label>
-                  <input class="relaxation_focus" type="checkbox" /><span
-                    >Relaxation <i class="las la-angle-right"></i
-                  ></span>
-                </label>
-              </div>
-              <br />
-              <p class="dropdown-seperator settings-seperator">
-                <span>What's Saturn focus?</span>
-              </p>
-              <p class="description">
-                Saturn Focus keeps you in the moment when concentration is essential. 
-                Through predefined settings, it hides certain home screen elements to enhance your focus.
-              </p>
-            </div>
-            <p class="settings-item-title">Minimalistic Interface (Beta)</p>
-            <p class="settings-item-under-title description">
-              Enabling the Minimalistic Interface will conceal most home screen elements. 
-              To access your favorites or use app shortcuts, simply disable this feature or utilize shortcuts.
-            </p>
-            <div class="settings-background">
-              <!-- =+=+= HT: Options2 =+=+=-->
-              <h3>Minimalistc Interface</h3>
-
-              <label class="switch">
-                <input type="checkbox" id="toggle_minimalistic_mode" />
-                <span class="slider round"></span>
-              </label>
-              <span class="description"
-                >Tip: Press Shift + S to reopen settings.</span
-              >
             </div>
           </div>
-          <div id="tab5" class="tab-pane slide-right-fade-in">
+
+          <!-- Tab 5: About Section -->
+          <div id="tab5" class="tab-pane fade-in">
             <div id="setting_about"></div>
             <div id="k_shortcuts"></div>
           </div>
         </div>
+
         <p class="line"></p>
         <p
           class="description"
@@ -538,7 +451,6 @@
       <!-- THEMES JS - File -->
       <script type="text/javascript" src="./src/js/themes.js"></script>
       <!-- FOCUS JS - File -->
-      <script type="text/javascript" src="./src/js/focus.js"></script>
       <script type="text/javascript" src="./src/js/keyboard.js"></script>
       <script type="text/javascript" src="./src/js/applist.js"></script>
     </main>

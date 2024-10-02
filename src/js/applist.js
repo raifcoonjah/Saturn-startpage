@@ -14,7 +14,7 @@ const apps_list = {
         "apps": [
           {
             "href": "https://github.com",
-            "class": "app study_focus_mode relaxation_focus_mode",
+            "class": "app",
             "content": {
               "i": "lab la-github",
               "span": "Github"
@@ -22,7 +22,7 @@ const apps_list = {
           },
           {
             "href": "https://youtube.com",
-            "class": "app study_focus_mode",
+            "class": "app",
             "content": {
               "i": "lab la-youtube",
               "span": "YouTube"
@@ -30,7 +30,7 @@ const apps_list = {
           },
           {
             "href": "https://reddit.com",
-            "class": "app study_focus_mode programming_focus_mode",
+            "class": "app programming_focus_mode",
             "content": {
               "i": "lab la-reddit",
               "span": "Reddit"
@@ -38,7 +38,7 @@ const apps_list = {
           },
           {
             "href": "https://mail.protonmail.com",
-            "class": "app relaxation_focus_mode",
+            "class": "app",
             "content": {
               "i": "las la-inbox",
               "span": "Proton Mail"
@@ -46,7 +46,7 @@ const apps_list = {
           },
           {
             "href": "https://mail.google.com",
-            "class": "app relaxation_focus_mode",
+            "class": "app",
             "content": {
               "i": "las la-envelope",
               "span": "Gmail"
@@ -58,14 +58,6 @@ const apps_list = {
         "id": "app-2",
         "class": "app-content",
         "apps": [
-          {
-            "href": "http://moodle.rbs.ac.mu/moodle/",
-            "class": "app",
-            "content": {
-              "i": "las la-school",
-              "span": "Rushm.. Moodle"
-            }
-          },
           {
             "href": "https://docs.google.com",
             "class": "app",
@@ -80,22 +72,6 @@ const apps_list = {
             "content": {
               "i": "las la-chalkboard-teacher",
               "span": "Udemy"
-            }
-          },
-          {
-            "href": "https://learn-anything.xyz/",
-            "class": "app",
-            "content": {
-              "i": "lar la-map",
-              "span": "Learn Anything"
-            }
-          },
-          {
-            "href": "https://www.litcharts.com/",
-            "class": "app",
-            "content": {
-              "i": "las la-book",
-              "span": "Litcharts"
             }
           }
         ]
@@ -148,22 +124,6 @@ const apps_list = {
             "content": {
               "i": "lab la-twitch",
               "span": "Twitch"
-            }
-          },
-          {
-            "href": "https://lifeat.io/app",
-            "class": "app",
-            "content": {
-              "i": "las la-ticket-alt",
-              "span": "LifeAt"
-            }
-          },
-          {
-            "href": "https://www.lofi.cafe/",
-            "class": "app",
-            "content": {
-              "i": "las la-record-vinyl",
-              "span": "Lofi Cafe"
             }
           }
         ]

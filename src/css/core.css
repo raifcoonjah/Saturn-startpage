@@ -9,63 +9,11 @@
 /* 
 ========
 + Fonts +
-+ Loading fonts locally to enable offline support + reduce speed +
-+ Last updated: 14.01.2024 +
++ Fonts are loaded from google servers to prevent issues"
++ Last updated: 08.03.2024 +
 ========
 */
-/* kanit-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/kanit-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* kanit-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/kanit-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* kanit-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/kanit-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* kanit-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/kanit-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* kanit-800 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 800;
-  src: url('../fonts/kanit-v15-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* kanit-900 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 900;
-  src: url('../fonts/kanit-v15-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* 
 ========
@@ -125,12 +73,11 @@ button {
 
 body {
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 880px;
   border-radius: var(--sat-border-radius);
   overflow-x: hidden;
   display: block;
   background: var(--sat-bg);
-  margin-top: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -594,71 +541,6 @@ use the correct border radius == */
   visibility: hidden;
   font-weight: 700;
 }
-/* 
-========
-+ Mobile optimizations (work in progress..) +
-========
-*/
-
-@media (max-width: 600px) {
-  .favorites_modal_content,
-  .sounds-modal-content {
-    max-width: 90%;
-  }
-  .settings-content {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .tab-content {
-    width: 86%;
-    margin-left: 45px !important;
-  }
-  .username-section input {
-    width: 50%;
-  }
-  .fav-content {
-    width: 23rem !important;
-    height: 36rem !important;
-  }
-  .settings-title {
-    font-size: 1.2rem !important;
-  }
-  .version-text {
-    padding: 5px 5px !important;
-    color: var(--sat-accent-color1);
-    font-weight: 600;
-    text-decoration: none !important;
-    font-size: 13px !important;
-  }
-  .apps-category li span {
-    display: none;
-    font-size: 1.5em !important;
-  }
-  .apps-category li i {
-    font-size: 1.2em !important;
-    animation: fadein ease 190ms;
-  }
-  ul.fav_ptgi_category li {
-    font-size: 11px !important;
-    display: block !important;
-    padding: 10px 10px !important;
-    margin-bottom: 5px !important;
-  }
-  .notification-dot {
-    visibility: hidden;
-  }
-  .settings-nav-separator {
-    visibility: hidden;
-  }
-  /* Settings button */
-  .sidebar-trigger {
-    font-size: 1.2rem;
-    top: 10px;
-    right: 10px;
-    border-radius: 10px;
-  }
-}
-
 /* Align button-container to the left to follow standard UI guidelines */
 
 .button-container {
@@ -673,7 +555,6 @@ use the correct border radius == */
 ========
 */
 
-
 .sidebar {
   width: 100%;
   max-width: 570px;
@@ -681,19 +562,16 @@ use the correct border radius == */
   background-color: var(--sat-blurry-background);
   position: fixed;
   right: -100%;
-  top: 0;  box-shadow: 0 0 10px var( --sat-accent-color1);
-  transition: right 0.3s ease-in-out;
-  z-index: 999;
+  top: 0;
   box-shadow: 0 2px 10px rgba(17, 17, 17, 0.822);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 10px;
+  transition: right 0.5s ease-in-out;
+  z-index: 999;
   overflow-y: auto;
 }
 
 .sidebar.open {
   right: 0;
   backdrop-filter: blur(10px); /* Apply blur when open */
-  animation: 0.3 ease-in-out;
 }
 
 .sidebar-trigger {
@@ -703,36 +581,30 @@ use the correct border radius == */
   cursor: pointer;
   position: fixed;
   top: 20px;
-  right: 20px; /* Adjust the desired position from the right */
+  right: 20px;
   z-index: 1000;
   border-radius: 17px;
 }
 
 .settings-tab-item {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.settings-tab-item {
+  list-style: none;
   display: inline-block;
   padding: 10px 20px;
   background-color: var(--sat-setting-bg-effect);
   cursor: pointer;
   font-size: 15px;
   border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .settings-tab-item.active {
   background-color: var(--bg-accent-color-lr);
-  transition: 0.2s ease-in-out;
   border: 1px solid var(--sat-accent-color1);
-  box-shadow: 0 0 8px var( --bg-accent-color-lr-hover);
+  box-shadow: 0 0 8px var(--bg-accent-color-lr-hover);
 }
 
 .settings-tab-item:hover {
   background-color: var(--bg-accent-color-lr-hover);
-  transition: background-color 0.2s ease-in-out;
 }
 
 .setting-content {
@@ -749,6 +621,7 @@ use the correct border radius == */
 
 /* ========= 
 Optimize sidebar for mobile (Beta)
+this code is a hack to get things to work
 ========*/
 
 /* Media queries for mobile optimization */

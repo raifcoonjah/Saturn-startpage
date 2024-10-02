@@ -477,7 +477,6 @@ div.theme-container {
   font-size: 14px;
   border-radius: 13px;
   margin-right: 10px;
-  width: 35%;
 }
 
 .favorites-search {
@@ -912,129 +911,6 @@ appearing when the user hovers on the open in new tab button.
 
 /* 
 ========
-+ FOCUS UI v1.0 +
-========
-*/
-
-/* Main UI */
-
-.focus_ui {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-}
-
-/* Focus Span (used to make checkbox look/feel like button) */
-.focus_ui span {
-  padding: 14px 25px;
-  border-radius: 30px;
-  background-color: var(--lighter-color);
-  font-size: 16px;
-  font-weight: 500;
-  display: flex;
-  cursor: pointer;
-  box-shadow: var(--drop-shadow-color);
-}
-
-/* Focus UI <i> icons */
-.focus_ui i {
-  display: flex;
-  justify-content: center;
-  font-size: 15px;
-  padding: 5px;
-}
-
-/* Hack used to hide checkbox */
-.focus_ui label input {
-  position: absolute;
-  display: none;
-}
-
-.study input:checked + span {
-  background-color: #f29849;
-}
-
-.programming input:checked + span {
-  background-color: #9e57e0;
-}
-.relaxation input:checked + span {
-  background-color: #eb5757;
-}
-
-/* The animation when focus button is clicked */
-
-.focus_ui input:checked + span i::before {
-  transition: var(--transition-speed-default);
-  animation: fadeIn ease 200ms;
-  content: "ON";
-  font-weight: 700 !important;
-  font-size: 12px;
-  font-family: var(--default-font);
-  margin: 2px;
-}
-
-.focus_ui input:checked + span i::before,
-.focus_ui input:checked + span {
-  color: var(--for-white);
-}
-
-.focus_ui input:hover + span i {
-  margin-left: 44px;
-  transition: var(--transition-speed-default);
-}
-
-.focus_ui input + span i {
-  margin-left: 36px;
-  transition: var(--transition-speed-default);
-}
-
-/* Big icons */
-
-.focus_mode_icons i {
-  display: flex;
-  justify-content: center;
-  font-size: 32px;
-  padding: 10px;
-}
-
-.focus_mode_icons img {
-  display: block;
-  width: 45px;
-  height: 45px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-
-.focus_mode_icons {
-  font-size: 17px;
-  text-align: center;
-  font-weight: 700;
-}
-
-.focus_status {
-  display: none;
-}
-
-.connection_status,
-.focus_status {
-  width: 6%;
-  background-color: var(--bg-accent-color-lr);
-  border: 2px dotted transparent;
-  color: var(--sat-accent-color1);
-  animation: fadeIn ease 190ms;
-  cursor: default;
-}
-
-.focus_status:hover {
-  background-color: var(--bg-accent-color-lr-hover);
-  border: 2px dashed var(--sat-accent-color1);
-  color: var(--sat-accent-color1);
-}
-
-/* 
-========
 + New ABOUT Section UI +
 ========
 */
@@ -1119,7 +995,7 @@ appearing when the user hovers on the open in new tab button.
   position: absolute;
   right: 0;
   background-color: var(--sat-setting-bg-color);
-  min-width: 195px;
+  min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   font-size: 15px;
@@ -1130,7 +1006,7 @@ appearing when the user hovers on the open in new tab button.
 .dropdown-content a {
   color: var(--sat-ids);
   border-radius: 10px;
-  padding: 6px 6px;
+  padding: 9px 9px;
   text-decoration: none;
   display: block;
   cursor: default !important;
@@ -1138,14 +1014,6 @@ appearing when the user hovers on the open in new tab button.
   font-size: 14px;
   margin: 3px;
   cursor: pointer !important;
-}
-
-/* Give report bug a red accent */
-
-.removebtn:hover,
-.dropdown_redaccent:hover {
-  background-color: #d752521e !important;
-  color: var(--delete-warning-bg) !important;
 }
 
 .dropdown-content kbd {
@@ -1244,25 +1112,8 @@ appearing when the user hovers on the open in new tab button.
   color: var(--sat-accent-color1);
 }
 
-/* Favorites input title */
-.fav_title {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-.button-container {
-  padding-top: 10px;
-}
 .sat-header {
   padding-top: 100px;
-}
-
-label span {
-  font-size: 16px;
-}
-
-.connection_status {
-  display: none;
 }
 
 /* 
@@ -1295,10 +1146,6 @@ input[type="file"]::file-selector-button:hover {
   background: var(--sat-accent-color-lighter);
 }
 
-/* Fix favorites header bug by applying margin */
-.fix-favorites-header {
-  margin-top: 20px !important;
-}
 
 /* 
 ========
@@ -1318,7 +1165,7 @@ input[type="file"]::file-selector-button:hover {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   background-color: var(--sat-setting-bg-color);
-  z-index: 9999;
+  z-index: 9999; /* Appear always on top */
 }
 
 /* Define a "hidden" class to hide the popup */
