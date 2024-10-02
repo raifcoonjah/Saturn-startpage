@@ -17,7 +17,7 @@ const settingAbout = (z) => {
         <a href="https://twitter.com/raifcoonjah" target="_blank">By <i class="la la-twitter"></i> Raif Coonjah</a>
       </p>
       <p style="text-align:center;">
-        <a class="version-text green_background" href="https://github.com/raifcoonjah/Saturn-startpage/releases/" target="_blank">7.3</a>
+        <a class="version-text green_background" href="https://github.com/raifcoonjah/Saturn-startpage/releases/" target="_blank">7.2.2</a>
       </p>
       <div class="socials">
         <a href="https://saturnstartpage.netlify.app/" class="aboutwidgets-container">Get other versions <i class="las la-external-link-alt"></i></a>
@@ -36,7 +36,7 @@ const settingAbout = (z) => {
       <p style="text-align:center;">
         <a class="version-text green_background">Release Notes</a>
       </p>
-      <h2>7.3</h2>
+      <h2>v7.2.2</h2>
       <h3>Bug fixes.. a lot of them!</h3>
       <ul>
         <li> - Fix fonts not loading causing use of sans-serif. </li>
