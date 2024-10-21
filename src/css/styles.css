@@ -529,6 +529,8 @@ ul.apps-category li.current {
   background-color: var(--sat-search-shortcuts);
   color: var(--sat-accent-color1);
   font-weight: 500;
+  background:var(--apps-blurry-backgroud);
+  backdrop-filter: blur(5px); /* Apply blur when open */
 }
 
 /* 
