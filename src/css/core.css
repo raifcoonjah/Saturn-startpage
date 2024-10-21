@@ -387,8 +387,7 @@ mark {
 }
 
 textarea,
-select,
-input {
+select {
   padding: 14px 14px;
   margin-bottom: 0.5rem;
   background: var(--sat-search-shortcuts);
@@ -398,6 +397,19 @@ input {
   box-shadow: none;
   box-sizing: border-box;
   outline: 3px solid transparent;
+}
+
+
+input {
+  padding: 14px;
+  margin-bottom: 0.5rem;
+  background: var(--sat-search-shortcuts);
+  color: var(--sat-ids);
+  border: 2px solid transparent;
+  border-radius: var(--sat-border-radius);
+  box-shadow: none;
+  box-sizing: border-box;
+  outline: none;
 }
 
 .username-section input:hover,
@@ -548,6 +560,12 @@ use the correct border radius == */
   padding: 10px;
 }
 
+/* This code fixes an issue that causes 
+input button for background to become small */
+.copy-url-button {
+  display: block;
+  margin: 10px 0;
+}
 /* 
 ========
 + Saturn core components +
